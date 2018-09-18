@@ -15,10 +15,12 @@ TESTCASE=$3 #e.g. "example.BinarySearchTest#emptyArray"
 # VARIABLES
 expected=`cat expected.txt`
 
-## pre-conditions:
-# $FILEDIR is a valid directory
-# $FILENAME is found at current directory
-# $FILENAME is found at $FILEDIR
+# absolute path for file
+FILEPATH=`pwd`/${FILEDIR}/${FILENAME}
+if [ ! -f ${FILEPATH} ]; then
+    echo "File not found!"
+    exit
+fi
 
 # backup original file
 (cd ${FILEDIR};
@@ -31,12 +33,6 @@ cp ${FILENAME} $FILEDIR
 # set classpath
 CP=$(cat cp.txt)
 
-# absolute path for file
-FILEPATH=`pwd`/${FILEDIR}/${FILENAME}
-if [ ! -f ${FILEPATH} ]; then
-    echo "File not found!"
-    exit
-fi
 
 ####################
 # run the test case
@@ -48,23 +44,22 @@ fi
  # compile modified file
  javac -cp $CLASSPATH -d target/classes ${FILEPATH} 2>&1 >/dev/null
  if [ ! $? -eq 0 ]; then
-    echo "Compilation failed"
-    exit
- fi
-
- echo "java -cp $CLASSPATH SingleJUnitTestRunner ${TESTCASE} 2>&1 | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1'"
- # run test case directly through junit (not the build script) and
- # filter assertion error message (e.g., "expected:<10> but was:<0>")
- output=$(java -cp $CLASSPATH SingleJUnitTestRunner ${TESTCASE} 2>&1 | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1')
- # output=$(mvn -Dtest=${TESTCASE} test 2>&1 | grep "expected:" | grep "org.junit" | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1')
-
- # compare output with expectation
- if [ "${output}" == "${expected}" ];
- then
-     echo "GOOD"
+     echo "Compilation failed"
  else
-     echo "BAD"
+     # run test case directly through junit (not the build script) and
+     # filter assertion error message (e.g., "expected:<10> but was:<0>")
+     output=$(java -cp $CLASSPATH SingleJUnitTestRunner ${TESTCASE} 2>&1 | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1')
+     # output=$(mvn -Dtest=${TESTCASE} test 2>&1 | grep "expected:" | grep "org.junit" | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1')
+     
+     # compare output with expectation
+     if [ "${output}" == "${expected}" ];
+     then
+         echo "GOOD"
+     else
+         echo "BAD"
+     fi
  fi
+
 )
 
 # recover original file

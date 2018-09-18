@@ -28,4 +28,7 @@ cp ${FILEDIR}/${FILE} .
 
 ## run lithium
 python -m lithium compileandrun ${FILEDIR} ${TESTCASE} ${FILE} # file needs to be the last (lithium requirement)
+
+# cleaning
 rm -rf tmp*
+rm cp.txt
