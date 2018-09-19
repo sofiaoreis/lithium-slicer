@@ -22,11 +22,6 @@ if [ ! -f ${FILEPATH} ]; then
     exit
 fi
 
-# backup original file
-(cd ${FILEDIR};
- mv $FILENAME $FILENAME.orig
-)
-
 # copy file to $FILEPATH (first param)
 cp ${FILENAME} $FILEDIR
 
@@ -60,9 +55,4 @@ CP=$(cat cp.txt)
      fi
  fi
 
-)
-
-# recover original file
-(cd ${FILEDIR};
- mv $FILENAME.orig $FILENAME
 )
