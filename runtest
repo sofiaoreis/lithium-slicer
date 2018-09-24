@@ -10,9 +10,11 @@
 # PARAMS
 FILENAME=$1 #e.g., BinarySearch.java
 FILEDIR=$2  #e.g. some_project/src/main/java/example/
-TESTCASE=$3 #e.g. "example.BinarySearchTest#emptyArray"
+PROJECTDIR=$3 #e.g. /tmp/Lang_1b/
+TESTCASE=$4 #e.g. "example.BinarySearchTest#emptyArray"
 
 # VARIABLES
+# defects4j info TODO
 expected=`cat expected.txt`
 
 # absolute path for file
@@ -32,7 +34,7 @@ CP=$(cat cp.txt)
 ####################
 # run the test case
 ####################
-(cd some_project;
+(cd $PROJECTDIR;
 
  CLASSPATH=".:target/classes/:target/test-classes/:../extra/:$CP"
 

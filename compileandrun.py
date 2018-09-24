@@ -14,7 +14,7 @@ interesting. The script that does that for us is compile-and-run
 test.
 '''
 
-runtest_script="./runtest {FILENAME} {FILEDIR} {TESTCASE}"
+runtest_script="./runtest {FILENAME} {FILEDIR} {PROJECTDIR} {TESTCASE}"
 timeout_seconds=3
 DEBUG=False
 
@@ -24,12 +24,13 @@ def interesting(conditionArgs, prefix):
     ## passed as param through the "s" script
     source_dir = conditionArgs[0]
     testcase = conditionArgs[1]
-    source_file = conditionArgs[2]
+    project_dir = conditionArgs[2]
+    source_file = conditionArgs[3]
 
     if (not path.isdir(source_dir)):
         raise Exception("cannot find this path!", source_dir)
 
-    cmd_str = runtest_script.format(FILENAME=source_file, FILEDIR=source_dir, TESTCASE=testcase)
+    cmd_str = runtest_script.format(FILENAME=source_file, FILEDIR=source_dir, PROJECTDIR=project_dir, TESTCASE=testcase)
     str = call_cmd(cmd_str) # call shell script
 
     if DEBUG:
