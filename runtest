@@ -2,59 +2,22 @@
 #####################################################################
 # This script will:
 #
-# (1) copy the sliced/mutated file to its source directory
-# (2) run the failing test case 
-# (3) check if the output matches the contents of file expected.txt
+# (1) run the failing test case 
+# (2) check if the output matches the contents of file expected.txt
 #####################################################################
 
 # PARAMS
-FILENAME=$1 #e.g., BinarySearch.java
-FILEDIR=$2  #e.g. some_project/src/main/java/example/
-PROJECTDIR=$3 #e.g. /tmp/Lang_1b/
-TESTCASE=$4 #e.g. "example.BinarySearchTest#emptyArray"
-
-# VARIABLES
-# defects4j info TODO
-expected=`cat expected.txt`
-
-# absolute path for file
-FILEPATH=`pwd`/${FILEDIR}/${FILENAME}
-if [ ! -f ${FILEPATH} ]; then
-    echo "File not found!"
-    exit
-fi
-
-# copy file to $FILEPATH (first param)
-cp ${FILENAME} $FILEDIR
-
-# set classpath
-CP=$(cat cp.txt)
-
+PROJECTDIR=$1 #e.g. /tmp/Lang_1b/
+TESTCASE=$2 #e.g. org.jfree......Tests::test9999
+EXPECTED=$3 #e.g. junit.... expected <0> but was <1>
 
 ####################
 # run the test case
 ####################
-(cd $PROJECTDIR;
 
- CLASSPATH=".:target/classes/:target/test-classes/:../extra/:$CP"
+defects4j test -t $TESTCASE -w ${PROJECTDIR}
 
- # compile modified file
- javac -cp $CLASSPATH -d target/classes ${FILEPATH} 2>&1 >/dev/null
- if [ ! $? -eq 0 ]; then
-     echo "Compilation failed"
- else
-     # run test case directly through junit (not the build script) and
-     # filter assertion error message (e.g., "expected:<10> but was:<0>")
-     output=$(java -cp $CLASSPATH SingleJUnitTestRunner ${TESTCASE} 2>&1 | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1')
-     # output=$(mvn -Dtest=${TESTCASE} test 2>&1 | grep "expected:" | grep "org.junit" | awk '{first = $1; $1 = ""; print $0}' | awk '{$1=$1};1')
-     
-     # compare output with expectation
-     if [ "${output}" == "${expected}" ];
-     then
-         echo "GOOD"
-     else
-         echo "BAD"
-     fi
- fi
+cp "${PROJECTDIR}/failing_tests" "${PROJECTDIR}/lithium_tests"
 
-)
+# compare output with expectation
+python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/lithium_tests"

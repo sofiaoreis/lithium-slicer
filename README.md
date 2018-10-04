@@ -15,9 +15,9 @@ Example:
 Run the script "s" to minimize the file "BinarySearchTree" located in
 the project "some_project".
 
-Instructions:
+How to run:
 
-...TODO...
+- `$> ./runner D4JPROJECT` (e.g Chart, Lang...)
 
 
 
