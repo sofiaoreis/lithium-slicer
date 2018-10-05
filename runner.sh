@@ -1,40 +1,59 @@
 #!/bin/bash
 
-PROJECT=$1 # project arg (e.g. Lang or Chart or Mockito...)
-BUG=$2 # run these bugs (e.g. 1 or 1,2,5,9 else will run all bugs)
-BASEPATH=$(pwd) # workdir
-SEEDS="seed_${PROJECT}_${BUG}" # seed filename
-TMPFOLDER="/tmp/lithium-slicer" # tmp directory
-LITHIUM_DIR="tmp_lithium_${PROJECT}_${BUG}" # local directory to save the lithium outputs
+PROJECTS="projects"
+JSONFILES="json_files"
+RESULTS="experiments"
+BASEPATH=$(pwd)
+FILENAME="config.txt"
+TMPFOLDER="/tmp/slicer"
+CP="cp.txt"
 
-LOG_DIR="logs/${PROJECT}_${BUG}" # log directory
-LOG_NAME="$LOG_DIR/$(date).txt" # log filename
-DEBUG_DIR="$LOG_DIR/debug"
-
-# create initial directories if necessary
+mkdir -p $RESULTS
 mkdir -p $TMPFOLDER
-mkdir -p $LITHIUM_DIR
-mkdir -p $DEBUG_DIR
 
-# generates a doc that contains info to run the projects
-python3 gen_seed.py --project "$PROJECT" --output "$SEEDS" --bugnumber "$BUG"
+for project in $(ls ${JSONFILES}); do
+    tests=($(find $(pwd)/$JSONFILES/$project -path "*.json"))
+    for test in ${tests[*]};do
+        # generates a configuration file that includes
+        # number of bug, test class/name and java file
+        python load_json.py $test
+        while read line; do
+            bugnumber=$(echo $line | cut -f1 -d " ") # get bugnumber
+            TESTCASE=$(echo $line | cut -f2 -d " ")
+            FILEDIR=$(echo $line | cut -f3 -d " ")
+            FILE=$(echo $line | cut -f4 -d " ")
 
-while read line; do
-    BUGNUMBER=$(echo $line | cut -f2 -d " ")
-    TESTCASE=$(echo $line | cut -f3 -d " ")
+            bugnumber+="b" # buggy version
+            projectdir="$TMPFOLDER/$project"
+            projectdir+="_"
+            projectdir+="$bugnumber"
+                        
+            # compilation step TODO
+            # defects4j checkout -p $project -v $bugnumber -w $projectdir
+            # cd $projectdir && defects4j compile
 
-    #! todo python logging (extra)
-    echo "$(date) - running $PROJECT $BUG" >> "$LOG_NAME"
-    echo "$(date) - running $TESTCASE" >> "$LOG_NAME"
+            # backup original file
+            JAVA_DIRPATH=$projectdir/"src/java"/${FILEDIR}
+            (cd $JAVA_DIRPATH;
+                cp $FILE $FILE.orig
+            )
 
-    # update project dir name
-    TMP_PROJECT="$TMPFOLDER/$PROJECT"
-    TMP_PROJECT+="_"
-    TMP_PROJECT+="$BUGNUMBER"
-    
-    # run defects4j and lithium
-    python3 run_lithium.py "$line" $LITHIUM_DIR $TMP_PROJECT $DEBUG_DIR
+            # copy file to slice
+            cp $JAVA_DIRPATH/${FILE} .
 
-    rm -rf $LITHIUM_DIR
-    rm -rf $TMP_PROJECT
-done < "$BASEPATH/$SEEDS"
+            # run lithium
+            python -m lithium compileandrun ${JAVA_DIRPATH} ${TESTCASE} ${projectdir} ${FILE} # file needs to be the last (lithium requirement)
+
+            # recover original file
+            (cd $JAVA_DIRPATH;
+                cp $FILE $FILE.lithium
+                mv $FILE.orig $FILE
+            )
+
+            python3 diff_parser.py --origin ${FILEDIR}/${FILE} --minimized ${FILEDIR}/${FILE}.lithium --output ${FILE}.json
+
+        done < $BASEPATH/$FILENAME
+    done
+done
+
+rm -rf tmp*
