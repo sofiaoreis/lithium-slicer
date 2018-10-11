@@ -1,4 +1,4 @@
-import json, re, shlex
+import json, re, shlex, difflib
 from subprocess import Popen, PIPE, STDOUT, call
 
 def json_to_dict(json_path):
@@ -33,20 +33,26 @@ def get_relative_path(project, class_name):
     }
 
     project_path = paths[project]
-    substring = "{}/".format(project_path)
+    path = "{}/".format(project_path)
+    index = class_name.index(path) + len(path)
+    
+    class_name = class_name[index:]
 
-    return class_name.replace(substring, "")
+    return class_name
+
+def remove_comments(string):
+    multiline, singleline = r"\/\*([\S\s]+?)\*\/", r"\/\/.+"
+    output = re.sub(multiline, "", string)
+    output = re.sub(singleline, "", output)
+    return output
 
 def parse_comments(origin_file, output_path):
     with open(origin_file) as doc:
         origin = doc.read()
 
-    multiline, singleline = '\/\*([\S\s]+?)\*\/', '\/\/.+'
+    output = remove_comments(origin)
 
-    output = re.sub(multiline, '', origin)
-    output = re.sub(singleline, '', output)
-
-    with open(output_path, 'w') as doc:
+    with open(output_path, "w") as doc:
         doc.write(output)
 
 def diff_parser(origin_file, minimized_file):
@@ -66,12 +72,13 @@ def is_line_valid(string):
 
 def parser(diff_output):
     """
-    returns a list of lines removed
+    returns a list with numbers of lines removed
     """
     out = shlex.split(diff_output)
     lines_removed = []
     for item in out:
         if not is_line_valid(item):
+            # skip lines that does not contains digit
             continue
         elif ',' in item: # range 10,20
             _range = item.split(',')
@@ -101,4 +108,9 @@ def get_locs(origin_file, minimized_file):
     diff_output = diff_parser(origin_file, minimized_file)
     lines_removed = parser(diff_output)
     locs = extract_locs(origin_file, lines_removed)
+
+    # ! todo: important
+    # lines_removed = new_parser(origin_file, minimized_file)
+    # locs = extract_locs(origin_file, lines_removed)
+
     return locs

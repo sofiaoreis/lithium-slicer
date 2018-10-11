@@ -17,6 +17,10 @@ classes = [os.path.join(project_dir, x) for x in line.split(" ")[3].split(",")]
 
 testcase_name = testcase.replace("::", "_").split(".")[-1]
 
+# if remove_comments == True, the comments/javadoc in original file are removed (otimization)
+#! FIX THIS: if true, the function (utils.get_loc) does not works as expected (empty array)
+remove_comments = False 
+
 data = {"slicer":[]}
 
 # create debug-testcase directory
@@ -37,9 +41,10 @@ for java_file in classes:
     copy(java_file, origin_path)
     
     # remove comments in original file
-    uncomment_path = os.path.join(debug_testcase_dir, "uncomment_" + origin_filename)
-    parse_comments(java_file, uncomment_path)
-    copy(uncomment_path, java_file) # overwrite java_file
+    if remove_comments:
+        uncomment_path = os.path.join(debug_testcase_dir, "uncomment_" + origin_filename)
+        parse_comments(java_file, uncomment_path)
+        copy(uncomment_path, java_file) # overwrite original java class
 
     # run lithium
     cmd_line = "python -m lithium --tempdir={TEMPDIR} compile_run {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}".format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=testcase, FILE=java_file, EXPECTED=expected)
@@ -63,5 +68,6 @@ for java_file in classes:
 # generate slicer-testcase.json
 testcase_fmt = testcase.format(testcase.split("::")[-1])
 slicer_name = "slicer-{}.json".format(testcase_fmt)
-with open(os.path.join(debug_testcase_dir, slicer_name)) as doc:
+json_filename = os.path.join(debug_testcase_dir, slicer_name)
+with open(json_filename, 'w') as doc:
     json.dump(data, doc, indent=4)

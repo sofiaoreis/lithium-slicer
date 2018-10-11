@@ -40,6 +40,8 @@ while read line; do
     # run defects4j and lithium
     python3 run_lithium.py "$line" $LITHIUM_DIR $TMP_PROJECT $RESULTS_DIR
 
+    echo "$(date) - done $TESTCASE" >> "$LOG_NAME"
+
     rm -rf $LITHIUM_DIR
     rm -rf $TMP_PROJECT
 done < "$BASEPATH/$SEEDS"

@@ -14,24 +14,34 @@ test.
 '''
 runtest_script = "./runtest {PROJECTDIR} {TESTCASE} '{EXPECTED}'"
 timeout_seconds = 60
+first_run = True
+buggy_content = {"line_content": None, "function": None, "class": None}
 
-def interesting(conditionArgs, prefix):    
+def interesting(conditionArgs, prefix):
+    global first_run
+    global buggy_content
+
     project_dir = conditionArgs[0]
     testcase = conditionArgs[1]
     expected = conditionArgs[2]
+    source_file = conditionArgs[3] # not used yet
     
     cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected)
 
-    str = call_cmd(cmd_str) # call shell script
-    if "BUILD FAILED" in str:
-        print("BUILD FAILED")
-    elif 'GOOD' in str:
+    output = call_cmd(cmd_str) # call shell script
+
+    is_interesting = "GOOD" in output   
+    if is_interesting:
         # copy the interesting file to this path
-        # to check the last interesting file
         name = os.path.basename(conditionArgs[-1])
         copy(conditionArgs[-1], name)
-    
-    return 'GOOD' in str
+        print("### GOOD")
+
+    return is_interesting
+
+def get_buggy_content():
+    """ line content + function + class """
+    pass
 
 @timeout(timeout_seconds) # 60s at most
 def call_cmd(cmd_line):    

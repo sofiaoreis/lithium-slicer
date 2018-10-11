@@ -11,6 +11,8 @@ project_name = args.project[0]
 bugs = args.bugnumber[0]
 output = args.output[0]
 
+max_files_per_bug = 5
+
 def get_magic_number():
     """ get magic number of files per bug """
     pass
@@ -30,6 +32,7 @@ def get_source_path(project_name):
 
 def generate_seed(project, bugnumber, output):
     """ generates a file that contains json info to run d4j and lithium """
+    global max_files_per_bug
     initial_projects = ["Chart", "Lang", "Closure", "Math", "Mockito", "Time"]
     if project not in initial_projects:
         raise Exception("Project {} invalid. Please select one of {}".format(project, initial_projects))
@@ -39,7 +42,6 @@ def generate_seed(project, bugnumber, output):
     if not os.path.isdir(project_path):
         raise Exception("Project {} directory not found".format(project_path))
     
-    max_files_per_bug = 5 # get the magic number
     source_path = get_source_path(project)
     
     # get only bugs choosen by user
