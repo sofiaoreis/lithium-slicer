@@ -14,12 +14,12 @@ test.
 '''
 runtest_script = "./runtest {PROJECTDIR} {TESTCASE} '{EXPECTED}'"
 timeout_seconds = 60
-first_run = True
-buggy_content = {"line_content": None, "function": None, "class": None}
+buggy_line = None
+debug = False # True to check output in console
 
 def interesting(conditionArgs, prefix):
-    global first_run
-    global buggy_content
+    global buggy_line
+    global debug
 
     project_dir = conditionArgs[0]
     testcase = conditionArgs[1]
@@ -27,24 +27,28 @@ def interesting(conditionArgs, prefix):
     source_file = conditionArgs[3] # not used yet
     
     cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected)
-
     output = call_cmd(cmd_str) # call shell script
 
-    is_interesting = "GOOD" in output   
-    if is_interesting:
-        # copy the interesting file to this path
-        name = os.path.basename(conditionArgs[-1])
-        copy(conditionArgs[-1], name)
-        print("### GOOD")
+    is_interesting = "GOOD" in output
 
-    return is_interesting
+    if debug:
+        print(output)
 
-def get_buggy_content():
-    """ line content + function + class """
-    pass
+    if (buggy_line is None) and is_interesting:
+        buggy_line = get_buggy_line(output)
+    
+    # double check comparison with buggy_line and expected/output message
+    return is_interesting and (buggy_line in output)
 
-@timeout(timeout_seconds) # 60s at most
-def call_cmd(cmd_line):    
+def get_buggy_line(output):
+    """ get buggy line in test file """
+    # in first iteration, update buggy_line with the line that fail in original test
+    start, end = output.index('[Buggy_START]'), output.index('[Buggy_END]')
+    buggy_line = output[start+13:end].strip() # get text between [Buggy_START] and [Buggy_END] labels
+    return buggy_line
+
+@timeout(timeout_seconds) # 60s at most (compile and run test)
+def call_cmd(cmd_line):
     cmd = split(cmd_line)
     msg = ''
     try:

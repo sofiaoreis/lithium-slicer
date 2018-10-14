@@ -14,8 +14,8 @@ EXPECTED=$3 #e.g. junit.... expected <0> but was <1>
 ####################
 # run the test case
 ####################
-defects4j compile -w ${PROJECTDIR}
-defects4j test -t $TESTCASE -w ${PROJECTDIR}
+defects4j compile -w ${PROJECTDIR} 2>/dev/null
+defects4j test -t $TESTCASE -w ${PROJECTDIR} 2>/dev/null
 
 # compare output message with expected message
 python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/failing_tests"

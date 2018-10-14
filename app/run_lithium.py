@@ -66,7 +66,7 @@ for java_file in classes:
     rmtree(project_dir, ignore_errors=True)
 
 # generate slicer-testcase.json
-testcase_fmt = testcase.format(testcase.split("::")[-1])
+testcase_fmt = testcase.split("::")[-1]
 slicer_name = "slicer-{}.json".format(testcase_fmt)
 json_filename = os.path.join(debug_testcase_dir, slicer_name)
 with open(json_filename, 'w') as doc:

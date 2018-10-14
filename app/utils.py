@@ -109,8 +109,22 @@ def get_locs(origin_file, minimized_file):
     lines_removed = parser(diff_output)
     locs = extract_locs(origin_file, lines_removed)
 
-    # ! todo: important
-    # lines_removed = new_parser(origin_file, minimized_file)
-    # locs = extract_locs(origin_file, lines_removed)
-
     return locs
+
+def check_obj_comparison(expected_msg, output_msg):
+    # expected:<...ClassName@MemoryAddress...> but was:<...ClassName@MemoryAddress...>
+    obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
+    search_expected = re.search(obj_comparison_pattern, expected_msg)
+    search_output = re.search(obj_comparison_pattern, output_msg)
+    
+    if search_expected and search_output:
+        expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
+        output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
+        return (expected[0] == output[0]) and (expected[1] == output[1])
+        
+    return False
+
+def is_object_comparison(expected_msg):
+    obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
+    return re.search(obj_comparison_pattern, expected_msg) is not None
+
