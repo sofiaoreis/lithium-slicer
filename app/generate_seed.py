@@ -15,9 +15,14 @@ output = args.output[0]
 
 max_files_per_bug = int(args.files_per_bug[0])
 
-def get_magic_number():
-    """ get magic number of files per bug """
-    pass
+def is_input_number_valid(bug_numbers, project_data_path):
+    """ check if a bug number exists in Project data directory """
+    if "0" not in bug_numbers:
+        json_files = os.listdir(project_data_path)
+        for bug in bug_numbers:
+            if "{}.json".format(bug) not in json_files:
+                return False
+    return True
 
 def get_source_path(project_name):
     """ each project contains differents java_path """
@@ -42,21 +47,24 @@ def generate_seed(project, bugnumber, output):
     project_path = os.path.join(os.getcwd(), "data", project)
 
     if not os.path.isdir(project_path):
+        print("FAILED") # should print to stop the main script
         raise Exception("Project {} directory not found".format(project_path))
     
     source_path = get_source_path(project)
     
     # get only bugs choosen by user
     bugnumber = bugnumber.split(",")
+    
+    if not is_input_number_valid(bugnumber, project_path):
+        print("FAILED") # should print to stop the main script
+        raise Exception("one or more json files({}) are not found in path {}".format(bugnumber, project_path))
+
     bugnumbers = ['{}.json'.format(bug) for bug in bugnumber]
     
     if '0' in bugnumber: # 0 similar to "all" bugs
-        bugnumbers = [doc for doc in os.listdir(project_path)]
+        bugnumbers = os.listdir(project_path)
     else:
         bugnumbers = [doc for doc in os.listdir(project_path) if doc in bugnumbers]
-
-    if not bugnumbers:
-        raise Exception("json files not found in path {}".format(project_path))
 
     with open(output, "w") as seed_file:
         for bug in bugnumbers:

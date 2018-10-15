@@ -19,7 +19,10 @@ mkdir -p $LITHIUM_DIR
 mkdir -p $DEBUG_DIR
 
 # generates a doc that contains info to run the projects
-python3 gen_seed.py --project "$PROJECT" --output "$SEEDS" --bugnumber "$BUG" --files_per_bug 5
+gen_data=$(python3 generate_seed.py --project "$PROJECT" --output "$SEEDS" --bugnumber "$BUG" --files_per_bug 5)
+if [[ $gen_data == *"FAILED"* ]]; then
+    exit
+fi
 
 while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
@@ -28,10 +31,6 @@ while read line; do
     RESULTS_DIR="$DEBUG_DIR/$BUGNUMBER"
     mkdir -p $RESULTS_DIR
 
-    # TODO: python logging
-    echo "$(date) - running $PROJECT $BUG" >> "$LOG_NAME"
-    echo "$(date) - running $TESTCASE" >> "$LOG_NAME"
-
     # update project dir name
     TMP_PROJECT="$TMPFOLDER/$PROJECT"
     TMP_PROJECT+="_"
@@ -39,8 +38,6 @@ while read line; do
     
     # run defects4j and lithium
     python3 run_lithium.py "$line" $LITHIUM_DIR $TMP_PROJECT $RESULTS_DIR
-
-    echo "$(date) - done $TESTCASE" >> "$LOG_NAME"
 
     rm -rf $LITHIUM_DIR
     rm -rf $TMP_PROJECT

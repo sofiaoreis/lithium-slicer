@@ -1,8 +1,17 @@
-import os, sys, json, logging
+import os, sys, json, logging, time
 from shutil import copy, rmtree
 from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
 from utils import parse_comments, get_locs, get_relative_path, checkout_and_compile
+
+# log settings
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler("lithium-slicer-{}.log".format(time.asctime()))
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 line = sys.argv[1]
 lithium_tmp = sys.argv[2]
@@ -27,7 +36,11 @@ data = {"slicer":[]}
 debug_testcase_dir = os.path.join(backup_dir, testcase_name)
 os.makedirs(debug_testcase_dir, exist_ok=True)
 
+logger.info("Started Lithium-Slicer")
+logger.info("Running {}-{}".format(project, bug_number))
 for java_file in classes:
+    logger.info("Trying to reduce {} file".format(java_file))
+    
     # checkout and compile project
     checkout_and_compile(project, bug_number, project_dir)
 
