@@ -19,3 +19,7 @@ defects4j test -t $TESTCASE -w ${PROJECTDIR} 2>/dev/null
 
 # compare output message with expected message
 python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/failing_tests"
+
+# remove build directories
+rm -rf ${PROJECTDIR}/build
+rm -rf ${PROJECTDIR}/build-tests
