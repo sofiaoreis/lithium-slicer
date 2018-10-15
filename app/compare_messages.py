@@ -10,7 +10,6 @@ if os.path.isfile(output_filepath):
     output = None
     with open(output_filepath) as out:
         failing_tests = out.readlines()
-        # print buggy_line in TestName.java
         buggy_line = [line for line in failing_tests if 'Tests.java' in line]
         try:
             # should print this line to check if there is the same buggy line

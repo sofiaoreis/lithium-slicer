@@ -23,6 +23,7 @@ def checkout_and_compile(project, bug_number, project_dir):
     call(cmd, stderr=STDOUT)
 
 def get_relative_path(project, class_name):
+    """ get the path inside the project directory """
     paths = {
         "Chart": "source",
         "Closure": "src",
@@ -41,12 +42,15 @@ def get_relative_path(project, class_name):
     return class_name
 
 def remove_comments(string):
+    """ remove the comments in java file """
+    #! TODO: need to use better pattern. This function affects the diff_parser function
     multiline, singleline = r"\/\*([\S\s]+?)\*\/", r"\/\/.+"
     output = re.sub(multiline, "", string)
     output = re.sub(singleline, "", output)
     return output
 
 def parse_comments(origin_file, output_path):
+    """ remove comments in file and save it """
     with open(origin_file) as doc:
         origin = doc.read()
 
@@ -56,6 +60,7 @@ def parse_comments(origin_file, output_path):
         doc.write(output)
 
 def diff_parser(origin_file, minimized_file):
+    """ run the diff command (diff FILE FILE_MINIMIZED | grep -vE '<|>|\|') to obtain the lines in file """
     diff_args = shlex.split("diff {} {}".format(origin_file, minimized_file))
     grep_args = shlex.split("grep -vE '<|>|\|'")
     cut_args = shlex.split("cut -dd -f1")
@@ -68,6 +73,7 @@ def diff_parser(origin_file, minimized_file):
     return diff_output
 
 def is_line_valid(string):
+    """ check if the string contain a digit """
     return bool(re.search(r'\d', string))
 
 def parser(diff_output):
@@ -112,6 +118,7 @@ def get_locs(origin_file, minimized_file):
     return locs
 
 def check_obj_comparison(expected_msg, output_msg):
+    """ returns True if the messages compare the same object """
     # expected:<...ClassName@MemoryAddress...> but was:<...ClassName@MemoryAddress...>
     obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
     search_expected = re.search(obj_comparison_pattern, expected_msg)
@@ -125,6 +132,7 @@ def check_obj_comparison(expected_msg, output_msg):
     return False
 
 def is_object_comparison(expected_msg):
+    """ check if the message is an object comparison """
     obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
     return re.search(obj_comparison_pattern, expected_msg) is not None
 

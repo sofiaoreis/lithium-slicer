@@ -4,6 +4,6 @@ __pycache__
 */target
 cp.txt
 expected.txt
-app/data*
+app/data/*/*
 app/logs*
-app/*.pyc
+*.pyc

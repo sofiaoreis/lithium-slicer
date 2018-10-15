@@ -2,16 +2,18 @@ import argparse, os
 from utils import json_to_dict
 
 main = argparse.ArgumentParser()
-main.add_argument("--output", type=str, nargs=1, help="output path to save the seed file")
-main.add_argument("--project", type=str, nargs=1, help="the project name")
-main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="the project bugs") # 0 corresponde to all
+main.add_argument("--output", type=str, nargs=1, help="The output path to save the seed file")
+main.add_argument("--project", type=str, nargs=1, help="Project name")
+main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 corresponde to all
+main.add_argument("--files_per_bug", type=str, nargs=1, default="5", help="Max quantity of files per bug")
+
 
 args = main.parse_args()
 project_name = args.project[0]
 bugs = args.bugnumber[0]
 output = args.output[0]
 
-max_files_per_bug = 5
+max_files_per_bug = int(args.files_per_bug[0])
 
 def get_magic_number():
     """ get magic number of files per bug """
@@ -21,10 +23,10 @@ def get_source_path(project_name):
     """ each project contains differents java_path """
     paths = {
         "Chart": "source",
-        "Closure": "",
+        "Closure": "src",
         "Lang": "src/java",
         "Math": "src/main/java",
-        "Mockito": "",
+        "Mockito": "src",
         "Time": "src/main/java"
     }
 

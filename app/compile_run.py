@@ -18,6 +18,7 @@ buggy_line = None
 debug = False # True to check output in console
 
 def interesting(conditionArgs, prefix):
+    """ This function check if the file is interesting to reduce """
     global buggy_line
     global debug
 

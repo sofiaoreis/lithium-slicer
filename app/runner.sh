@@ -11,7 +11,7 @@ LITHIUM_DIR="tmp_lithium_${PROJECT}_${BUG}" # local directory to save the lithiu
 
 LOG_DIR="logs/${PROJECT}_${BUG}" # log directory
 LOG_NAME="$LOG_DIR/$(date).txt" # log filename
-DEBUG_DIR="$LOG_DIR/debug"
+DEBUG_DIR="$LOG_DIR"
 
 # create initial directories if necessary
 mkdir -p $TMPFOLDER
@@ -19,7 +19,7 @@ mkdir -p $LITHIUM_DIR
 mkdir -p $DEBUG_DIR
 
 # generates a doc that contains info to run the projects
-python3 gen_seed.py --project "$PROJECT" --output "$SEEDS" --bugnumber "$BUG"
+python3 gen_seed.py --project "$PROJECT" --output "$SEEDS" --bugnumber "$BUG" --files_per_bug 5
 
 while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
