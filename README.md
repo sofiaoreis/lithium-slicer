@@ -20,7 +20,13 @@ The script `run_lithium` is currently instantiated to the [Defects4J](https://gi
  - A comma-separated list of input files to minimize
  - A string message to use as oracle
 
-For example, the following command will minimize files X, Y with respect to the test Z from D4J project Q, bug number R. We ran the test in isolation once to find the error message.
+For example, the following command will minimize the file `GrayPaintScale.java` with respect to the test `testGetPaint` from D4J project `Chart`, bug number `24`. We ran the test in isolation once to find the error message.
 
-    `$> run_lithium ...`
+```bash
+$> python3 run_lithium.py --project Chart --bug_number 24 \
+ --test_case org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint --classes source/org/jfree/chart/renderer/GrayPaintScale.java \ 
+ --expected_message "java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue"
+```
 
+- [Running LithiumSlicer with SFL output](README_SFL.md)
+- [Scripts explanation](README_DEVELOPERS.md)
