@@ -4,15 +4,6 @@ from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
 from utils import parse_comments, get_locs, get_relative_path, checkout_and_compile
 
-# log settings
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler("lithium-slicer-{}.log".format(time.asctime()))
-handler.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
 line = sys.argv[1]
 lithium_tmp = sys.argv[2]
 project_dir = sys.argv[3]
@@ -35,6 +26,17 @@ data = {"slicer":[]}
 # create debug-testcase directory
 debug_testcase_dir = os.path.join(backup_dir, testcase_name)
 os.makedirs(debug_testcase_dir, exist_ok=True)
+
+# log settings
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+log_filename = "lithium-slicer-{}.log".format(time.asctime())
+log_path = os.path.join(backup_dir, log_filename)
+handler = logging.FileHandler(log_path)
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 logger.info("Started Lithium-Slicer")
 logger.info("Running {}-{}".format(project, bug_number))
@@ -60,7 +62,7 @@ for java_file in classes:
         copy(uncomment_path, java_file) # overwrite original java class
 
     # run lithium
-    cmd_line = "python -m lithium --tempdir={TEMPDIR} compile_run {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}".format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=testcase, FILE=java_file, EXPECTED=expected)
+    cmd_line = "python3 -m lithium --tempdir={TEMPDIR} compile_run {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}".format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=testcase, FILE=java_file, EXPECTED=expected)
     call(split(cmd_line), stderr=STDOUT)
     
     # copy minimized file

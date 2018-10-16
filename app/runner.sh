@@ -2,6 +2,14 @@
 
 command -v defects4j >/dev/null 2>&1 || { echo >&2 "defects4j not found.  Aborting."; exit 1; }
 
+if [ -z "$1" ];then
+    echo "The project name is empty. [Chart, Lang, Time, Mockito, Closure, Math]"
+    exit 1;
+elif [ -z "$2" ];then
+    echo "The bug number is empty. Use 0 to run all bugs, use a number (e.g. 5) to minimize the bug 5 or use a list of numbers (e.g. 1,3,5,10)"
+    exit 1;
+fi
+
 PROJECT=$1 # project arg (e.g. Lang or Chart or Mockito...)
 BUG=$2 # run these bugs (e.g. 1 or 1,2,5,9 else will run all bugs)
 BASEPATH=$(pwd) # workdir

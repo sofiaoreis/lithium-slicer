@@ -1,10 +1,11 @@
-import sys, os
+import sys, os, logging
 from utils import check_obj_comparison, is_object_comparison
 
 expected = sys.argv[1] # message expected got from JSON
 output_filepath = sys.argv[2] # "failing_test" file that contains the test output after run d4j-test
 
 debug = False # true to check expected and output messages in console (need to set debug=True in compile_run as well)
+logger = logging.getLogger(__name__)
 
 if os.path.isfile(output_filepath):
     output = None
@@ -23,8 +24,7 @@ if os.path.isfile(output_filepath):
     os.remove(output_filepath)
 
     if debug:
-        print("expected:", expected)
-        print("got:", output)
+        logger.debug("expected: {}\ngot: {}".format(expected, output))
     
     if is_object_comparison(expected):
         print("GOOD" if check_obj_comparison(expected, output) else "BAD")
