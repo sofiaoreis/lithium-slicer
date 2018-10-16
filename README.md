@@ -27,6 +27,3 @@ $> python3 run_lithium.py --project Chart --bug_number 24 \
  --test_case org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint --classes source/org/jfree/chart/renderer/GrayPaintScale.java \ 
  --expected_message "java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue"
 ```
-
-- [Running LithiumSlicer with SFL output](README_SFL.md)
-- [Scripts explanation](README_DEVELOPERS.md)
