@@ -10,45 +10,31 @@ elif [ -z "$2" ];then
     exit 1;
 fi
 
-PROJECT=$1 # project arg (e.g. Lang or Chart or Mockito...)
-BUG=$2 # run these bugs (e.g. 1 or 1,2,5,9 else will run all bugs)
-BASEPATH=$(pwd) # workdir
-SEEDS="seed_${PROJECT}_${BUG}" # seed filename
-TMPFOLDER="/tmp/lithium-slicer" # tmp directory
-LITHIUM_DIR="tmp_lithium_${PROJECT}_${BUG}" # local directory to save the lithium outputs
+PROJECT=$1 # project name
+BUG=$2 # bugs
+BASEPATH=$(pwd)
 
-LOG_DIR="logs/${PROJECT}_${BUG}" # log directory
-LOG_NAME="$LOG_DIR/$(date).txt" # log filename
-DEBUG_DIR="$LOG_DIR"
-
-# create initial directories if necessary
-mkdir -p $TMPFOLDER
-mkdir -p $LITHIUM_DIR
-mkdir -p $DEBUG_DIR
+INPUTS="inputs-${PROJECT}_${BUG}" # data filename
 
 # generates a doc that contains info to run the projects
-gen_data=$(python3 generate_seed.py --project "$PROJECT" --output "$SEEDS" --bugnumber "$BUG" --files_per_bug 5)
-if [[ $gen_data == *"FAILED"* ]]; then
-    exit
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug 5)
+if [[ $gen_inputs == *"FAILED"* ]]; then
+    exit 1;
 fi
 
 while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
     TESTCASE=$(echo $line | cut -f3 -d " ")
-
-    RESULTS_DIR="$DEBUG_DIR/$BUGNUMBER"
-    mkdir -p $RESULTS_DIR
-
-    # update project dir name
-    TMP_PROJECT="$TMPFOLDER/$PROJECT"
-    TMP_PROJECT+="_"
-    TMP_PROJECT+="$BUGNUMBER"
+    CLASSES=$(echo $line | cut -f4 -d " ")
+    EXPECTED_MSG=$(echo $line | cut -f2 -d "*")
     
     # run defects4j and lithium
-    python3 run_lithium.py "$line" $LITHIUM_DIR $TMP_PROJECT $RESULTS_DIR
+    python3 run_lithium.py --project $PROJECT \
+    --bug_number $BUGNUMBER \
+    --test_case $TESTCASE \
+    --classes $CLASSES \
+    --expected_message $EXPECTED_MSG
 
-    rm -rf $LITHIUM_DIR
-    rm -rf $TMP_PROJECT
-done < "$BASEPATH/$SEEDS"
+done < "$BASEPATH/$INPUTS"
 
-rm $BASEPATH/$SEEDS
+rm $BASEPATH/$INPUTS

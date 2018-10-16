@@ -10,7 +10,7 @@ def json_to_dict(json_path):
         _json = json.loads(doc.read())
     return _json
 
-def checkout_and_compile(project, bug_number, project_dir):
+def checkout_project(project, bug_number, project_dir):
     """
         Checkout and Compile commands
     """
@@ -18,9 +18,6 @@ def checkout_and_compile(project, bug_number, project_dir):
     cmd = shlex.split(cmd_line)
     call(cmd, stderr=STDOUT)
 
-    cmd_line = "defects4j compile -w {}".format(project_dir)
-    cmd = shlex.split(cmd_line)
-    call(cmd, stderr=STDOUT)
 
 def get_relative_path(project, class_name):
     """ get the path inside the project directory """

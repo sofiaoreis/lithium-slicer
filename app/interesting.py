@@ -12,7 +12,7 @@ interesting. The script that does that for us is compile-and-run
 (note the .sh extension), which just compiles the code and re-runs the
 test.
 '''
-runtest_script = "./runtest {PROJECTDIR} {TESTCASE} '{EXPECTED}'"
+runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} '{EXPECTED}'"
 timeout_seconds = 60
 buggy_line = None
 debug = False # True to check output in console
