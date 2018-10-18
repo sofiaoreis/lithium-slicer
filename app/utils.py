@@ -1,4 +1,4 @@
-import json, re, shlex, difflib
+import json, re, shlex, difflib, os
 from subprocess import Popen, PIPE, STDOUT, call
 
 def json_to_dict(json_path):
@@ -133,3 +133,10 @@ def is_object_comparison(expected_msg):
     obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
     return re.search(obj_comparison_pattern, expected_msg) is not None
 
+def create_json(filename, data):
+    """ method to store the results in a json file """
+    with open(filename, 'w') as doc:
+        json.dump(data, doc, indent=4)
+    
+    return os.path.isfile(filename)
+    

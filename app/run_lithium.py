@@ -1,8 +1,9 @@
-import os, json, logging, time, argparse, tempfile
+import os, logging, time, argparse, tempfile
 from shutil import copy, rmtree
 from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
-from utils import parse_comments, get_locs, get_relative_path, checkout_project
+from utils import parse_comments, get_locs, get_relative_path, checkout_project, create_json
+from multiprocessing import Pool, cpu_count
 
 # args
 main = argparse.ArgumentParser()
@@ -25,13 +26,13 @@ base_path = os.getcwd()
 log_dir = os.path.join(base_path, 'logs', '{}_{}'.format(project, bug_number), '{}'.format(bug_number))
 
 # directories in /tmp
-project_dir = tempfile.mkdtemp(prefix="lithium-slicer_") # remove it later
-lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_") # remove it later
+project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
+lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
 
 # this 'b' char corresponds to buggy version
 bug_number += "b" 
 # converts "classes" argument to a list of classes
-classes = [os.path.join(project_dir, x) for x in classes.split(",")]
+classes = classes.split(",")
 # converts expected_arg list to string
 expected_message = ' '.join(expected_arg)
 # renaming test case
@@ -48,7 +49,7 @@ os.makedirs(log_testcase_dir, exist_ok=True)
 # logging settings
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-log_filename = "lithium-slicer-{}.log".format(time.asctime())
+log_filename = "log-{project}-{bug}-{time}.log".format(project=project, bug=bug_number, time=time.asctime())
 log_path = os.path.join(log_dir, log_filename)
 handler = logging.FileHandler(log_path)
 handler.setLevel(logging.INFO)
@@ -58,25 +59,41 @@ logger.addHandler(handler)
 
 # starting lithium-slicer
 logger.info("Started Lithium-Slicer")
-logger.info("Running testcase {} from {}-{}b".format(project, bug_number, testcase_name))
+logger.info("Running testcase {test_case} from {project}-{bug}b".format(test_case=testcase_name, project=project, bug=bug_number))
 
 init_time = time.time()
 data = {"slicer":[]}
-for java_file in classes:
-    logger.info("Trying to reduce {} file".format(java_file))
+
+def minimize_file(filepath):
+    """ This method runs lithium on a java source code and returns an 
+        object that contains the file and the locs similar to original file
+
+        obj = {
+            "class": ".../ClassA.java",
+            "loc": [1,50,52,54,...]
+        }
+    """    
+    global project, bug_number, test_case, expected_message
+    output_lithium = {} # structute to store the output of lithium
     
-    # checkout and compile project
+    # /tmp directories
+    project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
+    lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
+
+    # checkout the project
     checkout_project(project, bug_number, project_dir)
 
-    # create tmp directories if necessary
-    os.makedirs(lithium_tmp, exist_ok=True)
-    os.makedirs(project_dir, exist_ok=True)
+    # update filepath path
+    java_file = os.path.join(project_dir, filepath)
+
+    logger.info("Minimizing {filepath}".format(filepath=java_file))
 
     # saves original file in log_dir
+    logger.info("Copying original file to {log_dir}".format(log_dir=log_dir))
     origin_filename = os.path.basename(java_file)
     origin_path = os.path.join(log_testcase_dir, origin_filename)
     copy(java_file, origin_path)
-    
+
     # remove comments in original file
     if remove_comments:
         uncomment_path = os.path.join(log_testcase_dir, "uncomment_" + origin_filename)
@@ -87,32 +104,49 @@ for java_file in classes:
     start_lithium = time.time()
     cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}"
     cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED=expected_message)
-    call(split(cmd_line), stderr=STDOUT)
     
+    logger.info("Running lithium for {filepath}".format(filepath=filepath))
+    call(split(cmd_line), stderr=STDOUT)
+    logger.info("Lithium was finished for {filepath}".format(filepath=filepath))
+
     # copy minimized file
+    logger.info("Copying minimized file to {log_dir}".format(log_dir=log_dir))
     minimized_filename = "lithium_" + os.path.basename(java_file)
     minimized_path = os.path.join(log_testcase_dir, minimized_filename)
     copy(java_file, minimized_path)
 
-    # append obj to data
-    obj = {}
-    obj["class"] = get_relative_path(project, java_file)
-    obj["loc"] = get_locs(origin_path, minimized_path)
-    data["slicer"].append(obj)
+    # update 
+    output_lithium["class"] = get_relative_path(project, java_file)
+    output_lithium["loc"] = get_locs(origin_path, minimized_path)
 
     est_time = int((time.time() - start_lithium)/60.0)
-    logger.info("The file {} was minimized in {} minutes".format(java_file, est_time))
+    logger.info("The file {filepath} was minimized in {time} minutes".format(filepath=java_file, time=est_time))
 
     # remove tmp directories
     rmtree(lithium_tmp, ignore_errors=True)
     rmtree(project_dir, ignore_errors=True)
 
+    return output_lithium
+
+with Pool(processes=cpu_count()) as pool:
+    # minimize all java classes in parallel
+    try:
+        result = pool.map(minimize_file, classes)
+    except Exception as e:
+        logger.error("{}".format(e.message))
+        raise Exception("Minimization was failed. \n{}".format(e))
+
+# append each minimized file with their locs
+for obj in result:
+    data["slicer"].append(obj)
+
 # generate slicer-testcase.json
 testcase_fmt = test_case.split("::")[-1]
 slicer_name = "slicer-{}.json".format(testcase_fmt)
-json_filename = os.path.join(log_testcase_dir, slicer_name)
-with open(json_filename, 'w') as doc:
-    json.dump(data, doc, indent=4)
+json_path = os.path.join(log_testcase_dir, slicer_name)
+
+# export data to a JSON file 
+create_json(json_path, data)
 
 total_time = int((time.time() - init_time)/60.0)
-logger.info("The testcase {} was finished in {} minutes".format(testcase_name, total_time))
+logger.info("The testcase {test_case} was finished in {time} minutes".format(test_case=testcase_name, time=total_time))
