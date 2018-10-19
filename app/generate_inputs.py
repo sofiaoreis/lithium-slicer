@@ -5,7 +5,7 @@ main = argparse.ArgumentParser()
 main.add_argument("--output", type=str, nargs=1, help="The output path to save the seed file")
 main.add_argument("--project", type=str, nargs=1, help="Project name")
 main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 corresponde to all
-main.add_argument("--files_per_bug", type=str, nargs=1, default="5", help="Max quantity of files per bug")
+main.add_argument("--files_per_bug", type=str, nargs=1, default="10", help="Max quantity of files per bug")
 
 
 args = main.parse_args()

@@ -16,8 +16,8 @@ BASEPATH=$(pwd)
 
 INPUTS="inputs-${PROJECT}_${BUG}" # data filename
 
-# generates a doc that contains info to run the projects
-gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug 5)
+# generates a document that contains the inputs to run the minimizer
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug 10)
 if [[ $gen_inputs == *"FAILED"* ]]; then
     exit 1;
 fi
