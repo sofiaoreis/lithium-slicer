@@ -12,7 +12,7 @@ interesting. The script that does that for us is compile-and-run
 (note the .sh extension), which just compiles the code and re-runs the
 test.
 '''
-runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} '{EXPECTED}'"
+runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} '{EXPECTED}' {SOURCE}"
 timeout_seconds = 60
 buggy_line = None
 debug = False # True to check output in console
@@ -25,9 +25,10 @@ def interesting(conditionArgs, prefix):
     project_dir = conditionArgs[0]
     testcase = conditionArgs[1]
     expected = conditionArgs[2]
-    source_file = conditionArgs[3] # not used yet
-    
-    cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected)
+    source_file = conditionArgs[3]
+
+    file_basename = os.path.basename(source_file).replace('.java', '')
+    cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected, SOURCE=file_basename)
     output = call_cmd(cmd_str) # call shell script
 
     is_interesting = "GOOD" in output

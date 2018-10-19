@@ -10,6 +10,7 @@
 PROJECTDIR=$1 #e.g. /tmp/Lang_1b/
 TESTCASE=$2 #e.g. org.jfree......Tests::test9999
 EXPECTED=$3 #e.g. junit.... expected <0> but was <1>
+SOURCE=$4 # e.g. Source name ClassA (without file extension) 
 
 ####################
 # run the test case
@@ -20,6 +21,6 @@ defects4j test -t $TESTCASE -w ${PROJECTDIR} 2>/dev/null
 # compare output message with expected message
 python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/failing_tests"
 
-# remove build directories
-rm -rf ${PROJECTDIR}/build
-rm -rf ${PROJECTDIR}/build-tests
+# remove only the SOURCE class (cost less on re-build)
+BUG_CLASS="$(find ${PROJECTDIR} -name $SOURCE.class)"
+rm $BUG_CLASS 2>/dev/null

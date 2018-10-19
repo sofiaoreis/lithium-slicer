@@ -25,10 +25,6 @@ expected_arg = args.expected_message[0:]
 base_path = os.getcwd()
 log_dir = os.path.join(base_path, 'logs', '{}_{}'.format(project, bug_number), '{}'.format(bug_number))
 
-# directories in /tmp
-project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
-lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
-
 # this 'b' char corresponds to buggy version
 bug_number += "b" 
 # converts "classes" argument to a list of classes
@@ -59,14 +55,15 @@ logger.addHandler(handler)
 
 # starting lithium-slicer
 logger.info("Started Lithium-Slicer")
-logger.info("Running testcase {test_case} from {project}-{bug}b".format(test_case=testcase_name, project=project, bug=bug_number))
+logger.info("Running testcase {test_case} from {project}-{bug}".format(test_case=testcase_name, project=project, bug=bug_number))
+logger.info("Files to minimize: {classes}".format(classes=[os.path.basename(_class) for _class in classes]))
 
 init_time = time.time()
 data = {"slicer":[]}
 
 def minimize_file(filepath):
     """ This method runs lithium on a java source code and returns an 
-        object that contains the file and the locs similar to original file
+        object that contains the filepath and the similar loc in the original file
 
         obj = {
             "class": ".../ClassA.java",
@@ -85,11 +82,11 @@ def minimize_file(filepath):
 
     # update filepath path
     java_file = os.path.join(project_dir, filepath)
+    filename = os.path.basename(java_file)
 
-    logger.info("Minimizing {filepath}".format(filepath=java_file))
+    logger.info("Minimizing {filename}".format(filename=filename))
 
     # saves original file in log_dir
-    logger.info("Copying original file to {log_dir}".format(log_dir=log_dir))
     origin_filename = os.path.basename(java_file)
     origin_path = os.path.join(log_testcase_dir, origin_filename)
     copy(java_file, origin_path)
@@ -101,30 +98,33 @@ def minimize_file(filepath):
         copy(uncomment_path, java_file) # overwrite original java class
 
     # run lithium
-    start_lithium = time.time()
-    cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}"
-    cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED=expected_message)
-    
-    logger.info("Running lithium for {filepath}".format(filepath=filepath))
-    call(split(cmd_line), stderr=STDOUT)
-    logger.info("Lithium was finished for {filepath}".format(filepath=filepath))
+    try:
+        start_lithium = time.time()
+        cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}"
+        cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED=expected_message)
+        
+        logger.info("Running lithium for {filename}".format(filename=filename))
+        call(split(cmd_line), stderr=STDOUT)
+        logger.info("Lithium was finished for {filename}".format(filename=filename))
 
-    # copy minimized file
-    logger.info("Copying minimized file to {log_dir}".format(log_dir=log_dir))
-    minimized_filename = "lithium_" + os.path.basename(java_file)
-    minimized_path = os.path.join(log_testcase_dir, minimized_filename)
-    copy(java_file, minimized_path)
+        # copy minimized file
+        logger.info("Copying minimized file to {log_dir}".format(log_dir=log_dir))
+        minimized_filename = "lithium_" + filename
+        minimized_path = os.path.join(log_testcase_dir, minimized_filename)
+        copy(java_file, minimized_path)
 
-    # update 
-    output_lithium["class"] = get_relative_path(project, java_file)
-    output_lithium["loc"] = get_locs(origin_path, minimized_path)
+        # update 
+        output_lithium["class"] = get_relative_path(project, java_file)
+        output_lithium["loc"] = get_locs(origin_path, minimized_path)
 
-    est_time = int((time.time() - start_lithium)/60.0)
-    logger.info("The file {filepath} was minimized in {time} minutes".format(filepath=java_file, time=est_time))
-
-    # remove tmp directories
-    rmtree(lithium_tmp, ignore_errors=True)
-    rmtree(project_dir, ignore_errors=True)
+        est_time = int((time.time() - start_lithium)/60.0)
+        logger.info("The file {filename} was minimized in {time} minutes".format(filename=filename, time=est_time))
+    except Exception as e:
+        raise Exception("Something happens {}".format(e))
+    finally:
+        # remove tmp directories
+        rmtree(lithium_tmp, ignore_errors=True)
+        rmtree(project_dir, ignore_errors=True)
 
     return output_lithium
 
