@@ -3,7 +3,6 @@ from shutil import copy, rmtree
 from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
 from utils import parse_comments, get_locs, get_relative_path, checkout_project, create_json
-from multiprocessing import Pool, cpu_count
 
 # args
 main = argparse.ArgumentParser()
@@ -128,17 +127,14 @@ def minimize_file(filepath):
 
     return output_lithium
 
-with Pool(processes=cpu_count()) as pool:
-    # minimize all java classes in parallel
+
+for _class in classes:
     try:
-        result = pool.map(minimize_file, classes)
+        result = minimize_file(_class)
+        data["slicer"].append(result)
     except Exception as e:
         logger.error("{}".format(e.message))
         raise Exception("Minimization was failed. \n{}".format(e))
-
-# append each minimized file with their locs
-for obj in result:
-    data["slicer"].append(obj)
 
 # generate slicer-testcase.json
 testcase_fmt = test_case.split("::")[-1]
