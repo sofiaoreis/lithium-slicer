@@ -15,7 +15,7 @@ test.
 runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} {EXPECTED} {SOURCE}"
 timeout_seconds = 120
 buggy_line = None
-debug = True # True to check output in console
+debug = False # True to check output in console
 
 def interesting(conditionArgs, prefix):
     """ This function check if the file is interesting to reduce """

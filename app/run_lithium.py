@@ -93,9 +93,9 @@ def minimize_file(filepath):
         logger.info("Removing comments for {filename}".format(filename=filename))
         uncomment_path = os.path.join(log_testcase_dir, "uncomment_" + origin_filename)
         bash_cmd = 'java -cp java-parser-comments-remover-1.0-SNAPSHOT-jar-with-dependencies.jar com.tqrg.cleaner.Cleaner ' + java_file + ' ' + uncomment_path
-        java_file = uncomment_path
         process = subprocess.Popen(bash_cmd.split(), stdout=subprocess.PIPE)
         output, error = process.communicate()
+        copy(uncomment_path, java_file)
         logger.info("Removing comments was finished for {filename}".format(filename=filename))
     
     # run lithium
@@ -112,13 +112,7 @@ def minimize_file(filepath):
         logger.info("Copying minimized file to {log_dir}".format(log_dir=log_dir))
         minimized_filename = "lithium_" + filename
         minimized_path = os.path.join(log_testcase_dir, minimized_filename)
-        print('log_testcase_dir', log_testcase_dir)
-        print('minimized_filename', minimized_filename)
-
-        exit()
         copy(java_file, minimized_path)
-
-        
 
         # update 
         output_lithium["class"] = get_relative_path(project, java_file)
@@ -127,7 +121,7 @@ def minimize_file(filepath):
         est_time = int((time.time() - start_lithium)/60.0)
         logger.info("The file {filename} was minimized in {time} minutes".format(filename=filename, time=est_time))
     except Exception as e:
-        raise Exception("Something happens {}".format(e))
+        raise Exception("Something happens {}".format(e.message))
     finally:
         # remove tmp directories
         rmtree(lithium_tmp, ignore_errors=True)
