@@ -42,8 +42,6 @@ def interesting(conditionArgs, prefix):
     if (buggy_line is None) and is_interesting:
         buggy_line = get_buggy_line(output)
     
-    print('buggy_line', buggy_line)
-    print('interesting return', is_interesting and (buggy_line in output))
     # double check comparison with buggy_line and expected/output message
     return is_interesting and (buggy_line in output)
 

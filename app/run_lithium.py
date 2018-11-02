@@ -4,6 +4,7 @@ import subprocess
 from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
 from utils import parse_comments, get_locs, get_relative_path, checkout_project, create_json
+import platform
 
 # args
 main = argparse.ArgumentParser()
@@ -92,12 +93,15 @@ def minimize_file(filepath):
     if remove_comments:
         logger.info("Removing comments for {filename}".format(filename=filename))
         uncomment_path = os.path.join(log_testcase_dir, "uncomment_" + origin_filename)
-        bash_cmd = 'java -cp java-parser-comments-remover-1.0-SNAPSHOT-jar-with-dependencies.jar com.tqrg.cleaner.Cleaner ' + java_file + ' ' + uncomment_path
+        if platform.system() == 'Darwin':
+            bash_cmd = '/usr/libexec/java_home -v 1.8 --exec java -cp java-parser-comments-remover-1.0-SNAPSHOT-jar-with-dependencies.jar com.tqrg.cleaner.Cleaner ' + java_file + ' ' + uncomment_path
+        elif platform.system() == 'Linux':
+            bash_cmd = '/usr/lib/jvm/java-8-oracle/bin/java -cp java-parser-comments-remover-1.0-SNAPSHOT-jar-with-dependencies.jar com.tqrg.cleaner.Cleaner ' + java_file + ' ' + uncomment_path
         process = subprocess.Popen(bash_cmd.split(), stdout=subprocess.PIPE)
         output, error = process.communicate()
         copy(uncomment_path, java_file)
         logger.info("Removing comments was finished for {filename}".format(filename=filename))
-    
+
     # run lithium
     try:
         start_lithium = time.time()
@@ -131,7 +135,6 @@ def minimize_file(filepath):
 
 
 for _class in classes:
-    print(_class)
     try:
         result = minimize_file(_class)
         data["slicer"].append(result)
