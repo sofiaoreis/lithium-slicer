@@ -51,6 +51,7 @@ def parse_comments(origin_file, output_path):
     with open(origin_file) as doc:
         origin = doc.read()
 
+    # where they remove comments
     output = remove_comments(origin)
 
     with open(output_path, "w") as doc:
@@ -120,12 +121,11 @@ def check_obj_comparison(expected_msg, output_msg):
     obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
     search_expected = re.search(obj_comparison_pattern, expected_msg)
     search_output = re.search(obj_comparison_pattern, output_msg)
-    
     if search_expected and search_output:
         expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
         output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
-        return (expected[0] == output[0]) and (expected[1] == output[1])
-        
+        print('UTILS.PY check_obj_comparison EXPECTED[0]', expected[0], 'OUTPUT[0]', output[0], 'EXPECTED[1]', expected[1], 'OUTPUT[1]', output[1])
+        return (expected[0] == output[0]) and (expected[1] == output[1])  
     return False
 
 def is_object_comparison(expected_msg):
@@ -139,4 +139,31 @@ def create_json(filename, data):
         json.dump(data, doc, indent=4)
     
     return os.path.isfile(filename)
+
+
+def get_testname_expected_msg(testname, expected):
+    test_found = False; res = []
+    for i in expected:
+        if testname in i and test_found:
+            test_found = False
+        if testname in i:
+            test_found = True
+        if test_found:
+            res.append(i)
+    return res
+
+def get_to_compare(stacktrace):
+    lines = []; ov_acm = 0
+    is_overflow = re.search(r'StackOverflowError', stacktrace[0])
+    for i in range(len(stacktrace)):
+        lines.append(stacktrace[i].strip())
+        buggy_line = stacktrace[i].strip()
+        if is_overflow:
+            if stacktrace[i] == stacktrace[i+1]:
+                ov_acm +=1
+            if ov_acm > 5:
+                break
+        if re.search(r'Tests.java',stacktrace[i]): 
+            break
+    return lines, buggy_line
     

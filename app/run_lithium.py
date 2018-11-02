@@ -1,5 +1,6 @@
 import os, logging, time, argparse, tempfile
 from shutil import copy, rmtree
+import subprocess
 from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
 from utils import parse_comments, get_locs, get_relative_path, checkout_project, create_json
@@ -10,7 +11,7 @@ main.add_argument("--project", nargs=1, type=str)
 main.add_argument("--bug_number", nargs=1, type=str)
 main.add_argument("--test_case", nargs=1, type=str)
 main.add_argument("--classes", nargs=1, type=str)
-main.add_argument("--expected_message", nargs='+', type=str)
+main.add_argument("--expected_msg_path", nargs=1, type=str)
 
 args = main.parse_args()
 
@@ -18,24 +19,21 @@ project = args.project[0]
 bug_number = args.bug_number[0]
 test_case = args.test_case[0]
 classes = args.classes[0]
-expected_arg = args.expected_message[0:]
+expected_msg_path = args.expected_msg_path[0]
 
 # temporary directories
 base_path = os.getcwd()
 log_dir = os.path.join(base_path, 'logs', '{}_{}'.format(project, bug_number), '{}'.format(bug_number))
-
 # this 'b' char corresponds to buggy version
 bug_number += "b" 
 # converts "classes" argument to a list of classes
 classes = classes.split(",")
-# converts expected_arg list to string
-expected_message = ' '.join(expected_arg)
 # renaming test case
-testcase_name = test_case.replace("::", "_").split(".")[-1]
+testcase_name = test_case.split(".")[-1].replace("::", ".")
 
 # if remove_comments == True, the comments/javadoc in original file are removed (otimization)
-#! FIX THIS: if true, the function (utils.get_loc) does not works as expected (empty array)
-remove_comments = False 
+# BUG @TODO: if true, the function (utils.get_loc) does not works as expected (empty array)
+remove_comments = True 
 
 # create log_testcase directory
 log_testcase_dir = os.path.join(log_dir, testcase_name)
@@ -69,7 +67,7 @@ def minimize_file(filepath):
             "loc": [1,50,52,54,...]
         }
     """    
-    global project, bug_number, test_case, expected_message
+    global project, bug_number, test_case, expected_msg_path
     output_lithium = {} # structute to store the output of lithium
     
     # /tmp directories
@@ -92,16 +90,20 @@ def minimize_file(filepath):
 
     # remove comments in original file
     if remove_comments:
+        logger.info("Removing comments for {filename}".format(filename=filename))
         uncomment_path = os.path.join(log_testcase_dir, "uncomment_" + origin_filename)
-        parse_comments(java_file, uncomment_path)
-        copy(uncomment_path, java_file) # overwrite original java class
-
+        bash_cmd = 'java -cp java-parser-comments-remover-1.0-SNAPSHOT-jar-with-dependencies.jar com.tqrg.cleaner.Cleaner ' + java_file + ' ' + uncomment_path
+        java_file = uncomment_path
+        process = subprocess.Popen(bash_cmd.split(), stdout=subprocess.PIPE)
+        output, error = process.communicate()
+        logger.info("Removing comments was finished for {filename}".format(filename=filename))
+    
     # run lithium
     try:
         start_lithium = time.time()
-        cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} '{EXPECTED}' {FILE}"
-        cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED=expected_message)
-        
+        cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} {EXPECTED_MSG_PATH} {FILE}"
+        cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED_MSG_PATH=expected_msg_path)
+
         logger.info("Running lithium for {filename}".format(filename=filename))
         call(split(cmd_line), stderr=STDOUT)
         logger.info("Lithium was finished for {filename}".format(filename=filename))
@@ -110,7 +112,13 @@ def minimize_file(filepath):
         logger.info("Copying minimized file to {log_dir}".format(log_dir=log_dir))
         minimized_filename = "lithium_" + filename
         minimized_path = os.path.join(log_testcase_dir, minimized_filename)
+        print('log_testcase_dir', log_testcase_dir)
+        print('minimized_filename', minimized_filename)
+
+        exit()
         copy(java_file, minimized_path)
+
+        
 
         # update 
         output_lithium["class"] = get_relative_path(project, java_file)
@@ -129,11 +137,12 @@ def minimize_file(filepath):
 
 
 for _class in classes:
+    print(_class)
     try:
         result = minimize_file(_class)
         data["slicer"].append(result)
     except Exception as e:
-        logger.error("{}".format(e.message))
+        logger.error("{}".format(e))
         raise Exception("Minimization was failed. \n{}".format(e))
 
 # generate slicer-testcase.json

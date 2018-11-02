@@ -19,8 +19,8 @@ defects4j compile -w ${PROJECTDIR} 2>/dev/null
 defects4j test -t $TESTCASE -w ${PROJECTDIR} 2>/dev/null
 
 # compare output message with expected message
-python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/failing_tests"
+python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/failing_tests" $TESTCASE
 
-# remove only the SOURCE class (cost less on re-build)
+# !! @OPTIMIZATION: remove only the SOURCE class (cost less on re-build)
 BUG_CLASS="$(find ${PROJECTDIR} -name $SOURCE.class)"
 rm $BUG_CLASS 2>/dev/null
