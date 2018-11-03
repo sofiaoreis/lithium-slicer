@@ -66,7 +66,7 @@ def diff_parser(origin_file, minimized_file):
     diff_ps = Popen(diff_args, stdout=PIPE, shell=False)
     grep_ps = Popen(grep_args, stdin=diff_ps.stdout, stdout=PIPE, shell=False)
     cut_ps = Popen(cut_args, stdin=grep_ps.stdout, stdout=PIPE, shell=False)
-
+    
     diff_output = cut_ps.communicate()[0].decode('utf-8')
     return diff_output
 
