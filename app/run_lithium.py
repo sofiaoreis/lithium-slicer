@@ -121,11 +121,7 @@ def minimize_file(filepath):
 
         # update 
         output_lithium["class"] = get_relative_path(project, java_file)
-<<<<<<< HEAD
-        output_lithium["loc"] = get_locs(uncomment_path, minimized_path)
-=======
         output_lithium["loc"] = get_locs(origin_path, minimized_path) if not remove_comments else get_locs(uncomment_path, minimized_path)
->>>>>>> bb8375a7335468a57fcfb9d70d058f438f29372e
 
         est_time = int((time.time() - start_lithium)/60.0)
         logger.info("The file {filename} was minimized in {time} minutes".format(filename=filename, time=est_time))
