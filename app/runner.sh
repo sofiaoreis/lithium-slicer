@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# check if defects4j is installed
 command -v defects4j >/dev/null 2>&1 || { echo >&2 "defects4j not found.  Aborting."; exit 1; }
 
 if [ -z "$1" ];then
@@ -17,7 +18,8 @@ BASEPATH=$(pwd)
 INPUTS="inputs-${PROJECT}_${BUG}" # data filename
 
 # generates a document that contains the inputs to run the minimizer
-gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug 10)
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug 5)
+echo $gen_inputs
 if [[ $gen_inputs == *"FAILED"* ]]; then
     exit 1;
 fi
@@ -26,14 +28,14 @@ while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
     TESTCASE=$(echo $line | cut -f3 -d " ")
     CLASSES=$(echo $line | cut -f4 -d " ")
-    EXPECTED_MSG=$(echo $line | cut -f2 -d "*")
-    
+    EXPECTED_MSG_PATH=$(echo $line | cut -f5 -d " ")
+
     # run defects4j and lithium
     python3 run_lithium.py --project $PROJECT \
     --bug_number $BUGNUMBER \
     --test_case $TESTCASE \
     --classes $CLASSES \
-    --expected_message $EXPECTED_MSG
+    --expected_msg_path $EXPECTED_MSG_PATH
 
 done < "$BASEPATH/$INPUTS"
 

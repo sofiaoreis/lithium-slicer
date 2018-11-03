@@ -82,21 +82,24 @@ def generate_seed(project, bugnumber, output):
                 classes = ",".join(classes) # converts [classA, classB] to classA,classB
             else:
                 classes = classes[0] # get only line
+            
+            expected_dir = 'expected/'+project_name+'/'
+            if not os.path.exists(expected_dir):
+                os.makedirs(expected_dir)
 
-            for fail in data["failing"]: # list of tests failing
-                testcase = fail["test"]
-                expected_msg = fail["error"]
-                if len(expected_msg) > 1:
-                    join_lines = ','.join([line.strip() for line in expected_msg])
-                    expected_msg = "*" + join_lines
-                else:
-                    # TODO: add better pattern
-                    # pattern to show the expected message begin(*)
-                    # (e.g. *junit.framework.AssertionFailedError: expected:<1> but was:<0>)
-                    expected_msg = "*" + expected_msg[0].strip()
+            expected_msg_path = expected_dir+bug_number
+            with open(expected_msg_path,"w+") as expected:
+                for fail in data["failing"]: # list of tests failing
+                    testcase = fail["test"]
+                    expected_msg = '\n'.join([line for line in fail["error"]])
+                    expected.write(
+                        "{}\n {}\n".format('--- ' + testcase, expected_msg)
+                    )
 
-                seed_file.write(
-                    "{} {} {} {} {}\n".format(project, bug_number, testcase, classes, expected_msg)
-                )
+                    seed_file.write(
+                        "{} {} {} {} {}\n".format(project, bug_number, testcase, classes, expected_msg_path)
+                    )
+
+            
 
 generate_seed(project_name, bugs, output)

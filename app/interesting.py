@@ -12,8 +12,8 @@ interesting. The script that does that for us is compile-and-run
 (note the .sh extension), which just compiles the code and re-runs the
 test.
 '''
-runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} '{EXPECTED}' {SOURCE}"
-timeout_seconds = 60
+runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} {EXPECTED} {SOURCE}"
+timeout_seconds = 120
 buggy_line = None
 debug = False # True to check output in console
 
@@ -30,12 +30,15 @@ def interesting(conditionArgs, prefix):
     file_basename = os.path.basename(source_file).replace('.java', '')
     cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected, SOURCE=file_basename)
     output = call_cmd(cmd_str) # call shell script
+    
+    if debug:
+        print('Output of calling runtest.sh', output)
 
     is_interesting = "GOOD" in output
 
     if debug:
-        print(output)
-
+        print('is_interesting=', is_interesting)
+    
     if (buggy_line is None) and is_interesting:
         buggy_line = get_buggy_line(output)
     
