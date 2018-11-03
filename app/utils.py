@@ -84,23 +84,28 @@ def parser(diff_output):
         if not is_line_valid(item):
             # skip lines that does not contains digit
             continue
-        elif ',' in item: # range 10,20
-            _range = item.split(',')
+
+        if 'c' in item: # (e.g. 1,5c3)
+            # removing 'c' char from item
+            c_index = item.index('c')
+            item = item[:c_index]
+
+        elif 'd' in item:# (e.g. 1,5d0)
+            # removing 'd' char from item
+            d_index = item.index('d')
+            item = item[:d_index]
+
+        if ',' in item:
+            _range = item.split(',') # range from N to M (e.g. 10,20)
             if len(_range)>2:
                 _range = _range[:2]
                 
-            if 'c' in _range[1]: # ignores 'c' char between range numbers
-                _range[1] = _range[1][:_range[1].index('c')]
-
             for line in range(int(_range[0]), int(_range[1]) + 1):
                 lines_removed.append(line) # 1 to MAX_SIZE
         else: # single line number
-            if 'c' in item and ',' not in item:
-                item = item.split('c')[0]
             lines_removed.append(int(item))
     return lines_removed
     
-
 def extract_locs(origin_file, lines_removed):
     origin_size = Popen('wc -l < {}'.format(origin_file), shell=True, stdout=PIPE)
     out = origin_size.communicate()[0].decode('utf-8')

@@ -35,6 +35,7 @@ testcase_name = test_case.split(".")[-1].replace("::", ".")
 # if remove_comments == True, the comments/javadoc in original file are removed (otimization)
 # BUG @TODO: if true, the function (utils.get_loc) does not works as expected (empty array)
 remove_comments = True 
+uncomment_path = None
 
 # create log_testcase directory
 log_testcase_dir = os.path.join(log_dir, testcase_name)
@@ -120,7 +121,7 @@ def minimize_file(filepath):
 
         # update 
         output_lithium["class"] = get_relative_path(project, java_file)
-        output_lithium["loc"] = get_locs(origin_path, minimized_path)
+        output_lithium["loc"] = get_locs(origin_path, minimized_path) if not remove_comments else get_locs(uncomment_path, minimized_path)
 
         est_time = int((time.time() - start_lithium)/60.0)
         logger.info("The file {filename} was minimized in {time} minutes".format(filename=filename, time=est_time))
