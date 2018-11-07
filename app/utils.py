@@ -168,7 +168,7 @@ def get_to_compare(stacktrace):
                 ov_acm +=1
             if ov_acm > 5:
                 break
-        if re.search(r'Tests.java',stacktrace[i]): 
+        if re.search(r'Test(.*).java',stacktrace[i]): 
             break
     return lines, buggy_line
     

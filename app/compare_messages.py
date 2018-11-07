@@ -41,5 +41,4 @@ if os.path.isfile(output_filepath):
         print("GOOD" if check_obj_comparison(expected_to_cmp, output_to_cmp) else "BAD")
     else:
         # should print GOOD or BAD in console
-        #print("expected: ", expected_to_cmp, "got: ", output_to_cmp)
         print("GOOD" if (expected_to_cmp == output_to_cmp) else "BAD")
