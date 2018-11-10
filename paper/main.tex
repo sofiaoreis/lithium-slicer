@@ -169,8 +169,11 @@ Text of abstract \ldots.
 \section{Introduction}
 
 %% PROBLEM MOTIVATION
-Statistical Fault Localization (\sfl{})~\cite{7390282} is a popular
-technique for automated software debugging.  It computes
+Automated debugging is very important.\Fix{...elaborate...}
+
+Statistical Fault Localization (\sfl{}) and Dynamic Slicing are
+popular complementary approaches proposed to automate debugging.
+\sfl{}~\cite{7390282} computes
 suspiciousness values associated with program entities (e.g., basic
 blocks) using coverage information of passing and failing test
 cases. \sfl{} produces a list of program entities ranked in
@@ -185,7 +188,10 @@ an increasingly popular technique that looks for likely fixes to
 likely buggy statements.  Tools like JAFF \cite{arcuri-2011}, Prophet
 \cite{long-rinard-2016}, SemFix \cite{nguyen-qi-roychoudhury-2013},
 and SPR \cite{long-rinard-2015} use \sfl{} to guide the search for
-likely fixes.
+likely fixes. Dynamic Slicing~\cite{Agrawal:1990:DPS:93542.93576} is another popular
+technique for automated debugging. It takes as input a failing test
+and produces on output a set of statements--the slice--that influence
+the evaluation of the fault-revealing assertion.
 
 %Recent \apr{} techniques use \sfl{} to guide
 %the search for repairs .
@@ -207,15 +213,10 @@ likely fixes.
 %% rank is not a practical evaluation metric
 %% \cite{ang-perez-van-deursen-rui-2017}.  \Fix{end here}
 
-\Fix{...too big of a jump...}
 
-Dynamic Slicing~\cite{Agrawal:1990:DPS:93542.93576} is another popular
-technique for automated debugging \Fix{is it popular? I would rather say that
-it is what best models developers thinking.}. It takes as input a failing test
-and produces on output a set of statements (the slice) that influences
-the evaluation of the fault-revealing assertion (the slice criterion).
+
 This paper reports the results of an empirical study to evaluate the
-impact of Dynamic Slicing (\ds{}) to improve \sfl{}.The intuition for
+impact of Dynamic Slicing (\ds{}) to improve \sfl{}. The intuition for
 the \comb{} combination is that several highly ranked statements,
 albeit covered by failing executions, may be unrelated to the
 fault. Prior work reported promising results in this combination
@@ -224,7 +225,7 @@ For example, Lei \etal{}~\cite{lei-mao-dai-wang-2012} reported a
 reduction of 78.3\% in \emph{effort}~\cite{7927959} to analyze
 rankings when using dynamic slicing in combination with \sfl{} versus
 plain \sfl{}. We found surprising that, despite these findings,
-reported nearly 5 years ago, no tool or client analysis use this
+reported nearly 5 years ago, no tool or client analyses use this
 combination today. One hypothesis to explain that observation is that
 results reported in prior work are not as good as it seems. Prior
 research evaluated \sfl{} using relative metrics, based on the
