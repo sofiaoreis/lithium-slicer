@@ -171,9 +171,9 @@ Text of abstract \ldots.
 %% PROBLEM MOTIVATION
 Automated debugging is very important.\Fix{...elaborate...}
 
-Statistical Fault Localization (\sfl{}) and Dynamic Slicing are
+Spectrum-Based Fault Localization (\sfl{}) and Dynamic Slicing are
 popular complementary approaches proposed to automate debugging.
-\sfl{}~\cite{7390282} computes
+\sfl{}~\cite{7390282} is a statistical debugging method that computes
 suspiciousness values associated with program entities (e.g., basic
 blocks) using coverage information of passing and failing test
 cases. \sfl{} produces a list of program entities ranked in
@@ -245,48 +245,76 @@ integration.
 
 \Fix{Mention the research questions at some point, plus contributions.}
 
-\section{Dynamic Slicing}
+\section{Background}
+\label{sec:background}
+
+This section presents important background material for the rest of the paper.
+
+\subsection{Critical Slicing}
 \label{sec:slicing}
+
+%% To select a slicer implementation to run our experiments, we
+%% considered two criteria: robustness as to support non-trivial programs
+%% and efficiency as to support execution of our experiments in
+%% reasonable time.  Unfortunately, we failed to find public
+%% implementations satisfying these criteria.
+%% For those reasons, we decided to implement a critical slicer for Java,
+%% which is the language of the subjects in our dataset, \dfj{}.
 
 Program slicing is a program understanding method to identify the
 relevant parts of the program with respect to given points of
-interest.  This paper focuses on dynamic slicing~--~as opposed to
-static slicing~\cite{Weiser:1981:PS:800078.802557}~--~for its
-application in automated software
-debugging~\cite{Binkley:2014:OLP:2635868.2635893}.  To select a slicer
-implementation to run our experiments, we considered two criteria:
-robustness as to support non-trivial programs and efficiency as to
-support execution of our experiments in reasonable time.
-Unfortunately, we failed to find public implementations satisfying
-these criteria.
-
-For those reasons, we decided to implement a critical slicer for Java,
-which is the language of the subjects in our dataset, \dfj{}. We
-focused on Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310} for
-its simplicity.\Comment{ In constrast with alternative slicing
+interest.  This paper focuses on dynamic slicing\Comment{~--~as
+  opposed to static slicing~\cite{Weiser:1981:PS:800078.802557}~--~}
+for its application in automated software
+debugging~\cite{Binkley:2014:OLP:2635868.2635893} where failing tests
+exist. We focused on Critical
+Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its
+simplicity/generality.\Comment{ In constrast with alternative slicing
   implementations based on dependency
   chains~\cite{Tip:1994:SPS:869354}\Comment{(\eg{},
     JSlice~\cite{Wang:2004:UCB:998675.999455} and
     JavaSlicer~\cite{hammacher-bachthesis-2008})},} Critical Slicing
 prescribes a black-box language-semantics-agnostic recipe to computing
-executable slices\footnote{In the original implementation, critical
-  slicing was not guaranteed to be executable.  Above we refer to the
-  basic strategy of deleting statement and checking outcomes.}.
-Critical Slicing slices the program by deleting statements such that
-the sliced program preserves critical observations (\eg{}, assertion
-violations).  The output we used to determine equivalence of the
-original failing execution and the sliced failing execution was the
-stack trace produced by the assertion violation.  It is important to
-note that Binkley \etal{} recently proposed the critical slicer
-ORBS~\cite{DBLP:conf/scam/BinkleyGHIKY15}, but its design sacrifies
-efficiency (important to run our experiments) for generality. Some of
-the slicing jobs we ran on ORBS took hours to run. For example,
-\Fix{...elaborate...}
+executable slices.  Critical Slicing minimizes the program by deleting
+statements such that the sliced program preserves critical
+observations (\eg{}, assertion violations). The simplification
+mechanism used in Critical Slicing is rather simple, consisting of
+mutating the program and observing the output.
 
-The principle of Critical Slicing is rather simple, consisting of
-mutating the program and observing the output. Despite that,
-optimizations are important to make a Critical Slicing implementation
-efficient. We describe the optimizations we used in the following.
+We used the Mozilla Lithium tool~\cite{lithium} as the implementation
+for Critical Slicing. Lithium is conceptually similar to the DD-min
+Delta Debugging algorithm~\cite{zeller-hildebrandt-tse2002}, but
+operates on code instead of test inputs. It takes as input a file and
+produces as output a simplified version of that file that satisfies a
+user-defined oracle. For dynamic slicing, the oracle is defined such
+that the test produces the same failure manifestation. The Lithium
+minimization process starts by determining the initial size of
+chunks---in number of lines---to delete from the input file. For that,
+it chooses the highest power of two number smaller than the file
+size. For example, if the file has 1,000 lines, Lithium sets the
+initial chunk size to 512 lines. Then, the tool starts a local search
+looking for chunks to remove from the file that satisfy the
+oracle. When no more chunks of that given size can be removed, Lithium
+divides the chunk size by two and repeats the search. This iterative
+process continues until no more line can be removed.  If $n$ is the
+size of the input file and $m$ is the size of the 1-minimal file found
+by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
+iterations. Proofs can be found elsewhere~\cite{lithium-complexity}.
+
+%% Despite that, optimizations are important to
+%% make a Critical Slicing implementation efficient. We describe the
+%% optimizations we used in the following.
+
+%% The output we used to determine equivalence of the original failing
+%% execution and the sliced failing execution was the stack trace
+%% produced by the assertion violation.  It is important to note that
+%% Binkley \etal{} recently proposed the critical slicer
+%% ORBS~\cite{DBLP:conf/scam/BinkleyGHIKY15}, but its design sacrifies
+%% efficiency (important to run our experiments) for generality. Some of
+%% the slicing jobs we ran on ORBS took hours to run. For example,
+%% \Fix{...elaborate...}
+
+
 
 %% \vspace{1ex}\noindent\textbf{Blackbox slicing.} Removing statements
 %% from the program is necessary to discover whether it is essential
@@ -298,18 +326,18 @@ efficient. We describe the optimizations we used in the following.
 %% (\ie{}, passing tests), and thus, we guarantee that the test has
 %% executing code by not instrumenting test classes and test methods.
 
-\vspace{1ex}\noindent\textbf{Single compilation.}  Recompilation is a
-major cost associated with critical
-slicing~\cite{DBLP:conf/scam/BinkleyGHIKY15}. For example, \Fix{...\%
-  of time in a slicing job from ORBS is due to compilation}. For that reason, our slicer uses a
-program schemata where every statement in function bodies is guarded
-by a branch predicate to control its activation. The slicer
-re-executes the program with different guard configurations, recording
-the smallest slice found. It uses a local search to find the smallest
-slice for a given time budget. A slice is encoded as a list of flags,
-each indicating whether or not a given guard is active. The initial
-configuration of a slicing job has the flags set for all statements
-covered by a given test.
+%% \vspace{1ex}\noindent\textbf{Single compilation.}  Recompilation is a
+%% major cost associated with critical
+%% slicing~\cite{DBLP:conf/scam/BinkleyGHIKY15}. For example, \Fix{...\%
+%%   of time in a slicing job from ORBS is due to compilation}. For that reason, our slicer uses a
+%% program schemata where every statement in function bodies is guarded
+%% by a branch predicate to control its activation. The slicer
+%% re-executes the program with different guard configurations, recording
+%% the smallest slice found. It uses a local search to find the smallest
+%% slice for a given time budget. A slice is encoded as a list of flags,
+%% each indicating whether or not a given guard is active. The initial
+%% configuration of a slicing job has the flags set for all statements
+%% covered by a given test.
 
 %% \vspace{1ex}\noindent\textbf{Structure Awareness.}
 %% ORBS is language-agnostic; it removes text from files but it does not
@@ -323,34 +351,30 @@ covered by a given test.
 %% it does not make sense to include statement $b$ in the slice and not
 %% including statement $a$.
 
-\vspace{1ex}\noindent\textbf{Clean state execution.} Re-execution of a
-given test is necessary in Critical Slicing. However, test
-re-execution may introduce flakiness due to side-effects in data
-reachable from static fields. One alternative to address this problem
-is to run each test in a separate JVM. Unfortunately, that alternative
-is prohibitively slow. For that, we ran the slicing job in a single
-JVM, using a test runner that is able to clean the static area of the
-JVM as follows. At every re-execution of the critical slicer, the test
-runner creates a new instance of a custom class loader, child of the
-original JVM class loader.  Before loading a class, the custom class
-loader checks in a cache whether or not the bytecodes were already
-loaded. If not, the class file is loaded from disk and the bytecodes
-are stored in the cache for future access. If the bytecodes were
-previously loaded, the slicer avoids disk access by reading the data
-directly from the cache.  To sum, the use of a new class loader
-enables the slicer to ``reset'' the state prior to a new execution of
-the same test~---~the objects accessible from the static area become
-unreachable when the class loader is disposed at the end of an
-execution.
+%% \vspace{1ex}\noindent\textbf{Clean state execution.} Re-execution of a
+%% given test is necessary in Critical Slicing. However, test
+%% re-execution may introduce flakiness due to side-effects in data
+%% reachable from static fields. One alternative to address this problem
+%% is to run each test in a separate JVM. Unfortunately, that alternative
+%% is prohibitively slow. For that, we ran the slicing job in a single
+%% JVM, using a test runner that is able to clean the static area of the
+%% JVM as follows. At every re-execution of the critical slicer, the test
+%% runner creates a new instance of a custom class loader, child of the
+%% original JVM class loader.  Before loading a class, the custom class
+%% loader checks in a cache whether or not the bytecodes were already
+%% loaded. If not, the class file is loaded from disk and the bytecodes
+%% are stored in the cache for future access. If the bytecodes were
+%% previously loaded, the slicer avoids disk access by reading the data
+%% directly from the cache.  To sum, the use of a new class loader
+%% enables the slicer to ``reset'' the state prior to a new execution of
+%% the same test~---~the objects accessible from the static area become
+%% unreachable when the class loader is disposed at the end of an
+%% execution.
 
-\vspace{1ex}
-Our implementation is publicly available under the following link (not
-anonymized): \oururl{}.
 
-\section{\sfl}
+
+\subsection{Spectrum-based Fault Localization}
 \label{sec:sfl}
-
-\Mar{borrowed from our ICST17 paper. needs to }
 
 Spectrum-based fault localization is an approach to pinpointing bugs
 in software programs~\cite{FLSurvey2016, DBLP:conf/kbse/JonesH05,
