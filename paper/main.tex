@@ -376,11 +376,13 @@ iterations. Proofs can be found elsewhere~\cite{lithium-complexity}.
 \subsection{Spectrum-based Fault Localization}
 \label{sec:sfl}
 
-Spectrum-based fault localization is an approach to pinpointing bugs
-in software programs~\cite{FLSurvey2016, DBLP:conf/kbse/JonesH05,
-  DBLP:journals/smr/LuciaLJTB14, DBLP:journals/jss/AbreuZGG09}.  In
-spectrum-based fault localization, the following is given: a finite
-set $\mathcal{C} = \set{c_1,c_2,...,c_M}$ of $M$ system
+Spectrum-based fault localization (\sfl) is a statistical fault
+localization technique that takes as input a test suite including at
+least one failing test and reports on output a ranked list of
+components likely to be in fault~\cite{FLSurvey2016,
+  DBLP:conf/kbse/JonesH05, DBLP:journals/smr/LuciaLJTB14,
+  DBLP:journals/jss/AbreuZGG09}. The following are given in \sfl{}: a
+finite set $\mathcal{C} = \set{c_1,c_2,...,c_M}$ of $M$ system
 \emph{components}\footnote{A component can be any source code artifact
   of arbitrary granularity such as a class, a method, a statement, or
   a branch~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; a finite set
@@ -388,49 +390,54 @@ $\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
 which correspond to records of a system execution, such as test cases;
 the error vector $e = \set{e_1,e_2,...,e_N}$, where $e_i = 1$ if
 transaction $t_i$ has failed and $e_i = 0$ otherwise; and an $N \times
-M$ coverage matrix $\mathcal{A}$, where $\A{ij}$ denotes the
-coverage of component $c_j$ in transaction $t_i$.
-The pair $(\mathcal{A},e)$ is commonly referred to as
-spectrum~\cite{DBLP:journals/stvr/HarroldRSWY00}, and is depicted in~\cite{fig:spectrum-example}.
-Several types of spectra exist.
-The most commonly used is called hit-spectrum, where the coverage matrix is encoded in terms of
-binary \emph{hit} (1) and \emph{not hit} (0) flags, i.e.,
-$\A{ij} = 1$ if $c_j$ is involved in $t_i$ and $\A{ij} = 0$
-otherwise.
-
-\begin{figure}[h!]
-    \centering
-    \begin{tabular}{c|cccc|c}
-      $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
-      $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
-      $t_2$         & $\A{21}$ & $\A{22}$ & $\cdots$ & $\A{2M}$ & $e_2$  \\
-      \vdots        & \vdots   & \vdots   & $\ddots$ & \vdots   & \vdots \\
-      $t_N$         & $\A{N1}$ & $\A{N2}$ & $\cdots$ & $\A{NM}$ & $e_N$  \\
-    \end{tabular}
-    \caption{An example spectrum.}
-    \label{fig:spectrum-example}
-\end{figure}
-
-The pair $(\mathcal{A},e)$ serves as input to the fault localization technique.
-With this input, the next step in this coverage-based technique consists of determining what columns
-of the matrix $A$ resemble the error vector $e$ the most.
-For that, an intermediate component frequency aggregator is computed:
+M$ coverage matrix $\mathcal{A}$, where $\A{ij}$ denotes the coverage
+of component $c_j$ in transaction $t_i$.  The pair $(\mathcal{A},e)$
+is commonly referred to as
+spectrum~\cite{DBLP:journals/stvr/HarroldRSWY00}. Figure~\ref{fig:spectrum-example}
+shows an example spectrum.
+\begin{wrapfigure}[8]{r}{0.29\textwidth}
+  \vspace{-2ex}
+  \hspace{-3ex}
+  \centering
+  \small
+  \begin{tabular}{c|cccc|c}
+    $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
+    $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
+    $t_2$         & $\A{21}$ & $\A{22}$ & $\cdots$ & $\A{2M}$ & $e_2$  \\
+    \vdots        & \vdots   & \vdots   & $\ddots$ & \vdots   & \vdots \\
+    $t_N$         & $\A{N1}$ & $\A{N2}$ & $\cdots$ & $\A{NM}$ & $e_N$  \\
+  \end{tabular}
+  \caption{An example spectrum.}
+  \label{fig:spectrum-example}
+\end{wrapfigure}
+Several types of spectra exist.  The most commonly used is called
+hit-spectrum, where the coverage matrix is encoded in terms of binary
+\emph{hit} (1) and \emph{not hit} (0) flags, \ie{}, $\A{ij} = 1$ if
+$t_i$ covers $c_j$ and $\A{ij} = 0$ otherwise.  The pair
+$(\mathcal{A},e)$ serves as input to the fault localization technique.
+With this input, the next step in this coverage-based technique
+consists of determining what columns of the matrix $A$ resemble the
+error vector $e$ the most.  For that, an intermediate component
+frequency aggregator $n_{pq}(j)$ is computed:
 %
 \begin{equation}\label{eq:occurrence}
  n_{pq}(j) = |\{i\mid \A{ij}=p \wedge e_i=q\}|
 \end{equation}
 %
-\noindent where $n_{pq}(j)$ is the number of runs in which the
+%\noindent
+$n_{pq}(j)$ denotes the number of runs in which the
 component $j$ has been active during execution ($p = 1$) or not
 ($p=0$), and in which the runs failed ($q = 1$) or passed ($q = 0$).
 For instance, $n_{11}(j)$ counts the number of times component $j$ has
 been involved ($p = 1$) in failing executions ($q = 1$), whereas
 $n_{10}(j)$ counts the number of times component $j$ has been involved
-in passing executions.
+in passing executions. We then calculate similarity to the error
+vector by means of applying \emph{fault predictors} to each component
+to produce a score quantifying how likely it is to be faulty.
+Components are then ranked according to such likelihood scores and
+reported to the user. \Fix{show ochiai here...}
 
-We then calculate similarity to the error vector by means of applying \emph{fault predictors} to
-each component to produce a score quantifying how likely it is to be faulty.
-Components are then ranked according to such likelihood scores and reported to the user.
+\Mar{----------------------- estou aqui}
 
 \section{Dynamic Slicing + \sfl{}}
 \label{sec:combination}
