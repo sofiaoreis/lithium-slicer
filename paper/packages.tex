@@ -1,0 +1,115 @@
+%% paragraphs within margins
+\usepackage[english]{babel}
+\setlength{\emergencystretch}{2pt}
+
+% Math notation
+\RequirePackage[group-separator={,}]{siunitx}
+\newcommand{\na}{$\mathrm{N.A.}$}
+\newcommand{\minus}{\scalebox{0.7}[1.0]{$-$}}
+\newcommand{\expn}[1]{\!\!\times\!\!10^{\minus#1}}
+\newcommand{\pval}[2]{$p\textrm{-value} = #1\expn{#2}$}
+\newcommand{\set}[1]{\{{}#1\}}
+\newcommand{\A}[1]{\mathcal{A}_{#1}}
+\newcommand{\N}[1]{n_{#1}(j)}
+
+%%%%%%%%%%% packages
+\usepackage{caption}
+\captionsetup{font={small}}
+%\usepackage{cite}
+%\usepackage{subfigure}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{colortbl}
+\usepackage{amsmath} 
+\usepackage{mathpartir}
+\usepackage{fancyvrb}\fvset{fontsize=\small}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{balance}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{amssymb}
+%\usepackage{amsfonts}
+%%%%%%%%%%%%%%%%%%% this can reduce space quite a lot
+\usepackage{soul}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{dsfont}
+%%%%%%%%%%%%%%%%%%% this can reduce space quite a lot
+\usepackage{relsize}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{marvosym} 
+\usepackage{framed}
+\usepackage{mdwlist}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+%% \usetikzlibrary{matrix,fit,shapes,calc,positioning,shadows,arrows,shapes,backgrounds,decorations.markings,fadings}
+%% \tikzset{
+%%     %Define standard arrow tip
+%%     >=stealth',
+%%     %Define style for boxes
+%%     punkt/.style={
+%%            rectangle,
+%%            rounded corners,
+%%            draw=black, very thick,
+%%            text width=6.5em,
+%%            minimum height=2em,
+%%            text centered},
+%%     % Define arrow style
+%%     pil/.style={
+%%            ->,
+%%            thick,
+%%            shorten <=2pt,
+%%            shorten >=2pt,},
+%%     % call out
+%%     notice/.style  = { draw, rectangle callout, callout relative pointer={#1} }
+%% }
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage{color}
+
+%% Colors
+\definecolor{bgBlock}{rgb}{0.22,0.15,0.49}
+\definecolor{bgBlockAlert}{rgb}{0.99,0.84,0.31}
+\definecolor{fgBlockAlert}{rgb}{0.22,0.15,0.49}
+\definecolor{fgBlock}{rgb}{0.99,0.84,0.31}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{Gray}{gray}{0.9}
+%\usepackage[bookmarks=false]{hyperref}
+%% \hypersetup{colorlinks,
+%%   linkcolor=darkblue,
+%%   filecolor=darkgreen,
+%%   urlcolor=darkred,
+%%   citecolor=darkblue }
+
+
+
+%%%%%%%%%%%%% code listing
+\renewcommand{\ttdefault}{pcr}
+\lstset{
+  basicstyle=\scriptsize\ttfamily,
+  keywordstyle=\scriptsize\ttfamily\bfseries,
+  language=Java,             % choose the language of the code
+  frame=single,              % adds a frame around the code
+  aboveskip=0pt,
+  belowskip=0pt,
+  breaklines=true,           % sets automatic line breaking
+  breakatwhitespace=false,   % sets if automatic breaks should only happen at
+  showspaces=false,
+  %numbersep=5pt,              % Abstand der Nummern zum Text
+  %tabsize=2,                  % Groesse von Tabs
+  %extendedchars=true,         %
+  %breaklines=true,            % Zeilen werden Umgebrochen
+  keywords=[2]{class, incorporateUserFeedback, testPushPop, testPopPush},
+}
