@@ -418,39 +418,36 @@ $(\mathcal{A},e)$ serves as input to the fault localization technique.
 With this input, the next step in this coverage-based technique
 consists of determining what columns of the matrix $A$ resemble the
 error vector $e$ the most.  For that, an intermediate component
-frequency aggregator $n_{pq}(j)$ is computed:
-%
-\begin{equation}\label{eq:occurrence}
- n_{pq}(j) = |\{i\mid \A{ij}=p \wedge e_i=q\}|
-\end{equation}
-%
-%\noindent
-$n_{pq}(j)$ denotes the number of runs in which the
-component $j$ has been active during execution ($p = 1$) or not
-($p=0$), and in which the runs failed ($q = 1$) or passed ($q = 0$).
-For instance, $n_{11}(j)$ counts the number of times component $j$ has
-been involved ($p = 1$) in failing executions ($q = 1$), whereas
-$n_{10}(j)$ counts the number of times component $j$ has been involved
-in passing executions. We then calculate similarity to the error
-vector by means of applying \emph{fault predictors} to each component
-to produce a score quantifying how likely it is to be faulty.
-Components are then ranked according to such likelihood scores and
-reported to the user. \Fix{show ochiai here...}
+frequency aggregator $n_{pq}(j)$ is computed $n_{pq}(j) = |\{i\mid
+\A{ij}=p \wedge e_i=q\}|$. $n_{pq}(j)$ denotes the number of runs in
+which the component $j$ has been active during execution ($p = 1$) or
+not ($p=0$), and in which the runs failed ($q = 1$) or passed ($q =
+0$).  For instance, $n_{11}(j)$ counts the number of times component
+$j$ has been involved ($p = 1$) in failing executions ($q = 1$),
+whereas $n_{10}(j)$ counts the number of times component $j$ has been
+involved in passing executions. We then calculate similarity to the
+error vector by means of applying \emph{fault predictors} to each
+component to produce a score quantifying how likely it is to be
+faulty.  Components are then ranked according to such likelihood
+scores and reported to the user. Ochiai is one of those fault
+predictors that has shown to perform well~\Fix{cite}. The Ochiai
+formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
+$\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10})}$.
 
-\Mar{----------------------- estou aqui}
-
-\section{Dynamic Slicing + \sfl{}}
+\section{Critical Slicing + \sfl{}}
 \label{sec:combination}
 
-The methodology we used to combine dynamic slicing with \sfl{}
-consists of the following steps: (1) Compute the execution spectra as
-discussed in Section~\ref{sec:sfl}, (2) Compute slices associated with
+The combinination of critical slicing and \sfl{} consists of the
+following steps: (1) Compute the execution spectra as discussed in
+Section~\ref{sec:sfl}, (2) Compute slices associated with failing
 tests, (3) Adjust the spectra computed in Step 1 with results obtained
 in Step 2, and (4) Compute suspiciousness
-scores. Figure~\ref{fig:illustration} illustrates the process of
-updating the spectra and suspiciousness ranking as result of slicing
-the program against the failing test $t_2$.  The faulty statement in
-this example is the component $c_2$.
+scores. Figure~\ref{fig:illustration} illustrates the update of the
+spectra and suspiciousness rankings as result of slicing the program
+against the failing test $t_2$. The faulty statement in this example
+is the component $c_2$.  The slice obtained from $t_2$ is $\{c_2,
+c_5\}$.  Intuitively, slicing enables identification of cells in the
+matrix (/spectra) whose values can be set to zero.
 
 %% \begin{enumerate}
 %% \item\label{step-spectra} Compute the execution spectra.
@@ -461,76 +458,76 @@ this example is the component $c_2$.
 %% %\item {[optional]} Filter statements covered by selected failing tests.
 %% \end{enumerate}
 
-\begin{figure}[h!]
+\begin{figure}[t!]
   \centering
-{\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
-   \begin{tabular}{c|ccccc|c}
-     $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
-     $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
-     $t_2$         & 0 & 1 & 1 & 1 & 1 &\xmark  \\
-     $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
-     $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
-     $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark \\
-     \hline
-   \end{tabular}
-   \quad
-   $\Rightarrow$
-   \quad
-   \begin{tabular}{c|ccccc|c}
-     $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
-     $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
-     $t_2$         & 0 & 1 & {\cellcolor{Gray} 0} & {\cellcolor{Gray} 0} & 1 &\xmark  \\
-     $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
-     $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
-     $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark  \\
-     \hline
-   \end{tabular}
+  \begin{subfigure}{0.5\textwidth}  
+    {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
+      \begin{tabular}{c|ccccc|c}
+        $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
+        $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
+        $t_2$         & 0 & 1 & 1 & 1 & 1 &\xmark  \\
+        $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
+        $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
+        $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark \\
+        \hline
+      \end{tabular}
+      \quad
+      $\Rightarrow$
+      \quad
+      \begin{tabular}{c|ccccc|c}
+        $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
+        $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
+        $t_2$         & 0 & 1 & {\cellcolor{Gray} 0} & {\cellcolor{Gray} 0} & 1 &\xmark  \\
+        $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
+        $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
+        $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark  \\
+        \hline
+      \end{tabular}
+    }
+    \caption{Spectra update.}
+  \end{subfigure}
 
-   \vspace{3ex}
-
-   \begin{tabular}{cccccc}
-     & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$  \\
-     & 0.32 & 0.35 & 0.55 & 0.59 & 0.32 \\
-   \end{tabular}
-   \quad
-   $\Rightarrow$
-   \quad
-   \begin{tabular}{cccccc}
-     & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$  \\
-     & 0.32 & 0.35 & {\cellcolor{Gray}0.29} & {\cellcolor{Gray}0.32} & 0.32 \\
-   \end{tabular}
-
- }
-\caption{Illustration of spectra and ranking update.}
-\label{fig:illustration}
+  \vspace{2ex}
+  
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \begin{tabular}{cccccc}
+      1 & $c_4$ (0.59) & & 1 & $c_2$ (0.35) \\
+      2 & $c_3$ (0.55) & & 2.5 & $c_1$ (0.32)\\
+      3 & $c_2$ (0.35) & \hspace{1ex}$\Rightarrow$\hspace{1ex} & 2.5 & $c_5$ (0.32)\\
+      4.5 & $c_1$ (0.32) & & 4 & $c_3$ (0.29)\\
+      4.5 & $c_5$ (0.32) & & 5 & $c_3$ (0.24)\\
+    \end{tabular}
+    \caption{Ranking update.}
+  \end{subfigure}  
+  
+  \caption{Modifications on spectra and ranking as result of slicing code against test $t_2$.}
+  \label{fig:illustration}
 \end{figure}
 
-The slice obtained from $t_2$ is $\{c_2, c_5\}$.  Intuitively, slicing
-enables identification of cells in the matrix (/spectra) whose values
-can be set to zero. In general, updates in the matrix results in an
-increase of suspiciousness for a given component when the target test
-is passing or a reduction of suspiciousness when the target test is
-failing. Consider the Ochiai formula~\cite{DBLP:conf/prdc/AbreuZG06}
+%% In general, updates in the matrix results in an increase of
+%% suspiciousness for a given component when the target test is passing
+%% or a reduction of suspiciousness when the target test is failing.
 
-\[
-\frac{\N{11}}{\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10}}}
-\vspace{1ex}\], where $n_{pq}(j)$ is the number of runs in which the
-component $j$ has been active during execution ($p = 1$) or not
-($p=0$), and in which the runs failed ($q = 1$) or passed ($q = 0$).
-Slicing of a failing test reduces the value of $\N{11}$ and increases
-the value of $\N{01}$ for those statements $j$ which are not part of
-the slice. Therefore, suspiciosness of those statements decrease. In
-this example, components $c_3$ and $c_4$, which are not in the slice
-of $t_2$, have their suspiciousness reduced, enabling the faulty
-component $c_2$ to rise from the third to the first position in the
-ranking.
+\begin{theorem}
+  The rank of faulty statements cannot decrease if the slice includes
+  the faulty statements.
+\end{theorem}  
 
+For those statements $j$ which are not part of the slice of a failing
+test, the combination reduces the value of $\N{11}$ and increases the
+value of $\N{01}$. Therefore, suspiciosness of those statements
+decrease. In this example, components $c_3$ and $c_4$, which are not
+in the slice of $t_2$, have their suspiciousness reduced, enabling the
+faulty component $c_2$ to rise from the third to the first position in
+the ranking. \Mar{what about other formula?}
 
-\Fix{I suggest to add an algorithm section and perhaps a discussion on
-time/space complexity.}
+\Mar{think of another theorem...}
 
 \section{Evaluation}
 \label{sec:eval}
+
+\Mar{-------------------- estou aqui}
 
 This section reports results of our study to assess the impact of the
 \comb{} combination.
