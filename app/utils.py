@@ -19,21 +19,27 @@ def checkout_project(project, bug_number, project_dir):
     call(cmd, stderr=STDOUT)
 
 
-def get_relative_path(project, class_name):
+def get_relative_path(project, class_name, bug_number):
     """ get the path inside the project directory """
     paths = {
         "Chart": "source",
         "Closure": "src",
         "Lang": "src/java",
+        "Lang2": "src/main/java",
         "Math": "src/main/java",
+        "Math2": "src/java",
         "Mockito": "src",
         "Time": "src/main/java"
     }
 
-    project_path = paths[project]
+    if project == 'Lang' and int(bug_number) < 36:
+        project_path = paths[project+'2']
+    elif project == 'Math' and int(bug_number) > 84:
+        project_path = paths[project+'2']
+    else:
+        project_path = paths[project]
     path = "{}/".format(project_path)
     index = class_name.index(path) + len(path)
-    
     class_name = class_name[index:]
 
     return class_name
@@ -129,7 +135,6 @@ def check_obj_comparison(expected_msg, output_msg):
     if search_expected and search_output:
         expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
         output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
-        print('UTILS.PY check_obj_comparison EXPECTED[0]', expected[0], 'OUTPUT[0]', output[0], 'EXPECTED[1]', expected[1], 'OUTPUT[1]', output[1])
         return (expected[0] == output[0]) and (expected[1] == output[1])  
     return False
 

@@ -120,7 +120,7 @@ def minimize_file(filepath):
         copy(java_file, minimized_path)
 
         # update 
-        output_lithium["class"] = get_relative_path(project, java_file)
+        output_lithium["class"] = get_relative_path(project, java_file, args.bug_number[0])
         output_lithium["loc"] = get_locs(origin_path, minimized_path) if not remove_comments else get_locs(uncomment_path, minimized_path)
 
         est_time = int((time.time() - start_lithium)/60.0)

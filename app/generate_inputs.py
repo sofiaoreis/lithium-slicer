@@ -30,7 +30,9 @@ def get_source_path(project_name):
         "Chart": "source",
         "Closure": "src",
         "Lang": "src/java",
+        "Lang2": "src/main/java",
         "Math": "src/main/java",
+        "Math2": "src/java",
         "Mockito": "src",
         "Time": "src/main/java"
     }
@@ -50,8 +52,13 @@ def generate_seed(project, bugnumber, output):
         print("FAILED") # should print to stop the main script
         raise Exception("Project {} directory not found".format(project_path))
     
-    source_path = get_source_path(project)
-    
+    if project == 'Lang' and int(bugnumber) < 36:
+        source_path = get_source_path(project+'2')
+    elif project == 'Math' and int(bugnumber) > 84:
+        source_path = get_source_path(project+'2')
+    else:
+        source_path = get_source_path(project)
+
     # get only bugs choosen by user
     bugnumber = bugnumber.split(",")
     
@@ -65,7 +72,7 @@ def generate_seed(project, bugnumber, output):
         bugnumbers = os.listdir(project_path)
     else:
         bugnumbers = [doc for doc in os.listdir(project_path) if doc in bugnumbers]
-
+    
     with open(output, "w") as seed_file:
         for bug in bugnumbers:
             data = json_to_dict(os.path.join(project_path, bug))
