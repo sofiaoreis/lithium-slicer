@@ -57,7 +57,7 @@
 \begin{document}
 
 %% Title information
-\title{The Impact of Critical Slicing in SFL\Comment{tatistical Fault Localization}}         %% [Short Title] is optional;
+\title{Reassessing the Impact of Dynamic Slicing in SFL}         %% [Short Title] is optional;
                                         %% when present, will be used in
                                         %% header instead of Full Title.
 %\titlenote{with title note}             %% \titlenote is optional;
@@ -169,29 +169,34 @@ Text of abstract \ldots.
 \section{Introduction}
 
 %% PROBLEM MOTIVATION
-Automated debugging is very important.\Fix{...elaborate...}
-
-Spectrum-Based Fault Localization (\sfl{}) and Dynamic Slicing are
-popular complementary approaches proposed to automate debugging.
-\sfl{}~\cite{7390282} is a statistical debugging method that computes
-suspiciousness values associated with program entities (e.g., basic
-blocks) using coverage information of passing and failing test
-cases. \sfl{} produces a list of program entities ranked in
-decreasing order of suspiciousness.  \sfl{} received tremendous
-attention over the years, but its applicability to support debugging
-remains
+Software debugging is difficult. The task of locating the faulty code
+(\ie{}, fault localization) is particularly challenging. For that
+reason, countless automated techniques have been proposed in the past
+to reduce cost of fault localization. Among those are Dynamic Slicing
+(\ds{}) and Spectrum-Based Fault Localization (\sfl{}). Dynamic
+Slicing~\cite{Agrawal:1990:DPS:93542.93576} takes as input a failing
+test and produces on output a set of statements that influence the
+evaluation of the fault-revealing assertion.  Although the technique
+has been intensively explored, few slicing applications became
+popular---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
+exception.  \sfl{}~\cite{7390282} is another popular automated
+debugging technique. It is a statistical fault localization method
+that computes suspiciousness values associated with program entities
+(e.g., basic blocks) using coverage information of passing and failing
+test cases. \sfl{} produces a list of program entities ranked in
+decreasing order of suspiciousness.  Likewise dynamic slicing, \sfl{}
+received tremendous attention over the years, but its applicability to
+support debugging remains
 questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
-Despite the skepticism of the research community, \sfl{} has been shown
-useful in supporting downstream analyses, such as Automated Program Repair
+Despite the skepticism of the research community, \sfl{} has been
+shown useful in supporting downstream analyses, such as Automated
+Program Repair
 (\apr{})~\cite{automatic-software-repair-survey2017,kim-etal-daghstul2017},
 an increasingly popular technique that looks for likely fixes to
 likely buggy statements.  Tools like JAFF \cite{arcuri-2011}, Prophet
 \cite{long-rinard-2016}, SemFix \cite{nguyen-qi-roychoudhury-2013},
 and SPR \cite{long-rinard-2015} use \sfl{} to guide the search for
-likely fixes. Dynamic Slicing~\cite{Agrawal:1990:DPS:93542.93576} is another popular
-technique for automated debugging. It takes as input a failing test
-and produces on output a set of statements--the slice--that influence
-the evaluation of the fault-revealing assertion.
+likely fixes.
 
 %Recent \apr{} techniques use \sfl{} to guide
 %the search for repairs .
@@ -214,12 +219,13 @@ the evaluation of the fault-revealing assertion.
 %% \cite{ang-perez-van-deursen-rui-2017}.  \Fix{end here}
 
 
-
-This paper reports the results of an empirical study to evaluate the
-impact of Dynamic Slicing (\ds{}) to improve \sfl{}. The intuition for
-the \comb{} combination is that several highly ranked statements,
-albeit covered by failing executions, may be unrelated to the
-fault. Prior work reported promising results in this combination
+\ds{} and \sfl{} are complementary. Conceptually, \ds{} identifies
+irrelevant parts of the code whereas \sfl{} ranks relevant parts of
+the code.  This paper reports the results of an empirical study to
+evaluate the impact of \ds{} to improve \sfl{}. The intuition for the
+\comb{} combination is that several highly ranked statements, albeit
+covered by failing executions, may be unrelated to the fault. Prior
+work reported promising results in this combination
 \cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012}.
 For example, Lei \etal{}~\cite{lei-mao-dai-wang-2012} reported a
 reduction of 78.3\% in \emph{effort}~\cite{7927959} to analyze
@@ -236,10 +242,10 @@ pointed to that fact encouraging developers to adopt precise metrics
 such as top@n
 \cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. The
 goal of this paper is to reassess whether the \comb{} combination is
-worthwhile under the light of this metric. Developers of techniques
-such as \acrAbrev{} would benefit from these results~---~either to
-improve their results or to be aware they should not invest on this
-integration.
+worthwhile under the light of this metric and using a larger
+dataset. Developers of \acrAbrev{} techniques would directly benefit
+from these results~---~either to improve their results or to be aware
+they should not invest on this integration.
 
 %% ~\cite{Jin:2013:FFL:2483760.2483763,Laghari:2016:FSB:2970276.2970308,campos-etal-ase2016,DBLP:journals/stvr/LiuLNBB16,DBLP:conf/hvc/LidO16,7589823}
 
