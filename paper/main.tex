@@ -511,28 +511,44 @@ matrix (/spectra) whose values can be set to zero.
   \label{fig:illustration}
 \end{figure}
 
-%% In general, updates in the matrix results in an increase of
-%% suspiciousness for a given component when the target test is passing
-%% or a reduction of suspiciousness when the target test is failing.
+\begin{theorem}
+  The faulty statement may not be included in the critical slice of
+  failing test cases.
+\end{theorem}
+
+It is possible that a slice that discards the faulty statement still
+produces the expected message checked by the oracle. This can happen,
+for example, if the oracle is too general.\qed
+
+\Mar{Sofia, please add a short (3-4 lines at most) example based on
+  one of our subjects} Section~\ref{sec:impl} explains the heuristics
+we used to infer oracles for critical slicing that mitigates this
+issue and Section~\ref{sec:eval} shows how often critical slicing
+misses faulty statements.
 
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
 \end{theorem}  
 
-For those statements $j$ which are not part of the slice of a failing
-test, the combination reduces the value of $\N{11}$ and increases the
-value of $\N{01}$. Therefore, suspiciosness of those statements
-decrease. In this example, components $c_3$ and $c_4$, which are not
-in the slice of $t_2$, have their suspiciousness reduced, enabling the
-faulty component $c_2$ to rise from the third to the first position in
-the ranking. \Mar{what about other formula?}
+Considering the Ochiai formula, for those statements $j$ which are not
+part of the slice of a failing test, the combination reduces the value
+of $\N{11}$ and increases the value of $\N{01}$. Therefore,
+suspiciosness of those statements decrease. Similar argument applies
+to other fault predictors.\qed{}
 
-\Mar{think of another theorem...}
+In the example from Figure~\ref{fig:illustration}, components $c_3$
+and $c_4$, which are not in the slice of $t_2$, have their
+suspiciousness reduced, enabling the faulty component $c_2$ to rise
+from the third to the first position in the ranking.
 
 \subsection{Implementation}
+\label{sec:impl}
+
 
 \Mar{...elaborate...}
+
+\Mar{...explain how we built our oracles/checkers...}
 
 \section{Evaluation}
 \label{sec:eval}
