@@ -46,7 +46,6 @@
                             %% e.g., \cite{Baker12,Baker14,Baker16}
                             %% rendered as [2,3,4] rather than [2-4].
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Note: Authors migrating a paper from traditional SIGPLAN
 %% proceedings format to PACMPL format must update the
@@ -129,7 +128,7 @@
 %% Note: \begin{abstract}...\end{abstract} environment must come
 %% before \maketitle command
 \begin{abstract}
-Text of abstract \ldots.
+\Sof{@todo} 
 \end{abstract}
 
 
@@ -157,7 +156,7 @@ Text of abstract \ldots.
 
 %% Keywords
 %% comma separated list
-\keywords{keyword1, keyword2, keyword3}  %% \keywords are mandatory in final camera-ready submission
+\keywords{Slicing, Testing, Debugging}  %% \keywords are mandatory in final camera-ready submission
 
 
 %% \maketitle
@@ -168,15 +167,17 @@ Text of abstract \ldots.
 
 \section{Introduction}
 
+\Sof{Elaborate more on the advantages of the SFL+DS combination and how DS helps SFL being more efficient}
+
 %% PROBLEM MOTIVATION
 Software debugging is difficult. The task of locating the faulty code
 (\ie{}, fault localization) is particularly challenging. For that
 reason, countless automated techniques have been proposed in the past
-to reduce cost of fault localization. Among those are Dynamic Slicing
+to reduce the cost of fault localization. Among those are Dynamic Slicing
 (\ds{}) and Spectrum-Based Fault Localization (\sfl{}). Dynamic
 Slicing~\cite{Agrawal:1990:DPS:93542.93576} takes as input a failing
 test and produces on output a set of statements that influence the
-evaluation of the fault-revealing assertion.  Although the technique
+evaluation of the fault-revealing assertion. Although the technique
 has been intensively explored, few slicing applications became
 popular---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
 exception.  \sfl{}~\cite{7390282} is another popular automated
@@ -184,7 +185,7 @@ debugging technique. It is a statistical fault localization method
 that computes suspiciousness values associated with program entities
 (e.g., basic blocks) using coverage information of passing and failing
 test cases. \sfl{} produces a list of program entities ranked in
-decreasing order of suspiciousness.  Likewise dynamic slicing, \sfl{}
+decreasing order of suspiciousness. Likewise dynamic slicing, \sfl{}
 received tremendous attention over the years, but its applicability to
 support debugging remains
 questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
@@ -193,10 +194,10 @@ shown useful in supporting downstream analyses, such as Automated
 Program Repair
 (\apr{})~\cite{automatic-software-repair-survey2017,kim-etal-daghstul2017},
 an increasingly popular technique that looks for likely fixes to
-likely buggy statements.  Tools like JAFF \cite{arcuri-2011}, Prophet
+likely buggy statements. Tools like JAFF \cite{arcuri-2011}, Prophet
 \cite{long-rinard-2016}, SemFix \cite{nguyen-qi-roychoudhury-2013},
 and SPR \cite{long-rinard-2015} use \sfl{} to guide the search for
-likely fixes.
+likely fixes. \Sof{likely appears too many times on the last 3 lines.}
 
 %Recent \apr{} techniques use \sfl{} to guide
 %the search for repairs .
@@ -220,7 +221,7 @@ likely fixes.
 
 
 \ds{} and \sfl{} are complementary. Conceptually, \ds{} identifies
-irrelevant parts of the code whereas \sfl{} ranks relevant parts of
+irrelevant parts of the code whereas \sfl{} ranks the relevant parts of
 the code.  This paper reports the results of an empirical study to
 evaluate the impact of \ds{} to improve \sfl{}. The intuition for the
 \comb{} combination is that several highly ranked statements, albeit
@@ -239,17 +240,35 @@ position of the first faulty statements found in the ranking relative
 to the total number of ranking statements, which is often a very high
 number. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
 pointed to that fact encouraging developers to adopt precise metrics
-such as top@n
-\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. The
-goal of this paper is to reassess whether the \comb{} combination is
+such as top-k
+\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. \Sof{Elaborate k}The goal of this paper is to reassess whether the \comb{} combination is
 worthwhile under the light of this metric and using a larger
-dataset. Developers of \acrAbrev{} techniques would directly benefit
+dataset. The test suite used for the empirical evaluation is the defect4j dataset which is about twice larger than the biggest test suite used in previous studies. Developers of \acrAbrev{} techniques may directly benefit
 from these results~---~either to improve their results or to be aware
-they should not invest on this integration.
-
+they should not invest on this integration. 
 %% ~\cite{Jin:2013:FFL:2483760.2483763,Laghari:2016:FSB:2970276.2970308,campos-etal-ase2016,DBLP:journals/stvr/LiuLNBB16,DBLP:conf/hvc/LidO16,7589823}
 
-\Fix{Mention the research questions at some point, plus contributions.}
+This research aims to address the doubts surrounding the efficiency of \sfl{}+\ds{} combination through the answer to the following research questions (\RQ{}):
+
+\begin{itemize}[leftmargin=*]
+	\item[] \textbf{\RQ{}1} \textit{Does the critical slice include the faulty statements?}
+	\item[] \textbf{\RQ{}2} \textit{How many test cases have the faulty statements in the top-5 of classes with the highest suspiciousness ranks?}
+	\item[] \textbf{\RQ{}3} \textit{How effective is the \sfl{}+\ds{} combination for bug localization?} 
+\end{itemize}
+
+A couple of different tools were designed to perform this empirical study: \morpho{} and \lithium{}. \morpho{} retrieves as an output the input for \lithium{}. \lithium{} uses the input to reduce the search domain for \sfl{} and outputs the statements that resulted from the minimization. \morpho{} uses this to update the spectrum matrix, performs the before and after \sfl{} evaluation using the corresponding matrix, and outputs the metrics that report the \sfl{} performance for both cases ~---~ before and after using \ds{}. 
+
+The most significant contributions of this research for the testing community are the following ones:
+\begin{itemize}
+	\item The presentation of a more extensive evaluation on the efficiency of combining \sfl{} and \ds{} for bug localization in \emph{Java} faulty programs.
+	\item Insights into the use of top-k metric to evaluate the classes with the highest suspiciousness ranks.
+	\item Both tools are open-source (\morpho{} and \lithium{}), so other researchers can replicate or extent the current research. Benchmarks and experimental results are also publicly available.
+\end{itemize}
+
+
+\Sof{@TODO: sections organization paragraph}
+
+This paper is organized as follows: ....
 
 \section{Background}
 \label{sec:background}
@@ -269,15 +288,15 @@ This section presents important background material for the rest of the paper.
 
 Program slicing is a program understanding method to identify the
 relevant parts of the program with respect to given points of
-interest.  This paper focuses on dynamic slicing\Comment{~--~as
+interest.  This paper focuses on dynamic slicing\comments{~--~as
   opposed to static slicing~\cite{Weiser:1981:PS:800078.802557}~--~}
 for its application in automated software
 debugging~\cite{Binkley:2014:OLP:2635868.2635893} where failing tests
 exist. We focused on Critical
 Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its
-simplicity/generality.\Comment{ In constrast with alternative slicing
+simplicity/generality.\comments{ In constrast with alternative slicing
   implementations based on dependency
-  chains~\cite{Tip:1994:SPS:869354}\Comment{(\eg{},
+  chains~\cite{Tip:1994:SPS:869354}\comments{(\eg{},
     JSlice~\cite{Wang:2004:UCB:998675.999455} and
     JavaSlicer~\cite{hammacher-bachthesis-2008})},} Critical Slicing
 prescribes a black-box language-semantics-agnostic recipe to computing
@@ -436,9 +455,9 @@ error vector by means of applying \emph{fault predictors} to each
 component to produce a score quantifying how likely it is to be
 faulty.  Components are then ranked according to such likelihood
 scores and reported to the user. Ochiai is one of those fault
-predictors that has shown to perform well~\Fix{cite}. The Ochiai
+predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}. \Sof{@Rui, please check if the papers are correct} The Ochiai
 formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
-$\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10})}$.
+\[\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10})}\]
 
 \section{Critical Slicing + \sfl{}}
 \label{sec:combination}
@@ -520,8 +539,7 @@ It is possible that a slice that discards the faulty statement still
 produces the expected message checked by the oracle. This can happen,
 for example, if the oracle is too general.\qed
 
-\Mar{Sofia, please add a short (3-4 lines at most) example based on
-  one of our subjects} Section~\ref{sec:impl} explains the heuristics
+\Sof{@todo: Add a short 3-4 lines at most example based on one of our subjects} Section~\ref{sec:impl} explains the heuristics
 we used to infer oracles for critical slicing that mitigates this
 issue and Section~\ref{sec:eval} shows how often critical slicing
 misses faulty statements.
@@ -545,10 +563,109 @@ from the third to the first position in the ranking.
 \subsection{Implementation}
 \label{sec:impl}
 
+Two different tools were developed to support this research: \morpho{} and \lithium{}. \morpho{} was designed to calculate the suspiciousness of all statements of a project before, and after the top-k minimization performed by \lithium{} whereas \lithium{} is responsible for reducing the search domain of each \texttt{Java} class of the project for the after-\sfl{} analysis. \morpho{} uses the spectrum matrix (Figure \ref{fig:spectrum-example}), and the pair \emph{name\#location} for each statement to calculate the respective ranking. All rankings are ordered from highest to lowest ranked. This information is retrieved along with each test case stack trace in a \texttt{.json} file which serves as an output to \lithium{}. \lithium{} starts by generating the inputs (Algorithm \ref{alg:ls}, line $2$) for the top-k classes of each failing test based, mainly, on the output of \emph{morpho} ~---~ ranked list of statements and the test cases stacktraces. Then, the tool iterates each class from the top-k classes ($c$) of each test $t$. In each iteration, classes are refined using an external java program (Algorithm \ref{alg:ls}, line 6) that substitutes all the line comments ($\backslash\backslash$), block comments ($\backslash*$ to $*\backslash$) and javadoc comments ($/**$ to $*/$) using the \texttt{JavaParser}\footnote{http://javaparser.org/} library. This step was added to \lithium{} because it turns \texttt{MozillaLithium}\footnote{https://github.com/MozillaSecurity/lithium} faster since the empty lines are ignored. Then, \texttt{MozillaLithium} performs the class minimization using a function of interest (Algorithm \ref{alg:finc}) which compares the output of the test with the expected one which is given as an input. Finally, the location of all relevant statements (Algorithm \ref{alg:ls}, line 9) is saved in a \texttt{.json} which is used for the before-\sfl{} analysis. \morpho{} uses the output from \lithium{} to create a copy of the older spectrum matrix and updates it according to the explanation provided on Figure \ref{fig:ds-reduction} where the statements that are not in the slice of the test suffer a suspiciouness reduction. In the end, \morpho{} performs the \sfl{} analysis for both matrixes and calculates the probability of the first line being faulty, the probability of the last line being faulty, and the mean and median of the position of the faulty line in the ranking. These are the metrics used to evaluate how considerable is the improvement obtained when combining \ds{} with \sfl{}.
 
-\Mar{...elaborate...}
+\begin{algorithm}[h]
+	\caption{Class Minimization Algorithm}
+	\label{alg:ls}
+	\begin{flushleft}
+		\textbf{Input:} $proj$ - project name \\
+		\hspace{2.75em} $bug$ - bug number\\
+		\hspace{2.75em} $k$ - number of top ranked classes\\
+		\hspace{2.75em} $stk$ - expected stacktrace\\
+	 \textbf{Output:} Top-k classes minimization for each test \\
+	\end{flushleft}
+	\begin{algorithmic}[1]
+		\Procedure{lithium-slicer}{$proj$, $bug$, $k$, $stk$}
+			\State $testsInfo \leftarrow$ generateInputs($proj$, $bug$, $k$, $stk$)
+			\ForAll {$t \in testsInfo$}
+				\State $classes \leftarrow$ getClasses($proj$, $bug$)
+				\ForAll {$c \in classes$}
+					\State $unc \leftarrow$ removeComments($c$)
+					\State $min \leftarrow$ MozillaLithium($iFunc$, $unc$, $t$, $stk$)
+				\EndFor
+				\State $slicer \leftarrow$ getLocation($c$, $t$, $min$)
+			\EndFor
+			\State \Return $slicer$
+		\EndProcedure
+	\end{algorithmic}
 
-\Mar{...explain how we built our oracles/checkers...}
+\end{algorithm}
+
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=1.0\textwidth]{lithium.pdf}
+	\caption{Simple illustration of the process to obtain the top-5 minimized classes from a project carrying a bug}
+\end{figure*}
+
+\subsection{Function of Interest }
+\label{sec:funcofint}
+
+
+\begin{algorithm}[h]
+	\caption{Function of interest (iFunc)}
+	\label{alg:finc}
+	\begin{flushleft}
+		\textbf{Input:} $c$ - class to be minimized\\
+		\hspace{2.75em} $t$ - testcase name\\
+		\hspace{2.75em} $expStk$ -  expected stacktrace\\
+		\textbf{Output:} $interest$ - $True$ if it is interesting, $False$ if not \\
+	\end{flushleft}
+	\begin{algorithmic}[1]
+		\Function{iFunc}{$c$, $t$, $expStk$}
+		\State $testStk \leftarrow$ runTest($t$)
+		\State $testOracle \leftarrow$ getOracleToCompare($testStk$)
+		\State $expOracle \leftarrow$ getOracleToCompare($expStk$)
+		\State \Return $testOracle$ == $expOracle$
+		\EndFunction
+		
+	\end{algorithmic}
+	
+\end{algorithm}
+
+The \texttt{MozillaLithium} tool takes as input a function of interest that can be designed according to the problem to be solved. The function of interest (Algorithm \ref{alg:finc}) determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from \texttt{Java} stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk selected by \texttt{MozillaLithium}, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. The result is an oracle such as the one provided in the box below:
+
+
+\vspace{3mm}
+\begin{myframe} \label{box:1}
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 1, 
+java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643), 
+java.util.ArrayList.add(ArrayList.java:455), 
+org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:564), 
+org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:527), 
+\textbf{org.jfree.data.xy.junit.XYSeriesTests.}\\
+\textbf{testBug1955483(XYSeriesTests.java:479)},\\
+... 
+\end{myframe}
+
+The oracle includes an exception error message (\emph{java.lang.\\IndexOutOfBoundsException: Index: -1, Size: 1}) and the program execution path until the class test where it fails (\emph{XYSeriesTests.java:479}). The regular expression \verb/Test(.*).java/ retrieves the test class position in the stack trace. If the test class is not found, the entire stack trace is compared. There is, however, an exception. When the failure is a \emph{StackOverflowError}, there is no test class mentioned in the stack trace because the exception is a runtime error. This exception is triggered when the JVM encounters a situation where there is no space for a new stack frame to be created which is, normally, the outcome of infinite recursion. Consequently, the stack trace contains many times the failed call. So, when the failure message contains a \emph{StackOverflowError}, the oracle is only considered until the call is repeated for the fifth time.
+
+\vspace{3mm}
+\begin{myframe}
+	java.lang.StackOverflowError,  
+	sun.reflect.generics.reflectiveObjects.\linebreak
+			TypeVariableImpl.hashCode(TypeVariableImpl.java:198), 
+	java.util.HashMap.hash(HashMap.java:362), 
+	java.util.HashMap.getEntry(HashMap.java:462), 
+	java.util.HashMap.get(HashMap.java:417),  org.mockito.internal.util.reflection.GenericMetadataSupport.
+		getActualTypeArgumentFor(GenericMetadataSupport.java:182), \linebreak
+	org.mockito.internal.util.reflection.GenericMetadataSupport.
+	getActualTypeArgumentFor(GenericMetadataSupport.java:185),
+	org.mockito.internal.util.reflection.GenericMetadataSupport.
+	getActualTypeArgumentFor(GenericMetadataSupport.java:185),
+	...
+\end{myframe}
+
+Some of the error messages can be different even if the test is executed with the same inputs and in the same environment. One example is the one provided in the box below, where the memory positions (\emph{class@<memory-position>}) may differ from the ones in the expected message. In order to solve this, it was designed a mechanism to check this kind of exception patterns. However, the current version of the interesting function only considers this pattern. Other patterns will be added soon into the next version of \lithium{}.
+
+\vspace{3mm}
+\begin{myframe}
+	junit.framework.AssertionFailedError: \\
+	expected:<org.jfree.chart.util.ShapeList@\textbf{d0e55451}> but \\ was:<org.jfree.chart.util.ShapeList@\textbf{d951b68f}>
+	...
+\end{myframe}
+
+
 
 \section{Evaluation}
 \label{sec:eval}
@@ -572,7 +689,7 @@ download and execution in the browser. \chart{} is a library with a
 full-featured charts user interface for Java. \jtime{} is a
 lightweight library that aims to replace the default Java
 {\small\texttt{java.util.Date}} classes providing simpler APIs. \mockito{} is
-a mocking testing framework.\Comment{ that enables the developer to simulate
+a mocking testing framework.\comments{ that enables the developer to simulate
 the behavior of classes that cannot be used in unit testing.}
 
 \newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
@@ -581,20 +698,19 @@ the behavior of classes that cannot be used in unit testing.}
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
       \toprule
-      Project            & Size (kLOC) & \# Tests & \# Defects \Comment{& Failing Test Cases &}  \\
+      Project            & Size (kLOC) & \# Tests & \# Defects \\ %\comments{& Failing Test Cases &}  
       \midrule
-      \lang{}            & -  & - & 65          \Comment{& 124   &  -}\\
-      \cmath{}           & -  & - & 106          \Comment{& 177   &  -}\\
-      \closure{}         & -  & - & 133         \Comment{& 350   &  -}\\
-      \chart{}           & -  & - & 26         \Comment{& 92    &  -}\\
-      \jtime{}           & -  & - & 27          \Comment{& 76    &  -}\\
-      \mockito{}         & -  & - & 38          \Comment{& 118   &  -}\\
+      \lang{}            & -  & - & 65       \\   %\commentst{& 124   &  -}\\
+      \cmath{}           & -  & - & 106     \\   %\comments{& 177   &  -}\\
+      \closure{}         & -  & - & 133     \\   %\comments{& 350   &  -}\\
+      \chart{}           & -  & - & 26      \\  %\comments{& 92    &  -}\\
+      \jtime{}           & -  & - & 27       \\   %\comments{& 76    &  -}\\
+      \mockito{}         & -  & - & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
 \caption {Characterization of \dfj{} subjects.}
 \end{table}
 \normalsize
-
 
 %% old text related to single faults...
 %%%%%%%%%%%%
@@ -832,148 +948,148 @@ for small values of N.\Mar{@Rui, ainda nao esta claro qual a mensagem
 \subsubsection{What is the impact of slicing all failing tests?}
 Table~\ref{fig:all-failing-tests} \Fix{...............}
 
-
-\begin{figure*}[!ht]
-  \centering
-    \begin{tabular}{cl|rrrrrrrrrr}
-      \toprule
-      & \multicolumn{1}{c|}{Project~\textbackslash{}~LOC}             & 10  & 20  & 30  &  40  & 50  & 60 & 70 &  80 &  90& 100 \\
-      \midrule
-
-      \multicolumn{12}{c}{\emph{\textbf{Not} Filtering statements covered by test(s).}}\\
-      \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\sfl}}}}
-      & \lang{}       & 24.72 & 25.84 & 28.09 & 32.58 & 35.96 & 46.07 & 79.78 & 79.78 & 83.15 & 84.27 \\
-      & \chart{}      & 18.97 & 24.14 & 31.03 & 31.03 & 32.76 & 72.41 & 72.41 & 75.86 & 79.31 & 79.31 \\
-      & \jtime{}      & 34.78 & 58.7  & 63.04 & 63.04 & 63.04 & 63.04 & 63.04 & 63.04 & 71.74 & 71.74 \\
-      & \mockito{}    & 44.32 & 47.73 & 57.95 & 61.36 & 61.36 & 63.64 & 65.91 & 70.45 & 76.14 & 77.27 \\
-      \hline
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\comb}}}}
-      & \lang{}       & 31.46 & 37.08 & 51.69 & 57.3  & 65.17 & 77.53 & 80.9  & 82.02 & 87.64 & 91.01 \\
-      & \chart{}      & 43.1  & 46.55 & 60.34 & 81.03 & 94.83 & 96.55 & 96.55 & 96.55 & 96.55 & 98.28 \\
-      & \jtime{}      & 50.0  & 63.04 & 63.04 & 63.04 & 63.04 & 67.39 & 71.74 & 71.74 & 71.74 & 71.74 \\
-      & \mockito{}    & 45.45 & 47.73 & 60.23 & 60.23 & 61.36 & 62.5  & 67.05 & 76.14 & 79.55 & 80.68 \\
-      \midrule
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-onefailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-onefailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-onefailingtest.pdf}}\\
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest.pdf}}\\
-
-      \midrule
-
-      \multicolumn{12}{c}{\emph{Filtering statements covered by test(s).}}\\
-      \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\sfl}}}}
-      & \lang{}     & 33.71 & 41.57 & 49.44 & 52.81 & 60.67 & 84.27 & 94.38 & 95.51 & 96.63 & 98.88 \\
-      & \chart{}    & 25.86& 36.21& 36.21& 36.21& 60.34& 75.86& 75.86 & 79.31& 79.31& 79.31 \\
-      & \jtime{}       & 43.48 & 63.04 & 65.22 & 69.57 & 71.74 & 71.74 &73.91 & 73.91 & 73.91 & 73.91 \\
-      & \mockito{} & 72.09 & 74.42 & 77.91 & 80.23 & 83.72 & 83.72 & 84.88 & 84.88 & 86.05 & 86.05 \\
-      \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\comb}}}}
-      & \lang{}     & 46.07 & 58.43 & 66.29 & 67.42 & 74.16 & 93.26 & 97.75 & 98.88 & 100.0 & 100.0 \\
-      & \chart{} & 51.72& 63.79& 65.52& 86.21& 98.28& 98.28& 98.28& 98.28& 98.28& 98.28 \\
-      & \jtime{} & 65.22 & 69.57 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 \\
-      & \mockito{} & 73.26 & 77.91 & 82.56 & 87.21 & 87.21 & 88.37 &91.86 & 94.19 & 95.35 & 95.35 \\
-      \midrule
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-onefailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-onefailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-onefailingtest-filtering.pdf}}\\
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest-filtering.pdf}}\\
-
-      \bottomrule
-
-    \end{tabular}
-    \caption{\label{fig:one-failing-test}Top@N, considering one failing test.}
-\end{figure*}
-
-\begin{figure*}[!ht]
-  \centering
-    \begin{tabular}{cl|rrrrrrrrrr}
-      \toprule
-      & \multicolumn{1}{c|}{Project~\textbackslash{}~LOC}             & 10  & 20  & 30  &  40  & 50  & 60 & 70 &  80 &  90& 100 \\
-      \midrule
-
-      \multicolumn{12}{c}{\emph{\textbf{Not} Filtering statements covered by test(s).}}\\
-      \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\sfl}}}
-      &Apache commons-lang     & 25.0  & 27.27 & 29.55 & 38.64 & 43.18
-      & 56.82 & 63.64 & 63.64 & 68.18 & 70.45 \\
-      &\chart{}       & 50.0  & 68.75 & 75.0  & 75.0  & 75.0  & 87.5  & 87.5  & 87.5  & 93.75 & 93.75 \\
-      &Joda-Time       & 23.08 & 38.46 & 46.15 & 46.15 & 46.15 & 46.15
-      & 46.15 & 46.15 & 46.15 & 46.15 \\
-      &Mockito & 16.67 & 29.17 & 33.33 & 37.5  & 37.5  & 41.67 & 45.83
-      & 54.17 & 58.33 & 62.5 \\
-      \hline
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\comb}}}
-      &Apache commons-lang     & 36.36 & 50.0  & 56.82 & 59.09 & 63.64
-      & 65.91 & 65.91 & 68.18 & 75.0  & 81.82 \\
-      & \chart{}       & 68.75 & 81.25 & 93.75 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 \\
-      &Joda-Time       & 30.77 & 46.15 & 46.15 & 46.15 & 46.15 & 46.15
-      & 46.15 & 46.15 & 46.15 & 46.15 \\
-      &Mockito & 20.83 & 29.17 & 41.67 & 41.67 & 41.67 & 45.83 & 58.33
-      & 66.67 & 70.83 & 75.0 \\
-      \midrule
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-allfailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-allfailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-allfailingtest.pdf}}\\
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest.pdf}}\\
-      \midrule
-
-      \multicolumn{12}{c}{\emph{Filtering statements covered by test(s).}}\\
-      \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\sfl}}}}
-      & \lang{}     & 36.36 & 45.45 & 59.09 & 63.64 & 70.45  & 79.55 & 88.64 & 90.91 & 93.18 & 97.73 \\
-      & \chart{}       & 50.0  & 68.75 & 75.0  & 75.0  & 75.0  & 87.5  & 87.5  & 93.75 & 93.75 & 93.75 \\
-      & \jtime{}        & 30.77 & 46.15 & 46.15 & 46.15 & 46.15 & 46.15  & 53.85 & 53.85 & 53.85 & 53.85 \\
-      & \mockito{} & 50.0  & 54.17 & 62.5  & 66.67 & 70.83 & 75.0  & 79.17 & 79.17 & 79.17 & 79.17 \\
-      \hline
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\comb}}}}
-      & \lang{}     & 56.82 & 81.82 & 93.18 & 93.18 & 95.45  & 95.45 &95.45 & 97.73 & 100.0 & 100.0 \\
-      & \chart{}       & 68.75 & 87.5  & 93.75 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 \\
-      & \jtime{}        & 53.85 & 53.85 & 53.85 & 53.85 & 53.85 & 53.85  & 53.85 & 53.85 & 53.85 & 53.85 \\
-      & \mockito{} & 54.17 & 70.83 & 79.17 & 83.33 & 83.33 & 87.5  & 87.5 & 87.5  & 91.67 & 91.67 \\
-      \midrule
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-allfailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-allfailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-allfailingtest-filtering.pdf}}\\
-
-      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest-filtering.pdf}}
-      &
-      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest-filtering.pdf}}\\
-      \bottomrule
-
-    \end{tabular}
-    \caption{\label{fig:all-failing-test}Top@N, considering all failing test.}
-\end{figure*}
+%
+%\begin{figure*}[!ht]
+%  \centering
+%    \begin{tabular}{cl|rrrrrrrrrr}
+%      \toprule
+%      & \multicolumn{1}{c|}{Project~\textbackslash{}~LOC}             & 10  & 20  & 30  &  40  & 50  & 60 & 70 &  80 &  90& 100 \\
+%      \midrule
+%
+%      \multicolumn{12}{c}{\emph{\textbf{Not} Filtering statements covered by test(s).}}\\
+%      \midrule
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\sfl}}}}
+%      & \lang{}       & 24.72 & 25.84 & 28.09 & 32.58 & 35.96 & 46.07 & 79.78 & 79.78 & 83.15 & 84.27 \\
+%      & \chart{}      & 18.97 & 24.14 & 31.03 & 31.03 & 32.76 & 72.41 & 72.41 & 75.86 & 79.31 & 79.31 \\
+%      & \jtime{}      & 34.78 & 58.7  & 63.04 & 63.04 & 63.04 & 63.04 & 63.04 & 63.04 & 71.74 & 71.74 \\
+%      & \mockito{}    & 44.32 & 47.73 & 57.95 & 61.36 & 61.36 & 63.64 & 65.91 & 70.45 & 76.14 & 77.27 \\
+%      \hline
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\comb}}}}
+%      & \lang{}       & 31.46 & 37.08 & 51.69 & 57.3  & 65.17 & 77.53 & 80.9  & 82.02 & 87.64 & 91.01 \\
+%      & \chart{}      & 43.1  & 46.55 & 60.34 & 81.03 & 94.83 & 96.55 & 96.55 & 96.55 & 96.55 & 98.28 \\
+%      & \jtime{}      & 50.0  & 63.04 & 63.04 & 63.04 & 63.04 & 67.39 & 71.74 & 71.74 & 71.74 & 71.74 \\
+%      & \mockito{}    & 45.45 & 47.73 & 60.23 & 60.23 & 61.36 & 62.5  & 67.05 & 76.14 & 79.55 & 80.68 \\
+%      \midrule
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-onefailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-onefailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-onefailingtest.pdf}}\\
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest.pdf}}\\
+%
+%      \midrule
+%
+%      \multicolumn{12}{c}{\emph{Filtering statements covered by test(s).}}\\
+%      \midrule
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\sfl}}}}
+%      & \lang{}     & 33.71 & 41.57 & 49.44 & 52.81 & 60.67 & 84.27 & 94.38 & 95.51 & 96.63 & 98.88 \\
+%      & \chart{}    & 25.86& 36.21& 36.21& 36.21& 60.34& 75.86& 75.86 & 79.31& 79.31& 79.31 \\
+%      & \jtime{}       & 43.48 & 63.04 & 65.22 & 69.57 & 71.74 & 71.74 &73.91 & 73.91 & 73.91 & 73.91 \\
+%      & \mockito{} & 72.09 & 74.42 & 77.91 & 80.23 & 83.72 & 83.72 & 84.88 & 84.88 & 86.05 & 86.05 \\
+%      \midrule
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\comb}}}}
+%      & \lang{}     & 46.07 & 58.43 & 66.29 & 67.42 & 74.16 & 93.26 & 97.75 & 98.88 & 100.0 & 100.0 \\
+%      & \chart{} & 51.72& 63.79& 65.52& 86.21& 98.28& 98.28& 98.28& 98.28& 98.28& 98.28 \\
+%      & \jtime{} & 65.22 & 69.57 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 & 73.91 \\
+%      & \mockito{} & 73.26 & 77.91 & 82.56 & 87.21 & 87.21 & 88.37 &91.86 & 94.19 & 95.35 & 95.35 \\
+%      \midrule
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-onefailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-onefailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-onefailingtest-filtering.pdf}}\\
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-onefailingtest-filtering.pdf}}\\
+%
+%      \bottomrule
+%
+%    \end{tabular}
+%    \caption{\label{fig:one-failing-test}Top@N, considering one failing test.}
+%\end{figure*}
+%
+%\begin{figure*}[!ht]
+%  \centering
+%    \begin{tabular}{cl|rrrrrrrrrr}
+%      \toprule
+%      & \multicolumn{1}{c|}{Project~\textbackslash{}~LOC}             & 10  & 20  & 30  &  40  & 50  & 60 & 70 &  80 &  90& 100 \\
+%      \midrule
+%
+%      \multicolumn{12}{c}{\emph{\textbf{Not} Filtering statements covered by test(s).}}\\
+%      \midrule
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\sfl}}}
+%      &Apache commons-lang     & 25.0  & 27.27 & 29.55 & 38.64 & 43.18
+%      & 56.82 & 63.64 & 63.64 & 68.18 & 70.45 \\
+%      &\chart{}       & 50.0  & 68.75 & 75.0  & 75.0  & 75.0  & 87.5  & 87.5  & 87.5  & 93.75 & 93.75 \\
+%      &Joda-Time       & 23.08 & 38.46 & 46.15 & 46.15 & 46.15 & 46.15
+%      & 46.15 & 46.15 & 46.15 & 46.15 \\
+%      &Mockito & 16.67 & 29.17 & 33.33 & 37.5  & 37.5  & 41.67 & 45.83
+%      & 54.17 & 58.33 & 62.5 \\
+%      \hline
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\comb}}}
+%      &Apache commons-lang     & 36.36 & 50.0  & 56.82 & 59.09 & 63.64
+%      & 65.91 & 65.91 & 68.18 & 75.0  & 81.82 \\
+%      & \chart{}       & 68.75 & 81.25 & 93.75 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 \\
+%      &Joda-Time       & 30.77 & 46.15 & 46.15 & 46.15 & 46.15 & 46.15
+%      & 46.15 & 46.15 & 46.15 & 46.15 \\
+%      &Mockito & 20.83 & 29.17 & 41.67 & 41.67 & 41.67 & 45.83 & 58.33
+%      & 66.67 & 70.83 & 75.0 \\
+%      \midrule
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-allfailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-allfailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-allfailingtest.pdf}}\\
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest.pdf}}\\
+%      \midrule
+%
+%      \multicolumn{12}{c}{\emph{Filtering statements covered by test(s).}}\\
+%      \midrule
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\sfl}}}}
+%      & \lang{}     & 36.36 & 45.45 & 59.09 & 63.64 & 70.45  & 79.55 & 88.64 & 90.91 & 93.18 & 97.73 \\
+%      & \chart{}       & 50.0  & 68.75 & 75.0  & 75.0  & 75.0  & 87.5  & 87.5  & 93.75 & 93.75 & 93.75 \\
+%      & \jtime{}        & 30.77 & 46.15 & 46.15 & 46.15 & 46.15 & 46.15  & 53.85 & 53.85 & 53.85 & 53.85 \\
+%      & \mockito{} & 50.0  & 54.17 & 62.5  & 66.67 & 70.83 & 75.0  & 79.17 & 79.17 & 79.17 & 79.17 \\
+%      \hline
+%      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\footnotesize{\comb}}}}
+%      & \lang{}     & 56.82 & 81.82 & 93.18 & 93.18 & 95.45  & 95.45 &95.45 & 97.73 & 100.0 & 100.0 \\
+%      & \chart{}       & 68.75 & 87.5  & 93.75 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 \\
+%      & \jtime{}        & 53.85 & 53.85 & 53.85 & 53.85 & 53.85 & 53.85  & 53.85 & 53.85 & 53.85 & 53.85 \\
+%      & \mockito{} & 54.17 & 70.83 & 79.17 & 83.33 & 83.33 & 87.5  & 87.5 & 87.5  & 91.67 & 91.67 \\
+%      \midrule
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/commons-lang-allfailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jfreechart-allfailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/jodatime-allfailingtest-filtering.pdf}}\\
+%
+%      \multicolumn{2}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest-filtering.pdf}}
+%      &
+%      \multicolumn{5}{c}{\includegraphics[width=0.25\textwidth]{R/mockito-allfailingtest-filtering.pdf}}\\
+%      \bottomrule
+%
+%    \end{tabular}
+%    \caption{\label{fig:all-failing-test}Top@N, considering all failing test.}
+%\end{figure*}
 
 
 %
@@ -1001,7 +1117,7 @@ Table~\ref{fig:all-failing-tests} \Fix{...............}
 \textbf{Program Slicing}: Most recently related tool is ORBS~\cite{DBLP:conf/scam/BinkleyGHIKY15}. \Fix{...}
 
 Program Slicing~\cite{Weiser:1981:PS:800078.802557} is a technique to
-identify program entities (the slice)\Comment{that influence the
+identify program entities (the slice)\comments{that influence the
   computation of} computationally related to a user-provided point of
 interest (the slice criterion).
 
