@@ -128,7 +128,7 @@
 %% Note: \begin{abstract}...\end{abstract} environment must come
 %% before \maketitle command
 \begin{abstract}
-\Sof{@todo} 
+\Sof{@todo}
 \end{abstract}
 
 
@@ -267,10 +267,10 @@ integration. This study covers the following research questions:
 %% This research aims to address the doubts surrounding the efficiency of \sfl{}+\ds{} combination through the answer to the following research questions (\RQ{}):
 
 \begin{itemize}[leftmargin=*]
-%\item[] [efficiency]~\textit{How often faulty statements appear in the  most suspicious classes?}  
+%\item[] [efficiency]~\textit{How often faulty statements appear in the  most suspicious classes?}
 \item[]{\footnotesize[soundness]}~\textit{How often DS misses faulty statements?}
-\item[]{\footnotesize[effectiveness]}~\textit{How much reduction in file size can DS obtain?}  
-\item[]{\footnotesize[effectiveness]}~\textit{How effective is the \comb{} combination?} 
+\item[]{\footnotesize[effectiveness]}~\textit{How much reduction in file size can DS obtain?}
+\item[]{\footnotesize[effectiveness]}~\textit{How effective is the \comb{} combination?}
 \end{itemize}
 
 To sum, our results show that \Fix{write a paragraph about this...}
@@ -470,8 +470,8 @@ error vector by means of applying \emph{fault predictors} to each
 component to produce a score quantifying how likely it is to be
 faulty.  Components are then ranked according to such likelihood
 scores and reported to the user. Ochiai is one of those fault
-predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}. \Sof{@Rui, please check if the papers are correct} The Ochiai
-formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
+predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}.
+The Ochiai formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
 \[\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10}})\]
 
 \section{Critical Slicing + \sfl{}}
@@ -498,10 +498,10 @@ matrix (/spectra) whose values can be set to zero.
 %% %\item {[optional]} Filter statements covered by selected failing tests.
 %% \end{enumerate}
 
-\begin{figure}[t!] 
+\begin{figure}[t!]
 
   \centering
-  \begin{subfigure}{0.5\textwidth}  
+  \begin{subfigure}{0.5\textwidth}
     {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
       \begin{tabular}{c|ccccc|c}
         $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
@@ -530,7 +530,7 @@ matrix (/spectra) whose values can be set to zero.
   \end{subfigure}
 
   \vspace{2ex}
-  
+
   \begin{subfigure}{0.5\textwidth}
     \centering
     \begin{tabular}{cccccc}
@@ -541,8 +541,8 @@ matrix (/spectra) whose values can be set to zero.
       4.5 & $c_5$ (0.32) & & 5 & $c_3$ (0.24)\\
     \end{tabular}
     \caption{Ranking update.}
-  \end{subfigure}  
-  
+  \end{subfigure}
+
   \caption{Modifications on spectra and ranking as result of slicing code against test $t_2$.}
   \label{fig:illustration}
 \end{figure}
@@ -564,7 +564,7 @@ misses faulty statements.
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
-\end{theorem}  
+\end{theorem}
 
 Considering the Ochiai formula, for those statements $j$ which are not
 part of the slice of a failing test, the combination reduces the value
@@ -640,9 +640,9 @@ Two different tools were developed to support this research: \morpho{} and \lith
 		\State $expOracle \leftarrow$ getOracleToCompare($expStk$)
 		\State \Return $testOracle$ == $expOracle$
 		\EndFunction
-		
+
 	\end{algorithmic}
-	
+
 \end{algorithm}
 
 The \texttt{MozillaLithium} tool takes as input a function of interest that can be designed according to the problem to be solved. The function of interest (Algorithm \ref{alg:finc}) determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from \texttt{Java} stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk selected by \texttt{MozillaLithium}, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. The result is an oracle such as the one provided in the box below:
@@ -650,25 +650,25 @@ The \texttt{MozillaLithium} tool takes as input a function of interest that can 
 
 \vspace{3mm}
 \begin{myframe} \label{box:1}
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 1, 
-java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643), 
-java.util.ArrayList.add(ArrayList.java:455), 
-org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:564), 
-org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:527), 
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 1,
+java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643),
+java.util.ArrayList.add(ArrayList.java:455),
+org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:564),
+org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:527),
 \textbf{org.jfree.data.xy.junit.XYSeriesTests.}\\
 \textbf{testBug1955483(XYSeriesTests.java:479)},\\
-... 
+...
 \end{myframe}
 
 The oracle includes an exception error message (\emph{java.lang.\\IndexOutOfBoundsException: Index: -1, Size: 1}) and the program execution path until the class test where it fails (\emph{XYSeriesTests.java:479}). The regular expression \verb/Test(.*).java/ retrieves the test class position in the stack trace. If the test class is not found, the entire stack trace is compared. There is, however, an exception. When the failure is a \emph{StackOverflowError}, there is no test class mentioned in the stack trace because the exception is a runtime error. This exception is triggered when the JVM encounters a situation where there is no space for a new stack frame to be created which is, normally, the outcome of infinite recursion. Consequently, the stack trace contains many times the failed call. So, when the failure message contains a \emph{StackOverflowError}, the oracle is only considered until the call is repeated for the fifth time.
 
 \vspace{3mm}
 \begin{myframe}
-	java.lang.StackOverflowError,  
+	java.lang.StackOverflowError,
 	sun.reflect.generics.reflectiveObjects.\linebreak
-			TypeVariableImpl.hashCode(TypeVariableImpl.java:198), 
-	java.util.HashMap.hash(HashMap.java:362), 
-	java.util.HashMap.getEntry(HashMap.java:462), 
+			TypeVariableImpl.hashCode(TypeVariableImpl.java:198),
+	java.util.HashMap.hash(HashMap.java:362),
+	java.util.HashMap.getEntry(HashMap.java:462),
 	java.util.HashMap.get(HashMap.java:417),  org.mockito.internal.util.reflection.GenericMetadataSupport.
 		getActualTypeArgumentFor(GenericMetadataSupport.java:182), \linebreak
 	org.mockito.internal.util.reflection.GenericMetadataSupport.
@@ -720,7 +720,7 @@ the behavior of classes that cannot be used in unit testing.}
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
       \toprule
-      Project            & Size (kLOC) & \# Tests & \# Defects \\ %\comments{& Failing Test Cases &}  
+      Project            & Size (kLOC) & \# Tests & \# Defects \\ %\comments{& Failing Test Cases &}
       \midrule
       \lang{}            & 111751  & 6057 & 65       \\   %\commentst{& 124   &  -}\\
       \cmath{}           & 306276  & 26797 & 106     \\   %\comments{& 177   &  -}\\
