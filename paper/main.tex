@@ -167,37 +167,41 @@
 
 \section{Introduction}
 
-\Sof{Elaborate more on the advantages of the SFL+DS combination and how DS helps SFL being more efficient}
+%\Sof{Elaborate more on the advantages of the SFL+DS combination and how DS helps SFL being more efficient}
 
 %% PROBLEM MOTIVATION
 Software debugging is difficult. The task of locating the faulty code
 (\ie{}, fault localization) is particularly challenging. For that
 reason, countless automated techniques have been proposed in the past
-to reduce the cost of fault localization. Among those are Dynamic Slicing
-(\ds{}) and Spectrum-Based Fault Localization (\sfl{}). Dynamic
-Slicing~\cite{Agrawal:1990:DPS:93542.93576} takes as input a failing
-test and produces on output a set of statements that influence the
-evaluation of the fault-revealing assertion. Although the technique
-has been intensively explored, few slicing applications became
-popular---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
-exception.  \sfl{}~\cite{7390282} is another popular automated
-debugging technique. It is a statistical fault localization method
-that computes suspiciousness values associated with program entities
-(e.g., basic blocks) using coverage information of passing and failing
-test cases. \sfl{} produces a list of program entities ranked in
-decreasing order of suspiciousness. Likewise dynamic slicing, \sfl{}
-received tremendous attention over the years, but its applicability to
-support debugging remains
+to reduce the cost of fault localization.
+
+Dynamic Slicing (\ds{}) and Spectrum-Based Fault Localization (\sfl{})
+are two very popular techniques that use different principles to
+automate debugging. Dynamic
+Slicing~\cite{Agrawal:1990:DPS:93542.93576} looks for the statements
+in code that influence the evaluation of the fault-revealing
+assertion. Although the technique has been intensively investigated in
+research, few use cases gained
+notoriety---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
+exception.  \sfl{}~\cite{7390282}, in contrast, does not try to
+recover the influence region of faulty statements. It is a black-box
+statistical fault localization method that computes suspiciousness
+values associated with program entities (e.g., basic blocks). For
+that, it uses coverage information of passing and failing test
+cases. \sfl{} produces a list of program entities ranked in decreasing
+order of suspiciousness. Similarly to \ds{}, \sfl{} received
+tremendous attention over the years, but its applicability to support
+debugging remains
 questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
 Despite the skepticism of the research community, \sfl{} has been
 shown useful in supporting downstream analyses, such as Automated
 Program Repair
 (\apr{})~\cite{automatic-software-repair-survey2017,kim-etal-daghstul2017},
-an increasingly popular technique that looks for likely fixes to
-likely buggy statements. Tools like JAFF \cite{arcuri-2011}, Prophet
+an increasingly popular technique that looks for fixes to buggy
+statements. Tools like JAFF \cite{arcuri-2011}, Prophet
 \cite{long-rinard-2016}, SemFix \cite{nguyen-qi-roychoudhury-2013},
 and SPR \cite{long-rinard-2015} use \sfl{} to guide the search for
-likely fixes. \Sof{likely appears too many times on the last 3 lines.}
+likely fixes.
 
 %Recent \apr{} techniques use \sfl{} to guide
 %the search for repairs .
@@ -219,56 +223,66 @@ likely fixes. \Sof{likely appears too many times on the last 3 lines.}
 %% rank is not a practical evaluation metric
 %% \cite{ang-perez-van-deursen-rui-2017}.  \Fix{end here}
 
+%% For example, Lei \etal{}~\cite{lei-mao-dai-wang-2012} reported a
+%% reduction of 78.3\% in \emph{effort}~\cite{7927959} to analyze
+%% rankings when using dynamic slicing in combination with \sfl{} versus
+%% plain \sfl{}.
 
-\ds{} and \sfl{} are complementary. Conceptually, \ds{} identifies
-irrelevant parts of the code whereas \sfl{} ranks the relevant parts of
-the code.  This paper reports the results of an empirical study to
-evaluate the impact of \ds{} to improve \sfl{}. The intuition for the
-\comb{} combination is that several highly ranked statements, albeit
-covered by failing executions, may be unrelated to the fault. Prior
-work reported promising results in this combination
-\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012}.
-For example, Lei \etal{}~\cite{lei-mao-dai-wang-2012} reported a
-reduction of 78.3\% in \emph{effort}~\cite{7927959} to analyze
-rankings when using dynamic slicing in combination with \sfl{} versus
-plain \sfl{}. We found surprising that, despite these findings,
-reported nearly 5 years ago, no tool or client analyses use this
-combination today. One hypothesis to explain that observation is that
-results reported in prior work are not as good as it seems. Prior
-research evaluated \sfl{} using relative metrics, based on the
+\ds{} and \sfl{} are complementary. Intuitively, \ds{} identifies
+irrelevant parts of the code whereas \sfl{} ranks the relevant parts
+of the code.  This paper reports the results of a comprehensive study
+to evaluate the impact of \ds{} to improve \sfl{}. The study involves
+\numFaults{} faults from \numPrograms{} programs from the Defects4J (D4J)
+dataset~\cite{just-defects4j-issta2014}, which is frequently used to
+evaluated fault localization research. The intuition for the \comb{}
+combination is that several highly ranked statements, albeit covered
+by failing executions, may be unrelated to the fault. Prior work
+reported promising results in this combination
+\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
+We found surprising that, despite these findings, reported nearly 5
+years ago, no tool or client analyses use this combination
+today. Several reasons could justify that observation. One hypothesis
+to explain that observation is that results reported in prior work are
+over-optimistic. For example, most prior work evaluated improvements
+of \sfl{} techniques using relative metrics, which are based on the
 position of the first faulty statements found in the ranking relative
-to the total number of ranking statements, which is often a very high
-number. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
-pointed to that fact encouraging developers to adopt precise metrics
-such as top-k
-\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. \Sof{Elaborate k}The goal of this paper is to reassess whether the \comb{} combination is
-worthwhile under the light of this metric and using a larger
-dataset. The test suite used for the empirical evaluation is the defect4j dataset which is about twice larger than the biggest test suite used in previous studies. Developers of \acrAbrev{} techniques may directly benefit
-from these results~---~either to improve their results or to be aware
-they should not invest on this integration. 
-%% ~\cite{Jin:2013:FFL:2483760.2483763,Laghari:2016:FSB:2970276.2970308,campos-etal-ase2016,DBLP:journals/stvr/LiuLNBB16,DBLP:conf/hvc/LidO16,7589823}
+to the total number of ranking statements, which is often a large
+number. As such, it inflates actual improvements and deceives paper
+reviewers. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
+pointed to that fact encouraging researchers to adopt precise metrics,
+such as \topatn{}
+\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. This
+metric reports the percentage of faults captured by a technique when
+the rank is trimmed to the first N components.
 
-This research aims to address the doubts surrounding the efficiency of \sfl{}+\ds{} combination through the answer to the following research questions (\RQ{}):
+The goal of this paper is to reassess whether the \comb{} combination
+is worthwhile under the light of a more accurate metric and a larger
+dataset. The D4J dataset is about twice as large than the biggest test
+suite used in previous studies. It is worth noting that \acrAbrev{}
+techniques should directly benefit from these results---either to
+improve their results or to be aware they should not invest on this
+integration. This study covers the following research questions:
+
+%% ~\cite{Jin:2013:FFL:2483760.2483763,Laghari:2016:FSB:2970276.2970308,campos-etal-ase2016,DBLP:journals/stvr/LiuLNBB16,DBLP:conf/hvc/LidO16,7589823}
+%% This research aims to address the doubts surrounding the efficiency of \sfl{}+\ds{} combination through the answer to the following research questions (\RQ{}):
 
 \begin{itemize}[leftmargin=*]
-	\item[] \textbf{\RQ{}1} \textit{Does the critical slice include the faulty statements?}
-	\item[] \textbf{\RQ{}2} \textit{How many test cases have the faulty statements in the top-5 of classes with the highest suspiciousness ranks?}
-	\item[] \textbf{\RQ{}3} \textit{How effective is the \sfl{}+\ds{} combination for bug localization?} 
+%\item[] [efficiency]~\textit{How often faulty statements appear in the  most suspicious classes?}  
+\item[]{\footnotesize[soundness]}~\textit{How often DS misses faulty statements?}
+\item[]{\footnotesize[effectiveness]}~\textit{How much reduction in file size can DS obtain?}  
+\item[]{\footnotesize[effectiveness]}~\textit{How effective is the \comb{} combination?} 
 \end{itemize}
 
-A couple of different tools were designed to perform this empirical study: \morpho{} and \lithium{}. \morpho{} retrieves as an output the input for \lithium{}. \lithium{} uses the input to reduce the search domain for \sfl{} and outputs the statements that resulted from the minimization. \morpho{} uses this to update the spectrum matrix, performs the before and after \sfl{} evaluation using the corresponding matrix, and outputs the metrics that report the \sfl{} performance for both cases ~---~ before and after using \ds{}. 
+To sum, our results show that \Fix{write a paragraph about this...}
 
-The most significant contributions of this research for the testing community are the following ones:
+The contributions of this work are as follows:
 \begin{itemize}
-	\item The presentation of a more extensive evaluation on the efficiency of combining \sfl{} and \ds{} for bug localization in \emph{Java} faulty programs.
-	\item Insights into the use of top-k metric to evaluate the classes with the highest suspiciousness ranks.
-	\item Both tools are open-source (\morpho{} and \lithium{}), so other researchers can replicate or extent the current research. Benchmarks and experimental results are also publicly available.
+	\item A comprehensive study on the combination of \sfl{} and \ds{}
+     for bug localization of \emph{Java} faulty programs.
+%	\item Insights into the use of top-k metric to evaluate the classes with the highest suspiciousness ranks.
+	\item The tools used to run the study. Benchmarks and experimental results are also publicly available.
 \end{itemize}
 
-
-\Sof{@TODO: sections organization paragraph}
-
-This paper is organized as follows: ....
 
 \section{Background}
 \label{sec:background}
@@ -457,7 +471,7 @@ faulty.  Components are then ranked according to such likelihood
 scores and reported to the user. Ochiai is one of those fault
 predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}. \Sof{@Rui, please check if the papers are correct} The Ochiai
 formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
-\[\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10})}\]
+\[\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10}})\]
 
 \section{Critical Slicing + \sfl{}}
 \label{sec:combination}
@@ -562,6 +576,11 @@ from the third to the first position in the ranking.
 
 \subsection{Implementation}
 \label{sec:impl}
+
+\Mar{Sofia, I think this was way too low-level for intro and decided
+  to move here. please check how to fit.}
+\Fix{
+A couple of different tools were designed to perform this empirical study: \morpho{} and \lithium{}. \morpho{} retrieves as an output the input for \lithium{}. \lithium{} uses the input to reduce the search domain for \sfl{} and outputs the statements that resulted from the minimization. \morpho{} uses this to update the spectrum matrix, performs the before and after \sfl{} evaluation using the corresponding matrix, and outputs the metrics that report the \sfl{} performance for both cases ~---~ before and after using \ds{}. }
 
 Two different tools were developed to support this research: \morpho{} and \lithium{}. \morpho{} was designed to calculate the suspiciousness of all statements of a project before, and after the top-k minimization performed by \lithium{} whereas \lithium{} is responsible for reducing the search domain of each \texttt{Java} class of the project for the after-\sfl{} analysis. \morpho{} uses the spectrum matrix (Figure \ref{fig:spectrum-example}), and the pair \emph{name\#location} for each statement to calculate the respective ranking. All rankings are ordered from highest to lowest ranked. This information is retrieved along with each test case stack trace in a \texttt{.json} file which serves as an output to \lithium{}. \lithium{} starts by generating the inputs (Algorithm \ref{alg:ls}, line $2$) for the top-k classes of each failing test based, mainly, on the output of \emph{morpho} ~---~ ranked list of statements and the test cases stacktraces. Then, the tool iterates each class from the top-k classes ($c$) of each test $t$. In each iteration, classes are refined using an external java program (Algorithm \ref{alg:ls}, line 6) that substitutes all the line comments ($\backslash\backslash$), block comments ($\backslash*$ to $*\backslash$) and javadoc comments ($/**$ to $*/$) using the \texttt{JavaParser}\footnote{http://javaparser.org/} library. This step was added to \lithium{} because it turns \texttt{MozillaLithium}\footnote{https://github.com/MozillaSecurity/lithium} faster since the empty lines are ignored. Then, \texttt{MozillaLithium} performs the class minimization using a function of interest (Algorithm \ref{alg:finc}) which compares the output of the test with the expected one which is given as an input. Finally, the location of all relevant statements (Algorithm \ref{alg:ls}, line 9) is saved in a \texttt{.json} which is used for the before-\sfl{} analysis. \morpho{} uses the output from \lithium{} to create a copy of the older spectrum matrix and updates it according to the explanation provided on Figure \ref{fig:ds-reduction} where the statements that are not in the slice of the test suffer a suspiciouness reduction. In the end, \morpho{} performs the \sfl{} analysis for both matrixes and calculates the probability of the first line being faulty, the probability of the last line being faulty, and the mean and median of the position of the faulty line in the ranking. These are the metrics used to evaluate how considerable is the improvement obtained when combining \ds{} with \sfl{}.
 
@@ -679,7 +698,7 @@ This section reports results of our study to assess the impact of the
 
 Following other recent studies, we used the \dfj{} benchmark in our
 experiments~\cite{just-defects4j-issta2014}. The \dfj{} benchmark
-includes six subjects and 395 faults.
+includes six subjects and \numFaults{} faults.
 \lang{} is a library
 that provides a set of helper utilities for the {\small\texttt{java.lang}}
 API. \cmath{} is a lightweight library of self-contained
