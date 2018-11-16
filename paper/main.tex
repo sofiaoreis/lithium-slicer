@@ -700,12 +700,12 @@ the behavior of classes that cannot be used in unit testing.}
       \toprule
       Project            & Size (kLOC) & \# Tests & \# Defects \\ %\comments{& Failing Test Cases &}  
       \midrule
-      \lang{}            & -  & - & 65       \\   %\commentst{& 124   &  -}\\
-      \cmath{}           & -  & - & 106     \\   %\comments{& 177   &  -}\\
-      \closure{}         & -  & - & 133     \\   %\comments{& 350   &  -}\\
-      \chart{}           & -  & - & 26      \\  %\comments{& 92    &  -}\\
-      \jtime{}           & -  & - & 27       \\   %\comments{& 76    &  -}\\
-      \mockito{}         & -  & - & 38    \\     %\comments{& 118   &  -}\\
+      \lang{}            & 111751  & 6057 & 65       \\   %\commentst{& 124   &  -}\\
+      \cmath{}           & 306276  & 26797 & 106     \\   %\comments{& 177   &  -}\\
+      \closure{}         & 149521  & 27930  & 133     \\   %\comments{& 350   &  -}\\
+      \chart{}           & 230159  & 8458 & 26      \\  %\comments{& 92    &  -}\\
+      \jtime{}           & 141610  & 3289 & 27       \\   %\comments{& 76    &  -}\\
+      \mockito{}         & 22787  & 8835 & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
 \caption {Characterization of \dfj{} subjects.}
@@ -728,225 +728,242 @@ the behavior of classes that cannot be used in unit testing.}
 We describe the results of dynamic slicing alone in the following.
 
 
+\Sof{@todo: after answering rqs add a subsection to discuss the performance of \ds{}}
 
-\subsubsection{How much reduction in one execution trace
-  can one get with Dynamic Slicing?}
+\subsubsection{\textit{Does the critical slice include the faulty statements?}}
 
-Table~\ref{fig:ds-reduction} shows the average reduction obtained with
-slicing considering our implementation. The first column shows the \dfj{} project name.
-Column ``Stmts. Covered'' shows the number of statements covered in
-the execution of one failing test, column ``Slice Size'' shows the
-number of statements appearing in the slice size, and column ``\%
-Reduction'' shows the percentage reduction obtained. Numbers reported
-are averaged across all executions. We only considered cases where we
-knew a priori the slice contained the faulty statements
-(Section~\ref{sec:ds-limitations}). Overall, it is noticeable that
-both absolute reduction (as per column ``Slice Size'') and relatitve
-reduction (as per column ``\% Reduction'') obtained are
-significant.
-
-\begin{table}[h]
-  \centering
-  %  \resizebox{\columnwidth}{!}{%
-  \setlength{\tabcolsep}{3pt}
-    \begin{tabular}{lrrrr}
-      \toprule
-      Project             & Stmts. & Slice &
-      \multicolumn{2}{c}{Reduction} \\
-      \cline{4-5}
-                          &  Covered &  Size  & \multicolumn{1}{c}{Avg.} & \multicolumn{1}{c}{$\sigma$}\\
-      \midrule
-      \lang{}             & 4,221             & 94            &  97.77\%  & -       \\
-      \cmath{}            & 743,587           & 175           &  90.16\%  & 14.98\% \\
-      \closure{}          & -                 & -             &  -        & -       \\
-      \chart{}            & 13,474            & 155           &  90.26\%  & 16.52\% \\
-      \jtime{}            & 23,360            & 912           &  95.99\%  & 01.25\% \\
-      \mockito{}          & 3,064             & 340           &  82.48\%  & 12.02\% \\
-      \bottomrule
-  \end{tabular}
-%}
-\caption {\label{fig:ds-reduction}Average reduction in slice sizes. We
-  rounded averages to the closest integer in columns
-  ``Stmts. Covered'' and ``Slice Size''.\Mar{Para a coluna
-    avg. reduction, o correto IMO eh tirar a media das reducoes e nao a
-    reducao media.  Mais precisamente, considerando lang, ao inves de
-    calcular 100*(4221-94)/4221 (como acima), deveriamos tirar a media
-das reducoes considerando cada caso de lang.}\Mar{Nao costumo ver
-    desvio padrao como percentagem}}
-\end{table}
-\normalsize
-
-\subsubsection{What are the limitations of Dynamic Slicing?}
-\label{sec:ds-limitations}
-
-%% Omission errors, implicit dependencies, and multiple regression faults
-%% can result in bug misses.  Omission errors occur when existing code
-%% requires no modification but new code is needed to fix a
-%% bug. Consequently, the slice of a failing test that manifests an
-%% omission error misses the faulty statements as they are yet to be
-%% added in code.  Figure~\Fix{ref} shows an example of omission
-%% error.\Mar{add example}\Mar{consider removing omission errors as
-%%   \sfl{} cannot handle this case anyway.  check what we did on ICST'17
-%%   paper.}
-
-%% \begin{figure}[h!]
-%%   \begin{lstlisting}[frame=single]  % Start your code-block
-%%     int myMethod(int myParam) {
-%%       var result: Int = 0
-%%       //result = myParam //This line is missing
-%%       if (myParam <= 10) {
-%%         result = result / 10
-%%       }
-%%       return result
-%%     }
-%%   \end{lstlisting}
-%%   \caption{\Luis{Exemplo de falha de omissao do tipo \textbf{New Code}}}
-%%   \label{example-new-code}
-%% \end{figure}
-
-The pie chart in Figure~\ref{pie-chart} highlights the sources of
-problems associated with slicing.  We classify the slicing task as
-problematic when it misses the faulty statement. A number of reasons
-can explain a miss:
-
-\begin{itemize}
-\item \textbf{Missing code:} this case happens when the
-bug is due to missing code. Any fault localization method, including
-Slicing and \sfl{}, are innefective in this case. This is the main
-source of problem we found in our dataset. Note that, although this
-problem is not specific to slicing, executable slices could be used to
-help the developer identify missing statements with
-inspection.
-
-\item \textbf{Non-observable effect:} This case happens when the
-buggy code does not produce effect on the output. Consider, for
-example, the scenario where there is a bug in a branch predicate that
-results in execution not taking the branch guarded by a
-conditional. In that case, the \CS{} is able to produce a slice that
-does not contain the faulty if statement, still reproducing the
-original output. This problem is specific to \CS{}. Note from the
-piechart that this is the second most prevalent source of problem but
-much less significant compared to missing
-code.
-
-\item \textbf{Non-deterministic output:} This case happens when the
-  output of the program changes in every execution, such as random
-  output sizes. Although, we handled specific cases such as that of a
-  hashcode printed on the stack trace, which we are able to detect
-  with re-execution, in general, \CS{} cannot pinpoint those cases.
-  Consider, for example, the case of a stack overflow where the trace
-  can vary from one execution to another.
-
-%% There are supported cases, such as small changes in the output (i.e.,
-%% hashcode of an object printed in the stack trace). Although,
-%% StackOverflowException is not one of those cases, which the size of
-%% lines printed is not the same.
-
-\end{itemize}
+\subsubsection{\textit{How many test cases have the faulty statements in the top-5 of classes with the highest suspiciousness ranks?}}
 
 
-\begin{figure}[ht]
-  \centering
-  \begin {tikzpicture}
-    \pie[
-      text=pin,
-      radius=1.5,
-      color={
-        white!22.1,
-        white!14.7,
-        white!1.6,
-        white!61.6
-      }
-    ]{
-      61.6/{Missing Code (117)},
-      14.7/{Non-Observable Effect (28)},
-      1.6/{Non-deterministic Output (3)},
-      22.1/{REMOVEME (42)}
-    }
-  \end {tikzpicture}
-  \caption{\label{pie-chart}Source of problems in \Fix{XX} of the
-    \Fix{YY} cases where Dynamic Slicing misses the faulty statement.}
-\end{figure}
 
-\Fix{I was left wondering: so what? What is the message and the actionable points?}
-\Fix{The goal of this paper is debugging, so we should answer the question: does
-dynamic slicing alone help in debugging?}
+\subsection{Results of \sfl{}+\ds{} Combination}
 
-\subsection{Results of the \comb{} combination}
+\subsubsection{\textit{How effective is the \sfl{}+\ds{} combination for bug localization?}}
 
-This section describes the results of the \comb{} combination. The
-independent variables we used in the following experiments are (i) the
-selection of tests to slice (see Section~\ref{sec:combination}) and
-(ii) whether ot not the statements covered by selected tests are
-filtered from the ranking.  Considering the first variable, the
-illustration above shows the effect of slicing code using a single
-failing test. However, we also analyzed the combination where we
-compute slices of all failing tests. Intuitively, in those cases, more
-lines in the matrix would be affected. The rationale for varying the
-selection of tests to slice is to assess the impact that the amount of
-slicing code has on performance of \sfl{}.  Considering the second
-variable, the illustration above shows the scenario where all
-components are reported in the ranking. However, we also analyzed the
-scenario where only the components covered by our selection of tests
-appear in the ranking. For the case above, only $c_2$ and $c_5$ would
-be listed.  The dependent variable we used was the performance of
-\sfl{} measured with
-Top@N~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359},
-which indicates, for a given value N, the percentage of faults ranked
-at position no lower than N. As recently discussed by Ang
-\etal~\cite{ang-perez-van-deursen-rui-2017}, \sfl{} researchers
-started using absolute metrics, such as Top@N, after Parnin and
-Orso~\cite{parnin-orso-2011} highlighed the bias in metrics based on
-the position of the faulty statement in the ranking relative to the
-total size of the ranking, which is often very high. It is worth
-mentioning that we used the GZoltar~\cite{gzoltar} toolset to run our
-experiments.
+\subsection{Threats to validity}
 
-\Fix{discutir Tabela~\ref{tab:summary}...}
+\pagebreak
 
-
-\begin{table}[h]
-  \centering
-  \setlength{\tabcolsep}{4pt}
-    \begin{tabular}{lrrrr}
-      \toprule
-      Project            & (1,N) & (1,F) & (A,N) & (A,F)  \\
-      \midrule
-      \lang{}            & -  & - & -  & - \\
-      \cmath{}           & -  & - & -  & - \\
-      \closure{}         & -  & - & -  & - \\
-      \chart{}           & -  & - & -  & - \\
-      \jtime{}           & -  & - & -  & - \\
-      \mockito{}         & -  & - & -  & - \\
-      \bottomrule
-  \end{tabular}
-\caption {\label{tab:summary}Summary of results considering Top@N, for
-  N=50, which is the midpoint value of N for the range we selected
-  1-100.}
-\end{table}
-\normalsize
-
-\subsubsection{What is the impact of slicing one failing test?}
-This scenario reflects the case where the developer selects one given
-test to focus debugging efforts. Figure \ref{fig:one-failing-test}
-compares the results of \sfl{} and \comb{} when slicing code
-associated with a single failing test. The top section of the figure
-shows results without filtering covered statements whereas the lower
-section shows the results with filtering. Each table shows the results of \sfl{} and \comb{}
-for increasing values of N.  The top section of each table shows the
-results for \sfl{} whereas the lower section shows results of
-\comb{}. A plot for each subject appears under the tables to
-illustrate how techniques compare. The x-axis denote the value of N
-and the y-axis denotes the value of Top@N. Informally, a quick
-increase is good~--~it means a high percentage of faults was detected
-for small values of N.\Mar{@Rui, ainda nao esta claro qual a mensagem
-  que vamos transmitir. Considerando resultados atuais, existe
-  reducao, mas parece ser pouca para N<20. Existe algum valor de N
-  considerado referencia para que a gente possa dar mais substancia ao
-  resultado?}
-
-\subsubsection{What is the impact of slicing all failing tests?}
-Table~\ref{fig:all-failing-tests} \Fix{...............}
+%
+%
+%\subsubsection{How much reduction in one execution trace
+%  can one get with Dynamic Slicing?}
+%
+%Table~\ref{fig:ds-reduction} shows the average reduction obtained with
+%slicing considering our implementation. The first column shows the \dfj{} project name.
+%Column ``Stmts. Covered'' shows the number of statements covered in
+%the execution of one failing test, column ``Slice Size'' shows the
+%number of statements appearing in the slice size, and column ``\%
+%Reduction'' shows the percentage reduction obtained. Numbers reported
+%are averaged across all executions. We only considered cases where we
+%knew a priori the slice contained the faulty statements
+%(Section~\ref{sec:ds-limitations}). Overall, it is noticeable that
+%both absolute reduction (as per column ``Slice Size'') and relatitve
+%reduction (as per column ``\% Reduction'') obtained are
+%significant.
+%
+%\begin{table}[h]
+%  \centering
+%  %  \resizebox{\columnwidth}{!}{%
+%  \setlength{\tabcolsep}{3pt}
+%    \begin{tabular}{lrrrr}
+%      \toprule
+%      Project             & Stmts. & Slice &
+%      \multicolumn{2}{c}{Reduction} \\
+%      \cline{4-5}
+%                          &  Covered &  Size  & \multicolumn{1}{c}{Avg.} & \multicolumn{1}{c}{$\sigma$}\\
+%      \midrule
+%      \lang{}             & 4,221             & 94            &  97.77\%  & -       \\
+%      \cmath{}            & 743,587           & 175           &  90.16\%  & 14.98\% \\
+%      \closure{}          & -                 & -             &  -        & -       \\
+%      \chart{}            & 13,474            & 155           &  90.26\%  & 16.52\% \\
+%      \jtime{}            & 23,360            & 912           &  95.99\%  & 01.25\% \\
+%      \mockito{}          & 3,064             & 340           &  82.48\%  & 12.02\% \\
+%      \bottomrule
+%  \end{tabular}
+%%}
+%\caption {\label{fig:ds-reduction}Average reduction in slice sizes. We
+%  rounded averages to the closest integer in columns
+%  ``Stmts. Covered'' and ``Slice Size''.\Mar{Para a coluna
+%    avg. reduction, o correto IMO eh tirar a media das reducoes e nao a
+%    reducao media.  Mais precisamente, considerando lang, ao inves de
+%    calcular 100*(4221-94)/4221 (como acima), deveriamos tirar a media
+%das reducoes considerando cada caso de lang.}\Mar{Nao costumo ver
+%    desvio padrao como percentagem}}
+%\end{table}
+%\normalsize
+%
+%\subsubsection{What are the limitations of Dynamic Slicing?}
+%\label{sec:ds-limitations}
+%
+%%% Omission errors, implicit dependencies, and multiple regression faults
+%%% can result in bug misses.  Omission errors occur when existing code
+%%% requires no modification but new code is needed to fix a
+%%% bug. Consequently, the slice of a failing test that manifests an
+%%% omission error misses the faulty statements as they are yet to be
+%%% added in code.  Figure~\Fix{ref} shows an example of omission
+%%% error.\Mar{add example}\Mar{consider removing omission errors as
+%%%   \sfl{} cannot handle this case anyway.  check what we did on ICST'17
+%%%   paper.}
+%
+%%% \begin{figure}[h!]
+%%%   \begin{lstlisting}[frame=single]  % Start your code-block
+%%%     int myMethod(int myParam) {
+%%%       var result: Int = 0
+%%%       //result = myParam //This line is missing
+%%%       if (myParam <= 10) {
+%%%         result = result / 10
+%%%       }
+%%%       return result
+%%%     }
+%%%   \end{lstlisting}
+%%%   \caption{\Luis{Exemplo de falha de omissao do tipo \textbf{New Code}}}
+%%%   \label{example-new-code}
+%%% \end{figure}
+%
+%The pie chart in Figure~\ref{pie-chart} highlights the sources of
+%problems associated with slicing.  We classify the slicing task as
+%problematic when it misses the faulty statement. A number of reasons
+%can explain a miss:
+%
+%\begin{itemize}
+%\item \textbf{Missing code:} this case happens when the
+%bug is due to missing code. Any fault localization method, including
+%Slicing and \sfl{}, are innefective in this case. This is the main
+%source of problem we found in our dataset. Note that, although this
+%problem is not specific to slicing, executable slices could be used to
+%help the developer identify missing statements with
+%inspection.
+%
+%\item \textbf{Non-observable effect:} This case happens when the
+%buggy code does not produce effect on the output. Consider, for
+%example, the scenario where there is a bug in a branch predicate that
+%results in execution not taking the branch guarded by a
+%conditional. In that case, the \CS{} is able to produce a slice that
+%does not contain the faulty if statement, still reproducing the
+%original output. This problem is specific to \CS{}. Note from the
+%piechart that this is the second most prevalent source of problem but
+%much less significant compared to missing
+%code.
+%
+%\item \textbf{Non-deterministic output:} This case happens when the
+%  output of the program changes in every execution, such as random
+%  output sizes. Although, we handled specific cases such as that of a
+%  hashcode printed on the stack trace, which we are able to detect
+%  with re-execution, in general, \CS{} cannot pinpoint those cases.
+%  Consider, for example, the case of a stack overflow where the trace
+%  can vary from one execution to another.
+%
+%%% There are supported cases, such as small changes in the output (i.e.,
+%%% hashcode of an object printed in the stack trace). Although,
+%%% StackOverflowException is not one of those cases, which the size of
+%%% lines printed is not the same.
+%
+%\end{itemize}
+%
+%
+%\begin{figure}[ht]
+%  \centering
+%  \begin {tikzpicture}
+%    \pie[
+%      text=pin,
+%      radius=1.5,
+%      color={
+%        white!22.1,
+%        white!14.7,
+%        white!1.6,
+%        white!61.6
+%      }
+%    ]{
+%      61.6/{Missing Code (117)},
+%      14.7/{Non-Observable Effect (28)},
+%      1.6/{Non-deterministic Output (3)},
+%      22.1/{REMOVEME (42)}
+%    }
+%  \end {tikzpicture}
+%  \caption{\label{pie-chart}Source of problems in \Fix{XX} of the
+%    \Fix{YY} cases where Dynamic Slicing misses the faulty statement.}
+%\end{figure}
+%
+%\Fix{I was left wondering: so what? What is the message and the actionable points?}
+%\Fix{The goal of this paper is debugging, so we should answer the question: does
+%dynamic slicing alone help in debugging?}
+%
+%\subsection{Results of the \comb{} combination}
+%
+%This section describes the results of the \comb{} combination. The
+%independent variables we used in the following experiments are (i) the
+%selection of tests to slice (see Section~\ref{sec:combination}) and
+%(ii) whether ot not the statements covered by selected tests are
+%filtered from the ranking.  Considering the first variable, the
+%illustration above shows the effect of slicing code using a single
+%failing test. However, we also analyzed the combination where we
+%compute slices of all failing tests. Intuitively, in those cases, more
+%lines in the matrix would be affected. The rationale for varying the
+%selection of tests to slice is to assess the impact that the amount of
+%slicing code has on performance of \sfl{}.  Considering the second
+%variable, the illustration above shows the scenario where all
+%components are reported in the ranking. However, we also analyzed the
+%scenario where only the components covered by our selection of tests
+%appear in the ranking. For the case above, only $c_2$ and $c_5$ would
+%be listed.  The dependent variable we used was the performance of
+%\sfl{} measured with
+%Top@N~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359},
+%which indicates, for a given value N, the percentage of faults ranked
+%at position no lower than N. As recently discussed by Ang
+%\etal~\cite{ang-perez-van-deursen-rui-2017}, \sfl{} researchers
+%started using absolute metrics, such as Top@N, after Parnin and
+%Orso~\cite{parnin-orso-2011} highlighed the bias in metrics based on
+%the position of the faulty statement in the ranking relative to the
+%total size of the ranking, which is often very high. It is worth
+%mentioning that we used the GZoltar~\cite{gzoltar} toolset to run our
+%experiments.
+%
+%\Fix{discutir Tabela~\ref{tab:summary}...}
+%
+%
+%\begin{table}[h]
+%  \centering
+%  \setlength{\tabcolsep}{4pt}
+%    \begin{tabular}{lrrrr}
+%      \toprule
+%      Project            & (1,N) & (1,F) & (A,N) & (A,F)  \\
+%      \midrule
+%      \lang{}            & -  & - & -  & - \\
+%      \cmath{}           & -  & - & -  & - \\
+%      \closure{}         & -  & - & -  & - \\
+%      \chart{}           & -  & - & -  & - \\
+%      \jtime{}           & -  & - & -  & - \\
+%      \mockito{}         & -  & - & -  & - \\
+%      \bottomrule
+%  \end{tabular}
+%\caption {\label{tab:summary}Summary of results considering Top@N, for
+%  N=50, which is the midpoint value of N for the range we selected
+%  1-100.}
+%\end{table}
+%\normalsize
+%
+%\subsubsection{What is the impact of slicing one failing test?}
+%This scenario reflects the case where the developer selects one given
+%test to focus debugging efforts. Figure \ref{fig:one-failing-test}
+%compares the results of \sfl{} and \comb{} when slicing code
+%associated with a single failing test. The top section of the figure
+%shows results without filtering covered statements whereas the lower
+%section shows the results with filtering. Each table shows the results of \sfl{} and \comb{}
+%for increasing values of N.  The top section of each table shows the
+%results for \sfl{} whereas the lower section shows results of
+%\comb{}. A plot for each subject appears under the tables to
+%illustrate how techniques compare. The x-axis denote the value of N
+%and the y-axis denotes the value of Top@N. Informally, a quick
+%increase is good~--~it means a high percentage of faults was detected
+%for small values of N.\Mar{@Rui, ainda nao esta claro qual a mensagem
+%  que vamos transmitir. Considerando resultados atuais, existe
+%  reducao, mas parece ser pouca para N<20. Existe algum valor de N
+%  considerado referencia para que a gente possa dar mais substancia ao
+%  resultado?}
+%
+%\subsubsection{What is the impact of slicing all failing tests?}
+%Table~\ref{fig:all-failing-tests} \Fix{...............}
 
 %
 %\begin{figure*}[!ht]
@@ -1112,7 +1129,8 @@ Table~\ref{fig:all-failing-tests} \Fix{...............}
 
 \section{Related Work}
 
-\Mar{beware, this is >>NOT<< revised! .........................................................................}
+\Mar{beware, this is >>NOT<< revised! ................}\\
+\Sof{@todo: review this}
 
 \textbf{Program Slicing}: Most recently related tool is ORBS~\cite{DBLP:conf/scam/BinkleyGHIKY15}. \Fix{...}
 
@@ -1264,6 +1282,9 @@ Observation-Based Slicing technique, similar to Critical Slicing, is
 based on deleting statements that are not relevant to the test case
 failure. Although, with this technique is possible to remain the rest
 of the system untouched.
+
+
+\section{Conclusions and Future Work}\label{sec:conc}
 
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
