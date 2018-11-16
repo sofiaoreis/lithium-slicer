@@ -237,8 +237,7 @@ dataset~\cite{just-defects4j-issta2014}, which is frequently used to
 evaluated fault localization research. The intuition for the \comb{}
 combination is that several highly ranked statements, albeit covered
 by failing executions, may be unrelated to the fault. Prior work
-reported promising results in this combination
-\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
+reported promising results in this combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
 We found surprising that, despite these findings, reported nearly 5
 years ago, no tool or client analyses use this combination
 today. Several reasons could justify that observation. One hypothesis is that results reported in prior work are
@@ -1169,23 +1168,57 @@ We describe the results of dynamic slicing alone in the following.
 
 \section{Related Work}
 
-\Mar{beware, this is >>NOT<< revised! ................}\\
-\Sof{@todo: review this}
 
-\textbf{Program Slicing}: Most recently related tool is ORBS~\cite{DBLP:conf/scam/BinkleyGHIKY15}. \Fix{...}
+\subsection{Program Slicing}
 
-Program Slicing~\cite{Weiser:1981:PS:800078.802557} is a technique to
-identify program entities (the slice)\comments{that influence the
-  computation of} computationally related to a user-provided point of
-interest (the slice criterion).
+Program Slicing is an old technique with several applications in PL
+and SE research~\cite{Weiser:1981:PS:800078.802557}. Slicing can be
+implemented in different ways. Dynamic Slicing has found its main
+application in fault
+localization~\cite{Agrawal:1990:DPS:93542.93576}---in this application
+context, failing tests exist. Research in this area has mainly focused
+on slicing code
+efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
+and avoiding data and control omission
+errors~\cite{Zhang:2007:TLE:1250734.1250782,
+  Lin:2018:BDE:3238147.3238163}. Omission errors correspond to the
+cases where tests fail because some part of the code was not executed
+when it should. Dynamic fault localization techniques cannot hope to
+soundly report bugs in those cases. The issue is that incorporating
+static information to capture those cases can result in unacceptably
+large slices, which defeats the purpose of reducing the fault search
+space. It is worth noting that, conceptually, the \comb{} combination
+can be used with any form of dynamic slicing. We chose an
+implementation of Critical
+Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
 
-Similarly, dynamic slicing lacks successful cases of downstream
-analyses. The WhyLine debugging assistant~\cite{whyline-website} is an
-isolated case of success.
+%% ORBS~\cite{Binkley:2014:OLP:2635868.2635893,DBLP:conf/iwpc/IslamB16}
+%% is a recently-proposed slicing technique that is similar to Critical
+%% Slicing. It is worth noting that
 
 
-There are some approaches that utilize dynamic slicing and
-spectrum-based fault localization (SFL) as fault localization methods.
+\subsection{SFL}
+
+\Mar{...Rui, please elaborate...}
+
+
+\subsection{\comb{}}
+
+Prior work has investigated the combination of dynamic slicing and
+spectrum-based fault
+localization~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}. Although
+the methodology used in these papers vary, the overall message is that
+the combination is valuable. Note that slicing alone does not provide
+the guarantee of improvement to \sfl{} as statements discarded with
+slicing could have been ranked lower compared to faulty
+statements. This paper differs from prior work in that it uses a much
+larger dataset of programs and faults and a more rigorous experimental
+methodology.
+
+
+\subsubsection{Applications}
+
+\Mar{...Rui, can you revise this? I guess Luis/Davino wrote it.}
 
 Ishii and Kutsuna ~\cite{li-huo-chen-zhong-feng-li-2013} proposed a
 technique involving dynamic slicing and SFL applied to MATLAB/Simulink
@@ -1209,11 +1242,7 @@ of the technique decreases when applied to models with multiple faults
 instead of one, as does the efficiency when exposed to large models,
 number of generated tests, sizes of sliced models and so on.
 
-
-
-\Fix{...}
-
-\subsection{Automatic Program Repair}
+\subsubsection{Automatic Program Repair}
 Automated repair techiniques have received considerable attention on
 the last decade and consists of three basic steps: fault localization, patch
 generation, and patch validation.  Regarding the fault localization
@@ -1273,55 +1302,7 @@ assuming the fault can be repaired by changing a single statement.
 
 \Davino { Another set of automatic program repair tools that doesn't use fault localization includes: CodePhage, ClearView, PAR, RSRepair, Kali, and AutoFix, among others. }
 
-\subsection{Dynamic Slicing and Statistical Fault Localization}
 
-Previous works studied the impact of bringing together both dynamic
-slicing and statistical fault localization applied to software
-debugging.
-
-Lei et al. proposed the use of program slices built with a
-dynamic backward slicing approach to defined statistical variables
-which can capture the influence of a statement execution on the output
-using SFL quantification of suspiciousness to each statement\cite{lei-mao-dai-wang-2012}.
-
-Ishii and Kutsuna proposed a fault localization method with dynamic slicing that iteratively generates failing test cases using Satisfiability Modulo Theories (SMT) solvers to get distinct slices
-for each test case. The proposed method was evaluated using MATLAB/Simulink models\cite{ishii-kutsuna-2016}.
-
-Acknowledging the dependencies problem to locate a fault in the probram, Wen\cite{wen-2012} combines the concept of critical slicing, i.e., deleting statements with no contributions to faults,
-with statistical fault localization proposing a program slicing spectrum-based software fault localization model.
-
-He et al. proposed a new method to automated fault localization with
-CPSS (coverage and program structure slicing)\cite{he-zhang-liu-gao-2014}.  Based on program
-execution path struture data dependency analysis, the idea is to
-extract execution paths streamlined into a complete program dependence
-path, reverse data dependence analysis and calculate the defect rate
-with state of the art SFL techiniques (i.e., Tarantula).
-
-\subsection{Other}
-
-\Mar{moved to here...revise when possible...}
-
-For example,
-dependency tracking alternatives such as
-JSlice~\cite{Wang:2004:UCB:998675.999455} and
-JavaSlicer~\cite{hammacher-bachthesis-2008} instrument the analyzed
-code~\cite{hammacher-bachthesis-2008} or modify
-interpreters~\cite{Wang:2004:UCB:998675.999455} to build compact
-execution traces.  Then, they process the traces to reconstruct
-program states; this step recovers the dependency chains rooted in
-points of interest.
-
-ORBS~\cite{Binkley:2014:OLP:2635868.2635893} is a observation-based
-slicing method independent of programming language. ORBS deletes
-statements in the files of interest and checks whether the test output is
-the same as the original
-test~\cite{Binkley:2014:OLP:2635868.2635893}.
-
-\Fix{revise? merge?}
-Observation-Based Slicing technique, similar to Critical Slicing, is
-based on deleting statements that are not relevant to the test case
-failure. Although, with this technique is possible to remain the rest
-of the system untouched.
 
 
 \section{Conclusions and Future Work}\label{sec:conc}
