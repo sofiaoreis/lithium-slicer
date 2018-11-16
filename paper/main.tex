@@ -435,6 +435,7 @@ shows an example spectrum.
   \caption{An example spectrum.}
   \label{fig:spectrum-example}
 \end{wrapfigure}
+
 Several types of spectra exist.  The most commonly used is called
 hit-spectrum, where the coverage matrix is encoded in terms of binary
 \emph{hit} (1) and \emph{not hit} (0) flags, \ie{}, $\A{ij} = 1$ if
@@ -483,7 +484,8 @@ matrix (/spectra) whose values can be set to zero.
 %% %\item {[optional]} Filter statements covered by selected failing tests.
 %% \end{enumerate}
 
-\begin{figure}[t!]
+\begin{figure}[t!] 
+
   \centering
   \begin{subfigure}{0.5\textwidth}  
     {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
@@ -510,6 +512,7 @@ matrix (/spectra) whose values can be set to zero.
       \end{tabular}
     }
     \caption{Spectra update.}
+    \label{fig:ds-reduction}
   \end{subfigure}
 
   \vspace{2ex}
@@ -731,6 +734,8 @@ We describe the results of dynamic slicing alone in the following.
 \Sof{@todo: after answering rqs add a subsection to discuss the performance of \ds{}}
 
 \subsubsection{\textit{Does the critical slice include the faulty statements?}}
+
+
 
 \subsubsection{\textit{How many test cases have the faulty statements in the top-5 of classes with the highest suspiciousness ranks?}}
 
@@ -1251,7 +1256,7 @@ Acknowledging the dependencies problem to locate a fault in the probram, Wen\cit
 with statistical fault localization proposing a program slicing spectrum-based software fault localization model.
 
 He et al. proposed a new method to automated fault localization with
-CPSS (coverage and program structure slicing)\cite{he-zhang-liu-gao-201}.  Based on program
+CPSS (coverage and program structure slicing)\cite{he-zhang-liu-gao-2014}.  Based on program
 execution path struture data dependency analysis, the idea is to
 extract execution paths streamlined into a complete program dependence
 path, reverse data dependence analysis and calculate the defect rate
