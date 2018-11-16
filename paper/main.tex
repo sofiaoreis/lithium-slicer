@@ -1,4 +1,4 @@
-%% For double-blind review submission, w/o CCS and ACM Reference (max submission space)
+% For double-blind review submission, w/o CCS and ACM Reference (max submission space)
 \documentclass[sigplan,10pt,review,anonymous]{acmart}\settopmatter{printfolios=true,printccs=false,printacmref=false}
 %% For double-blind review submission, w/ CCS and ACM Reference
 %\documentclass[sigplan,review,anonymous]{acmart}\settopmatter{printfolios=true}
@@ -15,8 +15,8 @@
 %% Conference information
 %% Supplied to authors by publisher for camera-ready submission;
 %% use defaults for review submission.
-\acmConference[PL'18]{ACM SIGPLAN Conference on Programming Languages}{January 01--03, 2018}{New York, NY, USA}
-\acmYear{2018}
+\acmConference[PLDI'19]{ ACM SIGPLAN Conference on Programming Language Design and Implementation}{June 24--26, 2019}{Phoenix, AZ, USA}
+\acmYear{2019}
 \acmISBN{} % \acmISBN{978-x-xxxx-xxxx-x/YY/MM}
 \acmDOI{} % \acmDOI{10.1145/nnnnnnn.nnnnnnn}
 \startPage{1}
@@ -241,19 +241,19 @@ reported promising results in this combination
 \cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
 We found surprising that, despite these findings, reported nearly 5
 years ago, no tool or client analyses use this combination
-today. Several reasons could justify that observation. One hypothesis
-to explain that observation is that results reported in prior work are
+today. Several reasons could justify that observation. One hypothesis is that results reported in prior work are
 over-optimistic. For example, most prior work evaluated improvements
 of \sfl{} techniques using relative metrics, which are based on the
 position of the first faulty statements found in the ranking relative
-to the total number of ranking statements, which is often a large
-number. As such, it inflates actual improvements and deceives paper
-reviewers. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
-pointed to that fact encouraging researchers to adopt precise metrics,
-such as \topatn{}
-\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. This
+to the total number of ranked statements, which is often a large
+number. As such, it inflates actual improvements and deceives
+potential adopters of the technology. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
+pointed to that fact and encouraged researchers to adopt more precise metrics,
+such as \topk{}
+\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359},
+which has been widely adopted to evaluate performance of information retrieval algorithms~\Fix{cite}. This
 metric reports the percentage of faults captured by a technique when
-the rank is trimmed to the first N components.
+the rank is trimmed to the first $k$ components.
 
 The goal of this paper is to reassess whether the \comb{} combination
 is worthwhile under the light of a more accurate metric and a larger
@@ -264,16 +264,33 @@ improve their results or to be aware they should not invest on this
 integration. This study covers the following research questions:
 
 %% ~\cite{Jin:2013:FFL:2483760.2483763,Laghari:2016:FSB:2970276.2970308,campos-etal-ase2016,DBLP:journals/stvr/LiuLNBB16,DBLP:conf/hvc/LidO16,7589823}
-%% This research aims to address the doubts surrounding the efficiency of \sfl{}+\ds{} combination through the answer to the following research questions (\RQ{}):
+%% This research aims to address the doubts surrounding the efficiency
+%% of \sfl{}+\ds{} combination through the answer to the following
+%% research questions (\RQ{}):
+
+\newcommand{\rqone}{How often does DS miss faulty statements?}
+%\newcommand{\rqtwo}{How much reduction in file size can DS obtain?}
+\newcommand{\rqthree}{How effective is the \comb{} combination?}
+
+
+%\item[] [efficiency]~\textit{How often faulty statements appear in the  most suspicious classes?}  
 
 \begin{itemize}[leftmargin=*]
-%\item[] [efficiency]~\textit{How often faulty statements appear in the  most suspicious classes?}  
-\item[]{\footnotesize[soundness]}~\textit{How often DS misses faulty statements?}
-\item[]{\footnotesize[effectiveness]}~\textit{How much reduction in file size can DS obtain?}  
-\item[]{\footnotesize[effectiveness]}~\textit{How effective is the \comb{} combination?} 
+\item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
+\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}  
 \end{itemize}
 
-To sum, our results show that \Fix{write a paragraph about this...}
+The first question addresses an important problem associated with
+dynamic slicing techniques---that of missing faulty
+statements. Naturally, the consequence of that problem for debugging
+is that developers would never be able to locate faults. Different
+slicers can miss faulty statements for different reasons. In this
+paper, we used Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310},
+which, in principle, could miss statements because of imprecise
+oracles that guide the slicing process. We evaluated how often that
+important problem happens in our experiments. The second research
+questions effectively evaluates the impact of the combination. To sum,
+our results show that \Fix{write a paragraph about this...}
 
 The contributions of this work are as follows:
 \begin{itemize}
@@ -283,6 +300,8 @@ The contributions of this work are as follows:
 	\item The tools used to run the study. Benchmarks and experimental results are also publicly available.
 \end{itemize}
 
+
+\newpage
 
 \section{Background}
 \label{sec:background}
@@ -297,7 +316,7 @@ This section presents important background material for the rest of the paper.
 %% and efficiency as to support execution of our experiments in
 %% reasonable time.  Unfortunately, we failed to find public
 %% implementations satisfying these criteria.
-%% For those reasons, we decided to implement a critical slicer for Java,
+%% For those reasons, we ded to implement a critical slicer for Java,
 %% which is the language of the subjects in our dataset, \dfj{}.
 
 Program slicing is a program understanding method to identify the
