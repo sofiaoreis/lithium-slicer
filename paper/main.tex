@@ -273,7 +273,7 @@ integration. This study covers the following research questions:
 
 \begin{itemize}[leftmargin=*]
 \item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
-\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}  
+\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}
 \end{itemize}
 
 The first question addresses an important problem associated with
@@ -1199,8 +1199,20 @@ Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
 
 \subsection{SFL}
 
-\Mar{...Rui, please elaborate...}
+Statistics-based techniques (e.g.,~\cite{Pearson:2017:EIF:3097368.3097441}) are
+popular automated fault localization techniques within the Software Engineering
+community. They correlate information about program fragments that have been
+exercised in multiple program execution traces (also called \textit{program
+spectra}) with information about successful and failing executions. By doing
+that, statistics-based approaches yield a list of suspect program fragments
+sorted by their likelihood to be at fault. Since this technique is efficient in
+practice, it is attractive for large modern software systems~\cite{ecbs07}.
 
+Spectrum-based fault localization (\sfl) is amongst the most common statistical
+fault localization technique that takes as input a test suite including at least
+one failing test and reports on output a ranked list of components likely to be
+in fault~\cite{FLSurvey2016, DBLP:conf/kbse/JonesH05,
+DBLP:journals/smr/LuciaLJTB14, DBLP:journals/jss/AbreuZGG09}.
 
 \subsection{\comb{}}
 
@@ -1218,11 +1230,9 @@ methodology.
 
 \subsubsection{Applications}
 
-\Mar{...Rui, can you revise this? I guess Luis/Davino wrote it.}
-
 Ishii and Kutsuna ~\cite{li-huo-chen-zhong-feng-li-2013} proposed a
 technique involving dynamic slicing and SFL applied to MATLAB/Simulink
-models.The technique consists of iteratively
+models. The technique consists of iteratively
 generating tests that cause an error using satisfiability modulo
 theories (SMT) so that the slices generated are distinct from each
 other.  For slicing, their technique uses a program dependence graph
