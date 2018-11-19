@@ -760,19 +760,27 @@ the behavior of classes that cannot be used in unit testing.}
 %% of regression.
 
 
+\subsection{Experiments}
+
+These experiments only consider 213 of 395 bugs of the \dfj. 
+Each bug has one or more failing tests associated. For each test, it is verified if all the faulty statements of the bug are in the slicer. \#Ev is the total number of verifications performed by bug. For each bug ($i$) of the project, this experiment checks if all the faulty statements of the bug ($FS_i$) are in the slicer retrieved by each test ($T_i$). $n$ is the total number of bugs considered for each project.
+
+$$\#Ev = \sum_{i=1}^{n} T_i * FS_i$$
+
+\Sof{It does not make much sense to report \#Bugs here. If we end up not using the all dataset I think it would be better to report this in another section.}
+To evaluate the performance of \ds{} alone, the following metrics were taken into consideration: the total number of faulty statements ($\#FS$) in each project; the total number of tests ($\#T$) in each project; the number of times that each $FS$ may be in the slicer of each $T$, $\#Ev$; the number of bugs considered per project to the experiments, $\#Bugs$; the percentage of $FS$ that are not in the slicers of $T$, \% $\overline{in}$; the percentage of $FS$ that are not found in the top-5 of the classes with the highest ranks of suspiciousness; and, the percentage of $FS$ that are in the slicers of $T$. Regarding the \sfl{}+\ds{} combination, performance is evaluated based on four different metrics: the probability of the first line being the faulty one, $\% imp(f)$; the probability of the last line being the faulty one, $\% imp(l)$; and, finally the mean, $\% imp(\overline{m})$, and median $\% imp (median)$ of the position of the faulty line in the ranking. This combination is evaluated considering all the classes of the project (all) and only the classes of the project involved in the failing tests execution (loaded).
+
 \subsection{Results of Dynamic Slicing}
 
-We describe the results of dynamic slicing alone in the following
-
+We describe the results of dynamic slicing alone in the following sections.
 
 \subsubsection{\textit{How often DS misses faulty statements?}}
 
-From the t
 
 \begin{table*}[h]
 	\centering
 	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{lrrrrrrr}
+	\begin{tabular}{lccccccc}
 		\toprule
 		Project             & \#FS  & \# T & \# Ev & \#Bugs & \%  $\overline{in}$ &  \% top-k & \% in  \\ 
 		\midrule
@@ -782,16 +790,10 @@ From the t
 		\cmath{} 	& 299 &  112  &  438 & 86 & 8\% & 2.1\% & 89.9\%   \\
 		\mockito{} 	& 94 &  93  &  397 & 25 & 3.3\% & 3.5\% & 93.2\%   \\
 		\jtime{} 	& 63 &  49  &  171 & 16 & 1.2\% & 0\% & 98.8\%   \\
-				\midrule
+		\bottomrule
 				Total 	& 756 &  411  &  1670 & 213 &  &  &   \\
-		%		\lang{}             & 100\% &  90  &  59  \\
-		%		\cmath{}           & 96.4\% & 111   & 86  \\   
-		%		\closure{}         & 100 \%  & 10  & 6   \\   
-		%		\chart{}            &  86.8\% &  57  &  21 \\ 
-		%		\jtime{}           &  &     &    \\   
-		%		\mockito{}     & 100\% & 25  & 38  \\    
 	\end{tabular}
-	\caption {\ds{} performance evaluation}
+	\caption {Report of the capability of \ds{} on missing faulty statements}
 \end{table*}
 \normalsize
 
@@ -803,10 +805,12 @@ From the t
 \begin{table*}[h]
 	\centering
 	\setlength{\tabcolsep}{2pt}
-	\begin{tabular}{lrrrrrrrr}
+	\begin{tabular}{lcccccccc}
 		\toprule
 		
-		Project             & \% imp (f) &\% imp (l) & \% imp ($\overline{m}$)& \% imp (median) &\% imp (f) & \% imp (l)   & \% imp ($\overline{m}$) & \% imp (median)  \\ %\comments{& Failing Test Cases &}  
+			    \multirow{2}{*}{Project}   & \multicolumn{4}{c}{all} & \multicolumn{4}{c}{loaded}  \\ 
+		
+		             & \% imp (f) &\% imp (l) & \% imp ($\overline{m}$)& \% imp (median) &\% imp (f) & \% imp (l)   & \% imp ($\overline{m}$) & \% imp (median)  \\ %\comments{& Failing Test Cases &}  
 		\midrule
 		
 			\chart{}  & 20.98\% & 20.32\% & 20.05\% & 19.75\% & 20.98\% & 20.32\% & 20.05\% & 19.75\% \\
@@ -815,6 +819,7 @@ From the t
 			\cmath{}           &8.58\% & 6.59\% & 7.65\% & 8.74\% & 8.58\% & 6.59\% & 7.65\% & 8.74\% \\
 		\mockito{} & 15.73\% & 17.37\% & 17.63\% & 15.74\% & 15.73\% & 17.37\% & 17.63\% & 15.74\% \\
 		\jtime{}           & 8.83\% & 10.70\% & 11.25\% & 10.86\% & 8.83\% & 10.70\% & 11.25\% & 10.86\% \\
+		\bottomrule
 	\end{tabular}
 	\caption {\sfl{}+\ds{} performance evaluation}
 \end{table*}
