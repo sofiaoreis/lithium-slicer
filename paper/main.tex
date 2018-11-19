@@ -747,26 +747,67 @@ the behavior of classes that cannot be used in unit testing.}
 
 \subsection{Results of Dynamic Slicing}
 
-We describe the results of dynamic slicing alone in the following.
+We describe the results of dynamic slicing alone in the following
 
 
-\Sof{@todo: after answering rqs add a subsection to discuss the performance of \ds{}}
+\subsubsection{\textit{How often DS misses faulty statements?}}
 
-\subsubsection{\textit{Does the critical slice include the faulty statements?}}
+From the t
+
+\begin{table*}[h]
+	\centering
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{lrrrrrrr}
+		\toprule
+		Project             & \#FS  & \# T & \# Ev & \#Bugs & \%  $\overline{in}$ &  \% top-k & \% in  \\ 
+		\midrule
+		\chart{} 	& 40 &  57  &  136 & 21 & 13.2\% & 0\% & 86.8\%   \\
+		\closure{} 	& 56 &  10  &  81 & 6 & 0\% & 3.7\% & 96.3\%   \\
+		\lang{} 	& 204 &  90  &  447 & 59 & 0\% & 0\% & 100\%   \\
+		\cmath{} 	& 299 &  112  &  438 & 86 & 8\% & 2.1\% & 89.9\%   \\
+		\mockito{} 	& 94 &  93  &  397 & 25 & 3.3\% & 3.5\% & 93.2\%   \\
+		\jtime{} 	& 63 &  49  &  171 & 16 & 1.2\% & 0\% & 98.8\%   \\
+				\midrule
+				Total 	& 756 &  411  &  1670 & 213 &  &  &   \\
+		%		\lang{}             & 100\% &  90  &  59  \\
+		%		\cmath{}           & 96.4\% & 111   & 86  \\   
+		%		\closure{}         & 100 \%  & 10  & 6   \\   
+		%		\chart{}            &  86.8\% &  57  &  21 \\ 
+		%		\jtime{}           &  &     &    \\   
+		%		\mockito{}     & 100\% & 25  & 38  \\    
+	\end{tabular}
+	\caption {\ds{} performance evaluation}
+\end{table*}
+\normalsize
 
 
-
-\subsubsection{\textit{How many test cases have the faulty statements in the top-5 of classes with the highest suspiciousness ranks?}}
-
-
-
-\subsection{Results of \sfl{}+\ds{} Combination}
 
 \subsubsection{\textit{How effective is the \sfl{}+\ds{} combination for bug localization?}}
 
+
+\begin{table*}[h]
+	\centering
+	\setlength{\tabcolsep}{2pt}
+	\begin{tabular}{lrrrrrrrr}
+		\toprule
+		
+		Project             & \% imp (f) &\% imp (l) & \% imp ($\overline{m}$)& \% imp (median) &\% imp (f) & \% imp (l)   & \% imp ($\overline{m}$) & \% imp (median)  \\ %\comments{& Failing Test Cases &}  
+		\midrule
+		
+			\chart{}  & 20.98\% & 20.32\% & 20.05\% & 19.75\% & 20.98\% & 20.32\% & 20.05\% & 19.75\% \\
+		\closure{}         & 4.17\% & 0.00\% & 0.00\% & 3.68\% & 4.17\% & 0.00\% & 0.00\% & 3.68\% \\
+		\lang{}             &7.91\% & 5.84\% & 6.47\% & 6.80\% & 7.91\% & 5.84\% & 6.47\% & 6.80\% \\
+			\cmath{}           &8.58\% & 6.59\% & 7.65\% & 8.74\% & 8.58\% & 6.59\% & 7.65\% & 8.74\% \\
+		\mockito{} & 15.73\% & 17.37\% & 17.63\% & 15.74\% & 15.73\% & 17.37\% & 17.63\% & 15.74\% \\
+		\jtime{}           & 8.83\% & 10.70\% & 11.25\% & 10.86\% & 8.83\% & 10.70\% & 11.25\% & 10.86\% \\
+	\end{tabular}
+	\caption {\sfl{}+\ds{} performance evaluation}
+\end{table*}
+\normalsize
+
 \subsection{Threats to validity}
 
-\pagebreak
+
 
 %
 %
