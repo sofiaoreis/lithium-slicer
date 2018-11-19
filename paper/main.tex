@@ -1,4 +1,4 @@
-%% For double-blind review submission, w/o CCS and ACM Reference (max submission space)
+% For double-blind review submission, w/o CCS and ACM Reference (max submission space)
 \documentclass[sigplan,10pt,review,anonymous]{acmart}\settopmatter{printfolios=true,printccs=false,printacmref=false}
 %% For double-blind review submission, w/ CCS and ACM Reference
 %\documentclass[sigplan,review,anonymous]{acmart}\settopmatter{printfolios=true}
@@ -15,8 +15,8 @@
 %% Conference information
 %% Supplied to authors by publisher for camera-ready submission;
 %% use defaults for review submission.
-\acmConference[PL'18]{ACM SIGPLAN Conference on Programming Languages}{January 01--03, 2018}{New York, NY, USA}
-\acmYear{2018}
+\acmConference[PLDI'19]{ ACM SIGPLAN Conference on Programming Language Design and Implementation}{June 24--26, 2019}{Phoenix, AZ, USA}
+\acmYear{2019}
 \acmISBN{} % \acmISBN{978-x-xxxx-xxxx-x/YY/MM}
 \acmDOI{} % \acmDOI{10.1145/nnnnnnn.nnnnnnn}
 \startPage{1}
@@ -128,7 +128,7 @@
 %% Note: \begin{abstract}...\end{abstract} environment must come
 %% before \maketitle command
 \begin{abstract}
-\Sof{@todo} 
+\Sof{@todo}
 \end{abstract}
 
 
@@ -237,23 +237,22 @@ dataset~\cite{just-defects4j-issta2014}, which is frequently used to
 evaluated fault localization research. The intuition for the \comb{}
 combination is that several highly ranked statements, albeit covered
 by failing executions, may be unrelated to the fault. Prior work
-reported promising results in this combination
-\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
+reported promising results in this combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
 We found surprising that, despite these findings, reported nearly 5
 years ago, no tool or client analyses use this combination
-today. Several reasons could justify that observation. One hypothesis
-to explain that observation is that results reported in prior work are
+today. Several reasons could justify that observation. One hypothesis is that results reported in prior work are
 over-optimistic. For example, most prior work evaluated improvements
 of \sfl{} techniques using relative metrics, which are based on the
 position of the first faulty statements found in the ranking relative
-to the total number of ranking statements, which is often a large
-number. As such, it inflates actual improvements and deceives paper
-reviewers. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
-pointed to that fact encouraging researchers to adopt precise metrics,
-such as \topatn{}
-\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}. This
+to the total number of ranked statements, which is often a large
+number. As such, it inflates actual improvements and deceives
+potential adopters of the technology. Ang \etal~\cite{ang-perez-van-deursen-rui-2017} recently
+pointed to that fact and encouraged researchers to adopt more precise metrics,
+such as \topk{}
+\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359},
+which has been widely adopted to evaluate performance of information retrieval algorithms~\Fix{cite}. This
 metric reports the percentage of faults captured by a technique when
-the rank is trimmed to the first N components.
+the rank is trimmed to the first $k$ components.
 
 The goal of this paper is to reassess whether the \comb{} combination
 is worthwhile under the light of a more accurate metric and a larger
@@ -264,16 +263,30 @@ improve their results or to be aware they should not invest on this
 integration. This study covers the following research questions:
 
 %% ~\cite{Jin:2013:FFL:2483760.2483763,Laghari:2016:FSB:2970276.2970308,campos-etal-ase2016,DBLP:journals/stvr/LiuLNBB16,DBLP:conf/hvc/LidO16,7589823}
-%% This research aims to address the doubts surrounding the efficiency of \sfl{}+\ds{} combination through the answer to the following research questions (\RQ{}):
+%% This research aims to address the doubts surrounding the efficiency
+%% of \sfl{}+\ds{} combination through the answer to the following
+%% research questions (\RQ{}):
+
+\newcommand{\rqone}{How often does DS miss faulty statements?}
+%\newcommand{\rqtwo}{How much reduction in file size can DS obtain?}
+\newcommand{\rqthree}{How effective is the \comb{} combination?}
 
 \begin{itemize}[leftmargin=*]
-%\item[] [efficiency]~\textit{How often faulty statements appear in the  most suspicious classes?}  
-\item[]{\footnotesize[soundness]}~\textit{How often DS misses faulty statements?}
-\item[]{\footnotesize[effectiveness]}~\textit{How much reduction in file size can DS obtain?}  
-\item[]{\footnotesize[effectiveness]}~\textit{How effective is the \comb{} combination?} 
+\item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
+\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}
 \end{itemize}
 
-To sum, our results show that \Fix{write a paragraph about this...}
+The first question addresses an important problem associated with
+dynamic slicing techniques---that of missing faulty
+statements. Naturally, the consequence of that problem for debugging
+is that developers would never be able to locate faults. Different
+slicers can miss faulty statements for different reasons. In this
+paper, we used Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310},
+which, in principle, could miss statements because of imprecise
+oracles that guide the slicing process. We evaluated how often that
+important problem happens in our experiments. The second research
+questions effectively evaluates the impact of the combination. To sum,
+our results show that \Fix{write a paragraph about this...}
 
 The contributions of this work are as follows:
 \begin{itemize}
@@ -283,6 +296,8 @@ The contributions of this work are as follows:
 	\item The tools used to run the study. Benchmarks and experimental results are also publicly available.
 \end{itemize}
 
+
+\newpage
 
 \section{Background}
 \label{sec:background}
@@ -297,7 +312,7 @@ This section presents important background material for the rest of the paper.
 %% and efficiency as to support execution of our experiments in
 %% reasonable time.  Unfortunately, we failed to find public
 %% implementations satisfying these criteria.
-%% For those reasons, we decided to implement a critical slicer for Java,
+%% For those reasons, we ded to implement a critical slicer for Java,
 %% which is the language of the subjects in our dataset, \dfj{}.
 
 Program slicing is a program understanding method to identify the
@@ -470,8 +485,8 @@ error vector by means of applying \emph{fault predictors} to each
 component to produce a score quantifying how likely it is to be
 faulty.  Components are then ranked according to such likelihood
 scores and reported to the user. Ochiai is one of those fault
-predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}. \Sof{@Rui, please check if the papers are correct} The Ochiai
-formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
+predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}.
+The Ochiai formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
 \[\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10}})\]
 
 \section{Critical Slicing + \sfl{}}
@@ -498,10 +513,10 @@ matrix (/spectra) whose values can be set to zero.
 %% %\item {[optional]} Filter statements covered by selected failing tests.
 %% \end{enumerate}
 
-\begin{figure}[t!] 
+\begin{figure}[t!]
 
   \centering
-  \begin{subfigure}{0.5\textwidth}  
+  \begin{subfigure}{0.5\textwidth}
     {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
       \begin{tabular}{c|ccccc|c}
         $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
@@ -530,7 +545,7 @@ matrix (/spectra) whose values can be set to zero.
   \end{subfigure}
 
   \vspace{2ex}
-  
+
   \begin{subfigure}{0.5\textwidth}
     \centering
     \begin{tabular}{cccccc}
@@ -541,8 +556,8 @@ matrix (/spectra) whose values can be set to zero.
       4.5 & $c_5$ (0.32) & & 5 & $c_3$ (0.24)\\
     \end{tabular}
     \caption{Ranking update.}
-  \end{subfigure}  
-  
+  \end{subfigure}
+
   \caption{Modifications on spectra and ranking as result of slicing code against test $t_2$.}
   \label{fig:illustration}
 \end{figure}
@@ -564,7 +579,7 @@ misses faulty statements.
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
-\end{theorem}  
+\end{theorem}
 
 Considering the Ochiai formula, for those statements $j$ which are not
 part of the slice of a failing test, the combination reduces the value
@@ -640,9 +655,9 @@ Two different tools were developed to support this research: \morpho{} and \lith
 		\State $expOracle \leftarrow$ getOracleToCompare($expStk$)
 		\State \Return $testOracle$ == $expOracle$
 		\EndFunction
-		
+
 	\end{algorithmic}
-	
+
 \end{algorithm}
 
 The \texttt{MozillaLithium} tool takes as input a function of interest that can be designed according to the problem to be solved. The function of interest (Algorithm \ref{alg:finc}) determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from \texttt{Java} stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk selected by \texttt{MozillaLithium}, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. The result is an oracle such as the one provided in the box below:
@@ -650,25 +665,25 @@ The \texttt{MozillaLithium} tool takes as input a function of interest that can 
 
 \vspace{3mm}
 \begin{myframe} \label{box:1}
-java.lang.IndexOutOfBoundsException: Index: -1, Size: 1, 
-java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643), 
-java.util.ArrayList.add(ArrayList.java:455), 
-org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:564), 
-org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:527), 
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 1,
+java.util.ArrayList.rangeCheckForAdd(ArrayList.java:643),
+java.util.ArrayList.add(ArrayList.java:455),
+org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:564),
+org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:527),
 \textbf{org.jfree.data.xy.junit.XYSeriesTests.}\\
 \textbf{testBug1955483(XYSeriesTests.java:479)},\\
-... 
+...
 \end{myframe}
 
 The oracle includes an exception error message (\emph{java.lang.\\IndexOutOfBoundsException: Index: -1, Size: 1}) and the program execution path until the class test where it fails (\emph{XYSeriesTests.java:479}). The regular expression \verb/Test(.*).java/ retrieves the test class position in the stack trace. If the test class is not found, the entire stack trace is compared. There is, however, an exception. When the failure is a \emph{StackOverflowError}, there is no test class mentioned in the stack trace because the exception is a runtime error. This exception is triggered when the JVM encounters a situation where there is no space for a new stack frame to be created which is, normally, the outcome of infinite recursion. Consequently, the stack trace contains many times the failed call. So, when the failure message contains a \emph{StackOverflowError}, the oracle is only considered until the call is repeated for the fifth time.
 
 \vspace{3mm}
 \begin{myframe}
-	java.lang.StackOverflowError,  
+	java.lang.StackOverflowError,
 	sun.reflect.generics.reflectiveObjects.\linebreak
-			TypeVariableImpl.hashCode(TypeVariableImpl.java:198), 
-	java.util.HashMap.hash(HashMap.java:362), 
-	java.util.HashMap.getEntry(HashMap.java:462), 
+			TypeVariableImpl.hashCode(TypeVariableImpl.java:198),
+	java.util.HashMap.hash(HashMap.java:362),
+	java.util.HashMap.getEntry(HashMap.java:462),
 	java.util.HashMap.get(HashMap.java:417),  org.mockito.internal.util.reflection.GenericMetadataSupport.
 		getActualTypeArgumentFor(GenericMetadataSupport.java:182), \linebreak
 	org.mockito.internal.util.reflection.GenericMetadataSupport.
@@ -720,7 +735,7 @@ the behavior of classes that cannot be used in unit testing.}
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
       \toprule
-      Project            & Size (kLOC) & \# Tests & \# Defects \\ %\comments{& Failing Test Cases &}  
+      Project            & Size (kLOC) & \# Tests & \# Defects \\ %\comments{& Failing Test Cases &}
       \midrule
       \lang{}            & 111751  & 6057 & 65       \\   %\commentst{& 124   &  -}\\
       \cmath{}           & 306276  & 26797 & 106     \\   %\comments{& 177   &  -}\\
@@ -1194,27 +1209,71 @@ From the t
 
 \section{Related Work}
 
-\Mar{beware, this is >>NOT<< revised! ................}\\
-\Sof{@todo: review this}
 
-\textbf{Program Slicing}: Most recently related tool is ORBS~\cite{DBLP:conf/scam/BinkleyGHIKY15}. \Fix{...}
+\subsection{Program Slicing}
 
-Program Slicing~\cite{Weiser:1981:PS:800078.802557} is a technique to
-identify program entities (the slice)\comments{that influence the
-  computation of} computationally related to a user-provided point of
-interest (the slice criterion).
+Program Slicing is an old technique with several applications in PL
+and SE research~\cite{Weiser:1981:PS:800078.802557}. Slicing can be
+implemented in different ways. Dynamic Slicing has found its main
+application in fault
+localization~\cite{Agrawal:1990:DPS:93542.93576}---in this application
+context, failing tests exist. Research in this area has mainly focused
+on slicing code
+efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
+and avoiding data and control omission
+errors~\cite{Zhang:2007:TLE:1250734.1250782,
+  Lin:2018:BDE:3238147.3238163}. Omission errors correspond to the
+cases where tests fail because some part of the code was not executed
+when it should. Dynamic fault localization techniques cannot hope to
+soundly report bugs in those cases. The issue is that incorporating
+static information to capture those cases can result in unacceptably
+large slices, which defeats the purpose of reducing the fault search
+space. It is worth noting that, conceptually, the \comb{} combination
+can be used with any form of dynamic slicing. We chose an
+implementation of Critical
+Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
 
-Similarly, dynamic slicing lacks successful cases of downstream
-analyses. The WhyLine debugging assistant~\cite{whyline-website} is an
-isolated case of success.
+%% ORBS~\cite{Binkley:2014:OLP:2635868.2635893,DBLP:conf/iwpc/IslamB16}
+%% is a recently-proposed slicing technique that is similar to Critical
+%% Slicing. It is worth noting that
 
 
-There are some approaches that utilize dynamic slicing and
-spectrum-based fault localization (SFL) as fault localization methods.
+\subsection{SFL}
+
+Statistics-based techniques (e.g.,~\cite{Pearson:2017:EIF:3097368.3097441}) are
+popular automated fault localization techniques within the Software Engineering
+community. They correlate information about program fragments that have been
+exercised in multiple program execution traces (also called \textit{program
+spectra}) with information about successful and failing executions. By doing
+that, statistics-based approaches yield a list of suspect program fragments
+sorted by their likelihood to be at fault. Since this technique is efficient in
+practice, it is attractive for large modern software systems~\cite{ecbs07}.
+
+Spectrum-based fault localization (\sfl) is amongst the most common statistical
+fault localization technique that takes as input a test suite including at least
+one failing test and reports on output a ranked list of components likely to be
+in fault~\cite{FLSurvey2016, DBLP:conf/kbse/JonesH05,
+DBLP:journals/smr/LuciaLJTB14, DBLP:journals/jss/AbreuZGG09}.
+
+\subsection{\comb{}}
+
+Prior work has investigated the combination of dynamic slicing and
+spectrum-based fault
+localization~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}. Although
+the methodology used in these papers vary, the overall message is that
+the combination is valuable. Note that slicing alone does not provide
+the guarantee of improvement to \sfl{} as statements discarded with
+slicing could have been ranked lower compared to faulty
+statements. This paper differs from prior work in that it uses a much
+larger dataset of programs and faults and a more rigorous experimental
+methodology.
+
+
+\subsubsection{Applications}
 
 Ishii and Kutsuna ~\cite{li-huo-chen-zhong-feng-li-2013} proposed a
 technique involving dynamic slicing and SFL applied to MATLAB/Simulink
-models.The technique consists of iteratively
+models. The technique consists of iteratively
 generating tests that cause an error using satisfiability modulo
 theories (SMT) so that the slices generated are distinct from each
 other.  For slicing, their technique uses a program dependence graph
@@ -1234,11 +1293,7 @@ of the technique decreases when applied to models with multiple faults
 instead of one, as does the efficiency when exposed to large models,
 number of generated tests, sizes of sliced models and so on.
 
-
-
-\Fix{...}
-
-\subsection{Automatic Program Repair}
+\subsubsection{Automatic Program Repair}
 Automated repair techiniques have received considerable attention on
 the last decade and consists of three basic steps: fault localization, patch
 generation, and patch validation.  Regarding the fault localization
@@ -1298,55 +1353,7 @@ assuming the fault can be repaired by changing a single statement.
 
 \Davino { Another set of automatic program repair tools that doesn't use fault localization includes: CodePhage, ClearView, PAR, RSRepair, Kali, and AutoFix, among others. }
 
-\subsection{Dynamic Slicing and Statistical Fault Localization}
 
-Previous works studied the impact of bringing together both dynamic
-slicing and statistical fault localization applied to software
-debugging.
-
-Lei et al. proposed the use of program slices built with a
-dynamic backward slicing approach to defined statistical variables
-which can capture the influence of a statement execution on the output
-using SFL quantification of suspiciousness to each statement\cite{lei-mao-dai-wang-2012}.
-
-Ishii and Kutsuna proposed a fault localization method with dynamic slicing that iteratively generates failing test cases using Satisfiability Modulo Theories (SMT) solvers to get distinct slices
-for each test case. The proposed method was evaluated using MATLAB/Simulink models\cite{ishii-kutsuna-2016}.
-
-Acknowledging the dependencies problem to locate a fault in the probram, Wen\cite{wen-2012} combines the concept of critical slicing, i.e., deleting statements with no contributions to faults,
-with statistical fault localization proposing a program slicing spectrum-based software fault localization model.
-
-He et al. proposed a new method to automated fault localization with
-CPSS (coverage and program structure slicing)\cite{he-zhang-liu-gao-2014}.  Based on program
-execution path struture data dependency analysis, the idea is to
-extract execution paths streamlined into a complete program dependence
-path, reverse data dependence analysis and calculate the defect rate
-with state of the art SFL techiniques (i.e., Tarantula).
-
-\subsection{Other}
-
-\Mar{moved to here...revise when possible...}
-
-For example,
-dependency tracking alternatives such as
-JSlice~\cite{Wang:2004:UCB:998675.999455} and
-JavaSlicer~\cite{hammacher-bachthesis-2008} instrument the analyzed
-code~\cite{hammacher-bachthesis-2008} or modify
-interpreters~\cite{Wang:2004:UCB:998675.999455} to build compact
-execution traces.  Then, they process the traces to reconstruct
-program states; this step recovers the dependency chains rooted in
-points of interest.
-
-ORBS~\cite{Binkley:2014:OLP:2635868.2635893} is a observation-based
-slicing method independent of programming language. ORBS deletes
-statements in the files of interest and checks whether the test output is
-the same as the original
-test~\cite{Binkley:2014:OLP:2635868.2635893}.
-
-\Fix{revise? merge?}
-Observation-Based Slicing technique, similar to Critical Slicing, is
-based on deleting statements that are not relevant to the test case
-failure. Although, with this technique is possible to remain the rest
-of the system untouched.
 
 
 \section{Conclusions and Future Work}\label{sec:conc}
