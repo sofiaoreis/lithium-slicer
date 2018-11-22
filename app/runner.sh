@@ -40,3 +40,5 @@ while read line; do
 done < "$BASEPATH/$INPUTS"
 
 rm $BASEPATH/$INPUTS
+
+echo "Bug $BUG from $PROJECT minimized. Process finished."

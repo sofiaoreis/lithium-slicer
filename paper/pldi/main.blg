@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: tmp.bib
+Warning--I didn't find a database entry for "ecbs07"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in DBLP:conf/prdc/AbreuZG06
+Warning--empty address in DBLP:conf/prdc/AbreuZG06
+Warning--empty publisher in ang-perez-van-deursen-rui-2017
+Warning--empty address in ang-perez-van-deursen-rui-2017
+Warning--empty year in slicing-sfl-repair
+Warning--empty publisher in DBLP:conf/ecai/HoferW12
+Warning--empty address in DBLP:conf/ecai/HoferW12
+Warning--empty publisher in DBLP:conf/kbse/JonesH05
+Warning--empty address in DBLP:conf/kbse/JonesH05
+Warning--empty publisher in lei-mao-dai-wang-2012
+Warning--empty address in lei-mao-dai-wang-2012
+Warning--empty publisher in li-huo-chen-zhong-feng-li-2013
+Warning--empty address in li-huo-chen-zhong-feng-li-2013
+Warning--empty year in automatic-software-repair-survey2017
+Warning--empty year in lithium
+Warning--empty year in lithium-complexity
+Warning--empty publisher in nguyen-qi-roychoudhury-2013
+Warning--empty address in nguyen-qi-roychoudhury-2013
+You've used 39 entries,
+            5719 wiz_defined-function locations,
+            1628 strings with 25401 characters,
+and the built_in function-call counts, 49608 in all, are:
+= -- 5902
+> -- 1816
+< -- 0
++ -- 610
+- -- 625
+* -- 3670
+:= -- 5019
+add.period$ -- 199
+call.type$ -- 39
+change.case$ -- 286
+chr.to.int$ -- 36
+cite$ -- 57
+duplicate$ -- 4425
+empty$ -- 3072
+format.name$ -- 745
+if$ -- 11720
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 165
+newline$ -- 449
+num.names$ -- 309
+pop$ -- 1605
+preamble$ -- 1
+purify$ -- 608
+quote$ -- 0
+skip$ -- 1609
+stack$ -- 0
+substring$ -- 3877
+swap$ -- 525
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1032
+warning$ -- 18
+while$ -- 311
+width$ -- 0
+write$ -- 853
+(There were 19 warnings)
