@@ -1,0 +1,30 @@
+\small
+\lstset{
+  numbers=left,
+  stepnumber=1,    
+  firstnumber=1,
+  numberfirstline=true,
+  frame=none
+}
+\begin{figure}[t]
+    \centering
+\resizebox{0.9\columnwidth}{!}{%
+    \begin{tabular}{l}
+        \hline
+        E \  C \  O\\ 
+        \hline
+        \lstinputlisting[
+        language=C,
+        basicstyle=\ttfamily,
+        tabsize=1,
+        ]{figures/example1.java} \\
+        \hline
+    \end{tabular}
+    }
+\caption{\label{caption:code-snippet-intro}
+Code excerpt from the original Critical Slicing
+    paper~\cite{DeMillo:1996:CSS:229000.226310}. E: Executed, C:
+    (Original) Critical Slicing, O: \orbs{}~\cite{Binkley:2014:OLP:2635868.2635893}.  Symbol ``|''
+    indicates that a statement is in the slice.}
+\end{figure}
+\normalsize
