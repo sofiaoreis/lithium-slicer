@@ -1,0 +1,291 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Abreu \bgroup \em et al.\egroup
+  }{2009}]{DBLP:journals/jss/AbreuZGG09}
+Rui Abreu, Peter Zoeteweij, Rob Golsteijn, and Arjan J.~C. van Gemund.
+\newblock A practical evaluation of spectrum-based fault localization.
+\newblock {\em Journal of Systems and Software}, 82(11):1780--1792, 2009.
+
+\bibitem[\protect\citeauthoryear{Agrawal and
+  Horgan}{1990}]{Agrawal:1990:DPS:93542.93576}
+Hiralal Agrawal and Joseph~R. Horgan.
+\newblock Dynamic program slicing.
+\newblock In {\em Proceedings of the ACM SIGPLAN 1990 Conference on Programming
+  Language Design and Implementation}, PLDI '90, pages 246--256, New York, NY,
+  USA, 1990. ACM.
+
+\bibitem[\protect\citeauthoryear{Alves \bgroup \em et al.\egroup
+  }{2011}]{Alves:2011:FUD:2190078.2190115}
+Elton Alves, Milos Gligoric, Vilas Jagannath, and Marcelo d'Amorim.
+\newblock Fault-localization using dynamic slicing and change impact analysis.
+\newblock In {\em Proceedings of the 2011 26th IEEE/ACM International
+  Conference on Automated Software Engineering}, ASE '11, pages 520--523,
+  Washington, DC, USA, 2011. IEEE Computer Society.
+
+\bibitem[\protect\citeauthoryear{Ang \bgroup \em et al.\egroup
+  }{2017}]{ang-perez-van-deursen-rui-2017}
+Aaron Ang, Alexandre Perez, Arie van Deursen, and Rui Abreu.
+\newblock Revisiting the practical use of automated software fault localization
+  techniques.
+\newblock In {\em 2017 IEEE International Symposium on Software Reliability
+  Engineering Workshops (ISSREW)}, volume~00, pages 175--182, Oct. 2017.
+
+\bibitem[\protect\citeauthoryear{Arcuri}{2011}]{arcuri-2011}
+Andrea Arcuri.
+\newblock Evolutionary repair of faulty software.
+\newblock {\em Applied Soft Computing}, 11(4):3494 -- 3514, 2011.
+
+\bibitem[\protect\citeauthoryear{Binkley \bgroup \em et al.\egroup
+  }{2014}]{Binkley:2014:OLP:2635868.2635893}
+David Binkley, Nicolas Gold, Mark Harman, Syed Islam, Jens Krinke, and Shin
+  Yoo.
+\newblock Orbs: Language-independent program slicing.
+\newblock In {\em Proceedings of the 22Nd ACM SIGSOFT International Symposium
+  on Foundations of Software Engineering}, FSE 2014, pages 109--120, New York,
+  NY, USA, 2014. ACM.
+
+\bibitem[\protect\citeauthoryear{DeMillo \bgroup \em et al.\egroup
+  }{1996}]{DeMillo:1996:CSS:229000.226310}
+Richard~A. DeMillo, Hsin Pan, and Eugene~H. Spafford.
+\newblock Critical slicing for software fault localization.
+\newblock In {\em Proceedings of the 1996 ACM SIGSOFT International Symposium
+  on Software Testing and Analysis}, ISSTA '96, pages 121--134, New York, NY,
+  USA, 1996. ACM.
+
+\bibitem[\protect\citeauthoryear{Guo \bgroup \em et al.\egroup
+  }{}]{slicing-sfl-repair}
+Anbang Guo, Xiaoguang Mao, Deheng Yang, and Shangwen Wang.
+\newblock An empirical study on the effect of dynamic slicing on automated
+  program repair efficiency.
+\newblock To Appear in ICSME 2018 (short paper).
+
+\bibitem[\protect\citeauthoryear{Harrold \bgroup \em et al.\egroup
+  }{2000}]{DBLP:journals/stvr/HarroldRSWY00}
+Mary~Jean Harrold, Gregg Rothermel, Kent Sayre, Rui Wu, and Liu Yi.
+\newblock An empirical investigation of the relationship between spectra
+  differences and regression faults.
+\newblock {\em Software Testing, Verification and Reliability}, 10(3):171--194,
+  2000.
+
+\bibitem[\protect\citeauthoryear{Hofer and
+  Wotawa}{2012}]{DBLP:conf/ecai/HoferW12}
+Birgit Hofer and Franz Wotawa.
+\newblock Spectrum enhanced dynamic slicing for better fault localization.
+\newblock In {\em {ECAI} 2012 - 20th European Conference on Artificial
+  Intelligence. Including Prestigious Applications of Artificial Intelligence
+  {(PAIS-2012)} System Demonstrations Track, Montpellier, France, August 27-31
+  , 2012}, pages 420--425, 2012.
+
+\bibitem[\protect\citeauthoryear{Jones and
+  Harrold}{2005}]{DBLP:conf/kbse/JonesH05}
+James~A. Jones and Mary~Jean Harrold.
+\newblock Empirical evaluation of the tarantula automatic fault-localization
+  technique.
+\newblock In {\em 20th {IEEE/ACM} International Conference on Automated
+  Software Engineering {(ASE})}, pages 273--282, 2005.
+
+\bibitem[\protect\citeauthoryear{Just \bgroup \em et al.\egroup
+  }{2014}]{just-defects4j-issta2014}
+Ren{\'e} Just, Darioush Jalali, and Michael~D. Ernst.
+\newblock Defects4j: A database of existing faults to enable controlled testing
+  studies for java programs.
+\newblock In {\em Proceedings of the 2014 International Symposium on Software
+  Testing and Analysis}, ISSTA 2014, pages 437--440, New York, NY, USA, 2014.
+  ACM.
+
+\bibitem[\protect\citeauthoryear{Kim \bgroup \em et al.\egroup
+  }{2017}]{kim-etal-daghstul2017}
+Sunghun Kim, Claire {Le Goues}, Michael Pradel, and Abhik Roychoudhury.
+\newblock Automated program repair (dagstuhl seminar 17022).
+\newblock {\em Dagstuhl Reports}, 7(1):19--31, 2017.
+
+\bibitem[\protect\citeauthoryear{Ko and
+  Myers}{2008}]{Ko:2008:DRA:1368088.1368130}
+Andrew~J. Ko and Brad~A. Myers.
+\newblock Debugging reinvented: Asking and answering why and why not questions
+  about program behavior.
+\newblock In {\em Proceedings of the 30th International Conference on Software
+  Engineering}, ICSE '08, pages 301--310, New York, NY, USA, 2008. ACM.
+
+\bibitem[\protect\citeauthoryear{Lei \bgroup \em et al.\egroup
+  }{2012}]{lei-mao-dai-wang-2012}
+Y.~Lei, X.~Mao, Z.~Dai, and C.~Wang.
+\newblock Effective statistical fault localization using program slices.
+\newblock In {\em 2012 IEEE 36th Annual Computer Software and Applications
+  Conference}, pages 1--10, July 2012.
+
+\bibitem[\protect\citeauthoryear{Li \bgroup \em et al.\egroup
+  }{2013}]{li-huo-chen-zhong-feng-li-2013}
+F.~Li, W.~Huo, C.~Chen, L.~Zhong, X.~Feng, and Z.~Li.
+\newblock Effective fault localization based on minimum debugging frontier set.
+\newblock In {\em Proceedings of the 2013 IEEE/ACM International Symposium on
+  Code Generation and Optimization (CGO)}, pages 1--10, Feb 2013.
+
+\bibitem[\protect\citeauthoryear{Lin \bgroup \em et al.\egroup
+  }{2018}]{Lin:2018:BDE:3238147.3238163}
+Yun Lin, Jun Sun, Lyly Tran, Guangdong Bai, Haijun Wang, and Jinsong Dong.
+\newblock Break the dead end of dynamic slicing: Localizing data and control
+  omission bug.
+\newblock In {\em Proceedings of the 33rd ACM/IEEE International Conference on
+  Automated Software Engineering}, ASE 2018, pages 509--519, New York, NY, USA,
+  2018. ACM.
+
+\bibitem[\protect\citeauthoryear{Long and Rinard}{2015}]{long-rinard-2015}
+Fan Long and Martin Rinard.
+\newblock Staged program repair with condition synthesis.
+\newblock In {\em Proceedings of the 2015 10th Joint Meeting on Foundations of
+  Software Engineering}, ESEC/FSE 2015, pages 166--178, New York, NY, USA,
+  2015. ACM.
+
+\bibitem[\protect\citeauthoryear{Long and Rinard}{2016}]{long-rinard-2016}
+Fan Long and Martin Rinard.
+\newblock Automatic patch generation by learning correct code.
+\newblock In {\em Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium
+  on Principles of Programming Languages}, POPL '16, pages 298--312, New York,
+  NY, USA, 2016. ACM.
+
+\bibitem[\protect\citeauthoryear{Lucia \bgroup \em et al.\egroup
+  }{2014a}]{DBLP:journals/smr/LuciaLJTB14}
+Lucia, David Lo, Lingxiao Jiang, Ferdian Thung, and Aditya Budi.
+\newblock Extended comprehensive study of association measures for fault
+  localization.
+\newblock {\em Journal of Software: Evolution and Process}, 26(2):172--219,
+  2014.
+
+\bibitem[\protect\citeauthoryear{Lucia \bgroup \em et al.\egroup
+  }{2014b}]{Lucia:2014:FFL:2642937.2642983}
+Lucia, David Lo, and Xin Xia.
+\newblock Fusion fault localizers.
+\newblock In {\em Proceedings of the 29th ACM/IEEE International Conference on
+  Automated Software Engineering}, ASE '14, pages 127--138, New York, NY, USA,
+  2014. ACM.
+
+\bibitem[\protect\citeauthoryear{Monperrus}{}]{automatic-software-repair-survey2017}
+Martin Monperrus.
+\newblock Automatic software repair: a bibliography.
+\newblock Accepted for publications in ACM Computing Survey.
+  \url{http://www.monperrus.net/martin/survey-automatic-repair.pdf}.
+
+\bibitem[\protect\citeauthoryear{Nguyen \bgroup \em et al.\egroup
+  }{2013}]{nguyen-qi-roychoudhury-2013}
+H.~D.~T. Nguyen, D.~Qi, A.~Roychoudhury, and S.~Chandra.
+\newblock Semfix: Program repair via semantic analysis.
+\newblock In {\em 2013 35th International Conference on Software Engineering
+  (ICSE)}, pages 772--781, May 2013.
+
+\bibitem[\protect\citeauthoryear{Pearson \bgroup \em et al.\egroup
+  }{2017}]{Pearson:2017:EIF:3097368.3097441}
+Spencer Pearson, Jos{\'e} Campos, Ren{\'e} Just, Gordon Fraser, Rui Abreu,
+  Michael~D. Ernst, Deric Pang, and Benjamin Keller.
+\newblock Evaluating and improving fault localization.
+\newblock In {\em Proceedings of the 39th International Conference on Software
+  Engineering}, ICSE'17, pages 609--620, Piscataway, NJ, USA, 2017. IEEE Press.
+
+\bibitem[\protect\citeauthoryear{Peleska \bgroup \em et al.\egroup
+  }{2011}]{peleska-vorobev-lapschies-2011}
+Jan Peleska, Elena Vorobev, and Florian Lapschies.
+\newblock Automated test case generation with smt-solving and abstract
+  interpretation.
+\newblock In {\em Proceedings of the Third International Conference on NASA
+  Formal Methods}, NFM'11, pages 298--312, Berlin, Heidelberg, 2011.
+  Springer-Verlag.
+
+\bibitem[\protect\citeauthoryear{Rui~Abreu and van
+  Gemund}{2006}]{DBLP:conf/prdc/AbreuZG06}
+Peter~Zoeteweij Rui~Abreu and Arjan J.~C. van Gemund.
+\newblock An evaluation of similarity coefficients for software fault
+  localization.
+\newblock In {\em 12th {IEEE} Pacific Rim International Symposium on Dependable
+  Computing {(PRDC} 2006), 18-20 December, 2006, University of California,
+  Riverside, {USA}}, pages 39--46, 2006.
+
+\bibitem[\protect\citeauthoryear{Wang and
+  Roychoudhury}{2004}]{Wang:2004:UCB:998675.999455}
+Tao Wang and Abhik Roychoudhury.
+\newblock Using compressed bytecode traces for slicing java programs.
+\newblock In {\em Proceedings of the 26th International Conference on Software
+  Engineering}, ICSE '04, pages 512--521, Washington, DC, USA, 2004. IEEE
+  Computer Society.
+
+\bibitem[\protect\citeauthoryear{Wang and
+  Roychoudhury}{2008}]{Wang:2008:DSJ:1330017.1330021}
+Tao Wang and Abhik Roychoudhury.
+\newblock Dynamic slicing on java bytecode traces.
+\newblock {\em ACM Trans. Program. Lang. Syst.}, 30(2):10:1--10:49, March 2008.
+
+\bibitem[\protect\citeauthoryear{Weiser}{1981}]{Weiser:1981:PS:800078.802557}
+Mark Weiser.
+\newblock Program slicing.
+\newblock In {\em Proceedings of the 5th International Conference on Software
+  Engineering}, ICSE '81, pages 439--449, Piscataway, NJ, USA, 1981. IEEE
+  Press.
+
+\bibitem[\protect\citeauthoryear{Wen \bgroup \em et al.\egroup
+  }{2016}]{Wen:2016:LLB:2970276.2970359}
+Ming Wen, Rongxin Wu, and Shing-Chi Cheung.
+\newblock Locus: Locating bugs from software changes.
+\newblock In {\em Proceedings of the 31st IEEE/ACM International Conference on
+  Automated Software Engineering}, ASE 2016, pages 262--273, New York, NY, USA,
+  2016. ACM.
+
+\bibitem[\protect\citeauthoryear{Wong \bgroup \em et al.\egroup
+  }{2016a}]{7390282}
+W.~E. Wong, R.~Gao, Y.~Li, R.~Abreu, and F.~Wotawa.
+\newblock A survey on software fault localization.
+\newblock {\em IEEE Transactions on Software Engineering}, 42(8):707--740, Aug
+  2016.
+
+\bibitem[\protect\citeauthoryear{Wong \bgroup \em et al.\egroup
+  }{2016b}]{FLSurvey2016}
+W.~Eric Wong, Ruizhi Gao, Yihao Li, Rui Abreu, and Franz Wotawa.
+\newblock A survey of software fault localization.
+\newblock {\em IEEE Transactions on Software Engineering}, 42(8):707--740,
+  2016.
+
+\bibitem[\protect\citeauthoryear{Wotawa}{2010}]{Wotawa:2010:FLB:1848650.1849235}
+Franz Wotawa.
+\newblock Fault localization based on dynamic slicing and hitting-set
+  computation.
+\newblock In {\em Proceedings of the 2010 10th International Conference on
+  Quality Software}, QSIC '10, pages 161--170, Washington, DC, USA, 2010. IEEE
+  Computer Society.
+
+\bibitem[\protect\citeauthoryear{Wu \bgroup \em et al.\egroup
+  }{2014}]{Wu:2014:CLC:2610384.2610386}
+Rongxin Wu, Hongyu Zhang, Shing-Chi Cheung, and Sunghun Kim.
+\newblock Crashlocator: Locating crashing faults based on crash stacks.
+\newblock In {\em Proceedings of the 2014 International Symposium on Software
+  Testing and Analysis}, ISSTA 2014, pages 204--214, New York, NY, USA, 2014.
+  ACM.
+
+\bibitem[\protect\citeauthoryear{Xie \bgroup \em et al.\egroup
+  }{2016}]{Xie:2016:RAD:2884781.2884834}
+Xiaoyuan Xie, Zicong Liu, Shuo Song, Zhenyu Chen, Jifeng Xuan, and Baowen Xu.
+\newblock Revisit of automatic debugging via human focus-tracking analysis.
+\newblock In {\em Proceedings of the 38th International Conference on Software
+  Engineering}, ICSE '16, pages 808--819, New York, NY, USA, 2016. ACM.
+
+\bibitem[\protect\citeauthoryear{Zeller and
+  Hildebrandt}{2002}]{zeller-hildebrandt-tse2002}
+Andreas Zeller and Ralf Hildebrandt.
+\newblock Simplifying and isolating failure-inducing input.
+\newblock {\em IEEE Transactions on Software Engineering}, 28(2):183--200,
+  February 2002.
+
+\bibitem[\protect\citeauthoryear{Zhang \bgroup \em et al.\egroup
+  }{2007}]{Zhang:2007:TLE:1250734.1250782}
+Xiangyu Zhang, Sriraman Tallam, Neelam Gupta, and Rajiv Gupta.
+\newblock Towards locating execution omission errors.
+\newblock In {\em Proceedings of the 28th ACM SIGPLAN Conference on Programming
+  Language Design and Implementation}, PLDI '07, pages 415--424, New York, NY,
+  USA, 2007. ACM.
+
+\bibitem[\protect\citeauthoryear{Zoeteweij \bgroup \em et al.\egroup
+  }{2007}]{Zoeteweij:2007:DES:1251988.1253298}
+Peter Zoeteweij, Rui Abreu, Rob Golsteijn, and Arjan J.~C. van Gemund.
+\newblock Diagnosis of embedded software using program spectra.
+\newblock In {\em Proceedings of the 14th Annual IEEE International Conference
+  and Workshops on the Engineering of Computer-Based Systems}, ECBS '07, pages
+  213--220, Washington, DC, USA, 2007. IEEE Computer Society.
+
+\end{thebibliography}

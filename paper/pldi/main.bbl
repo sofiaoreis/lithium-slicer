@@ -1,0 +1,664 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{39}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Abreu, Zoeteweij, Golsteijn, and van
+  Gemund}{Abreu et~al\mbox{.}}{2009}]%
+        {DBLP:journals/jss/AbreuZGG09}
+\bibfield{author}{\bibinfo{person}{Rui Abreu}, \bibinfo{person}{Peter
+  Zoeteweij}, \bibinfo{person}{Rob Golsteijn}, {and} \bibinfo{person}{Arjan
+  J.~C. van Gemund}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{A practical evaluation of spectrum-based fault
+  localization}.
+\newblock \bibinfo{journal}{\emph{Journal of Systems and Software}}
+  \bibinfo{volume}{82}, \bibinfo{number}{11} (\bibinfo{year}{2009}),
+  \bibinfo{pages}{1780--1792}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Abreu, Zoeteweij, and van Gemund}{Abreu
+  et~al\mbox{.}}{2006}]%
+        {DBLP:conf/prdc/AbreuZG06}
+\bibfield{author}{\bibinfo{person}{Rui Abreu}, \bibinfo{person}{Peter
+  Zoeteweij}, {and} \bibinfo{person}{Arjan J.~C. van Gemund}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{An Evaluation of Similarity Coefficients for
+  Software Fault Localization}. In \bibinfo{booktitle}{\emph{12th {IEEE}
+  Pacific Rim International Symposium on Dependable Computing {(PRDC} 2006),
+  18-20 December, 2006, University of California, Riverside, {USA}}}.
+  \bibinfo{pages}{39--46}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Agrawal and Horgan}{Agrawal and
+  Horgan}{1990}]%
+        {Agrawal:1990:DPS:93542.93576}
+\bibfield{author}{\bibinfo{person}{Hiralal Agrawal} {and}
+  \bibinfo{person}{Joseph~R. Horgan}.} \bibinfo{year}{1990}\natexlab{}.
+\newblock \showarticletitle{Dynamic Program Slicing}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the ACM SIGPLAN 1990 Conference on
+  Programming Language Design and Implementation}} \emph{(\bibinfo{series}{PLDI
+  '90})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{246--256}.
+\newblock
+\showISBNx{0-89791-364-7}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/93542.93576}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Alves, Gligoric, Jagannath, and
+  d'Amorim}{Alves et~al\mbox{.}}{2011}]%
+        {Alves:2011:FUD:2190078.2190115}
+\bibfield{author}{\bibinfo{person}{Elton Alves}, \bibinfo{person}{Milos
+  Gligoric}, \bibinfo{person}{Vilas Jagannath}, {and} \bibinfo{person}{Marcelo
+  d'Amorim}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Fault-localization Using Dynamic Slicing and Change
+  Impact Analysis}. In \bibinfo{booktitle}{\emph{Proceedings of the 2011 26th
+  IEEE/ACM International Conference on Automated Software Engineering}}
+  \emph{(\bibinfo{series}{ASE '11})}. \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Washington, DC, USA}, \bibinfo{pages}{520--523}.
+\newblock
+\showISBNx{978-1-4577-1638-6}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ASE.2011.6100114}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Ang, Perez, van Deursen, and Abreu}{Ang
+  et~al\mbox{.}}{2017}]%
+        {ang-perez-van-deursen-rui-2017}
+\bibfield{author}{\bibinfo{person}{Aaron Ang}, \bibinfo{person}{Alexandre
+  Perez}, \bibinfo{person}{Arie van Deursen}, {and} \bibinfo{person}{Rui
+  Abreu}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Revisiting the Practical Use of Automated Software
+  Fault Localization Techniques}. In \bibinfo{booktitle}{\emph{2017 IEEE
+  International Symposium on Software Reliability Engineering Workshops
+  (ISSREW)}}, Vol.~\bibinfo{volume}{00}. \bibinfo{pages}{175--182}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ISSREW.2017.68}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Arcuri}{Arcuri}{2011}]%
+        {arcuri-2011}
+\bibfield{author}{\bibinfo{person}{Andrea Arcuri}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Evolutionary repair of faulty software}.
+\newblock \bibinfo{journal}{\emph{Applied Soft Computing}}
+  \bibinfo{volume}{11}, \bibinfo{number}{4} (\bibinfo{year}{2011}),
+  \bibinfo{pages}{3494 -- 3514}.
+\newblock
+\showISSN{1568-4946}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.asoc.2011.01.023}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Binkley, Gold, Harman, Islam, Krinke, and
+  Yoo}{Binkley et~al\mbox{.}}{2014}]%
+        {Binkley:2014:OLP:2635868.2635893}
+\bibfield{author}{\bibinfo{person}{David Binkley}, \bibinfo{person}{Nicolas
+  Gold}, \bibinfo{person}{Mark Harman}, \bibinfo{person}{Syed Islam},
+  \bibinfo{person}{Jens Krinke}, {and} \bibinfo{person}{Shin Yoo}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{ORBS: Language-independent Program Slicing}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 22Nd ACM SIGSOFT International
+  Symposium on Foundations of Software Engineering}}
+  \emph{(\bibinfo{series}{FSE 2014})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{109--120}.
+\newblock
+\showISBNx{978-1-4503-3056-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2635868.2635893}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{DeMillo, Pan, and Spafford}{DeMillo
+  et~al\mbox{.}}{1996}]%
+        {DeMillo:1996:CSS:229000.226310}
+\bibfield{author}{\bibinfo{person}{Richard~A. DeMillo}, \bibinfo{person}{Hsin
+  Pan}, {and} \bibinfo{person}{Eugene~H. Spafford}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{Critical Slicing for Software Fault Localization}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 1996 ACM SIGSOFT
+  International Symposium on Software Testing and Analysis}}
+  \emph{(\bibinfo{series}{ISSTA '96})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{121--134}.
+\newblock
+\showISBNx{0-89791-787-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/229000.226310}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Guo, Mao, Yang, and Wang}{Guo
+  et~al\mbox{.}}{[n. d.]}]%
+        {slicing-sfl-repair}
+\bibfield{author}{\bibinfo{person}{Anbang Guo}, \bibinfo{person}{Xiaoguang
+  Mao}, \bibinfo{person}{Deheng Yang}, {and} \bibinfo{person}{Shangwen Wang}.}
+  \bibinfo{year}{[n. d.]}\natexlab{}.
+\newblock \bibinfo{title}{An Empirical Study on the Effect of Dynamic Slicing
+  on Automated Program Repair Efficiency}.
+\newblock
+\newblock
+\newblock
+\shownote{To Appear in ICSME 2018 (short paper).}
+
+
+\bibitem[\protect\citeauthoryear{Harrold, Rothermel, Sayre, Wu, and Yi}{Harrold
+  et~al\mbox{.}}{2000}]%
+        {DBLP:journals/stvr/HarroldRSWY00}
+\bibfield{author}{\bibinfo{person}{Mary~Jean Harrold}, \bibinfo{person}{Gregg
+  Rothermel}, \bibinfo{person}{Kent Sayre}, \bibinfo{person}{Rui Wu}, {and}
+  \bibinfo{person}{Liu Yi}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{An Empirical Investigation of the Relationship
+  Between Spectra Differences and Regression Faults}.
+\newblock \bibinfo{journal}{\emph{Software Testing, Verification and
+  Reliability}} \bibinfo{volume}{10}, \bibinfo{number}{3}
+  (\bibinfo{year}{2000}), \bibinfo{pages}{171--194}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hofer and Wotawa}{Hofer and Wotawa}{2012}]%
+        {DBLP:conf/ecai/HoferW12}
+\bibfield{author}{\bibinfo{person}{Birgit Hofer} {and} \bibinfo{person}{Franz
+  Wotawa}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Spectrum Enhanced Dynamic Slicing for better Fault
+  Localization}. In \bibinfo{booktitle}{\emph{{ECAI} 2012 - 20th European
+  Conference on Artificial Intelligence. Including Prestigious Applications of
+  Artificial Intelligence {(PAIS-2012)} System Demonstrations Track,
+  Montpellier, France, August 27-31 , 2012}}. \bibinfo{pages}{420--425}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3233/978-1-61499-098-7-420}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Jones and Harrold}{Jones and Harrold}{2005}]%
+        {DBLP:conf/kbse/JonesH05}
+\bibfield{author}{\bibinfo{person}{James~A. Jones} {and}
+  \bibinfo{person}{Mary~Jean Harrold}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Empirical evaluation of the tarantula automatic
+  fault-localization technique}. In \bibinfo{booktitle}{\emph{20th {IEEE/ACM}
+  International Conference on Automated Software Engineering {(ASE})}}.
+  \bibinfo{pages}{273--282}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Just, Jalali, and Ernst}{Just
+  et~al\mbox{.}}{2014}]%
+        {just-defects4j-issta2014}
+\bibfield{author}{\bibinfo{person}{Ren{\'e} Just}, \bibinfo{person}{Darioush
+  Jalali}, {and} \bibinfo{person}{Michael~D. Ernst}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Defects4J: A Database of Existing Faults to Enable
+  Controlled Testing Studies for Java Programs}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2014 International Symposium on
+  Software Testing and Analysis}} \emph{(\bibinfo{series}{ISSTA 2014})}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{437--440}.
+\newblock
+\showISBNx{978-1-4503-2645-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2610384.2628055}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kim, {Le Goues}, Pradel, and Roychoudhury}{Kim
+  et~al\mbox{.}}{2017}]%
+        {kim-etal-daghstul2017}
+\bibfield{author}{\bibinfo{person}{Sunghun Kim}, \bibinfo{person}{Claire {Le
+  Goues}}, \bibinfo{person}{Michael Pradel}, {and} \bibinfo{person}{Abhik
+  Roychoudhury}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Automated Program Repair (Dagstuhl Seminar 17022)}.
+\newblock \bibinfo{journal}{\emph{Dagstuhl Reports}} \bibinfo{volume}{7},
+  \bibinfo{number}{1} (\bibinfo{year}{2017}), \bibinfo{pages}{19--31}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.4230/DagRep.7.1.19}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Ko and Myers}{Ko and Myers}{2008}]%
+        {Ko:2008:DRA:1368088.1368130}
+\bibfield{author}{\bibinfo{person}{Andrew~J. Ko} {and} \bibinfo{person}{Brad~A.
+  Myers}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Debugging Reinvented: Asking and Answering Why and
+  Why Not Questions About Program Behavior}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 30th International Conference on
+  Software Engineering}} \emph{(\bibinfo{series}{ICSE '08})}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{301--310}.
+\newblock
+\showISBNx{978-1-60558-079-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1368088.1368130}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lei, Mao, Dai, and Wang}{Lei
+  et~al\mbox{.}}{2012}]%
+        {lei-mao-dai-wang-2012}
+\bibfield{author}{\bibinfo{person}{Y. Lei}, \bibinfo{person}{X. Mao},
+  \bibinfo{person}{Z. Dai}, {and} \bibinfo{person}{C. Wang}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Effective Statistical Fault Localization Using
+  Program Slices}. In \bibinfo{booktitle}{\emph{2012 IEEE 36th Annual Computer
+  Software and Applications Conference}}. \bibinfo{pages}{1--10}.
+\newblock
+\showISSN{0730-3157}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/COMPSAC.2012.9}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Li, Huo, Chen, Zhong, Feng, and Li}{Li
+  et~al\mbox{.}}{2013}]%
+        {li-huo-chen-zhong-feng-li-2013}
+\bibfield{author}{\bibinfo{person}{F. Li}, \bibinfo{person}{W. Huo},
+  \bibinfo{person}{C. Chen}, \bibinfo{person}{L. Zhong}, \bibinfo{person}{X.
+  Feng}, {and} \bibinfo{person}{Z. Li}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Effective fault localization based on minimum
+  debugging frontier set}. In \bibinfo{booktitle}{\emph{Proceedings of the 2013
+  IEEE/ACM International Symposium on Code Generation and Optimization (CGO)}}.
+  \bibinfo{pages}{1--10}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CGO.2013.6494988}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lin, Sun, Tran, Bai, Wang, and Dong}{Lin
+  et~al\mbox{.}}{2018}]%
+        {Lin:2018:BDE:3238147.3238163}
+\bibfield{author}{\bibinfo{person}{Yun Lin}, \bibinfo{person}{Jun Sun},
+  \bibinfo{person}{Lyly Tran}, \bibinfo{person}{Guangdong Bai},
+  \bibinfo{person}{Haijun Wang}, {and} \bibinfo{person}{Jinsong Dong}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Break the Dead End of Dynamic Slicing: Localizing
+  Data and Control Omission Bug}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 33rd ACM/IEEE International Conference on Automated Software
+  Engineering}} \emph{(\bibinfo{series}{ASE 2018})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{509--519}.
+\newblock
+\showISBNx{978-1-4503-5937-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3238147.3238163}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Long and Rinard}{Long and Rinard}{2015}]%
+        {long-rinard-2015}
+\bibfield{author}{\bibinfo{person}{Fan Long} {and} \bibinfo{person}{Martin
+  Rinard}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Staged Program Repair with Condition Synthesis}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2015 10th Joint Meeting on
+  Foundations of Software Engineering}} \emph{(\bibinfo{series}{ESEC/FSE
+  2015})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{166--178}.
+\newblock
+\showISBNx{978-1-4503-3675-8}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2786805.2786811}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Long and Rinard}{Long and Rinard}{2016}]%
+        {long-rinard-2016}
+\bibfield{author}{\bibinfo{person}{Fan Long} {and} \bibinfo{person}{Martin
+  Rinard}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Automatic Patch Generation by Learning Correct
+  Code}. In \bibinfo{booktitle}{\emph{Proceedings of the 43rd Annual ACM
+  SIGPLAN-SIGACT Symposium on Principles of Programming Languages}}
+  \emph{(\bibinfo{series}{POPL '16})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{298--312}.
+\newblock
+\showISBNx{978-1-4503-3549-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2837614.2837617}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lucia, Lo, Jiang, Thung, and Budi}{Lucia
+  et~al\mbox{.}}{2014b}]%
+        {DBLP:journals/smr/LuciaLJTB14}
+\bibfield{author}{\bibinfo{person}{Lucia}, \bibinfo{person}{David Lo},
+  \bibinfo{person}{Lingxiao Jiang}, \bibinfo{person}{Ferdian Thung}, {and}
+  \bibinfo{person}{Aditya Budi}.} \bibinfo{year}{2014}\natexlab{b}.
+\newblock \showarticletitle{Extended comprehensive study of association
+  measures for fault localization}.
+\newblock \bibinfo{journal}{\emph{Journal of Software: Evolution and Process}}
+  \bibinfo{volume}{26}, \bibinfo{number}{2} (\bibinfo{year}{2014}),
+  \bibinfo{pages}{172--219}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lucia, Lo, and Xia}{Lucia
+  et~al\mbox{.}}{2014a}]%
+        {Lucia:2014:FFL:2642937.2642983}
+\bibfield{author}{\bibinfo{person}{Lucia}, \bibinfo{person}{David Lo}, {and}
+  \bibinfo{person}{Xin Xia}.} \bibinfo{year}{2014}\natexlab{a}.
+\newblock \showarticletitle{Fusion Fault Localizers}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 29th ACM/IEEE International
+  Conference on Automated Software Engineering}} \emph{(\bibinfo{series}{ASE
+  '14})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{127--138}.
+\newblock
+\showISBNx{978-1-4503-3013-8}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2642937.2642983}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Monperrus}{Monperrus}{[n. d.]}]%
+        {automatic-software-repair-survey2017}
+\bibfield{author}{\bibinfo{person}{Martin Monperrus}.} \bibinfo{year}{[n.
+  d.]}\natexlab{}.
+\newblock \bibinfo{title}{Automatic Software Repair: a Bibliography}.
+\newblock
+\newblock
+\newblock
+\shownote{Accepted for publications in ACM Computing Survey.
+  \url{http://www.monperrus.net/martin/survey-automatic-repair.pdf}.}
+
+
+\bibitem[\protect\citeauthoryear{Mozilla}{Mozilla}{[n. d.]a}]%
+        {lithium}
+\bibfield{author}{\bibinfo{person}{Mozilla}.} \bibinfo{year}{[n.
+  d.]}\natexlab{a}.
+\newblock \bibinfo{title}{Lithium}.
+\newblock
+\newblock
+\newblock
+\shownote{https://github.com/MozillaSecurity/lithium.}
+
+
+\bibitem[\protect\citeauthoryear{Mozilla}{Mozilla}{[n. d.]b}]%
+        {lithium-complexity}
+\bibfield{author}{\bibinfo{person}{Mozilla}.} \bibinfo{year}{[n.
+  d.]}\natexlab{b}.
+\newblock \bibinfo{title}{Lithium runtime complexity}.
+\newblock
+\newblock
+\newblock
+\shownote{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md.}
+
+
+\bibitem[\protect\citeauthoryear{Nguyen, Qi, Roychoudhury, and Chandra}{Nguyen
+  et~al\mbox{.}}{2013}]%
+        {nguyen-qi-roychoudhury-2013}
+\bibfield{author}{\bibinfo{person}{H.~D.~T. Nguyen}, \bibinfo{person}{D. Qi},
+  \bibinfo{person}{A. Roychoudhury}, {and} \bibinfo{person}{S. Chandra}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{SemFix: Program repair via semantic analysis}. In
+  \bibinfo{booktitle}{\emph{2013 35th International Conference on Software
+  Engineering (ICSE)}}. \bibinfo{pages}{772--781}.
+\newblock
+\showISSN{0270-5257}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSE.2013.6606623}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Pearson, Campos, Just, Fraser, Abreu, Ernst,
+  Pang, and Keller}{Pearson et~al\mbox{.}}{2017}]%
+        {Pearson:2017:EIF:3097368.3097441}
+\bibfield{author}{\bibinfo{person}{Spencer Pearson}, \bibinfo{person}{Jos{\'e}
+  Campos}, \bibinfo{person}{Ren{\'e} Just}, \bibinfo{person}{Gordon Fraser},
+  \bibinfo{person}{Rui Abreu}, \bibinfo{person}{Michael~D. Ernst},
+  \bibinfo{person}{Deric Pang}, {and} \bibinfo{person}{Benjamin Keller}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Evaluating and Improving Fault Localization}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 39th International Conference on
+  Software Engineering}} \emph{(\bibinfo{series}{ICSE'17})}.
+  \bibinfo{publisher}{IEEE Press}, \bibinfo{address}{Piscataway, NJ, USA},
+  \bibinfo{pages}{609--620}.
+\newblock
+\showISBNx{978-1-5386-3868-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSE.2017.62}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Peleska, Vorobev, and Lapschies}{Peleska
+  et~al\mbox{.}}{2011}]%
+        {peleska-vorobev-lapschies-2011}
+\bibfield{author}{\bibinfo{person}{Jan Peleska}, \bibinfo{person}{Elena
+  Vorobev}, {and} \bibinfo{person}{Florian Lapschies}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Automated Test Case Generation with SMT-solving and
+  Abstract Interpretation}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  Third International Conference on NASA Formal Methods}}
+  \emph{(\bibinfo{series}{NFM'11})}. \bibinfo{publisher}{Springer-Verlag},
+  \bibinfo{address}{Berlin, Heidelberg}, \bibinfo{pages}{298--312}.
+\newblock
+\showISBNx{978-3-642-20397-8}
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=1986308.1986333}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wang and Roychoudhury}{Wang and
+  Roychoudhury}{2004}]%
+        {Wang:2004:UCB:998675.999455}
+\bibfield{author}{\bibinfo{person}{Tao Wang} {and} \bibinfo{person}{Abhik
+  Roychoudhury}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Using Compressed Bytecode Traces for Slicing Java
+  Programs}. In \bibinfo{booktitle}{\emph{Proceedings of the 26th International
+  Conference on Software Engineering}} \emph{(\bibinfo{series}{ICSE '04})}.
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Washington, DC,
+  USA}, \bibinfo{pages}{512--521}.
+\newblock
+\showISBNx{0-7695-2163-0}
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=998675.999455}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wang and Roychoudhury}{Wang and
+  Roychoudhury}{2008}]%
+        {Wang:2008:DSJ:1330017.1330021}
+\bibfield{author}{\bibinfo{person}{Tao Wang} {and} \bibinfo{person}{Abhik
+  Roychoudhury}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Dynamic Slicing on Java Bytecode Traces}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Program. Lang. Syst.}}
+  \bibinfo{volume}{30}, \bibinfo{number}{2}, Article \bibinfo{articleno}{10}
+  (\bibinfo{date}{March} \bibinfo{year}{2008}), \bibinfo{numpages}{49}~pages.
+\newblock
+\showISSN{0164-0925}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1330017.1330021}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Weiser}{Weiser}{1981}]%
+        {Weiser:1981:PS:800078.802557}
+\bibfield{author}{\bibinfo{person}{Mark Weiser}.}
+  \bibinfo{year}{1981}\natexlab{}.
+\newblock \showarticletitle{Program Slicing}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 5th International Conference on
+  Software Engineering}} \emph{(\bibinfo{series}{ICSE '81})}.
+  \bibinfo{publisher}{IEEE Press}, \bibinfo{address}{Piscataway, NJ, USA},
+  \bibinfo{pages}{439--449}.
+\newblock
+\showISBNx{0-89791-146-6}
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=800078.802557}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wen, Wu, and Cheung}{Wen
+  et~al\mbox{.}}{2016}]%
+        {Wen:2016:LLB:2970276.2970359}
+\bibfield{author}{\bibinfo{person}{Ming Wen}, \bibinfo{person}{Rongxin Wu},
+  {and} \bibinfo{person}{Shing-Chi Cheung}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Locus: Locating Bugs from Software Changes}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 31st IEEE/ACM International
+  Conference on Automated Software Engineering}} \emph{(\bibinfo{series}{ASE
+  2016})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{262--273}.
+\newblock
+\showISBNx{978-1-4503-3845-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2970276.2970359}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wong, Gao, Li, Abreu, and Wotawa}{Wong
+  et~al\mbox{.}}{2016a}]%
+        {FLSurvey2016}
+\bibfield{author}{\bibinfo{person}{W.~Eric Wong}, \bibinfo{person}{Ruizhi Gao},
+  \bibinfo{person}{Yihao Li}, \bibinfo{person}{Rui Abreu}, {and}
+  \bibinfo{person}{Franz Wotawa}.} \bibinfo{year}{2016}\natexlab{a}.
+\newblock \showarticletitle{A survey of software fault localization}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Software Engineering}}
+  \bibinfo{volume}{42}, \bibinfo{number}{8} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{707--740}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wong, Gao, Li, Abreu, and Wotawa}{Wong
+  et~al\mbox{.}}{2016b}]%
+        {7390282}
+\bibfield{author}{\bibinfo{person}{W.~E. Wong}, \bibinfo{person}{R. Gao},
+  \bibinfo{person}{Y. Li}, \bibinfo{person}{R. Abreu}, {and}
+  \bibinfo{person}{F. Wotawa}.} \bibinfo{year}{2016}\natexlab{b}.
+\newblock \showarticletitle{A Survey on Software Fault Localization}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Software Engineering}}
+  \bibinfo{volume}{42}, \bibinfo{number}{8} (\bibinfo{date}{Aug}
+  \bibinfo{year}{2016}), \bibinfo{pages}{707--740}.
+\newblock
+\showISSN{0098-5589}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TSE.2016.2521368}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wotawa}{Wotawa}{2010}]%
+        {Wotawa:2010:FLB:1848650.1849235}
+\bibfield{author}{\bibinfo{person}{Franz Wotawa}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Fault Localization Based on Dynamic Slicing and
+  Hitting-Set Computation}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2010 10th International Conference on Quality Software}}
+  \emph{(\bibinfo{series}{QSIC '10})}. \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Washington, DC, USA}, \bibinfo{pages}{161--170}.
+\newblock
+\showISBNx{978-0-7695-4131-0}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/QSIC.2010.51}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wu, Zhang, Cheung, and Kim}{Wu
+  et~al\mbox{.}}{2014}]%
+        {Wu:2014:CLC:2610384.2610386}
+\bibfield{author}{\bibinfo{person}{Rongxin Wu}, \bibinfo{person}{Hongyu Zhang},
+  \bibinfo{person}{Shing-Chi Cheung}, {and} \bibinfo{person}{Sunghun Kim}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{CrashLocator: Locating Crashing Faults Based on
+  Crash Stacks}. In \bibinfo{booktitle}{\emph{Proceedings of the 2014
+  International Symposium on Software Testing and Analysis}}
+  \emph{(\bibinfo{series}{ISSTA 2014})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{204--214}.
+\newblock
+\showISBNx{978-1-4503-2645-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2610384.2610386}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Xie, Liu, Song, Chen, Xuan, and Xu}{Xie
+  et~al\mbox{.}}{2016}]%
+        {Xie:2016:RAD:2884781.2884834}
+\bibfield{author}{\bibinfo{person}{Xiaoyuan Xie}, \bibinfo{person}{Zicong Liu},
+  \bibinfo{person}{Shuo Song}, \bibinfo{person}{Zhenyu Chen},
+  \bibinfo{person}{Jifeng Xuan}, {and} \bibinfo{person}{Baowen Xu}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Revisit of Automatic Debugging via Human
+  Focus-tracking Analysis}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  38th International Conference on Software Engineering}}
+  \emph{(\bibinfo{series}{ICSE '16})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{808--819}.
+\newblock
+\showISBNx{978-1-4503-3900-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2884781.2884834}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zeller and Hildebrandt}{Zeller and
+  Hildebrandt}{2002}]%
+        {zeller-hildebrandt-tse2002}
+\bibfield{author}{\bibinfo{person}{Andreas Zeller} {and} \bibinfo{person}{Ralf
+  Hildebrandt}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Simplifying and Isolating Failure-Inducing Input}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Software Engineering}}
+  \bibinfo{volume}{28}, \bibinfo{number}{2} (\bibinfo{date}{Feb.}
+  \bibinfo{year}{2002}), \bibinfo{pages}{183--200}.
+\newblock
+\showISSN{0098-5589}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/32.988498}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zhang, Tallam, Gupta, and Gupta}{Zhang
+  et~al\mbox{.}}{2007}]%
+        {Zhang:2007:TLE:1250734.1250782}
+\bibfield{author}{\bibinfo{person}{Xiangyu Zhang}, \bibinfo{person}{Sriraman
+  Tallam}, \bibinfo{person}{Neelam Gupta}, {and} \bibinfo{person}{Rajiv
+  Gupta}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Towards Locating Execution Omission Errors}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 28th ACM SIGPLAN Conference on
+  Programming Language Design and Implementation}} \emph{(\bibinfo{series}{PLDI
+  '07})}. \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{415--424}.
+\newblock
+\showISBNx{978-1-59593-633-2}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1250734.1250782}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}
