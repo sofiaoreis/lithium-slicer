@@ -81,7 +81,7 @@ def minimize_file(filepath):
     lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
 
     # checkout the project - @TODO: not necessary anymore
-    #checkout_project(project, bug_number, project_dir)
+    checkout_project(project, bug_number, project_dir)
 
     # update filepath path
     java_file = os.path.join(project_dir, filepath)
