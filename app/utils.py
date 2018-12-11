@@ -1,5 +1,9 @@
 import json, re, shlex, difflib, os
-from subprocess import Popen, PIPE, STDOUT, call
+from subprocess import STDOUT, CalledProcessError, check_output, Popen, PIPE, call
+from timeout_decorator import timeout, TimeoutError
+from shlex import split
+
+timeout_seconds = 120
 
 def json_to_dict(json_path):
     """ 
@@ -177,3 +181,15 @@ def get_to_compare(stacktrace):
             break
     return lines, buggy_line
     
+
+@timeout(timeout_seconds) # 60s at most (compile and run test)
+def call_cmd(cmd_line):
+    cmd = split(cmd_line)
+    msg = ''
+    try:
+        msg = check_output(cmd, stderr=STDOUT).decode('utf-8')
+    except TimeoutError as e:
+        msg = 'Error: TIMEOUT'
+    except CalledProcessError as errorExc:
+        msg = errorExc.output.decode('utf-8')
+    return msg

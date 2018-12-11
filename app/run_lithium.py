@@ -13,6 +13,7 @@ main.add_argument("--bug_number", nargs=1, type=str)
 main.add_argument("--test_case", nargs=1, type=str)
 main.add_argument("--classes", nargs=1, type=str)
 main.add_argument("--expected_msg_path", nargs=1, type=str)
+main.add_argument("--top", nargs=1, type=str)
 
 args = main.parse_args()
 
@@ -21,16 +22,19 @@ bug_number = args.bug_number[0]
 test_case = args.test_case[0]
 classes = args.classes[0]
 expected_msg_path = args.expected_msg_path[0]
+top = args.top[0]
+
 
 # temporary directories
 base_path = os.getcwd()
-log_dir = os.path.join(base_path, 'logs', '{}_{}'.format(project, bug_number), '{}'.format(bug_number))
+log_dir = os.path.join(base_path, 'logs_{}'.format(top), '{}_{}'.format(project, bug_number), '{}'.format(bug_number))
 # this 'b' char corresponds to buggy version
 bug_number += "b" 
 # converts "classes" argument to a list of classes
 classes = classes.split(",")
 # renaming test case
 testcase_name = test_case.split(".")[-1].replace("::", ".")
+
 
 # if remove_comments == True, the comments/javadoc in original file are removed (otimization)
 # BUG @TODO: if true, the function (utils.get_loc) does not works as expected (empty array)
@@ -76,8 +80,8 @@ def minimize_file(filepath):
     project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
     lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
 
-    # checkout the project
-    checkout_project(project, bug_number, project_dir)
+    # checkout the project - @TODO: not necessary anymore
+    #checkout_project(project, bug_number, project_dir)
 
     # update filepath path
     java_file = os.path.join(project_dir, filepath)
