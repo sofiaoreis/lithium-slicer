@@ -166,9 +166,10 @@ def get_testname_expected_msg(testname, expected):
             res.append(i)
     return res
 
-def get_to_compare(stacktrace):
+def get_to_compare(stacktrace, test):
     lines = []; ov_acm = 0
     is_overflow = re.search(r'StackOverflowError', stacktrace[0])
+    test = test.replace('::','.')
     for i in range(len(stacktrace)):
         lines.append(stacktrace[i].strip())
         buggy_line = stacktrace[i].strip()
@@ -177,10 +178,9 @@ def get_to_compare(stacktrace):
                 ov_acm +=1
             if ov_acm > 5:
                 break
-        if re.search(r'Test(.*).java',stacktrace[i]): 
+        if re.search(r'Test(.*).java',stacktrace[i]) and test in stacktrace[i]: 
             break
     return lines, buggy_line
-    
 
 @timeout(timeout_seconds) # 60s at most (compile and run test)
 def call_cmd(cmd_line):
