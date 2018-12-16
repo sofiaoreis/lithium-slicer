@@ -16,7 +16,7 @@ BUG=$2 # bugs
 TOP=$3 # k from top-k
 BASEPATH=$(pwd)
 
-INPUTS="inputs-${PROJECT}_${BUG}" # data filename
+INPUTS="inputs-${PROJECT}_${BUG}_${TOP}" # data filename
 
 # generates a document that contains the inputs to run the minimizer
 gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP")
