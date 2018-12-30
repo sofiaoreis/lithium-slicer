@@ -31,7 +31,7 @@ while read line; do
     CLASSES=$(echo $line | cut -f4 -d " ")
     EXPECTED_MSG_PATH=$(echo $line | cut -f5 -d " ")
 
-    run defects4j and lithium
+    #run defects4j and lithium
     python3 run_lithium.py --project $PROJECT \
     --bug_number $BUGNUMBER \
     --test_case $TESTCASE \
