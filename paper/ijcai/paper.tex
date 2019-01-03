@@ -378,7 +378,7 @@ faulty.  Components are then ranked according to such likelihood
 scores and reported to the user. Ochiai is one of those fault
 predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}.
 The Ochiai formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
-\[\N{11}/(\sqrt{\N{11}+\N{01}} + \sqrt{\N{11}+\N{10}})\]
+\[\frac{\N{11}}{\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}}\]
 
 \section{Critical Slicing + \sfl{}}
 \label{sec:combination}
