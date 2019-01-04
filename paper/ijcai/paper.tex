@@ -704,10 +704,10 @@ We describe the results of dynamic slicing alone in the following sections.
 		             & \% imp (f) &\% imp (l) & \% imp ($\overline{m}$)& \% imp (median) &\% imp (f) & \% imp (l)   & \% imp ($\overline{m}$) & \% imp (median)  \\ %\comments{& Failing Test Cases &}  
 		\midrule
 		
-			\chart{}  & 20.98\% & 20.32\% & 20.05\% & 19.75\% & 20.98\% & 20.32\% & 20.05\% & 19.75\% \\
+		\chart{}  & 20.98\% & 20.32\% & 20.05\% & 19.75\% & 20.98\% & 20.32\% & 20.05\% & 19.75\% \\
 		\closure{}         & 4.17\% & 0.00\% & 0.00\% & 3.68\% & 4.17\% & 0.00\% & 0.00\% & 3.68\% \\
 		\lang{}             &7.91\% & 5.84\% & 6.47\% & 6.80\% & 7.91\% & 5.84\% & 6.47\% & 6.80\% \\
-			\cmath{}           &8.58\% & 6.59\% & 7.65\% & 8.74\% & 8.58\% & 6.59\% & 7.65\% & 8.74\% \\
+		\cmath{}           &8.58\% & 6.59\% & 7.65\% & 8.74\% & 8.58\% & 6.59\% & 7.65\% & 8.74\% \\
 		\mockito{} & 15.73\% & 17.37\% & 17.63\% & 15.74\% & 15.73\% & 17.37\% & 17.63\% & 15.74\% \\
 		\jtime{}           & 8.83\% & 10.70\% & 11.25\% & 10.86\% & 8.83\% & 10.70\% & 11.25\% & 10.86\% \\
 		\bottomrule
@@ -715,6 +715,26 @@ We describe the results of dynamic slicing alone in the following sections.
 	\caption {\sfl{}+\ds{} performance evaluation}
 \end{table*}
 \normalsize
+
+
+\begin{table}[h]
+	\centering
+	\setlength{\tabcolsep}{4pt}
+	  \begin{tabular}{lrrr}
+		\toprule
+		Project            & top-5 & top-10 & imp   \\ %\comments{& Failing Test Cases &}
+		\midrule
+		\lang{}            & 55 & 55 & 0 \%       \\   %\commentst{& 124   &  -}\\
+		\cmath{}           & 87  & 91 & 3.77 \%     \\   %\comments{& 177   &  -}\\
+		\closure{}         & 83  & 96  & 9.77 \%     \\   %\comments{& 350   &  -}\\
+		\chart{}           & 22  & 24 & 7.69 \%      \\  %\comments{& 92    &  -}\\
+		\jtime{}           & 21  & 27 & 3.70 \%       \\   %\comments{& 76    &  -}\\
+		\mockito{}         & 24  & 27 & 7.89 \%    \\     %\comments{& 118   &  -}\\
+		\bottomrule
+	\end{tabular}
+  \caption {Diagnosis Capability without Slicing}
+  \end{table}
+  \normalsize
 
 \subsection{Threats to validity}
 
