@@ -670,7 +670,7 @@ We describe the results of dynamic slicing alone in the following sections.
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{llllll}
 		\toprule
-		Project             &  \# MFS-5  & \% MFS-5 & \# MFS-10 & \% MFS-10 & \# Faults \\ % & \#FS  & \# T & \# Ev & \#Bugs
+		Project             &  \# top-5  & \% top-5 & \# top-10 & \% top-10 & \# Faults \\ % & \#FS  & \# T & \# Ev & \#Bugs
 		\midrule
 		\chart{}  & 6 & 23.1\% & 4 & 15.4 \%  & 26\\ %& 40 &  57  &  136 & 21 
 		% \closure{} 	& 3.7\% & 0\% & 96.3\%   \\ %& 56 &  10  &  81 & 6 
@@ -735,23 +735,22 @@ applying two main techiniques (\sfl{} and \comb{})
 \end{table*}
 
 \begin{table*}[h]
+	\small
 	\setlength{\tabcolsep}{3pt}
-	\begin{tabular}{@{}p{1.75cm}p{0.8cm}p{1.3cm}p{1cm}p{0.8cm}p{1cm}p{0.8cm}p{0.8cm}p{0.8cm}p{1cm}p{1cm}p{0.8cm}p{1.1cm}p{0.8cm}@{}}
+	\begin{tabular}{@{}p{1.6cm}p{1cm}p{1.3cm}p{1cm}p{1cm}p{0.8cm}p{1cm}p{1cm}p{1cm}p{1.1cm}p{1cm}p{1cm}p{1.6cm}p{1.3cm}@{}}
 	\toprule
 		   & 1    & 2   & 3  & 4   & 5           & 6   & 7  & 8    & 9            & 10     & 11 & 12      & 13   \\ \midrule
 	SFL    & 36   & 265.56    & 6.5         & 173 & 7.5         & 57  & 72 & 9.5  & 8.5          & 2.5    & 10 & 19.5    & 44.5 \\
 	\comb{}-5   & 15.5 & 716.5       & 5           & 107 & 7           & 15  & 44 & 8    & 8.5          & 2      & 6  & 2410    & 35.5 \\
+	$\Delta-5$  & 56.94\% & -169.80\%   & 23.08\%     & 38.15\% & 6.67\%      & 73.68\% & 38.89\% & 15.79\% & 0.00\%      & 20.00\% & 40.00\% & -12258.97\% & 20.22\%   \\
 	\comb{}-10  & 35.5 & 406.38     & 5           & 114 & 7           & 15  & 46 & 8    & 8.5          & 2      & 6  & 2448    & 35.5 \\
-	\cellcolor[HTML]{FFFFC7}$\Delta-5$  & 20.5 & -450.94   & 1.5         & 66  & 0.5         & 42  & 28 & 1.5  & 0            & 0.5    & 4  & -2390.5 & 9    \\
-	\cellcolor[HTML]{FFFFC7}$\Delta-10$ & 0.5  & -140.81   & 1.5         & 59  & 0.5         & 42  & 26 & 1.5  & 0            & 0.5    & 4  & -2428.5 & 9    \\
-	\cellcolor[HTML]{9AFF99}$\Delta$   & {\success20.5} & X  & {\success1.5} & {\success66}  & {\success0.5} & {\success42}  & {\success28} & {\success1.5}  & 0 & {\success0.5} & {\success4}  & X & {\success9}    \\\midrule
-		   & 14   & 15          & 16          & 17  & 18          & 19  & 20 & 21   & 22           & 23     & 24 & 25      & 26   \\\midrule
+	$\Delta-10$ & 1.39\%  & -53.02\%    & 23.08\%     & 34.10\% & 6.67\%      & 73.68\% & 36.11\% & 15.79\% & 0.00\%      & 20.00\% & 40.00\% & -12453.85\% & 20.22\%   \\\midrule
+	& 14   & 15          & 16          & 17  & 18          & 19  & 20 & 21   & 22           & 23     & 24 & 25      & 26   \\\midrule
 	SFL    & 15.5 & 2471.17 & 13.5        & 2   & 9.5         & 3.5 & 6  & 39   & 57.21  & 6818.5 & 3  & 3516    & 140  \\
 	\comb{}-5   & 15.5 & 2254.17 & 9.17 & 2   & 7.67 & 2.5 & 6  & 21   & 105.43  & 6818.5 & 3  & 6046.5  & 717  \\
+	$\Delta-5$  & 0.00\%  & 8.78\%      & 32.10\%     & 0.00\%  & 19.30\%     & 28.57\% & 0.00\%  & 46.15\% & -84.27\%    & 0.00\%  & 0.00\%  & -71.97\%    & -412.14\% \\
 	\comb{}-10  & 15.5 & 2264.83 & 10.83 & 2   & 7.67 & 2.5 & 6  & 29.5 & 105.43  & 6818.5 & 3  & 6063.5  & 140  \\
-	\cellcolor[HTML]{FFFFC7}$\Delta-5$  & 0    & 217         & 4.33 & 0   & 1.83 & 1   & 0  & 18   & -48.21 & 0      & 0  & -2530.5 & -577 \\
-	\cellcolor[HTML]{FFFFC7}$\Delta-10$ & 0    & 206.33 & 2.67 & 0   & 1.83 & 1   & 0  & 9.5  & -48.21 & 0      & 0  & -2547.5 & 0    \\
-	\cellcolor[HTML]{9AFF99}$\Delta$    & 0    & {\success217} & {\success4.33} & 0   & {\success1.83} & {\success1}   & 0  & {\success18} & X & 0 & 0  & X & 0    \\ 
+	$\Delta-10$ & 0.00\%  & 8.35\%      & 19.75\%     & 0.00\%  & 19.30\%     & 28.57\% & 0.00\%  & 24.36\% & -84.27\%    & 0.00\%  & 0.00\%  & -72.45\%    & 0.00\% \\
 	\bottomrule
 	\end{tabular}
 	\caption {Reporting the rank of all faulty statements obtained by appling \sfl{}, \comb{}-5 and \comb{}-10 to each version of the \chart{} project and performance evaluation of applying \ds{} to \sfl{} considering the top-5 (IMP-5) and top-10 (IMP-10) of the faulty classes}
@@ -760,13 +759,12 @@ applying two main techiniques (\sfl{} and \comb{})
 \normalsize
 
 
-
 \begin{table}[h]
 	\centering
 	\setlength{\tabcolsep}{4pt}
 	  \begin{tabular}{lrrr}
 		\toprule
-		Project            & \# (k = 5) & \# (k = 10) &  \% $\Delta$   \\ %\comments{& Failing Test Cases &}
+		Project            & \# top-5 & \# top-10 &  \% $\Delta$   \\ %\comments{& Failing Test Cases &}
 		\midrule
 		\lang{}            & 55 & 55 & 0 \%       \\   %\commentst{& 124   &  -}\\
 		\cmath{}           & 87  & 91 & 3.77 \%     \\   %\comments{& 177   &  -}\\
