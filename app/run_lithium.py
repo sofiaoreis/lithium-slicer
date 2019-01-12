@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import os, logging, time, argparse, tempfile
 from shutil import copy, rmtree
 import subprocess

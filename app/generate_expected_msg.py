@@ -1,7 +1,6 @@
+#! /usr/bin/python3
 import argparse, os
 from utils import json_to_dict, get_testname_expected_msg, call_cmd
-
-
 
 main = argparse.ArgumentParser()
 main.add_argument("--project", type=str, nargs=1, help="Project name")

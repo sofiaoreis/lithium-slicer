@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import sys, os, logging
 from utils import check_obj_comparison, is_object_comparison, get_testname_expected_msg, get_to_compare
 import re

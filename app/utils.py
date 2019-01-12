@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import json, re, shlex, difflib, os
 from subprocess import STDOUT, CalledProcessError, check_output, Popen, PIPE, call
 from timeout_decorator import timeout, TimeoutError

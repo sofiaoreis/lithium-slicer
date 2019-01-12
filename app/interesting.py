@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import os, signal, time, logging
 from shutil import copy
 
