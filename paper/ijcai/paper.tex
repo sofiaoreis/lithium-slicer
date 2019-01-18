@@ -490,7 +490,6 @@ The following section aims to answer the research questions presented previously
 
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
 
-
 In \textbf{RQ1}, we pretend to evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
 
 Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
@@ -515,10 +514,6 @@ Table \ref{tab:fs} report the absolute and relative numbers of faulty statements
   \caption {Diagnosis capability if only considering the \sfl{} results for each version (no slicing applied)}
   \label{table:fsws}
 \end{table}  
-
-
-
-
 
 \begin{table*}[h]
 	\centering
@@ -550,7 +545,7 @@ applying the 3 techiniques \sfl{}, \comb{}-5 and \comb{}-10.
 
 Table \ref{tab:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}. $\Delta<0$ means that the faulty statement may be removed. $\Delta=0$ means that the faulty statement remained in the same position. $\Delta>0$ means that \ds{} improved diagnosability. For both \comb{}-5 and \comb{}-10, diagnosability increases 55.56\%. However, top-5 has less classes to minimize than top-10.
 
-Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk \Fix{cite} test is performed to test for normality in the three techniques. With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman \Fix{cite}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis \Fix{cite}. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
+Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk ~\cite{10.2307/2333709} tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for the three techniques under evaluation (\sfl{}, \comb{}-5, \comb{}-10). With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman ~\cite{10.2307/2279372}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis \Fix{cite}. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
 
 
 \begin{table}[h]
