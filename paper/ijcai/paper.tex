@@ -12,20 +12,17 @@
 
 \title{Reassessing the Impact of Dynamic Slicing in SFL}
 
-\author{
-First Author$^1$,
-Second Author$^2$,
-Third Author$^3$
-\\ 
-$^1$ First Affiliation\\
-$^2$ Second Affiliation\\
-$^3$ Third Affiliation\\
-%
-first@email.address,
-second@email.address,
-third@email.address
-}
-
+%% \author{
+%% First Author$^1$,
+%% Second Author$^2$,
+%% \\ 
+%% $^1$ First Affiliation\\
+%% $^2$ Second Affiliation\\
+%% %
+%% first@email.address,
+%% second@email.address,
+%% third@email.address
+%% }
 
 % If your authors do not fit in the default space, you can increase it 
 % by uncommenting the following (adjust the "2.5in" size to make it fit
@@ -39,7 +36,7 @@ third@email.address
 \maketitle
 
 \begin{abstract}
-\Sof{@TODO}Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  ...
 \end{abstract}
 
 \section{Introduction}
@@ -51,12 +48,12 @@ to reduce the cost of fault localization.
 
 Dynamic Slicing (\ds{}) and Spectrum-Based Fault Localization (\sfl{})
 are two very popular techniques that use different principles to
-automate debugging. Dynamic Slicing ~\citeauthor{Agrawal:1990:DPS:93542.93576} looks for the statements
+automate debugging. Dynamic Slicing~\cite{Agrawal:1990:DPS:93542.93576} looks for the statements
 in code that influence the evaluation of the fault-revealing
 assertion. Although the technique has been intensively investigated in
 research, few use cases gained notoriety---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
-exception.  \sfl{}~\cite{7390282}, in contrast, does not try to
-recover the influence region of faulty statements. It is a black-box~
+exception. In contrast to \ds{}, \sfl{}~\cite{7390282} does not analyze
+code. It is a black-box~
 statistical fault localization method that computes suspiciousness
 values associated with program entities (e.g., basic blocks). For
 that, it uses coverage information of passing and failing test
@@ -85,9 +82,9 @@ evaluated fault localization research. The intuition for the \comb{}
 combination is that several highly ranked statements, albeit covered
 by failing executions, may be unrelated to the fault. Prior work
 reported promising results in this combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
-We found surprising that, despite these findings, reported nearly 5
-years ago, no tool or client analyses use this combination
-today. Several reasons could justify that observation. One hypothesis is that results reported in prior work are
+We found surprising that, despite these findings, no tool or client analyses use this combination
+today.\Mar{$\leftarrow$ revise. inconsistent. there is a recent paper
+  building on that idea...from 2018.} Several reasons could justify that observation. One hypothesis is that results reported in prior work are
 over-optimistic. For example, most prior work evaluated improvements
 of \sfl{} techniques using relative metrics, which are based on the
 position of the first faulty statements found in the ranking relative
@@ -190,25 +187,26 @@ iterations. Proofs can be found elsewhere\footnote{Algorithm complexity availabl
 Spectrum-based fault localization (\sfl) is a statistical fault
 localization technique that takes as input a test suite including at
 least one failing test and reports on output a ranked list of
-components likely to be in fault~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The following are given in \sfl{}: a
-finite set $\mathcal{C} = \set{c_1,c_2,...,c_M}$ of $M$ system
-\emph{components}\footnote{A component can be any source code artifact
-  of arbitrary granularity such as a class, a method, a statement, or
-  a branch~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; a finite set
+components likely to be in
+fault~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The
+following are given in \sfl{}: a finite set $\mathcal{C} =
+\set{c_1,c_2,...,c_M}$ of $M$ system \emph{components}\footnote{A
+  component can be any source code artifact of arbitrary granularity
+  such as a class, a method, a statement, or a
+  branch~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; a finite set
 $\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
 which correspond to records of a system execution, such as test cases;
 the error vector $e = \set{e_1,e_2,...,e_N}$, where $e_i = 1$ if
-transaction $t_i$ has failed and $e_i = 0$ otherwise; and an $N \times
-M$ coverage matrix $\mathcal{A}$, where $\A{ij}$ denotes the coverage
-of component $c_j$ in transaction $t_i$.  The pair $(\mathcal{A},e)$
-is commonly referred to as
+transaction $t_i$ has failed and $e_i = 0$ otherwise; and an
+$N\times{}M$ coverage matrix $\mathcal{A}$, where $\A{ij}$ denotes the
+coverage of component $c_j$ in transaction $t_i$.  The pair
+$(\mathcal{A},e)$ is commonly referred to as
 spectrum~\cite{DBLP:journals/stvr/HarroldRSWY00}. Figure~\ref{fig:spectrum-example}
 shows an example spectrum.
-\begin{wrapfigure}[8]{r}{0.29\textwidth}
-  \vspace{-2ex}
-  \hspace{-3ex}
+\begin{wrapfigure}[8]{2}{0.3\textwidth}
+  \hspace{-2ex}
   \centering
-  \small
+  \scriptsize
   \begin{tabular}{c|cccc|c}
     $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
     $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
@@ -423,32 +421,30 @@ issue.
 \section{Evaluation}
 \label{sec:eval}
 
-
-
-To evaluate the impact of the \comb{} combination, the authors rcompare the cost of diagnosing faulty software programs using SFL against using \comb{} for top-5 and top-10 of classes.
+%This section evaluates \comb{}.
 
 \subsection{Objects of Analysis}
 
-Following other recent studies, we used the \dfj{} benchmark in our
-experiments~\cite{just-defects4j-issta2014}. The \dfj{} benchmark
+As in other recent related studies, we used the \dfj{} benchmark in
+our experiments~\cite{just-defects4j-issta2014}. The \dfj{} benchmark
 includes six subjects and \numFaults{} faults (Table \ref{tab:df4j}).
-\lang{} is a library
-that provides a set of helper utilities for the {\small\texttt{java.lang}}
-API. \cmath{} is a lightweight library of self-contained
-mathematics and statistics components. The \closure{} is a toolset for
-turning JavaScript files into smaller scripts for faster
-download and execution in the browser. \chart{} is a library with a
-full-featured charts user interface for Java. \jtime{} is a
-lightweight library that aims to replace the default Java
-{\small\texttt{java.util.Date}} classes providing simpler APIs. \mockito{} is
-a mocking testing framework.\comments{ that enables the developer to simulate
-the behavior of classes that cannot be used in unit testing.}
+\lang{} is a library that provides a set of helper utilities for the
+     {\small\texttt{java.lang}} API. \cmath{} is a lightweight library
+     of self-contained mathematics and statistics components. The
+     \closure{} is a toolset for turning JavaScript files into smaller
+     scripts for faster download and execution in the
+     browser. \chart{} is a Java library for creating charts. \jtime{}
+     is a lightweight library that aims to replace the default Java
+     {\small\texttt{java.util.Date}} classes providing simpler
+     APIs. \mockito{} is a mocking testing framework.\comments{ that
+       enables the developer to simulate the behavior of classes that
+       cannot be used in unit testing.}
 
 \newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
 \begin{table}[h]
   \centering
   \setlength{\tabcolsep}{4pt}
-    \begin{tabular}{lccc}
+    \begin{tabular}{lrrr}
       \toprule
       Project            & Size (kLOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
       \midrule
@@ -460,19 +456,23 @@ the behavior of classes that cannot be used in unit testing.}
       \mockito{}         & 22787  & 8835 & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
-\caption {Characterization of \dfj{} subjects.}
+\caption {Characterization of \dfj{} subjects.\Mar{numbers seem too
+    big. is this really in
+    *k*LOC or just LOC? please, confirm.}}
 \label{tab:df4j}
 \end{table}
 \normalsize
 
 \subsection{Methodology}
 
-
-
+The evaluation techniques are SFL and \comb{}-$k$, for
+$k\in\{5,10\}$. \Mar{Simplified and moved this par. from Section
+  4.0. I noticed you used this terminology (\comb{} with ``-k'')
+  below. Please, explain and provide rationale}.
 
 To be able to effectively compare \comb{}-k against SFL, we first reduce the SFL report to method components. This reduction is done by considering the highest fault probability of the top-k components of each fault (/subject), to effectively be able to compare method-level diagnostic effort between the
 two approaches. A variety in diagnostic effort is measured
-using
+using\Mar{$\leftarrow$Sofia, I found this par. confusing.}
 
 \begin{equation}
     \Delta{}C = C(\textrm{SFL}) - C(\textrm{SFL+DS-k})
@@ -490,7 +490,7 @@ The following section aims to answer the research questions presented previously
 
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
 
-In \textbf{RQ1}, we pretend to evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
+In \textbf{RQ1}, we evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
 
 Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
 
