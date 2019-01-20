@@ -465,16 +465,10 @@ includes six subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 
 \subsection{Methodology}
 
-<<<<<<< HEAD
-Cost of diagnosis ($C_d$)
-
-~\cite{Parnin:2011:ADT:2001420.2001445}
-=======
 The evaluation techniques are SFL and \comb{}-$k$, for
 $k\in\{5,10\}$. \Mar{Simplified and moved this par. from Section
   4.0. I noticed you used this terminology (\comb{} with ``-k'')
   below. Please, explain and provide rationale}.
->>>>>>> 711232b219d7c4ac6d6c6eb9e148ede1665b57cc
 
 To be able to effectively compare \comb{}-k against SFL, we first reduce the SFL report to method components. This reduction is done by considering the highest fault probability of the top-k components of each fault (/subject), to effectively be able to compare method-level diagnostic effort between the
 two approaches. A variety in diagnostic effort is measured
@@ -494,13 +488,7 @@ yielding a lowered cost of diagnosing.
 
 The following section aims to answer the research questions presented previously.
 
-\subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
-
-In \textbf{RQ1}, we evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
-
-Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
-
-Table \ref{tab:fs} report the absolute and relative numbers of faulty statements not found  for each project. The number of missing faulty statements by \ds{} decreases if we consider a higher number of classes. Even after considering the top-10 of faulty statements, 15.4\% of the subjects still do not contain the faulty statements.
+\subsubsection{RQ1: \textit{Diagnosis capability}}
 
 \begin{table}[h]
 	\centering
@@ -509,17 +497,26 @@ Table \ref{tab:fs} report the absolute and relative numbers of faulty statements
 		\toprule
 		Project            & \# top-5 & \# top-10  & \% $\Delta$  \\ 
 		\midrule
-\lang{}            & 55 & 55 & 0 \%       \\   %\commentst{& 124   &  -}\\
-		\cmath{}           & 87  & 91 & 3.77 \%     \\   %\comments{& 177   &  -}\\
-		\closure{}         & 83  & 96  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}           & 22  & 24 & 7.69 \%      \\  %\comments{& 92    &  -}\\
-		\jtime{}           & 21  & 27 & 3.70 \%       \\   %\comments{& 76    &  -}\\
-		\mockito{}         & 24  & 27 & 7.89 \%    \\     %\comments{& 118   &  -}\\
+		\lang{}            & 84.60 \% & 84.60 \% & 0 \%       \\   %\commentst{& 124   &  -}\\
+		\cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
+		\closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
+		\chart{}           & 84.61 \%  & 92.31 \% & 7.70 \%      \\  %\comments{& 92    &  -}\\
+		\jtime{}           & 77.78 \%  & 100.00 \% & 22.22 \%       \\   %\comments{& 76    &  -}\\
+		\mockito{}         & 63.16 \%  & 71.05 \% & 7.89 \%    \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
   \caption {Diagnosis capability if only considering the \sfl{} results for each version (no slicing applied)}
   \label{table:fsws}
 \end{table}  
+
+
+\subsubsection{RQ2: \textit{How often DS misses faulty statements?}}
+
+In \textbf{RQ2}, we evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
+
+Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
+
+Table \ref{tab:fs} report the absolute and relative numbers of faulty statements not found  for each project. The number of missing faulty statements by \ds{} decreases if we consider a higher number of classes. Even after considering the top-10 of faulty statements, 15.4\% of the subjects still do not contain the faulty statements.
 
 \begin{table*}[h]
 	\centering
@@ -543,7 +540,7 @@ Table \ref{tab:fs} report the absolute and relative numbers of faulty statements
 \subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
 
 
-In \textbf{RQ2}, we pretend to evaluate the impact of combining \ds{} to improve \ds{}.
+In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} to improve \ds{}.
 
 The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the faulty statements of the \chart{}
 project. Figure \ref{table:performance}, reports the average rank of all faulty statements for each version of \chart{} project after
@@ -603,11 +600,11 @@ Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 10.46 \\ p-value = 2.95 x $
 \begin{table}[h]
 	\centering
 	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{cccc}
+	\begin{tabular}{ccc}
 		\toprule
-		Project             &  top-5  & top-10 & $\Delta$ \%\\ 
+		Project             &  top-5  & top-10 \\ 
 		\midrule
-		\chart{}  & 59.30\% & 53.64\% & 5.66 \%\\ 		
+		\chart{}  & 59.30\% & 53.64\% \\ 		
 		\bottomrule
 	\end{tabular}
 	\caption {\ds{} reduction performance for each version of the \chart{} project considering only the top-5 and top-10 classes}
