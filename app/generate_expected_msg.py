@@ -1,5 +1,5 @@
 #! /usr/bin/python3
-import argparse, os
+import argparse, os, tempfile
 from utils import json_to_dict, get_testname_expected_msg, call_cmd
 
 main = argparse.ArgumentParser()
@@ -79,23 +79,22 @@ def generate_seed(project, bugnumber):
                 os.makedirs(expected_dir)
             
             expected_msg_path = expected_dir+bug_number
-            project_dir = '/tmp/'+project_name+'_'+bug_number+'b/'
-            output_filepath = project_dir+'failing_tests'
+            project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
+            output_filepath = project_dir+'/failing_tests'
+            print('output_filepath=', output_filepath)
             expected_msg = []
+            failing = ''
             
-            for test in data['failing']:
-                testcase = test['test']
-                runtest_script = "bash run_input_test.sh {PROJECTDIR} {TESTCASE} {PROJECT} {BUG}"
-                cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, PROJECT=project_name, BUG=bug_number+'b')
-                output = call_cmd(cmd_str) # call shell script
-                if os.path.isfile(output_filepath):
+            runtest_script = "bash run_input_test.sh {PROJECTDIR} {PROJECT} {BUG}"
+            cmd_str = runtest_script.format(PROJECTDIR=project_dir, PROJECT=project_name, BUG=bug_number+'b')
+            output = call_cmd(cmd_str) # call shell script
+            if os.path.isfile(output_filepath):
                     with open(output_filepath) as out_fail:
-                        failing = out_fail.readlines() 
-                        expected_msg+=failing
+                        failing = out_fail.readlines()
                 
             with open(expected_msg_path,"w+") as expected:
                 expected.write(
-                    "{}\n".format(''.join(expected_msg))
+                    "{}".format(''.join(failing))
                 )
 
 generate_seed(project_name, bugs)
