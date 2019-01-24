@@ -483,31 +483,59 @@ A positive $\Delta$C means that the faulty component has risen in
 the ranking reported by SFL techniques when DS is used,
 yielding a lowered cost of diagnosing.
 
+\subsection{Dynamic Slicing}
+
+\begin{table}[h]
+	\centering
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{lcc}
+		\toprule
+		Project             &  top-5  & top-10 \\ 
+		\midrule
+		
+        \lang{}            &  & \\ 	
+        \cmath{}           &  & \\
+        \closure{}          &  & \\	
+		\chart{}			& 59.30\% & 53.64\% \\ 	
+        \jtime{}            &  & \\	
+        \mockito{}          &  & \\	
+			
+		\bottomrule
+	\end{tabular}
+	\caption {\ds{} reduction performance for each version of the \chart{} project considering only the top-5 and top-10 classes}
+	\label{tab:red}
+\end{table}
+\normalsize
+
+Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects. The reduction percentage decreases 5.66\% if the top-10 is considered instead of the top-5. 
+
 
 \subsection{Results}
 
 The following section aims to answer the research questions presented previously.
 
+
 \subsubsection{RQ1: \textit{Diagnosis capability}}
 
-\begin{table}[h]
+\begin{table*}[h]
 	\centering
-	\setlength{\tabcolsep}{4pt}
-	  \begin{tabular}{lccc}
+	  \begin{tabular}{|l|ccc|cccc|c|}
 		\toprule
-		Project            & \# top-5 & \# top-10  & \% $\Delta$  \\ 
+		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{SFL+DS-$k$} & \multirow{2}{*}{\# Faults} \\ 
+
+		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\ 
 		\midrule
-		\lang{}            & 84.60 \% & 84.60 \% & 0 \%       \\   %\commentst{& 124   &  -}\\
-		\cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
-		\closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}           & 84.61 \%  & 92.31 \% & 7.70 \%      \\  %\comments{& 92    &  -}\\
-		\jtime{}           & 77.78 \%  & 100.00 \% & 22.22 \%       \\   %\comments{& 76    &  -}\\
-		\mockito{}         & 63.16 \%  & 71.05 \% & 7.89 \%    \\     %\comments{& 118   &  -}\\
+		% \lang{}            & 84.60 \% & 84.60 \% & 0 \%       \\   %\commentst{& 124   &  -}\\
+		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
+		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
+		\chart{}           & 84.6\%  & 92.3\% & 7.7\%  & 20 & 76.9\% & 22 & 84.62\% & 26    \\  %\comments{& 92    &  -}\\
+		% \jtime{}           & 77.78 \%  & 100.00 \% & 22.22 \%       \\   %\comments{& 76    &  -}\\
+		% \mockito{}         & 63.16 \%  & 71.05 \% & 7.89 \%    \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
   \caption {Diagnosis capability if only considering the \sfl{} results for each version (no slicing applied)}
   \label{table:fsws}
-\end{table}  
+\end{table*}  
 
 
 \subsubsection{RQ2: \textit{How often DS misses faulty statements?}}
@@ -518,26 +546,26 @@ Table \ref{table:fsws} presents the number of faults (/subjects) whose the fault
 
 Table \ref{tab:fs} report the absolute and relative numbers of faulty statements not found  for each project. The number of missing faulty statements by \ds{} decreases if we consider a higher number of classes. Even after considering the top-10 of faulty statements, 15.4\% of the subjects still do not contain the faulty statements.
 
-\begin{table*}[h]
-	\centering
-	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{llllll}
-		\toprule
-		Project             &  \# top-5  & \% top-5 & \# top-10 & \% top-10 & \# Faults \\ 
-		\midrule
-		\chart{}  & 6 & 23.1\% & 4 & 15.4 \%  & 26\\
-		\jtime{}  &  &  &  &   & \\
-		\bottomrule
-	\end{tabular}
-	\caption {\Sof{@todo: Improve caption} Report of the capability of \ds{} on missing faulty statements}
-	\label{tab:fs}
-\end{table*}
-\normalsize
+% \begin{table*}[h]
+% 	\centering
+% 	\setlength{\tabcolsep}{4pt}
+% 	\begin{tabular}{llllll}
+% 		\toprule
+% 		Project             &  \# top-5  & \% top-5 & \# top-10 & \% top-10 & \# Faults \\
+% 		\midrule
+% 		\chart{}  & 20 & 76.92\% & 22 & 84.62\%  & 26\\
+% 		\jtime{}  &  &  &  &   & \\
+% 		\bottomrule
+% 	\end{tabular}
+% 	\caption {\Sof{@todo: Improve caption} Report of the capability of \ds{} on missing faulty statements}
+% 	\label{tab:fs}
+% \end{table*}
+% \normalsize
 
 
 \Sof{@todo: Answer the question} 
 
-\subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
+\subsubsection{RQ3: \textit{How effective is the \comb{} combination for bug localization?}}
 
 
 In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} to improve \ds{}.
@@ -556,11 +584,11 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{ccc}
 		\toprule
-		$\Delta$             &  \comb{}-5  & \comb{}-10 \\ 
+		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
 		\midrule
-		$<0$  & 5 & 4 \\ 
-		$=0$  & 6 & 7 \\ 
-		$>0$  & 15 & 15 \\ 
+		$<0$  & 19.2\% & 15.4\% \\ 
+		$=0$  & 23.1\% & 26.9\% \\ 
+		$>0$  & 57.7\% & 57.7\% \\ 
 		
 		\bottomrule
 	\end{tabular}
@@ -595,24 +623,6 @@ Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 10.46 \\ p-value = 2.95 x $
 
 
 
-\subsection{Reduction Performance of \ds{}}
-
-\begin{table}[h]
-	\centering
-	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{ccc}
-		\toprule
-		Project             &  top-5  & top-10 \\ 
-		\midrule
-		\chart{}  & 59.30\% & 53.64\% \\ 		
-		\bottomrule
-	\end{tabular}
-	\caption {\ds{} reduction performance for each version of the \chart{} project considering only the top-5 and top-10 classes}
-	\label{tab:red}
-\end{table}
-\normalsize
-
-Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects. The reduction percentage decreases 5.66\% if the top-10 is considered instead of the top-5. 
 
 
 
