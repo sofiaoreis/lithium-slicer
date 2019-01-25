@@ -497,8 +497,8 @@ yielding a lowered cost of diagnosing.
         \cmath{}           &  & \\
         \closure{}          &  & \\	
 		\chart{}			& 59.30\% & 53.64\% \\ 	
-        \jtime{}            &  & \\	
-        \mockito{}          &  & \\	
+        \jtime{}            & 17.27\% & 32.92\%\\	
+        \mockito{}          & 16.99\% & 21.67\%\\	
 			
 		\bottomrule
 	\end{tabular}
@@ -515,7 +515,13 @@ Table \ref{tab:red} reports the reduction of statements after using \ds{} to min
 The following section aims to answer the research questions presented previously.
 
 
-\subsubsection{RQ1: \textit{Diagnosis capability}}
+\subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
+
+In \textbf{RQ1}, we evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
+
+Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
+
+Table \ref{tab:fs} report the absolute and relative numbers of faulty statements not found  for each project. The number of missing faulty statements by \ds{} decreases if we consider a higher number of classes. Even after considering the top-10 of faulty statements, 15.4\% of the subjects still do not contain the faulty statements.
 
 \begin{table*}[h]
 	\centering
@@ -529,22 +535,13 @@ The following section aims to answer the research questions presented previously
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
 		\chart{}           & 84.6\%  & 92.3\% & 7.7\%  & 20 & 76.9\% & 22 & 84.62\% & 26    \\  %\comments{& 92    &  -}\\
-		% \jtime{}           & 77.78 \%  & 100.00 \% & 22.22 \%       \\   %\comments{& 76    &  -}\\
-		% \mockito{}         & 63.16 \%  & 71.05 \% & 7.89 \%    \\     %\comments{& 118   &  -}\\
+		\jtime{}           & 77.78 \%  & 100.00 \% & 22.22 \%  & 22 & 81.48\% & 23 & 85.19\% & 27     \\   %\comments{& 76    &  -}\\
+		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.05\% & 30 & 78.95\% & 38 \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
   \caption {Diagnosis capability if only considering the \sfl{} results for each version (no slicing applied)}
   \label{table:fsws}
 \end{table*}  
-
-
-\subsubsection{RQ2: \textit{How often DS misses faulty statements?}}
-
-In \textbf{RQ2}, we evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
-
-Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
-
-Table \ref{tab:fs} report the absolute and relative numbers of faulty statements not found  for each project. The number of missing faulty statements by \ds{} decreases if we consider a higher number of classes. Even after considering the top-10 of faulty statements, 15.4\% of the subjects still do not contain the faulty statements.
 
 % \begin{table*}[h]
 % 	\centering
@@ -565,10 +562,10 @@ Table \ref{tab:fs} report the absolute and relative numbers of faulty statements
 
 \Sof{@todo: Answer the question} 
 
-\subsubsection{RQ3: \textit{How effective is the \comb{} combination for bug localization?}}
+\subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
 
 
-In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} to improve \ds{}.
+In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} to improve \ds{}.
 
 The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the faulty statements of the \chart{}
 project. Figure \ref{table:performance}, reports the average rank of all faulty statements for each version of \chart{} project after
@@ -586,38 +583,37 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 		\toprule
 		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
 		\midrule
-		$<0$  & 19.2\% & 15.4\% \\ 
-		$=0$  & 23.1\% & 26.9\% \\ 
-		$>0$  & 57.7\% & 57.7\% \\ 
+		$<0$  & 31.87\% & 25.27\% \\ 
+		$=0$  & 26.37\% & 26.37\% \\ 
+		$>0$  & 41.76\% & 41.76\% \\ 
 		
 		\bottomrule
 	\end{tabular}
-	\caption {\Sof{This can be a barchart} Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
+	\caption {Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}}}
 	\label{tab:diagnosis}
 \end{table}
 \normalsize
-
-
 
 \begin{table*}[h]
 	\centering
 	\begin{tabular}{@{}llll@{}}
 \toprule
   & SFL                    & \comb{}-5                 & \comb{}-10                 \\ \midrule
-Mean & 531.04     & 745.71   & 715.62    \\ \midrule
-Median & 17.5                   & 15.25                & 15.25                 \\ \midrule
-Variance & 1520.09      & 1794.86   & 1803.11    \\ \midrule
-Shapiro-Wilk & \makecell{W = 0.40 \\ p-value = 2.95 x $10^{-9}$} & \makecell{W = 0.48 \\ p-value = 1.54 x $10^{-8}$} & \makecell{W = 0.46 \\ p-value = 9.11 x $10^{-9}$}  \\ \midrule
-Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 10.46 \\ p-value = 2.95 x $10^{-9}$}} \\ 
+Mean & 521.59     & 855.34   & 758.06    \\ \midrule
+Median & 57.21      & 260.33                & 109                \\ \midrule
+Variance & 1021.65      & 1307.70   & 1275.34    \\ \midrule
+Shapiro-Wilk & \makecell{W = 0.56 \\ p-value = 4.00 x $10^{-15}$} & \makecell{W = 0.69 \\ p-value = 1.81 x $10^{-12}$} & \makecell{W = 0.65 \\ p-value = 1.68 x $10^{-13}$}  \\ \midrule
+Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 7.22 \\ p-value = 0.027}} \\ 
 \bottomrule
 \end{tabular}
-  \caption {Statistical tests \Sof{Only for \chart{} yet}}
+  \caption {Statistical tests \Sof{Considering \chart{}, \jtime{}, \mockito{}}}
   \label{table:st}
 \end{table*}
 
+
 \begin{figure}[h]
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
-		\caption{Nemenyi post-hoc analysis results \Sof{Only for \chart{} yet}}
+		\caption{Nemenyi post-hoc analysis results \Sof{Considering \chart{}, \jtime{}, \mockito{}}}
 		\label{fig:performance}
 \end{figure}
 
@@ -708,6 +704,61 @@ methodology.
 	are not intended yet to be used in the paper. If you find something interesting 
 	in this block of information, please report.
 	
+	\begin{table}[h]
+		\centering
+		\setlength{\tabcolsep}{4pt}
+		\begin{tabular}{ccc}
+			\toprule
+			$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
+			\midrule
+			$<0$  & 19.2\% & 15.4\% \\ 
+			$=0$  & 23.1\% & 26.9\% \\ 
+			$>0$  & 57.7\% & 57.7\% \\ 
+		
+			\bottomrule
+		\end{tabular}
+		\caption {\chart{} - Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
+		\label{tab:diagnosis}
+	\end{table}
+	\normalsize
+	
+	\begin{table}[h]
+		\centering
+		\setlength{\tabcolsep}{4pt}
+		\begin{tabular}{ccc}
+			\toprule
+			$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
+			\midrule
+			$<0$  & 40.7\% & 33.3\% \\ 
+			$=0$  & 25.9\% & 18.5\% \\ 
+			$>0$  & 33.3\% & 48.1\% \\ 
+		
+			\bottomrule
+		\end{tabular}
+		\caption {\jtime{} - Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
+		\label{tab:diagnosis}
+	\end{table}
+	\normalsize
+
+
+	\begin{table}[h]
+		\centering
+		\setlength{\tabcolsep}{4pt}
+		\begin{tabular}{ccc}
+			\toprule
+			$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
+			\midrule
+			$<0$  & 36.8\% & 28.9\% \\ 
+			$=0$  & 26.3\% & 28.6\% \\ 
+			$>0$  & 36.8\% & 50.0\% \\ 
+		
+			\bottomrule
+		\end{tabular}
+		\caption {\mockito{} - Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
+		\label{tab:diagnosis}
+	\end{table}
+	\normalsize
+	
 	\begin{table*}[h]
 		\setlength{\tabcolsep}{3pt}
 		\begin{tabular}{llllllllllllll}
@@ -747,35 +798,8 @@ methodology.
 		\label{table:performance}
 	\end{table*}
 	\normalsize
-
-	\begin{figure*}
-		\centering
-		\includegraphics[width=\textwidth]{figures/Chart_abs.pdf}
-		\caption{Comparing the rank of all faulty statetments for each project version obtained by \sfl{} and \comb{} considering the top-5 and top-10 of classes}
-		\begin{tabular}{r@{: }l}
-			SFL & Rank of all faulty statements only using \sfl{}\\
-			LS-$5$& Rank of all faulty statements after slicing the top-5 classes \\
-			LS-$10$& Rank of all faulty statements after slicing the top-10 classes 
-		\end{tabular}
-		\label{fig:ranking}
-	\end{figure*}
-
-	\begin{figure*}
-		\centering
-		\includegraphics[width=\textwidth]{figures/Chart_abs_imp.pdf}
-		\caption{\sfl{} rank improvement by applying \ds{} to the top-5 and top-10 classes of each project version}
-		\begin{tabular}{r@{: }l}
-			IMP-$5$& \sfl{} rank improvement by applying \ds{} to the top-5 classes \\
-			IMP-$10$& \sfl{} rank improvement by applying \ds{} to the top-10 classes
-		\end{tabular}
-		\label{fig:performance}
-	\end{figure*}
 	
 	
-	
-	
-	
-
 \end{appendices}
 
 \end{document}
