@@ -34,7 +34,7 @@
 \maketitle
 
 \begin{abstract}
-  ...
+  \Sof{@todo}
 \end{abstract}
 
 \section{Introduction}
@@ -81,8 +81,7 @@ combination is that several highly ranked statements, albeit covered
 by failing executions, may be unrelated to the fault. Prior work
 reported promising results in this combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
 We found surprising that, despite these findings, no tool or client analyses use this combination
-today.\Mar{$\leftarrow$ revise. inconsistent. there is a recent paper
-  building on that idea...from 2018.} Several reasons could justify that observation. One hypothesis is that results reported in prior work are
+today.\Sof{@todo: Revise this and look to the paper from 2018} Several reasons could justify that observation. One hypothesis is that results reported in prior work are
 over-optimistic. For example, most prior work evaluated improvements
 of \sfl{} techniques using relative metrics, which are based on the
 position of the first faulty statements found in the ranking relative
@@ -122,9 +121,9 @@ which, in principle, could miss statements because of imprecise
 oracles that guide the slicing process. We evaluated how often that
 important problem happens in our experiments. The second research
 questions effectively evaluates the impact of the combination. To sum,
-our results show that \Fix{write a paragraph about this...}
+our results show that \Sof{@todo: sum up the results}.
 
-The contributions of this work are as follows:
+The contributions of this work are as follows \Sof{Finish this}:
 \begin{itemize}
 	\item A comprehensive study on the combination of \sfl{} and \ds{}
      for bug localization of \emph{Java} faulty programs.
@@ -393,7 +392,7 @@ issue.
 %
 %
 
-\Sof{@TODO: Melhorar terminologia e algoritmo} Critical Slicing takes as input a function of interest that can be designed according to the problem to be solved. The function of interest (Algorithm \ref{alg:finc}) determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk under evaluation, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
+\Sof{@todo: Definatelly not near of finished, revise it and possibly redo it} Critical Slicing takes as input a function of interest that can be designed according to the problem to be solved. The function of interest (Algorithm \ref{alg:finc}) determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk under evaluation, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
 
 \begin{algorithm}[h]
 	\caption{Function of interest (iFunc)}
@@ -456,27 +455,30 @@ includes six subjects and \numFaults{} faults (Table \ref{tab:df4j}).
   \end{tabular}
 \caption {Characterization of \dfj{} subjects.\Mar{numbers seem too
     big. is this really in
-    *k*LOC or just LOC? please, confirm.}}
+    *k*LOC or just LOC? please, confirm.}\Sof{I think it is a mistake and the unit should be LOC. But I will check.}}
 \label{tab:df4j}
 \end{table}
 \normalsize
+
+\Sof{@todo: Add pie chart to show the distribution of foos}
 
 \subsection{Methodology}
 
 The evaluation techniques are SFL and \comb{}-$k$, for
 $k\in\{5,10\}$. \Mar{Simplified and moved this par. from Section
   4.0. I noticed you used this terminology (\comb{} with ``-k'')
-  below. Please, explain and provide rationale}.
+  below. Please, explain and provide rationale}.\Sof{Not sure if it is the right one, an alterantive is using only SFL+DS
+  and instead of top-5 and top-10 use K = 5 and K = 10... Which do you think is the best?}
 
 To be able to effectively compare \comb{}-k against SFL, we first reduce the SFL report to method components. This reduction is done by considering the highest fault probability of the top-k components of each fault (/subject), to effectively be able to compare method-level diagnostic effort between the
 two approaches. A variety in diagnostic effort is measured
-using\Mar{$\leftarrow$Sofia, I found this par. confusing.}
+using\Sof{@todo: revise it, it is confusing}
 
 \begin{equation}
     \Delta{}C = C(\textrm{SFL}) - C(\textrm{SFL+DS-k})
 \end{equation}
 
-where C is the cost of diagnosis. \Sof{Need to explain this better}
+where C is the cost of diagnosis. \Sof{@todo: Need to explain this better}
 A positive $\Delta$C means that the faulty component has risen in
 the ranking reported by SFL techniques when DS is used,
 yielding a lowered cost of diagnosing.
@@ -505,7 +507,7 @@ yielding a lowered cost of diagnosing.
 \end{table}
 \normalsize
 
-Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects. The reduction percentage decreases 5.66\% if the top-10 is considered instead of the top-5. 
+Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects. 
 
 
 \subsection{Results}
@@ -515,9 +517,9 @@ The following section aims to answer the research questions presented previously
 
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
 
-In \textbf{RQ1}, we evaluate how often DS misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
+In \textbf{RQ1}, we evaluate how often \ds{} misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
 
-Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
+Table \ref{table:fsws} presents the number of faults where at least one of the faulty statements appears in the final reports of both techniques, \sfl{} and \comb{}-k.
 
 
 \begin{table*}[h]
@@ -536,7 +538,7 @@ Table \ref{table:fsws} presents the number of faults (/subjects) whose the fault
 		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.1\% & 30 & 79.0\% & 38 \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of versions where at least one of the buggy-lines is in the SFL and SFL+DS-$k$ report}
+  \caption {Number of faults where at least one of the buggy-lines is in the SFL and SFL+DS-$k$ report \Sof{@todo: Add absolute numbers for SFL}}
   \label{table:fsws}
 \end{table*}  
 
@@ -556,19 +558,18 @@ Table \ref{table:fsws} presents the number of faults (/subjects) whose the fault
 % \end{table*}
 % \normalsize
 
-
-\Sof{@todo: Answer the question} 
-
 \subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
 
 
 In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} to improve \ds{}.
 
 The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the faulty statements of the \chart{}
-project. Figure \ref{table:performance}, reports the average rank of all faulty statements for each version of \chart{} project after
+project. Table \ref{table:performance}, reports the average rank of all faulty statements for each version of \chart{} project after
 applying the 3 techiniques \sfl{}, \comb{}-5 and \comb{}-10.
 
-Table \ref{tab:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}. $\Delta<0$ means that the faulty statement may be removed. $\Delta=0$ means that the faulty statement remained in the same position. $\Delta>0$ means that \ds{} improved diagnosability. For both \comb{}-5 and \comb{}-10, diagnosability increases 55.56\%. However, top-5 has less classes to minimize than top-10.
+Table \ref{tab:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}. $\Delta C <0$ means that the faulty statement may be removed. $\Delta C=0$ means that the faulty statement remained in the same position. $\Delta C >0$ means that \ds{} improved diagnosability. 
+
+%For both \comb{}-5 and \comb{}-10, diagnosability increases 55.56\%. However, top-5 has less classes to minimize than top-10.
 
 Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk ~\cite{10.2307/2333709} tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for the three techniques under evaluation (\sfl{}, \comb{}-5, \comb{}-10). With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman ~\cite{10.2307/2279372}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis \Fix{cite}. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
 
@@ -715,7 +716,7 @@ methodology.
 			\bottomrule
 		\end{tabular}
 		\caption {\chart{} - Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
-		\label{tab:diagnosis}
+		\label{tab:diagchart}
 	\end{table}
 	\normalsize
 	
@@ -733,7 +734,7 @@ methodology.
 			\bottomrule
 		\end{tabular}
 		\caption {\jtime{} - Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
-		\label{tab:diagnosis}
+		\label{tab:diagtime}
 	\end{table}
 	\normalsize
 
@@ -752,7 +753,7 @@ methodology.
 			\bottomrule
 		\end{tabular}
 		\caption {\mockito{} - Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{}}
-		\label{tab:diagnosis}
+		\label{tab:diagmockito}
 	\end{table}
 	\normalsize
 	
