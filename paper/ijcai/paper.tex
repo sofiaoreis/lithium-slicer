@@ -29,8 +29,6 @@
 % properly)
 % \setlength\titlebox{2.5in}
 
-
-
 \begin{document}
 
 \maketitle
@@ -521,7 +519,6 @@ In \textbf{RQ1}, we evaluate how often DS misses faulty statements, since it is 
 
 Table \ref{table:fsws} presents the number of faults (/subjects) whose the faulty statement(s) are in the top-5 and top-10 of the highest ranked classses only using \sfl{}, i.e., not applying \ds{}. The gain from considering the top-10 of classes instead of top-5 is small or null. 
 
-Table \ref{tab:fs} report the absolute and relative numbers of faulty statements not found  for each project. The number of missing faulty statements by \ds{} decreases if we consider a higher number of classes. Even after considering the top-10 of faulty statements, 15.4\% of the subjects still do not contain the faulty statements.
 
 \begin{table*}[h]
 	\centering
@@ -534,12 +531,12 @@ Table \ref{tab:fs} report the absolute and relative numbers of faulty statements
 		% \lang{}            & 84.60 \% & 84.60 \% & 0 \%       \\   %\commentst{& 124   &  -}\\
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}           & 84.6\%  & 92.3\% & 7.7\%  & 20 & 76.9\% & 22 & 84.62\% & 26    \\  %\comments{& 92    &  -}\\
-		\jtime{}           & 77.78 \%  & 100.00 \% & 22.22 \%  & 22 & 81.48\% & 23 & 85.19\% & 27     \\   %\comments{& 76    &  -}\\
-		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.05\% & 30 & 78.95\% & 38 \\     %\comments{& 118   &  -}\\
+		\chart{}           & 84.6\%  & 92.3\% & 7.7\%  & 20 & 76.9\% & 22 & 84.6\% & 26    \\  %\comments{& 92    &  -}\\
+		\jtime{}           & 77.8 \%  & 100.0 \% & 22.2 \%  & 22 & 81.5\% & 23 & 85.2\% & 27     \\   %\comments{& 76    &  -}\\
+		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.1\% & 30 & 79.0\% & 38 \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
-  \caption {Diagnosis capability if only considering the \sfl{} results for each version (no slicing applied)}
+  \caption {Number of versions where at least one of the buggy-lines is in the SFL and SFL+DS-$k$ report}
   \label{table:fsws}
 \end{table*}  
 
