@@ -150,34 +150,36 @@ This section presents important background material for the rest of the paper.
 \subsection{Critical Slicing}
 \label{sec:slicing}
 
-Program slicing is a program understanding method to identify the
+Program slicing is a program understanding technique to identify the
 relevant parts of the program with respect to given points of
-interest.  This paper focuses on dynamic slicing\comments{~--~as
-  opposed to static slicing~\cite{Weiser:1981:PS:800078.802557}~--~}
-for its application in automated software
-debugging~\cite{Binkley:2014:OLP:2635868.2635893} where failing tests
-exist. We focused on Critical
-Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its
+interest.  Dynamic
+slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
+  static
+  slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
+has been shown useful in automated software debugging where the region
+of interest is restricted to what can be reached from failing
+tests. Several dynamic slicing techniques exist. This paper uses
+Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its
 simplicity/generality.\comments{ In constrast with alternative slicing
   implementations based on dependency
   chains~\cite{Tip:1994:SPS:869354}\comments{(\eg{},
     JSlice~\cite{Wang:2004:UCB:998675.999455} and
     JavaSlicer~\cite{hammacher-bachthesis-2008})},} Critical Slicing
 prescribes a black-box language-semantics-agnostic recipe to computing
-executable slices.  Critical Slicing minimizes the program by deleting
-statements such that the sliced program preserves critical
-observations (\eg{}, assertion violations). The simplification
-mechanism used in Critical Slicing is rather simple, consisting of
-mutating the program and observing the output.
+slices that are executable.  Critical Slicing simplifies the original
+program such that the resulting program preserves critical
+observations, such as assertion violations. More precisely, the
+simplification mechanism consists of deleting statements on the
+original program and checking if the output of the original and
+modified program are the same.
 
-We used the Mozilla Lithium tool~\footnote{Lithium is available at \url{https://github.com/MozillaSecurity/lithium} (accessed November 2018).} as the implementation
-for Critical Slicing. Lithium is conceptually similar to the DD-min
-Delta Debugging algorithm~\cite{zeller-hildebrandt-tse2002}, but
-operates on code instead of test inputs. It takes as input a file and
-produces as output a simplified version of that file that satisfies a
-user-defined oracle. For dynamic slicing, the oracle is defined such
-that the test produces the same failure manifestation. The Lithium
-minimization process starts by determining the initial size of
+Our implementation of Critical Slicing is based on the Mozilla Lithium
+tool~\cite{lithium}. Lithium implements the DD-min Delta Debugging
+algorithm~\cite{zeller-hildebrandt-tse2002}. It takes as input a file
+and produces as output a simplified version of that file that
+satisfies a user-defined oracle. In our case, the oracle is defined
+such that the test produces the same failure manifestation. The
+Lithium minimization process starts by determining the initial size of
 chunks---in number of lines---to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
 size. For example, if the file has 1,000 lines, Lithium sets the
@@ -185,10 +187,12 @@ initial chunk size to 512 lines. Then, the tool starts a local search
 looking for chunks to remove from the file that satisfy the
 oracle. When no more chunks of that given size can be removed, Lithium
 divides the chunk size by two and repeats the search. This iterative
-process continues until no more line can be removed.  If $n$ is the
+process continues until no more lines can be removed.  If $n$ is the
 size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
-iterations. Proofs can be found elsewhere\footnote{Algorithm complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (accessed November 2018).}.
+iterations. Proofs of the algorithm complexity can be found
+elsewhere~\cite{lithium-complexity}. Our implementation is publicly
+available.
 
 \subsection{Spectrum-based Fault Localization}
 \label{sec:sfl}
@@ -198,11 +202,9 @@ localization technique that takes as input a test suite including at
 least one failing test and reports on output a ranked list of
 components likely to be in
 fault~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The
-following are given in \sfl{}: a finite set $\mathcal{C} =
-\set{c_1,c_2,...,c_M}$ of $M$ system \emph{components}\footnote{A
-  component can be any source code artifact of arbitrary granularity
-  such as a class, a method, a statement, or a
-  branch~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; a finite set
+following are given in \sfl{}: a finite set $\mathcal{C}=\set{c_1,c_2,...,c_M}$ of $M$ system \emph{components}\footnote{A
+  component can be any code artifact of arbitrary granularity
+  such as a class, a method, or a statement~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; a finite set
 $\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
 which correspond to records of a system execution, such as test cases;
 the error vector $e = \set{e_1,e_2,...,e_N}$, where $e_i = 1$ if
@@ -230,42 +232,58 @@ shows an example spectrum.
 Several types of spectra exist.  The most commonly used is called
 hit-spectrum, where the coverage matrix is encoded in terms of binary
 \emph{hit} (1) and \emph{not hit} (0) flags, \ie{}, $\A{ij} = 1$ if
-$t_i$ covers $c_j$ and $\A{ij} = 0$ otherwise.  The pair
-$(\mathcal{A},e)$ serves as input to the fault localization technique.
-With this input, the next step in this coverage-based technique
-consists of determining what columns of the matrix $A$ resemble the
-error vector $e$ the most.  For that, an intermediate component
-frequency aggregator $n_{pq}(j)$ is computed $n_{pq}(j) = |\{i\mid
-\A{ij}=p \wedge e_i=q\}|$. $n_{pq}(j)$ denotes the number of runs in
-which the component $j$ has been active during execution ($p = 1$) or
-not ($p=0$), and in which the runs failed ($q = 1$) or passed ($q =
-0$).  For instance, $n_{11}(j)$ counts the number of times component
-$j$ has been involved ($p = 1$) in failing executions ($q = 1$),
-whereas $n_{10}(j)$ counts the number of times component $j$ has been
-involved in passing executions. We then calculate similarity to the
-error vector by means of applying \emph{fault predictors} to each
+$t_i$ covers $c_j$ and $\A{ij} = 0$ otherwise.  \sfl{} takes as input
+the pair $(\mathcal{A},e)$ and produces on output a list of components
+ranked by their faulty suspiciousness. To that end, the first step of
+the technique consists of determining what columns of the matrix $A$
+resemble the error vector $e$ the most.  For that, an intermediate
+component frequency aggregator $n_{pq}(j)$ is computed $n_{pq}(j) =
+|\{i\mid \A{ij}=p \wedge e_i=q\}|$. $n_{pq}(j)$ denotes the number of
+runs in which the component $j$ has been active during execution ($p =
+1$) or not ($p=0$), and in which the runs failed ($q = 1$) or passed
+($q = 0$).  For instance, $n_{11}(j)$ counts the number of times
+component $j$ has been involved ($p = 1$) in failing executions ($q =
+1$), whereas $n_{10}(j)$ counts the number of times component $j$ has
+been involved in passing executions. We then calculate similarity to
+the error vector by means of applying \emph{fault predictors} to each
 component to produce a score quantifying how likely it is to be
 faulty.  Components are then ranked according to such likelihood
 scores and reported to the user. Ochiai is one of those fault
-predictors that has shown to perform well ~\cite{Pearson:2017:EIF:3097368.3097441,7390282}.
-The Ochiai formula~\cite{DBLP:conf/prdc/AbreuZG06} is given by
-\[ochiai = \frac{\N{11}}{\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}}\]
+predictors that has shown to perform
+well~\cite{7390282,Pearson:2017:EIF:3097368.3097441}. The Ochiai
+formula is given by the following equation
+$\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
+%The Ochiai formula is given by~\cite{DBLP:conf/prdc/AbreuZG06}
+%\[ochiai = \frac\]
 
 
-\section{\sfl{} + Critical Slicing}
+\section{The \sfl{}+Critical Slicing combination}
 \label{sec:combination}
 
-\Sof{Maybe discuss the limitations of \sfl{} based on the capabilibility of \ds{}}The combinination of critical slicing and \sfl{} consists of the
-following steps: (1) Compute the execution spectra as discussed in
-Section~\ref{sec:sfl}, (2) Compute slices associated with failing
-tests, (3) Adjust the spectra computed in Step 1 with results obtained
-in Step 2, and (4) Compute suspiciousness
-scores. Figure~\ref{fig:illustration} illustrates the update of the
-spectra and suspiciousness rankings as result of slicing the program
-against the failing test $t_2$. The faulty statement in this example
-is the component $c_2$.  The slice obtained from $t_2$ is $\{c_2,
-c_5\}$.  Intuitively, slicing enables identification of cells in the
-spectra whose values can be set to zero.
+To illustrate the \sfl{}+slicing combination, consider a debugging
+scenario with five components $c_{1..5}$ and five transactions
+$t_{1..5}$, two of which are failing. Consider additionally that the
+component $c_2$ is faulty.  Figure~\ref{fig:illustration} shows, at
+the left-hand side of the arrow ($\Rightarrow$), the spectra for this
+scenario and its corresponding ranking, produced with the Ochiai
+predictor. Each line in the ranking shows the ranking position, the
+label of the component, and the Ochiai score (in parentheses). The
+spectra and ranking appearing at the right-side of the arrow are
+obtained with the \sfl{}+slicing combination, assuming that the slice
+for the transaction $t_2$ is $\{c_2, c_5\}$.  Intuitively, slicing
+enables identification of cells in the spectra whose values can be set
+to zero, \ie{}, the components marked with 0 are irrelevant to
+determine the test output. Let us now observe the impact of this
+change at the ranking. Analyzing the Ochiai formula, one can observe
+that, for the statements $j$ which are not part of the slice of a
+failing test, the combination reduces the value of $\N{11}$ and
+increases the value of $\N{01}$. Therefore, suspiciosness of those
+statements decrease. Similar argument applies to other fault
+predictors. In the example from Figure~\ref{fig:illustration},
+components $c_3$ and $c_4$, which are not in the slice of $t_2$, have
+their suspiciousness reduced, enabling the faulty component $c_2$ to
+rise from the third to the first position in the ranking.
+
 
 \begin{figure}[t!]
 
@@ -307,14 +325,29 @@ spectra whose values can be set to zero.
       2 & $c_3$ (0.55) & & 2.5 & $c_1$ (0.32)\\
       3 & $c_2$ (0.35) & \hspace{1ex}$\Rightarrow$\hspace{1ex} & 2.5 & $c_5$ (0.32)\\
       4.5 & $c_1$ (0.32) & & 4 & $c_3$ (0.29)\\
-      4.5 & $c_5$ (0.32) & & 5 & $c_3$ (0.24)\\
+      4.5 & $c_5$ (0.32) & & 5 & $c_4$ (0.00)\\
     \end{tabular}
     \caption{Ranking update.}
   \end{subfigure}
 
-  \caption{Modifications on spectra and ranking as result of slicing code against test $t_2$.}
+  \caption{Modifications on spectra and ranking as result of slicing
+    code against test $t_2$. Double arrow ($\Rightarrow$) indicates
+    before and after.}
   \label{fig:illustration}
 \end{figure}
+
+---- estou aqui -Marcelo
+
+\Sof{Maybe discuss the limitations of \sfl{} based on the capabilibility of \ds{}}The combinination of critical slicing and \sfl{} consists of the
+following steps: (1) Compute the execution spectra as discussed in
+Section~\ref{sec:sfl}, (2) Compute slices associated with failing
+tests, (3) Adjust the spectra computed in Step 1 with results obtained
+in Step 2, and (4) Compute suspiciousness
+scores.
+
+
+
+
 
 \begin{theorem}
   The faulty statement may not be included in the critical slice of
@@ -337,17 +370,6 @@ testBug2849731$\_$3(DatasetUtilitiesTests.java:1299), \\
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
 \end{theorem}
-
-Considering the Ochiai formula, for those statements $j$ which are not
-part of the slice of a failing test, the combination reduces the value
-of $\N{11}$ and increases the value of $\N{01}$. Therefore,
-suspiciosness of those statements decrease. Similar argument applies
-to other fault predictors.
-
-In the example from Figure~\ref{fig:illustration}, components $c_3$
-and $c_4$, which are not in the slice of $t_2$, have their
-suspiciousness reduced, enabling the faulty component $c_2$ to rise
-from the third to the first position in the ranking.
 
 Section~\ref{sec:oracleheuristics} explains the heuristics
 we used to infer oracles for critical slicing that mitigates this
