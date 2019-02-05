@@ -159,14 +159,14 @@ slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
 has been shown useful in automated software debugging where the region
 of interest is restricted to what can be reached from failing
 tests. Several dynamic slicing techniques exist. This paper uses
-Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its
+Critical Slicing (\cs{})~\cite{DeMillo:1996:CSS:229000.226310} for its
 simplicity/generality.\comments{ In constrast with alternative slicing
   implementations based on dependency
   chains~\cite{Tip:1994:SPS:869354}\comments{(\eg{},
     JSlice~\cite{Wang:2004:UCB:998675.999455} and
     JavaSlicer~\cite{hammacher-bachthesis-2008})},} Critical Slicing
 prescribes a black-box language-semantics-agnostic recipe to computing
-slices that are executable.  Critical Slicing simplifies the original
+executable slices.  Critical Slicing simplifies the original
 program such that the resulting program preserves critical
 observations, such as assertion violations. More precisely, the
 simplification mechanism consists of deleting statements on the
@@ -178,9 +178,10 @@ tool~\cite{lithium}. Lithium implements the DD-min Delta Debugging
 algorithm~\cite{zeller-hildebrandt-tse2002}. It takes as input a file
 and produces as output a simplified version of that file that
 satisfies a user-defined oracle. In our case, the oracle is defined
-such that the test produces the same failure manifestation. The
-Lithium minimization process starts by determining the initial size of
-chunks---in number of lines---to delete from the input file. For that,
+such that the test produces the same failure manifestation as the one
+observed with the test execution on the original program. The
+Lithium minimization process starts by determining the initial size---in number of lines---of
+chunks to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
 size. For example, if the file has 1,000 lines, Lithium sets the
 initial chunk size to 512 lines. Then, the tool starts a local search
@@ -260,7 +261,27 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 \section{The \sfl{}+Critical Slicing combination}
 \label{sec:combination}
 
-To illustrate the \sfl{}+slicing combination, consider a debugging
+The \sfl{}+\cs{} combination consists of four steps:
+\begin{enumerate}
+  \itemsep0em 
+  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for the input test suite;
+  \item Select top $k$ most suspicious source files, according to $R$;
+  \item\label{step:compute-slice} Compute slices for every $k$;
+  \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
+    the results obtained in Step~\ref{step:compute-slice} and recompute ranking;
+\end{enumerate}
+
+\Mar{Sofia, o pseudocodigo acima assume que ha apenas um teste
+  falho. Isto precisa ser ajustado. O lithium-slicer funciona por caso
+  de teste ou por suite?  Por favor, ajuste a descricao acima.  Eh um
+  loop aninhado ao loop ``for every k'' que o lithium-slicer
+  implementa (algo como ``for every k and every failing test'')?  Caso
+  vc. faca slice contra um teste particular, vc. garante (checa saida)
+  que os demais testes que originalmente falhavam continuam falhando
+  pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
+  de inicio.}
+
+To illustrate the \sfl{}+\cs{} combination, consider a debugging
 scenario with five components $c_{1..5}$ and five transactions
 $t_{1..5}$, two of which are failing. Consider additionally that the
 component $c_2$ is faulty.  Figure~\ref{fig:illustration} shows, at
@@ -269,16 +290,16 @@ scenario and its corresponding ranking, produced with the Ochiai
 predictor. Each line in the ranking shows the ranking position, the
 label of the component, and the Ochiai score (in parentheses). The
 spectra and ranking appearing at the right-side of the arrow are
-obtained with the \sfl{}+slicing combination, assuming that the slice
+obtained with the \sfl{}+\cs{} combination, assuming that the slice
 for the transaction $t_2$ is $\{c_2, c_5\}$.  Intuitively, slicing
 enables identification of cells in the spectra whose values can be set
 to zero, \ie{}, the components marked with 0 are irrelevant to
 determine the test output. Let us now observe the impact of this
 change at the ranking. Analyzing the Ochiai formula, one can observe
-that, for the statements $j$ which are not part of the slice of a
+that, for the components $j$ which are not part of the slice of a
 failing test, the combination reduces the value of $\N{11}$ and
 increases the value of $\N{01}$. Therefore, suspiciosness of those
-statements decrease. Similar argument applies to other fault
+components decrease. Similar argument applies to other fault
 predictors. In the example from Figure~\ref{fig:illustration},
 components $c_3$ and $c_4$, which are not in the slice of $t_2$, have
 their suspiciousness reduced, enabling the faulty component $c_2$ to
@@ -334,19 +355,10 @@ rise from the third to the first position in the ranking.
     code against test $t_2$. Double arrow ($\Rightarrow$) indicates
     before and after.}
   \label{fig:illustration}
+  \vspace{-2ex}
 \end{figure}
 
----- estou aqui -Marcelo
-
-\Sof{Maybe discuss the limitations of \sfl{} based on the capabilibility of \ds{}}The combinination of critical slicing and \sfl{} consists of the
-following steps: (1) Compute the execution spectra as discussed in
-Section~\ref{sec:sfl}, (2) Compute slices associated with failing
-tests, (3) Adjust the spectra computed in Step 1 with results obtained
-in Step 2, and (4) Compute suspiciousness
-scores.
-
-
-
+\Mar{.....parei aqui}
 
 
 \begin{theorem}
