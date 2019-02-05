@@ -266,7 +266,7 @@ The \sfl{}+\cs{} combination consists of four steps:
   \itemsep0em 
   \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for the input test suite;
   \item Select top $k$ most suspicious source files, according to $R$;
-  \item\label{step:compute-slice} Compute slices for every $k$;
+  \item\label{step:compute-slice} Compute slices for every $k$ and every failing test;
   \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
     the results obtained in Step~\ref{step:compute-slice} and recompute ranking;
 \end{enumerate}
@@ -280,6 +280,22 @@ The \sfl{}+\cs{} combination consists of four steps:
   que os demais testes que originalmente falhavam continuam falhando
   pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
   de inicio.}
+  
+\Sof{O lithium-slicer funciona por caso de teste. Cada execução da nossa
+ferramenta chama o lithium tantas vezes como o número de casos de teste 
+que falham para cada versão do projecto. Assumindo que o numero de casos de
+testes a falhar são 5, numa execução da nossa plataforma o lithium é executado
+5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada 
+teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de 
+executar a nossa ferramenta para uma versão do projecto que os 
+testes que aparecem na pasta da versão do projecto são os mesmos quando corro 
+o test do defects4j de novo. Uma precaução que tivemos foi ter a certeza que o
+oracle que estava a ser usado não sofria com a mudança de máquinas. Portanto,
+antes de correr as experiências eu corri o defects4j para obter as mensagens
+esperadas de novo para serem usadas como o oracle esperado. Estas são as verificações
+que faço. Posso tentar substituir as classes minimizadas nos projectos e ver se
+realmente a mensagem de erro continua a ser a mesma - coisa que não fiz. Relativamente,
+ao pseudocode eu diria que é for every $k$ and every failing test.}
 
 To illustrate the \sfl{}+\cs{} combination, consider a debugging
 scenario with five components $c_{1..5}$ and five transactions
