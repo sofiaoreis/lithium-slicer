@@ -147,7 +147,7 @@ The contributions of this work are as follows \Sof{Finish this}:
 
 This section presents important background material for the rest of the paper.
 
-\subsection{Critical Slicing}
+\subsection{Critical Slicing (\cs{})}
 \label{sec:slicing}
 
 Program slicing is a program understanding technique to identify the
@@ -195,10 +195,10 @@ iterations. Proofs of the algorithm complexity can be found
 elsewhere~\cite{lithium-complexity}. Our implementation is publicly
 available.
 
-\subsection{Spectrum-based Fault Localization}
+\subsection{Spectrum-based Fault Localization (\sfl)}
 \label{sec:sfl}
 
-Spectrum-based fault localization (\sfl) is a statistical fault
+Spectrum-based fault localization is a statistical fault
 localization technique that takes as input a test suite including at
 least one failing test and reports on output a ranked list of
 components likely to be in
@@ -258,69 +258,44 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 %\[ochiai = \frac\]
 
 
-\section{The \sfl{}+Critical Slicing combination}
+\section{The \sfl{}+\cs{} combination}
 \label{sec:combination}
 
-The \sfl{}+\cs{} combination consists of four steps:
-\begin{enumerate}
-  \itemsep0em 
-  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for the input test suite;
-  \item Select top $k$ most suspicious source files, according to $R$;
-  \item\label{step:compute-slice} Compute slices for every $k$ and every failing test;
-  \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
-    the results obtained in Step~\ref{step:compute-slice} and recompute ranking;
-\end{enumerate}
-
-\Mar{Sofia, o pseudocodigo acima assume que ha apenas um teste
-  falho. Isto precisa ser ajustado. O lithium-slicer funciona por caso
-  de teste ou por suite?  Por favor, ajuste a descricao acima.  Eh um
-  loop aninhado ao loop ``for every k'' que o lithium-slicer
-  implementa (algo como ``for every k and every failing test'')?  Caso
-  vc. faca slice contra um teste particular, vc. garante (checa saida)
-  que os demais testes que originalmente falhavam continuam falhando
-  pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
-  de inicio.}
+%% \Mar{Sofia, o pseudocodigo acima assume que ha apenas um teste
+%%   falho. Isto precisa ser ajustado. O lithium-slicer funciona por caso
+%%   de teste ou por suite?  Por favor, ajuste a descricao acima.  Eh um
+%%   loop aninhado ao loop ``for every k'' que o lithium-slicer
+%%   implementa (algo como ``for every k and every failing test'')?  Caso
+%%   vc. faca slice contra um teste particular, vc. garante (checa saida)
+%%   que os demais testes que originalmente falhavam continuam falhando
+%%   pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
+%%   de inicio.}
   
-\Sof{O lithium-slicer funciona por caso de teste. Cada execução da nossa
-ferramenta chama o lithium tantas vezes como o número de casos de teste 
-que falham para cada versão do projecto. Assumindo que o numero de casos de
-testes a falhar são 5, numa execução da nossa plataforma o lithium é executado
-5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada 
-teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de 
-executar a nossa ferramenta para uma versão do projecto que os 
-testes que aparecem na pasta da versão do projecto são os mesmos quando corro 
-o test do defects4j de novo. Uma precaução que tivemos foi ter a certeza que o
-oracle que estava a ser usado não sofria com a mudança de máquinas. Portanto,
-antes de correr as experiências eu corri o defects4j para obter as mensagens
-esperadas de novo para serem usadas como o oracle esperado. Estas são as verificações
-que faço. Posso tentar substituir as classes minimizadas nos projectos e ver se
-realmente a mensagem de erro continua a ser a mesma - coisa que não fiz. Relativamente,
-ao pseudocode eu diria que é for every $k$ and every failing test.}
+%% \Sof{O lithium-slicer funciona por caso de teste. Cada execução da nossa
+%% ferramenta chama o lithium tantas vezes como o número de casos de teste 
+%% que falham para cada versão do projecto. Assumindo que o numero de casos de
+%% testes a falhar são 5, numa execução da nossa plataforma o lithium é executado
+%% 5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada 
+%% teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de 
+%% executar a nossa ferramenta para uma versão do projecto que os 
+%% testes que aparecem na pasta da versão do projecto são os mesmos quando corro 
+%% o test do defects4j de novo. Uma precaução que tivemos foi ter a certeza que o
+%% oracle que estava a ser usado não sofria com a mudança de máquinas. Portanto,
+%% antes de correr as experiências eu corri o defects4j para obter as mensagens
+%% esperadas de novo para serem usadas como o oracle esperado. Estas são as verificações
+%% que faço. Posso tentar substituir as classes minimizadas nos projectos e ver se
+%% realmente a mensagem de erro continua a ser a mesma - coisa que não fiz. Relativamente,
+%% ao pseudocode eu diria que é for every $k$ and every failing test.}
 
-To illustrate the \sfl{}+\cs{} combination, consider a debugging
-scenario with five components $c_{1..5}$ and five transactions
-$t_{1..5}$, two of which are failing. Consider additionally that the
-component $c_2$ is faulty.  Figure~\ref{fig:illustration} shows, at
-the left-hand side of the arrow ($\Rightarrow$), the spectra for this
-scenario and its corresponding ranking, produced with the Ochiai
-predictor. Each line in the ranking shows the ranking position, the
-label of the component, and the Ochiai score (in parentheses). The
-spectra and ranking appearing at the right-side of the arrow are
-obtained with the \sfl{}+\cs{} combination, assuming that the slice
-for the transaction $t_2$ is $\{c_2, c_5\}$.  Intuitively, slicing
-enables identification of cells in the spectra whose values can be set
-to zero, \ie{}, the components marked with 0 are irrelevant to
-determine the test output. Let us now observe the impact of this
-change at the ranking. Analyzing the Ochiai formula, one can observe
-that, for the components $j$ which are not part of the slice of a
-failing test, the combination reduces the value of $\N{11}$ and
-increases the value of $\N{01}$. Therefore, suspiciosness of those
-components decrease. Similar argument applies to other fault
-predictors. In the example from Figure~\ref{fig:illustration},
-components $c_3$ and $c_4$, which are not in the slice of $t_2$, have
-their suspiciousness reduced, enabling the faulty component $c_2$ to
-rise from the third to the first position in the ranking.
-
+To illustrate the idea behind the \sfl{}+\cs{} combination, consider a
+debugging scenario with five components $c_{1..5}$ and five
+transactions $t_{1..5}$, two of which are failing. Consider,
+additionally, that the component $c_2$ is faulty.
+Figure~\ref{fig:illustration} shows, at the left-hand side of the
+arrow ($\Rightarrow$), an hypothetical spectra and its corresponding
+ranking, produced with the Ochiai predictor. Each line in the ranking
+shows, respectively, the rank/position, the component label, and the
+Ochiai score (in parentheses).
 
 \begin{figure}[t!]
 
@@ -374,34 +349,75 @@ rise from the third to the first position in the ranking.
   \vspace{-2ex}
 \end{figure}
 
-\Mar{.....parei aqui}
+In the following, we illustrate the workflow of the \sfl{}+\cs{}
+combination for this scenario. First, the combined technique picks
+components $c_4$ and $c_3$, which appear at the top of the ranking,
+for further analysis. (The cutoff point is user-defined.) Second, the
+technique picks a failing test $t_2$ to slice the code.  Let us assume
+that the slice obtained for the transaction $t_2$ is $\{c_2, c_5\}$,
+\ie, it excludes components $c_4$ and $c_3$. Finally, the spectra and
+ranking are updated. The right-side of Figure~\ref{fig:illustration}
+shows the modified spectra and ranking after slicing test $t_2$
+against $c_4$ and $c_3$. It is worth noting that the technique slices
+the code for every failing tests. More precisely, the \sfl{}+\cs{} combination consists of four steps:
+\begin{enumerate}
+  \itemsep0em 
+  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for the input test suite;
+  \item\label{step:susp-files} Select top $k$ most suspicious source files, according to $R$;
+  \item\label{step:compute-slice} Compute slice for every suspicious
+    file, obtained in Step~\ref{step:susp-files}, and every failing test;
+  \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
+    the slices obtained in Step~\ref{step:compute-slice} and recompute ranking.
+\end{enumerate}
 
+Intuitively, slicing enables identification of cells in the spectra
+whose values can be set to zero, \ie{}, the components marked with 0
+are irrelevant to determine the test output. Let us now observe the
+effect of this spectra modification on the ranking. Analyzing the
+Ochiai formula, one can observe that, for the components $j$ which are
+not part of the slice of a failing test, the combination reduces the
+value of $\N{11}$ and increases the value of $\N{01}$. Therefore,
+suspiciosness of those components decrease. Similar argument applies
+to other fault predictors. In the example from
+Figure~\ref{fig:illustration}, components $c_3$ and $c_4$, which are
+not in the slice of $t_2$, have their suspiciousness reduced, enabling
+the faulty component $c_2$ to rise from the third to the first
+position in the ranking.
 
 \begin{theorem}
   The faulty statement may not be included in the critical slice of
   failing test cases.
 \end{theorem}
 
-It is possible that a slice that discards the faulty statement still
+It is possible that a slice that discards the faulty component still
 produces the expected message checked by the oracle. This can happen,
-for example, if the oracle is too general.
+for example, if the oracle is too
+general. Section~\ref{sec:oracleheuristics} elaborates the heuristics
+we used to mitigate this fundamental limitation of Critical Slicing.
 
-\vspace{3mm}
-\begin{myframe} \label{box:1}
-\textbf{java.lang.NullPointerException}, \\
-at org.jfree.data.general.junit.DatasetUtilitiesTests.\\
-testBug2849731$\_$3(DatasetUtilitiesTests.java:1299), \\
-...
-\end{myframe}
+%% \vspace{3mm}
+%% \begin{myframe} \label{box:1}
+%% \textbf{java.lang.NullPointerException}, \\
+%% at org.jfree.data.general.junit.DatasetUtilitiesTests.\\
+%% testBug2849731$\_$3(DatasetUtilitiesTests.java:1299), \\
+%% ...
+%% \end{myframe}
 
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
 \end{theorem}
 
-Section~\ref{sec:oracleheuristics} explains the heuristics
-we used to infer oracles for critical slicing that mitigates this
-issue.
+The proof is based on the argument aforementioned that irrelevant
+components $j$ have their ranks reduced as $\N{11}$ decreases and
+$\N{01}$ increases. If those irrelevant components appear at positions
+above the faulty component, it is possible that the faulty component
+becomes more suspicious relative to $j$, \ie{}, the ranking of the
+faulty component increases. If those components appear at positions
+below the faulty components, the ranking of the faulty components is
+unaffected.
+
+\Mar{parei aqui}
 
 \subsection{Oracle Heuristics}
 \label{sec:oracleheuristics}
