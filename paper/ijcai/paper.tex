@@ -184,9 +184,9 @@ Lithium minimization process starts by determining the initial size---in number 
 chunks to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
 size. For example, if the file has 1,000 lines, Lithium sets the
-initial chunk size to 512 lines. Then, the tool starts a local search
-looking for chunks to remove from the file that satisfy the
-oracle. When no more chunks of that given size can be removed, Lithium
+initial chunk size to 512 lines. Then, the tool starts a local search looking 
+for chunks to exclude from the file. If the chunk satisfies the oracle it is removed. 
+When no more chunks of that given size can be removed, Lithium
 divides the chunk size by two and repeats the search. This iterative
 process continues until no more lines can be removed.  If $n$ is the
 size of the input file and $m$ is the size of the 1-minimal file found
@@ -377,7 +377,7 @@ effect of this spectra modification on the ranking. Analyzing the
 Ochiai formula, one can observe that, for the components $j$ which are
 not part of the slice of a failing test, the combination reduces the
 value of $\N{11}$ and increases the value of $\N{01}$. Therefore,
-suspiciosness of those components decrease. Similar argument applies
+suspiciousness of those components decrease. Similar argument applies
 to other fault predictors. In the example from
 Figure~\ref{fig:illustration}, components $c_3$ and $c_4$, which are
 not in the slice of $t_2$, have their suspiciousness reduced, enabling
