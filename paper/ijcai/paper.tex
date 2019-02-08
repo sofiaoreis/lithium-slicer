@@ -359,12 +359,16 @@ that the slice obtained for the transaction $t_2$ is $\{c_2, c_5\}$,
 ranking are updated. The right-side of Figure~\ref{fig:illustration}
 shows the modified spectra and ranking after slicing test $t_2$
 against $c_4$ and $c_3$. It is worth noting that the technique slices
-the code for every failing tests. More precisely, the \sfl{}+\cs{} combination consists of four steps:
+the code for every failing tests. More precisely, the \sfl{}+\cs{} 
+combination consists of four steps:\Sof{Should we specify that these steps are
+performed for each version of the projects/defect?}
 \begin{enumerate}
   \itemsep0em 
-  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for the input test suite;
-  \item\label{step:susp-files} Select top $k$ most suspicious source files, according to $R$;
-  \item\label{step:compute-slice} Compute slice for every suspicious
+  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for 
+  the input test suite;
+  \item\label{step:susp-files} Select top $k$ most suspicious source 
+  files, according to $R$;
+  \item\label{step:compute-slice} Compute slicer for every suspicious
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
   \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
     the slices obtained in Step~\ref{step:compute-slice} and recompute ranking.
@@ -470,7 +474,9 @@ unaffected.
 %
 %
 
-\Sof{@todo: Definatelly not near of finished, revise it and possibly redo it} Critical Slicing takes as input a function of interest that can be designed according to the problem to be solved. The function of interest (Algorithm \ref{alg:finc}) determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk under evaluation, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
+Critical Slicing takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk under evaluation, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
+
+ (Algorithm \ref{alg:finc})
 
 \begin{algorithm}[h]
 	\caption{Function of interest (iFunc)}
