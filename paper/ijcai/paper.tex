@@ -12,29 +12,30 @@
 
 \title{Reassessing the Impact of Dynamic Slicing in SFL}
 
-%% \author{
-%% First Author$^1$,
-%% Second Author$^2$,
-%% \\ 
-%% $^1$ First Affiliation\\
-%% $^2$ Second Affiliation\\
-%% %
-%% first@email.address,
-%% second@email.address,
-%% third@email.address
-%% }
+% \author{
+% First Author$^1$,
+% Second Author$^2$,
+% \\
+% $^1$ First Affiliation\\
+% $^2$ Second Affiliation\\
+% %
+% first@email.address,
+% second@email.address,
+% third@email.address
+% }
 
 % If your authors do not fit in the default space, you can increase it 
 % by uncommenting the following (adjust the "2.5in" size to make it fit
 % properly)
 % \setlength\titlebox{2.5in}
 
+\hypersetup{draft} 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-  \Sof{@todo}
+  \Sof{@todo} 
 \end{abstract}
 
 \section{Introduction}
@@ -52,14 +53,14 @@ Dynamic Slicing (\ds{}) and Spectrum-Based Fault Localization (\sfl{})
 are two very popular techniques that use different principles to
 automate debugging. Dynamic
 Slicing~\cite{Agrawal:1990:DPS:93542.93576} looks for the statements
-in code that influence some point of interest, such as the evaluation
+in the code that influence some point of interest, such as the evaluation
 of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
 does not analyze code. It is a black-box statistical fault
 localization method that computes suspiciousness values associated
 with program entities (e.g., basic blocks) based on coverage and the
 output of test cases. More precisely, \sfl{} uses coverage information
 of passing and failing test cases to identify likely faulty
-statements. It produces on output a list of program entities ranked in
+statements and produces on output a list of program entities ranked in
 decreasing order of suspiciousness.
 \ds{} and \sfl{} are complementary debugging techniques. Intuitively, \ds{} identifies
 irrelevant parts of the code whereas \sfl{} ranks the relevant parts
@@ -97,21 +98,21 @@ of the code.
 
 This paper reports the results of a comprehensive study
 to evaluate the impact of \ds{} to improve \sfl{}. The study involves
-\numFaults{} faults from \numPrograms{} programs from the Defects4J
-(D4J) dataset~\cite{just-defects4j-issta2014}, which is frequently
-used to evaluated fault localization research. The intuition for the
+\numFaults{} faults from \numPrograms{} different programs comprised in the 
+Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which is frequently
+used to evaluate fault localization research. The intuition for the
 \comb{} combination is that several highly ranked statements, albeit
 covered by failing executions, may be unrelated to the fault. Prior
 work reported promising results in this
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}
-but they used non-representative set of subjects in their evaluation
-or used less rigorours methods to assess improvement of techniques compared to those used
+but they used a non-representative set of subjects in their evaluation
+or used less rigorous methods to assess improvement of techniques compared to those used
 today~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
 The goal of this paper is to reassess whether the \comb{} combination
 is worthwhile under the light of a more accurate metric and a larger
 dataset. The D4J dataset is about twice as large than the biggest test
-suite used in previous studies. It is worth noting that \acrAbrev{}
-techniques should directly benefit from these results---either to
+suite used in previous studies. It is worth noting that Automated
+Program Repair techniques should directly benefit from these results---either to
 improve their results or to be aware they should not invest on this
 integration. This study covers the following research questions:
 
@@ -362,6 +363,8 @@ against $c_4$ and $c_3$. It is worth noting that the technique slices
 the code for every failing tests. More precisely, the \sfl{}+\cs{} 
 combination consists of four steps:\Sof{Should we specify that these steps are
 performed for each version of the projects/defect?}
+
+
 \begin{enumerate}
   \itemsep0em 
   \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for 

@@ -21,9 +21,26 @@
 \definecolor{bs}{rgb}{0.59, 0.0, 0.09}
 \definecolor{d}{HTML}{800000}
 
-\newcommand{\BS}[1]{\textbf{[BS:[}{\color{bs} #1}\textbf{]]}}
-\newcommand{\Mar}[1]{\textbf{[Marcelo:[}{\color{orange} #1}\textbf{]]}}
-\newcommand{\Sof}[1]{\textbf{[Sofia:[}{\color{cyan} #1}\textbf{]]}}
+%
+% Add comments in the text
+%
+\newboolean{showcomments}
+\setboolean{showcomments}{true}
+%\setboolean{showcomments}{false}
+
+\ifthenelse{\boolean{showcomments}}
+  {\newcommand{\nb}[3]{
+  {\color{#2}\small\fbox{\bfseries\sffamily\scriptsize#1}}
+  {\color{#2}\sffamily\small$\triangleright~$\textit{\small #3}$~\triangleleft$}
+  }
+  }
+  {\newcommand{\nb}[3]{}
+  }
+
+\newcommand\Sof[1]{\nb{\textbf{Sofia:}}{red}{#1}}
+\newcommand\Mar[1]{\nb{\textbf{Marcelo:}}{orange}{#1}}
+\newcommand\Rui[1]{\nb{\textbf{Rui:}}{cyan}{#1}}
+
 \newcommand{\oururl}{\Fix{url here}}
 \newcommand{\tname}{\Fix{Critical Slicing Revisited}}
 
