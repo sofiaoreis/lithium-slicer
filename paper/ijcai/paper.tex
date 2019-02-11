@@ -175,7 +175,7 @@ original program and checking if the output of the original and
 modified program are the same.
 
 Our implementation of Critical Slicing is based on the Mozilla Lithium
-tool~\cite{lithium}. Lithium implements the DD-min Delta Debugging
+tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} (Accessed on \today)}. Lithium implements the DD-min Delta Debugging
 algorithm~\cite{zeller-hildebrandt-tse2002}. It takes as input a file
 and produces as output a simplified version of that file that
 satisfies a user-defined oracle. In our case, the oracle is defined
@@ -193,7 +193,7 @@ process continues until no more lines can be removed.  If $n$ is the
 size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
 iterations. Proofs of the algorithm complexity can be found
-elsewhere~\cite{lithium-complexity}. Our implementation is publicly
+elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (Accessed on \today)}. Our implementation is publicly
 available.
 
 \subsection{Spectrum-based Fault Localization (\sfl)}
@@ -477,9 +477,7 @@ unaffected.
 %
 %
 
-Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The authors assume that it is only necessary to compare both stack traces until the call where the test fails. For each chunk under evaluation, the test is executed without considering the chunk under evaluation (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered according to the position of the test call fails. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
-
- (Algorithm \ref{alg:finc})
+Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
 
 \begin{algorithm}[h]
 	\caption{Function of interest (iFunc)}
@@ -505,13 +503,15 @@ Lithium takes as input a function of interest that can be designed according to 
 \section{Evaluation}
 \label{sec:eval}
 
-%This section evaluates \comb{}.
+To evaluate our approach, we compare the cost of diagnosing
+a collection of faulty versions using \sfl{}
+against \comb{}.
 
-\subsection{Objects of Analysis}
+\subsection{Objects of Analysis}\label{sec:analysis}
 
 As in other recent related studies, we used the \dfj{} benchmark in
 our experiments~\cite{just-defects4j-issta2014}. The \dfj{} benchmark
-includes six subjects and \numFaults{} faults (Table \ref{tab:df4j}).
+includes six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 \lang{} is a library that provides a set of helper utilities for the
      {\small\texttt{java.lang}} API. \cmath{} is a lightweight library
      of self-contained mathematics and statistics components. The
@@ -530,7 +530,7 @@ includes six subjects and \numFaults{} faults (Table \ref{tab:df4j}).
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
       \toprule
-      Project            & Size (kLOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
+      Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
       \midrule
       \lang{}            & 111751  & 6057 & 65       \\   %\commentst{& 124   &  -}\\
       \cmath{}           & 306276  & 26797 & 106     \\   %\comments{& 177   &  -}\\
@@ -540,35 +540,32 @@ includes six subjects and \numFaults{} faults (Table \ref{tab:df4j}).
       \mockito{}         & 22787  & 8835 & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
-\caption {Characterization of \dfj{} subjects.\Mar{numbers seem too
-    big. is this really in
-    *k*LOC or just LOC? please, confirm.}\Sof{I think it is a mistake and the unit should be LOC. But I will check.}}
+\caption {Characterization of \dfj{} subjects.\Sof{Use SLOCCount to count size}}
 \label{tab:df4j}
 \end{table}
 \normalsize
 
 \Sof{@todo: Add pie chart to show the distribution of foos}
 
-\subsection{Methodology}
+\subsection{Methodology}\label{sec:methodology}
 
-The evaluation techniques are SFL and \comb{}-$k$, for
-$k\in\{5,10\}$. \Mar{Simplified and moved this par. from Section
-  4.0. I noticed you used this terminology (\comb{} with ``-k'')
-  below. Please, explain and provide rationale}.\Sof{Not sure if it is the right one, an alterantive is using only SFL+DS
-  and instead of top-5 and top-10 use K = 5 and K = 10... Which do you think is the best?}
 
-To be able to effectively compare \comb{}-k against SFL, we first reduce the SFL report to method components. This reduction is done by considering the highest fault probability of the top-k components of each fault (/subject), to effectively be able to compare method-level diagnostic effort between the
-two approaches. A variety in diagnostic effort is measured
-using\Sof{@todo: revise it, it is confusing}
+The main goal of our evaluation is to understand what is the impact of \ds{} on 
+\sfl{} after minimizing the $k$ highest faulty source files which comprise the highest faulty statements. Firstly, we ran the dataset presented in Section~\ref{sec:analysis} with \sfl{} to 
+gather the coverage statements ordered from the highest faulty statement to the
+lowest faulty statement. This list is the input of the \comb{} technique. For each defect, the list is evaluated in order to get the top-$k$, for $k\in\{5,10\}$, of suspicious source files. Then, Lithium minimizes each source file for each testcase of the defect considering the top-$5$ (\comb{}-$5$) and top-$10$ (\comb{}-$10$) of source files separately. Some defects have more than one testcase. In the end, we update spectra $S$ based on the output of the minimization as presented in Figure~\ref{fig:ds-reduction} to obtain the faulty statements ranking after minimization. All scripts used to run these experiments and gather data are available at \url{TBA} and \url{TBA}, respectively.
+
+We perform experiments for \comb{}-$5$ and \comb{}-$10$. These techniques results are analyzed against \sfl{}. The difference in the diagnostic effort is measured
+using
 
 \begin{equation}
     \Delta{}C = C(\textrm{SFL}) - C(\textrm{SFL+DS-k})
 \end{equation}
 
-where C is the cost of diagnosis. \Sof{@todo: Need to explain this better}
-A positive $\Delta$C means that the faulty component has risen in
-the ranking reported by SFL techniques when DS is used,
-yielding a lowered cost of diagnosing.
+where C is the cost of diagnosis. \Sof{@todo: Explain this better in section 2 or 3}
+A positive $\Delta$C means that the faulty statement has risen in
+the ranking reported by \sfl{} techniques when \ds{} is used,
+producing a reduced cost of diagnosing.
 
 \subsection{Dynamic Slicing}
 
