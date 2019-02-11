@@ -27,7 +27,8 @@ def interesting(conditionArgs, prefix):
     testcase = conditionArgs[1]
     expected = conditionArgs[2]
     source_file = conditionArgs[3]
-
+    
+    print('Running test...')
     file_basename = os.path.basename(source_file).replace('.java', '')
     cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected, SOURCE=file_basename)
     output = call_cmd(cmd_str) # call shell script
@@ -44,6 +45,8 @@ def interesting(conditionArgs, prefix):
         buggy_line = get_buggy_line(output)
     
     # double check comparison with buggy_line and expected/output message
+    if debug:
+        print('double_check outcome ', is_interesting and (buggy_line in output))
     return is_interesting and (buggy_line in output)
 
 def get_buggy_line(output):

@@ -134,19 +134,49 @@ def get_locs(origin_file, minimized_file):
 def check_obj_comparison(expected_msg, output_msg):
     """ returns True if the messages compare the same object """
     # expected:<...ClassName@MemoryAddress...> but was:<...ClassName@MemoryAddress...>
-    obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
-    search_expected = re.search(obj_comparison_pattern, expected_msg)
-    search_output = re.search(obj_comparison_pattern, output_msg)
+    obj_comparison_pattern = (
+        r'junit.framework.AssertionFailedError: expected:(\<.+\@.+\>).+but was.+(\<.+\@.+\>)',
+        r'junit.framework.AssertionFailedError: expected:(\<.+ \[CL\]T\>) but was.+(\<.+ \[PS\]T\>)'
+        )
+    
+    needs_object_comp = False
+    i = 0
+    for p in obj_comparison_pattern:
+        needs_object_comp = True if re.search(p, expected_msg) else False
+        search_expected = re.search(p, expected_msg)
+        search_output = re.search(p, output_msg)
+        if needs_object_comp:
+            break   
+        i+=1 
+            
     if search_expected and search_output:
-        expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
-        output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
+        if i == 0:
+            expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
+            output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
+        elif i == 1:
+            expected = search_expected.group(1).split(' ')[1], search_expected.group(2).split(' ')[1]
+            print('expected=', expected)
+            output = search_output.group(1).split(' ')[1], search_output.group(2).split(' ')[1]
+            print('output=', output)
+            
+        print((expected[0] == output[0]) and (expected[1] == output[1]))
         return (expected[0] == output[0]) and (expected[1] == output[1])  
     return False
 
 def is_object_comparison(expected_msg):
     """ check if the message is an object comparison """
-    obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
-    return re.search(obj_comparison_pattern, expected_msg) is not None
+    obj_comparison_pattern = (
+        r'junit.framework.AssertionFailedError: expected:(\<.+\@.+\>).+but was.+(\<.+\@.+\>)',
+        r'junit.framework.AssertionFailedError: expected:(\<.+ \[CL\]T\>) but was.+(\<.+ \[PS\]T\>)'
+        )
+    
+    needs_object_comp = False
+    for p in obj_comparison_pattern:
+        needs_object_comp = True if re.search(p, expected_msg) else False
+        if needs_object_comp:
+            break
+    
+    return needs_object_comp
 
 def create_json(filename, data):
     """ method to store the results in a json file """

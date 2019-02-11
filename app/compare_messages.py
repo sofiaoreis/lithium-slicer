@@ -18,13 +18,15 @@ if os.path.isfile(expected_msg_path):
         expected_to_cmp = ' '.join(expected_to_cmp)
     print('expected_to_cmp=', expected_to_cmp)
 
+output_to_cmp = None
+buggy_line = None
+
 if os.path.isfile(output_filepath):
-    output_to_cmp = None
-    buggy_line = None
     with open(output_filepath) as out_fail:
         failing = out_fail.readlines()
         failing_tests = get_testname_expected_msg(testname, failing)[1::]
         print('failing_tests=', failing_tests)
+        print('output_to_cmp=', output_to_cmp)
         if len(failing_tests) > 0:
             output_to_cmp, buggy_line = get_to_compare(failing_tests, testname)
             print('output_to_cmp=', output_to_cmp)
@@ -32,21 +34,22 @@ if os.path.isfile(output_filepath):
             print('output_to_cmp=', output_to_cmp)
             print('buggy_line=', buggy_line)
             
-
     try:
         # should print this line to check if there is the same buggy line
         print("[Buggy_START]{}[Buggy_END]".format(buggy_line))
     except:
         pass
-
-    # removes the "project_path/failing_tests" file
-    os.remove(output_filepath)
-
+    
     if debug:
         logger.debug("expected: {}\ngot: {}".format(expected_to_cmp, output_to_cmp))
-
-    if is_object_comparison(expected_to_cmp):
+    
+    # removes the "project_path/failing_tests" file
+    os.remove(output_filepath)
+    
+    if is_object_comparison(expected_to_cmp) and output_to_cmp != None:
         print("GOOD" if check_obj_comparison(expected_to_cmp, output_to_cmp) else "BAD")
     else:
         # should print GOOD or BAD in console
         print("GOOD" if (expected_to_cmp == output_to_cmp) else "BAD")
+    
+    
