@@ -177,6 +177,7 @@ simplification mechanism consists of deleting statements on the
 original program and checking if the output of the original and
 modified program are the same.
 
+\Mar{consider moving footnotes 1 and 2 to references.}
 Our implementation of Critical Slicing is based on the Mozilla Lithium
 tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} (Accessed on \today)}. Lithium implements the DD-min Delta Debugging
 algorithm~\cite{zeller-hildebrandt-tse2002}. It takes as input a file
@@ -363,10 +364,13 @@ that the slice obtained for the transaction $t_2$ is $\{c_2, c_5\}$,
 ranking are updated. The right-side of Figure~\ref{fig:illustration}
 shows the modified spectra and ranking after slicing test $t_2$
 against $c_4$ and $c_3$. It is worth noting that the technique slices
-the code for every failing tests. More precisely, the \sfl{}+\cs{} 
-combination consists of four steps:\Sof{Should we specify that these steps are
-performed for each version of the projects/defect?}
-
+the code for every failing tests. More precisely, the workflow of the
+\sfl{}+\cs{} combination consists of four steps: \Sof{Should we
+  specify that these steps are performed for each version of the
+  projects/defect?}\Mar{Isn't this clear from the scenario in the
+  beginning of par?  Note that this is the definition of the workflow
+  for the technique, not the definition of the experiment (when it
+  makes sense to talk about versions/defects and D4J.)}
 
 \begin{enumerate}
   \itemsep0em 
@@ -384,7 +388,7 @@ Intuitively, slicing enables identification of cells in the spectra
 whose values can be set to zero, \ie{}, the components marked with 0
 are irrelevant to determine the test output. Let us now observe the
 effect of this spectra modification on the ranking. Analyzing the
-Ochiai formula, one can observe that, for the components $j$ which are
+Ochiai formula, one observes that, for the components $j$ which are
 not part of the slice of a failing test, the combination reduces the
 value of $\N{11}$ and increases the value of $\N{01}$. Therefore,
 suspiciousness of those components decrease. Similar argument applies
@@ -399,11 +403,18 @@ position in the ranking.
   failing test cases.
 \end{theorem}
 
-It is possible that a slice that discards the faulty component still
-produces the expected message checked by the oracle. This can happen,
-for example, if the oracle is too
-general. Section~\ref{sec:oracleheuristics} elaborates the heuristics
-we used to mitigate this fundamental limitation of Critical Slicing.
+Conceptually, if the oracles implemented in faulty tests are too
+general, the critical slicing algorithm could produce slices without
+the faulty code. For example, consider the scenario of an unexpected
+Null-Pointer Exception (NPE) thrown in the code. If the oracle checks
+for the presence of NPE regardless of where it occurs, it is possible,
+in principle, that the final slice does not include the faulty code
+but still raises NPE (in a different part of the code). The critical
+slicing algorithm would consider that as an acceptable simplification
+and would continue. Section~\ref{sec:oracleheuristics} shows how we
+mitigate this fundamental limitation of Critical Slicing and
+Section~\ref{sec:fault-misses} shows how problematic is that issue in
+practice.
 
 %% \vspace{3mm}
 %% \begin{myframe} \label{box:1}
@@ -603,6 +614,7 @@ The following section aims to answer the research questions presented previously
 
 
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
+\label{sec:fault-misses}
 
 In \textbf{RQ1}, we evaluate how often \ds{} misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
 
