@@ -7,7 +7,7 @@ expected_msg_path = sys.argv[1] # "message expected" file path
 output_filepath = sys.argv[2] # "failing_test" file that contains the test output after run d4j-test
 testname = sys.argv[3] # test name
 
-debug = False # true to check expected and output messages in console (need to set debug=True in interesting.py as well)
+debug = True # true to check expected and output messages in console (need to set debug=True in interesting.py as well)
 logger = logging.getLogger(__name__)
 
 if os.path.isfile(expected_msg_path):

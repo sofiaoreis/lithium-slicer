@@ -209,8 +209,15 @@ def get_to_compare(stacktrace, test):
                 ov_acm +=1
             if ov_acm > 5:
                 break
-        if re.search(r'Test(.*).java',stacktrace[i]) and test in stacktrace[i]: 
+        if test in stacktrace[i]: 
             break
+    if len(lines) == len(stacktrace):
+        lines=[];
+        for i in range(len(stacktrace)):
+            lines.append(stacktrace[i].strip())
+            buggy_line = stacktrace[i].strip()
+            if re.search(r'.*Test(.*).java',stacktrace[i]):
+                break 
     return lines, buggy_line
 
 @timeout(timeout_seconds) # 60s at most (compile and run test)
