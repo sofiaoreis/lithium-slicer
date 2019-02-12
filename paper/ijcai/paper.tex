@@ -520,9 +520,7 @@ includes six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
      browser. \chart{} is a Java library for creating charts. \jtime{}
      is a lightweight library that aims to replace the default Java
      {\small\texttt{java.util.Date}} classes providing simpler
-     APIs. \mockito{} is a mocking testing framework.\comments{ that
-       enables the developer to simulate the behavior of classes that
-       cannot be used in unit testing.}
+     APIs. \mockito{} is a mocking testing framework.
 
 \newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
 \begin{table}[h]
@@ -579,7 +577,7 @@ producing a reduced cost of diagnosing.
 		Project             &  top-5  & top-10 \\ 
 		\midrule
 		
-        \lang{}            &  & \\ 	
+        \lang{}            & 0.77\% & 30.28\%\\ 	
         \cmath{}           &  & \\
         \closure{}          &  & \\	
 		\chart{}			& 59.30\% & 53.64\% \\ 	
@@ -616,7 +614,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 
 		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\ 
 		\midrule
-		% \lang{}            & 84.60 \% & 84.60 \% & 0 \%       \\   %\commentst{& 124   &  -}\\
+		 \lang{}            & 84.1\%  & 84.1\&  &  0\%   & 63 & 100\% & 61 & 96.8\% & 63      \\   
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
 		\chart{}           & 84.6\%  & 92.3\% & 7.7\%  & 20 & 76.9\% & 22 & 84.6\% & 26    \\  %\comments{& 92    &  -}\\
@@ -667,13 +665,13 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 		\toprule
 		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
 		\midrule
-		$<0$  & 31.87\% & 25.27\% \\ 
-		$=0$  & 26.37\% & 26.37\% \\ 
-		$>0$  & 41.76\% & 41.76\% \\ 
+		$<0$  & 20.00\% & 17.42\% \\ 
+		$=0$  & 47.10\% & 37.42\% \\ 
+		$>0$  & 32.90\% & 45.16\% \\ 
 		
 		\bottomrule
 	\end{tabular}
-	\caption {Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}}}
+	\caption {Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
 	\label{tab:diagnosis}
 \end{table}
 \normalsize
@@ -683,21 +681,21 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\begin{tabular}{@{}llll@{}}
 \toprule
   & SFL                    & \comb{}-5                 & \comb{}-10                 \\ \midrule
-Mean & 521.59     & 855.34   & 758.06    \\ \midrule
-Median & 57.21      & 260.33                & 109                \\ \midrule
-Variance & 1021.65      & 1307.70   & 1275.34    \\ \midrule
-Shapiro-Wilk & \makecell{W = 0.56 \\ p-value = 4.00 x $10^{-15}$} & \makecell{W = 0.69 \\ p-value = 1.81 x $10^{-12}$} & \makecell{W = 0.65 \\ p-value = 1.68 x $10^{-13}$}  \\ \midrule
-Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 7.22 \\ p-value = 0.027}} \\ 
+Mean & 387.46     & 576.74   & 522.35   \\ \midrule
+Median & 44.50      & 48.25               & 46.00                \\ \midrule
+Variance & 827.80      & 1075.90   & 1275.34    \\ \midrule
+Shapiro-Wilk & \makecell{W = 0.51 \\ p-value = 9.65 x $10^{-21}$} & \makecell{W = 0.59 \\ p-value = 5.29 x $10^{-19}$} & \makecell{W = 0.56 \\ p-value = 8.95 x $10^{-20}$}  \\ \midrule
+Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $10^{-4}$}} \\ 
 \bottomrule
 \end{tabular}
-  \caption {Statistical tests \Sof{Considering \chart{}, \jtime{}, \mockito{}}}
+  \caption {Statistical tests \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{} }}
   \label{table:st}
 \end{table*}
 
 
 \begin{figure}[h]
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
-		\caption{Nemenyi post-hoc analysis results \Sof{Considering \chart{}, \jtime{}, \mockito{}}}
+		\caption{Nemenyi post-hoc analysis results \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{} }}
 		\label{fig:performance}
 \end{figure}
 
