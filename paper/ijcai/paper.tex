@@ -10,7 +10,7 @@
 % the following package is optional:
 \usepackage{latexsym} 
 
-\title{Reassessing the Impact of Dynamic Slicing in SFL}
+\title{Demystifying the Dynamic Slicing and SFL Combination}
 
 % \author{
 % First Author$^1$,
@@ -35,7 +35,11 @@
 \maketitle
 
 \begin{abstract}
-  \Sof{@todo} 
+  The task of locating faulty code from failing testing is a very
+  important problem known as software fault localization. This paper
+  reports on a comprehensive study to reassess the impact of combining
+  two very popular techniques to that end--Dynamic Slicing and
+  Spectrum-based Fault Localization. Our results show that \Fix{...}
 \end{abstract}
 
 \section{Introduction}
@@ -96,25 +100,24 @@ of the code.
 %% metric reports the percentage of faults captured by a technique when
 %% the rank is trimmed to the first $k$ components.
 
-This paper reports the results of a comprehensive study
-to evaluate the impact of \ds{} to improve \sfl{}. The study involves
-\numFaults{} faults from \numPrograms{} different programs comprised in the 
-Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which is frequently
-used to evaluate fault localization research. The intuition for the
-\comb{} combination is that several highly ranked statements, albeit
-covered by failing executions, may be unrelated to the fault. Prior
-work reported promising results in this
-combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}
+This paper reports the results of a comprehensive study evaluating the
+impact of combining \ds{} and \sfl{} to improve software fault
+localization. The intuition for the \comb{} combination is that
+several highly ranked statements, albeit covered by failing
+executions, may be unrelated to the fault. The study involves
+\numFaults{} faults from \numPrograms{} different programs comprised
+in the Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which
+is frequently used to evaluate fault localization research. Prior work
+reported promising results in this
+combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair},
 but they used a non-representative set of subjects in their evaluation
-or used less rigorous methods to assess improvement of techniques compared to those used
-today~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
+or used arcaic methods to evaluate technique
+improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
 The goal of this paper is to reassess whether the \comb{} combination
-is worthwhile under the light of a more accurate metric and a larger
-dataset. The D4J dataset is about twice as large than the biggest test
-suite used in previous studies. It is worth noting that Automated
-Program Repair techniques should directly benefit from these results---either to
-improve their results or to be aware they should not invest on this
-integration. This study covers the following research questions:
+is worthwhile under the light of a more rigorous experimental
+methodology and a larger dataset.\comments{ The D4J dataset is about
+  twice as large than the biggest test suite used in previous
+  studies.} This study covers the following research questions:
 
 \newcommand{\rqone}{How often does DS miss faulty statements?}
 \newcommand{\rqthree}{How effective is the \comb{} combination?}
@@ -124,22 +127,22 @@ integration. This study covers the following research questions:
 \item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}
 \end{itemize}
 
-The first question addresses an important problem associated with
-dynamic slicing techniques---that of missing faulty
+The first question addresses the important problem of missing faulty
 statements. Naturally, the consequence of that problem for debugging
 is that developers would never be able to locate faults. Different
 slicers can miss faulty statements for different reasons. In this
 paper, we used Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310},
 which, in principle, could miss statements because of imprecise
 oracles that guide the slicing process. We evaluated how often that
-important problem happens in our experiments. The second research
-questions effectively evaluates the impact of the combination. To sum,
-our results show that \Sof{@todo: sum up the results}.
+issue manifests in our experiments. The second research questions
+effectively evaluates the impact of the combination. To sum, our
+results show that \Sof{@todo: sum up the results}.
 
 The contributions of this work are as follows \Sof{Finish this}:
 \begin{itemize}
 	\item A comprehensive study on the combination of \sfl{} and \ds{}
      for bug localization of \emph{Java} faulty programs.
+   \item A tool that implements \comb{}.
 	%\item Empirical evidence that the \comb{} combination improves 
 \end{itemize}
 
@@ -708,6 +711,11 @@ Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $1
 
 
 \section{Related Work}
+
+\Mar{moved from intro$\rightarrow$} It is worth noting that Automated
+Program Repair techniques should directly benefit from these
+results---either to improve their results or to be aware they should
+not invest on this integration.
 
 \subsection{Program Slicing}
 
