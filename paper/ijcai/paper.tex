@@ -438,7 +438,6 @@ faulty component increases. If those components appear at positions
 below the faulty components, the ranking of the faulty components is
 unaffected.
 
-\Mar{parei aqui}
 
 \subsection{Oracle Heuristics}
 \label{sec:oracleheuristics}
@@ -491,6 +490,7 @@ unaffected.
 %
 %
 
+\Mar{I left a bunch o comments to Sofia on hangouts...$\rightarrow$}
 Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
 
 \begin{algorithm}[h]
@@ -523,9 +523,9 @@ against \comb{}.
 
 \subsection{Objects of Analysis}\label{sec:analysis}
 
-As in other recent related studies, we used the \dfj{} benchmark in
-our experiments~\cite{just-defects4j-issta2014}. The \dfj{} benchmark
-includes six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
+We used the \dfj{} benchmark in our
+experiments~\cite{just-defects4j-issta2014}. This benchmark includes
+six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 \lang{} is a library that provides a set of helper utilities for the
      {\small\texttt{java.lang}} API. \cmath{} is a lightweight library
      of self-contained mathematics and statistics components. The
@@ -544,12 +544,12 @@ includes six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
       \toprule
       Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
       \midrule
-      \lang{}            & 111751  & 6057 & 65       \\   %\commentst{& 124   &  -}\\
-      \cmath{}           & 306276  & 26797 & 106     \\   %\comments{& 177   &  -}\\
-      \closure{}         & 149521  & 27930  & 133     \\   %\comments{& 350   &  -}\\
-      \chart{}           & 230159  & 8458 & 26      \\  %\comments{& 92    &  -}\\
-      \jtime{}           & 141610  & 3289 & 27       \\   %\comments{& 76    &  -}\\
-      \mockito{}         & 22787  & 8835 & 38    \\     %\comments{& 118   &  -}\\
+      \lang{}            & 111,751  & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
+      \cmath{}           & 306,276  & 26,797 & 106     \\   %\comments{& 177   &  -}\\
+      \closure{}         & 149,521  & 27,930  & 133     \\   %\comments{& 350   &  -}\\
+      \chart{}           & 230,159  & 8,458 & 26      \\  %\comments{& 92    &  -}\\
+      \jtime{}           & 141,610  & 3,289 & 27       \\   %\comments{& 76    &  -}\\
+      \mockito{}         & 22,787  & 8,835 & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
 \caption {Characterization of \dfj{} subjects.\Sof{Use SLOCCount to count size}}
@@ -559,19 +559,28 @@ includes six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 
 \Sof{@todo: Add pie chart to show the distribution of foos}
 
-\subsection{Methodology}\label{sec:methodology}
+\subsection{Experimental Methodology}\label{sec:methodology}
 
+%% The main goal of our evaluation is to understand what is the impact of
+%% \ds{} on \sfl{} after minimizing the $k$ highest faulty source files
+%% which comprise the highest faulty statements.
 
-The main goal of our evaluation is to understand what is the impact of \ds{} on 
-\sfl{} after minimizing the $k$ highest faulty source files which comprise the highest faulty statements. Firstly, we ran the dataset presented in Section~\ref{sec:analysis} with \sfl{} to 
-gather the coverage statements ordered from the highest faulty statement to the
-lowest faulty statement. This list is the input of the \comb{} technique. For each defect, the list is evaluated in order to get the top-$k$, for $k\in\{5,10\}$, of suspicious source files. Then, Lithium minimizes each source file for each testcase of the defect considering the top-$5$ (\comb{}-$5$) and top-$10$ (\comb{}-$10$) of source files separately. Some defects have more than one testcase. In the end, we update spectra $S$ based on the output of the minimization as presented in Figure~\ref{fig:ds-reduction} to obtain the faulty statements ranking after minimization. All scripts used to run these experiments and gather data are available at \url{TBA} and \url{TBA}, respectively.
+Recall from Section~\ref{sec:combination} that the \comb{} combination
+takes on input a value denoting the $k$ most suspicious distinct
+files. To evaluate the effectiveness of \comb{}, we compared its
+performance with \sfl{} for each defect on each subject program from
+the dataset, for $k\in\{5,10\}$. These files are obtained directly
+from the ranking. We refer to these variations as \combpar{k}. We
+compared \combpar{5} and \combpar{10} against \sfl{} using the
+following metrics.\Mar{Sofia, I don't see a reason for an equation to
+  only show the difference of cost. Please describe precisely the
+  metrics. In this case, I can't find what C stands for. Also,
+ you need to describe precisely what top@n (or someother name) means
+ in this context. Check if it makes sense for SFL.$\rightarrow$}
 
-We perform experiments for \comb{}-$5$ and \comb{}-$10$. These techniques results are analyzed against \sfl{}. The difference in the diagnostic effort is measured
-using
 
 \begin{equation}
-    \Delta{}C = C(\textrm{SFL}) - C(\textrm{SFL+DS-k})
+    \Delta{}C = C(\textrm{SFL}) - C(\textrm{\combpar{k}})
 \end{equation}
 
 where C is the cost of diagnosis. \Sof{@todo: Explain this better in section 2 or 3}
@@ -579,7 +588,23 @@ A positive $\Delta$C means that the faulty statement has risen in
 the ranking reported by \sfl{} techniques when \ds{} is used,
 producing a reduced cost of diagnosing.
 
-\Sof{Parei Aqui}
+%% Firstly, we ran the dataset presented in Section~\ref{sec:analysis}
+%% with \sfl{} to gather the coverage statements ordered from the highest
+%% faulty statement to the lowest faulty statement. This list is the
+%% input of the \comb{} technique. For each defect, the list is evaluated
+%% in order to get the top-$k$, for $k\in\{5,10\}$, of suspicious source
+%% files. Then, Lithium minimizes each source file for each testcase of
+%% the defect considering the top-$5$ (\comb{}-$5$) and top-$10$
+%% (\comb{}-$10$) of source files separately. Some defects have more than
+%% one testcase. In the end, we update spectra $S$ based on the output of
+%% the minimization as presented in Figure~\ref{fig:ds-reduction} to
+%% obtain the faulty statements ranking after minimization. All scripts
+%% used to run these experiments and gather data are available at
+%% \url{TBA} and \url{TBA}, respectively.
+
+
+
+%% \Sof{Parei Aqui}
 
 \subsection{Dynamic Slicing}
 
