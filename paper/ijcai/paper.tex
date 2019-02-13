@@ -143,19 +143,17 @@ issue manifests in our experiments. The second research questions
 effectively evaluates the impact of the combination. To sum, our
 results show that \Sof{@todo: sum up the results}.
 
-The contributions of this work are as follows \Sof{Finish this}:
+The contributions of this work are the following ones:
 \begin{itemize}
 	\item A comprehensive study on the combination of \sfl{} and \ds{}
      for bug localization of \emph{Java} faulty programs.
    \item A tool that implements \comb{}.
-	%\item Empirical evidence that the \comb{} combination improves
 \end{itemize}
 
 \section{Background}
 \label{sec:background}
 
-This section discusses  important background material for the rest of the paper.
-\Rui{not very happy with this sentence.}
+This section summarizes the ground concepts of our approach.
 
 \subsection{Critical Slicing (\cs{})}
 \label{sec:slicing}
@@ -206,10 +204,25 @@ size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
 iterations. Proofs of the algorithm complexity can be found
 elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (Accessed on \today)}. Our implementation is publicly
-available at \Rui{site}.
+available at \textit{$<$anonymized for double-blind review$>$}.
 
 \subsection{Spectrum-based Fault Localization (\sfl)}
 \label{sec:sfl}
+
+\begin{wrapfigure}[8]{2}{0.3\textwidth}
+  \hspace{-2ex}
+  \centering
+  \scriptsize
+  \begin{tabular}{c|cccc|c}
+    $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
+    $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
+    $t_2$         & $\A{21}$ & $\A{22}$ & $\cdots$ & $\A{2M}$ & $e_2$  \\
+    \vdots        & \vdots   & \vdots   & $\ddots$ & \vdots   & \vdots \\
+    $t_N$         & $\A{N1}$ & $\A{N2}$ & $\cdots$ & $\A{NM}$ & $e_N$  \\
+  \end{tabular}
+  \caption{An example spectrum.}
+  \label{fig:spectrum-example}
+\end{wrapfigure}
 
 Spectrum-based fault localization is a statistical fault
 localization technique that takes as input a test suite including at
@@ -228,20 +241,7 @@ coverage of component $c_j$ in transaction $t_i$.  The pair
 $(\mathcal{A},e)$ is commonly referred to as
 spectrum~\cite{DBLP:journals/stvr/HarroldRSWY00}. Figure~\ref{fig:spectrum-example}
 shows an example spectrum.
-\begin{wrapfigure}[8]{2}{0.3\textwidth}
-  \hspace{-2ex}
-  \centering
-  \scriptsize
-  \begin{tabular}{c|cccc|c}
-    $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
-    $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
-    $t_2$         & $\A{21}$ & $\A{22}$ & $\cdots$ & $\A{2M}$ & $e_2$  \\
-    \vdots        & \vdots   & \vdots   & $\ddots$ & \vdots   & \vdots \\
-    $t_N$         & $\A{N1}$ & $\A{N2}$ & $\cdots$ & $\A{NM}$ & $e_N$  \\
-  \end{tabular}
-  \caption{An example spectrum.}
-  \label{fig:spectrum-example}
-\end{wrapfigure}
+
 
 Several types of spectra exist.  The most commonly used is called
 hit-spectrum, where the coverage matrix is encoded in terms of binary
@@ -367,8 +367,8 @@ Ochiai score (in parentheses).
   \vspace{-2ex}
 \end{figure}
 
-In the following, we illustrate the workflow of the \sfl{}+\cs{}
-combination for this scenario. First, the combined technique picks
+In the following, we illustrate the workflow of the \comb{}
+approach for this scenario. First, the combined technique picks
 components $c_4$ and $c_3$, which appear at the top of the ranking,
 for further analysis. (The cutoff point is user-defined.) Second, the
 technique picks a failing test $t_2$ to slice the code.  Let us assume
@@ -378,14 +378,7 @@ ranking are updated. The right-side of Figure~\ref{fig:illustration}
 shows the modified spectra and ranking after slicing test $t_2$
 against $c_4$ and $c_3$. It is worth noting that the technique slices
 the code for every failing tests. More precisely, the workflow of the
-\comb{} approach consists of four steps: \Sof{Should we
-  specify that these steps are performed for each version of the
-  projects/defect?}\Mar{Isn't this clear from the scenario in the
-  beginning of par?  Note that this is the definition of the workflow
-  for the technique, not the definition of the experiment (when it
-  makes sense to talk about versions/defects and D4J.)}\Rui{agree with Marcelo.}
-  \Rui{if space permits, a figure with the workflow might be good.}
-
+\comb{} approach consists of four steps: 
 \begin{enumerate}
   \itemsep0em
   \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for
@@ -666,7 +659,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	\centering
 	  \begin{tabular}{|l|ccc|cccc|c|}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{SFL+DS-$k$} & \multirow{2}{*}{\# Faults} \\
+		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{\comb{}-$k$} & \multirow{2}{*}{\# Faults} \\
 
 		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\
 		\midrule
@@ -678,25 +671,9 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.1\% & 30 & 79.0\% & 38 \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the buggy-lines is in the SFL and SFL+DS-$k$ report \Sof{@todo: Add absolute numbers for SFL}}
+  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \comb{}-$k$ report \Sof{@todo: Add absolute numbers for SFL}}
   \label{table:fsws}
 \end{table*}
-
-% \begin{table*}[h]
-% 	\centering
-% 	\setlength{\tabcolsep}{4pt}
-% 	\begin{tabular}{llllll}
-% 		\toprule
-% 		Project             &  \# top-5  & \% top-5 & \# top-10 & \% top-10 & \# Faults \\
-% 		\midrule
-% 		\chart{}  & 20 & 76.92\% & 22 & 84.62\%  & 26\\
-% 		\jtime{}  &  &  &  &   & \\
-% 		\bottomrule
-% 	\end{tabular}
-% 	\caption {\Sof{@todo: Improve caption} Report of the capability of \ds{} on missing faulty statements}
-% 	\label{tab:fs}
-% \end{table*}
-% \normalsize
 
 \subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
 
