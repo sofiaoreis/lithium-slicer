@@ -177,7 +177,6 @@ simplification mechanism consists of deleting statements on the
 original program and checking if the output of the original and
 modified program are the same.
 
-\Mar{consider moving footnotes 1 and 2 to references.}
 Our implementation of Critical Slicing is based on the Mozilla Lithium
 tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} (Accessed on \today)}. Lithium implements the DD-min Delta Debugging
 algorithm~\cite{zeller-hildebrandt-tse2002}. It takes as input a file
@@ -263,8 +262,10 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 %\[ochiai = \frac\]
 
 
-\section{The \sfl{}+\cs{} combination}
-\label{sec:combination}
+
+
+\section{Approach}
+\label{sec:approach}
 
 %% \Mar{Sofia, o pseudocodigo acima assume que ha apenas um teste
 %%   falho. Isto precisa ser ajustado. O lithium-slicer funciona por caso
@@ -291,6 +292,9 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 %% que faço. Posso tentar substituir as classes minimizadas nos projectos e ver se
 %% realmente a mensagem de erro continua a ser a mesma - coisa que não fiz. Relativamente,
 %% ao pseudocode eu diria que é for every $k$ and every failing test.}
+
+\subsection{The \sfl{}+\cs{} combination}
+\label{sec:comb}
 
 To illustrate the idea behind the \sfl{}+\cs{} combination, consider a
 debugging scenario with five components $c_{1..5}$ and five
@@ -493,26 +497,26 @@ unaffected.
 \Mar{I left a bunch o comments to Sofia on hangouts...$\rightarrow$}
 Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
 
-\begin{algorithm}[h]
-	\caption{Function of interest (iFunc)}
-	\label{alg:finc}
-	\begin{flushleft}
-		\textbf{Input:} $c$ - class to be minimized\\
-		\hspace{2.75em} $t$ - testcase name\\
-		\hspace{2.75em} $expStk$ -  expected stacktrace\\
-		\textbf{Output:} $interest$ - $True$ if it is interesting, $False$ if not \\
-	\end{flushleft}
-	\begin{algorithmic}[1]
-		\Function{iFunc}{$c$, $t$, $expStk$}
-		\State $testStk \leftarrow$ runTest($t$)
-		\State $testOracle \leftarrow$ getOracleToCompare($testStk$)
-		\State $expOracle \leftarrow$ getOracleToCompare($expStk$)
-		\State \Return $testOracle$ == $expOracle$
-		\EndFunction
-
-	\end{algorithmic}
-
-\end{algorithm}
+% \begin{algorithm}[h]
+% 	\caption{Function of interest (iFunc)}
+% 	\label{alg:finc}
+% 	\begin{flushleft}
+% 		\textbf{Input:} $c$ - class to be minimized\\
+% 		\hspace{2.75em} $t$ - testcase name\\
+% 		\hspace{2.75em} $expStk$ -  expected stacktrace\\
+% 		\textbf{Output:} $interest$ - $True$ if it is interesting, $False$ if not \\
+% 	\end{flushleft}
+% 	\begin{algorithmic}[1]
+% 		\Function{iFunc}{$c$, $t$, $expStk$}
+% 		\State $testStk \leftarrow$ runTest($t$)
+% 		\State $testOracle \leftarrow$ getOracleToCompare($testStk$)
+% 		\State $expOracle \leftarrow$ getOracleToCompare($expStk$)
+% 		\State \Return $testOracle$ == $expOracle$
+% 		\EndFunction
+%
+% 	\end{algorithmic}
+%
+% \end{algorithm}
 
 \section{Evaluation}
 \label{sec:eval}
@@ -565,7 +569,7 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 %% \ds{} on \sfl{} after minimizing the $k$ highest faulty source files
 %% which comprise the highest faulty statements.
 
-Recall from Section~\ref{sec:combination} that the \comb{} combination
+Recall from Section~\ref{sec:approach} that the \comb{} combination
 takes on input a value denoting the $k$ most suspicious distinct
 files. To evaluate the effectiveness of \comb{}, we compared its
 performance with \sfl{} for each defect on each subject program from
