@@ -273,36 +273,10 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 \section{The \comb{} Approach}
 \label{sec:approach}
 
-This section provides details on our \sfl{}+\ds{} combination approach
-and its heuristics.
+This section provides details on the proposed approach, \combpar{}, that combines
+\sfl{} with \cs{}; it also discusses the oracle problem.
 
-%% \Mar{Sofia, o pseudocodigo acima assume que ha apenas um teste
-%%   falho. Isto precisa ser ajustado. O lithium-slicer funciona por caso
-%%   de teste ou por suite?  Por favor, ajuste a descricao acima.  Eh um
-%%   loop aninhado ao loop ``for every k'' que o lithium-slicer
-%%   implementa (algo como ``for every k and every failing test'')?  Caso
-%%   vc. faca slice contra um teste particular, vc. garante (checa saida)
-%%   que os demais testes que originalmente falhavam continuam falhando
-%%   pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
-%%   de inicio.}
-
-%% \Sof{O lithium-slicer funciona por caso de teste. Cada execução da nossa
-%% ferramenta chama o lithium tantas vezes como o número de casos de teste
-%% que falham para cada versão do projecto. Assumindo que o numero de casos de
-%% testes a falhar são 5, numa execução da nossa plataforma o lithium é executado
-%% 5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada
-%% teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de
-%% executar a nossa ferramenta para uma versão do projecto que os
-%% testes que aparecem na pasta da versão do projecto são os mesmos quando corro
-%% o test do defects4j de novo. Uma precaução que tivemos foi ter a certeza que o
-%% oracle que estava a ser usado não sofria com a mudança de máquinas. Portanto,
-%% antes de correr as experiências eu corri o defects4j para obter as mensagens
-%% esperadas de novo para serem usadas como o oracle esperado. Estas são as verificações
-%% que faço. Posso tentar substituir as classes minimizadas nos projectos e ver se
-%% realmente a mensagem de erro continua a ser a mesma - coisa que não fiz. Relativamente,
-%% ao pseudocode eu diria que é for every $k$ and every failing test.}
-
-\subsection{The \sfl{}+\cs{} combination}
+\subsection{Combineing \sfl{} and \cs{}}
 \label{sec:comb}
 
 To illustrate the idea behind the combination of \sfl{} with \cs{}, consider a
