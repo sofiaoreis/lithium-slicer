@@ -357,8 +357,7 @@ the code for every failing tests. More precisely, the workflow of the
   \itemsep0em
   \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for
   the input test suite;
-  \item\label{step:susp-files} Select top $k$ most suspicious source
-  files\Rui{classes?}, according to $R$;
+  \item\label{step:susp-files} Select top $k$ most suspicious classes, according to $R$;
   \item\label{step:compute-slice} Compute slicer for every suspicious
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
     \Rui{union of slices of all points ?}
@@ -366,7 +365,7 @@ the code for every failing tests. More precisely, the workflow of the
     the slices obtained in Step~\ref{step:compute-slice} and recompute ranking.
 \end{enumerate}
 
-Intuitively, slicing enables identification of cells\Rui{cells?} in the spectra
+Intuitively, slicing enables identification of statements in the spectra
 whose values can be set to zero, \ie{}, the components marked with $0$
 are irrelevant to determine the test output. Let us now observe the
 effect of this spectra modification on the ranking. Analyzing the
@@ -573,19 +572,20 @@ inspected before finding the fault, right? We also need to say that we assume a
 perfect bug understanding: that is, when the developer sees the bug in the
 ranking, he can say that it is the faulty one.}
 A positive $\Delta$C means that the position of the faulty statement has decreased
-in the ranking reported computed by \combpar{k}. Hence, reducing the cost to
+in the ranking after applying the \combpar{k} approach. Hence, reducing the cost to
 find the bug.
 
 \subsection{Dynamic Slicing}
-\Rui{ehmm.. what is this section all about? }
 
+This subsection aims to evaluate the performance of the \ds{} technique on slicing
+de \dfj{} projects.
 
 \begin{table}[h]
 	\centering
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{lcc}
 		\toprule
-		Project             &  \combpar{k}  & \combpar{10} \\
+		Project             &  \combpar{5}  & \combpar{10} \\
 		\midrule
 
         \lang{}            & 0.77\% & 30.28\%\\
