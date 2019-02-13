@@ -8,7 +8,7 @@
 \input{macros}
 
 % the following package is optional:
-\usepackage{latexsym} 
+\usepackage{latexsym}
 
 \title{Demystifying the Dynamic Slicing and SFL Combination}
 
@@ -24,12 +24,12 @@
 % third@email.address
 % }
 
-% If your authors do not fit in the default space, you can increase it 
+% If your authors do not fit in the default space, you can increase it
 % by uncommenting the following (adjust the "2.5in" size to make it fit
 % properly)
 % \setlength\titlebox{2.5in}
 
-\hypersetup{draft} 
+\hypersetup{draft}
 \begin{document}
 
 \maketitle
@@ -44,31 +44,34 @@
 
 \section{Introduction}
 
-Software debugging is difficult. The task of locating the faulty code
-(\ie{}, fault localization) is particularly challenging. For that
-reason, countless automated techniques have been proposed in the past
-to reduce the cost of fault localization.
+Software debugging is difficult. In particular, the task of locating the faulty
+code (\ie{}, fault localization) is particularly challenging. For that reason,
+countless automated techniques have been proposed in the past to reduce the cost
+of fault localization. \Rui{cite my TSE survey paper.}
 
 %% Although the technique has been intensively investigated in
 %% research, few use cases gained notoriety---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
-%% exception. 
+%% exception.
 
-Dynamic Slicing (\ds{}) and Spectrum-Based Fault Localization (\sfl{})
-are two very popular techniques that use different principles to
-automate debugging. Dynamic
-Slicing~\cite{Agrawal:1990:DPS:93542.93576} looks for the statements
+Model-based software diagnosis (MBSD) \Rui{cite de kleer, reiter} and Spectrum-Based Fault Localization
+(\sfl{}) are two very popular techniques that leverage different principles
+to automate fault isolation. An example of a MBSD is Dynamic
+Slicing~\cite{Agrawal:1990:DPS:93542.93576}
+as wel as some work  \Rui{Cite Wolgang Mayer, ASE2008, IJCAI, DX, ... as well as
+some works of Wotawa}, a technique that traces back statements
 in the code that influence some point of interest, such as the evaluation
 of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
-does not analyze code. It is a black-box statistical fault
+does not analyze code. Instead, it is a black-box, statistical fault
 localization method that computes suspiciousness values associated
-with program entities (e.g., basic blocks) based on coverage and the
+with program entities (e.g., methods) based on coverage information gathered
+during the execution of test cases as well as the
 output of test cases. More precisely, \sfl{} uses coverage information
 of passing and failing test cases to identify likely faulty
 statements and produces on output a list of program entities ranked in
 decreasing order of suspiciousness.
-\ds{} and \sfl{} are complementary debugging techniques. Intuitively, \ds{} identifies
-irrelevant parts of the code whereas \sfl{} ranks the relevant parts
-of the code.
+\ds{} and \sfl{} are complementary debugging techniques \Rui{my SAC 2008, DX}.
+Intuitively, \ds{} identifies irrelevant parts of the code whereas \sfl{}
+ranks the relevant parts of the code.
 
 %% Similarly to \ds{}, \sfl{} received
 %% tremendous attention in research over the years,
@@ -102,25 +105,26 @@ of the code.
 
 This paper reports the results of a comprehensive study evaluating the
 impact of combining \ds{} and \sfl{} to improve software fault
-localization. The intuition for the \comb{} combination is that
+localization, a technique we coin as \comb{}. The intuition for the combination is that
 several highly ranked statements, albeit covered by failing
-executions, may be unrelated to the fault. The study involves
+executions, may be unrelated to the fault. Our empirical study involves
 \numFaults{} faults from \numPrograms{} different programs comprised
 in the Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which
 is frequently used to evaluate fault localization research. Prior work
 reported promising results in this
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair},
 but they used a non-representative set of subjects in their evaluation
-or used arcaic methods to evaluate technique
+or used archaic methods to evaluate technique
 improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
-The goal of this paper is to reassess whether the \comb{} combination
-is worthwhile under the light of a more rigorous experimental
-methodology and a larger dataset.\comments{ The D4J dataset is about
+
+The goal of this paper is to reassess whether the \comb{} approach
+yields promising results under a more rigorous experimental
+methodology and a larger dataset.\comments{The D4J dataset is about
   twice as large than the biggest test suite used in previous
   studies.} This study covers the following research questions:
 
 \newcommand{\rqone}{How often does DS miss faulty statements?}
-\newcommand{\rqthree}{How effective is the \comb{} combination?}
+\newcommand{\rqthree}{How effective is the \comb{} approach?}
 
 \begin{itemize}[leftmargin=*]
 \item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
@@ -143,7 +147,7 @@ The contributions of this work are as follows \Sof{Finish this}:
 	\item A comprehensive study on the combination of \sfl{} and \ds{}
      for bug localization of \emph{Java} faulty programs.
    \item A tool that implements \comb{}.
-	%\item Empirical evidence that the \comb{} combination improves 
+	%\item Empirical evidence that the \comb{} combination improves
 \end{itemize}
 
 \section{Background}
@@ -188,8 +192,8 @@ Lithium minimization process starts by determining the initial size---in number 
 chunks to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
 size. For example, if the file has 1,000 lines, Lithium sets the
-initial chunk size to 512 lines. Then, the tool starts a local search looking 
-for chunks to exclude from the file. If the chunk satisfies the oracle it is removed. 
+initial chunk size to 512 lines. Then, the tool starts a local search looking
+for chunks to exclude from the file. If the chunk satisfies the oracle it is removed.
 When no more chunks of that given size can be removed, Lithium
 divides the chunk size by two and repeats the search. This iterative
 process continues until no more lines can be removed.  If $n$ is the
@@ -279,15 +283,15 @@ and its heuristics.
 %%   que os demais testes que originalmente falhavam continuam falhando
 %%   pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
 %%   de inicio.}
-  
+
 %% \Sof{O lithium-slicer funciona por caso de teste. Cada execução da nossa
-%% ferramenta chama o lithium tantas vezes como o número de casos de teste 
+%% ferramenta chama o lithium tantas vezes como o número de casos de teste
 %% que falham para cada versão do projecto. Assumindo que o numero de casos de
 %% testes a falhar são 5, numa execução da nossa plataforma o lithium é executado
-%% 5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada 
-%% teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de 
-%% executar a nossa ferramenta para uma versão do projecto que os 
-%% testes que aparecem na pasta da versão do projecto são os mesmos quando corro 
+%% 5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada
+%% teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de
+%% executar a nossa ferramenta para uma versão do projecto que os
+%% testes que aparecem na pasta da versão do projecto são os mesmos quando corro
 %% o test do defects4j de novo. Uma precaução que tivemos foi ter a certeza que o
 %% oracle que estava a ser usado não sofria com a mudança de máquinas. Portanto,
 %% antes de correr as experiências eu corri o defects4j para obter as mensagens
@@ -380,10 +384,10 @@ the code for every failing tests. More precisely, the workflow of the
   makes sense to talk about versions/defects and D4J.)}
 
 \begin{enumerate}
-  \itemsep0em 
-  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for 
+  \itemsep0em
+  \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for
   the input test suite;
-  \item\label{step:susp-files} Select top $k$ most suspicious source 
+  \item\label{step:susp-files} Select top $k$ most suspicious source
   files, according to $R$;
   \item\label{step:compute-slice} Compute slicer for every suspicious
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
@@ -620,16 +624,16 @@ producing a reduced cost of diagnosing.
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{lcc}
 		\toprule
-		Project             &  top-5  & top-10 \\ 
+		Project             &  top-5  & top-10 \\
 		\midrule
-		
-        \lang{}            & 0.77\% & 30.28\%\\ 	
+
+        \lang{}            & 0.77\% & 30.28\%\\
         \cmath{}           &  & \\
-        \closure{}          &  & \\	
-		\chart{}			& 59.30\% & 53.64\% \\ 	
-        \jtime{}            & 17.27\% & 32.92\%\\	
-        \mockito{}          & 16.99\% & 21.67\%\\	
-			
+        \closure{}          &  & \\
+		\chart{}			& 59.30\% & 53.64\% \\
+        \jtime{}            & 17.27\% & 32.92\%\\
+        \mockito{}          & 16.99\% & 21.67\%\\
+
 		\bottomrule
 	\end{tabular}
 	\caption {\ds{} reduction performance for each version of the \chart{} project considering only the top-5 and top-10 classes}
@@ -637,7 +641,7 @@ producing a reduced cost of diagnosing.
 \end{table}
 \normalsize
 
-Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects. 
+Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects.
 
 
 \subsection{Results}
@@ -648,7 +652,7 @@ The following section aims to answer the research questions presented previously
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
 \label{sec:fault-misses}
 
-In \textbf{RQ1}, we evaluate how often \ds{} misses faulty statements, since it is one of the main problems of dynamic slicing techniques. 
+In \textbf{RQ1}, we evaluate how often \ds{} misses faulty statements, since it is one of the main problems of dynamic slicing techniques.
 
 Table \ref{table:fsws} presents the number of faults where at least one of the faulty statements appears in the final reports of both techniques, \sfl{} and \comb{}-k.
 
@@ -657,11 +661,11 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	\centering
 	  \begin{tabular}{|l|ccc|cccc|c|}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{SFL+DS-$k$} & \multirow{2}{*}{\# Faults} \\ 
+		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{SFL+DS-$k$} & \multirow{2}{*}{\# Faults} \\
 
-		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\ 
+		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\
 		\midrule
-		 \lang{}            & 84.1\%  & 84.1\%  &  0\%   & 63 & 100\% & 61 & 96.8\% & 63      \\   
+		 \lang{}            & 84.1\%  & 84.1\%  &  0\%   & 63 & 100\% & 61 & 96.8\% & 63      \\
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
 		\chart{}           & 84.6\%  & 92.3\% & 7.7\%  & 20 & 76.9\% & 22 & 84.6\% & 26    \\  %\comments{& 92    &  -}\\
@@ -671,7 +675,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	\end{tabular}
   \caption {Number of faults where at least one of the buggy-lines is in the SFL and SFL+DS-$k$ report \Sof{@todo: Add absolute numbers for SFL}}
   \label{table:fsws}
-\end{table*}  
+\end{table*}
 
 % \begin{table*}[h]
 % 	\centering
@@ -698,7 +702,7 @@ The \comb{} combination yields an average improvement of, approximately, 19\% on
 project. Table , reports the average rank of all faulty statements for each version of \chart{} project after
 applying the 3 techiniques \sfl{}, \comb{}-5 and \comb{}-10.
 
-Table \ref{tab:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}. $\Delta C <0$ means that the faulty statement may be removed. $\Delta C=0$ means that the faulty statement remained in the same position. $\Delta C >0$ means that \ds{} improved diagnosability. 
+Table \ref{tab:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}. $\Delta C <0$ means that the faulty statement may be removed. $\Delta C=0$ means that the faulty statement remained in the same position. $\Delta C >0$ means that \ds{} improved diagnosability.
 
 %For both \comb{}-5 and \comb{}-10, diagnosability increases 55.56\%. However, top-5 has less classes to minimize than top-10.
 
@@ -710,12 +714,12 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{ccc}
 		\toprule
-		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\ 
+		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\
 		\midrule
-		$<0$  & 20.00\% & 17.42\% \\ 
-		$=0$  & 47.10\% & 37.42\% \\ 
-		$>0$  & 32.90\% & 45.16\% \\ 
-		
+		$<0$  & 20.00\% & 17.42\% \\
+		$=0$  & 47.10\% & 37.42\% \\
+		$>0$  & 32.90\% & 45.16\% \\
+
 		\bottomrule
 	\end{tabular}
 	\caption {Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
@@ -732,7 +736,7 @@ Mean & 387.46     & 576.74   & 522.35   \\ \midrule
 Median & 44.50      & 48.25               & 46.00                \\ \midrule
 Variance & 827.80      & 1075.90   & 1275.34    \\ \midrule
 Shapiro-Wilk & \makecell{W = 0.51 \\ p-value = 9.65 x $10^{-21}$} & \makecell{W = 0.59 \\ p-value = 5.29 x $10^{-19}$} & \makecell{W = 0.56 \\ p-value = 8.95 x $10^{-20}$}  \\ \midrule
-Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $10^{-4}$}} \\ 
+Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $10^{-4}$}} \\
 \bottomrule
 \end{tabular}
   \caption {Statistical tests \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{} }}
@@ -930,9 +934,8 @@ methodology.
 % 		\label{table:performance}
 % 	\end{table*}
 % 	\normalsize
-	
-	
+
+
 % \end{appendices}
 
 \end{document}
-
