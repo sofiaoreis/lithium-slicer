@@ -659,7 +659,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		\toprule
 		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
 
-		            & \% top-5 & \% top-10  & $\Delta$ & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
+		            & \% $k = 5$ & \% $k = 10$  & $\Delta$ & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
 		\midrule
 		 \lang{}            & 84.1\%  & 84.1\%  &  0\%   & 63 & 100\% & 61 & 96.8\% & 63      \\
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
@@ -669,7 +669,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.1\% & 30 & 79.0\% & 38 \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the buggy-lines is in the SFL and SFL+DS-$k$ report \Sof{@todo: Add absolute numbers for SFL}}
+  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Sof{@todo: Add absolute numbers for SFL}\Rui{explain what $k$ is for SFL alone.}}
   \label{table:fsws}
 \end{table*}
 
@@ -710,7 +710,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{ccc}
 		\toprule
-		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\
+		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
 		\midrule
 		$<0$  & 20.00\% & 17.42\% \\
 		$=0$  & 47.10\% & 37.42\% \\
@@ -718,7 +718,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 
 		\bottomrule
 	\end{tabular}
-	\caption {Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
+	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
 	\label{tab:diagnosis}
 \end{table}
 \normalsize
@@ -746,15 +746,24 @@ Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $1
 		\label{fig:performance}
 \end{figure}
 
-
-
-
-
-
 \subsection{Threats to validity}
+%
+A potential threat to external validity related to the set of programs used in
+our study. When choosing the projects for our study, our aim was to opt for
+projects that resemble a general and large-sized application. To reduce
+selection bias and facilitate the comparison of our results, we decided to
+choose a benchmark that is popular in the community \Rui{cite d4j}.
 
+A potential threat to construct validity relates to the choice of oracle generation
+for the Lithium toolset. However, we argue that our choice is able to capture whether
+a program is failing because of the same reason.
 
+The main threat to internal validity lies in the complexity of several of the tools
+used in our experiments, most notably the Lithium toolset, the SFL diagnosis tool,
+and the implementation of \comb{}.
+%
 \section{Related Work}
+\Rui{needs work...}
 
 \Mar{moved from intro$\rightarrow$} It is worth noting that Automated
 Program Repair techniques should directly benefit from these
@@ -802,6 +811,7 @@ one failing test and reports on output a ranked list of components likely to be
 in fault ~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
 
 \subsection{\comb{}}
+\Rui{\comb{} ??}
 
 Prior work has investigated the combination of dynamic slicing and
 spectrum-based fault
@@ -820,7 +830,7 @@ methodology.
 
 
 %\section*{Acknowledgments}
-%include only after review. 
+%include only after review.
 
 
 {
