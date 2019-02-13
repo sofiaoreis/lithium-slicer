@@ -47,17 +47,18 @@
 Software debugging is difficult. In particular, the task of locating the faulty
 code (\ie{}, fault localization) is particularly challenging. For that reason,
 countless automated techniques have been proposed in the past to reduce the cost
-of fault localization. \Rui{cite my TSE survey paper.}
+of fault localization~\cite{7390282}.
 
 %% Although the technique has been intensively investigated in
 %% research, few use cases gained notoriety---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
 %% exception.
 
-Model-based software diagnosis (MBSD) \Rui{cite de kleer, reiter} and Spectrum-Based Fault Localization
+
+Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and Spectrum-Based Fault Localization
 (\sfl{}) are two very popular techniques that leverage different principles
 to automate fault isolation. An example of a MBSD is Dynamic
 Slicing~\cite{Agrawal:1990:DPS:93542.93576}
-as wel as some work  \Rui{Cite Wolgang Mayer, ASE2008, IJCAI, DX, ... as well as
+as wel as some work~\cite{Perez:2018:LQR:3304889.3304927}\Rui{Cite Wolgang Mayer, ASE2008, IJCAI, DX, ... as well as
 some works of Wotawa}, a technique that traces back statements
 in the code that influence some point of interest, such as the evaluation
 of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
@@ -69,7 +70,7 @@ output of test cases. More precisely, \sfl{} uses coverage information
 of passing and failing test cases to identify likely faulty
 statements and produces on output a list of program entities ranked in
 decreasing order of suspiciousness.
-\ds{} and \sfl{} are complementary debugging techniques \Rui{my SAC 2008, DX}.
+\ds{} and \sfl{} are complementary debugging techniques~\cite{DBLP:conf/sac/AbreuGZG08}.
 Intuitively, \ds{} identifies irrelevant parts of the code whereas \sfl{}
 ranks the relevant parts of the code.
 
@@ -502,7 +503,7 @@ unaffected.
 %
 
 \Mar{I left a bunch o comments to Sofia on hangouts...$\rightarrow$}
-Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code (Algorithm \ref{alg:finc}, line 2). Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
+Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
 
 % \begin{algorithm}[h]
 % 	\caption{Function of interest (iFunc)}
