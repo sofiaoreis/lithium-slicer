@@ -154,11 +154,15 @@ The contributions of this work are as follows \Sof{Finish this}:
 \section{Background}
 \label{sec:background}
 
-This section presents important background material for the rest of the paper.
+This section discusses  important background material for the rest of the paper.
+\Rui{not very happy with this sentence.}
 
 \subsection{Critical Slicing (\cs{})}
 \label{sec:slicing}
 
+\Rui{intro needs to refer to Critical Slicing, somehow..}
+\Rui{Are we the first to use Critical Slicing in combination? Say so, if this
+is the case.}
 Program slicing is a program understanding technique to identify the
 relevant parts of the program with respect to given points of
 interest.  Dynamic
@@ -202,7 +206,7 @@ size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
 iterations. Proofs of the algorithm complexity can be found
 elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (Accessed on \today)}. Our implementation is publicly
-available.
+available at \Rui{site}.
 
 \subsection{Spectrum-based Fault Localization (\sfl)}
 \label{sec:sfl}
@@ -266,10 +270,7 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 %The Ochiai formula is given by~\cite{DBLP:conf/prdc/AbreuZG06}
 %\[ochiai = \frac\]
 
-
-
-
-\section{Approach}
+\section{The \comb{} Approach}
 \label{sec:approach}
 
 This section provides details on our \sfl{}+\ds{} combination approach
@@ -304,7 +305,7 @@ and its heuristics.
 \subsection{The \sfl{}+\cs{} combination}
 \label{sec:comb}
 
-To illustrate the idea behind the \sfl{}+\cs{} combination, consider a
+To illustrate the idea behind the combination of \sfl{} with \cs{}, consider a
 debugging scenario with five components $c_{1..5}$ and five
 transactions $t_{1..5}$, two of which are failing. Consider,
 additionally, that the component $c_2$ is faulty.
