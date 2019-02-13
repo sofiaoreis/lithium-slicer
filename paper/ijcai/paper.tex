@@ -534,8 +534,7 @@ Lithium takes as input a function of interest that can be designed according to 
 \label{sec:eval}
 
 To evaluate our approach, we compare the cost of diagnosing
-a collection of faulty versions using \sfl{}
-against \comb{}.
+a collection of faulty versions using \sfl{} versus \comb{}.
 
 \subsection{Objects of Analysis}\label{sec:analysis}
 
@@ -581,46 +580,35 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 %% \ds{} on \sfl{} after minimizing the $k$ highest faulty source files
 %% which comprise the highest faulty statements.
 
-Recall from Section~\ref{sec:approach} that the \comb{} combination
-takes on input a value denoting the $k$ most suspicious distinct
-files. To evaluate the effectiveness of \comb{}, we compared its
+Recall from Section~\ref{sec:approach} that the \comb{}
+takes as input a value $k$ that denotes the $k$ most suspicious distinct
+classes to be considered. To evaluate the effectiveness of \comb{}, following
+related work, we compared its
 performance with \sfl{} for each defect on each subject program from
-the dataset, for $k\in\{5,10\}$. These files are obtained directly
+the dataset, for $k\in\{5,10\}$. These classes are obtained directly
 from the ranking. We refer to these variations as \combpar{k}. We
 compared \combpar{5} and \combpar{10} against \sfl{} using the
 following metrics.\Mar{Sofia, I don't see a reason for an equation to
   only show the difference of cost. Please describe precisely the
   metrics. In this case, I can't find what C stands for. Also,
  you need to describe precisely what top@n (or someother name) means
- in this context. Check if it makes sense for SFL.$\rightarrow$}
+ in this context. Check if it makes sense for SFL.$\rightarrow$}\Rui{It might
+ be good to keep it just to give it some emphasis... }
 
 
 \begin{equation}
     \Delta{}C = C(\textrm{SFL}) - C(\textrm{\combpar{k}})
 \end{equation}
 
-where C is the cost of diagnosis. \Sof{@todo: Explain this better in section 2 or 3}
-A positive $\Delta$C means that the faulty statement has risen in
-the ranking reported by \sfl{} techniques when \ds{} is used,
-producing a reduced cost of diagnosing.
-
-%% Firstly, we ran the dataset presented in Section~\ref{sec:analysis}
-%% with \sfl{} to gather the coverage statements ordered from the highest
-%% faulty statement to the lowest faulty statement. This list is the
-%% input of the \comb{} technique. For each defect, the list is evaluated
-%% in order to get the top-$k$, for $k\in\{5,10\}$, of suspicious source
-%% files. Then, Lithium minimizes each source file for each testcase of
-%% the defect considering the top-$5$ (\comb{}-$5$) and top-$10$
-%% (\comb{}-$10$) of source files separately. Some defects have more than
-%% one testcase. In the end, we update spectra $S$ based on the output of
-%% the minimization as presented in Figure~\ref{fig:ds-reduction} to
-%% obtain the faulty statements ranking after minimization. All scripts
-%% used to run these experiments and gather data are available at
-%% \url{TBA} and \url{TBA}, respectively.
-
-
-
-%% \Sof{Parei Aqui}
+\noindent
+where $C$ is the cost of diagnosis. \Rui{At this point, you need to explain what
+the cost of diagnosis is: C is the number of statemetns (?) that need to be
+inspected before finding the fault, right? We also need to say that we assume a
+perfect bug understanding: that is, when the developer sees the bug in the
+ranking, he can say that it is the faulty one.}
+A positive $\Delta$C means that the position of the faulty statement has decreased
+in the ranking reported computed by \combpar{k}. Hence, reducing the cost to
+find the bug.
 
 \subsection{Dynamic Slicing}
 
