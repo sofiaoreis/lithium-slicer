@@ -273,36 +273,10 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 \section{The \comb{} Approach}
 \label{sec:approach}
 
-This section provides details on our \sfl{}+\ds{} combination approach
-and its heuristics.
+This section provides details on the proposed approach, \combpar{}, that combines
+\sfl{} with \cs{}; it also discusses the oracle problem.
 
-%% \Mar{Sofia, o pseudocodigo acima assume que ha apenas um teste
-%%   falho. Isto precisa ser ajustado. O lithium-slicer funciona por caso
-%%   de teste ou por suite?  Por favor, ajuste a descricao acima.  Eh um
-%%   loop aninhado ao loop ``for every k'' que o lithium-slicer
-%%   implementa (algo como ``for every k and every failing test'')?  Caso
-%%   vc. faca slice contra um teste particular, vc. garante (checa saida)
-%%   que os demais testes que originalmente falhavam continuam falhando
-%%   pelo mesmo motivo? Enfim, isto eh bem basico e precisa ficar claro
-%%   de inicio.}
-
-%% \Sof{O lithium-slicer funciona por caso de teste. Cada execução da nossa
-%% ferramenta chama o lithium tantas vezes como o número de casos de teste
-%% que falham para cada versão do projecto. Assumindo que o numero de casos de
-%% testes a falhar são 5, numa execução da nossa plataforma o lithium é executado
-%% 5x para os 5 testes diferentes. No fim, pega no resultado do slicing de cada
-%% teste e actualiza a matrix spectra para calcular o ranking. Eu confiro depois de
-%% executar a nossa ferramenta para uma versão do projecto que os
-%% testes que aparecem na pasta da versão do projecto são os mesmos quando corro
-%% o test do defects4j de novo. Uma precaução que tivemos foi ter a certeza que o
-%% oracle que estava a ser usado não sofria com a mudança de máquinas. Portanto,
-%% antes de correr as experiências eu corri o defects4j para obter as mensagens
-%% esperadas de novo para serem usadas como o oracle esperado. Estas são as verificações
-%% que faço. Posso tentar substituir as classes minimizadas nos projectos e ver se
-%% realmente a mensagem de erro continua a ser a mesma - coisa que não fiz. Relativamente,
-%% ao pseudocode eu diria que é for every $k$ and every failing test.}
-
-\subsection{The \sfl{}+\cs{} combination}
+\subsection{Combineing \sfl{} and \cs{}}
 \label{sec:comb}
 
 To illustrate the idea behind the combination of \sfl{} with \cs{}, consider a
@@ -527,8 +501,7 @@ Lithium takes as input a function of interest that can be designed according to 
 \label{sec:eval}
 
 To evaluate our approach, we compare the cost of diagnosing
-a collection of faulty versions using \sfl{}
-against \comb{}.
+a collection of faulty versions using \sfl{} versus \comb{}.
 
 \subsection{Objects of Analysis}\label{sec:analysis}
 
@@ -574,55 +547,46 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 %% \ds{} on \sfl{} after minimizing the $k$ highest faulty source files
 %% which comprise the highest faulty statements.
 
-Recall from Section~\ref{sec:approach} that the \comb{} combination
-takes on input a value denoting the $k$ most suspicious distinct
-files. To evaluate the effectiveness of \comb{}, we compared its
+Recall from Section~\ref{sec:approach} that the \comb{}
+takes as input a value $k$ that denotes the $k$ most suspicious distinct
+classes to be considered. To evaluate the effectiveness of \comb{}, following
+related work, we compared its
 performance with \sfl{} for each defect on each subject program from
-the dataset, for $k\in\{5,10\}$. These files are obtained directly
+the dataset, for $k\in\{5,10\}$. These classes are obtained directly
 from the ranking. We refer to these variations as \combpar{k}. We
 compared \combpar{5} and \combpar{10} against \sfl{} using the
 following metrics.\Mar{Sofia, I don't see a reason for an equation to
   only show the difference of cost. Please describe precisely the
   metrics. In this case, I can't find what C stands for. Also,
  you need to describe precisely what top@n (or someother name) means
- in this context. Check if it makes sense for SFL.$\rightarrow$}
+ in this context. Check if it makes sense for SFL.$\rightarrow$}\Rui{It might
+ be good to keep it just to give it some emphasis... }
 
 
 \begin{equation}
     \Delta{}C = C(\textrm{SFL}) - C(\textrm{\combpar{k}})
 \end{equation}
 
-where C is the cost of diagnosis. \Sof{@todo: Explain this better in section 2 or 3}
-A positive $\Delta$C means that the faulty statement has risen in
-the ranking reported by \sfl{} techniques when \ds{} is used,
-producing a reduced cost of diagnosing.
-
-%% Firstly, we ran the dataset presented in Section~\ref{sec:analysis}
-%% with \sfl{} to gather the coverage statements ordered from the highest
-%% faulty statement to the lowest faulty statement. This list is the
-%% input of the \comb{} technique. For each defect, the list is evaluated
-%% in order to get the top-$k$, for $k\in\{5,10\}$, of suspicious source
-%% files. Then, Lithium minimizes each source file for each testcase of
-%% the defect considering the top-$5$ (\comb{}-$5$) and top-$10$
-%% (\comb{}-$10$) of source files separately. Some defects have more than
-%% one testcase. In the end, we update spectra $S$ based on the output of
-%% the minimization as presented in Figure~\ref{fig:ds-reduction} to
-%% obtain the faulty statements ranking after minimization. All scripts
-%% used to run these experiments and gather data are available at
-%% \url{TBA} and \url{TBA}, respectively.
-
-
-
-%% \Sof{Parei Aqui}
+\noindent
+where $C$ is the cost of diagnosis. \Rui{At this point, you need to explain what
+the cost of diagnosis is: C is the number of statemetns (?) that need to be
+inspected before finding the fault, right? We also need to say that we assume a
+perfect bug understanding: that is, when the developer sees the bug in the
+ranking, he can say that it is the faulty one.}
+A positive $\Delta$C means that the position of the faulty statement has decreased
+in the ranking reported computed by \combpar{k}. Hence, reducing the cost to
+find the bug.
 
 \subsection{Dynamic Slicing}
+\Rui{ehmm.. what is this section all about? }
+
 
 \begin{table}[h]
 	\centering
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{lcc}
 		\toprule
-		Project             &  top-5  & top-10 \\
+		Project             &  \combpar{k}  & \combpar{10} \\
 		\midrule
 
         \lang{}            & 0.77\% & 30.28\%\\
@@ -642,7 +606,7 @@ producing a reduced cost of diagnosing.
 Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects.
 
 
-\subsection{Results}
+\subsection{Results and Discussion}
 
 The following section aims to answer the research questions presented previously.
 
@@ -659,9 +623,9 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	\centering
 	  \begin{tabular}{|l|ccc|cccc|c|}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{\comb{}-$k$} & \multirow{2}{*}{\# Faults} \\
+		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
 
-		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\
+		            & \% $k = 5$ & \% $k = 10$  & $\Delta$ & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
 		\midrule
 		 \lang{}            & 84.1\%  & 84.1\%  &  0\%   & 63 & 100\% & 61 & 96.8\% & 63      \\
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
@@ -671,7 +635,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		 \mockito{}         & 63.2\%  & 71.1\% & 7.9\%   & 27 & 71.1\% & 30 & 79.0\% & 38 \\     %\comments{& 118   &  -}\\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \comb{}-$k$ report \Sof{@todo: Add absolute numbers for SFL}}
+  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Sof{@todo: Add absolute numbers for SFL}\Rui{explain what $k$ is for SFL alone.}}
   \label{table:fsws}
 \end{table*}
 
@@ -696,7 +660,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{ccc}
 		\toprule
-		$\Delta$$C$             &  \comb{}-5  & \comb{}-10 \\
+		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
 		\midrule
 		$<0$  & 20.00\% & 17.42\% \\
 		$=0$  & 47.10\% & 37.42\% \\
@@ -704,7 +668,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 
 		\bottomrule
 	\end{tabular}
-	\caption {Diagnosis Performance for using \comb{}-5 and \comb{}-10 instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
+	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
 	\label{tab:diagnosis}
 \end{table}
 \normalsize
@@ -713,7 +677,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\centering
 	\begin{tabular}{@{}llll@{}}
 \toprule
-  & SFL                    & \comb{}-5                 & \comb{}-10                 \\ \midrule
+  & SFL                    & \combpar{5}                 & \combpar{10}                 \\ \midrule
 Mean & 387.46     & 576.74   & 522.35   \\ \midrule
 Median & 44.50      & 48.25               & 46.00                \\ \midrule
 Variance & 827.80      & 1075.90   & 1275.34    \\ \midrule
@@ -732,15 +696,24 @@ Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $1
 		\label{fig:performance}
 \end{figure}
 
-
-
-
-
-
 \subsection{Threats to validity}
+%
+A potential threat to external validity related to the set of programs used in
+our study. When choosing the projects for our study, our aim was to opt for
+projects that resemble a general and large-sized application. To reduce
+selection bias and facilitate the comparison of our results, we decided to
+choose a benchmark that is popular in the community \Rui{cite d4j}.
 
+A potential threat to construct validity relates to the choice of oracle generation
+for the Lithium toolset. However, we argue that our choice is able to capture whether
+a program is failing because of the same reason.
 
+The main threat to internal validity lies in the complexity of several of the tools
+used in our experiments, most notably the Lithium toolset, the SFL diagnosis tool,
+and the implementation of \comb{}.
+%
 \section{Related Work}
+\Rui{needs work...}
 
 \Mar{moved from intro$\rightarrow$} It is worth noting that Automated
 Program Repair techniques should directly benefit from these
@@ -788,6 +761,7 @@ one failing test and reports on output a ranked list of components likely to be
 in fault ~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
 
 \subsection{\comb{}}
+\Rui{\comb{} ??}
 
 Prior work has investigated the combination of dynamic slicing and
 spectrum-based fault
@@ -805,8 +779,8 @@ methodology.
 
 
 
-\section*{Acknowledgments}
-
+%\section*{Acknowledgments}
+%include only after review.
 
 
 {
