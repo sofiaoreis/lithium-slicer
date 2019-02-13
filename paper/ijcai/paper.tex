@@ -619,7 +619,7 @@ find the bug.
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{lcc}
 		\toprule
-		Project             &  top-5  & top-10 \\
+		Project             &  \combpar{k}  & \combpar{10} \\
 		\midrule
 
         \lang{}            & 0.77\% & 30.28\%\\
@@ -656,9 +656,9 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	\centering
 	  \begin{tabular}{|l|ccc|cccc|c|}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{SFL+DS-$k$} & \multirow{2}{*}{\# Faults} \\
+		\multirow{2}{*}{Project}            & \multicolumn{3}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
 
-		            & \% top-5 & \% top-10  & $\Delta$ & \# top-5 & \% top-5 & \# top-10 & \% top-10 &  \\
+		            & \% top-5 & \% top-10  & $\Delta$ & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
 		\midrule
 		 \lang{}            & 84.1\%  & 84.1\%  &  0\%   & 63 & 100\% & 61 & 96.8\% & 63      \\
 		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
