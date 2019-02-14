@@ -360,9 +360,9 @@ the code for every failing tests. More precisely, the workflow of the
   \item\label{step:susp-files} Select top $k$ most suspicious classes, according to $R$;
   \item\label{step:compute-slice} Compute slicer for every suspicious
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
-    \Rui{union of slices of all points ?}
+  \item\label{step:group} Assemble all the resulting slicers of each failing test; 
   \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
-    the slices obtained in Step~\ref{step:compute-slice} and recompute ranking.
+    the slices of each failing test obtained in Step~\ref{step:group} and recompute ranking.
 \end{enumerate}
 
 Intuitively, slicing enables identification of statements in the spectra
@@ -371,7 +371,7 @@ are irrelevant to determine the test output. Let us now observe the
 effect of this spectra modification on the ranking. Analyzing the
 Ochiai formula, one observes that, for the components $j$ which are
 not part of the slice of a failing test, the combination reduces the
-value of $\N{11}$ and increases the value of $\N{01}$ \Rui{lower case N?}. Therefore,
+value of $\N{11}$ and increases the value of $\N{01}$. Therefore,
 suspiciousness of those components decrease. Similar argument applies
 to other fault predictors. In the running example,
 Figure~\ref{fig:illustration}, components $c_3$ and $c_4$, which are
@@ -471,7 +471,8 @@ unaffected.
 %
 %
 
-\Rui{This is too rought. I would not talk about lithium right away.}
+
+
 Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
 
 % \begin{algorithm}[h]
