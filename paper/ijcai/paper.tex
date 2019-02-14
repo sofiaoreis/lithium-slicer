@@ -278,7 +278,7 @@ This section provides details on the proposed approach, \combpar{}, that combine
 
 \subsection{Combining \sfl{} and \cs{}}
 \label{sec:comb}
-
+\Sof{@todo: define slicer - set of statements}
 To illustrate the idea behind the combination of \sfl{} with \cs{}, consider a
 debugging scenario with five components $c_{1..5}$ and five
 transactions $t_{1..5}$, two of which are failing. Consider,
@@ -471,6 +471,8 @@ unaffected.
 %
 %
 
+The oracle idea is based on the statement deletion mutant operator. This operator was designed based on 
+the idea that each statement has an effect on the test output (i.e., oracle).  
 
 
 Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
@@ -692,7 +694,7 @@ Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $1
 
 \begin{figure}[h]
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
-		\caption{Nemenyi post-hoc analysis results \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{} }}
+		\caption{Nemenyi post-hoc analysis results \Sof{@tofix: Need to center ylabels}}
 		\label{fig:performance}
 \end{figure}
 
