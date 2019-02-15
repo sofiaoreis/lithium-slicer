@@ -471,6 +471,8 @@ unaffected.
 %
 %
 
+
+
 The oracle idea is based on the statement deletion mutant operator. This operator was designed based on 
 the idea that each statement has an effect on the test output (i.e., oracle).  
 
@@ -591,12 +593,12 @@ de \dfj{} projects.
 		Project             &  \combpar{5}  & \combpar{10} \\
 		\midrule
 
-        \lang{}            & 0.77\% & 30.28\%\\
-        \cmath{}           &  & \\
+        \lang{}            & 1.42\% & 30.47\%\\
+        \cmath{}           & 9.88\% & 11.43\%\\
         \closure{}          &  & \\
 		\chart{}			& 59.30\% & 53.64\% \\
-        \jtime{}            & 17.27\% & 32.92\%\\
-        \mockito{}          & 16.99\% & 21.67\%\\
+        \jtime{}            & 17.27\% & 32.02\%\\
+        \mockito{}          & 16.54\% & 21.67\%\\
 
 		\bottomrule
 	\end{tabular}
@@ -664,13 +666,13 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 		\toprule
 		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
 		\midrule
-		$<0$  & 20.00\% & 17.42\% \\
-		$=0$  & 47.10\% & 37.42\% \\
-		$>0$  & 32.90\% & 45.16\% \\
+		$<0$  & 19.53\% & 16.02\% \\
+		$=0$  & 46.88\% & 41.80\% \\
+		$>0$  & 33.59\% & 42.19\% \\
 
 		\bottomrule
 	\end{tabular}
-	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{} \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{}}}
+	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
 	\label{tab:diagnosis}
 \end{table}
 \normalsize
@@ -680,11 +682,11 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\begin{tabular}{@{}llll@{}}
 \toprule
   & SFL                    & \combpar{5}                 & \combpar{10}                 \\ \midrule
-Mean & 387.46     & 576.74   & 522.35   \\ \midrule
-Median & 44.50      & 48.25               & 46.00                \\ \midrule
-Variance & 827.80      & 1075.90   & 1275.34    \\ \midrule
-Shapiro-Wilk & \makecell{W = 0.51 \\ p-value = 9.65 x $10^{-21}$} & \makecell{W = 0.59 \\ p-value = 5.29 x $10^{-19}$} & \makecell{W = 0.56 \\ p-value = 8.95 x $10^{-20}$}  \\ \midrule
-Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 16.87 \\ p-value = 2.2 x $10^{-4}$}} \\
+Mean & 522.47     & 684.89   & 611.04   \\ \midrule
+Median & 50.375      & 66.25               & 54.3                \\ \midrule
+Variance & 1191.12      & 1361.83   & 1301.78    \\ \midrule
+Shapiro-Wilk & \makecell{W = 0.48 \\ p-value = 1.10 x $10^{-26}$} & \makecell{W = 0.55 \\ p-value = 4.31 x $10^{-25}$} & \makecell{W = 0.52 \\ p-value = 6.23 x $10^{-26}$}  \\ \midrule
+Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 28.97 \\ p-value = 5.13 x $10^{-7}$}} \\
 \bottomrule
 \end{tabular}
   \caption {Statistical tests \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{} }}
