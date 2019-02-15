@@ -595,7 +595,7 @@ de \dfj{} projects.
 
         \lang{}            & 1.42\% & 30.47\%\\
         \cmath{}           & 9.88\% & 11.43\%\\
-        \closure{}          &  & \\
+        %\closure{}          &  & \\
 		\chart{}			& 59.30\% & 53.64\% \\
         \jtime{}            & 17.27\% & 32.02\%\\
         \mockito{}          & 16.54\% & 21.67\%\\
@@ -625,21 +625,27 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 
 \begin{table*}[h]
 	\centering
-	  \begin{tabular}{l|cc|cccc|c}
+	  \begin{tabular}{l|cccc|cccc|c}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{2}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
+		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
 
-		            & \% $k = 5$ & \% $k = 10$  & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
+		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$  
+					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
 		\midrule
-		 \lang{}            & 84.1\%  & 84.1\%    & 63 & 100\% & 61 & 96.8\% & 63      \\
-		% \cmath{}           & 82.08 \%  & 85.85 \% & 3.77 \%     \\   %\comments{& 177   &  -}\\
+		 \lang{}         &  54 & 84.4\%  & 54  & 84.4\% 
+		 				& 64 & 100\% & 62 & 96.9\% & 64      \\
+		\cmath{}           & 82 & 81.2\%  & 86 & 85.1\% 
+						& 90 & 89.1\% & 97 & 96.0\% & 101  \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}           & 84.6\%  & 92.3\% & 20 & 76.9\% & 22 & 84.6\% & 26    \\  %\comments{& 92    &  -}\\
-		\jtime{}           & 77.8 \%  & 100.0 \% & 22 & 81.5\% & 23 & 85.2\% & 27     \\   %\comments{& 76    &  -}\\
-		 \mockito{}         & 63.2\%  & 71.1\% & 27 & 71.1\% & 30 & 79.0\% & 38 \\     %\comments{& 118   &  -}\\
+		\chart{}          & 22 & 84.6\% & 24 & 92.3\% 
+						& 20 & 76.9\% & 22 & 84.6\% & 26    \\  	
+		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \% 
+				& 22 & 81.5\% & 23 & 85.2\% & 27     \\  
+		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\% 
+		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\     
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Sof{@todo: Add absolute numbers for SFL}\Rui{explain what $k$ is for SFL alone.}}
+  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Rui{explain what $k$ is for SFL alone.}}
   \label{table:fsws}
 \end{table*}
 
@@ -689,7 +695,7 @@ Shapiro-Wilk & \makecell{W = 0.48 \\ p-value = 1.10 x $10^{-26}$} & \makecell{W 
 Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 28.97 \\ p-value = 5.13 x $10^{-7}$}} \\
 \bottomrule
 \end{tabular}
-  \caption {Statistical tests \Sof{Considering \chart{}, \jtime{}, \mockito{}, \lang{} }}
+  \caption {Statistical tests}
   \label{table:st}
 \end{table*}
 
