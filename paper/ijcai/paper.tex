@@ -667,25 +667,31 @@ Table \ref{tab:diagnosis} reports the performance of the diagnosis using \comb{}
 Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk ~\cite{10.2307/2333709} tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for the three techniques under evaluation (\sfl{}, \comb{}-5, \comb{}-10). With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman ~\cite{10.2307/2279372}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis \Fix{cite}. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
 
 
-\begin{table}[h]
-	\centering
-	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{ccc}
-		\toprule
-		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
-		\midrule
-		$<0$  & 19.53\% & 16.02\% \\
-		$=0$  & 46.88\% & 41.80\% \\
-		$>0$  & 33.59\% & 42.19\% \\
+% \begin{table}[h]
+% 	\centering
+% 	\setlength{\tabcolsep}{4pt}
+% 	\begin{tabular}{ccc}
+% 		\toprule
+% 		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
+% 		\midrule
+% 		$<0$  & 19.53\% & 16.02\% \\
+% 		$=0$  & 46.88\% & 41.80\% \\
+% 		$>0$  & 33.59\% & 42.19\% \\
+%
+% 		\bottomrule
+% 	\end{tabular}
+% 	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
+% 	\label{tab:diagnosis}
+% \end{table}
 
-		\bottomrule
-	\end{tabular}
-	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
-	\label{tab:diagnosis}
-\end{table}
-\normalsize
+\begin{figure}[h]
+		\includegraphics[width=0.45\textwidth]{figures/performance.pdf}
+		\caption{Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
+		\label{fig:diagnosis}
+\end{figure}
 
 \begin{table*}[h]
+	\small
 	\centering
 	\begin{tabular}{@{}llll@{}}
 \toprule
