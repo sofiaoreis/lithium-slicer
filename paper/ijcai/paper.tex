@@ -35,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-  Software debugging is difficult. One of its main challenges is the improvement of Spectrum-based Fault Localization (SBFL) scores accuracy. We suspect that several highly ranked statements - covered by failing executions - may be unrelated to the fault. This paper reports the results of a comprehensive study perfomed to reassess the impact of combining Dynamic Slicing with SBFL to improve Software Fault Localization, a technique we coin as Tandem-FL. We leverage the Mozzila's Lithium Slicer engine to minimize the top-5 and top-10 classes that comprise the highest scored faulty statements of the Defects4j failing tests. The SFL score is computed before and after applying DS to calculate the impact of Tandem-FL.
+  Software debugging is difficult. One of its main challenges is the improvement of Spectrum-based Fault Localization (SBFL) scores accuracy. We suspect that several highly ranked statements - covered by failing executions - may be unrelated to the fault. This paper reports the results of a comprehensive study perfomed to reassess the impact of combining Dynamic Slicing with SBFL to improve Software Fault Localization, a technique we coin as Tandem-FL. We leverage the Mozilla's Lithium engine to minimize the top-5 and top-10 classes that comprise the highest scored faulty statements of the Defects4j failing tests. The SFL score is computed before and after applying DS to calculate the impact of Tandem-FL.
   Our results show that adding DS to SFL improves its diagnosis accuracy. 
 \end{abstract}
 
@@ -379,7 +379,7 @@ not in the slice of $t_2$, have their suspiciousness reduced, enabling
 the faulty component $c_2$ to rise from the third to the first
 position in the ranking.
 
-\begin{theorem}
+\begin{theorem}\label{the:1}
   The faulty statement may not be included in the critical slice of
   failing test cases.
 \end{theorem}
@@ -471,34 +471,37 @@ unaffected.
 %
 %
 
+The \cs{} technique is somewhat based on the \textit{statement deletion} mutant
+operator (SSDL) of the mutation-based testing methodology. This operator 
+was designed based on the idea that each statement has an effect on the program
+output (i.e., oracle). Thus, testers are encouraged to design test sets that cause
+all statements to be executed and generate outputs that are different from the
+program under test.
+
+Mozilla's Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. Our function simply compares the failing test output with the output obtained when re-running again the failing test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus, if the
+initial test output is the same as the one after removing the slice \{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not necessary to reveal the fault because if removed the test output is still the same.
+The output is extracted from the stacktrace obtained through the failing test execution. The stacktrace provides information not only about the place where the fault was revelead but also the path taken to get there. Thus, our approach considers not only the exception caught by the failling test but also the path that was taken to reveal the fault. An example is provided in the following Box:
+
+\vspace{3mm}
+\begin{myframe} \label{box:1}
+junit.framework.AssertionFailedError, \\
+at junit.framework.Assert.fail(Assert.java:55), \\
+at junit.framework.Assert.assertTrue(Assert.java:22), \\
+at junit.framework.Assert.assertFalse(Assert.java:39), \\ 
+at junit.framework.Assert.assertFalse(Assert.java:47), \\
+at junit.framework.TestCase.assertFalse(TestCase.java:219), \\ 
+at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeUtilitiesTests.java:212), \\
+...
+\end{myframe}
+
+Considering some of the stacktrace information about the path taken to reveal the fault solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from one execution to another. For example, exceptions including information of memory addresses. In this cases, it was developed a mechanism to compare the rest of the output ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
 
 
-\Sof{Not finished yet}The oracle idea is based on the statement deletion mutant operator. This operator was designed based on 
-the idea that each statement has an effect on the test output (i.e., oracle).  
+               
 
-
-Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. In this study, interesting means that the test execution path is equal to the expected one. This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
-
-% \begin{algorithm}[h]
-% 	\caption{Function of interest (iFunc)}
-% 	\label{alg:finc}
-% 	\begin{flushleft}
-% 		\textbf{Input:} $c$ - class to be minimized\\
-% 		\hspace{2.75em} $t$ - testcase name\\
-% 		\hspace{2.75em} $expStk$ -  expected stacktrace\\
-% 		\textbf{Output:} $interest$ - $True$ if it is interesting, $False$ if not \\
-% 	\end{flushleft}
-% 	\begin{algorithmic}[1]
-% 		\Function{iFunc}{$c$, $t$, $expStk$}
-% 		\State $testStk \leftarrow$ runTest($t$)
-% 		\State $testOracle \leftarrow$ getOracleToCompare($testStk$)
-% 		\State $expOracle \leftarrow$ getOracleToCompare($expStk$)
-% 		\State \Return $testOracle$ == $expOracle$
-% 		\EndFunction
 %
-% 	\end{algorithmic}
-%
-% \end{algorithm}
+% This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
+
 
 \section{Evaluation}
 \label{sec:eval}
