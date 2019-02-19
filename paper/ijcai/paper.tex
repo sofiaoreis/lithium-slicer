@@ -35,8 +35,7 @@
 \maketitle
 
 \begin{abstract}
-  Software debugging is difficult. One of its main challenges is the improvement of Spectrum-based Fault Localization (SBFL) scores accuracy. We suspect that several highly ranked statements - covered by failing executions - may be unrelated to the fault. This paper reports the results of a comprehensive study perfomed to reassess the impact of combining Dynamic Slicing with SBFL to improve Software Fault Localization, a technique we coin as Tandem-FL. We leverage the Mozilla's Lithium engine to minimize the top-5 and top-10 classes that comprise the highest scored faulty statements of the Defects4j failing tests. The SFL score is computed before and after applying DS to calculate the impact of Tandem-FL.
-  Our results show that adding DS to SFL improves its diagnosis accuracy. 
+Software debugging is difficult. Several approaches have been proposed to the improvement of Spectrum-based Fault Localization (SBFL) scores accuracy. This paper reports the outcome of a study performed to reassess the impact of combining Dynamic Slicing (DS) with SBFL to improve Software Fault Localization, a technique we coin as Tandem-FL. We suspect that several highly ranked statements - covered by failing executions - may be unrelated to the fault. Thus, we use Mozilla's Lithium engine to minimize the failing tests source files that comprise the highest scored faulty statements from the Defects4j dataset. The impact of Tandem-FL is evaluated through computing the SFL score of each fault before and after minimization. This study also reflects on the DS limitation of missing faulty statements. Our results show that adding DS to SFL improves the SFL diagnosis accuracy.\Sof{add numbers tomorrow morning after closing results}
 \end{abstract}
 
 
@@ -56,9 +55,8 @@ Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and Spec
 (\sfl{}) are two very popular techniques that leverage different principles
 to automate fault isolation. An example of a MBSD is Dynamic
 Slicing~\cite{Agrawal:1990:DPS:93542.93576}
-as wel as some work~\cite{Perez:2018:LQR:3304889.3304927}\Rui{Cite Wolgang Mayer, ASE2008, IJCAI, DX, ... as well as
-some works of Wotawa}, a technique that traces back statements
-in the code that influence some point of interest, such as the evaluation
+as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927}, 
+a technique that traces back statements in the code that influence some point of interest, such as the evaluation
 of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
 does not analyze code. Instead, it is a black-box, statistical fault
 localization method that computes suspiciousness values associated
@@ -153,12 +151,9 @@ The contributions of this work are the following ones:
 
 This section summarizes the ground concepts of our approach.
 
-\subsection{Critical Slicing (\cs{})}
+\subsection{Dynamic Slicing (\ds{})}
 \label{sec:slicing}
 
-\Rui{intro needs to refer to Critical Slicing, somehow..}
-\Rui{Are we the first to use Critical Slicing in combination? Say so, if this
-is the case.}
 Program slicing is a program understanding technique to identify the
 relevant parts of the program with respect to given points of
 interest.  Dynamic
@@ -272,12 +267,12 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 \label{sec:approach}
 
 This section provides details on the proposed approach, \combpar{}, that combines
-\sfl{} with \cs{}; it also discusses the oracle problem.
+\sfl{} with \ds{}; it also discusses the oracle problem.
 
-\subsection{Combining \sfl{} and \cs{}}
+\subsection{Combining \sfl{} and \ds{}}
 \label{sec:comb}
 
-To illustrate the idea behind the combination of \sfl{} with \cs{}, consider a
+To illustrate the idea behind the combination of \sfl{} with \ds{}, consider a
 debugging scenario with five components $c_{1..5}$ and five
 transactions $t_{1..5}$, two of which are failing. Consider,
 additionally, that the component $c_2$ is faulty.
@@ -480,7 +475,7 @@ program under test.
 
 Mozilla's Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. Our function simply compares the failing test output with the output obtained when re-running again the failing test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus, if the
 initial test output is the same as the one after removing the slice \{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not necessary to reveal the fault because if removed the test output is still the same.
-The output is extracted from the stacktrace obtained through the failing test execution. The stacktrace provides information not only about the place where the fault was revelead but also the path taken to get there. Thus, our approach considers not only the exception caught by the failling test but also the path that was taken to reveal the fault. An example is provided in the following Box:
+The output is extracted from the stacktrace obtained through the failing test execution. The stacktrace provides information not only about the place where the fault was revelead but also the path taken to get there. Thus, our approach considers not only the exception caught by the failing test but also the path that was taken to reveal the fault. The following provides an example:
 
 \vspace{3mm}
 \begin{myframe} \label{box:1}
@@ -494,7 +489,7 @@ at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeU
 ...
 \end{myframe}
 
-Considering some of the stacktrace information about the path taken to reveal the fault solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from one execution to another. For example, exceptions including information of memory addresses. In this cases, it was developed a mechanism to compare the rest of the output ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
+Considering some of the stacktrace information about the path taken to reveal the fault solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from one execution to another. For example, exceptions including information of memory addresses. For these cases, it was developed a mechanism to compare the rest of the output ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
 
 
                
