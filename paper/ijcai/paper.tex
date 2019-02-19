@@ -46,7 +46,7 @@ executions---may be unrelated to the bug. With the aforementioned combination,
 such components could be identified and their suspiciousness reduced.  This
 study also discusses the impact of the dynamic slicing key limitation---the risk
 of missing faulty statements. Our results show that, in practice, \ds{} rarely
-misses faulty statements (\Fix{X} misses in \Fix{Y} cases) and that the
+misses faulty statements (22 misses in 256 cases) and that the
 \ds{}-\sfl{} combination, coined as Tandem-SL, improves the diagnostic accuracy
 in \Rui{x\% on average}. To sum, we found that, despite tacit opinions of the
 research community about the usefulness of \ds{} in automated debugging, we
@@ -70,11 +70,10 @@ of fault localization~\cite{7390282}.
 Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and Spectrum-Based Fault Localization
 (\sfl{}) are two very popular techniques that leverage different principles
 to automate fault isolation. An example of a MBSD is Dynamic
-Slicing~\cite{Agrawal:1990:DPS:93542.93576}
+Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576}
 as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927},
 a technique that traces back statements in the code that influence some point of interest, such as the evaluation
-of a failing assertion. In contrast to \ds{} \Rui{DS, not introduced at this point
-in the intro}, \sfl{}~\cite{7390282}
+of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
 does not analyze code. Instead, it is a black-box, statistical fault
 localization method that computes suspiciousness values associated
 with program entities (e.g., methods) based on coverage information gathered
@@ -194,8 +193,7 @@ original program and checking if the output of the original and
 modified program are the same.
 
 Our implementation of Critical Slicing is based on the Mozilla Lithium
-tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} (Accessed on \today)}. Lithium implements the DD-min Delta Debugging
-algorithm~\cite{zeller-hildebrandt-tse2002}. It takes as input a file
+tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} (Accessed on \today)}. It takes as input a file
 and produces as output a simplified version of that file that
 satisfies a user-defined oracle. In our case, the oracle is defined
 such that the test produces the same failure manifestation as the one
@@ -659,7 +657,9 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \%
 				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
 		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
-		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\
+		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
+	 Total      & 203  &  & 213 & 
+	 				& 223 &  & 234 &  & 256 \\
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Rui{explain what $k$ is for SFL alone.}}
