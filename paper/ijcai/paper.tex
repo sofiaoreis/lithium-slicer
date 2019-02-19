@@ -116,14 +116,15 @@ ranks the relevant parts of the code.
 %% metric reports the percentage of faults captured by a technique when
 %% the rank is trimmed to the first $k$ components.
 
-This paper reports the results of a comprehensive study evaluating the impact of
-combining \ds{} and \sfl{} to improve software fault localization, a technique
-we coin as \comb{}. The intuition for the combination is that several highly
-ranked statements, albeit covered by failing executions, may be unrelated to the
-fault. Our empirical study involves \numFaults{} faults from \numPrograms{}
-different programs comprised in the Defects4J (D4J)
-dataset~\cite{just-defects4j-issta2014}, which is frequently used to evaluate
-fault localization research. Prior work reported promising results in this
+This paper reports the results of a a study using real-world applications to
+evaluate the impact of combining \ds{} and \sfl{} to improve software fault
+localization. We coin the toolset materializing this approach as \comb{}.  The
+intuition for the combination is that several highly ranked statements, albeit
+covered by failing executions, may be unrelated to the fault. Our empirical
+study involves \numFaults{} faults from \numPrograms{} different programs
+comprised in the Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which
+is frequently used to evaluate fault localization research. Prior work reported
+promising results in this
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair},
 but they used a non-representative set of subjects in their evaluation or used
 archaic methods to evaluate technique
@@ -160,6 +161,9 @@ The contributions of this work are the following ones:
      for bug localization of \emph{Java} faulty programs.
    \item A tool that implements \comb{}.
 \end{itemize}
+
+The tool as well as a replication package will be available once double-blind
+requirements are lifted. 
 
 \section{Background}
 \label{sec:background}
@@ -658,7 +662,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
 		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
 		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
-	 Total      & 203  &  & 213 & 
+	 Total      & 203  &  & 213 &
 	 				& 223 &  & 234 &  & 256 \\
 		\bottomrule
 	\end{tabular}
