@@ -35,14 +35,14 @@
 \maketitle
 
 \begin{abstract}
-Several approaches have been proposed to improve automated softaware fault
+Several approaches have been proposed to improve automated software fault
 diagnosis, aiming to reduce the effort and costs spent in debugging. This
 paper reports the outcome of a study
-performed to reassess\Rui{dismistify? We need to say something on why we
+performed to dismistify\Rui{We need to say something on why we
 decided to mistify this combination...} the impact of combining Dynamic Slicing (DS) with
 spectrum-based fault localization (SFL), a technique we coin as Tandem-FL. We
-suspect that several highly suspiscious components \Rui{I am using components to be
-more generic} --- often involved in failing, but seldom in passed executions ---
+suspect that several highly suspiscious components --- often involved in failing, 
+but seldom in passed executions ---
 may be unrelated to the bug. Thus, we use Mozilla's Lithium engine to minimize
 the failing tests source files that comprise the highest scored faulty
 statements from the Defects4j dataset\Rui{not clear why this is in here for
@@ -52,8 +52,8 @@ of each fault before and after minimization\Rui{minimization: unknown to the
 reader... He thinks that the study is on slicing}.
 This study also discusses on limitations of dynamic slicing, such as the potential
 of missing faulty statements. Our
-results show that adding combining SFL with dynamic slicing improves the diagnostic
-accuracy in \Rui{x\% on average}, hence leading to the root cause of oberved failures faster.
+results show that combining SFL with dynamic slicing improves the diagnostic
+accuracy in \Rui{x\% on average}, hence leading to the root cause of observed failures faster.
 \end{abstract}
 
 
