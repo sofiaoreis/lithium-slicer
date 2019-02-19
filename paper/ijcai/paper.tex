@@ -36,20 +36,14 @@
 
 \begin{abstract}
 Several approaches have been proposed to improve automated software fault
-diagnosis, aiming to reduce the effort and costs spent in debugging. This
-paper reports the outcome of a study
-performed to dismistify\Rui{We need to say something on why we
-decided to mistify this combination...} the impact of combining Dynamic Slicing (DS) with
-spectrum-based fault localization (SFL), a technique we coin as Tandem-FL. We
-suspect that several highly suspiscious components --- often involved in failing, 
+diagnosis, aiming to reduce the effort and costs spent in debugging. 
+Dynamic Slicing (\ds{}) and Spectrum-based Fault Localization (\sfl{}) are very popular techniques and normally seen as complementary. However, this combination has not been entirely explored yet.
+Thus, this paper reports the outcome of an empirical study
+performed to demystify the impact of combining \ds{} with \sfl{}, a technique we coin as Tandem-FL. 
+We
+suspect that several highly suspicious components --- often involved in failing, 
 but seldom in passed executions ---
-may be unrelated to the bug. Thus, we use Mozilla's Lithium engine to minimize
-the failing tests source files that comprise the highest scored faulty
-statements from the Defects4j dataset\Rui{not clear why this is in here for
-the reader: Mozilla, minimizing test cases, ... }. The impact of Tandem-FL is evaluated
-through computing the SFL score \Rui{SFL score: a reader does not know what that is}
-of each fault before and after minimization\Rui{minimization: unknown to the
-reader... He thinks that the study is on slicing}.
+may be unrelated to the bug. 
 This study also discusses on limitations of dynamic slicing, such as the potential
 of missing faulty statements. Our
 results show that combining SFL with dynamic slicing improves the diagnostic
@@ -543,17 +537,18 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
       \toprule
-      Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
+      Project            & Size (LOC)$^{*}$ & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
       \midrule
-      \lang{}            & 111,751  & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
-      \cmath{}           & 306,276  & 26,797 & 106     \\   %\comments{& 177   &  -}\\
-      \closure{}         & 149,521  & 27,930  & 133     \\   %\comments{& 350   &  -}\\
-      \chart{}           & 230,159  & 8,458 & 26      \\  %\comments{& 92    &  -}\\
-      \jtime{}           & 141,610  & 3,289 & 27       \\   %\comments{& 76    &  -}\\
-      \mockito{}         & 22,787  & 8,835 & 38    \\     %\comments{& 118   &  -}\\
+      \lang{}            &   & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
+      \cmath{}           &   & 26,797 & 106     \\   %\comments{& 177   &  -}\\
+      \closure{}         &   & 27,930  & 133     \\   %\comments{& 350   &  -}\\
+      \chart{}           &   & 8,458 & 26      \\  %\comments{& 92    &  -}\\
+      \jtime{}           &   & 3,289 & 27       \\   %\comments{& 76    &  -}\\
+      \mockito{}         &   & 8,835 & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
 \caption {Characterization of \dfj{} subjects.\Sof{Use SLOCCount to count size}}
+
 \label{tab:df4j}
 \end{table}
 \normalsize
