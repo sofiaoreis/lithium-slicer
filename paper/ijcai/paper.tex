@@ -35,7 +35,25 @@
 \maketitle
 
 \begin{abstract}
-Software debugging is difficult. Several approaches have been proposed to the improvement of Spectrum-based Fault Localization (SBFL) scores accuracy. This paper reports the outcome of a study performed to reassess the impact of combining Dynamic Slicing (DS) with SBFL to improve Software Fault Localization, a technique we coin as Tandem-FL. We suspect that several highly ranked statements - covered by failing executions - may be unrelated to the fault. Thus, we use Mozilla's Lithium engine to minimize the failing tests source files that comprise the highest scored faulty statements from the Defects4j dataset. The impact of Tandem-FL is evaluated through computing the SFL score of each fault before and after minimization. This study also reflects on the DS limitation of missing faulty statements. Our results show that adding DS to SFL improves the SFL diagnosis accuracy.\Sof{add numbers tomorrow morning after closing results}
+Several approaches have been proposed to improve automated softaware fault
+diagnosis, aiming to reduce the effort and costs spent in debugging. This
+paper reports the outcome of a study
+performed to reassess\Rui{dismistify? We need to say something on why we
+decided to mistify this combination...} the impact of combining Dynamic Slicing (DS) with
+spectrum-based fault localization (SFL), a technique we coin as Tandem-FL. We
+suspect that several highly suspiscious components \Rui{I am using components to be
+more generic} --- often involved in failing, but seldom in passed executions ---
+may be unrelated to the bug. Thus, we use Mozilla's Lithium engine to minimize
+the failing tests source files that comprise the highest scored faulty
+statements from the Defects4j dataset\Rui{not clear why this is in here for
+the reader: Mozilla, minimizing test cases, ... }. The impact of Tandem-FL is evaluated
+through computing the SFL score \Rui{SFL score: a reader does not know what that is}
+of each fault before and after minimization\Rui{minimization: unknown to the
+reader... He thinks that the study is on slicing}.
+This study also discusses on limitations of dynamic slicing, such as the potential
+of missing faulty statements. Our
+results show that adding combining SFL with dynamic slicing improves the diagnostic
+accuracy in \Rui{x\% on average}, hence leading to the root cause of oberved failures faster.
 \end{abstract}
 
 
@@ -55,7 +73,7 @@ Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and Spec
 (\sfl{}) are two very popular techniques that leverage different principles
 to automate fault isolation. An example of a MBSD is Dynamic
 Slicing~\cite{Agrawal:1990:DPS:93542.93576}
-as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927}, 
+as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927},
 a technique that traces back statements in the code that influence some point of interest, such as the evaluation
 of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
 does not analyze code. Instead, it is a black-box, statistical fault
@@ -100,18 +118,17 @@ ranks the relevant parts of the code.
 %% metric reports the percentage of faults captured by a technique when
 %% the rank is trimmed to the first $k$ components.
 
-This paper reports the results of a comprehensive study evaluating the
-impact of combining \ds{} and \sfl{} to improve software fault
-localization, a technique we coin as \comb{}. The intuition for the combination is that
-several highly ranked statements, albeit covered by failing
-executions, may be unrelated to the fault. Our empirical study involves
-\numFaults{} faults from \numPrograms{} different programs comprised
-in the Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which
-is frequently used to evaluate fault localization research. Prior work
-reported promising results in this
+This paper reports the results of a comprehensive study evaluating the impact of
+combining \ds{} and \sfl{} to improve software fault localization, a technique
+we coin as \comb{}. The intuition for the combination is that several highly
+ranked statements, albeit covered by failing executions, may be unrelated to the
+fault. Our empirical study involves \numFaults{} faults from \numPrograms{}
+different programs comprised in the Defects4J (D4J)
+dataset~\cite{just-defects4j-issta2014}, which is frequently used to evaluate
+fault localization research. Prior work reported promising results in this
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair},
-but they used a non-representative set of subjects in their evaluation
-or used archaic methods to evaluate technique
+but they used a non-representative set of subjects in their evaluation or used
+archaic methods to evaluate technique
 improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
 
 The goal of this paper is to reassess whether the \comb{} approach
@@ -136,7 +153,7 @@ paper, we used Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310},
 which, in principle, could miss statements because of imprecise
 oracles that guide the slicing process. We evaluated how often that
 issue manifests in our experiments. The second research questions
-effectively evaluates the impact of the combination. To sum, our
+effectively evaluates the impact of the combination. Our
 results show that \Sof{@todo: sum up the results}.
 
 The contributions of this work are the following ones:
@@ -336,8 +353,8 @@ Ochiai score (in parentheses).
 
 In the following, we illustrate the workflow of the \comb{}
 approach for this scenario. \comb{} uses a granularity of statements.
-First, the combined technique picks statements $c_4$ and $c_3$, which 
-appear at the top of the ranking, for further analysis. 
+First, the combined technique picks statements $c_4$ and $c_3$, which
+appear at the top of the ranking, for further analysis.
 (The cutoff point is user-defined.) Second, the
 technique picks a failing test $t_2$ to slice the code. A slice is a
 set of statements. Let us assume
@@ -347,7 +364,7 @@ ranking are updated. The right-side of Figure~\ref{fig:illustration}
 shows the modified spectra and ranking after slicing test $t_2$
 against $c_4$ and $c_3$. It is worth noting that the technique slices
 the code for every failing tests. More precisely, the workflow of the
-\comb{} approach consists of four steps: 
+\comb{} approach consists of four steps:
 \begin{enumerate}
   \itemsep0em
   \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for
@@ -355,7 +372,7 @@ the code for every failing tests. More precisely, the workflow of the
   \item\label{step:susp-files} Select top $k$ most suspicious classes, according to $R$;
   \item\label{step:compute-slice} Compute slicer for every suspicious
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
-  \item\label{step:group} Assemble all the resulting slicers of each failing test; 
+  \item\label{step:group} Assemble all the resulting slicers of each failing test;
   \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
     the slices of each failing test obtained in Step~\ref{step:group} and recompute ranking.
 \end{enumerate}
@@ -467,7 +484,7 @@ unaffected.
 %
 
 The \cs{} technique is somewhat based on the \textit{statement deletion} mutant
-operator (SSDL) of the mutation-based testing methodology. This operator 
+operator (SSDL) of the mutation-based testing methodology. This operator
 was designed based on the idea that each statement has an effect on the program
 output (i.e., oracle). Thus, testers are encouraged to design test sets that cause
 all statements to be executed and generate outputs that are different from the
@@ -482,9 +499,9 @@ The output is extracted from the stacktrace obtained through the failing test ex
 junit.framework.AssertionFailedError, \\
 at junit.framework.Assert.fail(Assert.java:55), \\
 at junit.framework.Assert.assertTrue(Assert.java:22), \\
-at junit.framework.Assert.assertFalse(Assert.java:39), \\ 
+at junit.framework.Assert.assertFalse(Assert.java:39), \\
 at junit.framework.Assert.assertFalse(Assert.java:47), \\
-at junit.framework.TestCase.assertFalse(TestCase.java:219), \\ 
+at junit.framework.TestCase.assertFalse(TestCase.java:219), \\
 at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeUtilitiesTests.java:212), \\
 ...
 \end{myframe}
@@ -492,7 +509,7 @@ at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeU
 Considering some of the stacktrace information about the path taken to reveal the fault solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from one execution to another. For example, exceptions including information of memory addresses. For these cases, it was developed a mechanism to compare the rest of the output ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
 
 
-               
+
 
 %
 % This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
@@ -629,20 +646,20 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		\toprule
 		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
 
-		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$  
+		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
 					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
 		\midrule
-		 \lang{}         &  54 & 84.4\%  & 54  & 84.4\% 
+		 \lang{}         &  54 & 84.4\%  & 54  & 84.4\%
 		 				& 64 & 100\% & 62 & 96.9\% & 64      \\
-		\cmath{}           & 82 & 81.2\%  & 86 & 85.1\% 
+		\cmath{}           & 82 & 81.2\%  & 86 & 85.1\%
 						& 90 & 89.1\% & 97 & 96.0\% & 101  \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}          & 22 & 84.6\% & 24 & 92.3\% 
-						& 20 & 76.9\% & 22 & 84.6\% & 26    \\  	
-		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \% 
-				& 22 & 81.5\% & 23 & 85.2\% & 27     \\  
-		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\% 
-		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\     
+		\chart{}          & 22 & 84.6\% & 24 & 92.3\%
+						& 20 & 76.9\% & 22 & 84.6\% & 26    \\
+		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \%
+				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
+		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
+		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Rui{explain what $k$ is for SFL alone.}}
