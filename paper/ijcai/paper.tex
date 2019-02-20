@@ -613,9 +613,11 @@ following metric:
 
 \noindent
 where $C$ is the cost of diagnosis. $C$ is the mean ranking of all buggy statements.
-A positive $\Delta$C means that the position of the faulty statement has decreased
+$\Delta C >0$ means that the position of the faulty statement has decreased
 in the ranking after applying the \combpar{k} approach. Hence, reducing the cost of
-locating the bug. We also assume a perfect bug understanding, i.e., if the developer
+locating the bug. $\Delta C <0$ means that the 
+faulty statement may be removed by \combpar{k}. $\Delta C=0$ means that the faulty statement 
+remained in the same position.  We also assume a perfect bug understanding, i.e., if the developer
 sees the bug in the ranking, he can say it is the faulty one. 
 
 \subsection{Dynamic Slicing}\label{sec:ds}
@@ -656,7 +658,7 @@ subjects. We are still running experiments for the \closure{} and \cmath{} proje
 $33$ of the $260$ faults do not include the faulty statements in the slicer report
 after slicing.
 
-\subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
+\subsubsection{RQ1: \textit{How often \ds{} misses faulty statements?}}
 \label{sec:fault-misses}
 
 In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty statements, 
@@ -700,7 +702,7 @@ when only using \sfl{}$^{10}$. \combpar{10} only misses $11.8\%$ of the faulty s
   \label{table:fsws}
 \end{table*}
 
-\subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
+\subsubsection{RQ2: \textit{How effective is the \combpar{k} combination for bug localization?}}
 
 
 In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{} to improve \ds{}.
@@ -709,7 +711,7 @@ The \comb{} combination yields an average improvement of, approximately, 19\% on
 project. Table , reports the average rank of all faulty statements for each version of \chart{} project after
 applying the 3 techiniques \sfl{}, \comb{}-5 and \comb{}-10.
 
-Table \ref{fig:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}. $\Delta C <0$ means that the faulty statement may be removed. $\Delta C=0$ means that the faulty statement remained in the same position. $\Delta C >0$ means that \ds{} improved diagnosability.
+Table \ref{fig:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}.
 
 %For both \comb{}-5 and \comb{}-10, diagnosability increases 55.56\%. However, top-5 has less classes to minimize than top-10.
 
