@@ -64,40 +64,33 @@ techniques to be evaluated against that optimization.
 
 \section{Introduction}
 
-Software debugging is important and challenging. In particular, the task of locating the faulty
-code (\ie{}, fault localization) is particularly challenging. For that reason,
-countless automated techniques have been proposed in the past to reduce the cost
-of fault localization~\cite{7390282}.
+Software debugging is important and challenging. In particular, the task of
+locating the faulty code (\ie{}, fault localization) is particularly
+challenging. For that reason, countless automated techniques have been proposed
+in the past to reduce the cost of fault localization~\cite{7390282}.
 
-%% Although the technique has been intensively investigated in
-%% research, few use cases gained notoriety---WhyLine~\cite{Ko:2008:DRA:1368088.1368130} being an
-%% exception.
+Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and
+Spectrum-Based Fault Localization (\sfl{}) are two very popular techniques that
+leverage different principles to automate fault isolation. An example of a MBSD
+is Dynamic Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576} as well as some
+work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927,Ko:2008:DRA:1368088.1368130},
+a technique that traces back statements in the code that influence some point of
+interest, such as the evaluation of a failing assertion. On the one hand, similarly to \ds{},
+\sfl{} received tremendous attention in research over the years, but its
+applicability to support debugging remains
+questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
+On the other hand, in contrast to \ds{},
+\sfl{}~\cite{7390282} is instead a black-box,
+statistical fault localization method that computes suspiciousness values
+associated with program entities (e.g., methods) based on coverage information
+gathered during the execution of test cases as well as the output of test cases.
+More precisely, \sfl{} uses coverage information of passing and failing test
+cases to identify likely faulty statements and produces on output a list of
+program entities ranked in decreasing order of suspiciousness. \ds{} and \sfl{}
+are complementary debugging techniques~\cite{DBLP:conf/sac/AbreuGZG08}.
+Intuitively, \ds{} identifies irrelevant parts of the code whereas \sfl{} ranks
+the relevant parts of the code.
 
-
-Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and Spectrum-Based Fault Localization
-(\sfl{}) are two very popular techniques that leverage different principles
-to automate fault isolation. An example of a MBSD is Dynamic
-Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576} as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927},
-a technique that traces back statements in the code that influence some 
-point of interest, such as the evaluation
-of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
-does not analyze code. Instead, it is a black-box, statistical fault
-localization method that computes suspiciousness values associated
-with program entities (e.g., methods) based on coverage information gathered
-during the execution of test cases as well as the
-output of test cases. More precisely, \sfl{} uses coverage information
-of passing and failing test cases to identify likely faulty
-statements and produces on output a list of program entities ranked in
-decreasing order of suspiciousness.
-\ds{} and \sfl{} are complementary debugging techniques~\cite{DBLP:conf/sac/AbreuGZG08}.
-Intuitively, \ds{} identifies irrelevant parts of the code whereas \sfl{}
-ranks the relevant parts of the code.
-
-%% Similarly to \ds{}, \sfl{} received
-%% tremendous attention in research over the years,
-%% but its applicability to support
-%% debugging remains
-%% questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
 %% Despite the skepticism of the research community, \sfl{} has been
 %% shown useful in supporting downstream analyses, such as Automated
 %% Program Repair
@@ -137,11 +130,11 @@ but they used a non-representative set of subjects in their evaluation or used
 archaic methods to evaluate technique
 improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
 
-The goal of this paper is to reassess whether the \comb{} approach
-yields promising results under a more rigorous experimental
-methodology and a larger dataset.\comments{The D4J dataset is about
-  twice as large than the biggest test suite used in previous
-  studies.} This study covers the following research questions:
+The goal of this paper is to reassess whether the \comb{} approach yields
+promising results under a more rigorous experimental methodology and a larger
+dataset.\comments{The D4J dataset is about twice as large than the biggest test
+suite used in previous studies.} This study covers the following research
+questions:
 
 \newcommand{\rqone}{How often does DS miss faulty statements?}
 \newcommand{\rqthree}{How effective is the \comb{} approach?}
@@ -160,13 +153,15 @@ which, in principle, could miss statements because of imprecise
 oracles that guide the slicing process. We evaluated how often that
 issue manifests in our experiments. The second research questions
 effectively evaluates the impact of the combination. Our
-results show that \Sof{@todo: sum up the results}.
+results show that the combination of the two approaches improves the accuracy
+of fault localization of 51\% of the studied faults.
 
 The contributions of this work are the following ones:
 \begin{itemize}
 	\item A study, using real-world applications and bugs, on the combination
     of \ds{} and \sfl{} for bug localization of \emph{Java} faulty programs.
-   \item A tool that implements \comb{}.
+   \item A tool that implements the combination of \ds{} with \sfl{}, coined
+   \comb{}.
 \end{itemize}
 
 The tool as well as a replication package will be available once double-blind
@@ -199,13 +194,13 @@ original program and checking if the output of the original and
 modified program are the same.
 
 Our implementation of Critical Slicing is based on the Mozilla Lithium
-tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} 
+tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium}
 (Accessed on \today)}. It takes as input a file
 and produces as output a simplified version of that file that
 satisfies a user-defined oracle. In our case, the oracle is defined
 such that the test produces the same failure manifestation as the one
 observed with the test execution on the original program. The
-Lithium minimization process starts by determining the initial size---in 
+Lithium minimization process starts by determining the initial size---in
 number of lines---of chunks to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
 size. For example, if the file has 1,000 lines, Lithium sets the
@@ -246,7 +241,7 @@ fault~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,D
 following are given in \sfl{}: a finite set $\mathcal{C}=\set{c_1,c_2,...,c_M}$
 of $M$ system \emph{components}\footnote{A
 component can be any code artifact of arbitrary granularity
-such as a class, a method, or a statement~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; 
+such as a class, a method, or a statement~\cite{DBLP:journals/stvr/HarroldRSWY00}.};
 a finite set $\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
 which correspond to records of a system execution, such as test cases;
 the error vector $e = \set{e_1,e_2,...,e_N}$, where $e_i = 1$ if
@@ -281,8 +276,6 @@ predictors that has shown to perform
 well~\cite{7390282,Pearson:2017:EIF:3097368.3097441}. The Ochiai
 formula is given by the following equation
 $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
-%The Ochiai formula is given by~\cite{DBLP:conf/prdc/AbreuZG06}
-%\[ochiai = \frac\]
 
 \section{The \comb{} Approach}
 \label{sec:approach}
@@ -378,7 +371,7 @@ the code for every failing tests. More precisely, the workflow of the
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
   \item\label{step:group} Assemble all the resulting slicers of each failing test;
   \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
-    the slices of each failing test obtained in Step~\ref{step:group} and 
+    the slices of each failing test obtained in Step~\ref{step:group} and
 	recompute ranking.
 \end{enumerate}
 
@@ -413,14 +406,6 @@ and would continue. Section~\ref{sec:oracleheuristics} shows how we
 mitigate this fundamental limitation of Critical Slicing and
 Section~\ref{sec:fault-misses} shows how problematic is that issue in
 practice.
-
-%% \vspace{3mm}
-%% \begin{myframe} \label{box:1}
-%% \textbf{java.lang.NullPointerException}, \\
-%% at org.jfree.data.general.junit.DatasetUtilitiesTests.\\
-%% testBug2849731$\_$3(DatasetUtilitiesTests.java:1299), \\
-%% ...
-%% \end{myframe}
 
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
@@ -483,31 +468,27 @@ unaffected.
 % 	\caption{Simple illustration of the process to obtain the top-5 minimized classes from a project carrying a bug}
 % \end{figure*}
 %
-% \subsection{Function of Interest }
-% \label{sec:funcofint}
-%
-%
 
 The \cs{} technique is somewhat based on the \textit{statement deletion} mutant
-operator (SSDL) of the mutation-based testing methodology. This operator
-was designed based on the idea that each statement has an effect on the program
-output (i.e., oracle). Thus, testers are encouraged to design test sets that cause
-all statements to be executed and generate outputs that are different from the
+operator of the mutation-based testing methodology. This operator was designed
+based on the idea that each statement has an effect on the program output (i.e.,
+oracle). Thus, testers are encouraged to design test sets that cause all
+statements to be executed and generate outputs that are different from the
 program under test.
 
-Mozilla's Lithium takes as input a function of interest that can be designed according
-to the problem to be solved. The function of interest determines if the test case output 
-is interesting or not. Our function simply compares the failing test output with the output 
-obtained when re-running again the failing test after deleting the slice, as explained in 
-Section~\ref{sec:slicing}. Thus, if the
-initial test output is the same as the one after removing the slice \{$c_2$,$c_5$\}, then 
-the slice is removed. This means that the slice is not necessary to reveal the fault because 
-if removed the test output is still the same.
-The output is extracted from the stacktrace obtained through the failing test execution. 
-The stacktrace provides information not only about the place where the fault was revelead 
-but also the path taken to get there. Thus, our approach considers not only the exception 
-caught by the failing test but also the path that was taken to reveal the fault. The following 
-provides an example:
+Mozilla's Lithium takes as input a function of interest that can be designed
+according to the problem to be solved. The function of interest determines if
+the test case output is interesting or not. Our function simply compares the
+failing test output with the output obtained when re-running again the failing
+test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus,
+if the initial test output is the same as the one after removing the slice
+\{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not
+necessary to reveal the fault because if removed the test output is still the
+same. The output is extracted from the stacktrace obtained through the failing
+test execution. The stacktrace provides information not only about the place
+where the fault was revelead but also the path taken to get there. Thus, our
+approach considers not only the exception caught by the failing test but also
+the path that was taken to reveal the fault. The following provides an example:
 
 \vspace{3mm}
 \begin{myframe} \label{box:1}
@@ -521,40 +502,33 @@ at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeU
 ...
 \end{myframe}
 
-Considering some of the stacktrace information about the path taken to reveal the fault 
-solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections 
-as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs 
-could slightly differ from one execution to another. For example, exceptions including information 
-of memory addresses. For these cases, it was developed a mechanism to compare the rest of the output 
-ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
-
-
-
-
+Considering some of the stacktrace information about the path taken to reveal
+the fault solved the issue of generic oracles (e.g., NPE or generic
+AssertionFailedError expections as the one presented before) mentioned in
+Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from
+one execution to another. For example, exceptions including information of
+memory addresses. For these cases, it was developed a mechanism to compare the
+rest of the output ignoring the identifier of the memory address. This heuristic
+also handles StackOverflow oracles.
 %
-% This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
-
-
 \section{Evaluation}
 \label{sec:eval}
-
+%
 To evaluate our approach, we compare the cost of diagnosing
 a collection of faults using \sfl{} versus \comb{}.
-
+%
 \subsection{Objects of Analysis}\label{sec:analysis}
 
-We used the \dfj{} benchmark in our
-experiments~\cite{just-defects4j-issta2014}. This benchmark includes
-six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
-\lang{} is a library that provides a set of helper utilities for the
-     {\small\texttt{java.lang}} API. \cmath{} is a lightweight library
-     of self-contained mathematics and statistics components. The
-     \closure{} is a toolset for turning JavaScript files into smaller
-     scripts for faster download and execution in the
-     browser. \chart{} is a Java library for creating charts. \jtime{}
-     is a lightweight library that aims to replace the default Java
-     {\small\texttt{java.util.Date}} classes providing simpler
-     APIs. \mockito{} is a mocking testing framework.
+We used the \dfj{} benchmark in our experiments~\cite{just-defects4j-issta2014}.
+This benchmark includes six different subjects and \numFaults{} faults (Table
+\ref{tab:df4j}). \lang{} is a library that provides a set of helper utilities
+for the {\small\texttt{java.lang}} API. \cmath{} is a lightweight library of
+self-contained mathematics and statistics components. The \closure{} is a
+toolset for turning JavaScript files into smaller scripts for faster download
+and execution in the browser. \chart{} is a Java library for creating charts.
+\jtime{} is a lightweight library that aims to replace the default Java
+{\small\texttt{java.util.Date}} classes providing simpler APIs. \mockito{} is a
+mocking testing framework.
 
 \newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
 \begin{table}[h]
@@ -585,47 +559,43 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 		\includegraphics[width=0.42\textwidth]{figures/defects4j.pdf}
 		\vspace{-1cm}
 
-		\caption{FAULT$\_$OF$\_$OMISSION distribution in the \dfj{} dataset}
+		\caption{Faults of omissions' distribution}
 		\label{fig:foos}
 \end{figure}
 
-Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in the dataset, i.e., 
-faults which generally are difficult to locate. $59.7\%$ of the faults of this dataset are FOOs.
+Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in
+the dataset, i.e., faults which generally are difficult to locate. $59.7\%$ of
+the faults of this dataset are FOOs.
 
 
 \subsection{Experimental Methodology}\label{sec:methodology}
 
-To evaluate the effectiveness of \comb{}, following related work, we compared its
-performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$, 
-where $k$ is the number of classes comprising the highest faulty statements. These 
-classes are obtained directly from the ranking which is calculated through \sfl{}. 
-For each fault, spectra is updated and the fault ranking is re-calculated but only 
-considering the $k$ highest faulty classes. We refer to these variations as SFL$^{k}$. 
-After slicing each class of the top $k$ of the highest faulty classes for each fault, 
-the initial spectra is updated based on the slicer output and the fault ranking is 
-re-calculated. We refer to these variations as \combpar{k}. We
-compared \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$ using the
-following metric:
-
-\begin{equation}
-    \Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})
-\end{equation}
-
-\noindent
-where $C$ is the cost of diagnosis. $C$ is the mean ranking of all buggy statements.
-$\Delta C >0$ means that the position of the faulty statement has decreased
-in the ranking after applying the \combpar{k} approach. Hence, reducing the cost of
-locating the bug. $\Delta C <0$ means that the 
-faulty statement may be removed by \combpar{k}. $\Delta C=0$ means that the faulty statement 
-remained in the same position.  We also assume a perfect bug understanding, i.e., if the developer
-sees the bug in the ranking, he can say it is the faulty one. 
+To evaluate the effectiveness of \comb{}, following related work, we compared
+its performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
+where $k$ is the number of classes comprising the highest faulty statements.
+These classes are obtained directly from the ranking which is calculated through
+\sfl{}. For each fault, spectra is updated and the fault ranking is
+re-calculated but only considering the $k$ highest faulty classes. We refer to
+these variations as SFL$^{k}$. After slicing each class of the top $k$ of the
+highest faulty classes for each fault, the initial spectra is updated based on
+the slicer output and the fault ranking is re-calculated. We refer to these
+variations as \combpar{k}. We compared \combpar{5} and \combpar{10} against
+\sfl{}$^{5}$ and \sfl{}$^{10}$ using the commonly used metric $\Delta{}C =
+C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where $C$ is the cost of
+diagnosis. $C$ is the mean ranking of all buggy statements. $\Delta C >0$ means
+that the position of the faulty statement has decreased in the ranking after
+applying the \combpar{k} approach. Hence, reducing the cost of locating the bug.
+$\Delta C <0$ means that the faulty statement may be removed by \combpar{k}.
+$\Delta C=0$ means that the faulty statement remained in the same position.  We
+also assume a perfect bug understanding, i.e., if the developer sees the bug in
+the ranking, he can say it is the faulty one.
 
 \subsection{Dynamic Slicing}\label{sec:ds}
 
-This subsection aims to report the performance of the \ds{} technique on slicing de 
+This subsection aims to report the performance of the \ds{} technique on slicing de
 faults of $5$ \dfj{} projects. Table \ref{tab:red}
-presents the reduction percentage obtained for each project after slicing the top 
-$5$ and $10$ of classes comprising the highest faulty statements. Our approach was 
+presents the reduction percentage obtained for each project after slicing the top
+$5$ and $10$ of classes comprising the highest faulty statements. Our approach was
 capable to reduce the \dfj{} projects in an average of $30.23\%$.
 
 \begin{table}[h]
@@ -645,10 +615,16 @@ capable to reduce the \dfj{} projects in an average of $30.23\%$.
 
 		\bottomrule
 	\end{tabular}
-	\caption {\ds{} reduction performance when considering $k=5$ and $k=10$}
+	\caption {\ds{} reduction for $k=5$ and $k=10$}
 	\label{tab:red}
 \end{table}
 \normalsize
+
+
+
+
+
+\subsection{Results and Discussion}
 
 \begin{table*}[h]
 	\small
@@ -679,9 +655,6 @@ capable to reduce the \dfj{} projects in an average of $30.23\%$.
   \caption {Number of faults where at least one of the buggy-lines is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
 \end{table*}
-
-
-\subsection{Results and Discussion}
 
 Our approach was capable of slicing a total of $260$ faults from $5$ different 
 subjects. We are still running experiments for the \closure{} and \cmath{} projects.
@@ -721,24 +694,6 @@ Table \ref{fig:diagnosis} reports the performance of the diagnosis using \comb{}
 
 Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk ~\cite{10.2307/2333709} tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for the three techniques under evaluation (\sfl{}, \comb{}-5, \comb{}-10). With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman ~\cite{10.2307/2279372}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis \Fix{cite}. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
 
-
-% \begin{table}[h]
-% 	\centering
-% 	\setlength{\tabcolsep}{4pt}
-% 	\begin{tabular}{ccc}
-% 		\toprule
-% 		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
-% 		\midrule
-% 		$<0$  & 19.53\% & 16.02\% \\
-% 		$=0$  & 46.88\% & 41.80\% \\
-% 		$>0$  & 33.59\% & 42.19\% \\
-%
-% 		\bottomrule
-% 	\end{tabular}
-% 	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
-% 	\label{tab:diagnosis}
-% \end{table}
-
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.42\textwidth]{figures/performance.pdf}
@@ -752,11 +707,11 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\begin{tabular}{@{}l|l|l|l|l@{}}
 \toprule
   & SFL$^{5}$      & SFL$^{10}$             & \combpar{5}                 & \combpar{10}                 \\ \midrule
-Mean & 584.33 (580.03)  &  516.42 (502.60) & 679.67 (566.99) & 613.98 (491.47)  \\ \midrule
-Median & 49.38 (47.5)   & 53.00 (54.5)  & 69.25 (42.72)             & 56.93 (40)\\ \midrule
-Variance & 1223.08 (1236.94)  &  1148.11 (1149.09)  & 1352.37 (1229.4) & 1294.87  (1143.02) \\ \midrule
-Shapiro &\makecell{W = 0.53 \\ p = 7.13 x $10^{-26}$} & \makecell{W = 0.49 \\ p = 1.22 x $10^{-26}$} & \makecell{W = 0.55 \\ p = 2.64 x $10^{-25}$} & \makecell{W = 0.52 \\ p = 5.07 x $10^{-26}$}  \\ \midrule
-Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 69.51 \\ p-value = 5.44 x $10^{-15}$}} \\
+Mean & 580.0 (584.3)   &  502.6 (516.4)  & 567.0 (679.7)  & 491.5 (614.0)   \\ \midrule
+Median & 47.5 (49.4)    & 54.5 (53.0) & 42.7 (69.3)  & 40.0 (56.9)\\ \midrule
+Variance & 1237.0 (1223.1)  &  1149.1 (1148.1) & 1229.4 (1352.4) &  1143.0 (1294.9) \\ \midrule
+Shapiro &\makecell{W = 0.52 \\ p = 1.43 x $10^{-24}$} & \makecell{W = 0.48 \\ p = 2.12 x $10^{-25}$} & \makecell{W = 0.51 \\ p = 1.00 x $10^{-24}$} & \makecell{W = 0.47 \\ p = 1.62 x $10^{-25}$}  \\ \midrule
+Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 171.14 \\ p-value = 7.24 x $10^{-37}$}} \\
 \bottomrule
 \end{tabular}
   \caption {Statistical tests}
