@@ -75,8 +75,12 @@ leverage different principles to automate fault isolation. An example of a MBSD
 is Dynamic Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576} as well as some
 work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927,Ko:2008:DRA:1368088.1368130},
 a technique that traces back statements in the code that influence some point of
-interest, such as the evaluation of a failing assertion. In contrast to \ds{},
-\sfl{}~\cite{7390282} does not analyze code. Instead, it is a black-box,
+interest, such as the evaluation of a failing assertion. On the one hand, similarly to \ds{},
+\sfl{} received tremendous attention in research over the years, but its
+applicability to support debugging remains
+questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
+On the other hand, in contrast to \ds{},
+\sfl{}~\cite{7390282} is instead a black-box,
 statistical fault localization method that computes suspiciousness values
 associated with program entities (e.g., methods) based on coverage information
 gathered during the execution of test cases as well as the output of test cases.
@@ -87,11 +91,6 @@ are complementary debugging techniques~\cite{DBLP:conf/sac/AbreuGZG08}.
 Intuitively, \ds{} identifies irrelevant parts of the code whereas \sfl{} ranks
 the relevant parts of the code.
 
-%% Similarly to \ds{}, \sfl{} received
-%% tremendous attention in research over the years,
-%% but its applicability to support
-%% debugging remains
-%% questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
 %% Despite the skepticism of the research community, \sfl{} has been
 %% shown useful in supporting downstream analyses, such as Automated
 %% Program Repair
