@@ -576,44 +576,28 @@ Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in
 
 \subsection{Experimental Methodology}\label{sec:methodology}
 
-%% The main goal of our evaluation is to understand what is the impact of
-%% \ds{} on \sfl{} after minimizing the $k$ highest faulty source files
-%% which comprise the highest faulty statements.
-
-Recall from Section~\ref{sec:approach} that the \comb{}
-takes as input a value $k$ that denotes the $k$ most suspicious distinct
-classes to be considered. To evaluate the effectiveness of \comb{}, following
+To evaluate the effectiveness of \comb{}, following
 related work, we compared its
-performance with \sfl{} for each defect on each subject program from
-the dataset, for $k\in\{5,10\}$. These classes are obtained directly
-from the ranking. We refer to these variations as \combpar{k}. We
-compared \combpar{5} and \combpar{10} against \sfl{} using the
-following metrics.\Mar{Sofia, I don't see a reason for an equation to
-  only show the difference of cost. Please describe precisely the
-  metrics. In this case, I can't find what C stands for. Also,
- you need to describe precisely what top@n (or someother name) means
- in this context. Check if it makes sense for SFL.$\rightarrow$}\Rui{It might
- be good to keep it just to give it some emphasis... }
-
+performance with \sfl{} for each fault from
+the dataset, for $k\in\{5,10\}$, where $k$ is the number of classes comprising the highest faulty statements. These classes are obtained directly
+from the ranking which is calculated through \sfl{}. For each fault, spectra is updated and the fault ranking is re-calculated but only considering the $k$ highest faulty classes. We refer to these variations as SFL$^{k}$. After slicing each class of the top $k$ of the highest faulty classes for each fault, the initial spectra is updated based on the slicer output and the fault ranking is re-calculated. We refer to these variations as \combpar{k}. We
+compared \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$ using the
+following metric:
 
 \begin{equation}
-    \Delta{}C = C(\textrm{SFL}) - C(\textrm{\combpar{k}})
+    \Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})
 \end{equation}
 
 \noindent
-where $C$ is the cost of diagnosis. \Rui{At this point, you need to explain what
-the cost of diagnosis is: C is the number of statemetns (?) that need to be
-inspected before finding the fault, right? We also need to say that we assume a
-perfect bug understanding: that is, when the developer sees the bug in the
-ranking, he can say that it is the faulty one.}
+where $C$ is the cost of diagnosis. $C$ is the mean ranking of all buggy statements.
 A positive $\Delta$C means that the position of the faulty statement has decreased
-in the ranking after applying the \combpar{k} approach. Hence, reducing the cost to
-find the bug.
+in the ranking after applying the \combpar{k} approach. Hence, reducing the cost of
+locating the bug.
 
-\subsection{Dynamic Slicing}
+\subsection{Dynamic Slicing}\label{sec:ds}
 
-This subsection aims to evaluate the performance of the \ds{} technique on slicing
-de \dfj{} projects.
+This subsection aims to report the performance of the \ds{} technique on slicing de faults of $5$ \dfj{} projects. Table \ref{tab:red}
+presents the reduction percentage obtained for each project after slicing the top $5$ and $10$ of classes comprising the highest faulty statements. Our approach was capable to reduce the \dfj{} projects in an average of 30.23\%.
 
 \begin{table}[h]
 	\centering
@@ -632,13 +616,10 @@ de \dfj{} projects.
 
 		\bottomrule
 	\end{tabular}
-	\caption {\ds{} reduction performance for each version of the \chart{} project considering only the top-5 and top-10 classes}
+	\caption {\ds{} reduction performance when considering $k=5$ and $k=10$}
 	\label{tab:red}
 \end{table}
 \normalsize
-
-Table \ref{tab:red} reports the reduction of statements after using \ds{} to minimize the top-5 and top-10 of classes of the subjects.
-
 
 \subsection{Results and Discussion}
 
@@ -660,7 +641,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	\centering
 	  \begin{tabular}{l|cccc|cccc|c}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{SFL}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
+		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{\sfl{}$^{k}$}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
 
 		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
 					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
@@ -680,7 +661,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 	 				& 227 & 83.8\% & 237 & 88.2\% & 260 \\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Rui{explain what $k$ is for SFL alone.}}
+  \caption {Number of faults where at least one of the buggy-lines is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
 \end{table*}
 
@@ -720,7 +701,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.42\textwidth]{figures/performance.pdf}
-		\caption{Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
+		\caption{Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$ respectively}
 		\label{fig:diagnosis}
 \end{figure}
 
@@ -730,7 +711,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 	\setlength{\tabcolsep}{3pt}
 	\begin{tabular}{@{}l|l|l|l|l@{}}
 \toprule
-  & SFL-5      & SFL-10              & \combpar{5}                 & \combpar{10}                 \\ \midrule
+  & SFL$^{5}$      & SFL$^{10}$             & \combpar{5}                 & \combpar{10}                 \\ \midrule
 Mean & 584.33  &  516.42  & 679.67 & 613.98   \\ \midrule
 Median & 49.38    & 53.00  & 69.25              & 56.93               \\ \midrule
 Variance & 1223.08  &  1148.11  & 1352.37  & 1294.87   \\ \midrule
