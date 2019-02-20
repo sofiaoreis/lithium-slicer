@@ -604,14 +604,8 @@ considering the $k$ highest faulty classes. We refer to these variations as SFL$
 After slicing each class of the top $k$ of the highest faulty classes for each fault,
 the initial spectra is updated based on the slicer output and the fault ranking is
 re-calculated. We refer to these variations as \combpar{k}. We
-compared \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$ using the
-following metric:
-
-\begin{equation}
-    \Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})
-\end{equation}
-
-\noindent
+compared \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$ using
+the commonly used metric $\Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$,
 where $C$ is the cost of diagnosis. $C$ is the mean ranking of all buggy statements.
 $\Delta C >0$ means that the position of the faulty statement has decreased
 in the ranking after applying the \combpar{k} approach. Hence, reducing the cost of
