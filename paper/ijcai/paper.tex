@@ -71,9 +71,9 @@ of fault localization~\cite{7390282}.
 Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and Spectrum-Based Fault Localization
 (\sfl{}) are two very popular techniques that leverage different principles
 to automate fault isolation. An example of a MBSD is Dynamic
-Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576}
-as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927},
-a technique that traces back statements in the code that influence some point of interest, such as the evaluation
+Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576} as well as some work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927},
+a technique that traces back statements in the code that influence some 
+point of interest, such as the evaluation
 of a failing assertion. In contrast to \ds{}, \sfl{}~\cite{7390282}
 does not analyze code. Instead, it is a black-box, statistical fault
 localization method that computes suspiciousness values associated
@@ -176,19 +176,14 @@ This section summarizes the ground concepts of our approach.
 
 Program slicing is a program understanding technique to identify the
 relevant parts of the program with respect to given points of
-interest.  Dynamic
+interest. Dynamic
 slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
-  static
-  slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
+static slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
 has been shown useful in automated software debugging where the region
 of interest is restricted to what can be reached from failing
 tests. Several dynamic slicing techniques exist. This paper uses
 Critical Slicing (\cs{})~\cite{DeMillo:1996:CSS:229000.226310} for its
-simplicity/generality.\comments{ In constrast with alternative slicing
-  implementations based on dependency
-  chains~\cite{Tip:1994:SPS:869354}\comments{(\eg{},
-    JSlice~\cite{Wang:2004:UCB:998675.999455} and
-    JavaSlicer~\cite{hammacher-bachthesis-2008})},} Critical Slicing
+simplicity/generality. Critical Slicing
 prescribes a black-box language-semantics-agnostic recipe to computing
 executable slices.  Critical Slicing simplifies the original
 program such that the resulting program preserves critical
@@ -198,13 +193,14 @@ original program and checking if the output of the original and
 modified program are the same.
 
 Our implementation of Critical Slicing is based on the Mozilla Lithium
-tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} (Accessed on \today)}. It takes as input a file
+tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium} 
+(Accessed on \today)}. It takes as input a file
 and produces as output a simplified version of that file that
 satisfies a user-defined oracle. In our case, the oracle is defined
 such that the test produces the same failure manifestation as the one
 observed with the test execution on the original program. The
-Lithium minimization process starts by determining the initial size---in number of lines---of
-chunks to delete from the input file. For that,
+Lithium minimization process starts by determining the initial size---in 
+number of lines---of chunks to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
 size. For example, if the file has 1,000 lines, Lithium sets the
 initial chunk size to 512 lines. Then, the tool starts a local search looking
@@ -241,10 +237,11 @@ localization technique that takes as input a test suite including at
 least one failing test and reports on output a ranked list of
 components likely to be in
 fault~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The
-following are given in \sfl{}: a finite set $\mathcal{C}=\set{c_1,c_2,...,c_M}$ of $M$ system \emph{components}\footnote{A
-  component can be any code artifact of arbitrary granularity
-  such as a class, a method, or a statement~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; a finite set
-$\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
+following are given in \sfl{}: a finite set $\mathcal{C}=\set{c_1,c_2,...,c_M}$
+of $M$ system \emph{components}\footnote{A
+component can be any code artifact of arbitrary granularity
+such as a class, a method, or a statement~\cite{DBLP:journals/stvr/HarroldRSWY00}.}; 
+a finite set $\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
 which correspond to records of a system execution, such as test cases;
 the error vector $e = \set{e_1,e_2,...,e_N}$, where $e_i = 1$ if
 transaction $t_i$ has failed and $e_i = 0$ otherwise; and an
@@ -253,7 +250,6 @@ coverage of component $c_j$ in transaction $t_i$.  The pair
 $(\mathcal{A},e)$ is commonly referred to as
 spectrum~\cite{DBLP:journals/stvr/HarroldRSWY00}. Figure~\ref{fig:spectrum-example}
 shows an example spectrum.
-
 
 Several types of spectra exist.  The most commonly used is called
 hit-spectrum, where the coverage matrix is encoded in terms of binary
@@ -376,7 +372,8 @@ the code for every failing tests. More precisely, the workflow of the
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
   \item\label{step:group} Assemble all the resulting slicers of each failing test;
   \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
-    the slices of each failing test obtained in Step~\ref{step:group} and recompute ranking.
+    the slices of each failing test obtained in Step~\ref{step:group} and 
+	recompute ranking.
 \end{enumerate}
 
 Intuitively, slicing enables the identification of statements in the spectra
@@ -492,9 +489,19 @@ output (i.e., oracle). Thus, testers are encouraged to design test sets that cau
 all statements to be executed and generate outputs that are different from the
 program under test.
 
-Mozilla's Lithium takes as input a function of interest that can be designed according to the problem to be solved. The function of interest determines if the test case output is interesting or not. Our function simply compares the failing test output with the output obtained when re-running again the failing test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus, if the
-initial test output is the same as the one after removing the slice \{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not necessary to reveal the fault because if removed the test output is still the same.
-The output is extracted from the stacktrace obtained through the failing test execution. The stacktrace provides information not only about the place where the fault was revelead but also the path taken to get there. Thus, our approach considers not only the exception caught by the failing test but also the path that was taken to reveal the fault. The following provides an example:
+Mozilla's Lithium takes as input a function of interest that can be designed according
+to the problem to be solved. The function of interest determines if the test case output 
+is interesting or not. Our function simply compares the failing test output with the output 
+obtained when re-running again the failing test after deleting the slice, as explained in 
+Section~\ref{sec:slicing}. Thus, if the
+initial test output is the same as the one after removing the slice \{$c_2$,$c_5$\}, then 
+the slice is removed. This means that the slice is not necessary to reveal the fault because 
+if removed the test output is still the same.
+The output is extracted from the stacktrace obtained through the failing test execution. 
+The stacktrace provides information not only about the place where the fault was revelead 
+but also the path taken to get there. Thus, our approach considers not only the exception 
+caught by the failing test but also the path that was taken to reveal the fault. The following 
+provides an example:
 
 \vspace{3mm}
 \begin{myframe} \label{box:1}
@@ -508,7 +515,12 @@ at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeU
 ...
 \end{myframe}
 
-Considering some of the stacktrace information about the path taken to reveal the fault solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from one execution to another. For example, exceptions including information of memory addresses. For these cases, it was developed a mechanism to compare the rest of the output ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
+Considering some of the stacktrace information about the path taken to reveal the fault 
+solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections 
+as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs 
+could slightly differ from one execution to another. For example, exceptions including information 
+of memory addresses. For these cases, it was developed a mechanism to compare the rest of the output 
+ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
 
 
 
@@ -571,16 +583,21 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 		\label{fig:foos}
 \end{figure}
 
-Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in the dataset, i.e., faults which generally are difficult to locate. $59.7\%$ of the faults of this dataset are FOOs.
+Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in the dataset, i.e., 
+faults which generally are difficult to locate. $59.7\%$ of the faults of this dataset are FOOs.
 
 
 \subsection{Experimental Methodology}\label{sec:methodology}
 
-To evaluate the effectiveness of \comb{}, following
-related work, we compared its
-performance with \sfl{} for each fault from
-the dataset, for $k\in\{5,10\}$, where $k$ is the number of classes comprising the highest faulty statements. These classes are obtained directly
-from the ranking which is calculated through \sfl{}. For each fault, spectra is updated and the fault ranking is re-calculated but only considering the $k$ highest faulty classes. We refer to these variations as SFL$^{k}$. After slicing each class of the top $k$ of the highest faulty classes for each fault, the initial spectra is updated based on the slicer output and the fault ranking is re-calculated. We refer to these variations as \combpar{k}. We
+To evaluate the effectiveness of \comb{}, following related work, we compared its
+performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$, 
+where $k$ is the number of classes comprising the highest faulty statements. These 
+classes are obtained directly from the ranking which is calculated through \sfl{}. 
+For each fault, spectra is updated and the fault ranking is re-calculated but only 
+considering the $k$ highest faulty classes. We refer to these variations as SFL$^{k}$. 
+After slicing each class of the top $k$ of the highest faulty classes for each fault, 
+the initial spectra is updated based on the slicer output and the fault ranking is 
+re-calculated. We refer to these variations as \combpar{k}. We
 compared \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$ using the
 following metric:
 
@@ -596,8 +613,11 @@ locating the bug.
 
 \subsection{Dynamic Slicing}\label{sec:ds}
 
-This subsection aims to report the performance of the \ds{} technique on slicing de faults of $5$ \dfj{} projects. Table \ref{tab:red}
-presents the reduction percentage obtained for each project after slicing the top $5$ and $10$ of classes comprising the highest faulty statements. Our approach was capable to reduce the \dfj{} projects in an average of 30.23\%.
+This subsection aims to report the performance of the \ds{} technique on slicing de 
+faults of $5$ \dfj{} projects. Table \ref{tab:red}
+presents the reduction percentage obtained for each project after slicing the top 
+$5$ and $10$ of classes comprising the highest faulty statements. Our approach was 
+capable to reduce the \dfj{} projects in an average of $30.23\%$.
 
 \begin{table}[h]
 	\centering
@@ -623,8 +643,11 @@ presents the reduction percentage obtained for each project after slicing the to
 
 \subsection{Results and Discussion}
 
-The following section aims to answer the research questions presented previously.
-
+Our approach was capable of slicing a total of $260$ faults from $5$ different 
+sujects. We are still running experiments for the \closure{} and \cmath{} projects.
+(The results of these faults will be integrated on the camera-ready if accepted).
+$33$ of the $260$ faults do not include the faulty statements in the slicer report
+after slicing.
 
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
 \label{sec:fault-misses}
@@ -705,8 +728,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 		\label{fig:diagnosis}
 \end{figure}
 
-\begin{table}[h]
-	\tiny
+\begin{table*}[h]
 	\centering
 	\setlength{\tabcolsep}{3pt}
 	\begin{tabular}{@{}l|l|l|l|l@{}}
@@ -721,7 +743,7 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 69.51 \\ p-value = 5.44 x $
 \end{tabular}
   \caption {Statistical tests}
   \label{table:st}
-\end{table}
+\end{table*}
 
 \begin{figure}[h]
 	\vspace{-1.5cm}
