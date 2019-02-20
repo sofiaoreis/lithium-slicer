@@ -277,8 +277,6 @@ predictors that has shown to perform
 well~\cite{7390282,Pearson:2017:EIF:3097368.3097441}. The Ochiai
 formula is given by the following equation
 $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
-%The Ochiai formula is given by~\cite{DBLP:conf/prdc/AbreuZG06}
-%\[ochiai = \frac\]
 
 \section{The \comb{} Approach}
 \label{sec:approach}
@@ -410,14 +408,6 @@ mitigate this fundamental limitation of Critical Slicing and
 Section~\ref{sec:fault-misses} shows how problematic is that issue in
 practice.
 
-%% \vspace{3mm}
-%% \begin{myframe} \label{box:1}
-%% \textbf{java.lang.NullPointerException}, \\
-%% at org.jfree.data.general.junit.DatasetUtilitiesTests.\\
-%% testBug2849731$\_$3(DatasetUtilitiesTests.java:1299), \\
-%% ...
-%% \end{myframe}
-
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
@@ -479,31 +469,27 @@ unaffected.
 % 	\caption{Simple illustration of the process to obtain the top-5 minimized classes from a project carrying a bug}
 % \end{figure*}
 %
-% \subsection{Function of Interest }
-% \label{sec:funcofint}
-%
-%
 
 The \cs{} technique is somewhat based on the \textit{statement deletion} mutant
-operator (SSDL) of the mutation-based testing methodology. This operator
-was designed based on the idea that each statement has an effect on the program
-output (i.e., oracle). Thus, testers are encouraged to design test sets that cause
-all statements to be executed and generate outputs that are different from the
+operator of the mutation-based testing methodology. This operator was designed
+based on the idea that each statement has an effect on the program output (i.e.,
+oracle). Thus, testers are encouraged to design test sets that cause all
+statements to be executed and generate outputs that are different from the
 program under test.
 
-Mozilla's Lithium takes as input a function of interest that can be designed according
-to the problem to be solved. The function of interest determines if the test case output
-is interesting or not. Our function simply compares the failing test output with the output
-obtained when re-running again the failing test after deleting the slice, as explained in
-Section~\ref{sec:slicing}. Thus, if the
-initial test output is the same as the one after removing the slice \{$c_2$,$c_5$\}, then
-the slice is removed. This means that the slice is not necessary to reveal the fault because
-if removed the test output is still the same.
-The output is extracted from the stacktrace obtained through the failing test execution.
-The stacktrace provides information not only about the place where the fault was revelead
-but also the path taken to get there. Thus, our approach considers not only the exception
-caught by the failing test but also the path that was taken to reveal the fault. The following
-provides an example:
+Mozilla's Lithium takes as input a function of interest that can be designed
+according to the problem to be solved. The function of interest determines if
+the test case output is interesting or not. Our function simply compares the
+failing test output with the output obtained when re-running again the failing
+test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus,
+if the initial test output is the same as the one after removing the slice
+\{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not
+necessary to reveal the fault because if removed the test output is still the
+same. The output is extracted from the stacktrace obtained through the failing
+test execution. The stacktrace provides information not only about the place
+where the fault was revelead but also the path taken to get there. Thus, our
+approach considers not only the exception caught by the failing test but also
+the path that was taken to reveal the fault. The following provides an example:
 
 \vspace{3mm}
 \begin{myframe} \label{box:1}
@@ -517,26 +503,21 @@ at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeU
 ...
 \end{myframe}
 
-Considering some of the stacktrace information about the path taken to reveal the fault
-solved the issue of generic oracles (e.g., NPE or generic AssertionFailedError expections
-as the one presented before) mentioned in Theorem~\ref{the:1}. There are faults whose outputs
-could slightly differ from one execution to another. For example, exceptions including information
-of memory addresses. For these cases, it was developed a mechanism to compare the rest of the output
-ignoring the identifier of the memory address. This heuristic also handles StackOverflow oracles.
-
-
-
-
+Considering some of the stacktrace information about the path taken to reveal
+the fault solved the issue of generic oracles (e.g., NPE or generic
+AssertionFailedError expections as the one presented before) mentioned in
+Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from
+one execution to another. For example, exceptions including information of
+memory addresses. For these cases, it was developed a mechanism to compare the
+rest of the output ignoring the identifier of the memory address. This heuristic
+also handles StackOverflow oracles.
 %
-% This information can be deducted from the defects stack traces which show the stack of functions called until the thrown of an exception. The interesting function compares both stack traces (from the test under evaluation and the expected one) until the call where the test fails. For each chunk under evaluation, the test is executed after the chunk being deleted from the source code . Both test ($testStk$) and expected ($expStk$) stack traces are filtered. We only consider stack traces until the line where the main exception is launched. These operations are performed by line 3 and 4 from Algorithm 2. Finally, both messages are compared and if equal the chunk will be deleted from the project, i.e., the chunk is not interesting to reveal the fault of the test.
-
-
 \section{Evaluation}
 \label{sec:eval}
-
+%
 To evaluate our approach, we compare the cost of diagnosing
 a collection of faults using \sfl{} versus \comb{}.
-
+%
 \subsection{Objects of Analysis}\label{sec:analysis}
 
 We used the \dfj{} benchmark in our
