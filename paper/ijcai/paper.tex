@@ -520,18 +520,16 @@ a collection of faults using \sfl{} versus \comb{}.
 %
 \subsection{Objects of Analysis}\label{sec:analysis}
 
-We used the \dfj{} benchmark in our
-experiments~\cite{just-defects4j-issta2014}. This benchmark includes
-six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
-\lang{} is a library that provides a set of helper utilities for the
-     {\small\texttt{java.lang}} API. \cmath{} is a lightweight library
-     of self-contained mathematics and statistics components. The
-     \closure{} is a toolset for turning JavaScript files into smaller
-     scripts for faster download and execution in the
-     browser. \chart{} is a Java library for creating charts. \jtime{}
-     is a lightweight library that aims to replace the default Java
-     {\small\texttt{java.util.Date}} classes providing simpler
-     APIs. \mockito{} is a mocking testing framework.
+We used the \dfj{} benchmark in our experiments~\cite{just-defects4j-issta2014}.
+This benchmark includes six different subjects and \numFaults{} faults (Table
+\ref{tab:df4j}). \lang{} is a library that provides a set of helper utilities
+for the {\small\texttt{java.lang}} API. \cmath{} is a lightweight library of
+self-contained mathematics and statistics components. The \closure{} is a
+toolset for turning JavaScript files into smaller scripts for faster download
+and execution in the browser. \chart{} is a Java library for creating charts.
+\jtime{} is a lightweight library that aims to replace the default Java
+{\small\texttt{java.util.Date}} classes providing simpler APIs. \mockito{} is a
+mocking testing framework.
 
 \newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
 \begin{table}[h]
@@ -566,30 +564,32 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 		\label{fig:foos}
 \end{figure}
 
-Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in the dataset, i.e.,
-faults which generally are difficult to locate. $59.7\%$ of the faults of this dataset are FOOs.
+Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in
+the dataset, i.e., faults which generally are difficult to locate. $59.7\%$ of
+the faults of this dataset are FOOs.
 
 
 \subsection{Experimental Methodology}\label{sec:methodology}
 
-To evaluate the effectiveness of \comb{}, following related work, we compared its
-performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
-where $k$ is the number of classes comprising the highest faulty statements. These
-classes are obtained directly from the ranking which is calculated through \sfl{}.
-For each fault, spectra is updated and the fault ranking is re-calculated but only
-considering the $k$ highest faulty classes. We refer to these variations as SFL$^{k}$.
-After slicing each class of the top $k$ of the highest faulty classes for each fault,
-the initial spectra is updated based on the slicer output and the fault ranking is
-re-calculated. We refer to these variations as \combpar{k}. We
-compared \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$ using
-the commonly used metric $\Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$,
-where $C$ is the cost of diagnosis. $C$ is the mean ranking of all buggy statements.
-$\Delta C >0$ means that the position of the faulty statement has decreased
-in the ranking after applying the \combpar{k} approach. Hence, reducing the cost of
-locating the bug. $\Delta C <0$ means that the
-faulty statement may be removed by \combpar{k}. $\Delta C=0$ means that the faulty statement
-remained in the same position.  We also assume a perfect bug understanding, i.e., if the developer
-sees the bug in the ranking, he can say it is the faulty one.
+To evaluate the effectiveness of \comb{}, following related work, we compared
+its performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
+where $k$ is the number of classes comprising the highest faulty statements.
+These classes are obtained directly from the ranking which is calculated through
+\sfl{}. For each fault, spectra is updated and the fault ranking is
+re-calculated but only considering the $k$ highest faulty classes. We refer to
+these variations as SFL$^{k}$. After slicing each class of the top $k$ of the
+highest faulty classes for each fault, the initial spectra is updated based on
+the slicer output and the fault ranking is re-calculated. We refer to these
+variations as \combpar{k}. We compared \combpar{5} and \combpar{10} against
+\sfl{}$^{5}$ and \sfl{}$^{10}$ using the commonly used metric $\Delta{}C =
+C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where $C$ is the cost of
+diagnosis. $C$ is the mean ranking of all buggy statements. $\Delta C >0$ means
+that the position of the faulty statement has decreased in the ranking after
+applying the \combpar{k} approach. Hence, reducing the cost of locating the bug.
+$\Delta C <0$ means that the faulty statement may be removed by \combpar{k}.
+$\Delta C=0$ means that the faulty statement remained in the same position.  We
+also assume a perfect bug understanding, i.e., if the developer sees the bug in
+the ranking, he can say it is the faulty one.
 
 \subsection{Dynamic Slicing}\label{sec:ds}
 
@@ -687,24 +687,6 @@ Table \ref{fig:diagnosis} reports the performance of the diagnosis using \comb{}
 %For both \comb{}-5 and \comb{}-10, diagnosability increases 55.56\%. However, top-5 has less classes to minimize than top-10.
 
 Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk ~\cite{10.2307/2333709} tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for the three techniques under evaluation (\sfl{}, \comb{}-5, \comb{}-10). With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman ~\cite{10.2307/2279372}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis \Fix{cite}. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
-
-
-% \begin{table}[h]
-% 	\centering
-% 	\setlength{\tabcolsep}{4pt}
-% 	\begin{tabular}{ccc}
-% 		\toprule
-% 		$\Delta$$C$             &  \combpar{5}  & \combpar{10} \\
-% 		\midrule
-% 		$<0$  & 19.53\% & 16.02\% \\
-% 		$=0$  & 46.88\% & 41.80\% \\
-% 		$>0$  & 33.59\% & 42.19\% \\
-%
-% 		\bottomrule
-% 	\end{tabular}
-% 	\caption {Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}}
-% 	\label{tab:diagnosis}
-% \end{table}
 
 \begin{figure}[h]
 		\centering
