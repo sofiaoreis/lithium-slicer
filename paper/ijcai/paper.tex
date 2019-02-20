@@ -658,9 +658,13 @@ after slicing.
 \subsubsection{RQ1: \textit{How often DS misses faulty statements?}}
 \label{sec:fault-misses}
 
-In \textbf{RQ1}, we evaluate how often \ds{} misses faulty statements, since it is one of the main problems of dynamic slicing techniques.
-
-Table \ref{table:fsws} presents the number of faults where at least one of the faulty statements appears in the final reports of both techniques, \sfl{} and \comb{}-k.
+In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty statements, 
+since it is one of the main issues of dynamic slicing techniques. Table \ref{table:fsws} 
+presents the number of faults where at least one of the faulty statements appears 
+in the final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. We only search
+for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$) of the highest faulty 
+classes of the projects. \combpar{k} finds the faulty statements faster than 
+\sfl{}$^{k}$. Using 
 
 
 
@@ -697,7 +701,7 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 \subsubsection{RQ2: \textit{How effective is the \comb{} combination for bug localization?}}
 
 
-In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} to improve \ds{}.
+In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{} to improve \ds{}.
 
 The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the faulty statements of the \chart{}
 project. Table , reports the average rank of all faulty statements for each version of \chart{} project after
