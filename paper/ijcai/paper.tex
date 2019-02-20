@@ -615,7 +615,8 @@ following metric:
 where $C$ is the cost of diagnosis. $C$ is the mean ranking of all buggy statements.
 A positive $\Delta$C means that the position of the faulty statement has decreased
 in the ranking after applying the \combpar{k} approach. Hence, reducing the cost of
-locating the bug.
+locating the bug. We also assume a perfect bug understanding, i.e., if the developer
+sees the bug in the ranking, he can say it is the faulty one. 
 
 \subsection{Dynamic Slicing}\label{sec:ds}
 
@@ -665,7 +666,7 @@ in the final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. We only s
 for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$) of the highest faulty 
 classes of the projects. \combpar{k} finds the faulty statements faster than 
 \sfl{}$^{k}$. Using \combpar{10} we are able to find more $20$ faulty statements than
-when using only \sfl{}$^{10}$.
+when only using \sfl{}$^{10}$. \combpar{10} only misses $11.8\%$ of the faulty statements.
 
 
 
