@@ -47,9 +47,9 @@ executions---may be unrelated to the bug. With the aforementioned combination,
 such components could be identified and their suspiciousness reduced.  This
 study also discusses the impact of the dynamic slicing key limitation---the risk
 of missing faulty statements. Our results show that, in practice, \ds{} rarely
-misses faulty statements (22 misses in 256 cases) and that the
+misses faulty statements (23 misses in 260 cases) and that the
 \ds{}-\sfl{} combination, coined as Tandem-SL, improves the diagnostic accuracy
-in \Rui{x\% on average}. To sum, we found that, despite tacit opinions of the
+in 51\% of the faults. To sum, we found that, despite tacit opinions of the
 research community about the usefulness of \ds{} in automated debugging, we
 found the combination practical and effective, and encourage new \sfl{}
 techniques to be evaluated against that optimization.
@@ -521,7 +521,7 @@ Considering some of the stacktrace information about the path taken to reveal th
 \label{sec:eval}
 
 To evaluate our approach, we compare the cost of diagnosing
-a collection of faulty versions using \sfl{} versus \comb{}.
+a collection of faults using \sfl{} versus \comb{}.
 
 \subsection{Objects of Analysis}\label{sec:analysis}
 
@@ -544,14 +544,14 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
       \toprule
-      Project            & Size (LOC)$^{*}$ & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
+     Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
       \midrule
-      \lang{}            &   & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
-      \cmath{}           &   & 26,797 & 106     \\   %\comments{& 177   &  -}\\
-      \closure{}         &   & 27,930  & 133     \\   %\comments{& 350   &  -}\\
-      \chart{}           &   & 8,458 & 26      \\  %\comments{& 92    &  -}\\
-      \jtime{}           &   & 3,289 & 27       \\   %\comments{& 76    &  -}\\
-      \mockito{}         &   & 8,835 & 38    \\     %\comments{& 118   &  -}\\
+      \lang{}            & 111,751  & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
+      \cmath{}           & 306,276  & 26,797 & 106     \\   %\comments{& 177   &  -}\\
+      \closure{}         & 149,521  & 27,930  & 133     \\   %\comments{& 350   &  -}\\
+      \chart{}           & 230,159  & 8,458 & 26      \\  %\comments{& 92    &  -}\\
+      \jtime{}           & 141,610  & 3,289 & 27       \\   %\comments{& 76    &  -}\\
+      \mockito{}         & 22,787  & 8,835 & 38    \\     %\comments{& 118   &  -}\\
       \bottomrule
   \end{tabular}
 \caption {Characterization of \dfj{} subjects.}
@@ -560,7 +560,19 @@ six different subjects and \numFaults{} faults (Table \ref{tab:df4j}).
 \end{table}
 \normalsize
 
-\Sof{@todo: Add pie chart to show the distribution of foos}
+\begin{figure}[h]
+	\vspace{-1.5cm}
+	
+		\centering
+		\includegraphics[width=0.42\textwidth]{figures/defects4j.pdf}
+		\vspace{-1cm}
+		
+		\caption{FAULT$\_$OF$\_$OMISSION distribution in the \dfj{} dataset}
+		\label{fig:foos}
+\end{figure}
+
+Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in the dataset, i.e., faults which generally are difficult to locate. $59.7\%$ of the faults of this dataset are FOOs.
+
 
 \subsection{Experimental Methodology}\label{sec:methodology}
 
@@ -611,8 +623,8 @@ de \dfj{} projects.
 		Project             &  \combpar{5}  & \combpar{10} \\
 		\midrule
 
-        \lang{}            & 1.42\% & 30.47\%\\
-        \cmath{}           & 9.88\% & 11.43\%\\
+        \lang{}            & 1.40\% & 31.46\%\\
+        \cmath{}           & 10.30\% & 12.34\%\\
         %\closure{}          &  & \\
 		\chart{}			& 59.30\% & 53.64\% \\
         \jtime{}            & 17.27\% & 32.02\%\\
@@ -641,6 +653,7 @@ In \textbf{RQ1}, we evaluate how often \ds{} misses faulty statements, since it 
 Table \ref{table:fsws} presents the number of faults where at least one of the faulty statements appears in the final reports of both techniques, \sfl{} and \comb{}-k.
 
 
+
 \begin{table*}[h]
 	\small
 	% \setlength{\tabcolsep}{3pt}
@@ -652,10 +665,10 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
 					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
 		\midrule
-		 \lang{}         &  54 & 84.4\%  & 54  & 84.4\%
-		 				& 64 & 100\% & 62 & 96.9\% & 64      \\
-		\cmath{}           & 82 & 81.2\%  & 86 & 85.1\%
-						& 90 & 89.1\% & 97 & 96.0\% & 101  \\   %\comments{& 177   &  -}\\
+		 \lang{}         &  55 & 84.6\%  & 55  & 84.6\%
+		 				& 65 & 100\% & 63 & 96.9\% & 65      \\
+		\cmath{}           & 85 & 81.7\%  & 89 & 85.6\%
+						& 93 & 89.4\% & 99 & 95.2\% & 104  \\   %\comments{& 177   &  -}\\
 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
 		\chart{}          & 22 & 84.6\% & 24 & 92.3\%
 						& 20 & 76.9\% & 22 & 84.6\% & 26    \\
@@ -663,8 +676,8 @@ Table \ref{table:fsws} presents the number of faults where at least one of the f
 				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
 		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
 		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
-	 Total      & 203  &  & 213 &
-	 				& 223 &  & 234 &  & 256 \\
+	 Total      & 207  & 78.4\% & 217 & 83.0\%
+	 				& 227 & 83.8\% & 237 & 88.2\% & 260 \\
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the buggy-lines is in the SFL and \combpar{k} report \Rui{explain what $k$ is for SFL alone.}}
@@ -711,28 +724,31 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 		\label{fig:diagnosis}
 \end{figure}
 
-\begin{table*}[h]
+\begin{table}[h]
+	\tiny
 	\centering
-	\begin{tabular}{@{}llll@{}}
+	\setlength{\tabcolsep}{3pt}
+	\begin{tabular}{@{}l|l|l|l|l@{}}
 \toprule
-  & SFL                    & \combpar{5}                 & \combpar{10}                 \\ \midrule
-Mean & 522.47     & 684.89   & 611.04   \\ \midrule
-Median & 50.375      & 66.25               & 54.3                \\ \midrule
-Variance & 1191.12      & 1361.83   & 1301.78    \\ \midrule
-Shapiro-Wilk & \makecell{W = 0.48 \\ p-value = 1.10 x $10^{-26}$} & \makecell{W = 0.55 \\ p-value = 4.31 x $10^{-25}$} & \makecell{W = 0.52 \\ p-value = 6.23 x $10^{-26}$}  \\ \midrule
-Friedman & \multicolumn{3}{c}{\makecell{$\chi^{2}$ = 28.97 \\ p-value = 5.13 x $10^{-7}$}} \\
+  & SFL-5      & SFL-10              & \combpar{5}                 & \combpar{10}                 \\ \midrule
+Mean & 584.33  &  516.42  & 679.67 & 613.98   \\ \midrule
+Median & 49.38    & 53.00  & 69.25              & 56.93               \\ \midrule
+Variance & 1223.08  &  1148.11  & 1352.37  & 1294.87   \\ \midrule
+Shapiro &\makecell{W = 0.53 \\ p = 7.13 x $10^{-26}$} & \makecell{W = 0.49 \\ p = 1.22 x $10^{-26}$} & \makecell{W = 0.55 \\ p = 2.64 x $10^{-25}$} & \makecell{W = 0.52 \\ p = 5.07 x $10^{-26}$}  \\ \midrule
+Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 69.51 \\ p-value = 5.44 x $10^{-15}$}} \\
 \bottomrule
 \end{tabular}
   \caption {Statistical tests}
   \label{table:st}
-\end{table*}
-
+\end{table}
 
 \begin{figure}[h]
+	\vspace{-1.5cm}
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
-		\caption{Nemenyi post-hoc analysis results \Sof{@tofix: Need to center ylabels}}
+		\caption{Nemenyi post-hoc analysis results}
 		\label{fig:performance}
 \end{figure}
+
 
 \subsection{Threats to validity}
 %
