@@ -558,7 +558,6 @@ mocking testing framework.
 		\centering
 		\includegraphics[width=0.42\textwidth]{figures/defects4j.pdf}
 		\vspace{-1cm}
-
 		\caption{Faults of omissions' distribution}
 		\label{fig:foos}
 \end{figure}
@@ -595,8 +594,8 @@ the ranking, he can say it is the faulty one.
 This subsection aims to report the performance of the \ds{} technique on slicing de
 faults of $5$ \dfj{} projects. Table \ref{tab:red}
 presents the reduction percentage obtained for each project after slicing the top
-$5$ and $10$ of classes comprising the highest faulty statements. Our approach was
-capable to reduce the \dfj{} projects in an average of $30.23\%$.
+$5$ and $10$ of classes comprising the highest faulty statements. We observed a reduction 
+of 30.23\% on average in the projects considered in our study.
 
 \begin{table}[h]
 	\centering
@@ -619,8 +618,6 @@ capable to reduce the \dfj{} projects in an average of $30.23\%$.
 	\label{tab:red}
 \end{table}
 \normalsize
-
-
 
 
 
@@ -684,7 +681,8 @@ of $5.2\%$.
 
 In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{} to improve \ds{}.
 
-The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the faulty statements of the \chart{}
+The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the 
+faulty statements of the \chart{}
 project. Table , reports the average rank of all faulty statements for each version of \chart{} project after
 applying the 3 techiniques \sfl{}, \comb{}-5 and \comb{}-10.
 
@@ -701,22 +699,23 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 		\label{fig:diagnosis}
 \end{figure}
 
-\begin{table*}[h]
+\begin{table}[h]
+	\tiny
 	\centering
 	\setlength{\tabcolsep}{3pt}
 	\begin{tabular}{@{}l|l|l|l|l@{}}
 \toprule
-  & SFL$^{5}$      & SFL$^{10}$             & \combpar{5}                 & \combpar{10}                 \\ \midrule
-Mean & 580.0 (584.3)   &  502.6 (516.4)  & 567.0 (679.7)  & 491.5 (614.0)   \\ \midrule
-Median & 47.5 (49.4)    & 54.5 (53.0) & 42.7 (69.3)  & 40.0 (56.9)\\ \midrule
-Variance & 1237.0 (1223.1)  &  1149.1 (1148.1) & 1229.4 (1352.4) &  1143.0 (1294.9) \\ \midrule
+  & SFL$^{5}$      & SFL$^{10}$     & \combpar{5}              & \combpar{10}              \\ \midrule
+Mean & \textbf{580.0} (584.3)   &  \textbf{502.6} (516.4)  & \textbf{567.0} (679.7)  & \textbf{491.5} (614.0)   \\ \midrule
+Median & \textbf{47.5} (49.4)    & \textbf{54.5} (53.0) & \textbf{42.7} (69.3)  & \textbf{40.0} (56.9)\\ \midrule
+Variance & \textbf{1237.0} (1223.1)  &  \textbf{1149.1} (1148.1) & \textbf{1229.4} (1352.4) &  \textbf{1143.0} (1294.9) \\ \midrule
 Shapiro &\makecell{W = 0.52 \\ p = 1.43 x $10^{-24}$} & \makecell{W = 0.48 \\ p = 2.12 x $10^{-25}$} & \makecell{W = 0.51 \\ p = 1.00 x $10^{-24}$} & \makecell{W = 0.47 \\ p = 1.62 x $10^{-25}$}  \\ \midrule
 Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 171.14 \\ p-value = 7.24 x $10^{-37}$}} \\
 \bottomrule
 \end{tabular}
   \caption {Statistical tests}
   \label{table:st}
-\end{table*}
+\end{table}
 
 \begin{figure}[h]
 	\vspace{-1.5cm}
