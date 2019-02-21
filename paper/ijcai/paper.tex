@@ -595,7 +595,7 @@ This subsection aims to report the performance of the \ds{} technique on slicing
 faults of $5$ \dfj{} projects. Table \ref{tab:red}
 presents the reduction percentage obtained for each project after slicing the top
 $5$ and $10$ of classes comprising the highest faulty statements. We observed a reduction 
-of 30.23\% on average in the projects considered in our study.
+of 30.23\% in the projects considered in our study.
 
 \begin{table}[h]
 	\centering
@@ -659,7 +659,7 @@ projects. The remaining faults were not considered because (1) faults
 belong to the \closure{} project which requires high CPU to perform the \combpar{k} evaluation 
 or (2) faults whose test outputs were not reproducible in the machine used to run the experiments.
 \textbf{RQ1} reviews one of the main issues of \ds{} - missing faulty statements - whereas \textbf{RQ2}
-discusses how effective is the proposed approach, \combpar{k}.
+discusses how effective is the \combpar{k} approach against \sfl{}$^{k}$.
 
 
 \subsubsection{RQ1: \textit{How often \ds{} misses faulty statements?}}
@@ -668,31 +668,31 @@ discusses how effective is the proposed approach, \combpar{k}.
 In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty statements, 
 since it is one of the main issues of dynamic slicing techniques. Table \ref{table:fsws} 
 presents the number of faults where at least one of the faulty statements appears 
-in the final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. We only search
-for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$) of the highest faulty 
-classes of the projects. \combpar{k} finds the faulty statements faster than 
+in the final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault, we 
+only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$) of the highest faulty 
+classes. \combpar{k} finds the faulty statements faster than 
 \sfl{}$^{k}$. Using \combpar{10} we are able to find more $20$ faulty statements than
 when only using \sfl{}$^{10}$. \combpar{10} only misses $11.8\%$ of the faulty statements
-whereas \sfl{}$^{10}$ misses $17.9\%$ of the faulty statements. Thus, an improvement
-of $5.2\%$. $33$ of the $260$ faults do not include the faulty statements in the slicer report
-after slicing.
-
-
+whereas \sfl{}$^{10}$ misses $17.9\%$ of the faulty statements. Thus, \combpar{10} misses less
+$5.2\%$ of the faults against \sfl{}$^{10}$. 
 
 
 \subsubsection{RQ2: \textit{How effective is the \combpar{k} combination for bug localization?}}
 
+In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{} to improve \sfl{}.
+Table~\ref{table:st}, reports the average rank of all faulty statements of all \dfj{} faults considered
+to the study after applying the both techniques, \sfl{}$^{k}$ and \combpar{k} for $K=5$ and $k=10$. $33$ of 
+the $260$ faults do not include the faulty statements in the slicer report after slicing. Thus, we report
+both values in Table~\ref{table:st}. In bold, we present the results of the $227$ faults that do not
+contain the cases where the faulty statements where removed using \combpar{k}. Inside parentheses,
+we present the rank results for all faults. The \combpar{k} combination yields an improvement of $13.0$ on the rank mean of the dataset faulty statements when using $K=5$. Instead, if $K=10$ is considered the proposed approach returns an improvement of $11.1$ 
+on the rank mean of faulty statements. It is worth noting that Automated Program Repair techniques may directly benefit from this
+study to improve their results.
+Figure \ref{fig:diagnosis} reports the performance of the diagnosis using \combpar{5} and \combpar{10} against
+\sfl{}$^{5}$ and \sfl{}$^{10}$, respectively. Although this dataset has more than 50\% of fault of omissions,
+our simple slicing approach was capable of improving the ranking of $97$ for $k=5$ and $117$ for $K=117$ faults. 
+Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for all techniques and its variants. With 99\% of confidence, the results tell us that the distributions are not normal. Given that $C$ is not normally distributed, we use the non-parametrical statistical hypothesis test, Friedman. The null-hypothesis is that the ranking results of all techniques and variants are the same. With 99\% of confidence, the results show that the distributions are distinct. In order to understand if there exist a pair of distributions that are equal, we performed a Siegel post-hoc analysis. Figure \ref{fig:performance} reports the results of Siegel analysis for all the distributions. With 99\% of confidence, it is possible to see that in general the distributions are very similar.
 
-In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{} to improve \ds{}.
-
-The \comb{} combination yields an average improvement of, approximately, 19\% on the ranking of the 
-faulty statements of the \chart{}
-project. Table , reports the average rank of all faulty statements for each version of \chart{} project after
-applying the 3 techiniques \sfl{}, \comb{}-5 and \comb{}-10.
-
-Table \ref{fig:diagnosis} reports the performance of the diagnosis using \comb{}-5 and \comb{}-10 instead of only using \sfl{}.
-
-Table \ref{table:st} presents the statistics to determine if the observed results are statistically significant. Shapiro-Wilk ~\cite{10.2307/2333709} tests the null hypothesis that results are drawn from a normal distribution. The test is perfomed for the three techniques under evaluation (\sfl{}, \comb{}-5, \comb{}-10). With 99 \% of confidence, the results tell us that the distributions are not normal. Given that the distributions are not normally distributed, we use the non-parametrical statistical hypothesis test Friedman~\cite{10.2307/2279372}. The null-hypothesis is that all distributions are the same. With 99 \% of confidence, the results show that the distributions are not all the same. In order to understand if there was a pair of distributions that are equal, we performed a Nemenyi post-hoc analysis. Figure \ref{fig:performance} report the results of that analysis for all the distributions. With 95\% of confidence, it is possible to see that \sfl{} and \comb{}-5 have similar distributions.
 
 \begin{figure}[h]
 		\centering
@@ -711,7 +711,7 @@ Table \ref{table:st} presents the statistics to determine if the observed result
 Mean & \textbf{580.0} (584.3)   &  \textbf{502.6} (516.4)  & \textbf{567.0} (679.7)  & \textbf{491.5} (614.0)   \\ \midrule
 Median & \textbf{47.5} (49.4)    & \textbf{54.5} (53.0) & \textbf{42.7} (69.3)  & \textbf{40.0} (56.9)\\ \midrule
 Variance & \textbf{1237.0} (1223.1)  &  \textbf{1149.1} (1148.1) & \textbf{1229.4} (1352.4) &  \textbf{1143.0} (1294.9) \\ \midrule
-Shapiro-Wilk &\makecell{W = 0.52 \\ p = 1.43 x $10^{-24}$} & \makecell{W = 0.48 \\ p = 2.12 x $10^{-25}$} & \makecell{W = 0.51 \\ p = 1.00 x $10^{-24}$} & \makecell{W = 0.47 \\ p = 1.62 x $10^{-25}$}  \\ \midrule
+Shapiro-Wilk &\makecell{$W$ = 0.52 \\ $p$ = 1.43 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.12 x $10^{-25}$} & \makecell{$W$ = 0.51 \\ $p$ = 1.00 x $10^{-24}$} & \makecell{$W$ = 0.47 \\ $p$ = 1.62 x $10^{-25}$}  \\ \midrule
 Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 171.14 \\ p-value = 7.24 x $10^{-37}$}} \\
 \bottomrule
 \end{tabular}
@@ -722,7 +722,7 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 171.14 \\ p-value = 7.24 x 
 \begin{figure}[h]
 	\vspace{-1.5cm}
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
-		\caption{Nemenyi post-hoc analysis results}
+		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
 \end{figure}
 
@@ -746,10 +746,6 @@ and the implementation of \comb{}.
 \section{Related Work}
 \Rui{needs work...}
 
-\Mar{moved from intro$\rightarrow$} It is worth noting that Automated
-Program Repair techniques should directly benefit from these
-results---either to improve their results or to be aware they should
-not invest on this integration.
 
 \subsection{Program Slicing}
 
@@ -808,6 +804,7 @@ methodology.
 \section{Conclusions and Future Work}
 \label{sec:conc}
 %
+
 Several approaches have been proposed in the literature to improve debugging
 costs through automated software fault diagnosis to reduce time-to-market,
 while maintaining high quality standards. In this domain, Dynamic Slicing (DS)
@@ -827,7 +824,6 @@ Future work is as follows: bla bla.
 %
 %\section*{Acknowledgments}
 %include only after review.
-
 {
   \small
   \balance
