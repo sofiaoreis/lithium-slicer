@@ -42,27 +42,38 @@ fourth@example.com
 \maketitle
 
 \begin{abstract}
-Several approaches have been proposed in the literature to improve debugging
-costs through automated software fault diagnosis.  Dynamic Slicing (\ds{}) and
-Spectrum-based Fault Localization (\sfl{}) are very popular fault diagnosis
-techniques and normally seen as complementary.  This paper reports the outcome
-of a study using real-world applications with the goal of demystifying the
-impact of combining \ds{} with \sfl{}.  We suspect that several highly
-suspicious components---often involved in failing, but seldom in passing
-executions---may be unrelated to the bug. With the aforementioned combination,
-such components could be identified and their suspiciousness reduced.  This
-study also discusses the impact of the dynamic slicing key limitation---the risk
-of missing faulty statements. Our results show that, in practice, \ds{} rarely
-misses faulty statements (23 misses in 260 cases) and that the
-\ds{}-\sfl{} combination, coined as Tandem-SL, improves the diagnostic accuracy
-in 51\% of the faults. To sum, we found that, despite tacit opinions of the
-research community about the usefulness of \ds{} in automated debugging, we
-found the combination practical and effective, and encourage new \sfl{}
-techniques to be evaluated against that optimization.
+Several approaches have been proposed in the literature to reduce
+debugging costs through automated software fault diagnosis.  Dynamic
+Slicing (\ds{}) and Spectrum-based Fault Localization (\sfl{}) are
+popular fault diagnosis techniques and normally seen as complementary.
+This paper reports on a comprehensive study\comments{--using
+  \numFaults{} documented software faults from a credible dataset--}
+to evaluate the effects of combining \ds{} with \sfl{}. We suspect
+that several highly suspicious components---often involved in failing,
+but seldom in passing test runs---may be unrelated to the bug. With
+the aforementioned combination, such components could be located and
+their suspiciousness reduced.  This study also discusses the practical
+impact of the \ds{} key limitation---the risk of missing faulty
+statements. Results indicate that \ds{} misses faulty statements in
+only 9\%\comments{(23 misses)} of the 260 cases\Mar{we are using
+  \numFaults{} in the paper. please, revise and use macros.} and that
+the \ds{}-\sfl{} combination, coined as Tandem-SL, improves on average
+the diagnostic accuracy by \Fix{Z} in 51\% of the cases. To sum, we
+found that the \ds{}-\sfl{} combination was practical and effective
+and encourage new \sfl{} techniques to be evaluated against that
+optimization.
 \end{abstract}
 
 
 \section{Introduction}
+
+\Mar{move this elsewhere...}
+\Fix{
+with the
+goal of demystifying the impact of combining \ds{} with \sfl{}.  
+  
+Despite tacit negative opinions of the research
+community about the usefulness of \ds{} in automated debugging,}
 
 Software debugging is important and challenging. In particular, the task of
 locating the faulty code (\ie{}, fault localization) is particularly
