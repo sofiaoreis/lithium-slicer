@@ -228,8 +228,7 @@ original program and checking if the output of the original and
 modified program are the same.
 
 Our implementation of Critical Slicing is based on the Mozilla Lithium
-tool\footnote{Lithium details available at \url{https://github.com/MozillaSecurity/lithium}
-(Accessed on \today)}. It takes as input a file
+tool\footnote{Lithium details available at {\footnotesize\url{https://github.com/MozillaSecurity/lithium}} (Accessed \today)}. It takes as input a file
 and produces as output a simplified version of that file that
 satisfies a user-defined oracle. In our case, the oracle is defined
 such that the test produces the same failure manifestation as the one
@@ -246,16 +245,139 @@ process continues until no more lines can be removed.  If $n$ is the
 size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
 iterations. Proofs of the algorithm complexity can be found
-elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (Accessed on \today)}. Our implementation is publicly
+elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (Accessed \today)}. Our implementation is publicly
 available at \textit{$<$anonymized for double-blind review$>$}.
+
+\begin{theorem}\label{the:1}
+  The faulty statement may not be included in the critical slice of
+  failing test cases.
+\end{theorem}
+
+
+If test oracles are too general, it is possible, conceptually, that
+the critical slicing algorithm produces slices without the faulty
+code. Suppose that a test fails with a Null-Pointer Exception (NPE)
+and the criterion used to slice the code in that case (\ie{}, the
+oracle) is the presence of NPE in the output, regardless of the
+location that raises that exception. It is therefore possible that the
+slice obtained at some iteration of the aforementioned algorithm
+raises NPE, but it does so in a different part of the code. If that
+happens, the critical slicing algorithm would consider that as an
+acceptable simplification--as it satisfied the criterion--and would
+continue. As the algorithm does not backtrack, it would be impossible,
+to obtain a slice containing the faulty component from that point
+on.\hfill{\tiny$\blacksquare$}
+
+It is worth noting that this is not a problem that afflicts only CS;
+\emph{all} purely dynamic slicing techniques manifest this
+problem~\cite{Lin:2018:BDE:3238147.3238163}. To mitigate the issue in
+CS, it is necessary to make oracles more specific. For that, our
+approach was to use as the slicing criterion the stack trace
+associated with the test failure. That decision increases the chances
+that the sliced program will follow a path to the error similar to
+that followed by the original program. \Mar{Sofia, if you think it is
+  necessary, explain if you needed to abstract something in the
+  stacktrace. I did not understand that memory location thing.}
+
+% \subsection{Implementation}
+% \label{sec:impl}
+
+% \Mar{Sofia, I think this was way too low-level for intro and decided
+%   to move here. please check how to fit.}
+% \Fix{
+% A couple of different tools were designed to perform this empirical study: \morpho{} and \lithium{}. \morpho{} retrieves as an output the input for \lithium{}. \lithium{} uses the input to reduce the search domain for \sfl{} and outputs the statmeents that resulted from the minimization. \morpho{} uses this to update the spectrum matrix, performs the before and after \sfl{} evaluation using the corresponding matrix, and outputs the metrics that report the \sfl{} performance for both cases ~---~ before and after using \ds{}. }
+
+% Two different tools were developed to support this research: \morpho{} and \lithium{}. \morpho{} was designed to calculate the suspiciousness of all statements of a project before, and after the top-k minimization performed by \lithium{} whereas \lithium{} is responsible for reducing the search domain of each \texttt{Java} class of the project for the after-\sfl{} analysis. \morpho{} uses the spectrum matrix (Figure \ref{fig:spectrum-example}), and the pair \emph{name\#location} for each statement to calculate the respective ranking. All rankings are ordered from highest to lowest ranked. This information is retrieved along with each test case stack trace in a \texttt{.json} file which serves as an output to \lithium{}. \lithium{} starts by generating the inputs (Algorithm \ref{alg:ls}, line $2$) for the top-k classes of each failing test based, mainly, on the output of \emph{morpho} ~---~ ranked list of statements and the test cases stacktraces. Then, the tool iterates each class from the top-k classes ($c$) of each test $t$. In each iteration, classes are refined using an external java program (Algorithm \ref{alg:ls}, line 6) that substitutes all the line comments ($\backslash\backslash$), block comments ($\backslash*$ to $*\backslash$) and javadoc comments ($/**$ to $*/$) using the \texttt{JavaParser}\footnote{JavaParser is available at http://javaparser.org/ (accessed November 2018).} library. This step was added to \lithium{} because it turns \texttt{MozillaLithium} faster since the empty lines are ignored. Then, \texttt{MozillaLithium} performs the class minimization using a function of interest (Algorithm \ref{alg:finc}) which compares the output of the test with the expected one which is given as an input. Finally, the location of all relevant statements (Algorithm \ref{alg:ls}, line 9) is saved in a \texttt{.json} which is used for the before-\sfl{} analysis. \morpho{} uses the output from \lithium{} to create a copy of the older spectrum matrix and updates it according to the explanation provided on Figure \ref{fig:ds-reduction} where the statements that are not in the slice of the test suffer a suspiciouness reduction. In the end, \morpho{} performs the \sfl{} analysis for both matrixes and calculates the probability of the first line being faulty, the probability of the last line being faulty, and the mean and median of the position of the faulty line in the ranking. These are the metrics used to evaluate how considerable is the improvement obtained when combining \ds{} with \sfl{}.
+
+% \begin{algorithm}[h]
+% 	\caption{Class Minimization Algorithm}
+% 	\label{alg:ls}
+% 	\begin{flushleft}
+% 		\textbf{Input:} $proj$ - project name \\
+% 		\hspace{2.75em} $bug$ - bug number\\
+% 		\hspace{2.75em} $k$ - number of top ranked classes\\
+% 		\hspace{2.75em} $stk$ - expected stacktrace\\
+% 	 \textbf{Output:} Top-k classes minimization for each test \\
+% 	\end{flushleft}
+% 	\begin{algorithmic}[1]
+% 		\Procedure{lithium-slicer}{$proj$, $bug$, $k$, $stk$}
+% 			\State $testsInfo \leftarrow$ generateInputs($proj$, $bug$, $k$, $stk$)
+% 			\ForAll {$t \in testsInfo$}
+% 				\State $classes \leftarrow$ getClasses($proj$, $bug$)
+% 				\ForAll {$c \in classes$}
+% 					\State $unc \leftarrow$ removeComments($c$)
+% 					\State $min \leftarrow$ MozillaLithium($iFunc$, $unc$, $t$, $stk$)
+% 				\EndFor
+% 				\State $slicer \leftarrow$ getLocation($c$, $t$, $min$)
+% 			\EndFor
+% 			\State \Return $slicer$
+% 		\EndProcedure
+% 	\end{algorithmic}
+%
+% \end{algorithm}
+%
+% \begin{figure*}[t]
+% 	\centering
+% 	\includegraphics[width=1.0\textwidth]{figures/lithium.pdf}
+% 	\caption{Simple illustration of the process to obtain the top-5 minimized classes from a project carrying a bug}
+% \end{figure*}
+%
+
+%---------------------------------------------------------
+%% \subsubsection{\label{sec:oracleheuristics}Oracle Heuristics.}~
+
+
+%% The \cs{} technique is somewhat based on the \textit{statement deletion} mutant
+%% operator of the mutation-based testing methodology. This operator was designed
+%% based on the idea that each statement has an effect on the program output (i.e.,
+%% oracle). Thus, testers are encouraged to design test sets that cause all
+%% statements to be executed and generate outputs that are different from the
+%% program under test.
+
+%% Mozilla's Lithium takes as input a function of interest that can be designed
+%% according to the problem to be solved. The function of interest determines if
+%% the test case output is interesting or not. Our function simply compares the
+%% failing test output with the output obtained when re-running again the failing
+%% test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus,
+%% if the initial test output is the same as the one after removing the slice
+%% \{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not
+%% necessary to reveal the fault because if removed the test output is still the
+%% same. The output is extracted from the stacktrace obtained through the failing
+%% test execution. The stacktrace provides information not only about the place
+%% where the fault was revelead but also the path taken to get there. Thus, our
+%% approach considers not only the exception caught by the failing test but also
+%% the path that was taken to reveal the fault. The following provides an example:
+
+%% \vspace{3mm}
+%% \begin{myframe} \label{box:1}
+%% junit.framework.AssertionFailedError, \\
+%% at junit.framework.Assert.fail(Assert.java:55), \\
+%% at junit.framework.Assert.assertTrue(Assert.java:22), \\
+%% at junit.framework.Assert.assertFalse(Assert.java:39), \\
+%% at junit.framework.Assert.assertFalse(Assert.java:47), \\
+%% at junit.framework.TestCase.assertFalse(TestCase.java:219), \\
+%% at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeUtilitiesTests.java:212), \\
+%% ...
+%% \end{myframe}
+
+%% Considering some of the stacktrace information about the path taken to reveal
+%% the fault solved the issue of generic oracles (e.g., NPE or generic
+%% AssertionFailedError expections as the one presented before) mentioned in
+%% Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from
+%% one execution to another. For example, exceptions including information of
+%% memory addresses. For these cases, it was developed a mechanism to compare the
+%% rest of the output ignoring the identifier of the memory address. This heuristic
+%% also handles StackOverflow oracles.
+%---------------------------------------------------------
 
 \subsection{Spectrum-based Fault Localization (\sfl)}
 \label{sec:sfl}
 
-\begin{wrapfigure}[8]{2}{0.3\textwidth}
+\begin{wrapfigure}[8]{1}{0.25\textwidth}
   \hspace{-2ex}
   \centering
   \scriptsize
+  \setlength{\tabcolsep}{3.5pt}  
   \begin{tabular}{c|cccc|c}
     $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
     $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
@@ -423,24 +545,6 @@ not in the slice of $t_2$, have their suspiciousness reduced, enabling
 the faulty component $c_2$ to rise from the third to the first
 position in the ranking.
 
-\begin{theorem}\label{the:1}
-  The faulty statement may not be included in the critical slice of
-  failing test cases.
-\end{theorem}
-
-Conceptually, if the oracles implemented in faulty tests are too
-general, the critical slicing algorithm could produce slices without
-the faulty code. For example, consider the scenario of an unexpected
-Null-Pointer Exception (NPE) thrown in the code. If the oracle checks
-for the presence of NPE regardless of where it occurs, it is possible,
-in principle, that the final slice does not include the faulty code
-but still raises NPE (in a different part of the code). The critical
-slicing algorithm would consider that as an acceptable simplification
-and would continue. Section~\ref{sec:oracleheuristics} shows how we
-mitigate this fundamental limitation of Critical Slicing and
-Section~\ref{sec:fault-misses} shows how problematic is that issue in
-practice.
-
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
@@ -453,97 +557,8 @@ above the faulty component, it is possible that the faulty component
 becomes more suspicious relative to $j$, \ie{}, the ranking of the
 faulty component increases. If those components appear at positions
 below the faulty components, the ranking of the faulty components is
-unaffected.
+unaffected.\hfill{\tiny$\blacksquare$}
 
-
-\subsection{Oracle Heuristics}
-\label{sec:oracleheuristics}
-
-% \subsection{Implementation}
-% \label{sec:impl}
-
-% \Mar{Sofia, I think this was way too low-level for intro and decided
-%   to move here. please check how to fit.}
-% \Fix{
-% A couple of different tools were designed to perform this empirical study: \morpho{} and \lithium{}. \morpho{} retrieves as an output the input for \lithium{}. \lithium{} uses the input to reduce the search domain for \sfl{} and outputs the statements that resulted from the minimization. \morpho{} uses this to update the spectrum matrix, performs the before and after \sfl{} evaluation using the corresponding matrix, and outputs the metrics that report the \sfl{} performance for both cases ~---~ before and after using \ds{}. }
-
-% Two different tools were developed to support this research: \morpho{} and \lithium{}. \morpho{} was designed to calculate the suspiciousness of all statements of a project before, and after the top-k minimization performed by \lithium{} whereas \lithium{} is responsible for reducing the search domain of each \texttt{Java} class of the project for the after-\sfl{} analysis. \morpho{} uses the spectrum matrix (Figure \ref{fig:spectrum-example}), and the pair \emph{name\#location} for each statement to calculate the respective ranking. All rankings are ordered from highest to lowest ranked. This information is retrieved along with each test case stack trace in a \texttt{.json} file which serves as an output to \lithium{}. \lithium{} starts by generating the inputs (Algorithm \ref{alg:ls}, line $2$) for the top-k classes of each failing test based, mainly, on the output of \emph{morpho} ~---~ ranked list of statements and the test cases stacktraces. Then, the tool iterates each class from the top-k classes ($c$) of each test $t$. In each iteration, classes are refined using an external java program (Algorithm \ref{alg:ls}, line 6) that substitutes all the line comments ($\backslash\backslash$), block comments ($\backslash*$ to $*\backslash$) and javadoc comments ($/**$ to $*/$) using the \texttt{JavaParser}\footnote{JavaParser is available at http://javaparser.org/ (accessed November 2018).} library. This step was added to \lithium{} because it turns \texttt{MozillaLithium} faster since the empty lines are ignored. Then, \texttt{MozillaLithium} performs the class minimization using a function of interest (Algorithm \ref{alg:finc}) which compares the output of the test with the expected one which is given as an input. Finally, the location of all relevant statements (Algorithm \ref{alg:ls}, line 9) is saved in a \texttt{.json} which is used for the before-\sfl{} analysis. \morpho{} uses the output from \lithium{} to create a copy of the older spectrum matrix and updates it according to the explanation provided on Figure \ref{fig:ds-reduction} where the statements that are not in the slice of the test suffer a suspiciouness reduction. In the end, \morpho{} performs the \sfl{} analysis for both matrixes and calculates the probability of the first line being faulty, the probability of the last line being faulty, and the mean and median of the position of the faulty line in the ranking. These are the metrics used to evaluate how considerable is the improvement obtained when combining \ds{} with \sfl{}.
-
-% \begin{algorithm}[h]
-% 	\caption{Class Minimization Algorithm}
-% 	\label{alg:ls}
-% 	\begin{flushleft}
-% 		\textbf{Input:} $proj$ - project name \\
-% 		\hspace{2.75em} $bug$ - bug number\\
-% 		\hspace{2.75em} $k$ - number of top ranked classes\\
-% 		\hspace{2.75em} $stk$ - expected stacktrace\\
-% 	 \textbf{Output:} Top-k classes minimization for each test \\
-% 	\end{flushleft}
-% 	\begin{algorithmic}[1]
-% 		\Procedure{lithium-slicer}{$proj$, $bug$, $k$, $stk$}
-% 			\State $testsInfo \leftarrow$ generateInputs($proj$, $bug$, $k$, $stk$)
-% 			\ForAll {$t \in testsInfo$}
-% 				\State $classes \leftarrow$ getClasses($proj$, $bug$)
-% 				\ForAll {$c \in classes$}
-% 					\State $unc \leftarrow$ removeComments($c$)
-% 					\State $min \leftarrow$ MozillaLithium($iFunc$, $unc$, $t$, $stk$)
-% 				\EndFor
-% 				\State $slicer \leftarrow$ getLocation($c$, $t$, $min$)
-% 			\EndFor
-% 			\State \Return $slicer$
-% 		\EndProcedure
-% 	\end{algorithmic}
-%
-% \end{algorithm}
-%
-% \begin{figure*}[t]
-% 	\centering
-% 	\includegraphics[width=1.0\textwidth]{figures/lithium.pdf}
-% 	\caption{Simple illustration of the process to obtain the top-5 minimized classes from a project carrying a bug}
-% \end{figure*}
-%
-
-The \cs{} technique is somewhat based on the \textit{statement deletion} mutant
-operator of the mutation-based testing methodology. This operator was designed
-based on the idea that each statement has an effect on the program output (i.e.,
-oracle). Thus, testers are encouraged to design test sets that cause all
-statements to be executed and generate outputs that are different from the
-program under test.
-
-Mozilla's Lithium takes as input a function of interest that can be designed
-according to the problem to be solved. The function of interest determines if
-the test case output is interesting or not. Our function simply compares the
-failing test output with the output obtained when re-running again the failing
-test after deleting the slice, as explained in Section~\ref{sec:slicing}. Thus,
-if the initial test output is the same as the one after removing the slice
-\{$c_2$,$c_5$\}, then the slice is removed. This means that the slice is not
-necessary to reveal the fault because if removed the test output is still the
-same. The output is extracted from the stacktrace obtained through the failing
-test execution. The stacktrace provides information not only about the place
-where the fault was revelead but also the path taken to get there. Thus, our
-approach considers not only the exception caught by the failing test but also
-the path that was taken to reveal the fault. The following provides an example:
-
-\vspace{3mm}
-\begin{myframe} \label{box:1}
-junit.framework.AssertionFailedError, \\
-at junit.framework.Assert.fail(Assert.java:55), \\
-at junit.framework.Assert.assertTrue(Assert.java:22), \\
-at junit.framework.Assert.assertFalse(Assert.java:39), \\
-at junit.framework.Assert.assertFalse(Assert.java:47), \\
-at junit.framework.TestCase.assertFalse(TestCase.java:219), \\
-at org.jfree.chart.util.junit.ShapeUtilitiesTests.\\testEqualGeneralPaths(ShapeUtilitiesTests.java:212), \\
-...
-\end{myframe}
-
-Considering some of the stacktrace information about the path taken to reveal
-the fault solved the issue of generic oracles (e.g., NPE or generic
-AssertionFailedError expections as the one presented before) mentioned in
-Theorem~\ref{the:1}. There are faults whose outputs could slightly differ from
-one execution to another. For example, exceptions including information of
-memory addresses. For these cases, it was developed a mechanism to compare the
-rest of the output ignoring the identifier of the memory address. This heuristic
-also handles StackOverflow oracles.
 %
 \section{Evaluation}
 \label{sec:eval}
