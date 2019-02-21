@@ -667,17 +667,23 @@ one of the main issues of \ds{} - missing faulty statements - whereas
 \label{sec:fault-misses}
 
 In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty
-statements,  since it is one of the main issues of dynamic slicing techniques.
-This is particularly important because when \ds{} missing a faulty statement
+statements,  since it is one of the main issues of dynamic slicing techniques. This 
+is particularly important because when \ds{} misses a faulty statement
 means that it will not be in the diagnostic report and therefore has a negative
-impact in the fault localization accuracy. Table \ref{table:fsws}  presents the
+impact in the fault localization accuracy. Table~\ref{table:fsws}  presents the
 number of faults where at least one of the faulty statements appears  in the
 final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault,
 we  only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
-of the highest faulty  classes. \combpar{k} finds the faulty statements faster
-than  \sfl{}$^{k}$. \Rui{Starting from here, I don't see the connection with
-the rq... the rq has nothing to do with the combination. We need to somehow
-motivate why we are discussing these numbers here.}
+of the highest faulty  classes. 
+
+
+As observed in~\ref{table:fsws}, \combpar{k} 
+finds the faulty statements faster than \sfl{}$^{k}$. 
+
+We observe that $33$ of the $260$ faulty versions do not include the 
+faulty statements in the slicer report after slicing.
+
+
 Using \combpar{10} we are able to find more $20$ faulty
 statements than when only using \sfl{}$^{10}$. \combpar{10} only misses $11.8\%$
 of the faulty statements whereas \sfl{}$^{10}$ misses $17.9\%$ of the faulty
@@ -690,7 +696,7 @@ In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{}
 to improve fault localization. Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying the both
 techniques, \sfl{}$^{k}$ and \combpar{k} for $K=5$ and $k=10$. We observe that
-$33$ of the $260$ \Rui{Ehmm... is this in sycn with previous section?}
+$33$ of the $260$ 
 faulty versions do not include the faulty statements in the slicer report after slicing.
 Thus, we report both values in Table~\ref{table:st}. In bold, we present the
 results of the $227$ faults that do not contain the cases where the faulty
@@ -699,11 +705,7 @@ rank results for all faults. The \combpar{k} combination yields an improvement
 of $13.0$ on the rank mean of the dataset faulty statements when using $K=5$.
 Instead, if $K=10$ is considered the proposed approach returns an improvement of
 $11.1$ on the rank mean of faulty statements.
-\Rui{APR doesn't belong here, maybe the last thing to discuss in this section,
-but not here in the middle}
-It is worth noting that Automated
-Program Repair techniques may directly benefit from this study to improve their
-results. Figure \ref{fig:diagnosis} reports the performance of the diagnosis
+ Figure \ref{fig:diagnosis} reports the performance of the diagnosis
 using \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$,
 respectively. Although this dataset has more than 50\% of fault of omissions,
 our simple slicing approach was capable of improving the ranking of $97$ for
@@ -715,11 +717,16 @@ the results tell us that the distributions are not normal. Given that $C$ is not
 normally distributed, we use the non-parametrical statistical hypothesis test,
 Friedman. The null-hypothesis is that the ranking results of all techniques and
 variants are the same. With 99\% of confidence, the results show that the
-distributions are distinct. To understand if there exist a pair of
-distributions that are equal \Rui{equal? isn't this test the effect size?}, we performed a Siegel post-hoc analysis. Figure
+distributions are distinct. To understand if there is any relationship
+between the distributions, 
+we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all the
 distributions. With 99\% of confidence, it is possible to see that in general
 the distributions are very similar. \Rui{so??}
+
+It is worth noting that Automated
+Program Repair techniques may directly benefit from this study to improve their
+results.
 
 \Rui{Weakness: there has to be discussion on whether there is potential/promising
 results somewhere.}
@@ -750,7 +757,7 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 171.14 \\ p-value = 7.24 x 
 \end{table}
 
 \begin{figure}[h]
-	\vspace{-1.5cm}
+	\vspace{-1.2cm}
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
 		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
