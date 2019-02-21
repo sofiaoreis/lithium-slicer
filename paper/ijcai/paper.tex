@@ -58,8 +58,8 @@ statements. Results indicate that \ds{} misses faulty statements in
 only 9\%\comments{(23 misses)} of the 260 cases\Mar{we are using
   \numFaults{} in the paper. please, revise and use macros.} and that
 the \ds{}-\sfl{} combination, coined as Tandem-SL, improves on average
-the diagnostic accuracy by \Fix{Z} in 51\% of the cases. To sum, we
-found that the \ds{}-\sfl{} combination was practical and effective
+the diagnostic accuracy by \avgImprov\ in 51\% of the cases. To sum,
+we found that the \ds{}-\sfl{} combination was practical and effective
 and encourage new \sfl{} techniques to be evaluated against that
 optimization.
 \end{abstract}
@@ -67,40 +67,114 @@ optimization.
 
 \section{Introduction}
 
-\Mar{move this elsewhere...}
-\Fix{
-with the
-goal of demystifying the impact of combining \ds{} with \sfl{}.  
+%% provide context (debugging + fault localization)
+Software debugging is important and challenging. The task of locating
+the faulty code (\ie{}, fault localization) is particularly
+challenging. As such, countless automated techniques have been
+proposed in the past to reduce the cost of fault
+localization~\cite{7390282}. Model-based software diagnosis
+(MBSD)~\cite{REITER198757,DEKLEER200325} and Spectrum-Based Fault
+Localization (\sfl{})~\cite{DBLP:journals/stvr/HarroldRSWY00} are two
+popular techniques that leverage different principles to automate
+fault isolation~\cite{DBLP:conf/sac/AbreuGZG08}.  At a high-level,
+MBSD
+techniques~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927,Ko:2008:DRA:1368088.1368130}
+attempt to eliminate non-suspicious components whereas \sfl{}
+techniques attempt to rank suspicious components with the goal of
+reducing fault diagnosis cost.
+
+%% detail context (DS + SFL)
+Dynamic Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576} is an
+instance of MBSD that has attracted huge attention in research over
+the last decades~\cite{Silva:2012:VPS:2187671.2187674}. The technique
+traces back the statements in the code that influence a given point of
+interest, such as the evaluation of a failing assertion.  Similarly to
+\ds{}, \sfl{}~\cite{DBLP:journals/stvr/HarroldRSWY00} received
+tremendous attention in research over the years~\cite{7390282}.  It
+computes suspiciousness values associated with program components
+(e.g., statements) based on coverage information gathered during the
+execution of test cases.  More precisely, \sfl{} uses coverage
+information of passing and failing test cases to identify likely
+faulty statements and produces on output a list of program components
+ranked in decreasing order of suspiciousness.
+
+%% \ds{} and \sfl{} are complementary~\cite{DBLP:conf/sac/AbreuGZG08} and
+%% could be combined.
+
+Intuitively, \ds{} identifies irrelevant parts of the code (\ie{},
+parts that do not contribute to the fault) whereas \sfl{} ranks the
+relevant parts of the code. It is conceivable, therefore, to combine
+these two techniques based on the intuition that highly ranked
+statements (as per \sfl{}), albeit covered by failing executions,
+could be in fact unrelated to the fault (as per \ds{}). In fact, prior
+work reported promising preliminary results on this
+combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
+Unfortunately, they used a small set of subjects in their evaluation
+or archaic---often optimistic---methods to evaluate fault localization
+improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
+
+Given the importance of fault localization, this paper revisits the
+problem of assessing the effectiveness of combining \ds{} and \sfl{},
+addressing the issues from prior work. The study we conducted involves
+\numFaults{}\Mar{check} faults from \numPrograms{}\Mar{check}
+different programs from the Defects4J (D4J)
+dataset~\cite{just-defects4j-issta2014}, which is frequently used to
+evaluate fault localization research. The study covers the following
+research questions:
   
-Despite tacit negative opinions of the research
-community about the usefulness of \ds{} in automated debugging,}
+%% The goal of this paper is to reassess whether the \comb{} approach yields
+%% promising results under a more rigorous experimental methodology and a larger
+%% dataset.\comments{The D4J dataset is about twice as large than the biggest test
+%% suite used in previous studies.} 
 
-Software debugging is important and challenging. In particular, the task of
-locating the faulty code (\ie{}, fault localization) is particularly
-challenging. For that reason, countless automated techniques have been proposed
-in the past to reduce the cost of fault localization~\cite{7390282}.
+\newcommand{\rqone}{How often does DS miss faulty statements?}
+\newcommand{\rqthree}{How effective is the \comb{} approach?}
 
-Model-based software diagnosis (MBSD)~\cite{REITER198757,DEKLEER200325} and
-Spectrum-Based Fault Localization (\sfl{}) are two very popular techniques that
-leverage different principles to automate fault isolation. An example of a MBSD
-is Dynamic Slicing (DS)~\cite{Agrawal:1990:DPS:93542.93576} as well as some
-work~\cite{wotawa2002model,Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,Perez:2018:LQR:3304889.3304927,Ko:2008:DRA:1368088.1368130},
-a technique that traces back statements in the code that influence some point of
-interest, such as the evaluation of a failing assertion. On the one hand, similarly to \ds{},
-\sfl{} received tremendous attention in research over the years, but its
-applicability to support debugging remains
-questionable~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}.
-On the other hand, in contrast to \ds{},
-\sfl{}~\cite{7390282} is instead a black-box,
-statistical fault localization method that computes suspiciousness values
-associated with program entities (e.g., methods) based on coverage information
-gathered during the execution of test cases as well as the output of test cases.
-More precisely, \sfl{} uses coverage information of passing and failing test
-cases to identify likely faulty statements and produces on output a list of
-program entities ranked in decreasing order of suspiciousness. \ds{} and \sfl{}
-are complementary debugging techniques~\cite{DBLP:conf/sac/AbreuGZG08}.
-Intuitively, \ds{} identifies irrelevant parts of the code whereas \sfl{} ranks
-the relevant parts of the code.
+\begin{itemize}[leftmargin=*]
+\item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
+\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}
+\end{itemize}
+
+The first question addresses the problem that affects all dynamic
+slicing techniques~\cite{Lin:2018:BDE:3238147.3238163}--that of
+missing faulty statements. Naturally, the consequence of that problem
+for debugging is that developers would never be able to locate
+faults. Different slicers can miss faulty statements for different
+reasons. In this paper, we used Critical
+Slicing~\cite{DeMillo:1996:CSS:229000.226310}, which, in principle,
+could miss statements because of imprecise oracles that guide the
+slicing process.\comments{ We evaluated how often that issue manifests
+  in our experiments.} The second research question evaluates the
+impact of the combination. To sum, our results show that the
+combination of the two approaches improves the accuracy of fault
+localization on average by \avgImprov\ in 51\% of the studied faults.
+
+The contributions of this work are: 1)~an empirical study, using
+real-world applications and bugs, on the combination of \ds{} and
+\sfl{} for bug localization of \emph{Java} faulty programs and 2)~a
+tool that implements the combination of \ds{} with \sfl{}, coined
+\comb{}.  The tool as well as a replication package will be available
+once double-blind requirements are lifted.
+
+%% -----------------
+%% This paper reports the results of a comprehensive study to assess the
+%% impact of combining two complementary techniques to improve software
+%% fault localization.
+
+%% It is worth noting that 
+
+%%  We
+%% developed a tool, coined as \comb{}, materializing the
+%% combination. 
+
+%% the research community manifests
+%% explicit~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}
+%% or tacit negative opinions about the usefulness of \ds{} and \sfl{} in
+%% automated debugging.
+%% -----------------
+
+%Dynamic Slicing~\cite{Agrawal:1990:DPS:93542.93576}------and \sfl{}.
+%%% explain what each technique does (at a high level)
 
 %% Despite the skepticism of the research community, \sfl{} has been
 %% shown useful in supporting downstream analyses, such as Automated
@@ -126,57 +200,6 @@ the relevant parts of the code.
 %% which has been widely adopted to evaluate performance of information retrieval algorithms~\Fix{cite}. This
 %% metric reports the percentage of faults captured by a technique when
 %% the rank is trimmed to the first $k$ components.
-
-This paper reports the results of a a study using real-world applications to
-evaluate the impact of combining \ds{} and \sfl{} to improve software fault
-localization. We coin the toolset materializing this approach as \comb{}.  The
-intuition for the combination is that several highly ranked statements, albeit
-covered by failing executions, may be unrelated to the fault. Our empirical
-study involves \numFaults{} faults from \numPrograms{} different programs
-comprised in the Defects4J (D4J) dataset~\cite{just-defects4j-issta2014}, which
-is frequently used to evaluate fault localization research. Prior work reported
-promising results in this
-combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair},
-but they used a non-representative set of subjects in their evaluation or used
-archaic methods to evaluate technique
-improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
-
-The goal of this paper is to reassess whether the \comb{} approach yields
-promising results under a more rigorous experimental methodology and a larger
-dataset.\comments{The D4J dataset is about twice as large than the biggest test
-suite used in previous studies.} This study covers the following research
-questions:
-
-\newcommand{\rqone}{How often does DS miss faulty statements?}
-\newcommand{\rqthree}{How effective is the \comb{} approach?}
-
-\begin{itemize}[leftmargin=*]
-\item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
-\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}
-\end{itemize}
-
-The first question addresses the important problem of missing faulty
-statements. Naturally, the consequence of that problem for debugging
-is that developers would never be able to locate faults. Different
-slicers can miss faulty statements for different reasons. In this
-paper, we used Critical Slicing~\cite{DeMillo:1996:CSS:229000.226310},
-which, in principle, could miss statements because of imprecise
-oracles that guide the slicing process. We evaluated how often that
-issue manifests in our experiments. The second research questions
-effectively evaluates the impact of the combination. Our
-results show that the combination of the two approaches improves the accuracy
-of fault localization of 51\% of the studied faults.
-
-The contributions of this work are the following ones:
-\begin{itemize}
-	\item A study, using real-world applications and bugs, on the combination
-    of \ds{} and \sfl{} for bug localization of \emph{Java} faulty programs.
-   \item A tool that implements the combination of \ds{} with \sfl{}, coined
-   \comb{}.
-\end{itemize}
-
-The tool as well as a replication package will be available once double-blind
-requirements are lifted.
 
 \section{Background}
 \label{sec:background}
