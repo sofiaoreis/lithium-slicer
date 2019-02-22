@@ -520,11 +520,11 @@ unaffected.\hfill{\tiny$\blacksquare$}
   \begin{subfigure}{0.5\textwidth}
     \centering
     \begin{tabular}{cccccc}
-      1 & $c_4$ (0.59) & & 1 & $c_2$ (0.35) \\
-      2 & $c_3$ (0.55) & & 2.5 & $c_1$ (0.32)\\
+      {\cellcolor{Gray}1} & {\cellcolor{Gray}$c_4$ (0.59)} & & 1 & $c_2$ (0.35) \\
+      {\cellcolor{Gray}2} & {\cellcolor{Gray}$c_3$ (0.55)} & & 2.5 & $c_1$ (0.32)\\
       3 & $c_2$ (0.35) & \hspace{1ex}$\Rightarrow$\hspace{1ex} & 2.5 & $c_5$ (0.32)\\
-      4.5 & $c_1$ (0.32) & & 4 & $c_3$ (0.29)\\
-      4.5 & $c_5$ (0.32) & & 5 & $c_4$ (0.00)\\
+      4.5 & $c_1$ (0.32) & & {\cellcolor{Gray}4} & {\cellcolor{Gray}$c_3$ (0.29)}\\
+      4.5 & $c_5$ (0.32) & & {\cellcolor{Gray}5} & {\cellcolor{Gray}$c_4$ (0.00)}\\
     \end{tabular}
     \caption{Ranking update.}
   \end{subfigure}
@@ -557,15 +557,15 @@ We studied the following research questions:
 \item[]{\textbf{RQ3.}}~\textit{\rqthree{}}
 \end{itemize}
 
-The first question evaluates the ability of dynamic slicing reducing
-application code. Improvements on fault localization depends on that
-ability. The second question addresses the problem that affects all
-dynamic slicing techniques~\cite{Lin:2018:BDE:3238147.3238163}---that
-of missing faulty statements (see
-Section~\ref{sec:slicing}). Developers would not be able to
-successfully debug code if that issue is manifested. The third
-research question evaluates the impact of the combination as
-substantiated by \comb.
+The first question evaluates the ability of dynamic slicing to reduce
+the size of application code. Improvements on fault localization
+depend on that ability. The second question addresses the problem that
+affects all dynamic slicing
+techniques~\cite{Lin:2018:BDE:3238147.3238163}---that of missing
+faulty statements (see Theorem~\ref{the:1}). Developers would
+not be able to successfully debug code for the cases that issue is
+manifested. The third research question evaluates the impact of the
+combination, as substantiated by \comb, to fault localization.
 
 %%  shows that CS can
 %% miss faulty statements because of imprecise oracles that guide the
@@ -575,61 +575,80 @@ substantiated by \comb.
 %% Slicing~\cite{DeMillo:1996:CSS:229000.226310}, which, in principle,
 
 %
-To evaluate our approach, we compare the cost of diagnosing
-a collection of faults using \sfl{} versus \comb{}.
 %
 \subsection{Objects of Analysis}\label{sec:analysis}
 
-We used the \dfj{} benchmark in our experiments~\cite{just-defects4j-issta2014}.
-Originally, this benchmark includes six different subjects and 395 faults (Table
-\ref{tab:df4j}). \lang{} is a library that provides a set of helper utilities
-for the {\small\texttt{java.lang}} API. \cmath{} is a lightweight library of
-self-contained mathematics and statistics components. The \closure{} is a
-toolset for turning JavaScript files into smaller scripts for faster download
-and execution in the browser. \chart{} is a Java library for creating charts.
-\jtime{} is a lightweight library that aims to replace the default Java
-{\small\texttt{java.util.Date}} classes providing simpler APIs. \mockito{} is a
-mocking testing framework.
 
-\newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
+We used subject programs from the \dfj{}
+benchmark~\cite{just-defects4j-issta2014} in our evaluation.
+Table~\ref{tab:df4j} shows size, number of tests, and number of
+faults, for each considered program.
+
 \begin{table}[h]
-	
+  \small  
   \centering
   \setlength{\tabcolsep}{4pt}
-    \begin{tabular}{lrrr}
-      \toprule
-     Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
-      \midrule
-      \lang{}            & 111,751  & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
-      \cmath{}           & 306,276  & 26,797 & 106     \\   %\comments{& 177   &  -}\\
-      \closure{}         & 149,521  & 27,930  & 133     \\   %\comments{& 350   &  -}\\
-      \chart{}           & 230,159  & 8,458 & 26      \\  %\comments{& 92    &  -}\\
-      \jtime{}           & 141,610  & 3,289 & 27       \\   %\comments{& 76    &  -}\\
-      \mockito{}         & 22,787  & 8,835 & 38    \\     %\comments{& 118   &  -}\\
-      \bottomrule
+  \begin{tabular}{lrrr}
+    \toprule
+    Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
+    \midrule
+    \lang{}            & 111,751  & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
+    \cmath{}           & 306,276  & 26,797 & 106     \\   %\comments{& 177   &  -}\\
+    %      \closure{}         & 149,521  & 27,930  & 133     \\   %\comments{& 350   &  -}\\
+    \chart{}           & 230,159  & 8,458 & 26      \\  %\comments{& 92    &  -}\\
+    \jtime{}           & 141,610  & 3,289 & 27       \\   %\comments{& 76    &  -}\\
+    \mockito{}         & 22,787  & 8,835 & 38    \\     %\comments{& 118   &  -}\\
+    \bottomrule
   \end{tabular}
-\caption {Characterization of \dfj{} subjects.}
-
-\label{tab:df4j}
+  \caption {Characterization of \dfj{} subjects.}
+  \label{tab:df4j}
 \end{table}
 \normalsize
 
-\begin{figure}[h]
-  \vspace{-0.5cm}
+\lang{} is a
+library that provides a set of helper utilities for the
+{\small\texttt{java.lang}} API. \cmath{} is a lightweight library of
+self-contained mathematics and statistics components.\comments{ The
+  \closure{} is a toolset for turning JavaScript files into smaller
+  scripts for faster download and execution in the browser.} \chart{}
+is a Java library for creating charts.  \jtime{} is a lightweight
+library that aims to replace the default Java
+{\small\texttt{java.util.Date}} classes providing simpler
+APIs. \mockito{} is a mocking testing framework.
 
-		\centering
-		\includegraphics[width=0.42\textwidth]{figures/defects4j.pdf}
-		\vspace{-0.75cm}
-		\caption{Faults of omissions' distribution}
-		\label{fig:foos}
-\end{figure}
+%% Originally, this benchmark includes six different subjects and 395
+%% faults (Table \ref{tab:df4j}).
 
-Figure~\ref{fig:foos} shows the predominance of Fault Of Omission (FOO) cases in
-the dataset, i.e., faults which generally are difficult to locate. $59.7\%$ of
-the faults of this dataset are FOOs. \Sof{@todo: Explain better what are FOOs}
+%%%%%%%%%%%%%%%%%%%%% I commented because there are just two cases;
+%%%%%%%%%%%%%%%%%%%%% not much information added (that could not be
+%%%%%%%%%%%%%%%%%%%%% said in text). -Marcelo
+%% \begin{figure}[h]
+%%   \vspace{-0.5cm}
+%% 		\centering
+%% 		\includegraphics[width=0.42\textwidth]{figures/defects4j.pdf}
+%% 		\vspace{-0.75cm}
+%% 		\caption{Faults of omissions' distribution}
+%% 		\label{fig:foos}
+%% \end{figure}
 
+As to quantify complexity of fault localization on this dataset, we
+additionally counted the number of cases of ``fault of omission'', a
+popular metric in fault localization research for that
+purpose~\Fix{cite}. A fault of omission occurs when
+\Fix{...explain...}. Intuitivelly, the ability of techniques to
+produce good diagnosis in those cases reduce as \Fix{...explain...}. A
+total of $59.7\%$ of the cases in this dataset manifest fault of
+omission, which is a good indication of difficulty.
+
+%in producing
+%high-qualitiy diagnosis.
 
 \subsection{Experimental Methodology}\label{sec:methodology}
+
+\Fix{
+To evaluate our approach, we compare the cost of diagnosing
+a collection of faults using \sfl{} versus \comb{}.
+}
 
 To evaluate the effectiveness of \comb{}, following related work, we compared
 its performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
@@ -707,6 +726,7 @@ $5$ and $10$ of classes comprising the highest faulty statements. We observed a 
 of $30.23\%$ in the projects considered in our study.
 
 \begin{table}[H]
+  \small
 	\centering
 	\setlength{\tabcolsep}{4pt}
 	\begin{tabular}{lcc}
