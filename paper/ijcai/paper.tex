@@ -118,42 +118,13 @@ addressing the issues from prior work. The study we conducted involves
 \numFaults{} faults from \numPrograms{}
 different programs from the Defects4J (D4J)
 dataset~\cite{just-defects4j-issta2014}, which is frequently used to
-evaluate fault localization research. The study covers the following
-research questions:
-
-%% The goal of this paper is to reassess whether the \comb{} approach yields
-%% promising results under a more rigorous experimental methodology and a larger
-%% dataset.\comments{The D4J dataset is about twice as large than the biggest test
-%% suite used in previous studies.}
-
-\newcommand{\rqone}{How often does DS miss faulty statements?}
-\newcommand{\rqthree}{How effective is the \comb{} approach?}
-
-\begin{itemize}[leftmargin=*]
-\item[]{\footnotesize[(un)soundness]}~\textit{\rqone{}}
-\item[]{\footnotesize[effectiveness]}~\textit{\rqthree{}}
-\end{itemize}
-
-The first question addresses the problem that affects all dynamic
-slicing techniques~\cite{Lin:2018:BDE:3238147.3238163}--that of
-missing faulty statements. Naturally, the consequence of that problem
-for debugging is that developers would never be able to locate
-faults. Different slicers can miss faulty statements for different
-reasons. In this paper, we used Critical
-Slicing~\cite{DeMillo:1996:CSS:229000.226310}, which, in principle,
-could miss statements because of imprecise oracles that guide the
-slicing process.\comments{ We evaluated how often that issue manifests
-  in our experiments.} The second research question evaluates the
-impact of the combination. To sum, our results show that the
-combination of the two approaches improves the accuracy of fault
-localization on average by \avgImprov\ in 51\% of the studied faults.
-
-The contributions of this work are: 1)~an empirical study, using
-real-world applications and bugs, on the combination of \ds{} and
-\sfl{} for bug localization of \emph{Java} faulty programs and 2)~a
-tool that implements the combination of \ds{} with \sfl{}, coined
-\comb{}.  The tool as well as a replication package will be available
-once double-blind requirements are lifted.
+evaluate fault localization research. The contributions of this work
+are: 1)~an empirical study, using real-world applications and bugs, on
+the combination of \ds{} and \sfl{} for bug localization of
+\emph{Java} faulty programs and 2)~a tool that implements the
+combination of \ds{} with \sfl{}, coined \comb{}.  The tool as well as
+a replication package will be available once double-blind requirements
+are lifted.
 
 %% -----------------
 %% This paper reports the results of a comprehensive study to assess the
@@ -200,12 +171,11 @@ once double-blind requirements are lifted.
 %% metric reports the percentage of faults captured by a technique when
 %% the rank is trimmed to the first $k$ components.
 
-\section{Background}
-\label{sec:background}
+%\section{Background}
+%This section summarizes the ground concepts of our approach.
 
-This section summarizes the ground concepts of our approach.
-
-\subsection{Dynamic Slicing (\ds{})}
+\section{Dynamic Slicing (\ds{})}
+%\label{sec:background}
 \label{sec:slicing}
 
 Program slicing is a program understanding technique to identify the
@@ -369,7 +339,7 @@ that followed by the original program. \Mar{Sofia, if you think it is
 %% also handles StackOverflow oracles.
 %---------------------------------------------------------
 
-\subsection{Spectrum-based Fault Localization (\sfl)}
+\section{Spectrum-based Fault Localization (\sfl)}
 \label{sec:sfl}
 
 \begin{wrapfigure}[8]{1}{0.25\textwidth}
@@ -392,7 +362,7 @@ Spectrum-based fault localization is a statistical fault
 localization technique that takes as input a test suite including at
 least one failing test and reports on output a ranked list of
 components likely to be in
-fault~\cite{FLSurvey2016,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The
+fault~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The
 following are given in \sfl{}: a finite set $\mathcal{C}=\set{c_1,c_2,...,c_M}$
 of $M$ system \emph{components}\footnote{A
 component can be any code artifact of arbitrary granularity
@@ -434,22 +404,18 @@ $\textit{ochiai}\,$=$\,\N{11}/\sqrt{(\N{11}+\N{01}) * (\N{11}+\N{10})}$.
 
 \section{The \comb{} Approach}
 \label{sec:approach}
-
-This section provides details on the proposed approach, \combpar{}, that combines
-\ds{} with \sfl{}; it also discusses the oracle problem.
-
-\subsection{Combining \ds{} and \sfl{}}
 \label{sec:comb}
 
-To illustrate the idea behind the combination of \sfl{} with \ds{}, consider a
-debugging scenario with five components $c_{1..5}$ and five
-transactions $t_{1..5}$, two of which are failing. Consider,
-additionally, that the component $c_2$ is faulty.
-Figure~\ref{fig:illustration} shows, at the left-hand side of the
-arrow ($\Rightarrow$), an hypothetical spectra and its corresponding
-ranking, produced with the Ochiai predictor. Each line in the ranking
-shows, respectively, the rank/position, the component label, and the
-Ochiai score (in parentheses).
+This section describes \combpar{}, a technique where \ds{} and \sfl{}
+work in tandem to solve the fault localization problem. To illustrate
+the idea behind \combpar{}, consider a debugging scenario with five
+components $c_{1..5}$ and five transactions $t_{1..5}$, two of which
+are failing. Consider, additionally, that the component $c_2$ is
+faulty.  Figure~\ref{fig:illustration} shows, at the left-hand side of
+the arrow ($\Rightarrow$), an hypothetical spectra and its
+corresponding ranking, produced with the Ochiai predictor. Each line
+in the ranking shows, respectively, the rank/position, the component
+label, and the Ochiai score (in parentheses).
 
 \begin{figure}[t!]
 
@@ -503,20 +469,35 @@ Ochiai score (in parentheses).
   \vspace{-2ex}
 \end{figure}
 
-In the following, we illustrate the workflow of the \comb{}
-approach for this scenario. \comb{} uses a granularity of statements.
-First, the combined technique picks statements $c_4$ and $c_3$, which
-appear at the top of the ranking, for further analysis.
-(The cutoff point is user-defined.) Second, the
-technique picks a failing test $t_2$ to slice the code. A slice is a
-set of statements. Let us assume
-that the slice obtained for the transaction $t_2$ is $\{c_2, c_5\}$,
-\ie, it excludes statements $c_4$ and $c_3$. Finally, the spectra and
-ranking are updated. The right-side of Figure~\ref{fig:illustration}
-shows the modified spectra and ranking after slicing test $t_2$
-against $c_4$ and $c_3$. It is worth noting that the technique slices
-the code for every failing tests. More precisely, the workflow of the
-\comb{} approach consists of four steps:
+We illustrate the workflow of the \comb{} approach for this scenario
+in the following. Let us analyze components at the granularity of
+statements.  First, \comb{} picks the first two statements at the top
+of the ranking, $c_4$ and $c_3$, for further analysis.  (The cutoff
+point is user-defined.) Second, the technique picks a failing test to
+slice the code, say $t_2$. A slice is a set of statements. Let us
+assume that the slice obtained for the transaction $t_2$ is $\{c_2,
+c_5\}$, \ie, it excludes statements $c_4$ and $c_3$ that were
+previously covered by the test. Finally, the spectra and ranking are
+updated. The right-side of Figure~\ref{fig:illustration} shows the
+modified spectra and ranking after slicing the code against $t_2$. It
+is worth noting that the technique slices the code for every failing
+tests. Intuitively, slicing enables the identification of statements
+in the spectra whose values can be set to zero, \ie{}, the components
+marked with $0$ are irrelevant to determine the test output.
+
+Let us now observe the effect of this spectra modification on the
+ranking. Analyzing the Ochiai formula, one observes that, for the
+components $j$, which are not part of the slice of a failing test, the
+combination reduces the value of $\N{11}$ and increases the value of
+$\N{01}$. Therefore, suspiciousness of those components
+decrease. Similar argument applies to other fault predictors. In the
+running example from Figure~\ref{fig:illustration}, the components
+$c_3$ and $c_4$, which are not in the slice of $t_2$, have their
+suspiciousness reduced, enabling the faulty component $c_2$ to rise
+from the third to the first position in the ranking.
+
+\vspace{1ex}
+To sum, the workflow of \comb{} consists of four steps:
 \begin{enumerate}
   \itemsep0em
   \item\label{step:spectra} Compute spectra $S$ and ranking $R$ for
@@ -525,24 +506,11 @@ the code for every failing tests. More precisely, the workflow of the
   \item\label{step:compute-slice} Compute slicer for every suspicious
     file, obtained in Step~\ref{step:susp-files}, and every failing test;
   \item\label{step:group} Assemble all the resulting slicers of each failing test;
-  \item Adjust the spectra $S$, obtained in Step~\ref{step:spectra}, with
-    the slices of each failing test obtained in Step~\ref{step:group} and
-	recompute ranking.
+  \item Adjust spectra $S$, from step~\ref{step:spectra}, with
+    the slices of each failing test, from
+    step~\ref{step:group}, and then
+	recompute the ranking.
 \end{enumerate}
-
-Intuitively, slicing enables the identification of statements in the spectra
-whose values can be set to zero, \ie{}, the components marked with $0$
-are irrelevant to determine the test output. Let us now observe the
-effect of this spectra modification on the ranking. Analyzing the
-Ochiai formula, one observes that, for the components $j$ which are
-not part of the slice of a failing test, the combination reduces the
-value of $\N{11}$ and increases the value of $\N{01}$. Therefore,
-suspiciousness of those components decrease. Similar argument applies
-to other fault predictors. In the running example,
-Figure~\ref{fig:illustration}, components $c_3$ and $c_4$, which are
-not in the slice of $t_2$, have their suspiciousness reduced, enabling
-the faulty component $c_2$ to rise from the third to the first
-position in the ranking.
 
 \begin{theorem}
   The rank of faulty statements cannot decrease if the slice includes
@@ -561,6 +529,44 @@ unaffected.\hfill{\tiny$\blacksquare$}
 %
 \section{Evaluation}
 \label{sec:eval}
+
+We studied the following research questions:
+
+%% The goal of this paper is to reassess whether the \comb{} approach yields
+%% promising results under a more rigorous experimental methodology and a larger
+%% dataset.\comments{The D4J dataset is about twice as large than the biggest test
+%% suite used in previous studies.}
+
+\newcommand{\rqone}{How effective is DS in eliminating code?}
+\newcommand{\rqtwo}{How often does DS miss faulty statements?}
+\newcommand{\rqthree}{How effective is \comb{} for bug localization?}
+
+\begin{itemize}[leftmargin=0em]
+\item[]{\textbf{RQ1.}}~\textit{\rqone{}}
+\item[]{\textbf{RQ2.}}~\textit{\rqtwo{}}
+\item[]{\textbf{RQ2.}}~\textit{\rqthree{}}
+\end{itemize}
+
+The first question \Fix{...elaborate...}
+The second question addresses the problem that affects all dynamic
+slicing techniques~\cite{Lin:2018:BDE:3238147.3238163}---that of
+missing faulty statements (see
+Section~\ref{sec:slicing}). Understanding that issue is important; the
+consequence for debugging is that developers would never be able to
+locate faults. The third research question evaluates the impact of the
+combination. To sum, our results show that the combination of the two
+approaches improves the accuracy of fault localization on average by
+\avgImprov\ in 51\% of the studied faults.
+
+
+
+%%  shows that CS can
+%% miss faulty statements because of imprecise oracles that guide the
+%% slicing process. 
+%% Different slicers can miss faulty statements for different
+%% reasons. In this paper, we used Critical
+%% Slicing~\cite{DeMillo:1996:CSS:229000.226310}, which, in principle,
+
 %
 To evaluate our approach, we compare the cost of diagnosing
 a collection of faults using \sfl{} versus \comb{}.
