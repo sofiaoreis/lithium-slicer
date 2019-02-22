@@ -643,35 +643,56 @@ omission, which is a good indication of difficulty.
 %in producing
 %high-qualitiy diagnosis.
 
-\subsection{Experimental Methodology}\label{sec:methodology}
+%\subsection{Experimental Methodology}
+%\label{sec:methodology}
 
-\Fix{
-To evaluate our approach, we compare the cost of diagnosing
-a collection of faults using \sfl{} versus \comb{}.
-}
+\subsection{Techniques}
+One important independent variable for this study is the scope of
+dynamic slicing. Slicing the entire code would be unacceptably
+expensive as Critical Slicing needs to re-compile the affected file at
+every iteration, \ie{}, after deleting statements and before checking
+the oracle (see Section~\ref{sec:slicing}). We control the scope of
+slicing through the variable $k$, which denotes the number of distinct
+files that dynamic slicing will minimize. In this study, we used 5 and
+10 as the values of $k$. The $k$ files for minimization are selected
+from the \sfl{} ranking as follows. First, we build a rank of files by
+determining, for each ranked statement, the file that declares
+it. Then, we select the top $k$ distinct files from such file ranking.
 
-To evaluate the effectiveness of \comb{}, following related work, we compared
-its performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
-where $k$ is the number of classes comprising the highest faulty statements.
-These classes are obtained directly from the ranking which is calculated through
-\sfl{}. For each fault, spectra is updated and the fault ranking is
-re-calculated but only considering the $k$ highest faulty classes. We refer to
-these variations as SFL$^{k}$. After slicing each class of the top $k$ of the
-highest faulty classes for each fault, the initial spectra is updated based on
-the slicer output and the fault ranking is re-calculated. We refer to these
-variations as \combpar{k}. We compared \combpar{5} and \combpar{10} against
-\sfl{}$^{5}$ and \sfl{}$^{10}$ using the commonly used metric $\Delta{}C =
-C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where $C$ is the cost of
-diagnosis. $C$ is the mean ranking of all buggy statements. $\Delta C >0$ means
-that the position of the faulty statement has decreased in the ranking after
-applying the \combpar{k} approach. Hence, reducing the cost of locating the bug.
-$\Delta C <0$ means that the faulty statement may be removed by \combpar{k}.
-$\Delta C=0$ means that the faulty statement remained in the same position.  We
-also assume a perfect bug understanding, i.e., if the developer sees the bug in
-the ranking, he can say it is the faulty one.
+The techniques we evaluate in this study are \combpar{k} and
+SFL$^{k}$, which is the comparison baseline. \combpar{k} is as defined
+in Section~\ref{sec:approach} (see Step 2 of the workflow) whereas
+SFL$^{k}$ is as SFL, but it produces a ranking including exclusively
+the statements from the best-$k$ ranked files.
+
+%% To evaluate the effectiveness of \comb{}, following related work, we compared
+%% its performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
+%% where $k$ is the number of classes comprising the highest faulty statements.
+%% These classes are obtained directly from the ranking which is calculated through
+%% \sfl{}.
 
 
-\subsection{Results and Discussion}
+
+%% For each fault, spectra is updated and the fault ranking is
+%% re-calculated but only considering the $k$ highest faulty classes. We refer to
+%% these variations as SFL$^{k}$. After slicing each class of the top $k$ of the
+%% highest faulty classes for each fault, the initial spectra is updated based on
+%% the slicer output and the fault ranking is re-calculated. We refer to these
+%% variations as \combpar{k}.
+
+\subsection{Results}
+
+\Mar{--------------------------- estou aqui}
+
+This section addresses the research questions we posed.
+
+%% proposed and discuss the
+%% results obtained. Our approach was capable of slicing a total of $260$ faults
+%% from $5$ different  projects.
+%% \textbf{RQ1} evaluates how effective is \ds{} on reducing the test cases, \textbf{RQ2} reviews
+%% one of the main issues of \ds{} - missing faulty statements - and
+%% \textbf{RQ3} discusses how effective is the \combpar{k} approach against
+%% \sfl{}$^{k}$.
 
 
 \begin{table*}[h]
@@ -704,17 +725,6 @@ the ranking, he can say it is the faulty one.
   \label{table:fsws}
 \end{table*}
 
-
-
-In this section, we answer the research questions proposed and discuss the
-results obtained. Our approach was capable of slicing a total of $260$ faults
-from $5$ different  projects. The remaining faults were not considered because
-(1) faults belong to the \closure{} project which requires high CPU to perform
-the \combpar{k} evaluation  or (2) faults whose test outputs were not
-reproducible in the machine used to run the experiments. \textbf{RQ1} evaluates how effective is \ds{} on reducing the test cases, \textbf{RQ2} reviews
-one of the main issues of \ds{} - missing faulty statements - and
-\textbf{RQ3} discusses how effective is the \combpar{k} approach against
-\sfl{}$^{k}$.
 
 \subsubsection{RQ1: \textit{\rqone}}
 \label{rq:1}
@@ -770,6 +780,20 @@ that performs better \textbf{missing only 23 out of 260 (8.8\%) cases}.
 
 
 \subsubsection{RQ3: \textit{\rqthree}}
+
+\Mar{metric only used here...revise}
+\Fix{
+We compared \combpar{5} and \combpar{10} against
+\sfl{}$^{5}$ and \sfl{}$^{10}$ using the commonly used metric $\Delta{}C =
+C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where $C$ is the cost of
+diagnosis. $C$ is the mean ranking of all buggy statements. $\Delta C >0$ means
+that the position of the faulty statement has decreased in the ranking after
+applying the \combpar{k} approach. Hence, reducing the cost of locating the bug.
+$\Delta C <0$ means that the faulty statement may be removed by \combpar{k}.
+$\Delta C=0$ means that the faulty statement remained in the same position.  We
+also assume a perfect bug understanding, i.e., if the developer sees the bug in
+the ranking, he can say it is the faulty one.
+}
 
 In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} with \sfl{}
 to improve fault localization. For each fault, we calculated the cost of diagnosis 
@@ -850,6 +874,16 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x 
 \end{figure}
 
 \subsection{Threats to validity}
+
+\Mar{incorporate this here. we were presenting this too early (initial
+  par. of results). not very appealing ;)}
+\Fix{
+The remaining faults were not considered because
+(1) faults belong to the \closure{} project which requires high CPU to perform
+the \combpar{k} evaluation  or (2) faults whose test outputs were not
+reproducible in the machine used to run the experiments.
+}
+
 %
 A potential threat to external validity related to the set of programs used in
 our study. When choosing the projects for our study, our aim was to opt for
