@@ -121,11 +121,11 @@ different programs from the Defects4J (D4J)
 dataset~\cite{just-defects4j-issta2014}, which is frequently used to
 evaluate fault localization research. The study covers the following
 research questions:
-  
+
 %% The goal of this paper is to reassess whether the \comb{} approach yields
 %% promising results under a more rigorous experimental methodology and a larger
 %% dataset.\comments{The D4J dataset is about twice as large than the biggest test
-%% suite used in previous studies.} 
+%% suite used in previous studies.}
 
 \newcommand{\rqone}{How often does DS miss faulty statements?}
 \newcommand{\rqthree}{How effective is the \comb{} approach?}
@@ -161,11 +161,11 @@ once double-blind requirements are lifted.
 %% impact of combining two complementary techniques to improve software
 %% fault localization.
 
-%% It is worth noting that 
+%% It is worth noting that
 
 %%  We
 %% developed a tool, coined as \comb{}, materializing the
-%% combination. 
+%% combination.
 
 %% the research community manifests
 %% explicit~\cite{ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Xie:2016:RAD:2884781.2884834}
@@ -377,7 +377,7 @@ that followed by the original program. \Mar{Sofia, if you think it is
   \hspace{-2ex}
   \centering
   \scriptsize
-  \setlength{\tabcolsep}{3.5pt}  
+  \setlength{\tabcolsep}{3.5pt}
   \begin{tabular}{c|cccc|c}
     $\mathcal{T}$ & $c_1$    & $c_2$    & $\cdots$ & $c_M$    & $e$    \\ \hline
     $t_1$         & $\A{11}$ & $\A{12}$ & $\cdots$ & $\A{1M}$ & $e_1$  \\
@@ -716,20 +716,20 @@ one of the main issues of \ds{} - missing faulty statements - whereas
 \label{sec:fault-misses}
 
 In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty
-statements,  since it is one of the main issues of dynamic slicing techniques. This 
+statements,  since it is one of the main issues of dynamic slicing techniques. This
 is particularly important because when \ds{} misses a faulty statement
 means that it will not be in the diagnostic report and therefore has a negative
 impact in the fault localization accuracy. Table~\ref{table:fsws}  presents the
 number of faults where at least one of the faulty statements appears  in the
 final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault,
 we  only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
-of the highest faulty  classes. 
+of the highest faulty  classes.
 
 
-As observed in~\ref{table:fsws}, \combpar{k} 
-finds the faulty statements faster than \sfl{}$^{k}$. 
+As observed in~\ref{table:fsws}, \combpar{k}
+finds the faulty statements faster than \sfl{}$^{k}$.
 
-We observe that $33$ of the $260$ faulty versions do not include the 
+We observe that $33$ of the $260$ faulty versions do not include the
 faulty statements in the slicer report after slicing.
 
 
@@ -745,7 +745,7 @@ In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{}
 to improve fault localization. Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying the both
 techniques, \sfl{}$^{k}$ and \combpar{k} for $K=5$ and $k=10$. We observe that
-$33$ of the $260$ 
+$33$ of the $260$
 faulty versions do not include the faulty statements in the slicer report after slicing.
 Thus, we report both values in Table~\ref{table:st}. In bold, we present the
 results of the $227$ faults that do not contain the cases where the faulty
@@ -767,7 +767,7 @@ normally distributed, we use the non-parametrical statistical hypothesis test,
 Friedman. The null-hypothesis is that the ranking results of all techniques and
 variants are the same. With 99\% of confidence, the results show that the
 distributions are distinct. To understand if there is any relationship
-between the distributions, 
+between the distributions,
 we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all the
 distributions. With 99\% of confidence, it is possible to see that in general
@@ -829,8 +829,16 @@ used in our experiments, most notably the Lithium toolset, the SFL diagnosis too
 and the implementation of \comb{}.
 %
 \section{Related Work}
-\Rui{needs work...}
+\Rui{Introductory sentences should say something like: model-based software
+debugging, from the DX community, has been shown to be similar to slicing
+Mayer and Stumptner, 2008; Wotawa and Nica; etc. Having said that, not many
+interesting techniques having been pursued because of scalability. We have
+achieved it with a type of program slicing --- critical slicing. Next, we
+visit the previous works on program slicing and SFL, without the idea of
+being exhaustive, but merely discussing the works that we deem relevant for
+this paper.}
 
+\Rui{revisit sentences; check if recent papers are cited.}
 
 \subsection{Program Slicing}
 
@@ -853,7 +861,6 @@ space. It is worth noting that, conceptually, the \sfl{}+\ds{} combination
 can be used with any form of dynamic slicing. We chose an
 implementation of Critical
 Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
-
 
 
 \subsection{SFL}
@@ -884,8 +891,7 @@ slicing could have been ranked lower compared to faulty
 statements. This paper differs from prior work in that it uses a much
 larger dataset of programs and faults and a more rigorous experimental
 methodology.
-
-
+%
 \section{Conclusions and Future Work}
 \label{sec:conc}
 %
