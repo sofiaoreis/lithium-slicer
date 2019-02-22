@@ -737,47 +737,51 @@ of the highest faulty classes.
 In Table~\ref{table:fsws}, we observe that for both scenarios ($k=5$ and $k=10$), \combpar{k}
 finds the faulty statements faster than \sfl{}$^{k}$. 
 \sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., 
-\combpar{5} misses less $20$ ($7.7\%$) faults than \sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults where as \combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10} misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$. There is also a significant difference within each technique. Generally, the majority of faulty statements are found on the $5$ highest ranked faulty classes. There are few cases where the faulty statements are only find if the approach considers the first $10$ highest ranked faulty classes. \combpar{10} is the variant of our approach
+\combpar{5} misses less $20$ ($7.7\%$) faults than \sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults where as \combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10} misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$. There is also a significant difference within each technique. Generally, the majority of faulty statements are found on the $5$ highest ranked faulty classes. There are few cases where the faulty statements are only find if the approach considers the first $10$ highest ranked faulty classes \combpar{10} is the variant of our approach
 that performs better \textbf{missing only 23 out of 260 (8.8\%) cases}.
 
 
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
-In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{}
-to improve fault localization. Table~\ref{table:st}, reports the average rank of all faulty
+In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} with \sfl{}
+to improve fault localization. For each fault, we calculated the cost of diagnosis 
+$\Delta{}C$ between \sfl{}$^{k}$ and \combpar{k} for both variants $k = 5$ and $k=10$.
+
+Figure \ref{fig:diagnosis} reports the cost of diagnosis of using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$,
+respectively. For $k=5$, we observe that in $30$ ($11.5\%$) of the faults
+the position of faulty statements decreases
+in the ranking, $97$($37.3\%$) of the faults the position of faulty statements increases in the rankinh whereas $133$ ($51.2\%$) of the faults the position of faulty stamenets remains the same. For $k=10$, we observe an increasing of $20$ cases where the position of faulty statements increases in the ranking $117$ ($45.0\%$).
+The number of cases whose faulty statements position remained the same are $110$ ($42.3\%$) and that suffered a decrease in the ranking is $33$ ($12.7\%$).
+
+Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying both
-techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. 
-
-
-Figure
-$33$ of the $260$
-faulty versions represent cases where we find 
-Thus, we report both values in Table~\ref{table:st}. In bold, we present the
-results of the $227$ faults that do not contain the cases where the faulty
-statements where removed using \combpar{k}. Inside parentheses, we present the
+techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. $33$ of the $260$
+faulty versions are cases whose faulty statements decreased in the ranking list due to being a fault of omission case or due to limitations regarding the test design which \ds{} could not handle. Thus, we report both values in Table~\ref{table:st}. In bold, we present the
+results of the $227$ faults that do not contain the cases that are result of the limitations mentioned before. Inside parentheses, we present the
 rank results for all faults. The \combpar{k} combination yields an improvement
-of $13.0$ on the rank mean of the dataset faulty statements when using $K=5$.
-Instead, if $K=10$ is considered the proposed approach returns an improvement of
-$11.1$ on the rank mean of faulty statements.
- Figure \ref{fig:diagnosis} reports the performance of the diagnosis
-using \combpar{5} and \combpar{10} against \sfl{}$^{5}$ and \sfl{}$^{10}$,
-respectively. Although this dataset has more than 50\% of fault of omissions,
-our simple slicing approach was capable of improving the ranking of $97$ for
-$k=5$ and $117$ for $K=117$ faults. Table \ref{table:st} presents the statistics
+of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
+Instead, if $k=10$ is considered the proposed approach returns an improvement of
+$6.1$ on the rank mean of all faulty statements.
+This $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. Yet,
+if we only consider the faults ($116$) where there was improvement in at least 
+one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for 
+$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which is very significant.
+
+
+Although this dataset has more than $50\%$ of fault of omissions,
+our simple slicing approach was capable of improving the ranking of $95$ faults for
+$k=5$ and $115$ faults for $k=10$. Table \ref{table:st} presents the statistics
 to determine if the observed results are statistically significant. Shapiro-Wilk
 tests the null hypothesis that results are drawn from a normal distribution. The
-test is perfomed for all techniques and its variants. With 99\% of confidence,
+test is perfomed for all techniques and its variants. With $99\%$ of confidence,
 the results tell us that the distributions are not normal. Given that $C$ is not
 normally distributed, we use the non-parametrical statistical hypothesis test,
 Friedman. The null-hypothesis is that the ranking results of all techniques and
-variants are the same. With 99\% of confidence, the results show that the
-distributions are distinct. To understand if there is any relationship
-between the distributions,
+variants are the same. With $99\%$ of confidence, the results show that the
+distributions are distinct. To understand which techniques perform differently - i.e., \textit{Does \combpar{10} perform differently than \sfl{}$^{10}$} -
 we performed a Siegel post-hoc analysis. Figure
-\ref{fig:performance} reports the results of Siegel analysis for all the
-distributions. With 99\% of confidence, it is possible to see that in general
-the distributions are very similar. \Rui{so??}
+\ref{fig:performance} reports the results of Siegel analysis for all pairs of techniques. Each square represents the significance between the correspondent techniques, i.e., if it is significant it means that the techniques perform differently. With $95\%$ of confidence, it is possible to confirm that the performance of all techniques is different expect when comparing \combpar{5} with \combpar{10}.
 
 It is worth noting that Automated
 Program Repair techniques may directly benefit from this study to improve their
@@ -789,7 +793,7 @@ results somewhere.}
 \begin{figure}[h]
 		\centering
 		\includegraphics[width=0.42\textwidth]{figures/performance.pdf}
-		\caption{Diagnosis Performance for using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$ respectively}
+		\caption{Cost of diagnosis of using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$, respectively}
 		\label{fig:diagnosis}
 \end{figure}
 
