@@ -55,8 +55,7 @@ the aforementioned combination, such components could be located and
 their suspiciousness reduced.  This study also discusses the practical
 impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
-only 9\%\comments{(23 misses)} of the 260 cases\Mar{we are using
-  \numFaults{} in the paper. please, revise and use macros.} and that
+ 12.7\%\comments{(33 misses)} of the \numFaults{} cases and that
 the \ds{}-\sfl{} combination, coined as Tandem-SL, improves on average
 the diagnostic accuracy by \avgImprov\ in 51\% of the cases. To sum,
 we found that the \ds{}-\sfl{} combination was practical and effective
@@ -116,7 +115,7 @@ improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen
 Given the importance of fault localization, this paper revisits the
 problem of assessing the effectiveness of combining \ds{} and \sfl{},
 addressing the issues from prior work. The study we conducted involves
-\numFaults{}\Mar{check} faults from \numPrograms{}\Mar{check}
+\numFaults{} faults from \numPrograms{}
 different programs from the Defects4J (D4J)
 dataset~\cite{just-defects4j-issta2014}, which is frequently used to
 evaluate fault localization research. The study covers the following
@@ -569,7 +568,7 @@ a collection of faults using \sfl{} versus \comb{}.
 \subsection{Objects of Analysis}\label{sec:analysis}
 
 We used the \dfj{} benchmark in our experiments~\cite{just-defects4j-issta2014}.
-This benchmark includes six different subjects and \numFaults{} faults (Table
+Originally, this benchmark includes six different subjects and 395 faults (Table
 \ref{tab:df4j}). \lang{} is a library that provides a set of helper utilities
 for the {\small\texttt{java.lang}} API. \cmath{} is a lightweight library of
 self-contained mathematics and statistics components. The \closure{} is a
@@ -716,21 +715,21 @@ one of the main issues of \ds{} - missing faulty statements - whereas
 \label{sec:fault-misses}
 
 In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty
-statements,  since it is one of the main issues of dynamic slicing techniques. This
+statements, since it is one of the main issues of dynamic slicing techniques. This
 is particularly important because when \ds{} misses a faulty statement
 means that it will not be in the diagnostic report and therefore has a negative
 impact in the fault localization accuracy. Table~\ref{table:fsws}  presents the
-number of faults where at least one of the faulty statements appears  in the
+number of faults where at least one of the faulty statements appears in the
 final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault,
-we  only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
+we only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
 of the highest faulty  classes.
 
-
+We observed that $33$ of the $260$ faulty versions do not include the
+faulty statements in the slicer report after slicing.
 As observed in~\ref{table:fsws}, \combpar{k}
 finds the faulty statements faster than \sfl{}$^{k}$.
 
-We observe that $33$ of the $260$ faulty versions do not include the
-faulty statements in the slicer report after slicing.
+
 
 
 Using \combpar{10} we are able to find more $20$ faulty
