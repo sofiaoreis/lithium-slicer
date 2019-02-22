@@ -684,9 +684,7 @@ the statements from the best-$k$ ranked files.
 
 \subsection{Results}
 
-\Mar{--------------------------- estou aqui}
-
-This section addresses the research questions we posed.
+This section answers the research questions.
 
 %% proposed and discuss the
 %% results obtained. Our approach was capable of slicing a total of $260$ faults
@@ -728,40 +726,54 @@ This section addresses the research questions we posed.
 \end{table*}
 
 
-\subsubsection{RQ1: \textit{\rqone}}
-\label{rq:1}
 
-This subsection aims to report the performance of the \ds{} technique on slicing de
-faults of $5$ \dfj{} projects. Table \ref{tab:red}
-presents the reduction percentage obtained for each project after slicing the top
-$5$ and $10$ of classes comprising the highest faulty statements. We observed a reduction
-of $30.23\%$ in the projects considered in our study.
+%% This subsection aims to report the performance of the \ds{} technique
+%% on slicing de faults of $5$ \dfj{} projects.
+
+
+\subsubsection{\label{rq:1}RQ1: \textit{\rqone}}
+
+A necessary but insufficient condition for improvement of fault
+localization with \comb{} is that dynamic slicing eliminates a high
+amount of code in the best ranked files. Table \ref{tab:red} shows, as
+percentages, the average reduction on the sum of top file sizes
+obtained with dynamic slicing for different values of
+$k$.\Mar{$\leftarrow$sofia, please check.} Overall, results indicate
+that dynamic slicing substantially reduces the size of highly-ranked
+files. \Mar{sofia, it would be more convincing if you (additionally)
+  show reduction wrt to the the parts of the file that are covered.}
+
+%% obtained for each project after slicing the top $5$ and
+%% $10$ of classes comprising the highest faulty statements. We observed
+%% a reduction of $30.23\%$ in the projects considered in our study.
 
 \begin{table}[H]
   \small
 	\centering
 	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{lcc}
+	\begin{tabular}{lrr}
 		\toprule
-		Project             &  \combpar{5}  & \combpar{10} \\
+		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
 		\midrule
 
-        \lang{}            & 1.40\% & 31.46\%\\
-        \cmath{}           & 10.30\% & 12.34\%\\
+        \lang{}            & 1.40 & 31.46\\
+        \cmath{}           & 10.30 & 12.34\\
         %\closure{}          &  & \\
-		\chart{}			& 59.30\% & 53.64\% \\
-        \jtime{}            & 17.27\% & 32.02\%\\
-        \mockito{}          & 16.54\% & 21.67\%\\
+		\chart{}			& 59.30 & 53.64 \\
+        \jtime{}            & 17.27 & 32.02\\
+        \mockito{}          & 16.54 & 21.67\\
 
 		\bottomrule
 	\end{tabular}
-	\caption {\ds{} reduction for $k=5$ and $k=10$}
+	\caption {\ds{} reduction, as percentages. Higher is better.}
 	\label{tab:red}
 \end{table}
 \normalsize
 
 \subsubsection{RQ2: \textit{\rqtwo}}
 \label{rq:2}
+
+\Mar{-------------------- estou aqui}
 
 In \textbf{RQ2}, our concern is to evaluate how often \ds{} misses faulty
 statements, since it is one of the main issues of dynamic slicing techniques. This
