@@ -55,7 +55,7 @@ the aforementioned combination, such components could be located and
 their suspiciousness reduced.  This study also discusses the practical
 impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
- 12.7\%\comments{(33 misses)} of the \numFaults{} cases and that
+ 9\%\comments{(23 misses)} of the \numFaults{} cases and that
 the \ds{}-\sfl{} combination, coined as Tandem-SL, improves on average
 the diagnostic accuracy by \avgImprov\ in 51\% of the cases. To sum,
 we found that the \ds{}-\sfl{} combination was practical and effective
@@ -693,11 +693,11 @@ of 30.23\% in the projects considered in our study.
 				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
 		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
 		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
-	 Total      & 207  & 78.4\% & 217 & 83.0\%
-	 				& 227 & 83.8\% & 237 & 88.2\% & 260 \\
+	 Total      & 207  & 79.6\% & 217 & 83.5\%
+	 				& 227 & 87.3\% & 237 & 91.2\% & 260 \\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the buggy-lines is in the \sfl{}$^{k}$ and \combpar{k} report}
+  \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
 \end{table*}
 
@@ -718,16 +718,25 @@ In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty
 statements, since it is one of the main issues of dynamic slicing techniques. This
 is particularly important because when \ds{} misses a faulty statement
 means that it will not be in the diagnostic report and therefore has a negative
-impact in the fault localization accuracy. Table~\ref{table:fsws}  presents the
+impact in the fault localization accuracy. Table~\ref{table:fsws} presents the
 number of faults where at least one of the faulty statements appears in the
 final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault,
 we only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
-of the highest faulty  classes.
+of the highest faulty classes. 
 
-We observed that $33$ of the $260$ faulty versions do not include the
-faulty statements in the slicer report after slicing.
-As observed in~\ref{table:fsws}, \combpar{k}
-finds the faulty statements faster than \sfl{}$^{k}$.
+In~\ref{table:fsws}, we observe that 
+
+
+\combpar{k}
+finds the faulty statements faster than \sfl{}$^{k}$. For both $k$ scenarios ($k=5$ or $k=10$), \combpar{k} performs better, i.e., it misses less faulty statements than \sfl{}$^{k}$.
+
+
+
+\combpar{k}The best scena $23$ of the $260$ ($8.8\%$) faults do not include the
+faulty statements in the slicer report after slicing the $10$ highest faulty classes.
+
+
+
 
 
 
