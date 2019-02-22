@@ -109,22 +109,32 @@ could be in fact unrelated to the fault (as per \ds{}). In fact, prior
 work reported promising preliminary results on this
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}.
 Unfortunately, they used a small set of subjects in their evaluation
-or archaic---often optimistic---methods to evaluate fault localization
+or over optimistic methods to evaluate fault localization
 improvement~\cite{Wu:2014:CLC:2610384.2610386,Lucia:2014:FFL:2642937.2642983,Wen:2016:LLB:2970276.2970359}.
 
 Given the importance of fault localization, this paper revisits the
 problem of assessing the effectiveness of combining \ds{} and \sfl{},
-addressing the issues from prior work. The study we conducted involves
-\numFaults{} faults from \numPrograms{}
-different programs from the Defects4J (D4J)
+addressing the key issues of prior work. We conducted a comprehensive
+study involving \numFaults{} faults from \numPrograms{} different
+programs from the Defects4J (D4J)
 dataset~\cite{just-defects4j-issta2014}, which is frequently used to
-evaluate fault localization research. The contributions of this work
-are: 1)~an empirical study, using real-world applications and bugs, on
-the combination of \ds{} and \sfl{} for bug localization of
-\emph{Java} faulty programs and 2)~a tool that implements the
-combination of \ds{} with \sfl{}, coined \comb{}.  The tool as well as
-a replication package will be available once double-blind requirements
-are lifted.
+evaluate fault localization research. Results show that \ds{} misses
+faulty statements in 9\%\comments{(23 misses)} of the \numFaults{}
+faults analyzed. Furthermore, we found that the combination of the two
+approaches improves fault localization in 51\% of the cases with an
+average improvement of \avgImprov. To sum, results indicate that the
+risk of applying the technique is relatively low for the positive
+impact it may bring and the tool implementing the technique works
+out-of-the-box, \ie{}, it puts no requirements on the running
+environment, subject programs it can be used, and requires no special
+setup.
+
+The contributions of this work are: 1)~an empirical study, using
+real-world applications and bugs, on the combination of \ds{} and
+\sfl{} for bug localization of \emph{Java} faulty programs and 2)~a
+tool, dubbed \comb{}, implementing the \ds{}-\sfl{} combination. The
+tool as well as a replication package will be available once
+double-blind requirements are lifted.
 
 %% -----------------
 %% This paper reports the results of a comprehensive study to assess the
@@ -417,58 +427,6 @@ corresponding ranking, produced with the Ochiai predictor. Each line
 in the ranking shows, respectively, the rank/position, the component
 label, and the Ochiai score (in parentheses).
 
-\begin{figure}[t!]
-
-  \centering
-  \begin{subfigure}{0.5\textwidth}
-    {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
-      \begin{tabular}{c|ccccc|c}
-        $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
-        $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
-        $t_2$         & 0 & 1 & 1 & 1 & 1 &\xmark  \\
-        $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
-        $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
-        $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark \\
-        \hline
-      \end{tabular}
-      \quad
-      $\Rightarrow$
-      \quad
-      \begin{tabular}{c|ccccc|c}
-        $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
-        $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
-        $t_2$         & 0 & 1 & {\cellcolor{Gray} 0} & {\cellcolor{Gray} 0} & 1 &\xmark  \\
-        $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
-        $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
-        $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark  \\
-        \hline
-      \end{tabular}
-    }
-    \caption{Spectra update.}
-    \label{fig:ds-reduction}
-  \end{subfigure}
-
-  \vspace{2ex}
-
-  \begin{subfigure}{0.5\textwidth}
-    \centering
-    \begin{tabular}{cccccc}
-      1 & $c_4$ (0.59) & & 1 & $c_2$ (0.35) \\
-      2 & $c_3$ (0.55) & & 2.5 & $c_1$ (0.32)\\
-      3 & $c_2$ (0.35) & \hspace{1ex}$\Rightarrow$\hspace{1ex} & 2.5 & $c_5$ (0.32)\\
-      4.5 & $c_1$ (0.32) & & 4 & $c_3$ (0.29)\\
-      4.5 & $c_5$ (0.32) & & 5 & $c_4$ (0.00)\\
-    \end{tabular}
-    \caption{Ranking update.}
-  \end{subfigure}
-
-  \caption{Modifications on spectra and ranking as result of slicing
-    code against test $t_2$. Double arrow ($\Rightarrow$) indicates
-    before and after.}
-  \label{fig:illustration}
-  \vspace{-2ex}
-\end{figure}
-
 We illustrate the workflow of the \comb{} approach for this scenario
 in the following. Let us analyze components at the granularity of
 statements.  First, \comb{} picks the first two statements at the top
@@ -526,6 +484,58 @@ faulty component increases. If those components appear at positions
 below the faulty components, the ranking of the faulty components is
 unaffected.\hfill{\tiny$\blacksquare$}
 
+\begin{figure}[t!]
+
+  \centering
+  \begin{subfigure}{0.5\textwidth}
+    {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
+      \begin{tabular}{c|ccccc|c}
+        $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
+        $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
+        $t_2$         & 0 & 1 & 1 & 1 & 1 &\xmark  \\
+        $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
+        $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
+        $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark \\
+        \hline
+      \end{tabular}
+      \quad
+      $\Rightarrow$
+      \quad
+      \begin{tabular}{c|ccccc|c}
+        $\mathcal{T}$ & $c_1$    & $c_2$   & $c_3$ & $c_4$ &  $c_5$   & $e$    \\ \hline
+        $t_1$         & 1 & 0 & 1 & 1 & 0 &\cmark  \\
+        $t_2$         & 0 & 1 & {\cellcolor{Gray} 0} & {\cellcolor{Gray} 0} & 1 &\xmark  \\
+        $t_3$         & 1 & 0 & 1 & 0 & 0 &\xmark  \\
+        $t_4$         & 0 & 1 & 0 & 0 & 1 &\cmark  \\
+        $t_5$         & 1 & 0 & 0 & 1 & 1 &\cmark  \\
+        \hline
+      \end{tabular}
+    }
+    \caption{Spectra update.}
+    \label{fig:ds-reduction}
+  \end{subfigure}
+
+  \vspace{2ex}
+
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \begin{tabular}{cccccc}
+      1 & $c_4$ (0.59) & & 1 & $c_2$ (0.35) \\
+      2 & $c_3$ (0.55) & & 2.5 & $c_1$ (0.32)\\
+      3 & $c_2$ (0.35) & \hspace{1ex}$\Rightarrow$\hspace{1ex} & 2.5 & $c_5$ (0.32)\\
+      4.5 & $c_1$ (0.32) & & 4 & $c_3$ (0.29)\\
+      4.5 & $c_5$ (0.32) & & 5 & $c_4$ (0.00)\\
+    \end{tabular}
+    \caption{Ranking update.}
+  \end{subfigure}
+
+  \caption{Modifications on spectra and ranking as result of slicing
+    code against test $t_2$. Double arrow ($\Rightarrow$) indicates
+    before and after.}
+  \label{fig:illustration}
+  \vspace{-2ex}
+\end{figure}
+
 %
 \section{Evaluation}
 \label{sec:eval}
@@ -547,18 +557,15 @@ We studied the following research questions:
 \item[]{\textbf{RQ3.}}~\textit{\rqthree{}}
 \end{itemize}
 
-The first question \Fix{...elaborate...}
-The second question addresses the problem that affects all dynamic
-slicing techniques~\cite{Lin:2018:BDE:3238147.3238163}---that of
-missing faulty statements (see
-Section~\ref{sec:slicing}). Understanding that issue is important; the
-consequence for debugging is that developers would never be able to
-locate faults. The third research question evaluates the impact of the
-combination. To sum, our results show that the combination of the two
-approaches improves the accuracy of fault localization on average by
-\avgImprov\ in 51\% of the studied faults.
-
-
+The first question evaluates the ability of dynamic slicing reducing
+application code. Improvements on fault localization depends on that
+ability. The second question addresses the problem that affects all
+dynamic slicing techniques~\cite{Lin:2018:BDE:3238147.3238163}---that
+of missing faulty statements (see
+Section~\ref{sec:slicing}). Developers would not be able to
+successfully debug code if that issue is manifested. The third
+research question evaluates the impact of the combination as
+substantiated by \comb.
 
 %%  shows that CS can
 %% miss faulty statements because of imprecise oracles that guide the
@@ -905,6 +912,11 @@ methodology.
 \section{Conclusions and Future Work}
 \label{sec:conc}
 %
+
+\Fix{
+The main lesson of this work is that
+fault localization research should consider compare new techniques
+against this combination.}
 
 Several approaches have been proposed in the literature to improve debugging
 costs through automated software fault diagnosis to reduce time-to-market,
