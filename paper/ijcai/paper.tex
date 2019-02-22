@@ -586,6 +586,7 @@ mocking testing framework.
 
 \newcommand{\cgray}[1]{\cellcolor{gray!25}#1}
 \begin{table}[h]
+	
   \centering
   \setlength{\tabcolsep}{4pt}
     \begin{tabular}{lrrr}
@@ -723,7 +724,7 @@ of $30.23\%$ in the projects considered in our study.
 \subsubsection{RQ2: \textit{\rqtwo}}
 \label{rq:2}
 
-In \textbf{RQ1}, our concern is to evaluate how often \ds{} misses faulty
+In \textbf{RQ2}, our concern is to evaluate how often \ds{} misses faulty
 statements, since it is one of the main issues of dynamic slicing techniques. This
 is particularly important because when \ds{} misses a faulty statement
 means that it will not be in the diagnostic report and therefore has a negative
@@ -733,32 +734,25 @@ final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault,
 we only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
 of the highest faulty classes. 
 
-In~\ref{table:fsws}, we observe that 
+In Table~\ref{table:fsws}, we observe that for both scenarios ($k=5$ and $k=10$), \combpar{k}
+finds the faulty statements faster than \sfl{}$^{k}$. 
+\sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., 
+\combpar{5} misses less $20$ ($7.7\%$) faults than \sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults where as \combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10} misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$. There is also a significant difference within each technique. Generally, the majority of faulty statements are found on the $5$ highest ranked faulty classes. There are few cases where the faulty statements are only find if the approach considers the first $10$ highest ranked faulty classes. \combpar{10} is the variant of our approach
+that performs better \textbf{missing only 23 out of 260 (8.8\%) cases}.
 
 
-\combpar{k}
-finds the faulty statements faster than \sfl{}$^{k}$. For both $k$ scenarios ($k=5$ or $k=10$), \combpar{k} performs better, i.e., it misses less faulty statements than \sfl{}$^{k}$.
-
-
-
-\combpar{k}The best scena $23$ of the $260$ ($8.8\%$) faults do not include the
-faulty statements in the slicer report after slicing the $10$ highest faulty classes.
-
-
-Using \combpar{10} we are able to find more $20$ faulty
-statements than when only using \sfl{}$^{10}$. \combpar{10} only misses $11.8\%$
-of the faulty statements whereas \sfl{}$^{10}$ misses $17.9\%$ of the faulty
-statements. Thus, \combpar{10} misses less $5.2\%$ of the faults against
-\sfl{}$^{10}$.
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
 In \textbf{RQ2}, we intend to evaluate the impact of combining \ds{} with \sfl{}
 to improve fault localization. Table~\ref{table:st}, reports the average rank of all faulty
-statements of the \dfj{} faults considered to the study after applying the both
-techniques, \sfl{}$^{k}$ and \combpar{k} for $K=5$ and $k=10$. We observe that
+statements of the \dfj{} faults considered to the study after applying both
+techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. 
+
+
+Figure
 $33$ of the $260$
-faulty versions do not include the faulty statements in the slicer report after slicing.
+faulty versions represent cases where we find 
 Thus, we report both values in Table~\ref{table:st}. In bold, we present the
 results of the $227$ faults that do not contain the cases where the faulty
 statements where removed using \combpar{k}. Inside parentheses, we present the
