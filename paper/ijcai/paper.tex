@@ -658,12 +658,13 @@ expensive as Critical Slicing needs to re-compile the affected file at
 every iteration, \ie{}, after deleting statements and before checking
 the oracle (see Section~\ref{sec:slicing}). We control the scope of
 slicing through the variable $k$, which denotes the number of distinct
-files that dynamic slicing will minimize. In this study, we used 5 and
-10 as the values of $k$. The $k$ files for minimization are selected
+files that dynamic slicing will minimize. In this study, we used $5$ and
+$10$ as the values of $k$, following the same values as in previous fault
+localiztion studies~\cite{ang-perez-van-deursen-rui-2017}. 
+The $k$ files for minimization are selected
 from the \sfl{} ranking as follows. First, we build a rank of files by
 determining, for each ranked statement, the file that declares
 it. Then, we select the top $k$ distinct files from such file ranking.
-\Rui{we should say that k follows from typical SFL metrics (top k)}
 
 The techniques we evaluate in this study are \combpar{k} and
 SFL$^{k}$, which is the comparison baseline. \combpar{k} is as defined
