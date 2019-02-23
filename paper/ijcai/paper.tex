@@ -187,10 +187,11 @@ double-blind requirements are lifted.
 \section{Dynamic Slicing (\ds{})}
 \label{sec:slicing}
 
-% Program slicing is a program understanding technique to identify the
-% relevant parts of the program with respect to given points of
-% interest.
-\Sof{MBSD connection review please}
+Model-based diagnosis is a well-known approach that has been proposed by the
+DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
+of model-based diagnosis to localize software faults have demonstrated that it
+can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,Mayer:2008:EMM:1642931.1642950}.
+
 Dynamic slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
 static slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
 is an instance of Model-based software diagnosis that
@@ -255,10 +256,10 @@ CS, it is necessary to make oracles more specific. For that, our
 approach was to use as the slicing criterion the stack trace
 associated with the test failure. That decision increases the chances
 that the sliced program will follow a path to the error similar to
-that followed by the original program. \Sof{Added oracle generalization example}
-There are faults whose outputs 
-may slightly differ from one execution to another. For example, 
-exceptions including memory addresses identifiers, which change on 
+that followed by the original program.
+There are faults whose outputs
+may slightly differ from one execution to another. For example,
+exceptions including memory addresses identifiers, which change on
 each execution. For these cases, it was developed a mechanism to compare the
 rest of the output ignoring the identifier of the memory address.
 
@@ -749,7 +750,7 @@ files. \Mar{sofia, it would be more convincing if you (additionally)
 
 %% For automated debugging that
 %% means that it will not be in the diagnostic report and therefore has a negative
-%% impact in the fault localization accuracy. 
+%% impact in the fault localization accuracy.
 
 
 %% In \textbf{RQ2}, our concern is to evaluate how often \ds{} misses faulty
@@ -787,7 +788,7 @@ that \Fix{...elaborate...}
 	\caption {\ds{} performance on capturing faulty statements, as
      percentages. Higher is better.}
 	\label{tab:red}
-   \label{tab:ds-cases-captured}   
+   \label{tab:ds-cases-captured}
 \end{table}
 \normalsize
 
@@ -836,7 +837,7 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 %% repeated...
 %%  (2) there are few
 %% cases where the faulty statements are only found if the approach
-%% considers the first $10$ highest ranked faulty classes 
+%% considers the first $10$ highest ranked faulty classes
 
 % \begin{table*}[t!]
 % 	\small
@@ -878,11 +879,11 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 		 Project        &   \sfl{}   & \comb &   \sfl{}   & \comb\\
 		\midrule
 		 \lang{}         &   84.6   & 100.0 & 84.6 & 96.9  \\
-		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 \\   
+		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 \\
 		\chart{}           & {\cellcolor{Gray} 84.6} & {\cellcolor{Gray}76.9} & {\cellcolor{Gray}92.3} & {\cellcolor{Gray}84.6}\\
-		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2\\   
+		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2\\
 		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9\\   \midrule
-		Total         & 79.6 & 87.3 & 83.5 & 91.2\\  
+		Total         & 79.6 & 87.3 & 83.5 & 91.2\\
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
