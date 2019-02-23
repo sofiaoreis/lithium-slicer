@@ -56,8 +56,9 @@ their suspiciousness reduced.  This study also discusses the practical
 impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
  9\%\comments{(23 misses)} of the \numFaults{} cases and that
-the \ds{}-\sfl{} combination, coined as Tandem-SL, improves on average
-the diagnostic accuracy by \avgImprov\ in 51\% of the cases. To sum,
+the \ds{}-\sfl{} combination, coined as Tandem-SL, improves
+the diagnostic accuracy of the diagnostic report in \avgImprov\ on average
+for 51\% of the cases. To sum,
 we found that the \ds{}-\sfl{} combination was practical and effective
 and encourage new \sfl{} techniques to be evaluated against that
 optimization.
@@ -660,7 +661,7 @@ the oracle (see Section~\ref{sec:slicing}). We control the scope of
 slicing through the variable $k$, which denotes the number of distinct
 files that dynamic slicing will minimize. In this study, we used $5$ and
 $10$ as the values of $k$, following the same values as in previous fault
-localiztion studies~\cite{ang-perez-van-deursen-rui-2017}. 
+localiztion studies~\cite{ang-perez-van-deursen-rui-2017}.
 The $k$ files for minimization are selected
 from the \sfl{} ranking as follows. First, we build a rank of files by
 determining, for each ranked statement, the file that declares
