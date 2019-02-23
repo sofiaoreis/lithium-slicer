@@ -743,28 +743,6 @@ files. \Mar{sofia, it would be more convincing if you (additionally)
 \subsubsection{RQ2: \textit{\rqtwo}}
 \label{rq:2}
 
-\begin{table}[H]
-  \small
-	\centering
-	\setlength{\tabcolsep}{4pt}
-	\begin{tabular}{lrr}
-		\toprule
-		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
-		\midrule
-
-        \lang{}            & 100 & 96.9\\
-        \cmath{}           & 89.4 & 95.2\\
-        %\closure{}          &  & \\
-		\chart{}			& 76.9 & 84.6 \\
-        \jtime{}            & 81.5 & 85.2\\
-        \mockito{}          & 71.1 & 78.9\\
-
-		\bottomrule
-	\end{tabular}
-	\caption {\ds{} performance on capturing faulty statements, as percentages.}
-	\label{tab:red}
-\end{table}
-\normalsize
 
 %% For automated debugging that
 %% means that it will not be in the diagnostic report and therefore has a negative
@@ -794,17 +772,19 @@ that \Fix{...elaborate...}
 		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
 		\midrule
 
-        \lang{}            & - & -\\
-        \cmath{}           & - & -\\
+        \lang{}            & 100 & 96.9\\
+        \cmath{}           & 89.4 & 95.2\\
         %\closure{}          &  & \\
-		\chart{}			& - & - \\
-        \jtime{}            & - & -\\
-        \mockito{}          & - & -\\
+		\chart{}			& 76.9 & 84.6 \\
+        \jtime{}            & 81.5 & 85.2\\
+        \mockito{}          & 71.1 & 78.9\\
 
 		\bottomrule
 	\end{tabular}
-	\caption {Percentages of cases \ds{} captures faults. Higher is better.}
-	\label{tab:ds-cases-captured}
+	\caption {\ds{} performance on capturing faulty statements, as
+     percentages. Higher is better.}
+	\label{tab:red}
+   \label{tab:ds-cases-captured}   
 \end{table}
 \normalsize
 
