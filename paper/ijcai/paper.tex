@@ -937,8 +937,24 @@ significant and, as we increase the value of $k$, it increases (from
 		\label{fig:diagnosis}
 \end{figure}
 
-\Mar{---------------------- I am here}
+If we focus at the $116$\Mar{117?} faults where there was improvement
+in at least one of the variants, the mean improvement in the ranking
+was 41.1 statements for $k=5$ and 18.7 statements for $k=10$. We
+observed an impressive maximum ranking improvement of $3170.5$\Mar{why
+  the .5 if this is the maximum case?} statements for $k=5$ and $209$
+statements for $k=10$. Such difference is justified by the fact that
+entire files are discarded in \combpar{5}, whose statements are
+included in the ranking of \combpar{10}. Consequently, the
+improvements obtained by the technique will not be as high if slicing
+on these additional files is unable to aggressively and safely discard
+statements. This also shows that slicing files, in addition to slicing
+statements from those files, is very beneficial for fault localization
+performance.
 
+\Mar{show distribution...}
+
+In the following, we present statistical analysis to demonstrate that
+the distributions of $C$ for each technique are different.
 Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying both
 techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. $33$ of the $260$
@@ -948,12 +964,7 @@ rank results for all faults. The \combpar{k} combination yields an improvement
 of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
 Instead, if $k=10$ is considered the proposed approach returns an improvement of
 $6.1$ on the rank mean of all faulty statements.
-This $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. Yet,
-if we only consider the faults ($116$) where there was improvement in at least
-one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for
-$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained
-in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which
-is significant.
+These $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. 
 
 \begin{table}[h!]
 	\tiny
