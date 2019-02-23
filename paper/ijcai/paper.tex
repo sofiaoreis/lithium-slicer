@@ -187,7 +187,7 @@ double-blind requirements are lifted.
 \section{Dynamic Slicing (\ds{})}
 %\label{sec:background}
 \label{sec:slicing}
-
+\Sof{Falar de model-based diagnosis}
 Program slicing is a program understanding technique to identify the
 relevant parts of the program with respect to given points of
 interest. Dynamic
@@ -593,7 +593,7 @@ faults, for each considered program.
     Project            & Size (LOC) & \# Tests & \# Faults \\ %\comments{& Failing Test Cases &}
     \midrule
     \lang{}            & 111,751  & 6,057 & 65       \\   %\commentst{& 124   &  -}\\
-    \cmath{}           & 306,276  & 26,797 & 106     \\   %\comments{& 177   &  -}\\
+    \cmath{}           & 306,276  & 26,797 & 104     \\   %\comments{& 177   &  -}\\
     %      \closure{}         & 149,521  & 27,930  & 133     \\   %\comments{& 350   &  -}\\
     \chart{}           & 230,159  & 8,458 & 26      \\  %\comments{& 92    &  -}\\
     \jtime{}           & 141,610  & 3,289 & 27       \\   %\comments{& 76    &  -}\\
@@ -817,7 +817,7 @@ $6.1$ on the rank mean of all faulty statements.
 This $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. Yet,
 if we only consider the faults ($116$) where there was improvement in at least 
 one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for 
-$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which is very significant.
+$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which is significant.
 
 
 Although this dataset has more than $50\%$ of fault of omissions,
@@ -827,7 +827,7 @@ to determine if the observed results are statistically significant. Shapiro-Wilk
 tests the null hypothesis that results are drawn from a normal distribution. The
 test is perfomed for all techniques and its variants. With $99\%$ of confidence,
 the results tell us that the distributions are not normal. Given that $C$ is not
-normally distributed, we use the non-parametrical statistical hypothesis test,
+normally distributed, we use the non-parametrical statistical hypothesis test
 Friedman. The null-hypothesis is that the ranking results of all techniques and
 variants are the same. With $99\%$ of confidence, the results show that the
 distributions are distinct. To understand which techniques perform differently - i.e., \textit{Does \combpar{10} perform differently than \sfl{}$^{10}$} -
