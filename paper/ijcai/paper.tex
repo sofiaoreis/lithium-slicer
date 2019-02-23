@@ -775,7 +775,7 @@ that \Fix{...elaborate...}
 		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
 		\midrule
 
-        \lang{}            & 100 & 96.9\\
+        \lang{}            & 100.0 & 96.9\\
         \cmath{}           & 89.4 & 95.2\\
         %\closure{}          &  & \\
 		\chart{}			& 76.9 & 84.6 \\
@@ -868,26 +868,26 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 %   \label{table:fsws}
 % \end{table*}
 
-\begin{table*}[t!]
+\begin{table}[h!]
 	\small
-	% \setlength{\tabcolsep}{3pt}
+	\setlength{\tabcolsep}{3pt}
 	\centering
-	  \begin{tabular}{l|cc|cc|c}
-		\toprule
-		 Project        &   \sfl{}$^{5}$   & \combpar{5}
-		 				&   \sfl{}$^{10}$   & \combpar{10}& \# Faults      \\
+	  \begin{tabular}{l|rr|rr}
+		 \toprule
+       & \multicolumn{2}{c|}{$k=5$} & \multicolumn{2}{c}{$k=10$} \\
+		 Project        &   \sfl{}   & \comb &   \sfl{}   & \comb\\
 		\midrule
-		 \lang{}         &   84.6   & 100 & 84.6 & 96.9 & 65      \\
-		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 & 104  \\   
-		\chart{}           & 84.6 & 76.9 & 92.3 & 84.6 & 26  \\
-		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2 & 27  \\   
-		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9 & 38  \\   \midrule
-		Total         & 79.6 & 87.3 & 83.5 & 91.2 & 260  \\  
+		 \lang{}         &   84.6   & 100.0 & 84.6 & 96.9  \\
+		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 \\   
+		\chart{}           & {\cellcolor{Gray} 84.6} & {\cellcolor{Gray}76.9} & {\cellcolor{Gray}92.3} & {\cellcolor{Gray}84.6}\\
+		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2\\   
+		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9\\   \midrule
+		Total         & 79.6 & 87.3 & 83.5 & 91.2\\  
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
-\end{table*}
+\end{table}
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
