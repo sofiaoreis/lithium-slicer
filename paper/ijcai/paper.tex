@@ -187,7 +187,8 @@ double-blind requirements are lifted.
 \section{Dynamic Slicing (\ds{})}
 %\label{sec:background}
 \label{sec:slicing}
-\Sof{Falar de model-based diagnosis}
+\Sof{Falar de model-based diagnosis}\Rui{important to connect to the AI
+community --- we are submitting this to ijcai.}
 Program slicing is a program understanding technique to identify the
 relevant parts of the program with respect to given points of
 interest. Dynamic
@@ -569,7 +570,7 @@ combination, as substantiated by \comb, to fault localization.
 
 %%  shows that CS can
 %% miss faulty statements because of imprecise oracles that guide the
-%% slicing process. 
+%% slicing process.
 %% Different slicers can miss faulty statements for different
 %% reasons. In this paper, we used Critical
 %% Slicing~\cite{DeMillo:1996:CSS:229000.226310}, which, in principle,
@@ -585,7 +586,7 @@ Table~\ref{tab:df4j} shows size, number of tests, and number of
 faults, for each considered program.
 
 \begin{table}[h]
-  \small  
+  \small
   \centering
   \setlength{\tabcolsep}{4pt}
   \begin{tabular}{lrrr}
@@ -769,11 +770,11 @@ impact in the fault localization accuracy. Table~\ref{table:fsws} presents the
 number of faults where at least one of the faulty statements appears in the
 final reports of both techniques, \sfl{}$^{k}$ and \combpar{k}. For each fault,
 we only search for faulty statements in the top $5$ ($k=5$) and $10$ ($k=10$)
-of the highest faulty classes. 
+of the highest faulty classes.
 
 In Table~\ref{table:fsws}, we observe that for both scenarios ($k=5$ and $k=10$), \combpar{k}
-finds the faulty statements faster than \sfl{}$^{k}$. 
-\sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., 
+finds the faulty statements faster than \sfl{}$^{k}$.
+\sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e.,
 \combpar{5} misses less $20$ ($7.7\%$) faults than \sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults where as \combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10} misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$. There is also a significant difference within each technique. Generally, the majority of faulty statements are found on the $5$ highest ranked faulty classes. There are few cases where the faulty statements are only find if the approach considers the first $10$ highest ranked faulty classes \combpar{10} is the variant of our approach
 that performs better \textbf{missing only 23 out of 260 (8.8\%) cases}.
 
@@ -796,7 +797,7 @@ the ranking, he can say it is the faulty one.
 }
 
 In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} with \sfl{}
-to improve fault localization. For each fault, we calculated the cost of diagnosis 
+to improve fault localization. For each fault, we calculated the cost of diagnosis
 $\Delta{}C$ between \sfl{}$^{k}$ and \combpar{k} for both variants $k = 5$ and $k=10$.
 
 Figure \ref{fig:diagnosis} reports the cost of diagnosis of using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$,
@@ -815,8 +816,8 @@ of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
 Instead, if $k=10$ is considered the proposed approach returns an improvement of
 $6.1$ on the rank mean of all faulty statements.
 This $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. Yet,
-if we only consider the faults ($116$) where there was improvement in at least 
-one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for 
+if we only consider the faults ($116$) where there was improvement in at least
+one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for
 $k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which is significant.
 
 
