@@ -773,6 +773,29 @@ files. \Mar{sofia, it would be more convincing if you (additionally)
 \subsubsection{RQ2: \textit{\rqtwo}}
 \label{rq:2}
 
+\begin{table}[H]
+  \small
+	\centering
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{lrr}
+		\toprule
+		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
+		\midrule
+
+        \lang{}            & 100 & 96.9\\
+        \cmath{}           & 89.4 & 95.2\\
+        %\closure{}          &  & \\
+		\chart{}			& 76.9 & 84.6 \\
+        \jtime{}            & 81.5 & 85.2\\
+        \mockito{}          & 71.1 & 78.9\\
+
+		\bottomrule
+	\end{tabular}
+	\caption {\ds{} performance on capturing faulty statements, as percentages.}
+	\label{tab:red}
+\end{table}
+\normalsize
+
 %% For automated debugging that
 %% means that it will not be in the diagnostic report and therefore has a negative
 %% impact in the fault localization accuracy. 
@@ -877,7 +900,8 @@ the results tell us that the distributions are not normal. Given that $C$ is not
 normally distributed, we use the non-parametrical statistical hypothesis test
 Friedman. The null-hypothesis is that the ranking results of all techniques and
 variants are the same. With $99\%$ of confidence, the results show that the
-distributions are distinct. To understand which techniques perform differently - i.e., \textit{Does \combpar{10} perform differently than \sfl{}$^{10}$} -
+distributions are distinct. To understand which techniques perform differently 
+- i.e., \textit{Does \combpar{10} perform differently than \sfl{}$^{10}$} -
 we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all pairs of techniques. Each square represents the significance between the correspondent techniques, i.e., if it is significant it means that the techniques perform differently. With $95\%$ of confidence, it is possible to confirm that the performance of all techniques is different expect when comparing \combpar{5} with \combpar{10}.
 
