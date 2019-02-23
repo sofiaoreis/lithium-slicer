@@ -185,22 +185,22 @@ double-blind requirements are lifted.
 %This section summarizes the ground concepts of our approach.
 
 \section{Dynamic Slicing (\ds{})}
-%\label{sec:background}
 \label{sec:slicing}
-\Sof{Falar de model-based diagnosis}\Rui{important to connect to the AI
-community --- we are submitting this to ijcai.}
-Program slicing is a program understanding technique to identify the
-relevant parts of the program with respect to given points of
-interest. Dynamic
-slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
+
+% Program slicing is a program understanding technique to identify the
+% relevant parts of the program with respect to given points of
+% interest.
+\Sof{MBSD connection review please}
+Dynamic slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
 static slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
+is an instance of Model-based software diagnosis that
 has been shown useful in automated software debugging where the region
 of interest is restricted to what can be reached from failing
 tests. Several dynamic slicing techniques exist. This paper uses
 Critical Slicing (\cs{})~\cite{DeMillo:1996:CSS:229000.226310} for its
 simplicity/generality. Critical Slicing
 prescribes a black-box language-semantics-agnostic recipe to computing
-executable slices.  Critical Slicing simplifies the original
+executable slices. Critical Slicing simplifies the original
 program such that the resulting program preserves critical
 observations, such as assertion violations. More precisely, the
 simplification mechanism consists of deleting statements on the
@@ -255,9 +255,12 @@ CS, it is necessary to make oracles more specific. For that, our
 approach was to use as the slicing criterion the stack trace
 associated with the test failure. That decision increases the chances
 that the sliced program will follow a path to the error similar to
-that followed by the original program. \Mar{Sofia, if you think it is
-  necessary, explain if you needed to abstract something in the
-  stacktrace. I did not understand that memory location thing.}
+that followed by the original program. \Sof{Added oracle generalization example}
+There are faults whose outputs 
+may slightly differ from one execution to another. For example, 
+exceptions including memory addresses identifiers, which change on 
+each execution. For these cases, it was developed a mechanism to compare the
+rest of the output ignoring the identifier of the memory address.
 
 % \subsection{Implementation}
 % \label{sec:impl}
