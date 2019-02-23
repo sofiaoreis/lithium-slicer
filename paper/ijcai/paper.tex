@@ -695,35 +695,6 @@ This section answers the research questions.
 %% \sfl{}$^{k}$.
 
 
-\begin{table*}[t!]
-	\small
-	% \setlength{\tabcolsep}{3pt}
-	\centering
-	  \begin{tabular}{l|cccc|cccc|c}
-		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{\sfl{}$^{k}$}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
-
-		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
-					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
-		\midrule
-		 \lang{}         &  55 & 84.6\%  & 55  & 84.6\%
-		 				& 65 & 100\% & 63 & 96.9\% & 65      \\
-		\cmath{}           & 85 & 81.7\%  & 89 & 85.6\%
-						& 93 & 89.4\% & 99 & 95.2\% & 104  \\   %\comments{& 177   &  -}\\
-		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}          & 22 & 84.6\% & 24 & 92.3\%
-						& 20 & 76.9\% & 22 & 84.6\% & 26    \\
-		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \%
-				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
-		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
-		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
-	 Total      & 207  & 79.6\% & 217 & 83.5\%
-	 				& 227 & 87.3\% & 237 & 91.2\% & 260 \\
-		\bottomrule
-	\end{tabular}
-  \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
-  \label{table:fsws}
-\end{table*}
 
 
 %% This subsection aims to report the performance of the \ds{} technique
@@ -764,7 +735,7 @@ files. \Mar{sofia, it would be more convincing if you (additionally)
 
 		\bottomrule
 	\end{tabular}
-	\caption {\ds{} reduction, as percentages. Higher is better.}
+	\caption {\ds{} reduction in file size (percentages). Higher is better.}
 	\label{tab:red}
 \end{table}
 \normalsize
@@ -806,45 +777,106 @@ files. \Mar{sofia, it would be more convincing if you (additionally)
 
 %% of both techniques, \sfl{}$^{k}$ and \combpar{k}
 
-A fundamental issue of purely dynamic slicing techniques, critical
-slicing in particular, is the risk of discarding faulty statements
-(see Section~\ref{sec:slicing}). This research question evaluates the
-practical impact of this conceptual issue. Table~\ref{table:fsws}
-presents the number of faults where at least one of the faulty
-statements appears in the final reports.\Mar{$\leftarrow$this seems a
-  sensible choice that needs reasonable (to-the-point)
-  justification. is there a rationale for this?  if not, was this
-  choice used in other study? if yes, just say it was used and cite.}
-More precisely, we look for faulty statements in the top 5 and 10 most
-suspicious classes (as per the file ranking).
+A fundamental issue of purely dynamic slicing techniques is the risk
+of discarding faulty statements (see Section~\ref{sec:slicing}). This
+research question evaluates the practical impact of this conceptual
+issue. Table~\ref{tab:ds-cases-captured} shows the number of cases
+dynamic slicing captures at least one of the faulty statements among
+the sliced files for different values of $k$. These numbers indicat
+that \Fix{...elaborate...}
 
-\Mar{CRITICAL: Sofia, I am really confused here. Is there a reason for
-  why you chose not to show the proportion of cases where **DS** (not
-  SFL(k) or \combpar{k}) includes the faulty statement? Wouldn't it be
-  sufficient and simpler/clearer answering this question in terms of
-  DS for k=5,10? (Note that the question is about DS.) On a similar
-  note, considering this metric, I don't understand how SFL(k) can
-  produce different result compared to \combpar{k}. I thought the
-  difference in this case would only be the position in the
-  ranking. This is counter-intuitive and needs a good explanation.}
-Table~\ref{table:fsws} compares \sfl{}$^{k}$ and \combpar{k} with
-respect to the metric number of cases where a faulty statement appears
-in the ranking. Results show that \combpar{k} finds the faulty
-statements \Fix{faster}\Mar{faster? chose another word.} than
-\sfl{}$^{k}$.\Mar{I will revise the rest of this par. when I
-  understand what is going on here...}  \sfl{}$^{5}$ finds $207$
-($79.6\%$) faults whereas \combpar{5} finds $227$ ($87.3\%$) faults
-for $k=5$, i.e., \combpar{5} misses $20$ ($7.7\%$) less faults
-compared to \sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults
-whereas \combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e.,
-\combpar{10} misses less $20$ ($7.7\%$) faults than
-\sfl{}$^{10}$. There is also a significant difference within each
-technique. Generally, the majority of faulty statements are found on
-the $5$ highest ranked faulty classes. There are few cases where the
-faulty statements are only found if the approach considers the first
-$10$ highest ranked faulty classes \combpar{10} is the variant of our
-approach that performs better \textbf{missing only 23 out of 260
-  (8.8\%) cases}.
+\begin{table}[H]
+  \small
+	\centering
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{lrr}
+		\toprule
+		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
+		\midrule
+
+        \lang{}            & - & -\\
+        \cmath{}           & - & -\\
+        %\closure{}          &  & \\
+		\chart{}			& - & - \\
+        \jtime{}            & - & -\\
+        \mockito{}          & - & -\\
+
+		\bottomrule
+	\end{tabular}
+	\caption {Percentages of cases \ds{} captures faults. Higher is better.}
+	\label{tab:ds-cases-captured}
+\end{table}
+\normalsize
+
+%% Table~\ref{table:fsws} presents the number of faults where at
+%% least one of the faulty statements appears in the final
+%% reports.\Mar{$\leftarrow$this seems a sensible choice that needs
+%%   reasonable (to-the-point) justification. is there a rationale for
+%%   this?  if not, was this choice used in other study? if yes, just say
+%%   it was used and cite.}  More precisely, we look for faulty
+%% statements in the top 5 and 10 most suspicious classes (as per the
+%% file ranking).
+%% \Mar{CRITICAL: Sofia, I am really confused here. Is there a reason for
+%%   why you chose not to show the proportion of cases where **DS** (not
+%%   SFL(k) or \combpar{k}) includes the faulty statement? Wouldn't it be
+%%   sufficient and simpler/clearer answering this question in terms of
+%%   DS for k=5,10? (Note that the question is about DS.) On a similar
+%%   note, considering this metric, I don't understand how SFL(k) can
+%%   produce different result compared to \combpar{k}. I thought the
+%%   difference in this case would only be the position in the
+%%   ranking. This is counter-intuitive and needs a good explanation.}
+
+To analyze the impact of dynamic slicing in context, we also compared
+\combpar{k} and \sfl{}$^{k}$ considering the same metric, \ie{}, the
+number of cases the fault is captured by the technique. Note that the
+reason \sfl{}$^{k}$ misses the fault is different compared to
+\combpar{k}. It captures the fault if the fault is included within the
+top $k$ files; it misses otherwise. Table~\ref{table:fsws} shows
+results, indicating that \combpar{k} performs better than \sfl{}$^{k}$
+on this metric.\Mar{my opinion is that we should not compare these two
+techniques here: 1) it is not the goal of this RQ and 2) this is not
+the best metric.} \sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas
+\combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., \combpar{5}
+misses $20$ ($7.7\%$) less faults compared to
+\sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults whereas
+\combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10}
+misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$. There is also a
+significant difference within each technique. Generally, the majority
+of faulty statements are found on the $5$ highest ranked faulty
+classes. There are few cases where the faulty statements are only
+found if the approach considers the first $10$ highest ranked faulty
+classes \combpar{10} is the variant of our approach that performs
+better \textbf{missing only 23 out of 260 (8.8\%) cases}.
+
+\begin{table*}[t!]
+	\small
+	% \setlength{\tabcolsep}{3pt}
+	\centering
+	  \begin{tabular}{l|cccc|cccc|c}
+		\toprule
+		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{\sfl{}$^{k}$}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
+
+		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
+					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
+		\midrule
+		 \lang{}         &  55 & 84.6\%  & 55  & 84.6\%
+		 				& 65 & 100\% & 63 & 96.9\% & 65      \\
+		\cmath{}           & 85 & 81.7\%  & 89 & 85.6\%
+						& 93 & 89.4\% & 99 & 95.2\% & 104  \\   %\comments{& 177   &  -}\\
+		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
+		\chart{}          & 22 & 84.6\% & 24 & 92.3\%
+						& 20 & 76.9\% & 22 & 84.6\% & 26    \\
+		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \%
+				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
+		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
+		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
+	 Total      & 207  & 79.6\% & 217 & 83.5\%
+	 				& 227 & 87.3\% & 237 & 91.2\% & 260 \\
+		\bottomrule
+	\end{tabular}
+  \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
+  \label{table:fsws}
+\end{table*}
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
