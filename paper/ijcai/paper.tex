@@ -695,7 +695,7 @@ This section answers the research questions.
 %% \sfl{}$^{k}$.
 
 
-\begin{table*}[h]
+\begin{table*}[t!]
 	\small
 	% \setlength{\tabcolsep}{3pt}
 	\centering
@@ -724,7 +724,6 @@ This section answers the research questions.
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
 \end{table*}
-
 
 
 %% This subsection aims to report the performance of the \ds{} technique
@@ -826,25 +825,32 @@ approach that performs better \textbf{missing only 23 out of 260
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
+In \textbf{RQ3}, we evaluate the effective impact of combining \ds{}
+with \sfl{} to improve fault localization.
+
+The first experiment we ran to assess impact consisted of measuring
+the \emph{difference of diagnosis cost}. This metric has been
+previously used in other studies~\Fix{cite cite}. More specifically,
+we computed $\Delta{}C = C(\textrm{SFL$^{k}$}) -
+C(\textrm{\combpar{k}})$, where $C$ denotes the diagnosis cost and is
+obtained by computing the mean position in the ranking of all buggy
+statements. $\Delta C >0$ means that the position of the faulty
+statement has decreased with \combpar{k}, \ie{}, the combination had a
+positive impact. $\Delta C <0$ means that \combpar{k} performs worse
+compared to its baseline. That could happen if dynamic slicing misses
+the faulty statement---the statements not included in the slice will
+have their suspiciousness scores reduced and ranks potentially
+reduced. $\Delta C=0$ means that the faulty statement remained in the
+same position.  It is worth noting that we assume a perfect bug
+understanding, i.e., if the developer sees the bug in the ranking, he
+is able to precisely determine if it is the faulty one.
+
+\Mar{I see there are different results/metrics/tables. We need to
+  organize this better, with sub-questions or stating different
+  other experiments to answer the main question.}
+
+
 \Mar{---------------------- I am here}
-
-\Mar{metric only used here...revise}
-\Fix{
-We compared \combpar{5} and \combpar{10} against
-\sfl{}$^{5}$ and \sfl{}$^{10}$ using the commonly used metric $\Delta{}C =
-C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where $C$ is the cost of
-diagnosis. $C$ is the mean ranking of all buggy statements. $\Delta C >0$ means
-that the position of the faulty statement has decreased in the ranking after
-applying the \combpar{k} approach. Hence, reducing the cost of locating the bug.
-$\Delta C <0$ means that the faulty statement may be removed by \combpar{k}.
-$\Delta C=0$ means that the faulty statement remained in the same position.  We
-also assume a perfect bug understanding, i.e., if the developer sees the bug in
-the ranking, he can say it is the faulty one.
-}
-
-In \textbf{RQ3}, we intend to evaluate the impact of combining \ds{} with \sfl{}
-to improve fault localization. For each fault, we calculated the cost of diagnosis
-$\Delta{}C$ between \sfl{}$^{k}$ and \combpar{k} for both variants $k = 5$ and $k=10$.
 
 Figure \ref{fig:diagnosis} reports the cost of diagnosis of using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$,
 respectively. For $k=5$, we observe that in $30$ ($11.5\%$) of the faults
