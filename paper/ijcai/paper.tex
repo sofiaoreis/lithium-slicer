@@ -806,27 +806,34 @@ that \Fix{...elaborate...}
 %%   difference in this case would only be the position in the
 %%   ranking. This is counter-intuitive and needs a good explanation.}
 
+%% \Mar{my
+%%   opinion is that we should not compare these two techniques here: 1)
+%%   it is not the goal of this RQ and 2) this is not the best metric.}
+
 To analyze the impact of dynamic slicing in context, we also compared
-\combpar{k} and \sfl{}$^{k}$ considering the same metric, \ie{}, the
-number of cases the fault is captured by the technique. Note that the
-reason \sfl{}$^{k}$ misses the fault is different compared to
-\combpar{k}. It captures the fault if the fault is included within the
-top $k$ files; it misses otherwise. Table~\ref{table:fsws} shows
-results, indicating that \combpar{k} performs better than \sfl{}$^{k}$
-on this metric.\Mar{my opinion is that we should not compare these two
-techniques here: 1) it is not the goal of this RQ and 2) this is not
-the best metric.} \sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas
-\combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., \combpar{5}
-misses $20$ ($7.7\%$) less faults compared to
-\sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults whereas
-\combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10}
-misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$. There is also a
-significant difference within each technique. Generally, the majority
-of faulty statements are found on the $5$ highest ranked faulty
-classes. There are few cases where the faulty statements are only
-found if the approach considers the first $10$ highest ranked faulty
-classes \combpar{10} is the variant of our approach that performs
-better \textbf{missing only 23 out of 260 (8.8\%) cases}.
+\combpar{k} and \sfl{}$^{k}$ considering the number of cases where the
+fault is captured by the technique. Note that the reason \sfl{}$^{k}$
+misses the fault is different compared to \combpar{k}. \sfl{}$^{k}$
+captures the fault if the fault is included within the top $k$ files;
+it misses the fault otherwise. Table~\ref{table:fsws} shows results,
+indicating that \combpar{k}, on average, captures more faults compared
+to \sfl{}$^{k}$. In only two cases \sfl{}$^{k}$ outperformed
+\combpar{k}. These results show that the majority of faulty statements
+are found on the $5$ highest ranked faulty classes and that
+\combpar{10} is the variant of our approach that performs better
+missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
+
+%% \sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas
+%% \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., \combpar{5}
+%% misses $20$ ($7.7\%$) less faults compared to
+%% \sfl{}$^{5}$. \sfl{}$^{10}$ finds $217$ ($83.5\%$) faults whereas
+%% \combpar{10} finds $237$ ($91.2\%$) for $k=10$, i.e., \combpar{10}
+%% misses less $20$ ($7.7\%$) faults than \sfl{}$^{10}$.
+
+%% repeated...
+%%  (2) there are few
+%% cases where the faulty statements are only found if the approach
+%% considers the first $10$ highest ranked faulty classes 
 
 \begin{table*}[t!]
 	\small
