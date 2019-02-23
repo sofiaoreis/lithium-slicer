@@ -835,30 +835,51 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 %% cases where the faulty statements are only found if the approach
 %% considers the first $10$ highest ranked faulty classes 
 
+% \begin{table*}[t!]
+% 	\small
+% 	% \setlength{\tabcolsep}{3pt}
+% 	\centering
+% 	  \begin{tabular}{l|cccc|cccc|c}
+% 		\toprule
+% 		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{\sfl{}$^{k}$}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
+%
+% 		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
+% 					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
+% 		\midrule
+% 		 \lang{}         &  55 & 84.6\%  & 55  & 84.6\%
+% 		 				& 65 & 100\% & 63 & 96.9\% & 65      \\
+% 		\cmath{}           & 85 & 81.7\%  & 89 & 85.6\%
+% 						& 93 & 89.4\% & 99 & 95.2\% & 104  \\   %\comments{& 177   &  -}\\
+% 		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
+% 		\chart{}          & 22 & 84.6\% & 24 & 92.3\%
+% 						& 20 & 76.9\% & 22 & 84.6\% & 26    \\
+% 		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \%
+% 				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
+% 		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
+% 		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
+% 	 Total      & 207  & 79.6\% & 217 & 83.5\%
+% 	 				& 227 & 87.3\% & 237 & 91.2\% & 260 \\
+% 		\bottomrule
+% 	\end{tabular}
+%   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
+%   \label{table:fsws}
+% \end{table*}
+
 \begin{table*}[t!]
 	\small
 	% \setlength{\tabcolsep}{3pt}
 	\centering
-	  \begin{tabular}{l|cccc|cccc|c}
+	  \begin{tabular}{l|cc|cc|c}
 		\toprule
-		\multirow{2}{*}{Project}            & \multicolumn{4}{c|}{\sfl{}$^{k}$}  & \multicolumn{4}{c|}{\combpar{k}} & \multirow{2}{*}{\# Faults} \\
-
-		            & \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$
-					& \# $k = 5$ & \% $k = 5$ & \# $k = 10$ & \% $k = 10$ &  \\
+		 Project        &   \sfl{}$^{5}$   & \combpar{5}
+		 				&   \sfl{}$^{10}$   & \combpar{10}& \# Faults      \\
 		\midrule
-		 \lang{}         &  55 & 84.6\%  & 55  & 84.6\%
-		 				& 65 & 100\% & 63 & 96.9\% & 65      \\
-		\cmath{}           & 85 & 81.7\%  & 89 & 85.6\%
-						& 93 & 89.4\% & 99 & 95.2\% & 104  \\   %\comments{& 177   &  -}\\
-		% \closure{}         & 62.41 \%  & 72.18 \%  & 9.77 \%     \\   %\comments{& 350   &  -}\\
-		\chart{}          & 22 & 84.6\% & 24 & 92.3\%
-						& 20 & 76.9\% & 22 & 84.6\% & 26    \\
-		\jtime{}          & 21 & 77.8 \% & 22 & 81.5 \%
-				& 22 & 81.5\% & 23 & 85.2\% & 27     \\
-		 \mockito{}      & 24  & 63.2\% & 27 & 71.1\%
-		 				& 27 & 71.1\% & 30 & 78.9\% & 38 \\\midrule
-	 Total      & 207  & 79.6\% & 217 & 83.5\%
-	 				& 227 & 87.3\% & 237 & 91.2\% & 260 \\
+		 \lang{}         &   84.6   & 100 & 84.6 & 96.9 & 65      \\
+		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 & 104  \\   
+		\chart{}           & 84.6 & 76.9 & 92.3 & 84.6 & 26  \\
+		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2 & 27  \\   
+		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9 & 38  \\   \midrule
+		Total         & 79.6 & 87.3 & 83.5 & 91.2 & 260  \\  
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
