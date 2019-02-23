@@ -898,35 +898,49 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 In \textbf{RQ3}, we evaluate the effective impact of combining \ds{}
 with \sfl{} to improve fault localization.
 
-The first experiment we ran to assess impact consisted of measuring
-the \emph{difference of diagnosis cost}. This metric has been
-previously used in other studies~\Fix{cite cite}. More specifically,
-we computed $\Delta{}C = C(\textrm{SFL$^{k}$}) -
-C(\textrm{\combpar{k}})$, where $C$ denotes the diagnosis cost and is
-obtained by computing the mean position in the ranking of all buggy
-statements. $\Delta C >0$ means that the position of the faulty
-statement has decreased with \combpar{k}, \ie{}, the combination had a
-positive impact. $\Delta C <0$ means that \combpar{k} performs worse
-compared to its baseline. That could happen if dynamic slicing misses
-the faulty statement---the statements not included in the slice will
-have their suspiciousness scores reduced and ranks potentially
-reduced. $\Delta C=0$ means that the faulty statement remained in the
-same position.  It is worth noting that we assume a perfect bug
-understanding, i.e., if the developer sees the bug in the ranking, he
-is able to precisely determine if it is the faulty one.
+The first experiment we ran to assess impact consists of measuring the
+\emph{difference of diagnosis cost}. This metric has been previously
+used in other studies~\Fix{cite cite}. More specifically, we computed
+$\Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where
+$C$ denotes the diagnosis cost and is obtained by computing the mean
+position in the ranking of all buggy statements. $\Delta C >0$ means
+that the position of the faulty statement has decreased with
+\combpar{k}, \ie{}, the combination had a positive impact. $\Delta C
+<0$ means that \combpar{k} performs worse compared to its
+baseline. That could happen if dynamic slicing misses the faulty
+statement---the statements not included in the slice will have their
+suspiciousness scores reduced and ranks potentially reduced. $\Delta
+C=0$ means that the faulty statement remained in the same position.
+It is worth noting that we assume a perfect bug understanding, i.e.,
+if the developer sees the bug in the ranking, he is able to precisely
+determine if it is the faulty one.
 
-\Mar{I see there are different results/metrics/tables. We need to
-  organize this better, with sub-questions or stating different
-  other experiments to answer the main question.}
+Figure \ref{fig:diagnosis} summarizes performance of \combpar{k}
+relative to \sfl{}$^{k}$ using histograms over $\Delta{}C$ for
+different values of $k$. Note that (1) the number of cases where
+\sfl{}$^{k}$ outperforms \combpar{k} is very small compared and (2)
+the number of cases \combpar{k} outperforms \sfl{}$^{k}$ is
+significant and, as we increase the value of $k$, it increases (from
+97 to 117 faults).
 
+%% For $k=5$, we observe that in $30$ ($11.5\%$) of the faults the
+%% position of faulty statements decreases in the ranking, $97$($37.3\%$)
+%% of the faults the position of faulty statements increases in the
+%% rankinh whereas $133$ ($51.2\%$) of the faults the position of faulty
+%% stamenets remains the same. For $k=10$, we observe an increasing of
+%% $20$ cases where the position of faulty statements increases in the
+%% ranking $117$ ($45.0\%$).  The number of cases whose faulty statements
+%% position remained the same are $110$ ($42.3\%$) and that suffered a
+%% decrease in the ranking is $33$ ($12.7\%$).
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.42\textwidth]{figures/performance.pdf}
+		\caption{Histograms of $\Delta{}C$.}
+		\label{fig:diagnosis}
+\end{figure}
 
 \Mar{---------------------- I am here}
-
-Figure \ref{fig:diagnosis} reports the cost of diagnosis of using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$,
-respectively. For $k=5$, we observe that in $30$ ($11.5\%$) of the faults
-the position of faulty statements decreases
-in the ranking, $97$($37.3\%$) of the faults the position of faulty statements increases in the rankinh whereas $133$ ($51.2\%$) of the faults the position of faulty stamenets remains the same. For $k=10$, we observe an increasing of $20$ cases where the position of faulty statements increases in the ranking $117$ ($45.0\%$).
-The number of cases whose faulty statements position remained the same are $110$ ($42.3\%$) and that suffered a decrease in the ranking is $33$ ($12.7\%$).
 
 Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying both
@@ -940,39 +954,11 @@ $6.1$ on the rank mean of all faulty statements.
 This $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. Yet,
 if we only consider the faults ($116$) where there was improvement in at least
 one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for
-$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which is significant.
+$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained
+in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which
+is significant.
 
-
-Although this dataset has more than $50\%$ of fault of omissions,
-our simple slicing approach was capable of improving the ranking of $95$ faults for
-$k=5$ and $115$ faults for $k=10$. Table \ref{table:st} presents the statistics
-to determine if the observed results are statistically significant. Shapiro-Wilk
-tests the null hypothesis that results are drawn from a normal distribution. The
-test is perfomed for all techniques and its variants. With $99\%$ of confidence,
-the results tell us that the distributions are not normal. Given that $C$ is not
-normally distributed, we use the non-parametrical statistical hypothesis test
-Friedman. The null-hypothesis is that the ranking results of all techniques and
-variants are the same. With $99\%$ of confidence, the results show that the
-distributions are distinct. To understand which techniques perform differently 
-- i.e., \textit{Does \combpar{10} perform differently than \sfl{}$^{10}$} -
-we performed a Siegel post-hoc analysis. Figure
-\ref{fig:performance} reports the results of Siegel analysis for all pairs of techniques. Each square represents the significance between the correspondent techniques, i.e., if it is significant it means that the techniques perform differently. With $95\%$ of confidence, it is possible to confirm that the performance of all techniques is different expect when comparing \combpar{5} with \combpar{10}.
-
-It is worth noting that Automated
-Program Repair techniques may directly benefit from this study to improve their
-results.
-
-\Rui{Weakness: there has to be discussion on whether there is potential/promising
-results somewhere.}
-
-\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.42\textwidth]{figures/performance.pdf}
-		\caption{Cost of diagnosis of using \combpar{5} and \combpar{10} instead of \sfl{}$^{5}$ and \sfl{}$^{10}$, respectively}
-		\label{fig:diagnosis}
-\end{figure}
-
-\begin{table}[h]
+\begin{table}[h!]
 	\tiny
 	\centering
 	\setlength{\tabcolsep}{3pt}
@@ -989,6 +975,34 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x 
   \caption {Statistical tests}
   \label{table:st}
 \end{table}
+
+
+Although this dataset has more than $50\%$ of fault of omissions, our
+simple slicing approach was capable of improving the ranking of $95$
+faults for $k=5$ and $115$ faults for $k=10$. Table \ref{table:st}
+presents the statistics to determine if the observed results are
+statistically significant. Shapiro-Wilk tests the null hypothesis that
+results are drawn from a normal distribution. The test is perfomed for
+all techniques and its variants. With $99\%$ of confidence, the
+results tell us that the distributions are not normal. Given that $C$
+is not normally distributed, we use Friedman test, a non-parametric
+statistical test of hypothesis. The null-hypothesis is that the
+ranking results of all techniques and variants are the same. With
+$99\%$ confidence, the results show that the distributions are
+distinct.
+
+To understand which techniques perform differently, \ie{} to answer
+the question \textit{Does \combpar{k} perform differently than
+  \sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
+\ref{fig:performance} reports the results of Siegel analysis for all
+pairs of techniques. Each square\Mar{gray intensity?} represents the
+significance\Mar{of what?} between the corresponding techniques, i.e.,
+if it is significant it means that the techniques perform
+differently. We can determine with $95\%$ confidence that the
+performance of each pair of techniques is different.
+
+\Rui{Weakness: there has to be discussion on whether there is potential/promising
+results somewhere.}
 
 \begin{figure}[h]
 	\vspace{-1.2cm}
