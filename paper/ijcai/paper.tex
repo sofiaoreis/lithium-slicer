@@ -651,11 +651,12 @@ additionally counted the number of cases of ``fault of omission'', a
 popular metric in fault localization research for that
 purpose~\Fix{cite}\Sof{Not sure what to cite here}. A fault of omission occurs when
 the program is buggy because some code is missing, i.e., a bug that is 
-corrected by adding code. Intuitivelly, 
-the ability of techniques to
-produce good diagnosis in those cases reduce as \Fix{...explain...}. A
-total of $59.7\%$ of the cases in this dataset manifest fault of
-omission, which is a good indication of difficulty.
+corrected by adding code. Intuitivelly, the ability of techniques to
+produce good diagnosis in those cases is poor since fault of omission
+are non-executable statements which means that the execution information
+cannot help locate the fault directly. A total of $59.7\%$ of the cases 
+in this dataset manifest fault of omission, which is a good indication of 
+difficulty\Sof{note to self: Improve the good indication of difficulty}.
 
 %in producing
 %high-qualitiy diagnosis.
@@ -723,9 +724,9 @@ This section answers the research questions.
 A necessary but insufficient condition for improvement of fault
 localization with \comb{} is that dynamic slicing eliminates a high
 amount of code in the best ranked files. Table \ref{tab:red} shows, as
-percentages, the average reduction on the sum of top file sizes
+percentages, the reduction of the top file sizes
 obtained with dynamic slicing for different values of
-$k$.\Mar{$\leftarrow$sofia, please check.} Overall, results indicate
+$k$. Overall, results indicate
 that dynamic slicing substantially reduces the size of highly-ranked
 files. \Mar{sofia, it would be more convincing if you (additionally)
   show reduction wrt to the the parts of the file that are covered.}
@@ -789,7 +790,7 @@ that \Fix{...elaborate...}
 		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
 		\midrule
 
-        \lang{}            & 100 & 96.9\\
+        \lang{}            & 100.0 & 96.9\\
         \cmath{}           & 89.4 & 95.2\\
         %\closure{}          &  & \\
 		\chart{}			& 76.9 & 84.6 \\
@@ -882,14 +883,14 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 %   \label{table:fsws}
 % \end{table*}
 
-\begin{table*}[t!]
+\begin{table}[h!]
 	\small
-	% \setlength{\tabcolsep}{3pt}
+	\setlength{\tabcolsep}{3pt}
 	\centering
-	  \begin{tabular}{l|cc|cc|c}
-		\toprule
-		 Project        &   \sfl{}$^{5}$   & \combpar{5}
-		 				&   \sfl{}$^{10}$   & \combpar{10}& \# Faults      \\
+\begin{tabular}{l|rr|rr}
+		 \toprule
+       & \multicolumn{2}{c|}{$k=5$} & \multicolumn{2}{c}{$k=10$} \\
+		 Project        &   \sfl{}   & \comb &   \sfl{}   & \comb\\
 		\midrule
 		 \lang{}         &   84.6   & 100.0 & 84.6 & 96.9  \\
 		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 \\
@@ -901,7 +902,7 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
-\end{table*}
+\end{table}
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
