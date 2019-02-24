@@ -55,7 +55,7 @@ the aforementioned combination, such components could be located and
 their suspiciousness reduced.  This study also discusses the practical
 impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
- $9\%$\comments{($23$ misses)} of the $\numFaults{}$ cases and that
+$9\%$\comments{($23$ misses)} of the $\numFaults{}$ cases and that
 the \ds{}-\sfl{} combination, coined as Tandem-SL, improves 
 the diagnostic accuracy up to $73.7\%$ (\avgImprov\ on average)\Sof{Calculei
 mal a média antes. A melhoria média para o top-5 é 9.6\% e a máxima
@@ -192,14 +192,12 @@ double-blind requirements are lifted.
 \section{Dynamic Slicing (\ds{})}
 \label{sec:slicing}
 
-Model-based software diagnosis has been 
 
-model-based software debugging, from the DX community, has been shown to be similar to slicing Mayer and Stumptner, 2008; Wotawa and Nica; etc. Having said that, not many inter- esting techniques having been pursued because of scalability. We have achieved it with a type of program slicing — critical slicing.
+Model-based diagnosis is a well-known approach that has been proposed by the
+DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
+of model-based diagnosis to localize software faults have demonstrated that it
+can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,Mayer:2008:EMM:1642931.1642950}.
 
-% Program slicing is a program understanding technique to identify the
-% relevant parts of the program with respect to given points of
-% interest.
-\Sof{MBSD connection review please}
 Dynamic slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
 static slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
 is an instance of Model-based software diagnosis that
@@ -264,10 +262,10 @@ CS, it is necessary to make oracles more specific. For that, our
 approach was to use as the slicing criterion the stack trace
 associated with the test failure. That decision increases the chances
 that the sliced program will follow a path to the error similar to
-that followed by the original program. \Sof{Added oracle generalization example}
-There are faults whose outputs 
-may slightly differ from one execution to another. For example, 
-exceptions including memory addresses identifiers, which change on 
+that followed by the original program.
+There are faults whose outputs
+may slightly differ from one execution to another. For example,
+exceptions including memory addresses identifiers, which change on
 each execution. For these cases, it was developed a mechanism to compare the
 rest of the output ignoring the identifier of the memory address.
 
@@ -666,12 +664,13 @@ expensive as Critical Slicing needs to re-compile the affected file at
 every iteration, \ie{}, after deleting statements and before checking
 the oracle (see Section~\ref{sec:slicing}). We control the scope of
 slicing through the variable $k$, which denotes the number of distinct
-files that dynamic slicing will minimize. In this study, we used 5 and
-10 as the values of $k$. The $k$ files for minimization are selected
+files that dynamic slicing will minimize. In this study, we used $5$ and
+$10$ as the values of $k$, following the same values as in previous fault
+localiztion studies~\cite{ang-perez-van-deursen-rui-2017}.
+The $k$ files for minimization are selected
 from the \sfl{} ranking as follows. First, we build a rank of files by
 determining, for each ranked statement, the file that declares
 it. Then, we select the top $k$ distinct files from such file ranking.
-\Rui{we should say that k follows from typical SFL metrics (top k)}
 
 The techniques we evaluate in this study are \combpar{k} and
 SFL$^{k}$, which is the comparison baseline. \combpar{k} is as defined
@@ -758,7 +757,7 @@ files. \Mar{sofia, it would be more convincing if you (additionally)
 
 %% For automated debugging that
 %% means that it will not be in the diagnostic report and therefore has a negative
-%% impact in the fault localization accuracy. 
+%% impact in the fault localization accuracy.
 
 
 %% In \textbf{RQ2}, our concern is to evaluate how often \ds{} misses faulty
@@ -796,7 +795,7 @@ that \Fix{...elaborate...}
 	\caption {\ds{} performance on capturing faulty statements, as
      percentages. Higher is better.}
 	\label{tab:red}
-   \label{tab:ds-cases-captured}   
+   \label{tab:ds-cases-captured}
 \end{table}
 \normalsize
 
@@ -845,7 +844,7 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 %% repeated...
 %%  (2) there are few
 %% cases where the faulty statements are only found if the approach
-%% considers the first $10$ highest ranked faulty classes 
+%% considers the first $10$ highest ranked faulty classes
 
 % \begin{table*}[t!]
 % 	\small
@@ -886,12 +885,12 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 		 Project        &   \sfl{}$^{5}$   & \combpar{5}
 		 				&   \sfl{}$^{10}$   & \combpar{10}& \# Faults      \\
 		\midrule
-		 \lang{}         &   84.6   & 100 & 84.6 & 96.9 & 65      \\
-		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 & 104  \\   
-		\chart{}           & 84.6 & 76.9 & 92.3 & 84.6 & 26  \\
-		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2 & 27  \\   
-		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9 & 38  \\   \midrule
-		Total         & 79.6 & 87.3 & 83.5 & 91.2 & 260  \\  
+		 \lang{}         &   84.6   & 100.0 & 84.6 & 96.9  \\
+		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 \\
+		\chart{}           & {\cellcolor{Gray} 84.6} & {\cellcolor{Gray}76.9} & {\cellcolor{Gray}92.3} & {\cellcolor{Gray}84.6}\\
+		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2\\
+		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9\\   \midrule
+		Total         & 79.6 & 87.3 & 83.5 & 91.2\\
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
@@ -945,8 +944,24 @@ significant and, as we increase the value of $k$, it increases (from
 		\label{fig:diagnosis}
 \end{figure}
 
-\Mar{---------------------- I am here}
+If we focus at the $116$\Mar{117?} faults where there was improvement
+in at least one of the variants, the mean improvement in the ranking
+was 41.1 statements for $k=5$ and 18.7 statements for $k=10$. We
+observed an impressive maximum ranking improvement of $3170.5$\Mar{why
+  the .5 if this is the maximum case?} statements for $k=5$ and $209$
+statements for $k=10$. Such difference is justified by the fact that
+entire files are discarded in \combpar{5}, whose statements are
+included in the ranking of \combpar{10}. Consequently, the
+improvements obtained by the technique will not be as high if slicing
+on these additional files is unable to aggressively and safely discard
+statements. This also shows that slicing files, in addition to slicing
+statements from those files, is very beneficial for fault localization
+performance.
 
+\Mar{show distribution...}
+
+In the following, we present statistical analysis to demonstrate that
+the distributions of $C$ for each technique are different.
 Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying both
 techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. $33$ of the $260$
@@ -956,12 +971,7 @@ rank results for all faults. The \combpar{k} combination yields an improvement
 of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
 Instead, if $k=10$ is considered the proposed approach returns an improvement of
 $6.1$ on the rank mean of all faulty statements.
-This $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. Yet,
-if we only consider the faults ($116$) where there was improvement in at least
-one of the variants ($k=5$ or $k=10$) the \textbf{ranking increases in a mean of 41.1} for
-$k=5$ and \textbf{18.7} for $k=10$. The maximum improvement obtained
-in the \sfl{} rank was  $3170.5$ for $k=5$ and $209$ for $k=10$, which
-is significant.
+These $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. 
 
 \begin{table}[h!]
 	\tiny
