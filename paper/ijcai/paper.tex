@@ -57,12 +57,7 @@ impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
 $9\%$\comments{($23$ misses)} of the $\numFaults{}$ cases and that
 the \ds{}-\sfl{} combination, coined as Tandem-SL, improves
-the diagnostic accuracy up to $73.7\%$ (\avgImprov\ on average)\Sof{Calculei
-mal a média antes. A melhoria média para o top-5 é 9.6\% e a máxima
-melhoria que a técnica atingiu foi de 96.7\%. Eu reportei aqui no abstract para o
-top-10 porque a \% de melhoria é maior. Se vocês acharem que é mais vantajoso
-reportar os valores do top-10, avisem. Podemos reportar ambas. Atenção, só considero
-os casos em que pelo menos uma das variantes obteve melhoria}. To sum,
+the diagnostic accuracy up to $73.7\%$ (\avgImprov\ on average). To sum,
 we found that the \ds{}-\sfl{} combination was practical and effective
 and encourage new \sfl{} techniques to be evaluated against that
 optimization.
@@ -647,10 +642,11 @@ APIs. \mockito{} is a mocking testing framework.
 As to quantify complexity of fault localization on this dataset, we
 additionally counted the number of cases of ``fault of omission'', a
 popular metric in fault localization research for that
-purpose~\Fix{cite}\Sof{Not sure what to cite here}. A fault of omission occurs when
+purpose~\cite{Pearson:2017:EIF:3097368.3097441,just-defects4j-issta2014}. 
+A fault of omission occurs when
 the program is buggy because some code is missing, i.e., a bug that is
 corrected by adding code. Intuitivelly, the ability of techniques to
-produce good diagnosis in those cases is poor since fault of omission
+produce accurate diagnostic reports in those cases is poor since fault of omission
 are non-executable statements which means that the execution information
 cannot help locate the fault directly. A total of $59.7\%$ of the cases
 in this dataset manifest fault of omission, which is a good indication of
@@ -962,17 +958,17 @@ significant and, as we increase the value of $k$, it increases (from
 
 \begin{figure}[h]
 		\centering
-		\includegraphics[width=0.42\textwidth]{figures/boxplot_>0.pdf}
-		\caption{Boxplot of $\Delta{}C$. \Sof{Considering only the best cases}}
+		\includegraphics[width=0.47\textwidth]{figures/double-boxplot.pdf}
+		\caption{Boxplot of $\Delta{}C$.}
 		\label{fig:boxplot}
 \end{figure}
-
-\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.42\textwidth]{figures/boxplot_all.pdf}
-		\caption{Boxplot of $\Delta{}C$. \Sof{Considering the best cases and the \textbf{top-misses}}}
-		\label{fig:boxplot}
-\end{figure}
+%
+% \begin{figure}[h]
+% 		\centering
+% 		\includegraphics[width=0.42\textwidth]{figures/boxplot_all.pdf}
+% 		\caption{Boxplot of $\Delta{}C$. \Sof{Considering the best cases and the \textbf{top-misses}}}
+% 		\label{fig:boxplot}
+% \end{figure}
 
 If we focus at the $116$\Mar{117?} faults where there was improvement
 in at least one of the variants, the mean improvement in the ranking
