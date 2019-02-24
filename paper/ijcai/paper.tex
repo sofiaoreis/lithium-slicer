@@ -56,7 +56,7 @@ their suspiciousness reduced.  This study also discusses the practical
 impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
 $9\%$\comments{($23$ misses)} of the $\numFaults{}$ cases and that
-the \ds{}-\sfl{} combination, coined as Tandem-SL, improves 
+the \ds{}-\sfl{} combination, coined as Tandem-SL, improves
 the diagnostic accuracy up to $73.7\%$ (\avgImprov\ on average)\Sof{Calculei
 mal a média antes. A melhoria média para o top-5 é 9.6\% e a máxima
 melhoria que a técnica atingiu foi de 96.7\%. Eu reportei aqui no abstract para o
@@ -197,8 +197,6 @@ Model-based diagnosis is a well-known approach that has been proposed by the
 DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
 of model-based diagnosis to localize software faults have demonstrated that it
 can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising}.
-\Sof{A primeira citação estava repetida. @Rui, por favor, verifica se a segunda é a que eu introduzi
-mayer2008prioritising ou se é outra ou então se estava repetida por engano.}
 
 Dynamic slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
 static slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
@@ -650,12 +648,12 @@ As to quantify complexity of fault localization on this dataset, we
 additionally counted the number of cases of ``fault of omission'', a
 popular metric in fault localization research for that
 purpose~\Fix{cite}\Sof{Not sure what to cite here}. A fault of omission occurs when
-the program is buggy because some code is missing, i.e., a bug that is 
+the program is buggy because some code is missing, i.e., a bug that is
 corrected by adding code. Intuitivelly, the ability of techniques to
 produce good diagnosis in those cases is poor since fault of omission
 are non-executable statements which means that the execution information
-cannot help locate the fault directly. A total of $59.7\%$ of the cases 
-in this dataset manifest fault of omission, which is a good indication of 
+cannot help locate the fault directly. A total of $59.7\%$ of the cases
+in this dataset manifest fault of omission, which is a good indication of
 difficulty\Sof{note to self: Improve the good indication of difficulty}.
 
 %in producing
@@ -728,7 +726,7 @@ percentages, the reduction of the top file sizes
 obtained with dynamic slicing for different values of
 $k$. Overall, results indicate
 that dynamic slicing substantially reduces the size of highly-ranked
-files. 
+files.
 
 %\Mar{sofia, it would be more convincing if you (additionally)
 %  show reduction wrt to the the parts of the file that are covered.}
@@ -783,9 +781,9 @@ dynamic slicing captures at least one of the faulty statements among
 the sliced files for different values of $k$. These numbers indicate
 that in general \ds{} finds at least one faulty statement in the top
 $5$ of the highest-ranked faulty classes ($87.3\%$ on average) which
-is slightly improved for $91.2\%$ if we consider 
+is slightly improved for $91.2\%$ if we consider
 the top $10$ of the highest-ranked faulty classes.
-\Sof{Percebo o objectivo da tabela 3 mas não seria melhor arranjar 
+\Sof{Percebo o objectivo da tabela 3 mas não seria melhor arranjar
 maneira de não precisar de repetir? Estes resultados estão na tabela 4}
 
 
@@ -805,7 +803,7 @@ maneira de não precisar de repetir? Estes resultados estão na tabela 4}
         \jtime{}            & 81.5 & 85.2\\
         \mockito{}          & 71.1 & 78.9\\\midrule
         Total          & 87.3 & 91.2\\
-		
+
 
 		\bottomrule
 	\end{tabular}
@@ -1003,7 +1001,7 @@ rank results for all faults. The \combpar{k} combination yields an improvement
 of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
 Instead, if $k=10$ is considered the proposed approach returns an improvement of
 $6.1$ on the rank mean of all faulty statements.
-These $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none. 
+These $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none.
 
 \begin{table}[h!]
 	\tiny
@@ -1067,7 +1065,7 @@ our study. When choosing the projects for our study, our aim was to opt for
 projects that resemble a general and large-sized application. To reduce
 selection bias and facilitate the comparison of our results, we decided to
 choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}.
-It is importance to notice that our study does not evaluate the fault of the \closure{} 
+It is importance to notice that our study does not evaluate the fault of the \closure{}
 project since it requires high CPU to perform the \combpar{k} evaluation.
 
 A potential threat to construct validity relates to the choice of oracle generation
