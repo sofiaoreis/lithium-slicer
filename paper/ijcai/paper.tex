@@ -982,7 +982,16 @@ a considerable amount of cases where $\Delta{}C$ is negative or zero in Figure~\
 		
 \end{figure}
 
-If we consider only the faults which can benefit from our approach, we can observe that there is a considerable
+
+In the following, we present statistical analysis to demonstrate that
+the distributions of $C$ for each technique are different.
+Table~\ref{table:st}, reports the average rank of all faulty
+statements of the \dfj{} faults considered to the study after applying both
+techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. 
+In bold, we present the results of the $227$ faults that do not comprise the 
+cases that are result of the limitations mentioned before (test design and fault of omission). These results show that \ds{} improves \sfl{} in a mean
+of $6$ ($3.3\%$ on average) statements on the average ranking of all faulty statements, when considering $k=10$. Inside parentheses, we present the
+rank results for all faults which do not report promissing results. However, If we only consider the faults which can benefit from our approach, we can observe that there is a considerable
 amount of cases where the approach is actually successful. For
 $k=5$, our approach achieves a mean improvement of $41.1$ ($9.57\%$ on average) statements
 on the ranking and an impressive maximum ranking improvement
@@ -997,19 +1006,6 @@ on these additional files is unable to aggressively and safely discard
 statements. This also shows that slicing files, in addition to slicing
 statements from those files, is very beneficial for fault localization
 performance.
-In the following, we present statistical analysis to demonstrate that
-the distributions of $C$ for each technique are different.
-Table~\ref{table:st}, reports the average rank of all faulty
-statements of the \dfj{} faults considered to the study after applying both
-techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. 
-In bold, we present the results of the $227$ faults that do not contain the 
-cases that are result of the limitations mentioned before (test design and fault of omission). Inside parentheses, we present the
-rank results for all faults. The \combpar{k} combination yields an improvement
-of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
-Instead, if $k=10$ is considered, the proposed approach returns an improvement of
-$6.1$ on the rank mean of all faulty statements.
-These $227$ faults contain cases where the faulty class was not in the choosen 
-set of classes $k$ and a high amount of cases where the improvement was none.
 
 \begin{table}[h!]
 	\tiny
@@ -1147,26 +1143,21 @@ methodology.
 \label{sec:conc}
 %
 
-\Fix{
-The main lesson of this work is that
-fault localization research should consider compare new techniques
-against this combination.}
-
 Several approaches have been proposed in the literature to improve debugging
 costs through automated software fault diagnosis to reduce time-to-market,
-while maintaining high quality standards. In this domain, Dynamic Slicing (DS)
-and Spectrum-based Fault Localization (SFL) are very popular fault diagnosis t
-echniques and normally seen as complementary. This paper reports the outcome of
+while maintaining high quality standards. In this domain, Dynamic Slicing (\ds)
+and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis techniques and normally seen as complementary. This paper reports the outcome of
 a study using real-world applications with the goal of demystifying the impact
-of combining DS with SFL. The results of our empirical study show that, in
-practice, DS rarely misses faulty statements (23 misses in 260 cases) and that
-the DS-SFL combination improves the diagnostic accuracy in 51\% of the faults.
+of combining \ds~with \sfl. The results of our empirical study show that, in
+practice, \ds~rarely misses faulty statements $9\%$ ($23$ misses in $260$ cases) and that
+the \ds-\sfl~combination, coined as \combpar{k}, 
+improves the diagnostic accuracy up to $73.7\%$ ($13.4\%$ on average).
 Hence, we found that, despite tacit opinions of the research community about
-the usefulness of DS in automated debugging, we found the combination practical
-and effective, and encourage new SFL techniques to be evaluated against that
+the usefulness of \ds~in automated debugging, we found the combination practical
+and effective, and encourage new \sfl~techniques to be evaluated against that
 optimization.
 
-Future work is as follows: bla bla.
+Future work is as follows: 
 
 %
 %\section*{Acknowledgments}
