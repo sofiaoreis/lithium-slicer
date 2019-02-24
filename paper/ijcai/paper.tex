@@ -393,7 +393,7 @@ $(\mathcal{A},e)$ is commonly referred to as
 spectrum~\cite{DBLP:journals/stvr/HarroldRSWY00}. Figure~\ref{fig:spectrum-example}
 shows an example spectrum.
 
-Several types of spectra exist.  The most commonly used is called
+Several types of spectra exist. The most commonly used is called
 hit-spectrum, where the coverage matrix is encoded in terms of binary
 \emph{hit} (1) and \emph{not hit} (0) flags, \ie{}, $\A{ij} = 1$ if
 $t_i$ covers $c_j$ and $\A{ij} = 0$ otherwise.  \sfl{} takes as input
@@ -976,7 +976,7 @@ a considerable amount of cases where $\Delta{}C$ is negative or zero in Figure~\
 
 		\caption{Distribution of $\Delta{}C$ per variant when not considering
 		test engineering problems and fault of omissions (left) and only considering
-		the cases where \combpar{k} achieved improvement under one of the variants}
+		the cases where \combpar{k} achieved improvement under one of the variants (right)}
 		\label{fig:boxplot}
 		\vspace{-0.2cm}
 
@@ -989,9 +989,12 @@ Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying both
 techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$.
 In bold, we present the results of the $227$ faults that do not comprise the
-cases that are result of the limitations mentioned before (test design and fault of omission). These results show that \ds{} improves \sfl{} in a mean
-of $6$ ($3.3\%$ on average) statements on the average ranking of all faulty statements, when considering $k=10$. Inside parentheses, we present the
-rank results for all faults which do not report promissing results. However, If we only consider the faults which can benefit from our approach, we can observe that there is a considerable
+cases that are result of the limitations mentioned before (test design and fault 
+of omission). These results show that \ds{} improves \sfl{} in a mean
+of $6$ ($3.3\%$ on average) statements on the average ranking of all faulty statements, 
+when considering $k=10$. Inside parentheses, we present the
+rank results for all faults which do not report promissing results. However, 
+if we only consider the faults which can benefit from our approach, we can observe that there is a considerable
 amount of cases where the approach is actually successful. For
 $k=5$, our approach achieves a mean improvement of $41.1$ ($9.57\%$ on average) statements
 on the ranking and an impressive maximum ranking improvement
@@ -1052,10 +1055,11 @@ performance of each pair of techniques is different. As the results
 are statiscally significant, we can confirm that \ds{} improves \sfl{}.
 
 \begin{figure}[h]
-	\vspace{-1cm}
+	\vspace{-1.8cm}
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
 		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
+		\vspace{-0.3cm}
 \end{figure}
 
 \subsection{Threats to validity}
@@ -1077,69 +1081,75 @@ used in our experiments, most notably the Lithium toolset, the SFL diagnosis too
 and the implementation of \comb{}.
 %
 \section{Related Work}
-\Rui{Introductory sentences should say something like: model-based software
-debugging, from the DX community, has been shown to be similar to slicing
-Mayer and Stumptner, 2008; Wotawa and Nica; etc. Having said that, not many
-interesting techniques having been pursued because of scalability. We have
-achieved it with a type of program slicing --- critical slicing. Next, we
-visit the previous works on program slicing and SFL, without the idea of
-being exhaustive, but merely discussing the works that we deem relevant for
-this paper.}
 
-\Rui{revisit sentences; check if recent papers are cited.}
+Model-based diagnosis is a well-known approach that has been proposed by the
+DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
+of model-based diagnosis to localize software faults have demonstrated that it
+can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising}.
 
-\subsection{Program Slicing}
-
-Program Slicing is an old technique with several applications in PL
-and SE research~\cite{Weiser:1981:PS:800078.802557}. Slicing can be
-implemented in different ways. Dynamic Slicing has found its main
-application in fault
-localization~\cite{Agrawal:1990:DPS:93542.93576}---in this application
-context, failing tests exist. Research in this area has mainly focused
-on slicing code
-efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
-and avoiding data and control omission
-errors~\cite{Zhang:2007:TLE:1250734.1250782,Lin:2018:BDE:3238147.3238163}. Omission errors correspond to the
-cases where tests fail because some part of the code was not executed
-when it should. Dynamic fault localization techniques cannot hope to
-soundly report bugs in those cases. The issue is that incorporating
-static information to capture those cases can result in unacceptably
-large slices, which defeats the purpose of reducing the fault search
-space. It is worth noting that, conceptually, the \sfl{}+\ds{} combination
-can be used with any form of dynamic slicing. We chose an
-implementation of Critical
-Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
-
-
-\subsection{SFL}
-
-Statistics-based techniques (e.g., ~\cite{Pearson:2017:EIF:3097368.3097441}) are
-popular automated fault localization techniques within the Software Engineering
-community. They correlate information about program fragments that have been
-exercised in multiple program execution traces (also called \textit{program
-spectra}) with information about successful and failing executions. By doing
-that, statistics-based approaches yield a list of suspect program fragments
-sorted by their likelihood to be at fault. Since this technique is efficient in
-practice, it is attractive for large modern software systems ~\cite{Zoeteweij:2007:DES:1251988.1253298}.
-
-Spectrum-based fault localization (\sfl{}) is amongst the most common statistical
-fault localization technique that takes as input a test suite including at least
-one failing test and reports on output a ranked list of components likely to be
-in fault ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
-
-\subsection{Combination of \sfl{} and Slicing}
-
-Prior work has investigated the combination of dynamic slicing and
-spectrum-based fault
-localization ~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}. Although
-the methodology used in these papers vary, the overall message is that
-the combination is valuable. Note that slicing alone does not provide
-the guarantee of improvement to \sfl{} as statements discarded with
-slicing could have been ranked lower compared to faulty
-statements. This paper differs from prior work in that it uses a much
-larger dataset of programs and faults and a more rigorous experimental
-methodology.
+% \Rui{Introductory sentences should say something like: model-based software
+% debugging, from the DX community, has been shown to be similar to slicing
+% Mayer and Stumptner, 2008; Wotawa and Nica; etc. Having said that, not many
+% interesting techniques having been pursued because of scalability. We have
+% achieved it with a type of program slicing --- critical slicing. Next, we
+% visit the previous works on program slicing and SFL, without the idea of
+% being exhaustive, but merely discussing the works that we deem relevant for
+% this paper.}
 %
+% \Rui{revisit sentences; check if recent papers are cited.}
+
+% \subsection{Program Slicing}
+%
+% Program Slicing is an old technique with several applications in PL
+% and SE research~\cite{Weiser:1981:PS:800078.802557}. Slicing can be
+% implemented in different ways. Dynamic Slicing has found its main
+% application in fault
+% localization~\cite{Agrawal:1990:DPS:93542.93576}---in this application
+% context, failing tests exist. Research in this area has mainly focused
+% on slicing code
+% efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
+% and avoiding data and control omission
+% errors~\cite{Zhang:2007:TLE:1250734.1250782,Lin:2018:BDE:3238147.3238163}. Omission errors correspond to the
+% cases where tests fail because some part of the code was not executed
+% when it should. Dynamic fault localization techniques cannot hope to
+% soundly report bugs in those cases. The issue is that incorporating
+% static information to capture those cases can result in unacceptably
+% large slices, which defeats the purpose of reducing the fault search
+% space. It is worth noting that, conceptually, the \sfl{}+\ds{} combination
+% can be used with any form of dynamic slicing. We chose an
+% implementation of Critical
+% Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
+%
+%
+% \subsection{SFL}
+%
+% Statistics-based techniques (e.g., ~\cite{Pearson:2017:EIF:3097368.3097441}) are
+% popular automated fault localization techniques within the Software Engineering
+% community. They correlate information about program fragments that have been
+% exercised in multiple program execution traces (also called \textit{program
+% spectra}) with information about successful and failing executions. By doing
+% that, statistics-based approaches yield a list of suspect program fragments
+% sorted by their likelihood to be at fault. Since this technique is efficient in
+% practice, it is attractive for large modern software systems ~\cite{Zoeteweij:2007:DES:1251988.1253298}.
+%
+% Spectrum-based fault localization (\sfl{}) is amongst the most common statistical
+% fault localization technique that takes as input a test suite including at least
+% one failing test and reports on output a ranked list of components likely to be
+% in fault ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
+%
+% \subsection{Combination of \sfl{} and Slicing}
+%
+% Prior work has investigated the combination of dynamic slicing and
+% spectrum-based fault
+% localization ~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}. Although
+% the methodology used in these papers vary, the overall message is that
+% the combination is valuable. Note that slicing alone does not provide
+% the guarantee of improvement to \sfl{} as statements discarded with
+% slicing could have been ranked lower compared to faulty
+% statements. This paper differs from prior work in that it uses a much
+% larger dataset of programs and faults and a more rigorous experimental
+% methodology.
+% %
 \section{Conclusions and Future Work}
 \label{sec:conc}
 %
@@ -1147,7 +1157,7 @@ methodology.
 Several approaches have been proposed in the literature to improve debugging
 costs through automated software fault diagnosis to reduce time-to-market,
 while maintaining high quality standards. In this domain, Dynamic Slicing (\ds)
-and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis techniques and normally seen as complementary. \ds{} is This paper reports the outcome of
+and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis techniques and normally seen as complementary. This paper reports the outcome of
 a study using real-world applications with the goal of demystifying the impact
 of combining \ds~with \sfl. The results of our empirical study show that, in
 practice, \ds~rarely misses faulty statements $9\%$ ($23$ misses in $260$ cases) and that
