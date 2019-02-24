@@ -196,7 +196,9 @@ double-blind requirements are lifted.
 Model-based diagnosis is a well-known approach that has been proposed by the
 DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
 of model-based diagnosis to localize software faults have demonstrated that it
-can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,Mayer:2008:EMM:1642931.1642950}.
+can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising}.
+\Sof{A primeira citação estava repetida. @Rui, por favor, verifica se a segunda é a que eu introduzi
+mayer2008prioritising ou se é outra ou então se estava repetida por engano.}
 
 Dynamic slicing~\cite{Agrawal:1990:DPS:93542.93576}\comments{~--~as opposed to
 static slicing~\cite{Weiser:1981:PS:800078.802557}~--~~\cite{Binkley:2014:OLP:2635868.2635893}}
@@ -593,7 +595,9 @@ combination, as substantiated by \comb, to fault localization.
 We used subject programs from the \dfj{}
 benchmark~\cite{just-defects4j-issta2014} in our evaluation.
 Table~\ref{tab:df4j} shows size, number of tests, and number of
-faults, for each considered program.
+faults, for each considered program. $2$ subjects from Math
+were not considered because we were not able to reproduce them
+in the machine used for the experiments.
 
 \begin{table}[h]
   \small
@@ -645,8 +649,10 @@ APIs. \mockito{} is a mocking testing framework.
 As to quantify complexity of fault localization on this dataset, we
 additionally counted the number of cases of ``fault of omission'', a
 popular metric in fault localization research for that
-purpose~\Fix{cite}. A fault of omission occurs when
-\Fix{...explain...}. Intuitivelly, the ability of techniques to
+purpose~\Fix{cite}\Sof{Not sure what to cite here}. A fault of omission occurs when
+the program is buggy because some code is missing, i.e., a bug that is 
+corrected by adding code. Intuitivelly, 
+the ability of techniques to
 produce good diagnosis in those cases reduce as \Fix{...explain...}. A
 total of $59.7\%$ of the cases in this dataset manifest fault of
 omission, which is a good indication of difficulty.
@@ -1028,14 +1034,6 @@ results somewhere.}
 
 \subsection{Threats to validity}
 
-\Mar{incorporate this here. we were presenting this too early (initial
-  par. of results). not very appealing ;)}
-\Fix{
-The remaining faults were not considered because
-(1) faults belong to the \closure{} project which requires high CPU to perform
-the \combpar{k} evaluation  or (2) faults whose test outputs were not
-reproducible in the machine used to run the experiments.
-}
 
 %
 A potential threat to external validity related to the set of programs used in
@@ -1043,6 +1041,8 @@ our study. When choosing the projects for our study, our aim was to opt for
 projects that resemble a general and large-sized application. To reduce
 selection bias and facilitate the comparison of our results, we decided to
 choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}.
+It is importance to notice that our study does not evaluate the fault of the \closure{} 
+project since it requires high CPU to perform the \combpar{k} evaluation.
 
 A potential threat to construct validity relates to the choice of oracle generation
 for the Lithium toolset. However, we argue that our choice is able to capture whether
