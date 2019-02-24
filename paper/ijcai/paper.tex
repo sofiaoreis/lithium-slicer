@@ -728,8 +728,10 @@ percentages, the reduction of the top file sizes
 obtained with dynamic slicing for different values of
 $k$. Overall, results indicate
 that dynamic slicing substantially reduces the size of highly-ranked
-files. \Mar{sofia, it would be more convincing if you (additionally)
-  show reduction wrt to the the parts of the file that are covered.}
+files. 
+
+%\Mar{sofia, it would be more convincing if you (additionally)
+%  show reduction wrt to the the parts of the file that are covered.}
 
 %% obtained for each project after slicing the top $5$ and
 %% $10$ of classes comprising the highest faulty statements. We observed
@@ -778,8 +780,14 @@ of discarding faulty statements (see Section~\ref{sec:slicing}). This
 research question evaluates the practical impact of this conceptual
 issue. Table~\ref{tab:ds-cases-captured} shows the number of cases
 dynamic slicing captures at least one of the faulty statements among
-the sliced files for different values of $k$. These numbers indicat
-that \Fix{...elaborate...}
+the sliced files for different values of $k$. These numbers indicate
+that in general \ds{} finds at least one faulty statement in the top
+$5$ of the highest-ranked faulty classes ($87.3\%$ on average) which
+is slightly improved for $91.2\%$ if we consider 
+the top $10$ of the highest-ranked faulty classes.
+\Sof{Percebo o objectivo da tabela 3 mas não seria melhor arranjar 
+maneira de não precisar de repetir? Estes resultados estão na tabela 4}
+
 
 \begin{table}[H]
   \small
@@ -795,7 +803,9 @@ that \Fix{...elaborate...}
         %\closure{}          &  & \\
 		\chart{}			& 76.9 & 84.6 \\
         \jtime{}            & 81.5 & 85.2\\
-        \mockito{}          & 71.1 & 78.9\\
+        \mockito{}          & 71.1 & 78.9\\\midrule
+        Total          & 87.3 & 91.2\\
+		
 
 		\bottomrule
 	\end{tabular}
