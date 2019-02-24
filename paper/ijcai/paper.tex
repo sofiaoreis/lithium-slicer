@@ -1086,51 +1086,30 @@ Model-based diagnosis is a well-known approach that has been proposed by the
 DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
 of model-based diagnosis to localize software faults have demonstrated that it
 can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising}.
+Not many interesting techniques have been pursued due to scalability limitations. We have tackled this using an old program slicing technique --- critical slicing~\cite{DeMillo:1996:CSS:229000.226310}.
 
-% \Rui{Introductory sentences should say something like: model-based software
-% debugging, from the DX community, has been shown to be similar to slicing
-% Mayer and Stumptner, 2008; Wotawa and Nica; etc. Having said that, not many
-% interesting techniques having been pursued because of scalability. We have
-% achieved it with a type of program slicing --- critical slicing. Next, we
-% visit the previous works on program slicing and SFL, without the idea of
-% being exhaustive, but merely discussing the works that we deem relevant for
-% this paper.}
-%
-% \Rui{revisit sentences; check if recent papers are cited.}
-
-% \subsection{Program Slicing}
-%
-% Program Slicing is an old technique with several applications in PL
-% and SE research~\cite{Weiser:1981:PS:800078.802557}. Slicing can be
-% implemented in different ways. Dynamic Slicing has found its main
-% application in fault
-% localization~\cite{Agrawal:1990:DPS:93542.93576}---in this application
-% context, failing tests exist. Research in this area has mainly focused
-% on slicing code
-% efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
-% and avoiding data and control omission
-% errors~\cite{Zhang:2007:TLE:1250734.1250782,Lin:2018:BDE:3238147.3238163}. Omission errors correspond to the
-% cases where tests fail because some part of the code was not executed
-% when it should. Dynamic fault localization techniques cannot hope to
-% soundly report bugs in those cases. The issue is that incorporating
-% static information to capture those cases can result in unacceptably
-% large slices, which defeats the purpose of reducing the fault search
-% space. It is worth noting that, conceptually, the \sfl{}+\ds{} combination
-% can be used with any form of dynamic slicing. We chose an
-% implementation of Critical
-% Slicing~\cite{DeMillo:1996:CSS:229000.226310} for its generality.
-%
+Dynamic Slicing has found its main
+application in fault
+localization~\cite{Agrawal:1990:DPS:93542.93576} on the minimization of failing tests. Research in this area has mainly focused
+on slicing code
+efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
+and avoiding data and control omission
+errors~\cite{Zhang:2007:TLE:1250734.1250782,Lin:2018:BDE:3238147.3238163}. Dynamic fault localization techniques cannot hope to
+soundly report bugs in those cases. The issue is that incorporating
+static information to capture those cases can result in unacceptably
+large slices, which defeats the purpose of reducing the fault search
+space. 
 %
 % \subsection{SFL}
 %
-% Statistics-based techniques (e.g., ~\cite{Pearson:2017:EIF:3097368.3097441}) are
-% popular automated fault localization techniques within the Software Engineering
-% community. They correlate information about program fragments that have been
-% exercised in multiple program execution traces (also called \textit{program
-% spectra}) with information about successful and failing executions. By doing
-% that, statistics-based approaches yield a list of suspect program fragments
-% sorted by their likelihood to be at fault. Since this technique is efficient in
-% practice, it is attractive for large modern software systems ~\cite{Zoeteweij:2007:DES:1251988.1253298}.
+Statistics-based techniques (e.g., ~\cite{Pearson:2017:EIF:3097368.3097441}) are
+popular automated fault localization techniques within the Software Engineering
+community. They correlate information about program fragments that have been
+exercised in multiple program execution traces (also called \textit{program
+spectra}) with information about successful and failing executions. By doing
+that, statistics-based approaches yield a list of suspect program fragments
+sorted by their likelihood to be at fault. Since this technique is efficient in
+practice, it is attractive for large modern software systems ~\cite{Zoeteweij:2007:DES:1251988.1253298}.
 %
 % Spectrum-based fault localization (\sfl{}) is amongst the most common statistical
 % fault localization technique that takes as input a test suite including at least
@@ -1167,7 +1146,6 @@ Hence, we found that, despite tacit opinions of the research community about
 the usefulness of \ds~in automated debugging, we found the combination practical
 and effective, and encourage new \sfl~techniques to be evaluated against that
 optimization.
-
 Future work is as follows: improve our oracle heuristics to handle more exceptions;
 conduct experiments in more \dfj{} faults or other datasets; find techniques to
 handle the cases which harm the cost of diagnosis, such as, faults of omission,
