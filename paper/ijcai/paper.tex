@@ -55,9 +55,14 @@ the aforementioned combination, such components could be located and
 their suspiciousness reduced.  This study also discusses the practical
 impact of the \ds{} key limitation---the risk of missing faulty
 statements. Results indicate that \ds{} misses faulty statements in
- 9\%\comments{(23 misses)} of the \numFaults{} cases and that
-the \ds{}-\sfl{} combination, coined as Tandem-SL, improves on average
-the diagnostic accuracy by \avgImprov\ in 51\% of the cases. To sum,
+ $9\%$\comments{($23$ misses)} of the $\numFaults{}$ cases and that
+the \ds{}-\sfl{} combination, coined as Tandem-SL, improves 
+the diagnostic accuracy up to $73.7\%$ (\avgImprov\ on average)\Sof{Calculei
+mal a média antes. A melhoria média para o top-5 é 9.6\% e a máxima
+melhoria que a técnica atingiu foi de 96.7\%. Eu reportei aqui no abstract para o
+top-10 porque a \% de melhoria é maior. Se vocês acharem que é mais vantajoso
+reportar os valores do top-10, avisem. Podemos reportar ambas. Atenção, só considero
+os casos em que pelo menos uma das variantes obteve melhoria}. To sum,
 we found that the \ds{}-\sfl{} combination was practical and effective
 and encourage new \sfl{} techniques to be evaluated against that
 optimization.
@@ -119,12 +124,12 @@ study involving \numFaults{} faults from \numPrograms{} different
 programs from the Defects4J (D4J)
 dataset~\cite{just-defects4j-issta2014}, which is frequently used to
 evaluate fault localization research. Results show that \ds{} misses
-faulty statements in 9\%\comments{(23 misses)} of the \numFaults{}
+faulty statements in $9\%$\comments{(23 misses)} of the \numFaults{}
 faults analyzed. Furthermore, we found that the combination of the two
-approaches improves fault localization in 51\% of the cases with an
-average improvement of \avgImprov. To sum, results indicate that the
+approaches may improve fault localization up to $73.7\%$ (\avgImprov\ on average).
+ To sum, results indicate that the
 risk of applying the technique is relatively low for the positive
-impact it may bring and the tool implementing the technique works
+impact it may bring; and, the tool implementing the technique works
 out-of-the-box, \ie{}, it puts no requirements on the running
 environment, subject programs it can be used, and requires no special
 setup.
