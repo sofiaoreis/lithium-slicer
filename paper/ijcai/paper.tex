@@ -642,16 +642,14 @@ APIs. \mockito{} is a mocking testing framework.
 As to quantify complexity of fault localization on this dataset, we
 additionally counted the number of cases of ``fault of omission'', a
 popular metric in fault localization research for that
-purpose~\cite{Pearson:2017:EIF:3097368.3097441,just-defects4j-issta2014}. 
-A fault of omission occurs when
+purpose~\cite{Pearson:2017:EIF:3097368.3097441}. 
+A fault of omission (\foo) occurs when
 the program is buggy because some code is missing, i.e., a bug that is
-corrected by adding code. Intuitivelly, the ability of techniques to
-produce accurate diagnostic reports in those cases is poor since fault of omission
-are non-executable statements which means that the execution information
-cannot help locate the fault directly. A total of $59.7\%$ of the cases
-in this dataset manifest fault of omission, which is a good indication of
-difficulty\Sof{icse17 check}.
-
+corrected by adding code. Intuitively, the ability of techniques to
+produce accurate diagnostic reports in those cases might be poor since 
+fault of omission bugs are very difficult to locate. This dataset has a
+total of $59.7\%$ of \foo s which may contribute negatively to our
+results since \sfl{} strives to rank these cases.
 %in producing
 %high-qualitiy diagnosis.
 
@@ -694,9 +692,9 @@ the statements from the best-$k$ ranked files.
 %% the slicer output and the fault ranking is re-calculated. We refer to these
 %% variations as \combpar{k}.
 
-\subsection{Results}
+\subsection{Results and Discussion}
 
-This section answers the research questions.
+This section discusses and answers the research questions.
 
 %% proposed and discuss the
 %% results obtained. Our approach was capable of slicing a total of $260$ faults
@@ -731,7 +729,7 @@ files.
 %% $10$ of classes comprising the highest faulty statements. We observed
 %% a reduction of $30.23\%$ in the projects considered in our study.
 
-\begin{table}[h]
+\begin{table}[H]
   \small
 	\centering
 	\setlength{\tabcolsep}{4pt}
@@ -777,7 +775,7 @@ dynamic slicing captures at least one of the faulty statements among
 the sliced files for different values of $k$. These numbers indicate
 that in general \ds{} finds at least one faulty statement in the top
 $5$ of the highest-ranked faulty classes ($87.3\%$ on average) which
-is slightly improved for $91.2\%$ if we consider
+is slightly improved to $91.2\%$ if we consider
 the top $10$ of the highest-ranked faulty classes.
 
 
@@ -804,10 +802,11 @@ the top $10$ of the highest-ranked faulty classes.
 	\end{tabular}
 	\caption {\ds{} performance on capturing faulty statements, as
      percentages. Higher is better.}
-	\label{tab:red}
    \label{tab:ds-cases-captured}
+\vspace{-0.2cm}
+   
 \end{table}
-\normalsize
+%\normalsize
 
 %% Table~\ref{table:fsws} presents the number of faults where at
 %% least one of the faulty statements appears in the final
@@ -842,7 +841,7 @@ to \sfl{}$^{k}$. In only two cases \sfl{}$^{k}$ outperformed
 \combpar{k}. These results show that the majority of faulty statements
 are found on the $5$ highest ranked faulty classes and that
 \combpar{10} is the variant of our approach that performs better
-missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
+missing only $23$ out of the \numFaults\ ($\sim$8.8\%) faults.
 
 %% \sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas
 %% \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., \combpar{5}
@@ -887,6 +886,8 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 % \end{table*}
 
 \begin{table}[h!]
+	\vspace{-0.2cm}
+	
 	\small
 	\setlength{\tabcolsep}{3pt}
 	\centering
@@ -905,16 +906,15 @@ missing only 23 out of the \numFaults\ ($\sim$8.8\%) faults.
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
   \label{table:fsws}
+\vspace{-0.4cm}
 \end{table}
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
 In \textbf{RQ3}, we evaluate the effective impact of combining \ds{}
-with \sfl{} to improve fault localization.
-
-The first experiment we ran to assess impact consists of measuring the
+with \sfl{} to improve fault localization. The first experiment we ran to assess impact consists of measuring the
 \emph{difference of diagnosis cost}. This metric has been previously
-used in other studies~\Fix{cite cite}. More specifically, we computed
+used in other studies~\cite{7390282,ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Perez:2018:LQR:3304889.3304927}. More specifically, we computed
 $\Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where
 $C$ denotes the diagnosis cost and is obtained by computing the mean
 position in the ranking of all buggy statements. $\Delta C >0$ means
@@ -935,7 +935,11 @@ different values of $k$. Note that (1) the number of cases where
 \sfl{}$^{k}$ outperforms \combpar{k} is very small compared and (2)
 the number of cases \combpar{k} outperforms \sfl{}$^{k}$ is
 significant and, as we increase the value of $k$, it increases (from
-$97$ to $117$ faults).
+$97$ to $117$ faults). The faults where the cost of diagnosis is
+negative are cases that (1) the faulty statements decreased in the ranking 
+list due to being a fault of omission, (2) the test has design limitations
+which \ds~is not capable of handling, or (3) the buggy-class in not in
+the top $k$ of the highest-ranked faulty classes under analysis.
 
 %% For $k=5$, we observe that in $30$ ($11.5\%$) of the faults the
 %% position of faulty statements decreases in the ranking, $97$($37.3\%$)
@@ -948,33 +952,44 @@ $97$ to $117$ faults).
 %% decrease in the ranking is $33$ ($12.7\%$).
 
 \begin{figure}[h]
+	\vspace{-0.3cm}
 		\centering
-		\includegraphics[width=0.42\textwidth]{figures/performance.pdf}
-		\caption{Histograms of $\Delta{}C$.}
+		\includegraphics[width=0.415\textwidth]{figures/performance.pdf}
+		\vspace{-0.4cm}
+		\caption{Cost of Diagnosis ($\Delta{}C$) per variant}
 		\label{fig:diagnosis}
 \end{figure}
 
-
+Figure~\ref{fig:boxplot} shows the $\Delta{}C$ distribution for each
+variant in two different cases. On the left, we do not consider the
+test engineering problems and faults of omission ($227$ faults). The two negative 
+outliers present the cases where the buggy-class was not in the top
+$k$. On the right, we only consider the cases where at least one 
+of the variants resulted in an increase of $\Delta{}C$ ($116$ faults), i.e., the 
+cases where \ds{} improves \sfl. Although, we observe
+a considerable amount of cases where $\Delta{}C$ is negative or zero in Figure~\ref{fig:diagnosis}, we also see that there is a considerable amount of faults which could benefit a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
 \begin{figure}[h]
+		\vspace{-0.2cm}
 		\centering
 		\includegraphics[width=0.49\textwidth]{figures/boxplot.pdf}
-		\caption{Boxplot of $\Delta{}C$.}
+		\vspace{-0.6cm}
+		
+		\caption{Distribution of $\Delta{}C$ per variant when not considering 
+		test engineering problems and fault of omissions (left) and only considering
+		the cases where \combpar{k} achieved improvement under one of the variants}
 		\label{fig:boxplot}
+		\vspace{-0.2cm}
+		
 \end{figure}
-%
-% \begin{figure}[h]
-% 		\centering
-% 		\includegraphics[width=0.42\textwidth]{figures/boxplot_all.pdf}
-% 		\caption{Boxplot of $\Delta{}C$. \Sof{Considering the best cases and the \textbf{top-misses}}}
-% 		\label{fig:boxplot}
-% \end{figure}
 
-If we focus at the $116$\Mar{117?} faults where there was improvement
-in at least one of the variants, the mean improvement in the ranking
-was 41.1 statements for $k=5$ and 18.7 statements for $k=10$. We
-observed an impressive maximum ranking improvement of $3170.5$\Mar{why
-  the .5 if this is the maximum case?} statements for $k=5$ and $209$
-statements for $k=10$. Such difference is justified by the fact that
+If we consider only the faults which can benefit from our approach, we can observe that there is a considerable
+amount of cases where the approach is actually successful. For
+$k=5$, our approach achieves a mean improvement of $41.1$ ($9.57\%$ on average) statements
+on the ranking and an impressive maximum ranking improvement
+of $3171$ ($96.7\%$ on average) statements. Whereas for $k=10$, \combpar{k}
+achieves a mean improvement of $19$ ($13.35\%$ on average) statements
+on the ranking and a maximum ranking improvement
+of $209$ ($73.7\%$ on average) statements. Such difference is justified by the fact that
 entire files are discarded in \combpar{5}, whose statements are
 included in the ranking of \combpar{10}. Consequently, the
 improvements obtained by the technique will not be as high if slicing
@@ -982,21 +997,19 @@ on these additional files is unable to aggressively and safely discard
 statements. This also shows that slicing files, in addition to slicing
 statements from those files, is very beneficial for fault localization
 performance.
-
-\Mar{show distribution...}
-
 In the following, we present statistical analysis to demonstrate that
 the distributions of $C$ for each technique are different.
 Table~\ref{table:st}, reports the average rank of all faulty
 statements of the \dfj{} faults considered to the study after applying both
-techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. $33$ of the $260$
-faulty versions are cases whose faulty statements decreased in the ranking list due to being a fault of omission case or due to limitations regarding the test design which \ds{} could not handle. Thus, we report both values in Table~\ref{table:st}. In bold, we present the
-results of the $227$ faults that do not contain the cases that are result of the limitations mentioned before. Inside parentheses, we present the
+techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$. 
+In bold, we present the results of the $227$ faults that do not contain the 
+cases that are result of the limitations mentioned before (test design and fault of omission). Inside parentheses, we present the
 rank results for all faults. The \combpar{k} combination yields an improvement
 of $17.3$ on the rank mean of the dataset faulty statements when using $k=5$.
-Instead, if $k=10$ is considered the proposed approach returns an improvement of
+Instead, if $k=10$ is considered, the proposed approach returns an improvement of
 $6.1$ on the rank mean of all faulty statements.
-These $227$ faults contain cases where the faulty class was not in the choosen set of classes $k$ and a high amount of cases where the improvement was none.
+These $227$ faults contain cases where the faulty class was not in the choosen 
+set of classes $k$ and a high amount of cases where the improvement was none.
 
 \begin{table}[h!]
 	\tiny
@@ -1005,14 +1018,14 @@ These $227$ faults contain cases where the faulty class was not in the choosen s
 	\begin{tabular}{@{}c|c|c|c|c@{}}
 \toprule
   & SFL$^{5}$      & SFL$^{10}$     & \combpar{5}              & \combpar{10}              \\ \midrule
-Mean & \textbf{590.7} (584.3)   &  \textbf{512.7} (516.4)  & \textbf{573.4} (679.7)  & \textbf{506.6} (614.0)   \\ \midrule
+Mean  & \textbf{590.7} (584.3)   &  \textbf{512.7} (516.4)  & \textbf{573.4} (679.7)  & \textbf{506.6} (614.0)   \\ \midrule
 Median & \textbf{46.5} (49.4)    & \textbf{54.5} (53.0) & \textbf{42.7} (69.3)  & \textbf{40.0} (56.9)\\ \midrule
 Variance & \textbf{1257.0} (1223.1)  &  \textbf{1171.5} (1148.1) & \textbf{1239.1} (1352.4) &  \textbf{1167.0} (1294.9) \\ \midrule
 Shapiro-Wilk &\makecell{$W$ = 0.52 \\ $p$ = 1.75 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.50 x $10^{-25}$} & \makecell{$W$ = 0.51 \\ $p$ = 1.10 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.26 x $10^{-25}$}  \\ \midrule
 Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x $10^{-35}$}} \\
 \bottomrule
 \end{tabular}
-  \caption {Statistical tests}
+  \caption {Statistical tests for $C$}
   \label{table:st}
 \end{table}
 
@@ -1035,8 +1048,8 @@ To understand which techniques perform differently, \ie{} to answer
 the question \textit{Does \combpar{k} perform differently than
   \sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all
-pairs of techniques. Each square\Mar{gray intensity?} represents the
-significance\Mar{of what?} between the corresponding techniques, i.e.,
+pairs of techniques. Each square represents the
+statistical significance of the diagnostic accuracy amongst the different techniques, i.e.,
 if it is significant it means that the techniques perform
 differently. We can determine with $95\%$ confidence that the
 performance of each pair of techniques is different.
