@@ -1120,23 +1120,19 @@ technique used to rank faulty components
 ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
 This technique uses tests coverage information to rank program's components. 
 
-\Rui{this sentence does not belong to rw (We suspect...)-->} We
-suspect that several highly suspicious components—often involved in failing, but
-seldom in passing test runs—may be unrelated to the bug.
-
 Prior work has investigated the \ds{}-\sfl{}
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair,christi2018reduce}.
 Overall, these studies reported promissing results but based their conclusions
 on a very small group of (mostly artificial) faults and using different
-techniques. 
-
-
-\Rui{not related work. more of motivation (avoid words such as believe)-->}
-Although, \ds{} does not ensure the improvement of \sfl{} since it
-can remove faulty statements from the failing test, we believe it has a great
-potential to help reducing test cases and improve \sfl{} accuracy. In this
+techniques. In this
 study, a larger set of faults is evaluated and a more rigorous experimental
 methodology.
+In contrast with other studies on this combination,
+our approach is the first using Critical Slicing to minimize test cases
+and leveraging \sfl{} rank to choose and minimize the top-$k$ of
+highest-ranked faulty classes.
+
+
 
 % %
 \section{Conclusions and Future Work}
