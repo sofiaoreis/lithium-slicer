@@ -982,16 +982,19 @@ of the highest-ranked faulty classes under analysis.
 
 Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$ for
 different sets of faults as to better understand the performance of
-\combpar{k}. On the left-hand-side, we show distributions of
+\combpar{k}. 
+\Sof{This is not correct}
+On the left-hand-side, we show distributions of
 $\Delta{}C$, for different values of $k$, considering all cases where
 the predicate $\Delta{}C\geq{}0$ holds, \ie{}, we excluded the
 \numOutPerformed\ cases where \sfl{}$^{k}$ outperformed \combpar{k}
 (see Figure~\ref{fig:diagnosis}). The boxplots on the right-hand-side
 of the figure considers all the cases where the predicate
 $\Delta{}C>0$ holds, \ie{}, it additionally excludes from the dataset
-the cases of faults where the techniques perform equally.\Mar{sofia,
+the cases of faults where the techniques perform equally.\Sof{Needs to be reverted}
+\Mar{sofia,
   are you sure there are no zeros in this dataset? The min. in this
-  distibution (as per the base of the plot) seems to be 0.} To sum,
+  distibution (as per the base of the plot) seems to be 0.}\Sof{Yes, check hangouts} To sum,
 although we observed a relatively small number cases where $\Delta{}C$
 is negative (\numOutPerformed) and a high number of cases $\Delta{}C$
 is zero (\numEquallyPerformed), we observed that there is a
