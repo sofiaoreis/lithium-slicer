@@ -42,23 +42,21 @@ fourth@example.com
 \maketitle
 
 \begin{abstract}
-Several approaches have been proposed in the literature to reduce
-debugging costs through automated software fault diagnosis.  Dynamic
-Slicing (\ds{}) and Spectrum-based Fault Localization (\sfl{}) are
-popular fault diagnosis techniques and normally seen as complementary.
-This paper reports on a comprehensive study\comments{--using
-  \numFaults{} documented software faults from a credible dataset--}
-to reassess the effects of combining \ds{} with \sfl{}.  With this
-combination, components that are often involved in failing but seldom
-in passing test runs could be located and their suspiciousness
-reduced. Results show that the \ds{}-\sfl{} combination, coined as
-Tandem-SL, improves the diagnostic accuracy up to $73.7\%$
-(\avgImprov\ on average). Furthermore, results indicate that the risk
-of missing faulty statements, which is a \ds{}'s key limitation, is not
-high---~\ds{} misses faulty statements in $9\%$\comments{($23$
-  misses)} of the $\numFaults{}$ cases. To sum, we found that the
-\ds{}-\sfl{} combination was practical and effective and encourage new
-\sfl{} techniques to be evaluated against that optimization.
+Several approaches have been proposed to reduce debugging costs through
+automated software fault diagnosis.  Dynamic Slicing (\ds{}) and Spectrum-based
+Fault Localization (\sfl{}) are popular fault diagnosis techniques and normally
+seen as complementary. This paper reports on a comprehensive
+study\comments{--using \numFaults{} documented software faults from a credible
+dataset--} to reassess the effects of combining \ds{} with \sfl{}.  With this
+combination, components that are often involved in failing but seldom in passing
+test runs could be located and their suspiciousness reduced. Results show that
+the \ds{}-\sfl{} combination, coined as Tandem-SL, improves the diagnostic
+accuracy up to $73.7\%$ (\avgImprov\ on average). Furthermore, results indicate
+that the risk of missing faulty statements, which is a \ds{}'s key limitation,
+is not high~---~\ds{} misses faulty statements in $9\%$\comments{($23$ misses)}
+of the $\numFaults{}$ cases. To sum, we found that the \ds{}-\sfl{} combination
+was practical and effective and encourage new \sfl{} techniques to be evaluated
+against that optimization.
 \end{abstract}
 
 \section{Introduction}
@@ -129,10 +127,15 @@ setup.
 %   the improvement is bigger when we care the most? for the cases SFL
 %   performs worse? if yes, can we show average for that?}
 
-The contributions of this work are: 1)~an empirical study, using
+The contributions of this work are:
+\begin{itemize}
+ \item[1)]~an empirical study, using
 real-world applications and bugs, on the combination of \ds{} and
-\sfl{} for bug localization of \emph{Java} faulty programs and 2)~a
-tool, dubbed \comb{}, implementing the \ds{}-\sfl{} combination. The
+\sfl{} for bug localization of \emph{Java} faulty programs and
+\item[2)]~a
+tool, dubbed \comb{}, implementing the \ds{}-\sfl{} combination.
+\end{itemize}
+The
 tool as well as a replication package will be available once
 double-blind requirements are lifted.
 
@@ -620,7 +623,7 @@ environment.
     \bottomrule
   \end{tabular}
   \caption {Characterization of \dfj{} subjects.}
-  \label{tab:df4j}  
+  \label{tab:df4j}
 \end{table}
 \normalsize
 
@@ -645,7 +648,7 @@ environment.
 %% purpose.  A fault of omission
 %% (\foo) occurs when the program is buggy because some code is missing,
 %% i.e., a fix to the bug is created by adding code as opposed to
-%% modifying or changing code. 
+%% modifying or changing code.
 
 As to quantify complexity of fault localization on this benchmark, we
 measured the frequency of ``faults of omission'' (\foo), which is a
@@ -1024,7 +1027,7 @@ for this dataset are \emph{not} encouraging.
 These results show that \ds{}
 improves \sfl{} in a mean of $6$ ($3.3\%$ on average) statements on
 the average ranking of all faulty statements, when considering
-$k=10$. 
+$k=10$.
 However, if we only consider
 the faults which can benefit from our approach, we can observe that
 there is a considerable amount of cases where the approach is actually
@@ -1077,7 +1080,7 @@ the question \textit{Does \combpar{k} perform differently than
 \sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all
 pairs of techniques. Each square represents the
-statistical significance of the diagnostic accuracy amongst the different 
+statistical significance of the diagnostic accuracy amongst the different
 techniques, i.e., if it is significant it means that the techniques perform
 differently. We can determine with $95\%$ confidence that the
 performance of each pair of techniques is different.
@@ -1090,13 +1093,13 @@ performance of each pair of techniques is different.
 		\vspace{-0.3cm}
 \end{figure}
 
-As the results are statistically significant, it is possible to state that \combpar{k} 
-has a positive effect on the localization of some types of bugs. There is indeed a 
-problem on using slicing on fault of omission bugs that needs further research. 
+As the results are statistically significant, it is possible to state that \combpar{k}
+has a positive effect on the localization of some types of bugs. There is indeed a
+problem on using slicing on fault of omission bugs that needs further research.
 Although, this dataset has more than $50\%$ of fault of omissions, our
-simple slicing approach was capable of improving the ranking of $95$ faults for $k=5$ 
+simple slicing approach was capable of improving the ranking of $95$ faults for $k=5$
 and $115$ faults for $k=10$. These are promissing results from what Automated
-Program Repair techniques may directly benefit to improve the accuracy of their own 
+Program Repair techniques may directly benefit to improve the accuracy of their own
 techniques.
 
 
@@ -1143,7 +1146,7 @@ popular automated fault localization techniques. Spectrum-based fault
 localization (\sfl{}) is amongst the most common statistical fault localization
 technique used to rank faulty components
 ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
-This technique uses tests coverage information to rank program's components. 
+This technique uses tests coverage information to rank program's components.
 
 Prior work has investigated the \ds{}-\sfl{}
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair,christi2018reduce}.
@@ -1167,7 +1170,7 @@ highest-ranked faulty classes.
 Several approaches have been proposed in the literature to improve debugging
 costs through automated software fault diagnosis to reduce time-to-market,
 while maintaining high quality standards. In this domain, Dynamic Slicing (\ds)
-and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis 
+and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis
 techniques and normally seen as complementary. This paper reports the outcome of
 a study using real-world applications with the goal of demystifying the impact
 of combining \ds~with \sfl. The results of our empirical study show that, in
