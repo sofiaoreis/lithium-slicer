@@ -48,21 +48,18 @@ Slicing (\ds{}) and Spectrum-based Fault Localization (\sfl{}) are
 popular fault diagnosis techniques and normally seen as complementary.
 This paper reports on a comprehensive study\comments{--using
   \numFaults{} documented software faults from a credible dataset--}
-to evaluate the effects of combining \ds{} with \sfl{}. We suspect
-that several highly suspicious components---often involved in failing,
-but seldom in passing test runs---may be unrelated to the bug. With
-the aforementioned combination, such components could be located and
-their suspiciousness reduced.  This study also discusses the practical
-impact of the \ds{} key limitation---the risk of missing faulty
-statements. Results indicate that \ds{} misses faulty statements in
-$9\%$\comments{($23$ misses)} of the $\numFaults{}$ cases and that
-the \ds{}-\sfl{} combination, coined as Tandem-SL, improves
-the diagnostic accuracy up to $73.7\%$ (\avgImprov\ on average). To sum,
-we found that the \ds{}-\sfl{} combination was practical and effective
-and encourage new \sfl{} techniques to be evaluated against that
-optimization.
+to reassess the effects of combining \ds{} with \sfl{}.  With this
+combination, components that are often involved in failing but seldom
+in passing test runs could be located and their suspiciousness
+reduced. Results show that the \ds{}-\sfl{} combination, coined as
+Tandem-SL, improves the diagnostic accuracy up to $73.7\%$
+(\avgImprov\ on average). Furthermore, results indicate that the risk
+of missing faulty statements, which \ds{}'s key limitation, is not
+high---~\ds{} misses faulty statements in $9\%$\comments{($23$
+  misses)} of the $\numFaults{}$ cases. To sum, we found that the
+\ds{}-\sfl{} combination was practical and effective and encourage new
+\sfl{} techniques to be evaluated against that optimization.
 \end{abstract}
-
 
 \section{Introduction}
 
