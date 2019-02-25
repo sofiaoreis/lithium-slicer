@@ -114,12 +114,14 @@ problem of assessing the effectiveness of combining \ds{} and \sfl{},
 addressing the key issues of prior work. We conducted a comprehensive
 study involving \numFaults{} faults from \numPrograms{} different
 programs from the Defects4J (D4J)
-dataset~\cite{just-defects4j-issta2014}, which is frequently used to
+benchmark~\cite{just-defects4j-issta2014}, which is frequently used to
 evaluate fault localization research. Results show that \ds{} misses
 faulty statements in $9\%$\comments{(23 misses)} of the \numFaults{}
 faults analyzed. Furthermore, we found that the combination of the two
-approaches may improve fault localization up to $73.7\%$ (\avgImprov\ on average).
- To sum, results indicate that the
+approaches may improve fault localization up to $73.7\%$
+(\avgImprov\ on average).\Mar{do we have supporting data to say that
+  the improvement is bigger when we care the most? for the cases SFL
+  performs worse? if yes, can we show average for that?} To sum, results indicate that the
 risk of applying the technique is relatively low for the positive
 impact it may bring; and, the tool implementing the technique works
 out-of-the-box, \ie{}, it puts no requirements on the running
@@ -186,7 +188,9 @@ double-blind requirements are lifted.
 
 
 Model-based diagnosis is a well-known approach that has been proposed by the
-DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
+DX community\Mar{I don't know what is DX. suggest to expand the
+  acronym and/or cite.}\Mar{say shortly (in general terms) what is the
+  goal. what is that good for.}, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
 of model-based diagnosis to localize software faults have demonstrated that it
 can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising}.
 
@@ -585,9 +589,20 @@ combination, as substantiated by \comb, to fault localization.
 We used subject programs from the \dfj{}
 benchmark~\cite{just-defects4j-issta2014} in our evaluation.
 Table~\ref{tab:df4j} shows size, number of tests, and number of
-faults, for each considered program. $2$ subjects from Math
-were not considered because we were not able to reproduce them
-in the machine used for the experiments.
+faults, for each considered program. Two faults from \cmath{} were not
+considered because we were unable to reproduce them in our
+environment.
+
+\lang{} is a library providing utility functions for the
+     {\small\texttt{java.lang}} API. \cmath{} is a library of
+     self-contained mathematics and statistics components.\comments{
+       The \closure{} is a toolset for turning JavaScript files into
+       smaller scripts for faster download and execution in the
+       browser.} \chart{} is a Java library for creating charts.
+     \jtime{} is a library for manipulating date and time\comments{,
+       providing a simpler API compared to
+       {\small\texttt{java.util.Date}}}. \mockito{} is a mocking
+     testing framework.
 
 \begin{table}[h]
   \small
@@ -610,16 +625,6 @@ in the machine used for the experiments.
 \end{table}
 \normalsize
 
-\lang{} is a
-library that provides a set of helper utilities for the
-{\small\texttt{java.lang}} API. \cmath{} is a lightweight library of
-self-contained mathematics and statistics components.\comments{ The
-  \closure{} is a toolset for turning JavaScript files into smaller
-  scripts for faster download and execution in the browser.} \chart{}
-is a Java library for creating charts.  \jtime{} is a lightweight
-library that aims to replace the default Java
-{\small\texttt{java.util.Date}} classes providing simpler
-APIs. \mockito{} is a mocking testing framework.
 
 %% Originally, this benchmark includes six different subjects and 395
 %% faults (Table \ref{tab:df4j}).
@@ -636,24 +641,25 @@ APIs. \mockito{} is a mocking testing framework.
 %% 		\label{fig:foos}
 %% \end{figure}
 
-As to quantify complexity of fault localization on this dataset, we
-additionally counted the number of cases of ``fault of omission'', a
-popular metric in fault localization research for that
-purpose~\cite{Pearson:2017:EIF:3097368.3097441}.
-A fault of omission (\foo) occurs when
-the program is buggy because some code is missing, i.e., a bug that is
-corrected by adding code. Intuitively, the ability of techniques to
-produce accurate diagnostic reports in those cases might be poor since
-fault of omission bugs are very difficult to locate. This dataset has a
-total of $59.7\%$ of \foo s which may contribute negatively to our
-results since \sfl{} strives to rank these cases.
-%in producing
-%high-qualitiy diagnosis.
-
-%\subsection{Experimental Methodology}
-%\label{sec:methodology}
+As to quantify complexity of fault localization on this benchmark, we
+counted the number of cases of ``fault of omission'', a popular metric
+in fault localization research for that
+purpose~\cite{Pearson:2017:EIF:3097368.3097441}.  A fault of omission
+(\foo) occurs when the program is buggy because some code is missing,
+i.e., a fix to the bug iss created by adding code as opposed to
+modifying or changing code. Intuitively, the ability of techniques to
+produce accurate diagnostic reports in those cases might be poor as
+techniques can only extract information about existing statements,
+which are not problematic. This dataset has a total of $59.7\%$ of
+\foo s, making it challenging for techniques to perform
+well. \Mar{Sofia, does it make sense to show a histogram of (initial)
+  rankings of pure SFL to complement this argument? Say, frequency of
+  cases SFL reports on <top-10 statements in the ranking, then
+  frequency within top-10> and <top-20, etc.}
 
 \subsection{Techniques}
+\Mar{---------------------- estou aqui}
+
 One important independent variable for this study is the scope of
 dynamic slicing. Slicing the entire code would be unacceptably
 expensive as Critical Slicing needs to re-compile the affected file at
