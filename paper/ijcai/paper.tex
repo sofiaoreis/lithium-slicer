@@ -54,7 +54,7 @@ in passing test runs could be located and their suspiciousness
 reduced. Results show that the \ds{}-\sfl{} combination, coined as
 Tandem-SL, improves the diagnostic accuracy up to $73.7\%$
 (\avgImprov\ on average). Furthermore, results indicate that the risk
-of missing faulty statements, which \ds{}'s key limitation, is not
+of missing faulty statements, which is a \ds{}'s key limitation, is not
 high---~\ds{} misses faulty statements in $9\%$\comments{($23$
   misses)} of the $\numFaults{}$ cases. To sum, we found that the
 \ds{}-\sfl{} combination was practical and effective and encourage new
@@ -235,7 +235,6 @@ available at \textit{$<$anonymized for double-blind review$>$}.
   The faulty statement may not be included in the critical slice of
   failing test cases.
 \end{theorem}
-
 
 If test oracles are too general, it is possible, conceptually, that
 the critical slicing algorithm produces slices without the faulty
@@ -621,7 +620,7 @@ environment.
     \bottomrule
   \end{tabular}
   \caption {Characterization of \dfj{} subjects.}
-  \label{tab:df4j}
+  \label{tab:df4j}  
 \end{table}
 \normalsize
 
@@ -678,7 +677,7 @@ it. Then, we select the top $k$ distinct files from such file ranking.
 
 The techniques we evaluate in this study are \combpar{k} and
 SFL$^{k}$, which is the comparison baseline. \combpar{k} is as defined
-in Section~\ref{sec:approach} (see Step 2 of the workflow) whereas
+in Section~\ref{sec:approach} (see Step $2$ of the workflow) whereas
 SFL$^{k}$ is as SFL, but it produces a ranking including exclusively
 the statements from the best-$k$ ranked files.
 
@@ -734,7 +733,7 @@ files.
 %% $10$ of classes comprising the highest faulty statements. We observed
 %% a reduction of $30.23\%$ in the projects considered in our study.
 
-\begin{table}[H]
+\begin{table}[h]
   \small
 	\centering
 	\setlength{\tabcolsep}{4pt}
@@ -890,7 +889,7 @@ missing only $23$ out of the \numFaults\ ($\sim$8.8\%) faults.
 %   \label{table:fsws}
 % \end{table*}
 
-\begin{table}[h!]
+\begin{table}[h]
 	\vspace{-0.2cm}
 	\small
 	\setlength{\tabcolsep}{3pt}
@@ -916,9 +915,10 @@ missing only $23$ out of the \numFaults\ ($\sim$8.8\%) faults.
 \subsubsection{RQ3: \textit{\rqthree}}
 
 In \textbf{RQ3}, we evaluate the effective impact of combining \ds{}
-with \sfl{} to improve fault localization. The first experiment we ran to assess impact consists of measuring the
-\emph{difference of diagnosis cost}. This metric has been previously
-used in other studies~\cite{7390282,ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Perez:2018:LQR:3304889.3304927}. More specifically, we computed
+with \sfl{} to improve fault localization. The first experiment we ran 
+to assess impact consists of measuring the \emph{difference of diagnosis 
+cost}. This metric has been previously used in other studies~\cite{7390282,ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Perez:2018:LQR:3304889.3304927}. 
+More specifically, we computed
 $\Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where
 $C$ denotes the diagnosis cost and is obtained by computing the mean
 position in the ranking of all buggy statements. $\Delta C >0$ means
@@ -971,7 +971,10 @@ outliers present the cases where the buggy-class was not in the top
 $k$. On the right, we only consider the cases where at least one
 of the variants resulted in an increase of $\Delta{}C$ ($116$ faults), i.e., the
 cases where \ds{} improves \sfl. Although, we observe
-a considerable amount of cases where $\Delta{}C$ is negative or zero in Figure~\ref{fig:diagnosis}, we also see that there is a considerable amount of faults which could benefit a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
+a considerable amount of cases where $\Delta{}C$ is negative or zero in 
+Figure~\ref{fig:diagnosis}, we also see that there is a considerable amount 
+of faults which could benefit a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
+
 \begin{figure}[h]
 		\vspace{-0.2cm}
 		\centering
@@ -984,7 +987,6 @@ a considerable amount of cases where $\Delta{}C$ is negative or zero in Figure~\
       the variants (right)}
 		\label{fig:boxplot}
 		\vspace{-0.2cm}
-
 \end{figure}
 
 
@@ -999,10 +1001,11 @@ of omission). These results show that \ds{} improves \sfl{} in a mean
 of $6$ ($3.3\%$ on average) statements on the average ranking of all faulty statements,
 when considering $k=10$. Inside parentheses, we present the
 rank results for all faults which do not report promissing results. However,
-if we only consider the faults which can benefit from our approach, we can observe that there is a considerable
+if we only consider the faults which can benefit from our approach, 
+we can observe that there is a considerable
 amount of cases where the approach is actually successful. For
-$k=5$, our approach achieves a mean improvement of $41.1$ ($9.57\%$ on average) statements
-on the ranking and an impressive maximum ranking improvement
+$k=5$, our approach achieves a mean improvement of $41.1$ ($9.57\%$ 
+on average) statements on the ranking and an impressive maximum ranking improvement
 of $3171$ ($96.7\%$ on average) statements. Whereas for $k=10$, \combpar{k}
 achieves a mean improvement of $19$ ($13.35\%$ on average) statements
 on the ranking and a maximum ranking improvement
@@ -1015,7 +1018,7 @@ statements. This also shows that slicing files, in addition to slicing
 statements from those files, is very beneficial for fault localization
 performance.
 
-\begin{table}[h!]
+\begin{table}[h]
 	\tiny
 	\centering
 	\setlength{\tabcolsep}{3pt}
@@ -1046,11 +1049,11 @@ ranking results of all techniques and variants are the same. With
 $99\%$ confidence, the results show that the distributions are
 distinct. To understand which techniques perform differently, \ie{} to answer
 the question \textit{Does \combpar{k} perform differently than
-  \sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
+\sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all
 pairs of techniques. Each square represents the
-statistical significance of the diagnostic accuracy amongst the different techniques, i.e.,
-if it is significant it means that the techniques perform
+statistical significance of the diagnostic accuracy amongst the different 
+techniques, i.e., if it is significant it means that the techniques perform
 differently. We can determine with $95\%$ confidence that the
 performance of each pair of techniques is different.
 
@@ -1062,9 +1065,14 @@ performance of each pair of techniques is different.
 		\vspace{-0.3cm}
 \end{figure}
 
-As the results are statistically significant, it is possible to state that \combpar{k} has a positive effect on the localization of some types of bugs. There is indeed a problem on using slicing on fault of omission bugs that needs further research. Although, this dataset has more than $50\%$ of fault of omissions, our
-simple slicing approach was capable of improving the ranking of $95$ faults for $k=5$ and $115$ faults for $k=10$. These are promissing results from what Automated
-Program Repair techniques may directly benefit to improve the accuracy of their own techniques.
+As the results are statistically significant, it is possible to state that \combpar{k} 
+has a positive effect on the localization of some types of bugs. There is indeed a 
+problem on using slicing on fault of omission bugs that needs further research. 
+Although, this dataset has more than $50\%$ of fault of omissions, our
+simple slicing approach was capable of improving the ranking of $95$ faults for $k=5$ 
+and $115$ faults for $k=10$. These are promissing results from what Automated
+Program Repair techniques may directly benefit to improve the accuracy of their own 
+techniques.
 
 
 \subsection{Threats to validity}
@@ -1075,7 +1083,8 @@ projects that resemble a general and large-sized application. To reduce
 selection bias and facilitate the comparison of our results, we decided to
 choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}.
 It is importance to notice that our study does not evaluate the fault of the \closure{}
-project since it requires high CPU to perform the \combpar{k} evaluation. A potential threat to \textit{construct validity} relates to the choice of oracle generation
+project since it requires high CPU to perform the \combpar{k} evaluation. A potential
+threat to \textit{construct validity} relates to the choice of oracle generation
 for the Lithium toolset. However, we argue that our choice is able to capture whether
 a program is failing because of the same reason.
 The main threat to \textit{internal validity} lies in the complexity of several of the tools
@@ -1133,7 +1142,8 @@ methodology.
 Several approaches have been proposed in the literature to improve debugging
 costs through automated software fault diagnosis to reduce time-to-market,
 while maintaining high quality standards. In this domain, Dynamic Slicing (\ds)
-and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis techniques and normally seen as complementary. This paper reports the outcome of
+and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis 
+techniques and normally seen as complementary. This paper reports the outcome of
 a study using real-world applications with the goal of demystifying the impact
 of combining \ds~with \sfl. The results of our empirical study show that, in
 practice, \ds~rarely misses faulty statements $9\%$ ($23$ misses in $260$ cases) and that
