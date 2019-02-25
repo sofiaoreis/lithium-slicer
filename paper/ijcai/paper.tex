@@ -659,27 +659,29 @@ well.
 %   frequency within top-10> and <top-20, etc.}
 
 \subsection{Techniques}
-\Mar{---------------------- estou aqui}
-
 One important independent variable for this study is the scope of
-dynamic slicing. Slicing the entire code would be unacceptably
-expensive as Critical Slicing needs to re-compile the affected file at
-every iteration, \ie{}, after deleting statements and before checking
-the oracle (see Section~\ref{sec:slicing}). We control the scope of
-slicing through the variable $k$, which denotes the number of distinct
-files that dynamic slicing will minimize. In this study, we used $5$ and
-$10$ as the values of $k$, following the same values as in previous fault
-localization studies~\cite{ang-perez-van-deursen-rui-2017}.
-The $k$ files for minimization are selected
-from the \sfl{} ranking as follows. First, we build a rank of files by
-determining, for each ranked statement, the file that declares
-it. Then, we select the top $k$ distinct files from such file ranking.
+analysis for the techniques. Analyzing long rankings would be
+unacceptably expensive not only for
+humans~\cite{Parnin:2011:ADT:2001420.2001445} but also for
+machines. For example, Critical Slicing needs to re-compile the
+affected file at every iteration, \ie{}, after deleting statements and
+before checking the oracle (see Section~\ref{sec:slicing}).
+%% how we do it
+We control the scope of analysis through the variable $k$, denoting
+the number of most-suspicious files that will be analyzed. These files
+are selected from the \sfl{} ranking as follows. First, we build a
+ranking of files by determining, for each ranked statement, the file
+that declares it. Then, we select the top-$k$ distinct files from such
+file ranking.
 
 The techniques we evaluate in this study are \combpar{k} and
 SFL$^{k}$, which is the comparison baseline. \combpar{k} is as defined
 in Section~\ref{sec:approach} (see Step $2$ of the workflow) whereas
-SFL$^{k}$ is as SFL, but it produces a ranking including exclusively
-the statements from the best-$k$ ranked files.
+SFL$^{k}$ is as SFL, but it produces a ranking only including the
+statements from the top-$k$ ranked files. In this study, we used $5$
+and $10$ as the values of $k$, following the same choice as in
+previous fault localization
+studies~\cite{ang-perez-van-deursen-rui-2017}.
 
 %% To evaluate the effectiveness of \comb{}, following related work, we compared
 %% its performance with \sfl{} for each fault from the dataset, for $k\in\{5,10\}$,
@@ -1170,3 +1172,5 @@ highest-rank faulty classes.
 }
 
 \end{document}
+
+%%  LocalWords:  SFL
