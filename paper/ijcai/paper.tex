@@ -640,18 +640,21 @@ environment.
 %% 		\label{fig:foos}
 %% \end{figure}
 
+%% a popular metric in fault
+%% localization research for that
+%% purpose.  A fault of omission
+%% (\foo) occurs when the program is buggy because some code is missing,
+%% i.e., a fix to the bug is created by adding code as opposed to
+%% modifying or changing code. 
+
 As to quantify complexity of fault localization on this benchmark, we
-counted the number of cases of ``fault of omission'', a popular metric
-in fault localization research for that
-purpose~\cite{Pearson:2017:EIF:3097368.3097441}.  A fault of omission
-(\foo) occurs when the program is buggy because some code is missing,
-i.e., a fix to the bug iss created by adding code as opposed to
-modifying or changing code. Intuitively, the ability of techniques to
-produce accurate diagnostic reports in those cases might be poor as
-techniques can only extract information about existing statements,
-which are not problematic. This dataset has a total of $59.7\%$ of
-\foo s, making it challenging for techniques to perform
-well. 
+measured the frequency of ``faults of omission'' (\foo), which is a
+fault whose fix is materialized only with the addition of new
+code~\cite{Pearson:2017:EIF:3097368.3097441}. Intuitively, the ability
+of techniques to produce accurate diagnostic reports in those cases
+might be poor as existing statements are not problematic. We found
+that this dataset has a total of $59.7\%$ of \foo s, making it
+challenging for techniques to perform well.
 
 % \Mar{Sofia, does it make sense to show a histogram of (initial)
 %   rankings of pure SFL to complement this argument? Say, frequency of
@@ -721,12 +724,11 @@ This section discusses and answers the research questions.
 
 A necessary but insufficient condition for improvement of fault
 localization with \comb{} is that dynamic slicing eliminates a high
-amount of code in the best ranked files. Table \ref{tab:red} shows, as
-percentages, the reduction of the top file sizes
-obtained with dynamic slicing for different values of
-$k$. Overall, results indicate
+amount of code from the best ranked files. Table \ref{tab:red} shows,
+as percentages, the size reduction of the top files obtained with
+dynamic slicing for different values of $k$. Overall, results indicate
 that dynamic slicing substantially reduces the size of highly-ranked
-files.
+files. \Mar{+ coverage?}
 
 %\Mar{sofia, it would be more convincing if you (additionally)
 %  show reduction wrt to the the parts of the file that are covered.}
@@ -779,12 +781,10 @@ research question evaluates the practical impact of this conceptual
 issue. Table~\ref{tab:ds-cases-captured} shows the number of cases
 dynamic slicing captures at least one of the faulty statements among
 the sliced files for different values of $k$. These numbers indicate
-that in general \ds{} finds at least one faulty statement in the top
-$5$ of the highest-ranked faulty classes ($87.3\%$ on average) which
-is slightly improved to $91.2\%$ if we consider
+that in $87.3\%$ of the cases, on average, dynamic slicing finds at
+least one faulty statement in the top $5$ of the highest-ranked faulty
+classes. This number is slightly improved to $91.2\%$ if we consider
 the top $10$ of the highest-ranked faulty classes.
-
-
 
 \begin{table}[h]
   \small
@@ -806,7 +806,7 @@ the top $10$ of the highest-ranked faulty classes.
 
 		\bottomrule
 	\end{tabular}
-	\caption {\ds{} performance on capturing faulty statements, as
+	\caption {Dynamic Slicing performance on capturing faulty statements, as
      percentages. Higher is better.}
    \label{tab:ds-cases-captured}
 \vspace{-0.2cm}
@@ -838,16 +838,18 @@ the top $10$ of the highest-ranked faulty classes.
 
 To analyze the impact of dynamic slicing in context, we also compared
 \combpar{k} and \sfl{}$^{k}$ considering the number of cases where the
-fault is captured by the technique. Note that the reason \sfl{}$^{k}$
-misses the fault is different compared to \combpar{k}. \sfl{}$^{k}$
-captures the fault if the fault is included within the top $k$ files;
-it misses the fault otherwise. Table~\ref{table:fsws} shows results,
-indicating that \combpar{k}, on average, captures more faults compared
-to \sfl{}$^{k}$. In only two cases \sfl{}$^{k}$ outperformed
-\combpar{k}. These results show that the majority of faulty statements
-are found on the $5$ highest ranked faulty classes and that
-\combpar{10} is the variant of our approach that performs better
-missing only $23$ out of the \numFaults\ ($\sim$8.8\%) faults.
+fault is captured by the technique within a certain bound $k$. Note
+that the reason \sfl{}$^{k}$ misses the fault is different compared to
+\combpar{k}. \sfl{}$^{k}$ captures the fault if it is included within
+the top $k$ files; it misses the fault
+otherwise. Table~\ref{table:fsws} shows results, indicating that
+\combpar{k}, typically, captures more faults compared to
+\sfl{}$^{k}$. In only two cases, highlighted in gray color,
+\sfl{}$^{k}$ outperformed \combpar{k}. These results show that the
+majority of faulty statements are found on the $5$ highest ranked
+faulty classes and that \combpar{10} is the variant of our approach
+that performs better missing only $23$ out of the
+\numFaults\ ($\sim$8.8\%) faults.
 
 %% \sfl{}$^{5}$ finds $207$ ($79.6\%$) faults whereas
 %% \combpar{5} finds $227$ ($87.3\%$) faults for $k=5$, i.e., \combpar{5}
@@ -909,43 +911,48 @@ missing only $23$ out of the \numFaults\ ($\sim$8.8\%) faults.
 		Total         & 79.6 & 87.3 & 83.5 & 91.2\\
 		\bottomrule
 	\end{tabular}
-  \caption {Number of faults where at least one of the faulty-statements is in the \sfl{}$^{k}$ and \combpar{k} report}
+  \caption {Number of faults where at least one of the faulty
+    statements appears at the report of the technique. Higher is better.}
   \label{table:fsws}
 \vspace{-0.4cm}
 \end{table}
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
-In \textbf{RQ3}, we evaluate the effective impact of combining \ds{}
-with \sfl{} to improve fault localization. The first experiment we ran 
-to assess impact consists of measuring the \emph{difference of diagnosis 
-cost}. This metric has been previously used in other studies~\cite{7390282,ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Perez:2018:LQR:3304889.3304927}. 
-More specifically, we computed
-$\Delta{}C = C(\textrm{SFL$^{k}$}) - C(\textrm{\combpar{k}})$, where
-$C$ denotes the diagnosis cost and is obtained by computing the mean
-position in the ranking of all buggy statements. $\Delta C >0$ means
-that the position of the faulty statement has decreased with
-\combpar{k}, \ie{}, the combination had a positive impact. $\Delta C
-<0$ means that \combpar{k} performs worse compared to its
-baseline. That could happen if dynamic slicing misses the faulty
-statement---the statements not included in the slice will have their
-suspiciousness scores reduced and ranks potentially reduced. $\Delta
-C=0$ means that the faulty statement remained in the same position.
-It is worth noting that we assume a perfect bug understanding, i.e.,
-if the developer sees the bug in the ranking, he is able to precisely
+In \textbf{RQ3}, we evaluate the impact of combining \ds{} with \sfl{}
+to improve fault localization. The first experiment we ran consists of
+measuring the \emph{difference of diagnosis cost} between the two
+fault localization techniques. This metric has been previously used in
+other
+studies~\cite{7390282,ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.3097441,Perez:2018:LQR:3304889.3304927}.
+More specifically, we computed $\Delta{}C = C(\textrm{SFL$^{k}$}) -
+C(\textrm{\combpar{k}})$, where $C$ denotes the diagnosis cost and is
+obtained by computing the mean position in the ranking of all buggy
+statements. $\Delta C >0$ means that \combpar{k} outperformed the
+baseline, \ie{} the mean position of the faulty statements is smaller
+in \combpar{k} compared to that of the baseline. $\Delta C <0$ means
+that \combpar{k} performs worse compared to its baseline. That could
+happen if dynamic slicing misses the faulty statement. $\Delta C=0$
+means that the faulty statement remained in the same position.  It is
+worth noting that we assume perfect bug
+understanding~\cite{Parnin:2011:ADT:2001420.2001445}, i.e., if the
+developer sees the bug in the ranking, he is able to precisely
 determine if it is the faulty one.
 
 Figure \ref{fig:diagnosis} summarizes performance of \combpar{k}
-relative to \sfl{}$^{k}$ using histograms over $\Delta{}C$ for
-different values of $k$. Note that (1) the number of cases where
-\sfl{}$^{k}$ outperforms \combpar{k} is very small compared and (2)
-the number of cases \combpar{k} outperforms \sfl{}$^{k}$ is
-significant and, as we increase the value of $k$, it increases (from
-$97$ to $117$ faults). The faults where the cost of diagnosis is
-negative are cases that (1) the faulty statements decreased in the ranking
-list due to being a fault of omission, (2) the test has design limitations
-which \ds~is not capable of handling, or (3) the buggy-class in not in
-the top $k$ of the highest-ranked faulty classes under analysis.
+relative to \sfl{}$^{k}$. The figure shows a histogram over
+$\Delta{}C$ for different values of $k$. Note that (1) the number of
+cases where the baseline outperforms \combpar{k} is small (\eg{}, $33$
+of the \numFaults\ faults for $k=10$) and that (2) the number of cases
+\combpar{k} outperforms the baseline is significative (\eg{}, $117$ of
+the \numFaults\ faults for $k=10$). One of the following reasons
+justifies the baseline outperforming \combpar{k}:\Mar{following
+  sentence is confusing IMO. suggest to clarify or remove. aren't
+  points two and three equivalent? as for one, isn't foo an issue both
+  for \combpar{k} and \sfl{}$^{k}$?} (1) a fault of omission, (2) the
+test has design limitations which \ds~is not capable of handling, or
+(3) the buggy-class in not in the top $k$ of the highest-ranked faulty
+classes under analysis.
 
 %% For $k=5$, we observe that in $30$ ($11.5\%$) of the faults the
 %% position of faulty statements decreases in the ranking, $97$($37.3\%$)
@@ -965,6 +972,8 @@ the top $k$ of the highest-ranked faulty classes under analysis.
 		\caption{Delta Cost of Diagnosis ($\Delta{}C$) per $k$}
 		\label{fig:diagnosis}
 \end{figure}
+
+\Mar{-------------------------- estou aqui}
 
 Figure~\ref{fig:boxplot} shows the $\Delta{}C$ distribution for each
 variant in two different cases. On the left, we do not consider the
