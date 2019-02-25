@@ -973,18 +973,18 @@ classes under analysis.
 		\label{fig:diagnosis}
 \end{figure}
 
-\Mar{-------------------------- estou aqui}
-
-Figure~\ref{fig:boxplot} shows the $\Delta{}C$ distribution for each
-variant in two different cases. On the left, we do not consider the
-test engineering problems and faults of omission ($227$ faults). The two negative
-outliers present the cases where the buggy-class was not in the top
-$k$. On the right, we only consider the cases where at least one
-of the variants resulted in an increase of $\Delta{}C$ ($116$ faults), i.e., the
-cases where \ds{} improves \sfl. Although, we observe
-a considerable amount of cases where $\Delta{}C$ is negative or zero in 
-Figure~\ref{fig:diagnosis}, we also see that there is a considerable amount 
-of faults which could benefit a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
+Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$. On
+the left-hand-side, the figure shows the distributions of $\Delta{}C$
+for different values of $k$, considering all faults except those where
+test engineering problems and faults of omission are manifested ($227$
+faults). The two negative outliers present the cases where the
+buggy-class was not in the top $k$. On the right, we only consider the
+cases where at least one of the variants resulted in an increase of
+$\Delta{}C$ ($116$ faults), i.e., the cases where \ds{} improves
+\sfl. Although, we observe a considerable amount of cases where
+$\Delta{}C$ is negative or zero in Figure~\ref{fig:diagnosis}, we also
+see that there is a considerable amount of faults which could benefit
+a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
 
 \begin{figure}[h]
 		\vspace{-0.2cm}
@@ -992,14 +992,16 @@ of faults which could benefit a lot with \combpar{k}, in Figure~\ref{fig:boxplot
 		\includegraphics[width=0.49\textwidth]{figures/boxplot.pdf}
 		\vspace{-0.6cm}
 
-		\caption{Distribution of $\Delta{}C$ per variant when not considering
-		test engineering problems and fault of omissions (left) and only considering
-		the cases where \combpar{k} achieved improvement under one of
-      the variants (right)}
+		\caption{Distributions of $\Delta{}C$. On the left, distribution
+        considering all faults but those manifesting faults of
+        omission and engineering problems (227 faults). On the right,
+        distribution considering all cases where \combpar{k}
+        outperformed the baseline (116 faults).}
 		\label{fig:boxplot}
 		\vspace{-0.2cm}
 \end{figure}
 
+\Mar{-------------------------- estou aqui}
 
 In the following, we present statistical analysis to demonstrate that
 the distributions of $C$ for each technique are different.
@@ -1034,8 +1036,9 @@ performance.
 	\centering
 	\setlength{\tabcolsep}{3pt}
 	\begin{tabular}{@{}c|c|c|c|c@{}}
-\toprule
-  & SFL$^{5}$  & \combpar{5}       & SFL$^{10}$                 & \combpar{10}              \\ \midrule
+     \toprule
+  & \multicolumn{2}{c|}{$k=5$} & \multicolumn{2}{c}{$k=10$} \\
+  & SFL  & \comb\       & SFL                & \comb\              \\ \midrule
 Mean  & \textbf{590.7} (584.3) & \textbf{573.4} (679.7)   &  \textbf{512.7} (516.4)    & \textbf{506.6} (614.0)   \\ \midrule
 Median & \textbf{46.5} (49.4) & \textbf{42.7} (69.3)      & \textbf{54.5} (53.0) & \textbf{40.0} (56.9)\\ \midrule
 Variance & \textbf{1257.0} (1223.1) & \textbf{1239.1} (1352.4)  &  \textbf{1171.5} (1148.1) &  \textbf{1167.0} (1294.9) \\ \midrule
