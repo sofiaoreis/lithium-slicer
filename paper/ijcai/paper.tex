@@ -119,14 +119,15 @@ evaluate fault localization research. Results show that \ds{} misses
 faulty statements in $9\%$\comments{(23 misses)} of the \numFaults{}
 faults analyzed. Furthermore, we found that the combination of the two
 approaches may improve fault localization up to $73.7\%$
-(\avgImprov\ on average).\Mar{do we have supporting data to say that
-  the improvement is bigger when we care the most? for the cases SFL
-  performs worse? if yes, can we show average for that?} To sum, results indicate that the
+(\avgImprov\ on average). To sum, results indicate that the
 risk of applying the technique is relatively low for the positive
 impact it may bring; and, the tool implementing the technique works
 out-of-the-box, \ie{}, it puts no requirements on the running
 environment, subject programs it can be used, and requires no special
 setup.
+% \Mar{do we have supporting data to say that
+%   the improvement is bigger when we care the most? for the cases SFL
+%   performs worse? if yes, can we show average for that?}
 
 The contributions of this work are: 1)~an empirical study, using
 real-world applications and bugs, on the combination of \ds{} and
@@ -651,10 +652,12 @@ produce accurate diagnostic reports in those cases might be poor as
 techniques can only extract information about existing statements,
 which are not problematic. This dataset has a total of $59.7\%$ of
 \foo s, making it challenging for techniques to perform
-well. \Mar{Sofia, does it make sense to show a histogram of (initial)
-  rankings of pure SFL to complement this argument? Say, frequency of
-  cases SFL reports on <top-10 statements in the ranking, then
-  frequency within top-10> and <top-20, etc.}
+well. 
+
+% \Mar{Sofia, does it make sense to show a histogram of (initial)
+%   rankings of pure SFL to complement this argument? Say, frequency of
+%   cases SFL reports on <top-10 statements in the ranking, then
+%   frequency within top-10> and <top-20, etc.}
 
 \subsection{Techniques}
 \Mar{---------------------- estou aqui}
@@ -978,8 +981,7 @@ a considerable amount of cases where $\Delta{}C$ is negative or zero in Figure~\
 		\caption{Distribution of $\Delta{}C$ per variant when not considering
 		test engineering problems and fault of omissions (left) and only considering
 		the cases where \combpar{k} achieved improvement under one of
-      the variants (right)\Mar{por favor, aumente o tamanho dos labels
-      (nao consigo enxergar na impressao).}}
+      the variants (right)}
 		\label{fig:boxplot}
 		\vspace{-0.2cm}
 
