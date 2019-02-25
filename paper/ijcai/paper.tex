@@ -1024,11 +1024,11 @@ performance.
 	\setlength{\tabcolsep}{3pt}
 	\begin{tabular}{@{}c|c|c|c|c@{}}
 \toprule
-  & SFL$^{5}$      & SFL$^{10}$     & \combpar{5}              & \combpar{10}              \\ \midrule
-Mean  & \textbf{590.7} (584.3)   &  \textbf{512.7} (516.4)  & \textbf{573.4} (679.7)  & \textbf{506.6} (614.0)   \\ \midrule
-Median & \textbf{46.5} (49.4)    & \textbf{54.5} (53.0) & \textbf{42.7} (69.3)  & \textbf{40.0} (56.9)\\ \midrule
-Variance & \textbf{1257.0} (1223.1)  &  \textbf{1171.5} (1148.1) & \textbf{1239.1} (1352.4) &  \textbf{1167.0} (1294.9) \\ \midrule
-Shapiro-Wilk &\makecell{$W$ = 0.52 \\ $p$ = 1.75 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.50 x $10^{-25}$} & \makecell{$W$ = 0.51 \\ $p$ = 1.10 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.26 x $10^{-25}$}  \\ \midrule
+  & SFL$^{5}$  & \combpar{5}       & SFL$^{10}$                 & \combpar{10}              \\ \midrule
+Mean  & \textbf{590.7} (584.3) & \textbf{573.4} (679.7)   &  \textbf{512.7} (516.4)    & \textbf{506.6} (614.0)   \\ \midrule
+Median & \textbf{46.5} (49.4) & \textbf{42.7} (69.3)      & \textbf{54.5} (53.0) & \textbf{40.0} (56.9)\\ \midrule
+Variance & \textbf{1257.0} (1223.1) & \textbf{1239.1} (1352.4)  &  \textbf{1171.5} (1148.1) &  \textbf{1167.0} (1294.9) \\ \midrule
+Shapiro-Wilk &\makecell{$W$ = 0.52 \\ $p$ = 1.75 x $10^{-24}$} & \makecell{$W$ = 0.51 \\ $p$ = 1.10 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.50 x $10^{-25}$} &  \makecell{$W$ = 0.48 \\ $p$ = 2.26 x $10^{-25}$}  \\ \midrule
 Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x $10^{-35}$}} \\
 \bottomrule
 \end{tabular}
@@ -1118,16 +1118,20 @@ popular automated fault localization techniques. Spectrum-based fault
 localization (\sfl{}) is amongst the most common statistical fault localization
 technique used to rank faulty components
 ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
-This technique uses tests coverage information to rank program's components.
+This technique uses tests coverage information to rank program's components. 
+
 \Rui{this sentence does not belong to rw (We suspect...)-->} We
 suspect that several highly suspicious components—often involved in failing, but
 seldom in passing test runs—may be unrelated to the bug.
 
-coPrior work has investigated the \ds{}-\sfl{}
+Prior work has investigated the \ds{}-\sfl{}
 combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair,christi2018reduce}.
 Overall, these studies reported promissing results but based their conclusions
 on a very small group of (mostly artificial) faults and using different
-techniques. \Rui{not related work. more of motivation (avoid words such as believe)-->}
+techniques. 
+
+
+\Rui{not related work. more of motivation (avoid words such as believe)-->}
 Although, \ds{} does not ensure the improvement of \sfl{} since it
 can remove faulty statements from the failing test, we believe it has a great
 potential to help reducing test cases and improve \sfl{} accuracy. In this
