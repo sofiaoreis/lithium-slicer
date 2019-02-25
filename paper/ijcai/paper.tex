@@ -939,20 +939,24 @@ understanding~\cite{Parnin:2011:ADT:2001420.2001445}, i.e., if the
 developer sees the bug in the ranking, he is able to precisely
 determine if it is the faulty one.
 
+%% k=10
+\newcommand{\numOutPerformed}{$33$}%
+\newcommand{\numEquallyPerformed}{$110$}%
+
 Figure \ref{fig:diagnosis} summarizes performance of \combpar{k}
 relative to \sfl{}$^{k}$. The figure shows a histogram over
 $\Delta{}C$ for different values of $k$. Note that (1) the number of
-cases where the baseline outperforms \combpar{k} is small (\eg{}, $33$
-of the \numFaults\ faults for $k=10$) and that (2) the number of cases
-\combpar{k} outperforms the baseline is significative (\eg{}, $117$ of
-the \numFaults\ faults for $k=10$). One of the following reasons
-justifies the baseline outperforming \combpar{k}:\Mar{following
-  sentence is confusing IMO. suggest to clarify or remove. aren't
-  points two and three equivalent? as for one, isn't foo an issue both
-  for \combpar{k} and \sfl{}$^{k}$?} (1) a fault of omission, (2) the
-test has design limitations which \ds~is not capable of handling, or
-(3) the buggy-class in not in the top $k$ of the highest-ranked faulty
-classes under analysis.
+cases where the baseline outperforms \combpar{k} is small (\eg{},
+\numOutPerformed\ of the \numFaults\ faults for $k=10$) and that (2)
+the number of cases \combpar{k} outperforms the baseline is
+significative (\eg{}, $117$ of the \numFaults\ faults for $k=10$). One
+of the following reasons justifies the baseline outperforming
+\combpar{k}:\Mar{following sentence is confusing IMO. suggest to
+  clarify or remove. aren't points two and three equivalent? as for
+  one, isn't foo an issue both for \combpar{k} and \sfl{}$^{k}$?} (1)
+a fault of omission, (2) the test has design limitations which \ds~is
+not capable of handling, or (3) the buggy-class in not in the top $k$
+of the highest-ranked faulty classes under analysis.
 
 %% For $k=5$, we observe that in $30$ ($11.5\%$) of the faults the
 %% position of faulty statements decreases in the ranking, $97$($37.3\%$)
@@ -973,18 +977,23 @@ classes under analysis.
 		\label{fig:diagnosis}
 \end{figure}
 
-Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$. On
-the left-hand-side, the figure shows the distributions of $\Delta{}C$
-for different values of $k$, considering all faults except those where
-test engineering problems and faults of omission are manifested ($227$
-faults). The two negative outliers present the cases where the
-buggy-class was not in the top $k$. On the right, we only consider the
-cases where at least one of the variants resulted in an increase of
-$\Delta{}C$ ($116$ faults), i.e., the cases where \ds{} improves
-\sfl. Although, we observe a considerable amount of cases where
-$\Delta{}C$ is negative or zero in Figure~\ref{fig:diagnosis}, we also
-see that there is a considerable amount of faults which could benefit
-a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
+Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$ for
+different sets of faults as to better understand the performance of
+\combpar{k}. On the left-hand-side, we show distributions of
+$\Delta{}C$, for different values of $k$, considering all cases where
+the predicate $\Delta{}C\geq{}0$ holds, \ie{}, we excluded the
+\numOutPerformed\ cases where \sfl{}$^{k}$ outperformed \combpar{k}
+(see Figure~\ref{fig:diagnosis}). The boxplots on the right-hand-side
+of the figure considers all the cases where the predicate
+$\Delta{}C>0$ holds, \ie{}, it additionally excludes from the dataset
+the cases of faults where the techniques perform equally.\Mar{sofia,
+  are you sure there are no zeros in this dataset? The min. in this
+  distibution (as per the base of the plot) seems to be 0.} To sum,
+although we observed a relatively small number cases where $\Delta{}C$
+is negative (\numOutPerformed) and a high number of cases $\Delta{}C$
+is zero (\numEquallyPerformed), we observed that there is a
+considerable amount of cases where the use of \combpar{k} would be
+very beneficial.
 
 \begin{figure}[h]
 		\vspace{-0.2cm}
@@ -1003,33 +1012,35 @@ a lot with \combpar{k}, in Figure~\ref{fig:boxplot}.
 
 \Mar{-------------------------- estou aqui}
 
-In the following, we present statistical analysis to demonstrate that
-the distributions of $C$ for each technique are different.
-Table~\ref{table:st}, reports the average rank of all faulty
-statements of the \dfj{} faults considered to the study after applying both
-techniques, \sfl{}$^{k}$ and \combpar{k} for $k=5$ and $k=10$.
-In bold, we present the results of the $227$ faults that do not comprise the
-cases that are result of the limitations mentioned before (test design and fault
-of omission). These results show that \ds{} improves \sfl{} in a mean
-of $6$ ($3.3\%$ on average) statements on the average ranking of all faulty statements,
-when considering $k=10$. Inside parentheses, we present the
-rank results for all faults which do not report promissing results. However,
-if we only consider the faults which can benefit from our approach, 
-we can observe that there is a considerable
-amount of cases where the approach is actually successful. For
-$k=5$, our approach achieves a mean improvement of $41.1$ ($9.57\%$ 
-on average) statements on the ranking and an impressive maximum ranking improvement
-of $3171$ ($96.7\%$ on average) statements. Whereas for $k=10$, \combpar{k}
-achieves a mean improvement of $19$ ($13.35\%$ on average) statements
-on the ranking and a maximum ranking improvement
-of $209$ ($73.7\%$ on average) statements. Such difference is justified by the fact that
-entire files are discarded in \combpar{5}, whose statements are
-included in the ranking of \combpar{10}. Consequently, the
-improvements obtained by the technique will not be as high if slicing
-on these additional files is unable to aggressively and safely discard
-statements. This also shows that slicing files, in addition to slicing
-statements from those files, is very beneficial for fault localization
-performance.
+In the following, we present statistical analysis of the techniques.
+Table~\ref{table:st} reports descriptive statistics about the
+distributions of $C$ for the techniques under different values of $k$.
+In bold, we present the results of the $227$ faults that do not
+comprise the cases that are result of the limitations mentioned before
+(test design and fault of omission). The number in parentheses are
+relative to the dataset including all data faults; note that results
+for this dataset are \emph{not} encouraging.
+
+These results show that \ds{}
+improves \sfl{} in a mean of $6$ ($3.3\%$ on average) statements on
+the average ranking of all faulty statements, when considering
+$k=10$. 
+However, if we only consider
+the faults which can benefit from our approach, we can observe that
+there is a considerable amount of cases where the approach is actually
+successful. For $k=5$, our approach achieves a mean improvement of
+$41.1$ ($9.57\%$ on average) statements on the ranking and an
+impressive maximum ranking improvement of $3171$ ($96.7\%$ on average)
+statements. Whereas for $k=10$, \combpar{k} achieves a mean
+improvement of $19$ ($13.35\%$ on average) statements on the ranking
+and a maximum ranking improvement of $209$ ($73.7\%$ on average)
+statements. Such difference is justified by the fact that entire files
+are discarded in \combpar{5}, whose statements are included in the
+ranking of \combpar{10}. Consequently, the improvements obtained by
+the technique will not be as high if slicing on these additional files
+is unable to aggressively and safely discard statements. This also
+shows that slicing files, in addition to slicing statements from those
+files, is very beneficial for fault localization performance.
 
 \begin{table}[h]
 	\tiny
