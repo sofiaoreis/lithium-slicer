@@ -887,7 +887,6 @@ missing only $23$ out of the \numFaults\ ($\sim$8.8\%) faults.
 
 \begin{table}[h!]
 	\vspace{-0.2cm}
-
 	\small
 	\setlength{\tabcolsep}{3pt}
 	\centering
@@ -1029,9 +1028,7 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x 
 \end{table}
 
 
-Although this dataset has more than $50\%$ of fault of omissions, our
-simple slicing approach was capable of improving the ranking of $95$
-faults for $k=5$ and $115$ faults for $k=10$. Table \ref{table:st}
+Table \ref{table:st}
 presents the statistics to determine if the observed results are
 statistically significant. Shapiro-Wilk tests the null hypothesis that
 results are drawn from a normal distribution. The test is perfomed for
@@ -1041,9 +1038,7 @@ is not normally distributed, we use Friedman test, a non-parametric
 statistical test of hypothesis. The null-hypothesis is that the
 ranking results of all techniques and variants are the same. With
 $99\%$ confidence, the results show that the distributions are
-distinct.
-
-To understand which techniques perform differently, \ie{} to answer
+distinct. To understand which techniques perform differently, \ie{} to answer
 the question \textit{Does \combpar{k} perform differently than
   \sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
 \ref{fig:performance} reports the results of Siegel analysis for all
@@ -1051,8 +1046,7 @@ pairs of techniques. Each square represents the
 statistical significance of the diagnostic accuracy amongst the different techniques, i.e.,
 if it is significant it means that the techniques perform
 differently. We can determine with $95\%$ confidence that the
-performance of each pair of techniques is different. As the results
-are statiscally significant, we can confirm that \ds{} improves \sfl{}.
+performance of each pair of techniques is different. 
 
 \begin{figure}[h]
 	\vspace{-1.8cm}
@@ -1062,72 +1056,48 @@ are statiscally significant, we can confirm that \ds{} improves \sfl{}.
 		\vspace{-0.3cm}
 \end{figure}
 
+As the results are statistically significant, it is possible to state that \combpar{k} has a positive effect on the localization of some types of bugs. There is indeed a problem on using slicing on fault of omission bugs that needs further research. Although, this dataset has more than $50\%$ of fault of omissions, our
+simple slicing approach was capable of improving the ranking of $95$ faults for $k=5$ and $115$ faults for $k=10$. These are promissing results from what Automated
+Program Repair techniques may directly benefit to improve the accuracy of their own techniques.
+
+
 \subsection{Threats to validity}
 %
-A potential threat to external validity related to the set of programs used in
+A potential threat to \textit{external validity} related to the set of programs used in
 our study. When choosing the projects for our study, our aim was to opt for
 projects that resemble a general and large-sized application. To reduce
 selection bias and facilitate the comparison of our results, we decided to
 choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}.
 It is importance to notice that our study does not evaluate the fault of the \closure{}
-project since it requires high CPU to perform the \combpar{k} evaluation.
-
-A potential threat to construct validity relates to the choice of oracle generation
+project since it requires high CPU to perform the \combpar{k} evaluation. A potential threat to \textit{construct validity} relates to the choice of oracle generation
 for the Lithium toolset. However, we argue that our choice is able to capture whether
 a program is failing because of the same reason.
-
-The main threat to internal validity lies in the complexity of several of the tools
+The main threat to \textit{internal validity} lies in the complexity of several of the tools
 used in our experiments, most notably the Lithium toolset, the SFL diagnosis tool,
 and the implementation of \comb{}.
 %
 \section{Related Work}
 
 Model-based diagnosis is a well-known approach that has been proposed by the
-DX community, a sub-field of AI~\cite{REITER198757,DEKLEER200325}. Applications
+DX community, a sub-field of AI~\cite{REITER198757,wotawa2002relationship,DEKLEER200325}. Applications
 of model-based diagnosis to localize software faults have demonstrated that it
-can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising}.
-Not many interesting techniques have been pursued due to scalability limitations. We have tackled this using an old program slicing technique --- critical slicing~\cite{DeMillo:1996:CSS:229000.226310}.
+can be framed as dynamic slicing~\cite{Mayer:2008:EMM:1642931.1642950,mayer2008prioritising,nica2013use}.
+Not many interesting techniques have been pursued due to scalability limitations. We have tackled this using the program slicing technique --- critical slicing~\cite{DeMillo:1996:CSS:229000.226310} --- for its simplicity and generality.
 
 Dynamic Slicing has found its main
 application in fault
-localization~\cite{Agrawal:1990:DPS:93542.93576} on the minimization of failing tests. Research in this area has mainly focused
+localization~\cite{Agrawal:1990:DPS:93542.93576}, e.g.,  on the minimization of failing tests through the identification of code components that do not contribute to the fault revelation. Research in this area has mainly focused
 on slicing code
 efficiently~\cite{Wang:2008:DSJ:1330017.1330021,Wang:2004:UCB:998675.999455}
-and avoiding data and control omission
-errors~\cite{Zhang:2007:TLE:1250734.1250782,Lin:2018:BDE:3238147.3238163}. Dynamic fault localization techniques cannot hope to
-soundly report bugs in those cases. The issue is that incorporating
-static information to capture those cases can result in unacceptably
-large slices, which defeats the purpose of reducing the fault search
-space. 
+and locate and contour faults of omission~\cite{Zhang:2007:TLE:1250734.1250782,Lin:2018:BDE:3238147.3238163}. 
 %
 % \subsection{SFL}
 %
 Statistics-based techniques (e.g., ~\cite{Pearson:2017:EIF:3097368.3097441}) are
-popular automated fault localization techniques within the Software Engineering
-community. They correlate information about program fragments that have been
-exercised in multiple program execution traces (also called \textit{program
-spectra}) with information about successful and failing executions. By doing
-that, statistics-based approaches yield a list of suspect program fragments
-sorted by their likelihood to be at fault. Since this technique is efficient in
-practice, it is attractive for large modern software systems ~\cite{Zoeteweij:2007:DES:1251988.1253298}.
-%
-% Spectrum-based fault localization (\sfl{}) is amongst the most common statistical
-% fault localization technique that takes as input a test suite including at least
-% one failing test and reports on output a ranked list of components likely to be
-% in fault ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}.
-%
-% \subsection{Combination of \sfl{} and Slicing}
-%
-% Prior work has investigated the combination of dynamic slicing and
-% spectrum-based fault
-% localization ~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair}. Although
-% the methodology used in these papers vary, the overall message is that
-% the combination is valuable. Note that slicing alone does not provide
-% the guarantee of improvement to \sfl{} as statements discarded with
-% slicing could have been ranked lower compared to faulty
-% statements. This paper differs from prior work in that it uses a much
-% larger dataset of programs and faults and a more rigorous experimental
-% methodology.
+popular automated fault localization techniques. Spectrum-based fault localization (\sfl{}) is amongst the most common statistical
+fault localization technique used to rank faulty components ~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. This technique uses tests coverage information to rank program's components. We suspect that several highly suspicious components—often involved in failing, but seldom in passing test runs—may be unrelated to the bug. Prior work has investigated the \ds{}-\sfl{} combination~\cite{Wotawa:2010:FLB:1848650.1849235,Alves:2011:FUD:2190078.2190115,DBLP:conf/ecai/HoferW12,lei-mao-dai-wang-2012,slicing-sfl-repair,christi2018reduce}. Overall,
+these studies reported promissing results but based their conclusions on a very small group of faults and using different techniques. Although, \ds{} does not ensure the improvement of \sfl{} since it can remove faulty statements from the failing test, we believe it has a great potential to help reducing test cases and improve \sfl{} accuracy. In this study, a larger set of faults is evaluated and a more rigorous experimental methodology.
+
 % %
 \section{Conclusions and Future Work}
 \label{sec:conc}
