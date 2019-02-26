@@ -731,7 +731,9 @@ amount of code from the best ranked files. Table \ref{tab:red} shows,
 as percentages, the size reduction of the top files obtained with
 dynamic slicing for different values of $k$. Overall, results indicate
 that dynamic slicing substantially reduces the size of highly-ranked
-files. \Mar{+ coverage?}
+files.
+
+%\Mar{+ coverage?}
 
 %\Mar{sofia, it would be more convincing if you (additionally)
 %  show reduction wrt to the the parts of the file that are covered.}
@@ -922,6 +924,11 @@ that performs better, missing only $23$ out of the
 
 \subsubsection{RQ3: \textit{\rqthree}}
 
+%% k=10
+\newcommand{\numOutPerformed}{$33$}%
+\newcommand{\numEquallyPerformed}{$110$}%
+
+
 In \textbf{RQ3}, we evaluate the impact of combining \ds{} with \sfl{}
 to improve fault localization. The first experiment we ran consists of
 measuring the \emph{difference of diagnosis cost} between the two
@@ -931,35 +938,32 @@ studies~\cite{7390282,ang-perez-van-deursen-rui-2017,Pearson:2017:EIF:3097368.30
 More specifically, we computed $\Delta{}C = C(\textrm{SFL$^{k}$}) -
 C(\textrm{\combpar{k}})$, where $C$ denotes the diagnosis cost and is
 obtained by computing the mean position in the ranking of all buggy
-statements. $\Delta C >0$ means that \combpar{k} outperformed the
-baseline, \ie{} the mean position of the faulty statements is smaller
-in \combpar{k} compared to that of the baseline. $\Delta C <0$ means
-that \combpar{k} performs worse compared to its baseline. That could
-happen if dynamic slicing misses the faulty statement. $\Delta C=0$
-means that the faulty statement remained in the same position.  It is
-worth noting that we assume perfect bug
+statements. $\Delta C <0$ means that \combpar{k} performs worse
+compared to its baseline. That could happen if dynamic slicing misses
+the faulty statement. $\Delta C=0$ means that the faulty statement
+remained in the same position. $\Delta C >0$ means that \combpar{k}
+outperformed the baseline, \ie{} the mean position of the faulty
+statements is smaller in \combpar{k} compared to that of the
+baseline. It is worth noting that we assume perfect bug
 understanding~\cite{Parnin:2011:ADT:2001420.2001445}, i.e., if the
 developer sees the bug in the ranking, he is able to precisely
-determine if it is the faulty one.
+determine if it is the faulty one.  Figure \ref{fig:diagnosis}
+summarizes the performance of \combpar{k} relative to
+\sfl{}$^{k}$. The figure shows a histogram over $\Delta{}C$ for
+different values of $k$. Note that (1) the number of cases where the
+baseline outperforms \combpar{k} is small (\eg{}, \numOutPerformed\ of
+the \numFaults\ faults for $k=10$) and that (2) the number of cases
+\combpar{k} outperforms the baseline is significative (\eg{}, $117$ of
+the \numFaults\ faults for $k=10$).
 
-%% k=10
-\newcommand{\numOutPerformed}{$33$}%
-\newcommand{\numEquallyPerformed}{$110$}%
-
-Figure \ref{fig:diagnosis} summarizes performance of \combpar{k}
-relative to \sfl{}$^{k}$. The figure shows a histogram over
-$\Delta{}C$ for different values of $k$. Note that (1) the number of
-cases where the baseline outperforms \combpar{k} is small (\eg{},
-\numOutPerformed\ of the \numFaults\ faults for $k=10$) and that (2)
-the number of cases \combpar{k} outperforms the baseline is
-significative (\eg{}, $117$ of the \numFaults\ faults for $k=10$). One
-of the following reasons justifies the baseline outperforming
-\combpar{k}:\Mar{following sentence is confusing IMO. suggest to
-  clarify or remove. aren't points two and three equivalent? as for
-  one, isn't foo an issue both for \combpar{k} and \sfl{}$^{k}$?} (1)
-a fault of omission, (2) the test has design limitations which \ds~is
-not capable of handling, or (3) the buggy-class in not in the top $k$
-of the highest-ranked faulty classes under analysis.
+%% One
+%% of the following reasons justifies the baseline outperforming
+%% \combpar{k}:\Mar{following sentence is confusing IMO. suggest to
+%%   clarify or remove. aren't points two and three equivalent? as for
+%%   one, isn't foo an issue both for \combpar{k} and \sfl{}$^{k}$?} (1)
+%% a fault of omission, (2) the test has design limitations which \ds~is
+%% not capable of handling, or (3) the buggy-class in not in the top $k$
+%% of the highest-ranked faulty classes under analysis.
 
 %% For $k=5$, we observe that in $30$ ($11.5\%$) of the faults the
 %% position of faulty statements decreases in the ranking, $97$($37.3\%$)
@@ -1067,25 +1071,23 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x 
   \label{table:st}
 \end{table}
 
-
-Table \ref{table:st}
-presents the statistics to determine if the observed results are
-statistically significant. Shapiro-Wilk tests the null hypothesis that
-results are drawn from a normal distribution. The test is perfomed for
-all techniques and both $k$s. With $99\%$ of confidence, the
-results tell us that the distributions are not normal. Given that $C$
-is not normally distributed, we use Friedman test, a non-parametric
-statistical test of hypothesis. The null hypothesis is that the
-ranking results of all techniques for each $k$ are the same. With
-$99\%$ confidence, the results show that the distributions are
-distinct. To understand which techniques perform differently, \ie{} to answer
-the question \textit{Does \combpar{k} perform differently than
-\sfl{}$^{k}$}, we performed a Siegel post-hoc analysis. Figure
-\ref{fig:performance} reports the results of Siegel analysis for all
-pairs of techniques. Each square represents the
-statistical significance of the diagnostic accuracy amongst the different
-techniques, i.e., if it is significant it means that the techniques perform
-differently. We can determine with $95\%$ confidence that the
+Table \ref{table:st} presents the statistics to determine if the
+observed results are statistically significant. Shapiro-Wilk tests the
+null hypothesis that results are drawn from a normal distribution. The
+test is perfomed for all techniques and values of $k$. With $99\%$
+confidence, the results tell us that the distributions are not
+normal. Given that $C$ is not normally distributed, we used Friedman, a
+non-parametric statistical test of hypothesis. The null hypothesis is
+that the rankings obtained with all techniques and variants are the
+same. With $99\%$ confidence, the results show that the distributions
+are distinct. To understand which techniques perform differently,
+\ie{}, to answer the question \textit{Does \combpar{k} perform
+  differently than \sfl{}$^{k}$}, we performed a Siegel post-hoc
+analysis. Figure \ref{fig:performance} reports results. Each square
+shows the statistical significance of the difference in diagnostic
+accuracy amongst the different techniques--the lighter color and
+smaller value of $p$ indicates higher significance. Based on these
+results, it is possible to determine with $95\%$ confidence that the
 performance of each pair of techniques is different.
 
 \begin{figure}[h]
@@ -1096,14 +1098,16 @@ performance of each pair of techniques is different.
 		\vspace{-0.3cm}
 \end{figure}
 
-As the results are statistically significant, it is possible to state that \combpar{k}
-has a positive effect on the localization of some types of bugs. There is indeed a
-problem on using slicing on fault of omission bugs that needs further research.
-Although, this dataset has more than $50\%$ of fault of omissions, our
-simple slicing approach was capable of improving the ranking of $95$ faults for $k=5$
-and $115$ faults for $k=10$. These are promissing results from what Automated
-Program Repair techniques may directly benefit to improve the accuracy of their own
-techniques.
+As the results are statistically significant, it is possible to state
+that \combpar{k} has a positive effect on the localization of some
+types of bugs. There is indeed a problem on using slicing on fault of
+omission bugs that needs further research.  Although, this dataset has
+more than $50\%$ of fault of omissions, our simple slicing approach
+was capable of improving the ranking of $95$ faults for $k=5$ and
+$115$ faults for $k=10$. \Mar{Sofia, acho mais apropriado colocar isto
+  em conclusions}These are promissing results from what Automated
+Program Repair techniques may directly benefit to improve the accuracy
+of their own techniques.
 
 
 \subsection{Threats to validity}
