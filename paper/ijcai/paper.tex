@@ -222,8 +222,8 @@ observed with the test execution on the original program. The
 Lithium minimization process starts by determining the initial size---in
 number of lines---of chunks to delete from the input file. For that,
 it chooses the highest power of two number smaller than the file
-size. For example, if the file has 1,000 lines, Lithium sets the
-initial chunk size to 512 lines. Then, the tool starts a local search looking
+size. For example, if the file has $1,000$ lines, Lithium sets the
+initial chunk size to $512$ lines. Then, the tool starts a local search looking
 for chunks to exclude from the file. If the chunk satisfies the oracle it is removed.
 When no more chunks of that given size can be removed, Lithium
 divides the chunk size by two and repeats the search. This iterative
@@ -261,9 +261,9 @@ approach was to use as the slicing criterion the stack trace
 associated with the test failure. That decision increases the chances
 that the sliced program will follow a path to the error similar to
 that followed by the original program.
-There are faults whose outputs
+In addition, there are faults whose outputs
 may slightly differ from one execution to another. For example,
-exceptions including memory addresses identifiers, which change on
+exceptions including memory address identifiers, which change on
 each execution. For these cases, it was developed a mechanism to compare the
 rest of the output ignoring the identifier of the memory address.
 
@@ -430,7 +430,7 @@ work in tandem to solve the fault localization problem. To illustrate
 the idea behind \combpar{}, consider a debugging scenario with five
 components $c_{1..5}$ and five transactions $t_{1..5}$, two of which
 are failing. Consider, additionally, that the component $c_2$ is
-faulty.  Figure~\ref{fig:illustration} shows, at the left-hand side of
+faulty. Figure~\ref{fig:illustration} shows, at the left-hand side of
 the arrow ($\Rightarrow$), an hypothetical spectra and its
 corresponding ranking, produced with the Ochiai predictor. Each line
 in the ranking shows, respectively, the rank/position, the component
@@ -438,7 +438,7 @@ label, and the Ochiai score (in parentheses).
 
 We illustrate the workflow of the \comb{} approach for this scenario
 in the following. Let us analyze components at the granularity of
-statements.  First, \comb{} picks the first two statements at the top
+statements. First, \comb{} picks the first two statements at the top
 of the ranking, $c_4$ and $c_3$, for further analysis.  (The cutoff
 point is user-defined.) Second, the technique picks a failing test to
 slice the code, say $t_2$. A slice is a set of statements. Let us
@@ -954,16 +954,11 @@ different values of $k$. Note that (1) the number of cases where the
 baseline outperforms \combpar{k} is small (\eg{}, \numOutPerformed\ of
 the \numFaults\ faults for $k=10$) and that (2) the number of cases
 \combpar{k} outperforms the baseline is significative (\eg{}, $117$ of
-the \numFaults\ faults for $k=10$).
-
-%% One
-%% of the following reasons justifies the baseline outperforming
-%% \combpar{k}:\Mar{following sentence is confusing IMO. suggest to
-%%   clarify or remove. aren't points two and three equivalent? as for
-%%   one, isn't foo an issue both for \combpar{k} and \sfl{}$^{k}$?} (1)
-%% a fault of omission, (2) the test has design limitations which \ds~is
-%% not capable of handling, or (3) the buggy-class in not in the top $k$
-%% of the highest-ranked faulty classes under analysis.
+the \numFaults\ faults for $k=10$). One
+of the following reasons justifies the baseline outperforming
+\combpar{k}: (1)
+a fault of omission or (2) the test has design limitations which \ds~is
+not capable of handling (mentioned in Section~\ref{sec:slicing}).
 
 %% For $k=5$, we observe that in $30$ ($11.5\%$) of the faults the
 %% position of faulty statements decreases in the ranking, $97$($37.3\%$)
@@ -976,7 +971,6 @@ the \numFaults\ faults for $k=10$).
 %% decrease in the ranking is $33$ ($12.7\%$).
 
 \begin{figure}[h]
-	\vspace{-0.3cm}
 		\centering
 		\includegraphics[width=0.415\textwidth]{figures/performance.pdf}
 		\vspace{-0.4cm}
@@ -984,40 +978,40 @@ the \numFaults\ faults for $k=10$).
 		\label{fig:diagnosis}
 \end{figure}
 
-\Mar{Sofia, vc. precisa revisar com mais cuidado os dois proximos paragrafos...}
+% \Mar{Sofia, vc. precisa revisar com mais cuidado os dois proximos paragrafos...}
 
-Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$ for
-different sets of faults as to better understand the performance of
-\combpar{k}. 
-\Sof{This is not correct}
-On the left-hand-side, we show distributions of
-$\Delta{}C$, for different values of $k$, considering all cases where
-the predicate $\Delta{}C\geq{}0$ holds, \ie{}, we excluded the
-\numOutPerformed\ cases where \sfl{}$^{k}$ outperformed \combpar{k}
-(see Figure~\ref{fig:diagnosis}). The boxplots on the right-hand-side
-of the figure considers all the cases where the predicate
-$\Delta{}C>0$ holds, \ie{}, it additionally excludes from the dataset
-the cases of faults where the techniques perform equally.\Sof{Needs to be reverted}
-\Mar{sofia,
-  are you sure there are no zeros in this dataset? The min. in this
-  distibution (as per the base of the plot) seems to be 0.}\Sof{Yes, check hangouts} To sum,
-although we observed a relatively small number cases where $\Delta{}C$
+Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$ considering all the 
+cases where the predicate $\Delta{}C>0$ holds, \ie{}, it additionally excludes from the dataset
+the cases of faults where the techniques perform equally for at least one $k$. 
+To sum, although we observed a relatively small number of cases where $\Delta{}C$
 is negative (\numOutPerformed) and a high number of cases $\Delta{}C$
-is zero (\numEquallyPerformed), we observed that there is a
+is zero (\numEquallyPerformed), we conclude that there is a
 considerable amount of cases where the use of \combpar{k} would be
 very beneficial.
+% On the left-hand-side, we show distributions of
+% $\Delta{}C$, for different values of $k$, considering all cases where
+% the predicate $\Delta{}C\geq{}0$ holds, \ie{}, we excluded the
+% \numOutPerformed\ cases where \sfl{}$^{k}$ outperformed \combpar{k}
+% (see Figure~\ref{fig:diagnosis}).
+
+
+% The boxplots on the right-hand-side
+% of the figure considers all the cases where the predicate
+% $\Delta{}C>0$ holds, \ie{}, it additionally excludes from the dataset
+% the cases of faults where the techniques perform equally.\Sof{Needs to be reverted}
+% \Mar{sofia,
+%   are you sure there are no zeros in this dataset? The min. in this
+%   distibution (as per the base of the plot) seems to be 0.}\Sof{Yes, check hangouts} 
+
 
 \begin{figure}[h]
 		\vspace{-0.2cm}
 		\centering
-		\includegraphics[width=0.49\textwidth]{figures/boxplot.pdf}
-		\vspace{-0.6cm}
+		\includegraphics[width=0.45\textwidth]{figures/boxplot.pdf}
+		\vspace{-0.4cm}
 
-		\caption{Distributions of $\Delta{}C$. On the left, distribution
-        considering all faults but those manifesting faults of
-        omission and engineering problems (227 faults). On the right,
-        distribution considering all cases where \combpar{k}
-        outperformed the baseline (116 faults).}
+		\caption{Distributions of $\Delta{}C$ considering all cases where \combpar{k}
+        outperformed the baseline}
 		\label{fig:boxplot}
 		\vspace{-0.2cm}
 \end{figure}
@@ -1028,7 +1022,7 @@ distributions of $C$ for the techniques under different values of $k$.
 In bold, we present the results of the $227$ faults that do not
 comprise the cases that are result of the limitations mentioned before
 (test design and fault of omission). The number in parentheses are
-relative to the dataset including all data faults; note that results
+relative to the dataset including all data faults; \Sof{improve}note that results
 for this dataset are \emph{not} encouraging.
 
 These results show that \ds{}
@@ -1060,11 +1054,11 @@ files, is very beneficial for fault localization performance.
      \toprule
   & \multicolumn{2}{c|}{$k=5$} & \multicolumn{2}{c}{$k=10$} \\
   & SFL  & \comb\       & SFL                & \comb\              \\ \midrule
-Mean  & \textbf{590.7} (584.3) & \textbf{573.4} (679.7)   &  \textbf{512.7} (516.4)    & \textbf{506.6} (614.0)   \\ \midrule
-Median & \textbf{46.5} (49.4) & \textbf{42.7} (69.3)      & \textbf{54.5} (53.0) & \textbf{40.0} (56.9)\\ \midrule
-Variance & \textbf{1257.0} (1223.1) & \textbf{1239.1} (1352.4)  &  \textbf{1171.5} (1148.1) &  \textbf{1167.0} (1294.9) \\ \midrule
-Shapiro-Wilk &\makecell{$W$ = 0.52 \\ $p$ = 1.75 x $10^{-24}$} & \makecell{$W$ = 0.51 \\ $p$ = 1.10 x $10^{-24}$} & \makecell{$W$ = 0.48 \\ $p$ = 2.50 x $10^{-25}$} &  \makecell{$W$ = 0.48 \\ $p$ = 2.26 x $10^{-25}$}  \\ \midrule
-Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x $10^{-35}$}} \\
+Mean  & \textbf{779.3} (584.3) & \textbf{738.2} (679.7)   &  \textbf{630.6} (516.4)    & \textbf{611.9} (614.0)   \\ \midrule
+Median & \textbf{187.7} (49.4) & \textbf{167.2} (69.3)      & \textbf{167.2} (53.0) & \textbf{107.5} (56.9)\\ \midrule
+Variance & \textbf{1218.3} (1223.1) & \textbf{1186.3} (1352.4)  &  \textbf{1058.4} (1148.1) &  \textbf{1048.6} (1294.9) \\ \midrule
+Shapiro-Wilk &\makecell{$W$ = 0.67 \\ $p$ = 9.64 x $10^{-15}$} & \makecell{$W$ = 0.66 \\ $p$ = 5.59 x $10^{-15}$} & \makecell{$W$ = 0.63 \\ $p$ = 1.09 x $10^{-15}$} &  \makecell{$W$ = 0.63 \\ $p$ = 8.95 x $10^{-16}$}  \\ \midrule
+Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 175.18 \\ p-value = 9.71 x $10^{-38}$}} \\
 \bottomrule
 \end{tabular}
   \caption {Statistical tests for $C$}
@@ -1091,7 +1085,7 @@ results, it is possible to determine with $95\%$ confidence that the
 performance of each pair of techniques is different.
 
 \begin{figure}[h]
-	\vspace{-1.8cm}
+	\vspace{-1cm}
 		\includegraphics[width=0.45\textwidth]{figures/heatmap_nemenyi_result.pdf}
 		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
@@ -1104,9 +1098,8 @@ types of bugs. There is indeed a problem on using slicing on fault of
 omission bugs that needs further research.  Although, this dataset has
 more than $50\%$ of fault of omissions, our simple slicing approach
 was capable of improving the ranking of $95$ faults for $k=5$ and
-$115$ faults for $k=10$. \Mar{Sofia, acho mais apropriado colocar isto
-  em conclusions}These are promissing results from what Automated
-Program Repair techniques may directly benefit to improve the accuracy
+$115$ faults for $k=10$. These may be promissing results from what Automated
+Program Repair (APR) techniques may directly benefit to improve the accuracy
 of their own techniques.
 
 
