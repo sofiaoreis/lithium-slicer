@@ -852,7 +852,7 @@ otherwise. Table~\ref{table:fsws} shows results, indicating that
 \sfl{}$^{k}$. In only two cases, highlighted in gray color,
 \sfl{}$^{k}$ outperformed \combpar{k}. These results show that the
 majority of faulty statements are found on the $5$ highest ranked
-faulty classes and that \combpar{10} is the variant of our approach
+faulty classes and that \combpar{10} is the technique
 that performs better, missing only $23$ out of the
 \numFaults\ ($\sim$8.8\%) faults.
 
@@ -1071,15 +1071,14 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 162.61 \\ p-value = 5.00 x 
   \label{table:st}
 \end{table}
 
-
 Table \ref{table:st} presents the statistics to determine if the
 observed results are statistically significant. Shapiro-Wilk tests the
 null hypothesis that results are drawn from a normal distribution. The
-test is perfomed for all techniques and its variants. With $99\%$ of
+test is perfomed for all techniques and values of $k$. With $99\%$
 confidence, the results tell us that the distributions are not
-normal. Given that $C$ is not normally distributed, we use Friedman, a
+normal. Given that $C$ is not normally distributed, we used Friedman, a
 non-parametric statistical test of hypothesis. The null hypothesis is
-that the ranking results of all techniques and variants are the
+that the rankings obtained with all techniques and variants are the
 same. With $99\%$ confidence, the results show that the distributions
 are distinct. To understand which techniques perform differently,
 \ie{}, to answer the question \textit{Does \combpar{k} perform
