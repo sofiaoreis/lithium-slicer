@@ -972,7 +972,7 @@ not capable of handling (mentioned in Section~\ref{sec:slicing}).
 
 \begin{figure}[h]
 		\centering
-		\includegraphics[width=0.415\textwidth]{figures/performance.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/performance.pdf}
 		\vspace{-0.4cm}
 		\caption{Delta Cost of Diagnosis ($\Delta{}C$) per $k$}
 		\label{fig:diagnosis}
@@ -981,13 +981,13 @@ not capable of handling (mentioned in Section~\ref{sec:slicing}).
 % \Mar{Sofia, vc. precisa revisar com mais cuidado os dois proximos paragrafos...}
 
 Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$ considering all the 
-cases where the predicate $\Delta{}C>0$ holds, \ie{}, it additionally excludes from the dataset
-the cases of faults where the techniques perform equally for at least one $k$. 
+cases where the predicate $\Delta{}C>0$ holds, \ie{}, it focuses only
+on the cases \combpar{k} outperformed the baseline technique.
 To sum, although we observed a relatively small number of cases where $\Delta{}C$
-is negative (\numOutPerformed) and a high number of cases $\Delta{}C$
-is zero (\numEquallyPerformed), we conclude that there is a
-considerable amount of cases where the use of \combpar{k} would be
-very beneficial.
+is negative (\numOutPerformed) and a high number of cases where $\Delta{}C$
+is zero (\numEquallyPerformed), there is a
+considerable amount of cases where $\Delta{}C$ is positive and for
+those cases \combpar{k} seems very beneficial.
 % On the left-hand-side, we show distributions of
 % $\Delta{}C$, for different values of $k$, considering all cases where
 % the predicate $\Delta{}C\geq{}0$ holds, \ie{}, we excluded the
@@ -1019,23 +1019,20 @@ very beneficial.
 In the following, we present statistical analysis of the techniques.
 Table~\ref{table:st} reports descriptive statistics about the
 distributions of $C$ for the techniques under different values of $k$.
-In bold, we present the results of the $227$ faults that do not
-comprise the cases that are result of the limitations mentioned before
-(test design and fault of omission). The number in parentheses are
-relative to the dataset including all data faults; \Sof{improve}note that results
-for this dataset are \emph{not} encouraging.
+In bold, we present the results for the $227$ faults corresponding to
+the cases where $\Delta(C)\geq{}0$. The number in parentheses are
+relative to the dataset including all faults.
 
-These results show that \ds{}
-improves \sfl{} in a mean of $6$ ($3.3\%$ on average) statements on
-the average ranking of all faulty statements, when considering
-$k=10$.
-However, if we only consider
-the faults which can benefit from our approach, we can observe that
-there is a considerable amount of cases where the approach is actually
-successful. For $k=5$, our approach achieves a mean improvement of
-$41.1$ ($9.57\%$ on average) statements on the ranking and an
-impressive maximum ranking improvement of $3171$ ($96.7\%$ on average)
-statements. Whereas for $k=10$, \combpar{k} achieves a mean
+%% These results show that \ds{}
+%% improves \sfl{} in a mean of $6$ ($3.3\%$ on average) statements on
+%% the average ranking of all faulty statements, when considering
+%% $k=10$.
+
+We observe the following when considering the faults which can benefit
+from \comb\ (numbers in bold). For $k=5$, \comb\ achieves a mean
+improvement of $41.1$ ($9.57\%$ on average) statements on the ranking
+and an impressive maximum ranking improvement of $3171$ ($96.7\%$ on
+average) statements. For $k=10$, \combpar{k} achieves a mean
 improvement of $19$ ($13.35\%$ on average) statements on the ranking
 and a maximum ranking improvement of $209$ ($73.7\%$ on average)
 statements. Such difference is justified by the fact that entire files
