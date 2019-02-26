@@ -1112,19 +1112,22 @@ of their own techniques.
 
 \subsection{Threats to validity}
 %
-A potential threat to \textit{external validity} related to the set of programs used in
+A potential threat to \textit{external validity} relates to the set of programs used in
 our study. When choosing the projects for our study, our aim was to opt for
 projects that resemble a general and large-sized application. To reduce
 selection bias and facilitate the comparison of our results, we decided to
 choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}.
-It is importance to notice that our study does not evaluate the fault of the \closure{}
-project since it requires high CPU to perform the \combpar{k} evaluation. A potential
-threat to \textit{construct validity} relates to the choice of oracle generation
-for the Lithium toolset. However, we argue that our choice is able to capture whether
-a program is failing because of the same reason.
+Our study did not evaluate the faults from the \closure{}
+project because of the high CPU cost of running \combpar{k} on it. A potential
+threat to \textit{construct validity} relates to the choice of oracle
+we used for the Lithium slicer. We found empirically that our choice was able to capture 
+the faults for the cases we analyzed.
 The main threat to \textit{internal validity} lies in the complexity of several of the tools
 used in our experiments, most notably the Lithium toolset, the SFL diagnosis tool,
-and the implementation of \comb{}.
+and the implementation of \comb{}. To mitigate this threat, we
+carefully inspected our code and looked for discrepancies and
+incoherences in our results.
+
 %
 \section{Related Work}
 
