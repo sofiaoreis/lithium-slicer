@@ -1177,9 +1177,9 @@ highest-ranked faulty classes.
 \label{sec:conc}
 %
 
-Several approaches have been proposed in the literature to improve debugging
-costs through automated software fault diagnosis to reduce time-to-market,
-while maintaining high quality standards. In this domain, Dynamic Slicing (\ds)
+Several approaches have been proposed in the literature to reduce debugging
+costs through automated software fault diagnosis with the goal of
+improving productivity in software developement. In this domain, Dynamic Slicing (\ds)
 and Spectrum-based Fault Localization (\sfl) are very popular fault diagnosis
 techniques and normally seen as complementary. This paper reports the outcome of
 a study using real-world applications with the goal of demystifying the impact
@@ -1187,15 +1187,24 @@ of combining \ds~with \sfl. The results of our empirical study show that, in
 practice, \ds~rarely misses faulty statements $9\%$ ($23$ misses in $260$ cases) and that
 the \ds-\sfl~combination, coined as \combpar{k},
 improves the diagnostic accuracy up to $73.7\%$ ($13.4\%$ on average).
-Hence, we found that, despite tacit opinions of the research community about
-the usefulness of \ds~in automated debugging, we found the combination practical
-and effective, and encourage new \sfl~techniques to be evaluated against that
-optimization.
-Future work is as follows: improve our oracle heuristics to handle more exceptions;
-conduct experiments in more \dfj{} faults or other datasets; find techniques to
-handle the cases which harm the cost of diagnosis, such as, faults of omission,
-test design problems and the cases which the buggy-class is not in the top-$k$ of
-highest-rank faulty classes.
+
+Despite tacit opinions of the research community about the usefulness
+of \ds~in automated debugging, we found te \ds{}-\sfl{} combination
+practical (as per the relatively low number of misses) and effective
+(as per the improvements of $\Delta(C)$ on the relevant cases), and
+encourage new \sfl~techniques to be evaluated against that
+optimization.  Future work includes 1)~improving our oracle heuristics
+to handle more exceptions, 2)~conducting experiments in more \dfj{}
+faults and other datasets, and 3)~handling cases of faults of
+omission.
+
+The dataset and tools (Lithium slicer and \comb{}) will be made
+available once double-blind requirements are lifted.
+
+%% the
+%% cases which harm the cost of diagnosis, such as, faults of omission,
+%% test design problems and the cases which the buggy-class is not in the
+%% top-$k$ of highest-rank faulty classes.
 
 %
 %\section*{Acknowledgments}
