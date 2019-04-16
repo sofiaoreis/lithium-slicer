@@ -5,7 +5,7 @@
 **issue 1:** Not sure if this point needs comments.
 > The approach itself, i.e., combining the mentioned debugging approaches is not that novel (as also indicated in the paper) and there are other papers describing such improvements. This is definitely a weakness of this paper. However, there is an empirical evaluation that is novel capturing important research questions. 
 
-**issue 2:** 
+**issue 2:** Not in the paper. Should be mentioned in the paper (Threats to Validity).
 > Of course – and like other similar paper – the study is limited to some programs and generalization is always questionable. 
 
 **issue 3:** 
@@ -19,7 +19,7 @@ Explain why it can be worse.
 **issue 5:** 
 > In addition, there is no discussion of drawbacks behind the approach. Spectrum-based fault localization is successful because it does not require a lot of tools and can be more or less easily adapted for other programming languages. This is not the case for slicing. For slicing we require to know not only that a test case is failing but also to identify all output variables that deliver wrong values. In case of exceptions (as discussed a little bit in the paper) we may also use different slicing approaches to improve the results. There is some work on dynamic slicing in case of exceptions. 
 
-**issue 6:** 
+**issue 6:** This issue is addressed in threats to validity...
 > Moreover, slicing needs more time for analysis and running time might become an issue.
 
 ### Review 252039:
