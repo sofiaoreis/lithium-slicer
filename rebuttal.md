@@ -57,7 +57,7 @@ Focus on model-based diagnosis!
 
 > Baah, George K., Alexander Gray, and Mary Jean Harrold. "On-line anomaly detection of deployed software: a statistical machine learning approach." Proceedings of the 3rd international workshop on Software quality assurance. ACM, 2006.
 
-**note:** this seems to be a point we should address in the rebuttal using Rui's paper (*Evaluating and improving fault localization*).
+**note:** Should the next point be addressed in the rebuttal using Rui's paper (*Evaluating and improving fault localization*) ?
 * An obvious improvement would be to parameterize the approach to  allow plugging in multiple different ranking algorithms. That  immediately raises the question: does the observation that the rank of faulty statements cannot decrease if the slice includes the  faulty statements also work with other ranking algorithms than  Ochiai? 
 
 * It feels that calling the observation a theorem is a bit  ambitious. Perhaps such property is something to characterize the ranking algorithms by?
