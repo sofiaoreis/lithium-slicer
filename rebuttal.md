@@ -24,7 +24,7 @@ Explain why it can be worse.
 
 ### Review 252039:
 
-No problems found on this review. 
+Thank to the reviewer for the proposal for future work and say that the formality of the whole paper and minor issues will be improved and fixed.
 
 ### Review 263473:
 
