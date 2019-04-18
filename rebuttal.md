@@ -2,35 +2,23 @@
 
 ### Review 210912:
 
-** issue 1:**
-> The approach itself, i.e., combining the mentioned debugging approaches is not that novel (as also indicated in the paper) and there are other papers describing such improvements. This is definitely a weakness of this paper. However, there is an empirical evaluation that is novel capturing important research questions. 
-
-**issue 2:** Not in the paper. Should be mentioned in the paper (Threats to Validity).
-> Of course – and like other similar paper – the study is limited to some programs and generalization is always questionable. 
-
-**issue 3:** 
-I think the reviewer is confused because we present the results of DS two times in different tables.
-> From Table 3 and Table 4 we see that basically slicing alone leads to improvements, because the values for Tandem-FL and slicing are the same. 
-
 **issue 4:** 
 Explain why it can be worse.
 > I am also wondering why there is a small value for commons-lang in case of k=10 when compared with k=5? I would assume that taking care of more statements should improve debugging performance.
-
-**issue 5:** 
-> In addition, there is no discussion of drawbacks behind the approach. Spectrum-based fault localization is successful because it does not require a lot of tools and can be more or less easily adapted for other programming languages. This is not the case for slicing. For slicing we require to know not only that a test case is failing but also to identify all output variables that deliver wrong values. In case of exceptions (as discussed a little bit in the paper) we may also use different slicing approaches to improve the results. There is some work on dynamic slicing in case of exceptions. Moreover, slicing needs more time for analysis and running time might become an issue.
 
 **Rebuttal:**
 
 We kindly thank the reviewer for the comments and questions raised on our work.
 
-In fact, we did not address the limitation regarding programs and generalization. We will add this discussion to Threats to Validity.
+As the title states, we intend to demystify the combination of Dynamic Slicing with Spectrum-based Fault Localization. Previous research have already shown impact and importance of both techniques - combined and separated. However, from the studies available about combining these two techniques, it was not yet clear if DS could help SBFL on obtaining more accurate results and how great would that improvement be. Thus, we find that our research questions and results might be important to guide researchers on performing research based on the combination of both techniques.
 
+We have not address the limitation regarding programs and generalization. Thus, we will fix and add this discussion to Threats to Validity.
 
-The results k=10 suffer a decrease because the slicer is evaluating 10 full classes instead of only 5. For each k, we evaluate if at least one of the buggy-lines of the k classes is on the slicer report. When the 10 classes (k=10) are evaluated, there might be some of the buggy-lines that were not taken into account for k=5 that are being evaluated now and are not found in the report. 
+In table 3, we present the results for dynamic slicing alone whereas in table 4 we present the results of SFL vs. Tandem-FL for each k. Dynamic slicing in table 3 is the same as Tandem-FL in table 4. Thus, the values are the same. We only presented the same results in different views. On table 3, we intend to show the evolution of Tandem-FL/dynamic slicing between different k's (k=5 and k=10) and focus solely on the dynamic slicing performance on finding faulty statements for different k's. Whereas, in table 4, our goal is to show the difference between SFL and Tandem-FL for each k. We understand that this might create some confusion. Thus, we will try to improve it.
 
-< not sure yet how to answer issue 5>
+_The results k=10 suffer a decrease because the slicer is evaluating 10 full classes instead of only 5. For each k, we evaluate if at least one of the buggy-lines of the k classes is on the slicer report. When the 10 classes (k=10) of fault are evaluated, there might be some of the buggy-lines that were not taken into account for k=5 that are being evaluated now and are not found in the report._ (!! not finished yet)
 
-Regarding the point about slicing running time needs, we indirectly touch on that in Threats to Validity when it is mentioned that the faults from the Closure compiler project were not evaluated because of the high CPU cost of the technique. Yet, we will clarify it.
+These techniques have a few pratical limitations. We can only ensure that the proposed technique will work with defects4j programs because we generalized our function of interess according with the type of failling tests messages that exist on the dataset. Thus, some messages with very specific characteristics may not provide valide results. However, we intend to make clear what type of observed faults the tools is able to evaluate and turn the tool open-source after publishing it. Analysis and running time it is an issue, specially, in programs where the codebases are larger such as the Closure Compiler. Therefore, we also plan to take action on this point and add parallelization mechanisms to this type of techniques.
 
 ### Review 252039:
 
