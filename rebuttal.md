@@ -2,7 +2,7 @@
 
 ### Review 210912:
 
-**issue 1:** Not sure if this point needs comments.
+needs to be addressed?
 > The approach itself, i.e., combining the mentioned debugging approaches is not that novel (as also indicated in the paper) and there are other papers describing such improvements. This is definitely a weakness of this paper. However, there is an empirical evaluation that is novel capturing important research questions. 
 
 **issue 2:** Not in the paper. Should be mentioned in the paper (Threats to Validity).
@@ -23,6 +23,13 @@ Explain why it can be worse.
 > Moreover, slicing needs more time for analysis and running time might become an issue.
 
 **Rebuttal:**
+
+We kindly thank the reviewer for the comments and questions raised on our work.
+
+In fact, we did not address the limitation regarding programs and generalization. We will add this discussion to Threats to Validity.
+
+
+Regarding the point about slicing running time needs, we indirectly touch on that in Threats to Validity when it is mentioned that the faults from the Closure compiler project were not evaluated because of the high CPU cost of the technique. Yet, we will clarify it.
 
 ### Review 252039:
 
