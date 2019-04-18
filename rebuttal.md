@@ -22,38 +22,47 @@ Explain why it can be worse.
 **issue 6:** This issue is addressed in threats to validity...
 > Moreover, slicing needs more time for analysis and running time might become an issue.
 
-**ANSWER:**
+**Rebuttal:**
 
 ### Review 252039:
 
-**ANSWER:**
+**Rebuttal:**
 
-We kindly thank the reviewer for the feedback on our work. We will make sure that the paper's formality will be improved. Minor issues will also be addressed. We will definitely explore the statistical machine learning approach in future work.
+We kindly thank the reviewer for its insights and comments on our work. 
+
+We will make sure that the paper's formality will be improved and that minor issues will also be addressed. We will definitely explore the statistical machine learning approach in future work.
 
 ### Review 263473:
 
-**issue 7:** 
-Should we try to address this review?
-> The work is important and the authors have been very careful with applying a methodological approach. However, it seems that such refactoring contributions seem to better fit into the journal setting where the reviewers can actually take a look at the proposed implementation and the authors are not so constrained with space.
-
+**Issues:** 
 > * An obvious improvement would be to parameterize the approach to  allow plugging in multiple different ranking algorithms. That  immediately raises the question: does the observation that the rank of faulty statements cannot decrease if the slice includes the  faulty statements also work with other ranking algorithms than  Ochiai? It feels that calling the observation a theorem is a bit  ambitious. Perhaps such property is something to characterize the ranking algorithms by?
 > * A more labour intensive approach would be to also parameterize  the approach over different slicing implementations, or at least  foresee the need and make it very clear how to change the slicing algorithm. It is very nice that the authors have started with critical slicing as one of the earlier appropriate approaches.
 > * Perhaps the approach should be called DS-SBFL instead of Tandem-FL?  The reason being that there are multiple things that could be used  in tandem in the fault localisation context (for example a tandem of  some symbolic FL approach with an additional technique).
 > * Theorem 1 is not a theorem, it is rather an observation, because it  depends on the simplifications used by the slicing  algorithm.
 > * Theorem 2 is actually a property of the Ochiai ranking formula, not a theorem.
 
-**ANSWER:**
+**Rebuttal:**
 
+We thank the reviewer for the feedback provided on our work. 
 
+Regarding the question about if claim 2 is also true for other ranking algorithms, there is a possibility this might not be true. To answer your question, the present work needs to be extended. We plan to investigate the veracity of claim 2 using other ranking algorithms, such as, Tarantula, Op2, Barinel and etc. This, however remains for future work.
+
+< Still have to justify why have we not compared with other slicing approaches >
+
+< Not sure what to say about the name, do we agree?>
+
+We agree that our theorems are rather observations or properties of the ranking algorithm. Thus, these misconceptions will be addressed on the paper.
 
 ## Review 263474:
 
 **issue 8:** 
 > I have not the highest confidence with the field but my feeling is that the problem is interesting and the results are valuable. My only concern is whether the **investigated issue fits the main topics of the conference** (no comment of author(s) helps in this sense). For sure this kind of paper would be more appropriate in conferences on software engineering, validation and testing. In those venues I had proposed acceptance. In this context I’m a little bit puzzled.
 
-**ANSWER:**
+**Rebuttal:**
 
-We kindly thank the reviewer for the comments on our work. As we mention in section 2, applications of model-based diagnosis to localize software faults have demonstrated that can be framed as dynamic slicing which is the technique proposed to improve software fault localization. Model-based diagnosis is a well-known approach that has been proposed by the diagnosis community. This community develops algorithms and techniques that leverage AI to determine the rootcause of observed faults. We agree that this paper will be a good suit in software engineering, validation and testing conferences but we also strongly believe that this paper can be published at IJCAI since we are applying AI to improve SBFL.
+We kindly thank the reviewer for the comments on our work. 
+
+As we mention in section 2, applications of model-based diagnosis to localize software faults have demonstrated that can be framed as dynamic slicing which is the technique proposed to improve software fault localization. Model-based diagnosis is a well-known approach that has been proposed by the diagnosis community. This community develops algorithms and techniques that leverage AI to determine the rootcause of observed faults. We agree that this paper will be a good suit in software engineering, validation and testing conferences but we also strongly believe that this paper can be published at IJCAI since we are applying AI to improve SBFL.
 
 ## Other points
 
