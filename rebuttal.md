@@ -53,7 +53,7 @@ Should we try to address this review?
 
 **ANSWER:**
 
-We kindly thank the reviewer for the comments on our work. As we mention in section 2, applications of model-based diagnosis to localize software faults have demonstrated that can be framed as dynamic slicing which is the technique proposed to improve software fault localization. Model-based diagnosis is a well-known approach that has been proposed by the diagnosis community. This community develops algorithms and techniques that leverage AI to determine the rootcause of observed faults. We agree that this paper will be a good suit in software engineering, validation and testing conferences but we also strongly believe that IJCAI can be the home to this paper since we are applying AI to improve SBFL.
+We kindly thank the reviewer for the comments on our work. As we mention in section 2, applications of model-based diagnosis to localize software faults have demonstrated that can be framed as dynamic slicing which is the technique proposed to improve software fault localization. Model-based diagnosis is a well-known approach that has been proposed by the diagnosis community. This community develops algorithms and techniques that leverage AI to determine the rootcause of observed faults. We agree that this paper will be a good suit in software engineering, validation and testing conferences but we also strongly believe that this paper can be published at IJCAI since we are applying AI to improve SBFL.
 
 ## Other points
 
