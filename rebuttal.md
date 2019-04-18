@@ -29,6 +29,10 @@ We kindly thank the reviewer for the comments and questions raised on our work.
 In fact, we did not address the limitation regarding programs and generalization. We will add this discussion to Threats to Validity.
 
 
+The results k=10 suffer a decrease because the slicer is evaluating 10 full classes instead of only 5. For each k, we evaluate if at least one of the buggy-lines of the k classes is on the slicer report. When the 10 classes (k=10) are evaluated, there might be some of the buggy-lines that were not taken into account for k=5 that are being evaluated now and are not found in the report. 
+
+< not sure yet how to answer issue 5>
+
 Regarding the point about slicing running time needs, we indirectly touch on that in Threats to Validity when it is mentioned that the faults from the Closure compiler project were not evaluated because of the high CPU cost of the technique. Yet, we will clarify it.
 
 ### Review 252039:
