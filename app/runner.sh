@@ -13,14 +13,15 @@ fi
 
 PROJECT=$1 # project name
 BUG=$2 # bugs
+TOP=$3 # k from top-k
 BASEPATH=$(pwd)
 
-INPUTS="inputs-${PROJECT}_${BUG}" # data filename
+INPUTS="inputs-${PROJECT}_${BUG}_${TOP}" # data filename
 
 # generates a document that contains the inputs to run the minimizer
-gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug 5)
-echo $gen_inputs
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP")
 if [[ $gen_inputs == *"FAILED"* ]]; then
+    echo 'failed'
     exit 1;
 fi
 
@@ -30,12 +31,13 @@ while read line; do
     CLASSES=$(echo $line | cut -f4 -d " ")
     EXPECTED_MSG_PATH=$(echo $line | cut -f5 -d " ")
 
-    # run defects4j and lithium
+    #run defects4j and lithium
     python3 run_lithium.py --project $PROJECT \
     --bug_number $BUGNUMBER \
     --test_case $TESTCASE \
     --classes $CLASSES \
-    --expected_msg_path $EXPECTED_MSG_PATH
+    --expected_msg_path $EXPECTED_MSG_PATH \
+    --top $TOP
 
 done < "$BASEPATH/$INPUTS"
 

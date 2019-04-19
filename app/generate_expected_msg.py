@@ -1,18 +1,14 @@
 #! /usr/bin/python3
-import argparse, os
+import argparse, os, tempfile
 from utils import json_to_dict, get_testname_expected_msg, call_cmd
 
 main = argparse.ArgumentParser()
-main.add_argument("--output", type=str, nargs=1, help="The output path to save the seed file")
 main.add_argument("--project", type=str, nargs=1, help="Project name")
 main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 corresponde to all
-main.add_argument("--files_per_bug", type=str, nargs=1, default="10", help="Max quantity of files per bug")
 
 args = main.parse_args()
 project_name = args.project[0]
 bugs = args.bugnumber[0]
-output = args.output[0]
-max_files_per_bug = int(args.files_per_bug[0])
 
 def is_input_number_valid(bug_numbers, project_data_path):
     """ check if a bug number exists in Project data directory """
@@ -38,9 +34,8 @@ def get_source_path(project_name):
 
     return paths[project_name]
 
-def generate_seed(project, bugnumber, output):
+def generate_seed(project, bugnumber):
     """ generates a file that contains json info to run d4j and lithium """
-    global max_files_per_bug
     initial_projects = ["Chart", "Lang", "Closure", "Math", "Mockito", "Time"]
     if project not in initial_projects:
         raise Exception("Project {} invalid. Please select one of {}".format(project, initial_projects))
@@ -73,34 +68,34 @@ def generate_seed(project, bugnumber, output):
     else:
         bugnumbers = [doc for doc in os.listdir(project_path) if doc in bugnumbers]
     
-    with open(output, "w") as seed_file:
         # for each bug
-        for bug in bugnumbers:
+    for bug in bugnumbers:
             data = json_to_dict(os.path.join(project_path, bug))
             bug_number = bug.replace(".json", "")
-            classes = []
-            # get rankings from morpho's report
-            for item in data["rankings"]:
-                java_file = os.path.join(source_path, item["class"])
-                if java_file not in classes:
-                    classes.append(java_file)
-                    if len(classes) == max_files_per_bug:
-                        break
 
-            # get the top-k classes
-            if len(classes) > 1:
-                classes = ",".join(classes) # converts [classA, classB] to classA,classB
-            else:
-                classes = classes[0] # get only line
-
+            # getting the expected message
             expected_dir = 'expected/'+project_name+'/'
-            expected_msg_path = expected_dir+bug_number
+            if not os.path.exists(expected_dir):
+                os.makedirs(expected_dir)
             
-            for test in data['failing']:
-                testcase = test['test']
-                seed_file.write(
-                        "{} {} {} {} {}\n".format(project, bug_number, testcase, classes, expected_msg_path)
-                    )
+            expected_msg_path = expected_dir+bug_number
+            project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
+            output_filepath = project_dir+'/failing_tests'
+            print('output_filepath=', output_filepath)
+            expected_msg = []
+            failing = ''
+            
+            runtest_script = "bash run_input_test.sh {PROJECTDIR} {PROJECT} {BUG}"
+            cmd_str = runtest_script.format(PROJECTDIR=project_dir, PROJECT=project_name, BUG=bug_number+'b')
+            output = call_cmd(cmd_str) # call shell script
+            if os.path.isfile(output_filepath):
+                    with open(output_filepath) as out_fail:
+                        failing = out_fail.readlines()
+                
+            with open(expected_msg_path,"w+") as expected:
+                expected.write(
+                    "{}".format(''.join(failing))
+                )
 
-generate_seed(project_name, bugs, output)
+generate_seed(project_name, bugs)
 

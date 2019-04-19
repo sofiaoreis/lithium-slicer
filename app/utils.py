@@ -1,5 +1,10 @@
+#! /usr/bin/python3
 import json, re, shlex, difflib, os
-from subprocess import Popen, PIPE, STDOUT, call
+from subprocess import STDOUT, CalledProcessError, check_output, Popen, PIPE, call
+from timeout_decorator import timeout, TimeoutError
+from shlex import split
+
+timeout_seconds = 120
 
 def json_to_dict(json_path):
     """ 
@@ -129,19 +134,49 @@ def get_locs(origin_file, minimized_file):
 def check_obj_comparison(expected_msg, output_msg):
     """ returns True if the messages compare the same object """
     # expected:<...ClassName@MemoryAddress...> but was:<...ClassName@MemoryAddress...>
-    obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
-    search_expected = re.search(obj_comparison_pattern, expected_msg)
-    search_output = re.search(obj_comparison_pattern, output_msg)
+    obj_comparison_pattern = (
+        r'junit.framework.AssertionFailedError: expected:(\<.+\@.+\>).+but was.+(\<.+\@.+\>)',
+        r'junit.framework.AssertionFailedError: expected:(\<.+ \[CL\]T\>) but was.+(\<.+ \[PS\]T\>)'
+        )
+    
+    needs_object_comp = False
+    i = 0
+    for p in obj_comparison_pattern:
+        needs_object_comp = True if re.search(p, expected_msg) else False
+        search_expected = re.search(p, expected_msg)
+        search_output = re.search(p, output_msg)
+        if needs_object_comp:
+            break   
+        i+=1 
+            
     if search_expected and search_output:
-        expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
-        output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
+        if i == 0:
+            expected = search_expected.group(1).split('@')[0], search_expected.group(2).split('@')[0]
+            output = search_output.group(1).split('@')[0], search_output.group(2).split('@')[0]
+        elif i == 1:
+            expected = search_expected.group(1).split(' ')[1], search_expected.group(2).split(' ')[1]
+            print('expected=', expected)
+            output = search_output.group(1).split(' ')[1], search_output.group(2).split(' ')[1]
+            print('output=', output)
+            
+        print((expected[0] == output[0]) and (expected[1] == output[1]))
         return (expected[0] == output[0]) and (expected[1] == output[1])  
     return False
 
 def is_object_comparison(expected_msg):
     """ check if the message is an object comparison """
-    obj_comparison_pattern = r'.+(\<.+\@.+\>).+but was.+(\<.+\@.+\>)'
-    return re.search(obj_comparison_pattern, expected_msg) is not None
+    obj_comparison_pattern = (
+        r'junit.framework.AssertionFailedError: expected:(\<.+\@.+\>).+but was.+(\<.+\@.+\>)',
+        r'junit.framework.AssertionFailedError: expected:(\<.+ \[CL\]T\>) but was.+(\<.+ \[PS\]T\>)'
+        )
+    
+    needs_object_comp = False
+    for p in obj_comparison_pattern:
+        needs_object_comp = True if re.search(p, expected_msg) else False
+        if needs_object_comp:
+            break
+    
+    return needs_object_comp
 
 def create_json(filename, data):
     """ method to store the results in a json file """
@@ -162,9 +197,10 @@ def get_testname_expected_msg(testname, expected):
             res.append(i)
     return res
 
-def get_to_compare(stacktrace):
+def get_to_compare(stacktrace, test):
     lines = []; ov_acm = 0
     is_overflow = re.search(r'StackOverflowError', stacktrace[0])
+    test = test.replace('::','.')
     for i in range(len(stacktrace)):
         lines.append(stacktrace[i].strip())
         buggy_line = stacktrace[i].strip()
@@ -173,7 +209,25 @@ def get_to_compare(stacktrace):
                 ov_acm +=1
             if ov_acm > 5:
                 break
-        if re.search(r'Test(.*).java',stacktrace[i]): 
+        if test in stacktrace[i]: 
             break
+    if len(lines) == len(stacktrace):
+        lines=[];
+        for i in range(len(stacktrace)):
+            lines.append(stacktrace[i].strip())
+            buggy_line = stacktrace[i].strip()
+            if re.search(r'.*Test(.*).java',stacktrace[i]):
+                break 
     return lines, buggy_line
-    
+
+@timeout(timeout_seconds) # 60s at most (compile and run test)
+def call_cmd(cmd_line):
+    cmd = split(cmd_line)
+    msg = ''
+    try:
+        msg = check_output(cmd, stderr=STDOUT).decode('utf-8')
+    except TimeoutError as e:
+        msg = 'Error: TIMEOUT'
+    except CalledProcessError as errorExc:
+        msg = errorExc.output.decode('utf-8')
+    return msg
