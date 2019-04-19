@@ -44,4 +44,4 @@ The focus of the paper is to show that dynamic slicing considerably improves SBF
 
 We kindly thank the reviewer for the comments on our work.
 
-As we mentioned in section 2, a previous studies have demonstrated that Model-based software diagnosis can be framed as dynamic slicing. This is a well-known approach that has been proposed by the diagnosis community, an AI sub-community. We agree that this paper will also be a good suit in software engineering, validation, and testing conferences but we also strongly argue that this paper is of interest of the IJCAI audience, since we are applying an AI-based technique to improve SBFL.
+As we mentioned in section 2, previous studies have demonstrated that Model-based software diagnosis (MBSD) can be framed as dynamic slicing. MBSD is a well-known approach that has been proposed by the diagnosis community, an AI sub-community. We agree that this paper will also be a good suit in software engineering, validation, and testing conferences but we also strongly argue that this paper is of interest of the IJCAI audience.
