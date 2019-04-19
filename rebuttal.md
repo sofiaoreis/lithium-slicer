@@ -5,17 +5,17 @@
 
 **Rebuttal:**
 
-Thank you for the constructive review. The key issues can be clarified and addressed easily.
+Thank you for the constructive review. 
 
-This paper is not intended to propose a new approach, but, instead, to demystify the combination of dynamic slicing and SFL. There are previous works which show the value of combining both techniques. However, the applicability of the techniques proposed by related work are questionable because they used rather small programs and seeded faults. The contribution of our paper is to demonstrate that combining both techniques work for real and large programs.
+This paper is not intended to propose a new approach, but, instead, to reassess the impact of an existing approach that combines dynamic slicing and Spectrum-based Fault Localization. Previous works show the effect of combining both techniques. However, results were inconclusive---they used rather small programs (because of limitations on their infrastructure), small number of faults, and evaluation metrics that can inflate diagnosis performance. The central contribution of our paper is to demonstrate that combining both techniques work for real and large programs.
 
-We agree with the reviewer that the conclusions we can draw from our empirical study are limited to the used programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
+We agree with the reviewer that the conclusions we can draw from our empirical study are limited to the used programs and therefore generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
 
-Table 3 and 4 show different views we thought were adequate to answer RQ2, but we realize that they should be further clarified. As dynamic slicing produces a set, hence not being possible to select the top-k components, what is reported in Table 3 is Tandem-FL. Our decision to call it dynamic slicing alone was unfortunate and leads to confusion. Perhaps the best is to only include current table 4.
+Tables 3 and 4 show different views we thought were adequate to answer RQ2, but we realize that they should be further clarified. Dynamic slicing produces a set of components (e.g., statements). As such, it is not possible to rank results and select the top-k components. For that reason, Table 3 reports the results of Tandem-FL. Our decision to call it dynamic slicing alone was unfortunate and leads to confusion. Perhaps the best is to only include current table 4.
 
-After double-checking the empirical results, the decrease in table 3 and 4 for commons-lang is due to a typo. The percentage of faults for k=5 is also 96.9%. Further, we double-checked all other values, they stand correct. This will be clarified.
+After double-checking the empirical results, we found that the decrease in value pointes on tables 3 and 4 for commons-lang is due to a typo. The percentage of faults for k=5 is also 96.9%. We double-checked all other values, and confirm that are correct. This will be clarified.
 
-It is a fact that the implementation of our approach does not come without practical limitations. We can only ensure that the current implementation works with Defects4j programs only because we generalized our function of interest according to the type of failing messages that exist on the dataset. Thus, some messages with specific characteristics may not provide valid results in other datasets. However, we intend to make clear what type of observed faults the tool is able to evaluate and turn the tool open-source after publishing the paper. Analysis and running time may be an issue, especially, in programs where the codebases are rather large. Therefore, we also plan to take action on this point and add parallelization mechanisms to this type of techniques.
+It is a fact that the implementation of our approach does not come without practical limitations. We can only ensure that the current implementation works with Defects4j programs only because we generalized our function of interest according to the type of failing messages that exist on the dataset. This generalization does not cover all cases. Although this can be customized, as it is, lithium-slicer may not produce valid results in other datasets. However, we intend to make clear what type of observed faults the tool is able to evaluate and turn the tool open-source after publishing the paper. Analysis and running time may be an issue, especially for programs where the codebases are rather large. Therefore, we also plan to take action on this point and add parallelization mechanisms to this type of techniques.
 
 ### Review 252039:
 
