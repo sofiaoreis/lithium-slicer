@@ -5,7 +5,7 @@
 
 **Rebuttal:**
 
-We kindly thank the reviewer for the comments and questions raised on our work.
+Thank you for the constructive review. The key issues can be clarified and addressed easily.
 
 This paper is not intended to propose a new approach, but, instead, to demystify the combination of dynamic slicing and SFL. There are previous works which show the value of combining both techniques. However, the applicability of the techniques proposed by related work are questionable because they used rather small programs and seeded faults. The contribution of our paper is to demonstrate that combining both techniques work for real and large programs.
 
