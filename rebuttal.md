@@ -13,7 +13,7 @@ We agree with the reviewer that the conclusions we can draw from our empirical s
 
 Table 3 and 4 present different views to answer RQ2, and should be clarified. As dynamic slicing produces a set, hence not being possible to select the top-k components, what is reported in Table 3 is Tandem-FL. Our decision to call it dynamic slicing alone was unfortunate and leads to confusion. Perhaps the best is to only include current table 4.
 
-After double-checking the empirical results, the decrease in table 3 and 4 for commons-lang is due to a typo. The percentage of faults for k=5 is also 96.9%. Further, we double-checked all other values, they stand correct. This will be fixed.
+After double-checking the empirical results, the decrease in table 3 and 4 for commons-lang is due to a typo. The percentage of faults for k=5 is also 96.9%. Further, we double-checked all other values, they stand correct. This will be clarified.
 
 It is a fact that the implementation of our approach does not come without practical limitations. We can only ensure that the current implementation works with Defects4j programs only because we generalized our function of interest according to the type of failing messages that exist on the dataset. Thus, some messages with specific characteristics may not provide valid results in other datasets. However, we intend to make clear what type of observed faults the tool is able to evaluate and turn the tool open-source after publishing the paper. Analysis and running time may be an issue, especially, in programs where the codebases are rather large. Therefore, we also plan to take action on this point and add parallelization mechanisms to this type of techniques.
 
