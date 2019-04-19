@@ -11,9 +11,7 @@ This paper is not intended to propose a new approach, but, instead, to demystify
 
 We agree with the reviewer that our empirical study is limited to some programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
 
-Table 3 and 4 are the different present different views to answer RQ2.
-
-In Table 3, we present the results for dynamic slicing alone whereas in Table 4 we present the results of SFL vs. Tandem-FL for each k. Dynamic slicing in table 3 is the same as Tandem-FL in table 4. Thus, the values are the same. We only presented the same results in different views. On table 3, we intend to show the evolution of Tandem-FL/dynamic slicing between different k's (k=5 and k=10) and focus solely on the dynamic slicing performance on finding faulty statements for different k's. Whereas, in table 4, our goal is to show the difference between SFL and Tandem-FL for each k. We understand that this might create some confusion, and will be clarified.
+Table 3 and 4 are present different views to answer RQ2. [missing 2nd part of DS vs Tandem-FL and DS being a set]
 
 We double-checked the empirical results and the decrease observed in table 3 and 4 for commons-lang is a typo. The percentage of faults for k=5 is also 96.9%. We have double-checked all other values, they stand correct. This will be fixed.
 
