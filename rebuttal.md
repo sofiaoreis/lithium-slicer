@@ -11,7 +11,7 @@ This paper is not intended to propose a new approach, but, instead, to demystify
 
 We agree with the reviewer that our empirical study is limited to some programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
 
-Table 3 and 4 are present different views to answer RQ2. [missing 2nd part of DS vs Tandem-FL and DS being a set]
+Table 3 and 4 present different views to answer RQ2. [missing 2nd part of DS vs Tandem-FL and DS being a set]
 
 We double-checked the empirical results and the decrease observed in table 3 and 4 for commons-lang is a typo. The percentage of faults for k=5 is also 96.9%. We have double-checked all other values, they stand correct. This will be fixed.
 
