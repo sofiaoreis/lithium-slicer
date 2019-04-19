@@ -11,7 +11,7 @@ This paper is not intended to propose a new approach, but, instead, to demystify
 
 We agree with the reviewer that the conclusions we can draw from our empirical study is limited to the used programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
 
-Table 3 and 4 present different views to answer RQ2, and should be clarified. As dynamic slicing produces a set, hence not being possible to select the top-k components, what is reported in Table 3 is Tandem-FL. Our decision to call it dynamic slicing alone was unfortunate and leads to confusion. Perhaps the best is to only include current table 4.
+Table 3 and 4 show different views we thought were adequate to answer RQ2, but we realize that they should be further clarified. As dynamic slicing produces a set, hence not being possible to select the top-k components, what is reported in Table 3 is Tandem-FL. Our decision to call it dynamic slicing alone was unfortunate and leads to confusion. Perhaps the best is to only include current table 4.
 
 After double-checking the empirical results, the decrease in table 3 and 4 for commons-lang is due to a typo. The percentage of faults for k=5 is also 96.9%. Further, we double-checked all other values, they stand correct. This will be clarified.
 
