@@ -9,7 +9,7 @@ We kindly thank the reviewer for the comments and questions raised on our work.
 
 This paper is not intended to propose a new approach, but, instead, to demystify the combination of dynamic slicing and SFL. There are previous works which show the value of combining both techniques. However, the applicability of the techniques proposed by related work are questionable because they used rather small programs and seeded faults. The contribution of our paper is to demonstrate that combining both techniques work for real and large programs.
 
-We agree with the reviewer that the conclusions we can draw from our empirical study is limited to the used programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
+We agree with the reviewer that the conclusions we can draw from our empirical study are limited to the used programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
 
 Table 3 and 4 show different views we thought were adequate to answer RQ2, but we realize that they should be further clarified. As dynamic slicing produces a set, hence not being possible to select the top-k components, what is reported in Table 3 is Tandem-FL. Our decision to call it dynamic slicing alone was unfortunate and leads to confusion. Perhaps the best is to only include current table 4.
 
