@@ -11,11 +11,11 @@ This paper is not intended to propose a new approach, but, instead, to demystify
 
 We agree with the reviewer that our empirical study is limited to some programs and therefore the generalization is always questionable. We will improve our discussion in the Threats to Validity section regarding this issue.
 
-[very problematic/confusing]
+Table 3 and 4 are the different present different views to answer RQ2.
+
 In Table 3, we present the results for dynamic slicing alone whereas in Table 4 we present the results of SFL vs. Tandem-FL for each k. Dynamic slicing in table 3 is the same as Tandem-FL in table 4. Thus, the values are the same. We only presented the same results in different views. On table 3, we intend to show the evolution of Tandem-FL/dynamic slicing between different k's (k=5 and k=10) and focus solely on the dynamic slicing performance on finding faulty statements for different k's. Whereas, in table 4, our goal is to show the difference between SFL and Tandem-FL for each k. We understand that this might create some confusion, and will be clarified.
 
-[Problematic text: this leads to a reject! No apologies.]
-In commons-lang, the performance of capturing faulty statements of k=10 should be equal to k=5 or higher. The 100% cases for k=5 include two faults of omission (limitation mentioned in RQ3) which were not filtered when the report was retrieved. We apologize for that, the mistake has been fixed.
+We double-checked the empirical results and the decrease observed in table 3 and 4 for commons-lang is a typo. The percentage of faults for k=5 is also 96.9%. We have double-checked all other values, they stand correct. This will be fixed.
 
 These techniques have a few practical limitations. We can only ensure that the proposed technique will work with Defects4j programs because we generalized our function of interest according to the type of failing tests messages that exist on the dataset. Thus, some messages with very specific characteristics may not provide valid results. However, we intend to make clear what type of observed faults the tool is able to evaluate and turn the tool open-source after publishing it. Analysis and running time it is an issue, especially, in programs where the codebases are larger such as the Closure Compiler. Therefore, we also plan to take action on this point and add parallelization mechanisms to this type of techniques.
 
