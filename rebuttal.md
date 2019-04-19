@@ -23,7 +23,7 @@ It is a fact that the implementation of our approach does not come without pract
 
 We kindly thank the reviewer for its insights and comments on our work.
 
-We will ascertain that the paper's formality will be improved as well as the minor issues will be addressed. Exploring the statistical machine learning approach remains as future work.
+We will ascertain that the paper's formality will be improved as well as the minor issues will be addressed. Exploring the statistical machine learning approach remains as future work, though.
 
 ### Review 263473:
 
