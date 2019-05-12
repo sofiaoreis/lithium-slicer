@@ -30,7 +30,7 @@
 
 - [ ] My only concern is whether the investigated issue fits the main topics of the conference (no comment of author(s) helps in this sense). - Improve!
 
-##### Other points to address:
+##### More points to address:
 
 - [ ] Add MBSD Connection into the conclusion
 - [ ] Defects4j Table (review)
