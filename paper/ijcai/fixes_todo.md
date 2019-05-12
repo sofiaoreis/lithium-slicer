@@ -16,13 +16,13 @@
 ##### Reviewer 2:
 
 - [ ] Formality of the whole paper
-- [ ] Theorem 1 -> Claim 1
+- [x] <del>Theorem 1 -> Claim 1</del>
 - [ ] Applications of MBSD to localize software faults have demonstrated that it ... -> which it?
 - [x] <del>Threats to validity -> Threats to Validity</del>
 
 ##### Reviewer 3:
 
-- [ ] Theorems -> Claims or observations.
+- [ ] Theorems -> Claims or observations (?!).
 - [ ] Clear indication what properties are related to which part of the combinaition, i.e. which property is due to the ranking algorithm, which due to the slicing.
 - [ ] A clear indication what needs to be done and checked in order to test alternative slicing and ranking algorithms.
 
@@ -35,7 +35,7 @@
 - [ ] Add MBSD Connection into the conclusion
 - [ ] Defects4j Table (review)
 - [ ] Coverage (Tab. 2)
-- [ ] Review paper to find references to dataset and tool publication
+- [ ] Review paper to find references to dataset and tool publication (fix them)
 - [ ] Prep. Dataset Results for publication
 - [ ] Prep. Tool for publication
  

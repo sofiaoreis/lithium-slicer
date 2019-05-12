@@ -108,5 +108,18 @@
 \usepackage{makecell}
 
 
+%%%%% Theorem -> Claim
+
+\newtheorem{thm}{Theorem} % the main one
+\newtheorem{lemma}[thm]{Lemma}
+
+\newcommand{\thistheoremname}{}
+\newtheorem{genericthm}[thm]{\thistheoremname}
+\newenvironment{namedthm}[1]
+  {\renewcommand{\thistheoremname}{#1}
+   \begin{genericthm}}
+  {\end{genericthm}}
+
+
 
 

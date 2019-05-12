@@ -2,7 +2,6 @@
 \pdfpagewidth=8.5in
 \pdfpageheight=11in
 \usepackage{ijcai19}
-% The file ijcai18.sty is the style file for IJCAI-18 (same as ijcai08.sty).
 
 \input{packages}
 \input{macros}
@@ -28,7 +27,7 @@ $^2$Federal University of Pernambuco, Brazil\\
 damorim@cin.ufpe.br
 }
 
-\hypersetup{draft}
+%\hypersetup{draft}
 \begin{document}
 
 \maketitle
@@ -223,13 +222,14 @@ process continues until no more lines can be removed.  If $n$ is the
 size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
 iterations. Proofs of the algorithm complexity can be found
-elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} (Accessed \today)}. Our implementation is publicly
-available at \textit{$<$anonymized for double-blind review$>$}.
+elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} 
+(Accessed \today)}. Our implementation is publicly available at 
+\url{https://github.com/damorim/lithium-slicer}.
 
-\begin{theorem}\label{the:1}
+\begin{namedthm}{Claim}\label{claim:1}
   The faulty statement may not be included in the critical slice of
   failing test cases.
-\end{theorem}
+\end{namedthm}
 
 If test oracles are too general, it is possible, conceptually, that
 the critical slicing algorithm produces slices without the faulty
@@ -471,10 +471,10 @@ Briefly, the workflow of \comb{} consists of four steps:
 	recompute the ranking.
 \end{enumerate}
 
-\begin{theorem}
+\begin{namedthm}{Claim}\label{claim:2}
   The rank of faulty statements cannot decrease if the slice includes
   the faulty statements.
-\end{theorem}
+\end{namedthm}
 
 The proof is based on the outlined argument that irrelevant
 components $j$ have their ranks reduced as $\N{11}$ decreases and
@@ -563,7 +563,7 @@ the size of application code. Improvements on fault localization
 depend on that ability. The second question addresses the problem that
 affects all dynamic slicing
 techniques~\cite{Lin:2018:BDE:3238147.3238163}---that of missing
-faulty statements (see Theorem~\ref{the:1}). Developers would
+faulty statements (see Claim~\ref{claim:1}). Developers would
 not be able to successfully debug code for the cases that issue is
 manifested. The third research question evaluates the impact of the
 combination, as substantiated by \comb, to fault localization.
