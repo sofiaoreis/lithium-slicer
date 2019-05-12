@@ -1,8 +1,8 @@
 # Demystifying the Combination of Dynamic Slicing and Spectrum-based Fault Localization
 
-### Prep. Camera-Ready:
+### Prep. Camera-Ready (w/o Closure) - May, 12-19:
 
-- [x] <del>Add authors</del> - Please, check if the order is correct.
+- [x] <del>Add authors</del>
 - [ ] Acknowledgments ?!
 
 ##### Reviewer 1:
@@ -30,15 +30,17 @@
 
 - [ ] My only concern is whether the investigated issue fits the main topics of the conference (no comment of author(s) helps in this sense). - Improve!
 
-##### Other issues:
-- [ ] Add MBSD Connection in the conclusion
-- [ ] Defects4j Table (review)
-- [ ] Coverage (Tab. 2) - Necessary?
+##### Other points to address:
 
-##### TODO:
- - [ ] Check Closure Results
+- [ ] Add MBSD Connection into the conclusion
+- [ ] Defects4j Table (review)
+- [ ] Coverage (Tab. 2)
+- [ ] Review paper to find references to dataset and tool publication
+- [ ] Prep. Dataset Results for publication
+- [ ] Prep. Tool for publication
+ 
+### Prep. Camera-Ready (w/ Closure)  - May, 20-31:
+
+ - [ ] Retrieve Closure Results
  - [ ] Add Closure Results to the paper
  - [ ] Re-do Abstract, Introduction, Evaluation and Conclusions using the new results
- - [ ] Prep. Dataset Results for publication
- - [ ] Prep. Tool for publication
- - [ ] Review paper to find references to dataset and tool publication
