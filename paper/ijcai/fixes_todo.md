@@ -2,7 +2,7 @@
 
 ### Prep. Camera-Ready:
 
-- [x] Add authors
+- [x] <del>Add authors</del> - Please, check if the order is correct.
 - [ ] Acknowledgments ?!
 
 ##### Reviewer 1:
@@ -18,7 +18,7 @@
 - [ ] Formality of the whole paper
 - [ ] Theorem 1 -> Claim 1
 - [ ] Applications of MBSD to localize software faults have demonstrated that it ... -> which it?
-- [x] Threats to validity -> Threats to Validity
+- [x] <del>Threats to validity -> Threats to Validity</del>
 
 ##### Reviewer 3:
 
