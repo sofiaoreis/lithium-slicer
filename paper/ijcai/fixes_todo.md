@@ -3,7 +3,7 @@
 ### Prep. Camera-Ready (w/o Closure) - May, 12-19:
 
 - [x] <del>Add authors</del>
-- [ ] Acknowledgments ?!
+- [x] Acknowledgments (Falta o Marcelo adicionar)
 
 ##### Reviewer 1:
 
@@ -22,7 +22,7 @@
 
 ##### Reviewer 3:
 
-- [ ] Theorems -> Claims or observations (?!).
+- [x] Theorems -> Claims or observations (?!).
 - [ ] Clear indication what properties are related to which part of the combinaition, i.e. which property is due to the ranking algorithm, which due to the slicing.
 - [ ] A clear indication what needs to be done and checked in order to test alternative slicing and ranking algorithms.
 
