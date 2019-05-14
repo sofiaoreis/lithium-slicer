@@ -970,8 +970,8 @@ not capable of handling (mentioned in Section~\ref{sec:slicing}).
 % \Mar{Sofia, vc. precisa revisar com mais cuidado os dois proximos paragrafos...}
 
 Figure~\ref{fig:boxplot} shows the distributions of $\Delta{}C$ considering all the 
-cases where the predicate $\Delta{}C>0$ holds, \ie{}, it focuses only
-on the cases \combpar{k} outperformed the baseline technique.
+cases where the predicate $\Delta{}C>=0$ holds, \ie{}, it focuses only
+on the cases where \combpar{k} outperformed the baseline technique in at least one $k$.
 To sum, although we observed a relatively small number of cases where $\Delta{}C$
 is negative (\numOutPerformed) and a high number of cases where $\Delta{}C$
 is zero (\numEquallyPerformed), there is a
@@ -1065,10 +1065,11 @@ are distinct. To understand which techniques perform differently,
   differently than \sfl{}$^{k}$}, we performed a Siegel post-hoc
 analysis. Figure \ref{fig:performance} reports results. Each square
 shows the statistical significance of the difference in diagnostic
-accuracy amongst the different techniques--the lighter color and
-smaller value of $p$ indicates higher significance. Based on these
-results, it is possible to determine with $95\%$ confidence that the
-performance of each pair of techniques is different.
+accuracy amongst the different techniques--the lighter color means no
+statistical significance and smaller values of $p$ indicates higher significance. 
+Based on these results, it is possible to determine with $95\%$ confidence that the
+performance of each pair of techniques is different (except for \combpar{5} 
+versus \combpar{10}, where there is no significance).
 
 \begin{figure}[h]
 	\vspace{-1cm}

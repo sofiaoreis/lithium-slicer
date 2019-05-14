@@ -22,7 +22,7 @@
 
 ##### Reviewer 3:
 
-- [x] Theorems -> Claims or observations (?!).
+- [x] <del>Theorems -> Claims or observations </del>
 - [ ] Clear indication what properties are related to which part of the combinaition, i.e. which property is due to the ranking algorithm, which due to the slicing.
 - [ ] A clear indication what needs to be done and checked in order to test alternative slicing and ranking algorithms.
 
