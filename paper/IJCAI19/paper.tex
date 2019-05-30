@@ -12,7 +12,6 @@
 \title{Demystifying the Combination of Dynamic Slicing and \\ Spectrum-based Fault
 Localization}
 
-% É esta a ordem? Se não for alterem.
 \author{
 Sofia Reis$^1$
 \and
@@ -37,8 +36,7 @@ Several approaches have been proposed to reduce debugging costs through
 automated software fault diagnosis.  Dynamic Slicing (\ds{}) and Spectrum-based
 Fault Localization (\sfl{}) are popular fault diagnosis techniques and normally
 seen as complementary. This paper reports on a comprehensive
-study\comments{--using \numFaults{} documented software faults from a credible
-dataset--} to reassess the effects of combining \ds{} with \sfl{}.  With this
+study to reassess the effects of combining \ds{} with \sfl{}.  With this
 combination, components that are often involved in failing but seldom in passing
 test runs could be located and their suspiciousness reduced. Results show that
 the \ds{}-\sfl{} combination, coined as \comb, improves the diagnostic
@@ -803,7 +801,7 @@ the top $10$ of the highest-ranked faulty classes.
 
 		\bottomrule
 	\end{tabular}
-	\caption {Dynamic Slicing performance on capturing faulty statements, as
+	\caption {\combpar{k} performance on capturing faulty statements, as
      percentages. Higher is better.}
    \label{tab:ds-cases-captured}
 

@@ -39,8 +39,3 @@
 - [ ] Prep. Dataset Results for publication
 - [ ] Prep. Tool for publication
  
-### Prep. Camera-Ready (w/ Closure)  - May, 20-31:
-
- - [ ] Retrieve Closure Results
- - [ ] Add Closure Results to the paper
- - [ ] Re-do Abstract, Introduction, Evaluation and Conclusions using the new results
