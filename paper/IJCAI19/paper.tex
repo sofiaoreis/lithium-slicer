@@ -120,15 +120,12 @@ setup.
 
 The contributions of this work are:
 \begin{itemize}
- \item[1)]~an empirical study, using
-real-world applications and bugs, on the combination of \ds{} and
-\sfl{} for bug localization of \emph{Java} faulty programs and
-\item[2)]~a
-tool, dubbed \comb{}, implementing the \ds{}-\sfl{} combination.
+ \item[1)]An empirical study, using
+real-world applications and bugs, on the combination of \ds{}-\sfl{} for bug localization of \emph{Java} faulty programs.
+\item[2)]A
+tool\footnote{Tool and dataset available at/through \url{https://github.com/damorim/lithium-slicer} (Accessed \today)}, dubbed \comb{}, implementing the \ds{}-\sfl{} combination. 
 \end{itemize}
-The
-tool as well as a replication package will be available once
-double-blind requirements are lifted.
+
 
 %% -----------------
 %% This paper reports the results of a comprehensive study to assess the
@@ -223,8 +220,7 @@ size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
 iterations. Proofs of the algorithm complexity can be found
 elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} 
-(Accessed \today)}. Our implementation is publicly available at 
-\url{https://github.com/damorim/lithium-slicer}.
+(Accessed \today)}.
 
 \begin{namedthm}{Claim}\label{claim:1}
   The faulty statement may not be included in the critical slice of
@@ -585,9 +581,7 @@ benchmark~\cite{just-defects4j-issta2014} in our evaluation.
 Table~\ref{tab:df4j} shows size, number of tests, and number of
 faults, for each considered program. Two faults from \cmath{} were not
 considered because we were unable to reproduce them in our
-environment.
-
-\lang{} is a library providing utility functions for the
+environment. \lang{} is a library providing utility functions for the
      {\small\texttt{java.lang}} API. \cmath{} is a library of
      self-contained mathematics and statistics components.\comments{
        The \closure{} is a toolset for turning JavaScript files into
@@ -792,7 +786,7 @@ the top $10$ of the highest-ranked faulty classes.
 		Project             &  \multicolumn{1}{c}{$k=5$} & \multicolumn{1}{c}{$k=10$} \\ %\combpar{5}  & \combpar{10}
 		\midrule
 
-        \lang{}            & 100.0 & 96.9\\
+        \lang{}            & 96.9 & 96.9\\
         \cmath{}           & 89.4 & 95.2\\
         %\closure{}          &  & \\
 		\chart{}			& 76.9 & 84.6 \\
@@ -898,12 +892,12 @@ that performs better, missing only $23$ out of the
        & \multicolumn{2}{c|}{$k=5$} & \multicolumn{2}{c}{$k=10$} \\
 		 Project        &   \sfl{}   & \comb &   \sfl{}   & \comb\\
 		\midrule
-		 \lang{}         &   84.6   & 100.0 & 84.6 & 96.9  \\
+		 \lang{}         &   84.6   & 96.9 & 84.6 & 96.9  \\
 		\cmath{}           & 81.7 & 89.4 & 85.6 & 95.2 \\
 		\chart{}           & {\cellcolor{Gray} 84.6} & {\cellcolor{Gray}76.9} & {\cellcolor{Gray}92.3} & {\cellcolor{Gray}84.6}\\
 		\jtime{}           & 77.8 & 81.5 & 81.5 & 85.2\\
 		\mockito{}           & 63.2 & 71.1 & 71.1 & 78.9\\   \midrule
-		Total         & 79.6 & 87.3 & 83.5 & 91.2\\
+		Total         & 79.6 & 86.5 & 83.5 & 90.4\\
 		\bottomrule
 	\end{tabular}
   \caption {Number of faults where at least one of the faulty
@@ -961,7 +955,7 @@ not capable of handling (mentioned in Section~\ref{sec:slicing}).
 
 \begin{figure}[h]
 		\centering
-		\includegraphics[width=0.45\textwidth]{figures/performance.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/performance.png}
 		\vspace{-0.4cm}
 		\caption{Delta Cost of Diagnosis ($\Delta{}C$) per $k$}
 		\label{fig:diagnosis}
@@ -996,7 +990,7 @@ those cases \combpar{k} seems very beneficial.
 \begin{figure}[h]
 		\vspace{-0.2cm}
 		\centering
-		\includegraphics[width=0.45\textwidth]{figures/boxplot.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/boxplot.png}
 		\vspace{-0.4cm}
 
 		\caption{Distributions of $\Delta{}C$ considering all cases where \combpar{k}
@@ -1011,12 +1005,6 @@ distributions of $C$ for the techniques under different values of $k$.
 In bold, we present the results for the $227$ faults corresponding to
 the cases where $\Delta(C)\geq{}0$. The number in parentheses are
 relative to the dataset including all faults.
-
-%% These results show that \ds{}
-%% improves \sfl{} in a mean of $6$ ($3.3\%$ on average) statements on
-%% the average ranking of all faulty statements, when considering
-%% $k=10$.
-
 We observe the following when considering the faults which can benefit
 from \comb\ (numbers in bold). For $k=5$, \comb\ achieves a mean
 improvement of $41.1$ ($9.57\%$ on average) statements on the ranking
@@ -1030,7 +1018,7 @@ ranking of \combpar{10}. Consequently, the improvements obtained by
 the technique will not be as high if slicing on these additional files
 is unable to aggressively and safely discard statements. This also
 shows that slicing files, in addition to slicing statements from those
-files, is very beneficial for fault localization performance.
+files, is very beneficial for fault localization performance. 
 
 \begin{table}[h]
 	\tiny
@@ -1073,7 +1061,7 @@ versus \combpar{10}, where there is no significance).
 
 \begin{figure}[h]
 	\vspace{-2cm}
-		\includegraphics[width=0.48\textwidth]{figures/heatmap_nemenyi_result.pdf}
+		\includegraphics[width=0.48\textwidth]{figures/heatmap_seg_result.png}
 		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
 		\vspace{-0.3cm}
@@ -1087,7 +1075,7 @@ more than $50\%$ of fault of omissions, our simple slicing approach
 was capable of improving the ranking of $95$ faults for $k=5$ and
 $115$ faults for $k=10$. These may be promising results from what Automated
 Program Repair (APR) techniques may directly benefit to improve the accuracy
-of their own techniques.
+of their own techniques. 
 
 
 \subsection{Threats to Validity}
@@ -1096,7 +1084,7 @@ A potential threat to \textit{external validity} relates to the set of programs 
 our study. When choosing the projects for our study, our aim was to opt for
 projects that resemble a general and large-sized application. To reduce
 selection bias and facilitate the comparison of our results, we decided to
-choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}.
+choose a benchmark that is popular in the community~\cite{just-defects4j-issta2014}. 
 Our study did not evaluate the faults from the \closure{}
 project because of the high CPU cost of running \combpar{k} on it. A potential
 threat to \textit{construct validity} relates to the choice of oracle
@@ -1176,7 +1164,7 @@ of \ds~in automated debugging, we found the \ds{}-\sfl{} combination
 practical (as per the relatively low number of misses) and effective
 (as per the improvements of $\Delta(C)$ on the relevant cases), and
 encourage new \sfl~techniques to be evaluated against that
-optimization.  Future work includes 1)~improving our oracle heuristics
+optimization. Future work includes 1)~improving our oracle heuristics
 to handle more exceptions, 2)~conducting experiments in more \dfj{}
 faults and other datasets, and 3)~handling cases of faults of
 omission.
