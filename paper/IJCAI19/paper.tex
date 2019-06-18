@@ -8,8 +8,7 @@
 
 % the following package is optional:
 \usepackage{latexsym}
-
-
+\urlstyle{rm}
 
 \title{Demystifying the Combination of Dynamic Slicing and \\ Spectrum-based Fault
 Localization}
@@ -18,17 +17,14 @@ Localization}
 Sofia Reis$^1$
 \and
 Rui Abreu$^1$\and
-Marcelo D'Amorim$^2$\affiliations
+Marcelo d'Amorim$^2$\affiliations
 $^1$IST, University of Lisbon \& INESC-ID, Portugal\\
-\emails
-sofia.o.reis@tecnico.ulisboa.pt,
-rui@computer.org\\
 $^2$Federal University of Pernambuco, Brazil\\
 \emails
-damorim@cin.ufpe.br
+sofia.o.reis@tecnico.ulisboa.pt,
+rui@computer.org; damorim@cin.ufpe.br\\
 }
 
-%\hypersetup{draft}
 \begin{document}
 
 \maketitle
@@ -218,9 +214,9 @@ divides the chunk size by two and repeats the search. This iterative
 process continues until no more lines can be removed.  If $n$ is the
 size of the input file and $m$ is the size of the 1-minimal file found
 by Lithium, then Lithium usually performs $O(m\cdot\lg(n))$
-iterations. Proofs of the algorithm complexity can be found
-elsewhere\footnote{Lithium complexity available at \url{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md} 
-(Accessed \today)}.
+iterations. % Proofs of the algorithm complexity can be found
+% elsewhere\footnote{Lithium complexity available at \mbox{https://github.com/MozillaSecurity/lithium/blob/master/src/lithium/docs/algorithm.md}
+% (Accessed \today)}.
 
 \begin{namedthm}{Claim}\label{claim:1}
   The faulty statement may not be included in the critical slice of
@@ -371,8 +367,7 @@ least one failing test and reports on output a ranked list of
 components likely to be in
 fault~\cite{7390282,DBLP:conf/kbse/JonesH05,DBLP:journals/smr/LuciaLJTB14,DBLP:journals/jss/AbreuZGG09}. The
 following are given in \sfl{}: a finite set $\mathcal{C}=\set{c_1,c_2,...,c_M}$
-of $M$ system \emph{components}\footnote{A
-component can be any code artifact of arbitrary granularity
+of $M$ system \emph{components}\footnote{A component can be any code artifact of arbitrary granularity
 such as a class, a method, or a statement~\cite{DBLP:journals/stvr/HarroldRSWY00}.};
 a finite set $\mathcal{T} = \set{t_1,t_2,...,t_N}$ of $N$ system transactions,
 which correspond to records of a system execution, such as test cases;
@@ -481,8 +476,7 @@ faulty component increases. If those components appear at positions
 below the faulty components, the ranking of the faulty components is
 unaffected.\hfill{\tiny$\blacksquare$}
 
-\begin{figure}[t!]
-
+\begin{figure}[tb]
   \centering
   \begin{subfigure}{0.5\textwidth}
     {\def\arraystretch{0.9}\setlength{\tabcolsep}{3pt}
@@ -592,7 +586,7 @@ environment. \lang{} is a library providing utility functions for the
        {\small\texttt{java.util.Date}}}. \mockito{} is a mocking
      testing framework.
 
-\begin{table}[h]
+\begin{table}[tb]
   \small
   \centering
   \setlength{\tabcolsep}{4pt}
@@ -709,7 +703,7 @@ This section discusses and answers the research questions.
 %% on slicing de faults of $5$ \dfj{} projects.
 
 
-\subsubsection{\label{rq:1}RQ1: \textit{\rqone}}
+\subsubsection{\label{rq:1}RQ1: \rqone}
 
 A necessary but insufficient condition for improvement of fault
 localization with \comb{} is that dynamic slicing eliminates a high
@@ -728,7 +722,7 @@ files.
 %% $10$ of classes comprising the highest faulty statements. We observed
 %% a reduction of $30.23\%$ in the projects considered in our study.
 
-\begin{table}[h]
+\begin{table}[tb]
   \small
 	\centering
 	\setlength{\tabcolsep}{4pt}
@@ -751,7 +745,7 @@ files.
 \end{table}
 \normalsize
 
-\subsubsection{RQ2: \textit{\rqtwo}}
+\subsubsection{RQ2: \rqtwo}
 \label{rq:2}
 
 
@@ -777,7 +771,7 @@ least one faulty statement in the top $5$ of the highest-ranked faulty
 classes. This number is slightly improved to $91.2\%$ if we consider
 the top $10$ of the highest-ranked faulty classes.
 
-\begin{table}[h]
+\begin{table}[tb]
   \small
 	\centering
 	\setlength{\tabcolsep}{4pt}
@@ -883,7 +877,7 @@ that performs better, missing only $23$ out of the
 %   \label{table:fsws}
 % \end{table*}
 
-\begin{table}[h]
+\begin{table}[tb]
 	\small
 	\setlength{\tabcolsep}{3pt}
 	\centering
@@ -905,7 +899,7 @@ that performs better, missing only $23$ out of the
   \label{table:fsws}
 \end{table}
 
-\subsubsection{RQ3: \textit{\rqthree}}
+\subsubsection{RQ3: \rqthree}
 
 %% k=10
 \newcommand{\numOutPerformed}{$33$}%
@@ -953,9 +947,9 @@ not capable of handling (mentioned in Section~\ref{sec:slicing}).
 %% position remained the same are $110$ ($42.3\%$) and that suffered a
 %% decrease in the ranking is $33$ ($12.7\%$).
 
-\begin{figure}[h]
+\begin{figure}[tb]
 		\centering
-		\includegraphics[width=0.45\textwidth]{figures/performance.png}
+		\includegraphics[width=0.42\textwidth]{figures/performance.png}
 		\vspace{-0.4cm}
 		\caption{Delta Cost of Diagnosis ($\Delta{}C$) per $k$}
 		\label{fig:diagnosis}
@@ -987,12 +981,11 @@ those cases \combpar{k} seems very beneficial.
 %   distibution (as per the base of the plot) seems to be 0.}\Sof{Yes, check hangouts} 
 
 
-\begin{figure}[h]
+\begin{figure}[tb]
 		\vspace{-0.2cm}
 		\centering
-		\includegraphics[width=0.45\textwidth]{figures/boxplot.png}
+		\includegraphics[width=0.42\textwidth]{figures/boxplot.png}
 		\vspace{-0.4cm}
-
 		\caption{Distributions of $\Delta{}C$ considering all cases where \combpar{k}
         outperformed the baseline}
 		\label{fig:boxplot}
@@ -1020,8 +1013,13 @@ is unable to aggressively and safely discard statements. This also
 shows that slicing files, in addition to slicing statements from those
 files, is very beneficial for fault localization performance. 
 
-\begin{table}[h]
-	\tiny
+
+
+
+\begin{table}[tb]
+    \begin{adjustwidth}{-.5in}{-.5in}  
+
+	\scriptsize
 	\centering
 	\setlength{\tabcolsep}{3pt}
 	\begin{tabular}{@{}c|c|c|c|c@{}}
@@ -1037,6 +1035,7 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 175.18 \\ p-value = 9.71 x 
 \end{tabular}
   \caption {Statistical tests for $C$}
   \label{table:st}
+  \end{adjustwidth}
 \end{table}
 
 Table \ref{table:st} presents the statistics to determine if the
@@ -1059,12 +1058,12 @@ Based on these results, it is possible to determine with $95\%$ confidence that 
 performance of each pair of techniques is different (except for \combpar{5} 
 versus \combpar{10}, where there is no significance).
 
-\begin{figure}[h]
+\begin{figure}[tb]
 	\vspace{-2cm}
-		\includegraphics[width=0.48\textwidth]{figures/heatmap_seg_result.png}
+		\includegraphics[width=0.5\textwidth]{figures/heatmap_seg_result.png}
 		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
-		\vspace{-0.3cm}
+		\vspace{-0.2cm}
 \end{figure}
 
 As the results are statistically significant, it is possible to state
@@ -1174,14 +1173,17 @@ omission.
 %% test design problems and the cases which the buggy-class is not in the
 %% top-$k$ of highest-rank faulty classes.
 
+
 \section*{Acknowledgments}
 
 This material is based upon work supported by Fundação para a Ciência 
-e a Tecnologia (FCT), with the reference PTDC/CCI-COM/29300/2017, and by national funds also through FCT with reference UID/CEC/50021/2019.
+e a Tecnologia (FCT), with the reference PTDC/CCI-COM/29300/2017, and by 
+national funds also through FCT with reference UID/CEC/50021/2019.
+This research was partially funded by INES 2.0, FACEPE grants PRONEX 
+APQ 0388-1.03/14 and APQ-0399-1.03/17, and CNPq grant 465614/2014-0.
+
 
 {
-  \small
-  \balance
   \bibliographystyle{named}
   \bibliography{paper}
 }
