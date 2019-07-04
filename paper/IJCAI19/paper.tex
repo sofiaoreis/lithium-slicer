@@ -14,12 +14,13 @@
 Localization}
 
 \author{
-Sofia Reis$^1$
+Sofia Reis$^{1,2}$
 \and
-Rui Abreu$^1$ \textnormal{and}
-Marcelo d'Amorim$^2$\affiliations
-$^1$IST, University of Lisbon \& INESC-ID, Portugal\\
-$^2$Federal University of Pernambuco, Brazil\\
+Rui Abreu$^{1,2}$ \textnormal{and}
+Marcelo d'Amorim$^3$\affiliations
+$^1$IST, University of Lisbon, Portugal\\
+$^2$INESC-ID, Portugal\\
+$^3$Federal University of Pernambuco, Brazil\\
 \emails
 sofia.o.reis@tecnico.ulisboa.pt,
 rui@computer.org; damorim@cin.ufpe.br\\
@@ -345,7 +346,7 @@ rest of the output ignoring the identifier of the memory address.
 \section{Spectrum-based Fault Localization (\sfl)}
 \label{sec:sfl}
 
-\begin{wrapfigure}[8]{1}{0.25\textwidth}
+\begin{figure}[tb]
   \hspace{-2ex}
   \centering
   \scriptsize
@@ -359,7 +360,7 @@ rest of the output ignoring the identifier of the memory address.
   \end{tabular}
   \caption{An example spectrum.}
   \label{fig:spectrum-example}
-\end{wrapfigure}
+\end{figure}
 
 Spectrum-based fault localization is a statistical fault
 localization technique that takes as input a test suite including at
@@ -742,9 +743,10 @@ files.
 	\end{tabular}
 	\caption {\ds{} reduction in file size (percentages). Higher is better.}
 	\label{tab:red}
+	    \vspace{-2ex}
 \end{table}
-\normalsize
 
+\normalsize
 \subsubsection{RQ2: \rqtwo}
 \label{rq:2}
 
@@ -989,7 +991,7 @@ those cases \combpar{k} seems very beneficial.
 		\caption{Distributions of $\Delta{}C$ considering all cases where \combpar{k}
         outperformed the baseline}
 		\label{fig:boxplot}
-		\vspace{-0.2cm}
+		\vspace{-0.3cm}
 \end{figure}
 
 In the following, we present statistical analysis of the techniques.
@@ -1036,6 +1038,7 @@ Friedman & \multicolumn{4}{c}{\makecell{$\chi^{2}$ = 175.18 \\ p-value = 9.71 x 
   \caption {Statistical tests for $C$}
   \label{table:st}
   \end{adjustwidth}
+  \vspace{-2ex}
 \end{table}
 
 Table \ref{table:st} presents the statistics to determine if the
@@ -1059,11 +1062,12 @@ performance of each pair of techniques is different (except for \combpar{5}
 versus \combpar{10}, where there is no significance).
 
 \begin{figure}[tb]
-	\vspace{-2cm}
+	\vspace{-2.3cm}
 		\includegraphics[width=0.5\textwidth]{figures/heatmap_seg_result.png}
+		\vspace{-0.6cm}
 		\caption{Siegel post-hoc analysis results}
 		\label{fig:performance}
-		\vspace{-0.2cm}
+		\vspace{-0.4cm}
 \end{figure}
 
 As the results are statistically significant, it is possible to state
