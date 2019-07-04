@@ -1,0 +1,475 @@
+{
+    "rankings": [
+        {
+            "loc": "151", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/ConvergenceException.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/ConvergenceException.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/AbstractDistribution.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/AbstractDistribution.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues", 
+            "error": [
+                "org.apache.commons.math.MaxIterationsExceededException: Maximal number of iterations (10,000) exceeded", 
+                "\tat org.apache.commons.math.special.Gamma.regularizedGammaP(Gamma.java:180)", 
+                "\tat org.apache.commons.math.special.Erf.erf(Erf.java:56)", 
+                "\tat org.apache.commons.math.distribution.NormalDistributionImpl.cumulativeProbability(NormalDistributionImpl.java:109)", 
+                "\tat org.apache.commons.math.distribution.NormalDistributionTest.testExtremeValues(NormalDistributionTest.java:133)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

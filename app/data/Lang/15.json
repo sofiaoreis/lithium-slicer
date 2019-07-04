@@ -1,0 +1,3758 @@
+{
+    "rankings": [
+        {
+            "loc": "612", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "613", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "614", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "615", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "676", 
+            "score": 0.8164965809277261, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "253", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "433", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/AggregateTranslator.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/StringEscapeUtils.java"
+        }, 
+        {
+            "loc": "630", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "631", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "705", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "706", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "707", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "709", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "320", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "323", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "289", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "290", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "369", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "371", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "376", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "384", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "385", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "386", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "660", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "667", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/LookupTranslator.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/CodePointTranslator.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeEscaper.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeEscaper.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeEscaper.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeEscaper.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeEscaper.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeEscaper.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/OctalUnescaper.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/OctalUnescaper.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "210", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "245", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "276", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "290", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "293", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "294", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "301", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "305", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "306", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "307", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "310", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "311", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "313", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "320", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "321", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "322", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "323", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "324", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "325", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "326", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "327", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "330", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "332", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "334", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "371", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "387", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "396", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "397", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "400", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "401", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "409", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "377", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "386", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "417", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "419", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "422", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/EntityArrays.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/text/translate/UnicodeUnescaper.java"
+        }, 
+        {
+            "loc": "547", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "548", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "551", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "552", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "653", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "658", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "671", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "672", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "675", 
+            "score": 0.6324555320336759, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "295", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "313", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "368", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "387", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "405", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "423", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "441", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "442", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "461", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "462", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "480", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "498", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "516", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "535", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "553", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "571", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "589", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "607", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "625", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "643", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "661", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "679", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "697", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "715", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "733", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "753", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "754", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "772", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "790", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "809", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "827", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "845", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "860", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "870", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "880", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "890", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "900", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "910", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "922", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "942", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "954", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "966", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "978", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "990", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1002", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1014", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1026", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1038", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1050", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1062", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1074", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1086", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1087", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1099", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1111", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1123", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1135", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1147", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1160", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1173", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1186", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1199", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1212", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1224", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1265", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1276", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1286", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1304", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1371", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1387", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1390", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1406", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1409", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1423", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "1426", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/SystemUtils.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/JavaVersion.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "589", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "620", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "624", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "628", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "629", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "635", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "642", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "645", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "689", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "600", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "607", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "610", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "617", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "618", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "622", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "624", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "627", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "628", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "629", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "630", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "633", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "635", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "799", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "801", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "803", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "806", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "807", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "809", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "810", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "820", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "821", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "822", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "827", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "828", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "986", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "993", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "997", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "353", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "356", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "397", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "403", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "406", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "407", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "412", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "472", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "483", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "534", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "639", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "834", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "877", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "878", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "927", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "929", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "942", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "944", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "210", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }, 
+        {
+            "loc": "680", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/reflect/TypeUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<2> but was:<0>", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.failNotEquals(Assert.java:743)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:118)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:555)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:542)", 
+                "\tat org.apache.commons.lang3.reflect.TypeUtilsTest.testGetTypeArguments(TypeUtilsTest.java:505)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable", 
+            "error": [
+                "junit.framework.AssertionFailedError: type class org.apache.commons.lang3.reflect.TypeUtilsTest$Thing not assignable to org.apache.commons.lang3.reflect.TypeUtilsTest.org.apache.commons.lang3.reflect.TypeUtilsTest$This<java.lang.String, java.lang.String>!", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.assertTrue(Assert.java:41)", 
+                "\tat org.junit.Assert.assertFalse(Assert.java:64)", 
+                "\tat org.apache.commons.lang3.reflect.TypeUtilsTest.testIsAssignable(TypeUtilsTest.java:344)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

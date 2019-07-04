@@ -1,0 +1,1549 @@
+{
+    "rankings": [
+        {
+            "loc": "37", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/fitting/PolynomialFitter.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/fitting/PolynomialFitter.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/fitting/PolynomialFitter.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math3/analysis/polynomials/PolynomialFunction.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math3/linear/BlockRealMatrix.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.18569533817705186, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.18569533817705186, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.18569533817705186, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.18569533817705186, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.18569533817705186, 
+            "class": "org/apache/commons/math3/fitting/WeightedObservedPoint.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math3/fitting/CurveFitter.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.15249857033260467, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.15249857033260467, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/ModelFunctionJacobian.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/ModelFunctionJacobian.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/ModelFunctionJacobian.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/ModelFunction.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/ModelFunction.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/ModelFunction.java"
+        }, 
+        {
+            "loc": "3421", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/util/MathUtils.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/util/MathUtils.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/Weight.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/Weight.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/Weight.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/Target.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/Target.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/Target.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/MaxEval.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/MaxEval.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/MaxEval.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/optim/MaxEval.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.10721125348377948, 
+            "class": "org/apache/commons/math3/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "210", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "231", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "245", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "251", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "289", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "290", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/FastMath.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealLinearOperator.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math3/linear/RealMatrixFormat.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.10540925533894598, 
+            "class": "org/apache/commons/math3/util/Precision.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.10540925533894598, 
+            "class": "org/apache/commons/math3/util/Precision.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.10540925533894598, 
+            "class": "org/apache/commons/math3/util/Precision.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/MultivariateVectorOptimizer.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/MultivariateVectorOptimizer.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseMultivariateOptimizer.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseMultivariateOptimizer.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/util/Incrementor.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/util/Incrementor.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/util/Incrementor.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/util/Incrementor.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/util/Incrementor.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/util/Incrementor.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/jacobian/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/JacobianMultivariateVectorOptimizer.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/nonlinear/vector/JacobianMultivariateVectorOptimizer.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math3/optim/BaseOptimizer.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math3.fitting.PolynomialFitterTest::testLargeSample", 
+            "error": [
+                "java.lang.OutOfMemoryError: Java heap space", 
+                "\tat org.apache.commons.math3.linear.BlockRealMatrix.createBlocksLayout(BlockRealMatrix.java:271)", 
+                "\tat org.apache.commons.math3.linear.BlockRealMatrix.<init>(BlockRealMatrix.java:107)", 
+                "\tat org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(MatrixUtils.java:81)", 
+                "\tat org.apache.commons.math3.optim.nonlinear.vector.Weight.<init>(Weight.java:43)", 
+                "\tat org.apache.commons.math3.fitting.CurveFitter.fit(CurveFitter.java:172)", 
+                "\tat org.apache.commons.math3.fitting.CurveFitter.fit(CurveFitter.java:136)", 
+                "\tat org.apache.commons.math3.fitting.PolynomialFitter.fit(PolynomialFitter.java:68)", 
+                "\tat org.apache.commons.math3.fitting.PolynomialFitterTest.testLargeSample(PolynomialFitterTest.java:238)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)"
+            ]
+        }
+    ]
+}

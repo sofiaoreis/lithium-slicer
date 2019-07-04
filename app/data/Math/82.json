@@ -1,0 +1,1377 @@
+{
+    "rankings": [
+        {
+            "loc": "308", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "339", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "884", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "885", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "886", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "887", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "889", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "1287", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "1292", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "346", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "352", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "353", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "433", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "458", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "481", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/RealPointValuePair.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/RealPointValuePair.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/RealPointValuePair.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/RealPointValuePair.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/RealPointValuePair.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "296", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "307", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "854", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "1157", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "320", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "325", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "326", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "330", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "334", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "347", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "372", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "373", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "404", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "410", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "622", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "623", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "473", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "368", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "369", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "372", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "411", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearConstraint.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "25", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/Relationship.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "293", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "294", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "295", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "332", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "371", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "373", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "387", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "388", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "406", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "415", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "449", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "497", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexTableau.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/LinearObjectiveFunction.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/SimplexSolver.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/linear/AbstractLinearOptimizer.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/GoalType.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/GoalType.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/optimization/GoalType.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<10.0> but was:<11.5>", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.failNotEquals(Assert.java:743)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:494)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:592)", 
+                "\tat org.apache.commons.math.optimization.linear.SimplexSolverTest.testMath288(SimplexSolverTest.java:73)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

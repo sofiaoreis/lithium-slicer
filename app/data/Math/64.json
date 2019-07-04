@@ -1,0 +1,2032 @@
+{
+    "rankings": [
+        {
+            "loc": "402", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "627", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "628", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "605", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "606", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "607", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "609", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "610", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "611", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "612", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "613", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "614", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "617", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "618", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "619", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "620", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "622", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "625", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "632", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "530", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "531", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "532", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "534", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "535", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "536", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "537", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "538", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "539", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "541", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "542", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "543", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "545", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "698", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "699", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "700", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "701", 
+            "score": 0.29488391230979427, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "426", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "427", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "428", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "429", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "431", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "432", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "433", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "528", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "529", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "549", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "550", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "551", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "552", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "553", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "554", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "556", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "557", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "559", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "560", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "561", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "568", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "569", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "573", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "576", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "579", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "580", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "581", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "582", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "584", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "586", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "587", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "588", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "589", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "590", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "591", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "593", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "594", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "595", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "599", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "600", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "601", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "662", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "663", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "664", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "665", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "667", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "668", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "672", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "676", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "677", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "678", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "679", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "681", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "686", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "687", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "688", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "692", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "696", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "697", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "702", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "703", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "704", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "709", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "710", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "711", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "712", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "715", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "716", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "717", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "718", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "719", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "727", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "728", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "734", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "735", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "736", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "739", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "743", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "744", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "745", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "746", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "747", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "748", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "750", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "755", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "756", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "759", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "400", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "401", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "404", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "405", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "406", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.24618298195866545, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.24618298195866545, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "440", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/optimization/VectorialPointValuePair.java"
+        }, 
+        {
+            "loc": "849", 
+            "score": 0.20851441405707477, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "851", 
+            "score": 0.20851441405707477, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "503", 
+            "score": 0.20628424925175867, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "436", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "437", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "438", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "439", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "520", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "521", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "837", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "838", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "839", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "841", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "842", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "843", 
+            "score": 0.20203050891044214, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "290", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "293", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "296", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "298", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "308", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "309", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "310", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "311", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "312", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "313", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "322", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "346", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "352", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "353", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "365", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "368", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "369", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "371", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "376", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "377", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "380", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "381", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "384", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "385", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "386", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "388", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "392", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "407", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "412", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "414", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "415", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "416", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "417", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "435", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "449", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "452", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "455", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "460", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "462", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "493", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "494", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "496", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "500", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "501", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "502", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "505", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "510", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "511", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "512", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "513", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "514", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "515", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "517", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "518", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "519", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "859", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "860", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "861", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "862", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "863", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "865", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "866", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "867", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "870", 
+            "score": 0.2, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "245", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "253", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "786", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "787", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "788", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "789", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "790", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "791", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "793", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "797", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "800", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "801", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "802", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "803", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "804", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "805", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "806", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "808", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "812", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "813", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "814", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "817", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "821", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "822", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "823", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "826", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "827", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "828", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "829", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "832", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "833", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "836", 
+            "score": 0.19802950859533489, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "322", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "330", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "334", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "347", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/VectorialPointValuePair.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/VectorialPointValuePair.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/VectorialPointValuePair.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/optimization/VectorialPointValuePair.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.19425717247145283, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/SimpleVectorialValueChecker.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/SimpleVectorialValueChecker.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/SimpleVectorialValueChecker.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/optimization/SimpleVectorialValueChecker.java"
+        }, 
+        {
+            "loc": "626", 
+            "score": 0.16666666666666666, 
+            "class": "org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<0.2578199266368004> but was:<0.2578330049004441>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:129)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:288)", 
+                "\tat org.apache.commons.math.optimization.general.MinpackTest$MinpackFunction.checkTheoreticalMinParams(MinpackTest.java:576)", 
+                "\tat org.apache.commons.math.optimization.general.MinpackTest.minpackTest(MinpackTest.java:504)", 
+                "\tat org.apache.commons.math.optimization.general.MinpackTest.testMinpackJennrichSampson(MinpackTest.java:325)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.optimization.general.MinpackTest::testMinpackFreudensteinRoth", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<11.41300466147456> but was:<11.4121122022341>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:129)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:288)", 
+                "\tat org.apache.commons.math.optimization.general.MinpackTest$MinpackFunction.checkTheoreticalMinParams(MinpackTest.java:576)", 
+                "\tat org.apache.commons.math.optimization.general.MinpackTest.minpackTest(MinpackTest.java:504)", 
+                "\tat org.apache.commons.math.optimization.general.MinpackTest.testMinpackFreudensteinRoth(MinpackTest.java:152)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

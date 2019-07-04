@@ -1,0 +1,679 @@
+{
+    "rankings": [
+        {
+            "loc": "119", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MathException.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/MaxIterationsExceededException.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/ConvergenceException.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/ConvergenceException.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Erf.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/distribution/NormalDistributionImpl.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.23570226039551587, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.23570226039551587, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.23570226039551587, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.23570226039551587, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.23570226039551587, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.2182178902359924, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.125, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.125, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.125, 
+            "class": "org/apache/commons/math/distribution/AbstractDistribution.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.125, 
+            "class": "org/apache/commons/math/distribution/AbstractDistribution.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.distribution.NormalDistributionTest::testMath280", 
+            "error": [
+                "org.apache.commons.math.MathException: org.apache.commons.math.ConvergenceException: number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0", 
+                "\tat org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution.java:104)", 
+                "\tat org.apache.commons.math.distribution.NormalDistributionImpl.inverseCumulativeProbability(NormalDistributionImpl.java:162)", 
+                "\tat org.apache.commons.math.distribution.NormalDistributionTest.testMath280(NormalDistributionTest.java:169)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)", 
+                "Caused by: org.apache.commons.math.ConvergenceException: number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0", 
+                "\tat org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:199)", 
+                "\tat org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:127)", 
+                "\tat org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution.java:85)", 
+                "\t... 36 more"
+            ]
+        }
+    ]
+}

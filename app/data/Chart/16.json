@@ -1,0 +1,602 @@
+{
+    "rankings": [
+        {
+            "loc": "207", 
+            "score": 0.7559289460184544, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.7559289460184544, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/AbstractSeriesDataset.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/AbstractSeriesDataset.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/DatasetGroup.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/DatasetGroup.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/general/DatasetGroup.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/resources/DataPackageResources.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/resources/DataPackageResources.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/resources/DataPackageResources.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/resources/DataPackageResources.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/DataUtilities.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/DataUtilities.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/DataUtilities.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/DataUtilities.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.6172133998483676, 
+            "class": "org/jfree/data/DataUtilities.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "641", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "690", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.31622776601683794, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.31622776601683794, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "573", 
+            "score": 0.2886751345948129, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "574", 
+            "score": 0.2886751345948129, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "746", 
+            "score": 0.25, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "747", 
+            "score": 0.25, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "748", 
+            "score": 0.25, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "625", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }, 
+        {
+            "loc": "628", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/category/DefaultIntervalCategoryDataset.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetCategoryIndex", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryIndex(DefaultIntervalCategoryDataset.java:574)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testGetCategoryIndex(DefaultIntervalCategoryDatasetTests.java:415)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testSetCategoryKeys", 
+            "error": [
+                "junit.framework.AssertionFailedError", 
+                "\tat junit.framework.Assert.fail(Assert.java:55)", 
+                "\tat junit.framework.Assert.assertTrue(Assert.java:22)", 
+                "\tat junit.framework.Assert.assertTrue(Assert.java:31)", 
+                "\tat junit.framework.TestCase.assertTrue(TestCase.java:201)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testSetCategoryKeys(DefaultIntervalCategoryDatasetTests.java:444)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetSeriesIndex", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesIndex(DefaultIntervalCategoryDataset.java:242)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testGetSeriesIndex(DefaultIntervalCategoryDatasetTests.java:375)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetRowCount", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getColumnCount(DefaultIntervalCategoryDataset.java:690)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testGetRowCount(DefaultIntervalCategoryDatasetTests.java:490)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetRowIndex", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesIndex(DefaultIntervalCategoryDataset.java:242)", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getRowIndex(DefaultIntervalCategoryDataset.java:641)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testGetRowIndex(DefaultIntervalCategoryDatasetTests.java:386)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetColumnCount", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getColumnCount(DefaultIntervalCategoryDataset.java:690)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testGetColumnCount(DefaultIntervalCategoryDatasetTests.java:479)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetColumnIndex", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryIndex(DefaultIntervalCategoryDataset.java:574)", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.getColumnIndex(DefaultIntervalCategoryDataset.java:628)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testGetColumnIndex(DefaultIntervalCategoryDatasetTests.java:426)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testCloning2", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.category.DefaultIntervalCategoryDataset.clone(DefaultIntervalCategoryDataset.java:748)", 
+                "\tat org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests.testCloning2(DefaultIntervalCategoryDatasetTests.java:265)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,589 @@
+{
+    "rankings": [
+        {
+            "loc": "459", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "470", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "476", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "478", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "481", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "484", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "517", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "518", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "521", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "531", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "532", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "533", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "545", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "551", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "554", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "556", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "559", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "560", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "564", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "574", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "575", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "576", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "445", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "448", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "451", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "458", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "461", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "465", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "466", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "468", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "480", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "486", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "488", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "490", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "491", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "494", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "497", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "498", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "502", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "503", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "504", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "506", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "605", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "608", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "609", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "610", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "627", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "630", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "643", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "646", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "660", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "664", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "677", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "680", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "1287", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "1290", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "1291", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "1295", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "704", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "705", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "706", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "708", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "709", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "710", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "711", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "717", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "718", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "719", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "720", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "721", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "722", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "723", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "724", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "733", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "737", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "738", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "739", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "740", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "744", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "745", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "750", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/lang3/math/NumberUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber", 
+            "error": [
+                "java.lang.NumberFormatException: 0Xfade is not a valid number.", 
+                "\tat org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:545)", 
+                "\tat org.apache.commons.lang3.math.NumberUtilsTest.testCreateNumber(NumberUtilsTest.java:197)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

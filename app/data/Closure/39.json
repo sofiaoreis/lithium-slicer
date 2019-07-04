@@ -1,0 +1,4449 @@
+{
+    "rankings": [
+        {
+            "loc": "384", 
+            "score": 0.4082482904638631, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "385", 
+            "score": 0.4082482904638631, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "375", 
+            "score": 0.30151134457776363, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.2886751345948129, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "1165", 
+            "score": 0.23904572186687872, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.21320071635561041, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "374", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "380", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "382", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "383", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "387", 
+            "score": 0.20412414523193154, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.1796053020267749, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "365", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "366", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "365", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "369", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "372", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "373", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "392", 
+            "score": 0.17541160386140586, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "356", 
+            "score": 0.17277368511627203, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.12126781251816648, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "1314", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordType.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.11180339887498948, 
+            "class": "com/google/javascript/rhino/jstype/RecordTypeBuilder.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.1111111111111111, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.086710996952412, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.051366549693751415, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.051366549693751415, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "645", 
+            "score": 0.04965975478570227, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.029291651677583116, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "571", 
+            "score": 0.029291651677583116, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.029291651677583116, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.02905577524584723, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.02905577524584723, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.028976379389987237, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.028635785305837182, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.02795084971874737, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.02795084971874737, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.02795084971874737, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.02795084971874737, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.02795084971874737, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.02795084971874737, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "474", 
+            "score": 0.018630665602665245, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.01861129564531997, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.018563133840324784, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.018553546269482774, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.018441209775666503, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.018433375453644367, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.018433375453644367, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.018433375453644367, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.01843180978706375, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.01843180978706375, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.01843180978706375, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.01843180978706375, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "426", 
+            "score": 0.018428679650370202, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "978", 
+            "score": 0.018425551107838473, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "431", 
+            "score": 0.018307834546036322, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "432", 
+            "score": 0.018307834546036322, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "1813", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "1814", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "1885", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "1886", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "326", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "409", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "416", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "432", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "555", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "990", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1016", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1020", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1024", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1028", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1037", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1041", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "1149", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "210", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "251", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "276", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "289", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "295", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "298", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "301", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "302", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "304", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "305", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "307", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "308", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "310", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "311", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "313", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "319", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "321", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "322", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "324", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "325", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "327", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "352", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "353", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "356", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "366", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "368", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "369", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "372", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "373", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "376", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "377", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "380", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "382", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "383", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "386", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "387", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "388", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "393", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "400", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "401", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "402", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "404", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "405", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "409", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "410", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "411", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "412", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "414", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "415", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "419", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "421", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "422", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "424", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "425", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "428", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "430", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "432", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "433", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "434", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "436", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "437", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "438", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "441", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "443", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "445", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "446", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "448", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "449", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "451", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "452", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "455", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "457", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "459", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "460", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "461", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "463", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "464", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "465", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "466", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "469", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "470", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "471", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "474", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "475", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "476", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "477", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "480", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "481", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "482", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "483", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "486", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "487", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "492", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "493", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "494", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "495", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "498", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "500", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "501", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "504", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "505", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "506", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "510", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "517", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "530", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "531", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "532", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "534", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "535", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "538", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "539", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "540", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "543", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "545", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "547", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "548", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "551", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "552", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "553", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "554", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "558", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "559", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "562", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "563", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "564", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "565", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "566", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "567", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "568", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "569", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "570", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "571", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "573", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "574", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "575", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "576", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "577", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "578", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "579", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "580", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "581", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "582", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "583", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "584", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "585", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "588", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "589", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "592", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "595", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "599", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "602", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "618", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "619", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "620", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "621", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "624", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "625", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "628", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "629", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "633", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "634", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "635", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "636", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "637", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "638", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "640", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "641", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "642", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "650", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "875", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "879", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "883", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "956", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "957", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "994", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "995", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "996", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "998", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1030", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1040", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1087", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1088", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1193", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1201", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1202", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1203", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1217", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1218", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1219", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1220", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1221", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1223", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1226", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1238", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1239", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1281", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1282", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "1283", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionParamBuilder.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NullType.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NullType.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NullType.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NullType.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ValueType.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ValueType.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "310", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "311", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "319", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "352", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "366", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "374", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "375", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "376", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "380", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "382", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "388", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "403", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "407", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "496", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "756", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "757", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "758", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "759", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "761", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "988", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "989", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "997", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "998", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "1004", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "1043", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "1044", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "1046", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "1047", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "1081", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "400", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "413", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "423", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "424", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "425", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "429", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "430", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "440", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "445", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "450", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "457", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "464", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "465", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "466", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "475", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "484", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "490", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "494", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "495", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "496", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "501", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "506", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "512", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "516", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "517", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "518", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "522", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "534", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "535", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "536", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/PrototypeObjectType.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "470", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "471", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "472", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "471", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "473", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "472", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "477", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "493", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "494", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "495", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "496", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "497", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "498", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "508", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "522", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "542", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "547", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeNative.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionType.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionType.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionType.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionType.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnknownType.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnknownType.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnknownType.java"
+        }, 
+        {
+            "loc": "600", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "597", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "601", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "602", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "604", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "605", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "634", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ObjectType.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoResolvedType.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoResolvedType.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoType.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoType.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoType.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoObjectType.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoObjectType.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoObjectType.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoObjectType.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoObjectType.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NoObjectType.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ArrowType.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/InstanceObjectType.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionType.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NumberType.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NumberType.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NumberType.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/NumberType.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/BooleanType.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/BooleanType.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/BooleanType.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/BooleanType.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/StringType.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/StringType.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/StringType.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/StringType.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/VoidType.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/VoidType.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/VoidType.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/VoidType.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/AllType.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/AllType.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/AllType.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/ErrorFunctionType.java"
+        }, 
+        {
+            "loc": "519", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/JSTypeRegistry.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "251", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/UnionTypeBuilder.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.017511550487910747, 
+            "class": "com/google/javascript/rhino/jstype/FunctionBuilder.java"
+        }, 
+        {
+            "loc": "1867", 
+            "score": 0.017508866108269325, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "1868", 
+            "score": 0.017508866108269325, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "544", 
+            "score": 0.01698333902511166, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "616", 
+            "score": 0.016916381763129217, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "617", 
+            "score": 0.016916381763129217, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "618", 
+            "score": 0.016916381763129217, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "608", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "609", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "610", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "611", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "612", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "613", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "614", 
+            "score": 0.01686817997897525, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "516", 
+            "score": 0.01686458143387212, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "846", 
+            "score": 0.01686458143387212, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "847", 
+            "score": 0.01686458143387212, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "852", 
+            "score": 0.016860985190855677, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "861", 
+            "score": 0.016860985190855677, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.016860985190855677, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.016860985190855677, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.016860985190855677, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "850", 
+            "score": 0.016859786954334186, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "851", 
+            "score": 0.016859786954334186, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "854", 
+            "score": 0.016859786954334186, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.01685858897323669, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.01685858897323669, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.01685858897323669, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.01685858897323669, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "276", 
+            "score": 0.01684184400666226, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.01684184400666226, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.01684184400666226, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.01684184400666226, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "769", 
+            "score": 0.01684064984606185, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "770", 
+            "score": 0.01684064984606185, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "773", 
+            "score": 0.01684064984606185, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "782", 
+            "score": 0.01684064984606185, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "783", 
+            "score": 0.01684064984606185, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.016823958224413904, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.016823958224413904, 
+            "class": "com/google/javascript/rhino/jstype/JSType.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.016790723337274424, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.016790723337274424, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.016790723337274424, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.016790723337274424, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.016790723337274424, 
+            "class": "com/google/javascript/rhino/Node.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.014088699899813708, 
+            "class": "com/google/javascript/rhino/jstype/ProxyObjectType.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord", 
+            "error": [
+                "junit.framework.ComparisonFailure: expected:<{loop: [?], number: number, st...> but was:<{loop: [{...}], number: number, st...>", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:100)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:107)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:269)", 
+                "\tat com.google.javascript.rhino.jstype.RecordTypeTest.testRecursiveRecord(RecordTypeTest.java:59)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "com.google.javascript.rhino.jstype.RecordTypeTest::testLongToString", 
+            "error": [
+                "junit.framework.ComparisonFailure: expected:<...number, a4: number, [a5: number, a6: number]}> but was:<...number, a4: number, [...]}>", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:100)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:107)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:269)", 
+                "\tat com.google.javascript.rhino.jstype.RecordTypeTest.testLongToString(RecordTypeTest.java:76)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

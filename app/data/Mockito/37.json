@@ -1,0 +1,2423 @@
+{
+    "rankings": [
+        {
+            "loc": "49", 
+            "score": 0.2672612419124244, 
+            "class": "org/mockito/internal/stubbing/BaseStubbing.java"
+        }, 
+        {
+            "loc": "731", 
+            "score": 0.11664236870396086, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.1091089451179962, 
+            "class": "org/mockito/internal/stubbing/answers/AnswersValidator.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.10846522890932808, 
+            "class": "org/mockito/internal/stubbing/answers/AnswersValidator.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.10629880069054679, 
+            "class": "org/mockito/internal/stubbing/answers/AnswersValidator.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.10454167469786334, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.10454167469786334, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.10454167469786334, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.10454167469786334, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.10286889997472794, 
+            "class": "org/mockito/internal/stubbing/answers/AnswersValidator.java"
+        }, 
+        {
+            "loc": "13", 
+            "score": 0.10286889997472794, 
+            "class": "org/mockito/internal/stubbing/answers/AnswersValidator.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.10286889997472794, 
+            "class": "org/mockito/internal/stubbing/answers/AnswersValidator.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.09245003270420485, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.09245003270420485, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.09245003270420485, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.09245003270420485, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.09245003270420485, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.09245003270420485, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.08980265101338746, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "25", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.08687444855261388, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/debugging/Location.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.08574929257125441, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "15", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.0854357657716761, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "835", 
+            "score": 0.08528028654224416, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.08406627034183972, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "12", 
+            "score": 0.08304547985373997, 
+            "class": "org/mockito/internal/exceptions/base/StackTraceFilter.java"
+        }, 
+        {
+            "loc": "8", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SerializableNoOp.java"
+        }, 
+        {
+            "loc": "9", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/cglib/MockitoNamingPolicy.java"
+        }, 
+        {
+            "loc": "9", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/ObjectMethodsGuru.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/cglib/MockitoNamingPolicy.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/cglib/CGLIBHacker.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SerializableNoOp.java"
+        }, 
+        {
+            "loc": "14", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "15", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/cglib/MockitoNamingPolicy.java"
+        }, 
+        {
+            "loc": "15", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockName.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/SearchingClassLoader.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.08233869695926183, 
+            "class": "org/mockito/internal/creation/jmock/ClassImposterizer.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.08219949365267865, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.08219949365267865, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.08219949365267865, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "1566", 
+            "score": 0.08219949365267865, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/util/CreationValidator.java"
+        }, 
+        {
+            "loc": "13", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/GloballyConfiguredAnswer.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/answers/CallsRealMethods.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/util/MockUtil.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsMoreEmptyValues.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsMoreEmptyValues.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/Matchers.java"
+        }, 
+        {
+            "loc": "630", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "641", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "673", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "686", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "720", 
+            "score": 0.08137884587711594, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "10", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/ClassPathLoader.java"
+        }, 
+        {
+            "loc": "13", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "15", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/ClassPathLoader.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/configuration/DefaultMockitoConfiguration.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/DefaultAnnotationEngine.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/ClassPathLoader.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ArgumentMatcherStorageImpl.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ArgumentMatcherStorageImpl.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/ClassPathLoader.java"
+        }, 
+        {
+            "loc": "25", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/ClassPathLoader.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/exceptions/Reporter.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ArgumentMatcherStorageImpl.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/internal/progress/ArgumentMatcherStorageImpl.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.08124444637023875, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.06565321642986127, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "25", 
+            "score": 0.06350006350009525, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.06350006350009525, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.0625, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.062017367294604234, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.06178020632152154, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.06178020632152154, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.06178020632152154, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "1002", 
+            "score": 0.06178020632152154, 
+            "class": "org/mockito/Mockito.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.06085806194501846, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.06085806194501846, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.06063390625908324, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "14", 
+            "score": 0.0601929265428846, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.0601929265428846, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.05913123959890826, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.05913123959890826, 
+            "class": "org/mockito/internal/MockitoCore.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.05892556509887897, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.05892556509887897, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.05892556509887897, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.05892556509887897, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.05812381937190964, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.057928444636349226, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.05773502691896257, 
+            "class": "org/mockito/internal/matchers/Equals.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.05773502691896257, 
+            "class": "org/mockito/internal/matchers/Equals.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.05773502691896257, 
+            "class": "org/mockito/internal/matchers/Equals.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "31", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.05698028822981897, 
+            "class": "org/mockito/internal/util/Primitives.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.05679618342470648, 
+            "class": "org/mockito/ArgumentMatcher.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.05555555555555555, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.05555555555555555, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.05555555555555555, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.05555555555555555, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.05423261445466404, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.05423261445466404, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.053916386601719206, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.053300179088902604, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.052558833122763673, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.052558833122763673, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.05227083734893167, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.05227083734893167, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.05227083734893167, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.05212860351426869, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.05212860351426869, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.05212860351426869, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.05143444998736397, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/GloballyConfiguredAnswer.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.05143444998736397, 
+            "class": "org/mockito/configuration/DefaultMockitoConfiguration.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.05143444998736397, 
+            "class": "org/mockito/internal/configuration/GlobalConfiguration.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.051298917604257706, 
+            "class": "org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.05116445100966508, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.05063696835418333, 
+            "class": "org/mockito/internal/debugging/DebuggingInfo.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.05063696835418333, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.049875466805381644, 
+            "class": "org/mockito/internal/util/ObjectMethodsGuru.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.049875466805381644, 
+            "class": "org/mockito/internal/util/ObjectMethodsGuru.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.049875466805381644, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.04914731871829905, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.04914731871829905, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.04914731871829905, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.04902903378454601, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.04891159880445185, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.04891159880445185, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.04778184825674966, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.04778184825674966, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.046524210519923545, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "13", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/stubbing/BaseStubbing.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/stubbing/OngoingStubbingImpl.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/verification/RegisteredInvocations.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.046423834544262965, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "9", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/creation/DelegatingMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "10", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/creation/DelegatingMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "11", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/creation/DelegatingMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "15", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/creation/DelegatingMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.046225016352102424, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.04612656040144425, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.045834924851410566, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.045834924851410566, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.045834924851410566, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.045834924851410566, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.04564354645876384, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.04564354645876384, 
+            "class": "org/mockito/internal/progress/MockingProgressImpl.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.04564354645876384, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.04564354645876384, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.04564354645876384, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.045267873021259265, 
+            "class": "org/mockito/internal/progress/ArgumentMatcherStorageImpl.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.045175395145262566, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "8", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "9", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/progress/SequenceNumber.java"
+        }, 
+        {
+            "loc": "12", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/progress/SequenceNumber.java"
+        }, 
+        {
+            "loc": "15", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/CGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/CGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "16", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/cglib/CGLIBHacker.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/CGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/FilteredCGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "17", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/cglib/CGLIBHacker.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/FilteredCGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "18", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "19", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/FilteredCGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "20", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/FilteredCGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "21", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/realmethod/FilteredCGLIBProxyRealMethod.java"
+        }, 
+        {
+            "loc": "22", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/util/ObjectMethodsGuru.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/SerializableMockitoMethod.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/MatchersBinder.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/progress/ArgumentMatcherStorageImpl.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/AbstractMockitoMethodProxy.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/MockHandler.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/creation/MockSettingsImpl.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.04499212706658475, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.04490132550669373, 
+            "class": "org/mockito/internal/progress/ThreadSafeMockingProgress.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.04481107149482209, 
+            "class": "org/mockito/internal/stubbing/MockitoStubber.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.044721359549995794, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.044721359549995794, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.044721359549995794, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.044721359549995794, 
+            "class": "org/mockito/internal/invocation/Invocation.java"
+        }, 
+        {
+            "loc": "23", 
+            "score": 0.0445435403187374, 
+            "class": "org/mockito/internal/util/ObjectMethodsGuru.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.0445435403187374, 
+            "class": "org/mockito/internal/creation/MethodInterceptorFilter.java"
+        }, 
+        {
+            "loc": "25", 
+            "score": 0.044455422447438706, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.044455422447438706, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.044455422447438706, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.044455422447438706, 
+            "class": "org/mockito/internal/invocation/InvocationMatcher.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.04173919355648411, 
+            "class": "org/mockito/MockitoAnnotations.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.mockito.internal.stubbing.answers.AnswersValidatorTest::shouldFailWhenCallingRealMethodOnIterface", 
+            "error": [
+                "junit.framework.AssertionFailedError", 
+                "\tat junit.framework.Assert.fail(Assert.java:55)", 
+                "\tat junit.framework.Assert.fail(Assert.java:64)", 
+                "\tat org.mockito.internal.stubbing.answers.AnswersValidatorTest.shouldFailWhenCallingRealMethodOnIterface(AnswersValidatorTest.java:99)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)", 
+                "\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1964)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2323)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.mockitousage.spies.SpyingOnInterfacesTest::shouldFailFastWhenCallingRealMethodOnInterface", 
+            "error": [
+                "junit.framework.AssertionFailedError", 
+                "\tat junit.framework.Assert.fail(Assert.java:55)", 
+                "\tat junit.framework.Assert.fail(Assert.java:64)", 
+                "\tat org.mockitousage.spies.SpyingOnInterfacesTest.shouldFailFastWhenCallingRealMethodOnInterface(SpyingOnInterfacesTest.java:28)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)", 
+                "\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1964)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2323)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

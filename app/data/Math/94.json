@@ -1,0 +1,158 @@
+{
+    "rankings": [
+        {
+            "loc": "430", 
+            "score": 0.2182178902359924, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "431", 
+            "score": 0.2182178902359924, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "432", 
+            "score": 0.2182178902359924, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "450", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "446", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "412", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "413", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "421", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "423", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "424", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "427", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "428", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "434", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "439", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "445", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "449", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "452", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "455", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "458", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }, 
+        {
+            "loc": "459", 
+            "score": 0.14744195615489714, 
+            "class": "org/apache/commons/math/util/MathUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.util.MathUtilsTest::testGcd", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<98304> but was:<3440640>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.math.util.MathUtilsTest.testGcd(MathUtilsTest.java:295)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

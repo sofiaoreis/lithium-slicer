@@ -1,0 +1,460 @@
+{
+    "rankings": [
+        {
+            "loc": "216", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "231", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "475", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "476", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "478", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "479", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "480", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "482", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "591", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "592", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "594", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "595", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "598", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "609", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "613", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "614", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "616", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "619", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "622", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "623", 
+            "score": 0.47140452079103173, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "584", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "585", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "844", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "847", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "850", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "851", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "852", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "596", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "373", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "382", 
+            "score": 0.30151134457776363, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "610", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/lang3/math/Fraction.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.math.FractionTest::testReducedFactory_int_int", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<-1073741824> but was:<-2147483648>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.lang3.math.FractionTest.testReducedFactory_int_int(FractionTest.java:336)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.math.FractionTest::testReduce", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<-1073741824> but was:<-2147483648>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.lang3.math.FractionTest.testReduce(FractionTest.java:654)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

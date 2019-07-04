@@ -1,0 +1,412 @@
+{
+    "rankings": [
+        {
+            "loc": "349", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "365", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "374", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "375", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "376", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "377", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "321", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "324", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "327", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "339", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "400", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "401", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "411", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "412", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "413", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "415", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "419", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "422", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "423", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "427", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "471", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "472", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "473", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "476", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "487", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.18569533817705186, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "508", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "512", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "513", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "522", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "526", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "527", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "536", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "540", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }, 
+        {
+            "loc": "541", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/ComplexFormat.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.complex.ComplexFormatTest::testForgottenImaginaryCharacter", 
+            "error": [
+                "java.lang.StringIndexOutOfBoundsException: String index out of range: 6", 
+                "\tat java.lang.String.substring(String.java:1907)", 
+                "\tat org.apache.commons.math.complex.ComplexFormat.parse(ComplexFormat.java:377)", 
+                "\tat org.apache.commons.math.complex.ComplexFormatAbstractTest.testForgottenImaginaryCharacter(ComplexFormatAbstractTest.java:355)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.complex.FrenchComplexFormatTest::testForgottenImaginaryCharacter", 
+            "error": [
+                "java.lang.StringIndexOutOfBoundsException: String index out of range: 6", 
+                "\tat java.lang.String.substring(String.java:1907)", 
+                "\tat org.apache.commons.math.complex.ComplexFormat.parse(ComplexFormat.java:377)", 
+                "\tat org.apache.commons.math.complex.ComplexFormatAbstractTest.testForgottenImaginaryCharacter(ComplexFormatAbstractTest.java:355)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

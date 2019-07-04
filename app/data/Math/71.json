@@ -1,0 +1,3091 @@
+{
+    "rankings": [
+        {
+            "loc": "180", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/ode/sampling/DummyStepInterpolator.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/ode/sampling/DummyStepInterpolator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/ode/sampling/DummyStepInterpolator.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/DummyStepInterpolator.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/DummyStepInterpolator.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.282842712474619, 
+            "class": "org/apache/commons/math/ode/sampling/DummyStepInterpolator.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.2721655269759087, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.2721655269759087, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaStepInterpolator.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/ode/nonstiff/ClassicalRungeKuttaStepInterpolator.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.17541160386140586, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.17541160386140586, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.17541160386140586, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "334", 
+            "score": 0.17541160386140586, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "312", 
+            "score": 0.17025130615174972, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.16329931618554522, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.16329931618554522, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.16329931618554522, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.16329931618554522, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "334", 
+            "score": 0.15713484026367722, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.15713484026367722, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.15713484026367722, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.15713484026367722, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.15713484026367722, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.15339299776947407, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.15161960871578067, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.15161960871578067, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.15161960871578067, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.15161960871578067, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.15161960871578067, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.15161960871578067, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "289", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "294", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "302", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "311", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "324", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "325", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "330", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "332", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "339", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "346", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "347", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "231", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "301", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "302", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.14990633779917228, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "253", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "296", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "299", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "305", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "306", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "308", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "330", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.1466471150213533, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "251", 
+            "score": 0.14586499149789456, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.14509525002200233, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.14509525002200233, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.14359163172354764, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.14359163172354764, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.14359163172354764, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.14359163172354764, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "276", 
+            "score": 0.14359163172354764, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.14359163172354764, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.14285714285714285, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/EventState.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.1421338109037403, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "253", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.1414213562373095, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.14002800840280097, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.14002800840280097, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "245", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.13934660285832354, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.1386750490563073, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.1386750490563073, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.1386750490563073, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.1386750490563073, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.13483997249264842, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/AbstractIntegrator.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/events/CombinedEventsManager.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaStepInterpolator.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaStepInterpolator.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaStepInterpolator.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaStepInterpolator.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.13245323570650439, 
+            "class": "org/apache/commons/math/ode/sampling/AbstractStepInterpolator.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853Integrator.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/math/ode/nonstiff/DormandPrince853StepInterpolator.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "293", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "294", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "305", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.11470786693528087, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "348", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "353", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "356", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.10783277320343841, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.10206207261596577, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.10101525445522107, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.10101525445522107, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "293", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "307", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "321", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "322", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "323", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "324", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "327", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.1, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.09901475429766744, 
+            "class": "org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "245", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.09534625892455924, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "224", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.0944911182523068, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.0936585811581694, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.0936585811581694, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/AdaptiveStepsizeIntegrator.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "380", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "393", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.0890870806374748, 
+            "class": "org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest::testMissedEndEvent", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<1.8782503799999986E9> but was:<1.878250439999994E9>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:129)", 
+                "\tat org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest.testMissedEndEvent(ClassicalRungeKuttaIntegratorTest.java:70)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest::testMissedEndEvent", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<1.8782503799999986E9> but was:<1.878250479999994E9>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:129)", 
+                "\tat org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest.testMissedEndEvent(DormandPrince853IntegratorTest.java:72)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

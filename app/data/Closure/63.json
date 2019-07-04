@@ -1,0 +1,494 @@
+{
+    "rankings": [
+        {
+            "loc": "90", 
+            "score": 0.6324555320336759, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.6324555320336759, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.6324555320336759, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.6324555320336759, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.6324555320336759, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.30151134457776363, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.30151134457776363, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.21566554640687682, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.21566554640687682, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.21566554640687682, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.21566554640687682, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.21566554640687682, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/SourceExcerptProvider.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.20628424925175867, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.08261923847720276, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.0377829557969052, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.03532223996729149, 
+            "class": "com/google/javascript/jscomp/JSError.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.018323194758945525, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.018323194758945525, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.018323194758945525, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.018323194758945525, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.018323194758945525, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.018323194758945525, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/AbstractMessageFormatter.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "28", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/SourceExcerptProvider.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/SourceExcerptProvider.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/SourceExcerptProvider.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/SourceExcerptProvider.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.01828486648462095, 
+            "class": "com/google/javascript/jscomp/SourceExcerptProvider.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.018272652143588818, 
+            "class": "com/google/javascript/jscomp/LightweightMessageFormatter.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.018239188505486094, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.018224038416896644, 
+            "class": "com/google/javascript/jscomp/DiagnosticType.java"
+        }, 
+        {
+            "loc": "24", 
+            "score": 0.018222525483564834, 
+            "class": "com/google/javascript/jscomp/CheckLevel.java"
+        }, 
+        {
+            "loc": "25", 
+            "score": 0.018222525483564834, 
+            "class": "com/google/javascript/jscomp/CheckLevel.java"
+        }, 
+        {
+            "loc": "26", 
+            "score": 0.018222525483564834, 
+            "class": "com/google/javascript/jscomp/CheckLevel.java"
+        }, 
+        {
+            "loc": "27", 
+            "score": 0.018222525483564834, 
+            "class": "com/google/javascript/jscomp/CheckLevel.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "com.google.javascript.jscomp.LightweightMessageFormatterTest::testFormatErrorSpaceEndOfLine1", 
+            "error": [
+                "junit.framework.ComparisonFailure: expected:<...ion here", 
+                "assert (1;", 
+                "[          ^", 
+                "]> but was:<...ion here", 
+                "assert (1;", 
+                "[]>", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:100)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:107)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:269)", 
+                "\tat com.google.javascript.jscomp.LightweightMessageFormatterTest.testFormatErrorSpaceEndOfLine1(LightweightMessageFormatterTest.java:91)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "com.google.javascript.jscomp.LightweightMessageFormatterTest::testFormatErrorSpaceEndOfLine2", 
+            "error": [
+                "junit.framework.ComparisonFailure: expected:<...iption here", 
+                "if (foo", 
+                "[       ^", 
+                "]> but was:<...iption here", 
+                "if (foo", 
+                "[]>", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:100)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:107)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:269)", 
+                "\tat com.google.javascript.jscomp.LightweightMessageFormatterTest.testFormatErrorSpaceEndOfLine2(LightweightMessageFormatterTest.java:100)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

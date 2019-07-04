@@ -1,0 +1,836 @@
+{
+    "rankings": [
+        {
+            "loc": "1674", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1677", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1678", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1679", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1680", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1681", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1682", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1685", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1715", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1718", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "3279", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "3282", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "1372", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1375", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1376", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1377", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1378", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1379", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1380", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1382", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1689", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1462", 
+            "score": 0.23904572186687872, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1412", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1415", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1444", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1447", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1448", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1449", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1450", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1451", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1452", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1453", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1454", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1455", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1467", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1570", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1573", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1574", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1575", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1576", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1577", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.19069251784911845, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1498", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1501", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1542", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1529", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1532", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1533", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1535", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1536", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1537", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1538", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "1539", 
+            "score": 0.11952286093343936, 
+            "class": "org/apache/commons/lang3/StringUtils.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.10336227882434039, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_CharArrayWithSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<true> but was:<false>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:174)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:181)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:341)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsNone_CharArrayWithSupplementaryChars(StringUtilsEqualsIndexOfTest.java:327)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_StringWithSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<true> but was:<false>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:174)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:181)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:341)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsNone_StringWithSupplementaryChars(StringUtilsEqualsIndexOfTest.java:381)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsAny_StringCharArrayWithBadSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<false> but was:<true>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:174)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:181)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:341)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsAny_StringCharArrayWithBadSupplementaryChars(StringUtilsEqualsIndexOfTest.java:138)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAnyBut_StringStringWithSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<2> but was:<3>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAnyBut_StringStringWithSupplementaryChars(StringUtilsEqualsIndexOfTest.java:616)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsAny_StringWithBadSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<false> but was:<true>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:174)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:181)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:341)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsAny_StringWithBadSupplementaryChars(StringUtilsEqualsIndexOfTest.java:186)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAny_StringCharArrayWithSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<2> but was:<0>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAny_StringCharArrayWithSupplementaryChars(StringUtilsEqualsIndexOfTest.java:528)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAnyBut_StringCharArrayWithSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<2> but was:<3>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAnyBut_StringCharArrayWithSupplementaryChars(StringUtilsEqualsIndexOfTest.java:593)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_StringWithBadSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<true> but was:<false>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:174)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:181)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:341)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsNone_StringWithBadSupplementaryChars(StringUtilsEqualsIndexOfTest.java:362)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testIndexOfAny_StringStringWithSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<2> but was:<0>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:234)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:241)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:409)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testIndexOfAny_StringStringWithSupplementaryChars(StringUtilsEqualsIndexOfTest.java:571)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.lang3.StringUtilsEqualsIndexOfTest::testContainsNone_CharArrayWithBadSupplementaryChars", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<true> but was:<false>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:174)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:181)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:341)", 
+                "\tat org.apache.commons.lang3.StringUtilsEqualsIndexOfTest.testContainsNone_CharArrayWithBadSupplementaryChars(StringUtilsEqualsIndexOfTest.java:308)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

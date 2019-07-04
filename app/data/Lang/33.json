@@ -1,0 +1,343 @@
+{
+    "rankings": [
+        {
+            "loc": "903", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "904", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "905", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "906", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "908", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "909", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "910", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "912", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.10976425998969035, 
+            "class": "org/apache/commons/lang3/ClassUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.ClassUtilsTest::testToClass_object", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.apache.commons.lang3.ClassUtils.toClass(ClassUtils.java:910)", 
+                "\tat org.apache.commons.lang3.ClassUtilsTest.testToClass_object(ClassUtilsTest.java:910)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

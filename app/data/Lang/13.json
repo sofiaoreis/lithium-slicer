@@ -1,0 +1,208 @@
+{
+    "rankings": [
+        {
+            "loc": "98", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/SerializationException.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/SerializationException.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.2182178902359924, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.2182178902359924, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.20851441405707477, 
+            "class": "org/apache/commons/lang3/SerializationUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.SerializationUtilsTest::testPrimitiveTypeClassSerialization", 
+            "error": [
+                "org.apache.commons.lang3.SerializationException: ClassNotFoundException while reading cloned object data", 
+                "\tat org.apache.commons.lang3.SerializationUtils.clone(SerializationUtils.java:99)", 
+                "\tat org.apache.commons.lang3.SerializationUtilsTest.testPrimitiveTypeClassSerialization(SerializationUtilsTest.java:373)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)", 
+                "Caused by: java.lang.ClassNotFoundException: byte", 
+                "\tat org.apache.tools.ant.AntClassLoader.findClassInComponents(AntClassLoader.java:1365)", 
+                "\tat org.apache.tools.ant.AntClassLoader.findClass(AntClassLoader.java:1315)", 
+                "\tat org.apache.tools.ant.AntClassLoader.loadClass(AntClassLoader.java:1068)", 
+                "\tat java.lang.ClassLoader.loadClass(ClassLoader.java:358)", 
+                "\tat java.lang.Class.forName0(Native Method)", 
+                "\tat java.lang.Class.forName(Class.java:274)", 
+                "\tat org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream.resolveClass(SerializationUtils.java:268)", 
+                "\tat java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1612)", 
+                "\tat java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1517)", 
+                "\tat java.io.ObjectInputStream.readClass(ObjectInputStream.java:1483)", 
+                "\tat java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1333)", 
+                "\tat java.io.ObjectInputStream.readObject(ObjectInputStream.java:370)", 
+                "\tat org.apache.commons.lang3.SerializationUtils.clone(SerializationUtils.java:95)", 
+                "\t... 35 more"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+{
+    "rankings": [
+        {
+            "loc": "183", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang/enums/ValuedEnum.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang/enums/ValuedEnum.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang/enums/ValuedEnum.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang/enums/ValuedEnum.java"
+        }, 
+        {
+            "loc": "519", 
+            "score": 0.13130643285972254, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "314", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "339", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "352", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "484", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "485", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "486", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "495", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "298", 
+            "score": 0.125, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/StringUtils.java"
+        }, 
+        {
+            "loc": "312", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "313", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "327", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "332", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.11785113019775793, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.11704114719613057, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.11704114719613057, 
+            "class": "org/apache/commons/lang/enums/Enum.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang.enums.ValuedEnumTest::testCompareTo_otherEnumType", 
+            "error": [
+                "junit.framework.AssertionFailedError", 
+                "\tat junit.framework.Assert.fail(Assert.java:55)", 
+                "\tat junit.framework.Assert.fail(Assert.java:64)", 
+                "\tat junit.framework.TestCase.fail(TestCase.java:235)", 
+                "\tat org.apache.commons.lang.enums.ValuedEnumTest.testCompareTo_otherEnumType(ValuedEnumTest.java:108)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

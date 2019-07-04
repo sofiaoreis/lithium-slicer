@@ -1,0 +1,2923 @@
+{
+    "rankings": [
+        {
+            "loc": "143", 
+            "score": 0.8164965809277261, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.5345224838248488, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/DefaultRealMatrixPreservingVisitor.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/DefaultRealMatrixPreservingVisitor.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/DefaultRealMatrixPreservingVisitor.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "604", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "605", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "606", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "616", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "919", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "210", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "219", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "633", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "634", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "640", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "496", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "497", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "498", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "500", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "501", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "502", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "505", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "564", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "565", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "566", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "567", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "568", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "569", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "606", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "611", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "612", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.42640143271122083, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "242", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "507", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "508", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "509", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "514", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "515", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "518", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "946", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "951", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "819", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "530", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "534", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "544", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "548", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "564", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "565", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "566", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "571", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "573", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "579", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "374", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "386", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "402", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "403", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1732", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1733", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1736", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1737", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1739", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1740", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1741", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1742", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1743", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1744", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1745", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1746", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1747", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1751", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1752", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1755", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1771", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1772", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1773", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1777", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1778", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1779", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1780", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1781", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1782", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1783", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1784", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1786", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1791", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1792", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1793", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1794", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1795", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1796", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1797", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1798", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1800", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1801", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1802", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1803", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1804", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1808", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1809", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1810", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1813", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1814", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1815", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1829", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1830", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1831", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1832", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1833", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1834", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1835", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1836", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1837", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1838", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1839", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1840", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1841", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1842", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1844", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1864", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1865", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1866", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1878", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1879", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1880", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1881", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1882", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1883", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1884", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1885", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1886", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1887", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1888", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1889", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1890", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1892", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1911", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1912", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "1913", 
+            "score": 0.3922322702763681, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "650", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "656", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "294", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "295", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "296", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "298", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "299", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "301", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "302", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "304", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "306", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "310", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "296", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "298", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "299", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "301", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "304", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "305", 
+            "score": 0.3651483716701107, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/MatrixUtils.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "356", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "357", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "636", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "637", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "264", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "276", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "289", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "290", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "293", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "294", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "295", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "312", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/AbstractRealMatrix.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "426", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "616", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "617", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "619", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "620", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "622", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/Array2DRowRealMatrix.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/BiDiagonalTransformer.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "199", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "251", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "312", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "571", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "573", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "574", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "575", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "576", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "578", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "579", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "581", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "582", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "583", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "584", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "585", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "587", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "588", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "589", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "591", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "592", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "593", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "597", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "598", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "599", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "600", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "601", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "602", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "604", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "606", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "616", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "619", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "620", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "621", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "622", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "623", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "624", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "672", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "673", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "676", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "677", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "678", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "679", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "680", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "681", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "682", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "685", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "693", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "696", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "697", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "698", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "699", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "700", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "701", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "708", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "709", 
+            "score": 0.34299717028501764, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "638", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "639", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "761", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "762", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "763", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "764", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "765", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "768", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "769", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "770", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "773", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "774", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "775", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "776", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "777", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "783", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "784", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "785", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "786", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "788", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "789", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "790", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "791", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "796", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "797", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "798", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "799", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "801", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "806", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "807", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "808", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "810", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/SingularValueDecompositionImpl.java"
+        }, 
+        {
+            "loc": "633", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "634", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "733", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "734", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "735", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "737", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "738", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "739", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "740", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "744", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "745", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "746", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }, 
+        {
+            "loc": "748", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/linear/EigenDecompositionImpl.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.linear.SingularValueSolverTest::testMath320A", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<0.0> but was:<0.09336767546650937>", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.failNotEquals(Assert.java:743)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:494)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:592)", 
+                "\tat org.apache.commons.math.linear.SingularValueSolverTest.testMath320A(SingularValueSolverTest.java:188)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.linear.SingularValueSolverTest::testMath320B", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<0.0> but was:<3.2>", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.failNotEquals(Assert.java:743)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:494)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:592)", 
+                "\tat org.apache.commons.math.linear.SingularValueSolverTest.testMath320B(SingularValueSolverTest.java:219)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

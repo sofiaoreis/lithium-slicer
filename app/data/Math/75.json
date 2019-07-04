@@ -1,0 +1,316 @@
+{
+    "rankings": [
+        {
+            "loc": "303", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "386", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "444", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "320", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "541", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "561", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "251", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "385", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "388", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "392", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "396", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "397", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "401", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "403", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "407", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "495", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "249", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "382", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "491", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "492", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/math/stat/Frequency.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.stat.FrequencyTest::testPcts", 
+            "error": [
+                "junit.framework.AssertionFailedError: three (Object) pct expected:<0.5> but was:<1.0>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.FrequencyTest.testPcts(FrequencyTest.java:148)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,737 @@
+{
+    "rankings": [
+        {
+            "loc": "121", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.30151134457776363, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.2721655269759087, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.2721655269759087, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "265", 
+            "score": 0.2672612419124244, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.19611613513818404, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "271", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "274", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "275", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "276", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "361", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "365", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "366", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "261", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.16666666666666666, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.16666666666666666, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.16666666666666666, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.16666666666666666, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "206", 
+            "score": 0.10425720702853739, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.10425720702853739, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.10425720702853739, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.10425720702853739, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.10425720702853739, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.09622504486493763, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.09622504486493763, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.09622504486493763, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.09622504486493763, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.09600307214746386, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.09600307214746386, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.09600307214746386, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.09600307214746386, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.09600307214746386, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.09470274476207569, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.09470274476207569, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.09470274476207569, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.09284766908852593, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.09284766908852593, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.09284766908852593, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.09284766908852593, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.09284766908852593, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.09284766908852593, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.08962214298964417, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.08962214298964417, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.08838834764831843, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.08703882797784893, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "292", 
+            "score": 0.08574929257125441, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "283", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "369", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "370", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "371", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "372", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "373", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "374", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "375", 
+            "score": 0.08512565307587486, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "270", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "368", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "421", 
+            "score": 0.08391813582966891, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.08333333333333333, 
+            "class": "org/jfree/chart/util/SerialUtilities.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.08019269397646255, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.07106690545187015, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.06812027032901716, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.06812027032901716, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.0657240779900775, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.jfree.chart.util.junit.ShapeListTests::testSerialization", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<org.jfree.chart.util.ShapeList@d0e55451> but was:<org.jfree.chart.util.ShapeList@d951b68f>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:86)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:253)", 
+                "\tat org.jfree.chart.util.junit.ShapeListTests.testSerialization(ShapeListTests.java:151)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.chart.util.junit.ShapeListTests::testEquals", 
+            "error": [
+                "junit.framework.AssertionFailedError", 
+                "\tat junit.framework.Assert.fail(Assert.java:55)", 
+                "\tat junit.framework.Assert.assertTrue(Assert.java:22)", 
+                "\tat junit.framework.Assert.assertTrue(Assert.java:31)", 
+                "\tat junit.framework.TestCase.assertTrue(TestCase.java:201)", 
+                "\tat org.jfree.chart.util.junit.ShapeListTests.testEquals(ShapeListTests.java:95)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

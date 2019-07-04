@@ -1,0 +1,736 @@
+{
+    "rankings": [
+        {
+            "loc": "216", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "417", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "319", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "320", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "284", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/StrMatcher.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "202", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "204", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "207", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "209", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "277", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "285", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "286", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "301", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "302", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "304", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "305", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "306", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "307", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "317", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "323", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "324", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "346", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "347", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "348", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "353", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "375", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "378", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "379", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "380", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "381", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "382", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "383", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "384", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "389", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "391", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "392", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "393", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "396", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "398", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "401", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "404", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "405", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "407", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "408", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "419", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "421", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "422", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "423", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "424", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "433", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "434", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "495", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "498", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "500", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/Validate.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/lang3/Validate.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.35355339059327373, 
+            "class": "org/apache/commons/lang3/text/ExtendedMessageFormat.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.text.ExtendedMessageFormatTest::testEqualsHashcode", 
+            "error": [
+                "junit.framework.AssertionFailedError: registry, hashcode()", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.assertTrue(Assert.java:22)", 
+                "\tat junit.framework.Assert.assertFalse(Assert.java:39)", 
+                "\tat junit.framework.TestCase.assertFalse(TestCase.java:210)", 
+                "\tat org.apache.commons.lang3.text.ExtendedMessageFormatTest.testEqualsHashcode(ExtendedMessageFormatTest.java:301)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

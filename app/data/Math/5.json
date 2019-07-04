@@ -1,0 +1,162 @@
+{
+    "rankings": [
+        {
+            "loc": "305", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "1228", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "304", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "300", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "348", 
+            "score": 0.1543033499620919, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "344", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.14586499149789456, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "340", 
+            "score": 0.1259881576697424, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.06835859270246633, 
+            "class": "org/apache/commons/math3/complex/Complex.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math3.complex.ComplexTest::testReciprocalZero", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<(NaN, NaN)> but was:<(Infinity, Infinity)>", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.failNotEquals(Assert.java:743)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:118)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:144)", 
+                "\tat org.apache.commons.math3.complex.ComplexTest.testReciprocalZero(ComplexTest.java:334)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

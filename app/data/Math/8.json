@@ -1,0 +1,684 @@
+{
+    "rankings": [
+        {
+            "loc": "69", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/DiscreteRealDistribution.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/AbstractRealDistribution.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/AbstractRealDistribution.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/AbstractRealDistribution.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/AbstractRealDistribution.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/AbstractRealDistribution.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math3/distribution/AbstractRealDistribution.java"
+        }, 
+        {
+            "loc": "1249", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1252", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1255", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1256", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1257", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1258", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1259", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1262", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1263", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1266", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1269", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1270", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1273", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "1276", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/MathArrays.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/Pair.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/Pair.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/Pair.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/Pair.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/Pair.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/util/Pair.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/distribution/DiscreteDistribution.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/Well19937c.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/AbstractWell.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/BitsStreamGenerator.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataGenerator.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataGenerator.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataGenerator.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataGenerator.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataImpl.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataImpl.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.21320071635561041, 
+            "class": "org/apache/commons/math3/random/RandomDataImpl.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math3.distribution.DiscreteRealDistributionTest::testIssue942", 
+            "error": [
+                "java.lang.ArrayStoreException: org.apache.commons.math3.distribution.DiscreteRealDistributionTest$2", 
+                "\tat org.apache.commons.math3.distribution.DiscreteDistribution.sample(DiscreteDistribution.java:190)", 
+                "\tat org.apache.commons.math3.distribution.DiscreteRealDistributionTest.testIssue942(DiscreteRealDistributionTest.java:212)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

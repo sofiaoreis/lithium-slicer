@@ -1,0 +1,777 @@
+{
+    "rankings": [
+        {
+            "loc": "1050", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1053", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1056", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1057", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1058", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1059", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1060", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1061", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1062", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1064", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1068", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1071", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "564", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "565", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "245", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "246", 
+            "score": 0.35355339059327373, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.2886751345948129, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.2886751345948129, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "653", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "654", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "666", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "667", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "668", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "253", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "348", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.1643989873053573, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "212", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "269", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "287", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "288", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "291", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/Year.java"
+        }, 
+        {
+            "loc": "680", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "681", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "693", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "694", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "695", 
+            "score": 0.16222142113076254, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "429", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "463", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "584", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "603", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "604", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "605", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "606", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "878", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "879", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "881", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "885", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1269", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1273", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1292", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1296", 
+            "score": 0.15249857033260467, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/RegularTimePeriod.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/RegularTimePeriod.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "268", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "272", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "273", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeriesDataItem.java"
+        }, 
+        {
+            "loc": "576", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "579", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "580", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "581", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "582", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "596", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "597", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "598", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "599", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "600", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "626", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "627", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "629", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "634", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "637", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "638", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "642", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "877", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "892", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1211", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1212", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1213", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1214", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1215", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1217", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1265", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1266", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1288", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "1289", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.15075567228888181, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.14433756729740646, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/time/TimeSeries.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.14285714285714285, 
+            "class": "org/jfree/data/general/Series.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.jfree.data.time.junit.TimeSeriesTests::testCreateCopy3", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<101.0> but was:<102.0>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:129)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:288)", 
+                "\tat org.jfree.data.time.junit.TimeSeriesTests.testCreateCopy3(TimeSeriesTests.java:607)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

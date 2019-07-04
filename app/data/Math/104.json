@@ -1,0 +1,398 @@
+{
+    "rankings": [
+        {
+            "loc": "200", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.19611613513818404, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.19245008972987526, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.17677669529663687, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.12216944435630522, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.1111111111111111, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.1091089451179962, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.1091089451179962, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.10482848367219183, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.special.GammaTest::testRegularizedGammaPositivePositive", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<0.632120558828558> but was:<0.6321205587649603>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat org.apache.commons.math.TestUtils.assertEquals(TestUtils.java:62)", 
+                "\tat org.apache.commons.math.TestUtils.assertEquals(TestUtils.java:49)", 
+                "\tat org.apache.commons.math.special.GammaTest.testRegularizedGamma(GammaTest.java:40)", 
+                "\tat org.apache.commons.math.special.GammaTest.testRegularizedGammaPositivePositive(GammaTest.java:77)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

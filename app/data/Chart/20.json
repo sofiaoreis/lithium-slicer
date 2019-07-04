@@ -1,0 +1,572 @@
+{
+    "rankings": [
+        {
+            "loc": "265", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.19245008972987526, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.18257418583505536, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.1796053020267749, 
+            "class": "org/jfree/chart/plot/ValueMarker.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.10259783520851541, 
+            "class": "org/jfree/chart/plot/ValueMarker.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.10259783520851541, 
+            "class": "org/jfree/chart/plot/ValueMarker.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.10259783520851541, 
+            "class": "org/jfree/chart/plot/ValueMarker.java"
+        }, 
+        {
+            "loc": "175", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "194", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "198", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "200", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "201", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/plot/Marker.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.09245003270420485, 
+            "class": "org/jfree/chart/util/LengthAdjustmentType.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.07761505257063328, 
+            "class": "org/jfree/chart/util/RectangleAnchor.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.06804138174397717, 
+            "class": "org/jfree/chart/util/RectangleInsets.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.06741998624632421, 
+            "class": "org/jfree/chart/util/UnitType.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.06741998624632421, 
+            "class": "org/jfree/chart/util/UnitType.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.06741998624632421, 
+            "class": "org/jfree/chart/util/UnitType.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.06741998624632421, 
+            "class": "org/jfree/chart/util/UnitType.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.06741998624632421, 
+            "class": "org/jfree/chart/util/UnitType.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.0629940788348712, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.jfree.chart.plot.junit.ValueMarkerTests::test1808376", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<java.awt.Color[r=0,g=0,b=255]> but was:<java.awt.Color[r=255,g=0,b=0]>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:86)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:253)", 
+                "\tat org.jfree.chart.plot.junit.ValueMarkerTests.test1808376(ValueMarkerTests.java:297)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

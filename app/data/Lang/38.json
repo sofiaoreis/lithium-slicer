@@ -1,0 +1,859 @@
+{
+    "rankings": [
+        {
+            "loc": "642", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "643", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "872", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "873", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1300", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1301", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1303", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1304", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1423", 
+            "score": 0.1796053020267749, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1424", 
+            "score": 0.1796053020267749, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1430", 
+            "score": 0.1796053020267749, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1431", 
+            "score": 0.1796053020267749, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1432", 
+            "score": 0.1796053020267749, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1310", 
+            "score": 0.17407765595569785, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1311", 
+            "score": 0.17407765595569785, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.17407765595569785, 
+            "class": "org/apache/commons/lang3/Validate.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.17407765595569785, 
+            "class": "org/apache/commons/lang3/Validate.java"
+        }, 
+        {
+            "loc": "1347", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1348", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1354", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1355", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1356", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1360", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1098", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1099", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "633", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "634", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "639", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "640", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "738", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "743", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "832", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "871", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "875", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1292", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1293", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1299", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1307", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1313", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1316", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1318", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "636", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "637", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "887", 
+            "score": 0.16666666666666666, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "888", 
+            "score": 0.16666666666666666, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "889", 
+            "score": 0.16666666666666666, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "890", 
+            "score": 0.16666666666666666, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "892", 
+            "score": 0.16666666666666666, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "627", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "628", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "549", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "621", 
+            "score": 0.1543033499620919, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1409", 
+            "score": 0.1543033499620919, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1410", 
+            "score": 0.1543033499620919, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1403", 
+            "score": 0.1543033499620919, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1416", 
+            "score": 0.1543033499620919, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "618", 
+            "score": 0.15249857033260467, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "620", 
+            "score": 0.15249857033260467, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1332", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1333", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1334", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1340", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "610", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "771", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "773", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1272", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1273", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1277", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1278", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1279", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1285", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1083", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1084", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1085", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1091", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "535", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "536", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "539", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "541", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "542", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "545", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "547", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "548", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "551", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "552", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "218", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "558", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "559", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "561", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "562", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "563", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "566", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "567", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "578", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "579", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "581", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "582", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "583", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "584", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "585", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "586", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "588", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "589", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "591", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "592", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "593", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "594", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "596", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "597", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "602", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "604", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "609", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "616", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "683", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "684", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "685", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "694", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "697", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "708", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "710", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "711", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "713", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "714", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "717", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "719", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "720", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "721", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "722", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "723", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "727", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "730", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "732", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "734", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "735", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "737", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "745", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "746", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "747", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "748", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "750", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "755", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "756", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "767", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1002", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1003", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1004", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1005", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1006", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1007", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }, 
+        {
+            "loc": "1008", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/lang3/time/FastDateFormat.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.time.FastDateFormatTest::testLang538", 
+            "error": [
+                "junit.framework.ComparisonFailure: dateTime expected:<2009-10-16T[16]:42:16.000Z> but was:<2009-10-16T[08]:42:16.000Z>", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:100)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:261)", 
+                "\tat org.apache.commons.lang3.time.FastDateFormatTest.testLang538(FastDateFormatTest.java:349)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "rankings": [
+        {
+            "loc": "158", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "419", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "421", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "422", 
+            "score": 1.0, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "403", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "404", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.3779644730092272, 
+            "class": "org/apache/commons/lang/text/ExtendedMessageFormat.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477", 
+            "error": [
+                "java.lang.OutOfMemoryError: Java heap space", 
+                "\tat java.util.Arrays.copyOf(Arrays.java:2367)", 
+                "\tat java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)", 
+                "\tat java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)", 
+                "\tat java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:587)", 
+                "\tat java.lang.StringBuffer.append(StringBuffer.java:332)", 
+                "\tat org.apache.commons.lang.text.ExtendedMessageFormat.appendQuotedString(ExtendedMessageFormat.java:422)", 
+                "\tat org.apache.commons.lang.text.ExtendedMessageFormat.applyPattern(ExtendedMessageFormat.java:158)", 
+                "\tat org.apache.commons.lang.text.ExtendedMessageFormat.<init>(ExtendedMessageFormat.java:127)", 
+                "\tat org.apache.commons.lang.text.ExtendedMessageFormat.<init>(ExtendedMessageFormat.java:112)", 
+                "\tat org.apache.commons.lang.text.ExtendedMessageFormatTest.testEscapedQuote_LANG_477(ExtendedMessageFormatTest.java:100)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1366 @@
+{
+    "rankings": [
+        {
+            "loc": "66", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "350", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.7071067811865476, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "368", 
+            "score": 0.7071067811865476, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "372", 
+            "score": 0.7071067811865476, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.6123724356957946, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.4629100498862757, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/AbstractContinuousDistribution.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/AbstractDistribution.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/AbstractDistribution.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/GammaDistributionImpl.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/distribution/ChiSquaredDistributionImpl.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "40", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "402", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "403", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/stat/inference/ChiSquareTestImpl.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.43301270189221935, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "303", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "252", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "257", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.3692744729379982, 
+            "class": "org/apache/commons/math/special/Gamma.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/distribution/TDistributionImpl.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/distribution/TDistributionImpl.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/distribution/TDistributionImpl.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/distribution/TDistributionImpl.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/distribution/TDistributionImpl.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/distribution/TDistributionImpl.java"
+        }, 
+        {
+            "loc": "43", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "1067", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "1068", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TTestImpl.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "46", 
+            "score": 0.34050261230349943, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.3086066999241838, 
+            "class": "org/apache/commons/math/stat/inference/TestUtils.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "140", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "161", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.2553769592276246, 
+            "class": "org/apache/commons/math/util/ContinuedFraction.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/GeometricMean.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/GeometricMean.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/GeometricMean.java"
+        }, 
+        {
+            "loc": "33", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/AbstractStorelessUnivariateStatistic.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/AbstractStorelessUnivariateStatistic.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/AbstractStorelessUnivariateStatistic.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/AbstractUnivariateStatistic.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/AbstractUnivariateStatistic.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfLogs.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfLogs.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfLogs.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfLogs.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Variance.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Variance.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Variance.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Variance.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Variance.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Variance.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/SecondMoment.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/SecondMoment.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/SecondMoment.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/FirstMoment.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/FirstMoment.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/FirstMoment.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/FirstMoment.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/FirstMoment.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/FirstMoment.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Mean.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Mean.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Mean.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/moment/Mean.java"
+        }, 
+        {
+            "loc": "36", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatisticsImpl.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatisticsImpl.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/SummaryStatistics.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/Sum.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/Sum.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/Sum.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/Sum.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfSquares.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfSquares.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfSquares.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/summary/SumOfSquares.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Min.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Min.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Min.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Min.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Max.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Max.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Max.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/stat/descriptive/rank/Max.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquareLargeTestStatistic", 
+            "error": [
+                "junit.framework.AssertionFailedError: chi-square test statistic expected:<114875.90421929007> but was:<3624883.3429077636>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.inference.ChiSquareTestTest.testChiSquareLargeTestStatistic(ChiSquareTestTest.java:183)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquare", 
+            "error": [
+                "junit.framework.AssertionFailedError: chi-square test statistic expected:<9.023307936427388> but was:<16.413107036160778>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.inference.ChiSquareTestTest.testChiSquare(ChiSquareTestTest.java:60)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquareLargeTestStatistic", 
+            "error": [
+                "junit.framework.AssertionFailedError: chi-square test statistic expected:<114875.90421929007> but was:<3624883.3429077636>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.inference.ChiSquareTestTest.testChiSquareLargeTestStatistic(ChiSquareTestTest.java:183)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquare", 
+            "error": [
+                "junit.framework.AssertionFailedError: chi-square test statistic expected:<9.023307936427388> but was:<16.413107036160778>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.inference.ChiSquareTestTest.testChiSquare(ChiSquareTestTest.java:60)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.stat.inference.TestUtilsTest::testChiSquareLargeTestStatistic", 
+            "error": [
+                "junit.framework.AssertionFailedError: chi-square test statistic expected:<114875.90421929007> but was:<3624883.3429077636>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.inference.TestUtilsTest.testChiSquareLargeTestStatistic(TestUtilsTest.java:181)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.stat.inference.TestUtilsTest::testChiSquare", 
+            "error": [
+                "junit.framework.AssertionFailedError: chi-square test statistic expected:<9.023307936427388> but was:<16.413107036160778>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:279)", 
+                "\tat org.apache.commons.math.stat.inference.TestUtilsTest.testChiSquare(TestUtilsTest.java:58)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

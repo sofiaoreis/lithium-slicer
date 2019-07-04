@@ -1,0 +1,200 @@
+{
+    "rankings": [
+        {
+            "loc": "72", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/analysis/solvers/BisectionSolver.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.analysis.solvers.BisectionSolverTest::testMath369", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:88)", 
+                "\tat org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:66)", 
+                "\tat org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:72)", 
+                "\tat org.apache.commons.math.analysis.solvers.BisectionSolverTest.testMath369(BisectionSolverTest.java:101)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,908 @@
+{
+    "rankings": [
+        {
+            "loc": "64", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 1.0, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalDataItem.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYInterval.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "187", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "188", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeriesCollection.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/data/xy/XYIntervalSeries.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectItem.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectItem.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectItem.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectItem.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectItem.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectItem.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "220", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "221", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "244", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "256", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "259", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "260", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "262", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.6324555320336759, 
+            "class": "org/jfree/data/ComparableObjectSeries.java"
+        }, 
+        {
+            "loc": "726", 
+            "score": 0.4082482904638631, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "780", 
+            "score": 0.4082482904638631, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1213", 
+            "score": 0.31622776601683794, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1238", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1239", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1240", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1241", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1242", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1243", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1244", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1247", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1252", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1284", 
+            "score": 0.25, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "751", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "752", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "753", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "754", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "755", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "756", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "757", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "760", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "765", 
+            "score": 0.22360679774997896, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "742", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "745", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "746", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "747", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "750", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "779", 
+            "score": 0.17677669529663687, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1231", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1232", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1233", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1236", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "1283", 
+            "score": 0.17149858514250882, 
+            "class": "org/jfree/data/general/DatasetUtilities.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "328", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "336", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.15161960871578067, 
+            "class": "org/jfree/data/event/SeriesChangeEvent.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "297", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "298", 
+            "score": 0.14744195615489714, 
+            "class": "org/jfree/data/general/Series.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.13545709229571928, 
+            "class": "org/jfree/data/xy/AbstractIntervalXYDataset.java"
+        }, 
+        {
+            "loc": "52", 
+            "score": 0.13545709229571928, 
+            "class": "org/jfree/data/xy/AbstractIntervalXYDataset.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.1208244186660354, 
+            "class": "org/jfree/data/xy/AbstractXYDataset.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.1208244186660354, 
+            "class": "org/jfree/data/xy/AbstractXYDataset.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.11952286093343936, 
+            "class": "org/jfree/data/general/AbstractSeriesDataset.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.11952286093343936, 
+            "class": "org/jfree/data/general/AbstractSeriesDataset.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.08687444855261388, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.08687444855261388, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.08687444855261388, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.08687444855261388, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.08687444855261388, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/AbstractDataset.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/DatasetGroup.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/DatasetGroup.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.0827605888602368, 
+            "class": "org/jfree/data/general/DatasetGroup.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.07918075824648958, 
+            "class": "org/jfree/chart/event/DatasetChangeInfo.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.07918075824648958, 
+            "class": "org/jfree/data/event/DatasetChangeEvent.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.07918075824648958, 
+            "class": "org/jfree/data/event/DatasetChangeEvent.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.07918075824648958, 
+            "class": "org/jfree/data/event/DatasetChangeEvent.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.07918075824648958, 
+            "class": "org/jfree/data/event/DatasetChangeEvent.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.07918075824648958, 
+            "class": "org/jfree/data/event/DatasetChangeEvent.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_2", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.general.junit.DatasetUtilitiesTests.testBug2849731_2(DatasetUtilitiesTests.java:1276)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_3", 
+            "error": [
+                "java.lang.NullPointerException", 
+                "\tat org.jfree.data.general.junit.DatasetUtilitiesTests.testBug2849731_3(DatasetUtilitiesTests.java:1299)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

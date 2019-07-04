@@ -1,0 +1,187 @@
+{
+    "rankings": [
+        {
+            "loc": "277", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "364", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "258", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.18257418583505536, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "255", 
+            "score": 0.17407765595569785, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "263", 
+            "score": 0.17407765595569785, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "254", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "250", 
+            "score": 0.1690308509457033, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.16222142113076254, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "872", 
+            "score": 0.1270001270001905, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "310", 
+            "score": 0.0949157995752499, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "299", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "45", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.08192319205190406, 
+            "class": "org/apache/commons/math/complex/Complex.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.complex.ComplexTest::testMath221", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<org.apache.commons.math.complex.Complex@98b00000> but was:<org.apache.commons.math.complex.Complex@18b00000>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:86)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:253)", 
+                "\tat org.apache.commons.math.complex.ComplexTest.testMath221(ComplexTest.java:696)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

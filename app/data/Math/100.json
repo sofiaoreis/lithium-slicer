@@ -1,0 +1,1223 @@
+{
+    "rankings": [
+        {
+            "loc": "59", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "172", 
+            "score": 0.31622776601683794, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "735", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "736", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "747", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "748", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "157", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "162", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.2886751345948129, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "591", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "720", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "721", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "722", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "725", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "726", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "727", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "728", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "733", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "734", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "742", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "743", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "744", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "746", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "753", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "754", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "847", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "51", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.2773500981126146, 
+            "class": "org/apache/commons/math/estimation/SimpleEstimationProblem.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "156", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "137", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "153", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/math/estimation/GaussNewtonEstimator.java"
+        }, 
+        {
+            "loc": "405", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "523", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "526", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "798", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "799", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "802", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "811", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "844", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1031", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1032", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1034", 
+            "score": 0.25, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "267", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "278", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "390", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "394", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "395", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "399", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "400", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "404", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "410", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "411", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "412", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "413", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "414", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "416", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "417", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "421", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "423", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "424", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "581", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "588", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "590", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "604", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "611", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "710", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "713", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "716", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "777", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "778", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "779", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "782", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "785", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "786", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "787", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "789", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "792", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "794", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "797", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "806", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "807", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "808", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "809", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "810", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "813", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "816", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "817", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "818", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "823", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "829", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "843", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1000", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1001", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1003", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1004", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1006", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1020", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "1021", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/math/linear/RealMatrixImpl.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.17149858514250882, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.15617376188860607, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.15075567228888181, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.14907119849998599, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "227", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "231", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/AbstractEstimator.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/EstimatedParameter.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.14433756729740646, 
+            "class": "org/apache/commons/math/estimation/WeightedMeasurement.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.estimation.GaussNewtonEstimatorTest::testBoundParameters", 
+            "error": [
+                "java.lang.ArrayIndexOutOfBoundsException: 6", 
+                "\tat org.apache.commons.math.estimation.AbstractEstimator.getCovariances(AbstractEstimator.java:173)", 
+                "\tat org.apache.commons.math.estimation.GaussNewtonEstimatorTest.testBoundParameters(GaussNewtonEstimatorTest.java:472)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

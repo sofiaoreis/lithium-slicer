@@ -1,0 +1,179 @@
+{
+    "rankings": [
+        {
+            "loc": "2954", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "2956", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "2959", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "2960", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "2961", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "2962", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "2964", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.05643326479831003, 
+            "class": "org/apache/commons/lang3/ArrayUtils.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.ArrayUtilsAddTest::testJira567", 
+            "error": [
+                "java.lang.ArrayStoreException", 
+                "\tat java.lang.System.arraycopy(Native Method)", 
+                "\tat org.apache.commons.lang3.ArrayUtils.addAll(ArrayUtils.java:2962)", 
+                "\tat org.apache.commons.lang3.ArrayUtilsAddTest.testJira567(ArrayUtilsAddTest.java:40)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

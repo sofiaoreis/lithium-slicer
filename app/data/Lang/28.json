@@ -1,0 +1,204 @@
+{
+    "rankings": [
+        {
+            "loc": "57", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "48", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "49", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.5, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "37", 
+            "score": 0.3333333333333333, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.2581988897471611, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "59", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.24253562503633297, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "89", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.22941573387056174, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "32", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/text/translate/CharSequenceTranslator.java"
+        }, 
+        {
+            "loc": "29", 
+            "score": 0.22360679774997896, 
+            "class": "org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testSupplementaryUnescaping", 
+            "error": [
+                "junit.framework.ComparisonFailure: Failed to unescape numeric entities supplementary characters expected:<[\ud803\udc22]> but was:<[\u0c22]>", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:100)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:261)", 
+                "\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testSupplementaryUnescaping(NumericEntityUnescaperTest.java:33)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

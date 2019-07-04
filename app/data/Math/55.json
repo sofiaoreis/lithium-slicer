@@ -1,0 +1,253 @@
+{
+    "rankings": [
+        {
+            "loc": "473", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "181", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.15811388300841897, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "35", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "38", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "44", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "47", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "50", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3D.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.11180339887498948, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "56", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.10660035817780521, 
+            "class": "org/apache/commons/math/geometry/Vector3DFormat.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.geometry.Vector3DTest::testCrossProductCancellation", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<1.0> but was:<0.0>", 
+                "\tat org.junit.Assert.fail(Assert.java:88)", 
+                "\tat org.junit.Assert.failNotEquals(Assert.java:743)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:494)", 
+                "\tat org.junit.Assert.assertEquals(Assert.java:592)", 
+                "\tat org.apache.commons.math.geometry.Vector3DTest.checkVector(Vector3DTest.java:242)", 
+                "\tat org.apache.commons.math.geometry.Vector3DTest.testCrossProductCancellation(Vector3DTest.java:159)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)", 
+                "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)", 
+                "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)", 
+                "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)", 
+                "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)", 
+                "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)", 
+                "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)", 
+                "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)", 
+                "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)", 
+                "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)", 
+                "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)", 
+                "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)", 
+                "\tat junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

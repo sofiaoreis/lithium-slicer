@@ -1,0 +1,781 @@
+{
+    "rankings": [
+        {
+            "loc": "210", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "211", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "214", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "215", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "216", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "217", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "222", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "223", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "226", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "228", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "499", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "500", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "501", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "502", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "503", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "505", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "709", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "710", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "711", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "713", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "719", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "720", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "721", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "723", 
+            "score": 0.7071067811865475, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "863", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "864", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "865", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "866", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "870", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "875", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "876", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "854", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "809", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "825", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "826", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "827", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "832", 
+            "score": 0.5, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.4082482904638631, 
+            "class": "org/apache/commons/math/linear/RealVector.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "136", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "205", 
+            "score": 0.2672612419124244, 
+            "class": "org/apache/commons/math/linear/OpenMapRealVector.java"
+        }, 
+        {
+            "loc": "699", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "700", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "701", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "703", 
+            "score": 0.20412414523193154, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "39", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "505", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "508", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "511", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "513", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "516", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "518", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "491", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "525", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "554", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "558", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "561", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "572", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "578", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "582", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "590", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "585", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "586", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "587", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "592", 
+            "score": 0.1889822365046136, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "133", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "160", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "163", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "164", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "266", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "279", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "280", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "281", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "282", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "417", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "418", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "419", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "420", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "425", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "426", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "427", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "428", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "429", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "430", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "433", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "435", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "476", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "485", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "486", 
+            "score": 0.12126781251816648, 
+            "class": "org/apache/commons/math/util/OpenIntToDoubleHashMap.java"
+        }, 
+        {
+            "loc": "34", 
+            "score": 0.105999788000636, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "819", 
+            "score": 0.105999788000636, 
+            "class": "org/apache/commons/math/linear/AbstractRealVector.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.06375767130633382, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.06375767130633382, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.06375767130633382, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.05407380704358752, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "42", 
+            "score": 0.05407380704358752, 
+            "class": "org/apache/commons/math/linear/ArrayRealVector.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.05407380704358752, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "30", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "53", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "54", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "55", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/util/CompositeFormat.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.05227083734893167, 
+            "class": "org/apache/commons/math/linear/RealVectorFormat.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.linear.ArrayRealVectorTest::testBasicFunctions", 
+            "error": [
+                "junit.framework.AssertionFailedError: compare values   expected:<6.0> but was:<128.0>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:244)", 
+                "\tat org.apache.commons.math.linear.ArrayRealVectorTest.testBasicFunctions(ArrayRealVectorTest.java:1098)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }, 
+        {
+            "test": "org.apache.commons.math.linear.SparseRealVectorTest::testBasicFunctions", 
+            "error": [
+                "junit.framework.AssertionFailedError: compare values   expected:<6.0> but was:<-3.0>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:78)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:244)", 
+                "\tat org.apache.commons.math.linear.SparseRealVectorTest.testBasicFunctions(SparseRealVectorTest.java:968)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

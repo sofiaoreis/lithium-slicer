@@ -1,0 +1,377 @@
+{
+    "rankings": [
+        {
+            "loc": "115", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "184", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "185", 
+            "score": 1.0, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "196", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "225", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "180", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.5773502691896258, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.4472135954999579, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "247", 
+            "score": 0.10540925533894598, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "248", 
+            "score": 0.10540925533894598, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "239", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "240", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "241", 
+            "score": 0.09284766908852593, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.09166984970282113, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.09166984970282113, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.09166984970282113, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.09166984970282113, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "229", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "243", 
+            "score": 0.09128709291752768, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "203", 
+            "score": 0.09090909090909091, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.09053574604251853, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "165", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "166", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "167", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "208", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "213", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "168", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "173", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "177", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.08980265101338746, 
+            "class": "org/apache/commons/math/analysis/solvers/BrentSolver.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.08873565094161139, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.08873565094161139, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.08873565094161139, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.08873565094161139, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/ConvergingAlgorithmImpl.java"
+        }, 
+        {
+            "loc": "41", 
+            "score": 0.08838834764831843, 
+            "class": "org/apache/commons/math/analysis/solvers/UnivariateRealSolverImpl.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.apache.commons.math.analysis.solvers.BrentSolverTest::testRootEndpoints", 
+            "error": [
+                "junit.framework.AssertionFailedError: expected:<3.141592653589793> but was:<1.2246467991473532E-16>", 
+                "\tat junit.framework.Assert.fail(Assert.java:57)", 
+                "\tat junit.framework.Assert.failNotEquals(Assert.java:329)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:120)", 
+                "\tat junit.framework.Assert.assertEquals(Assert.java:129)", 
+                "\tat junit.framework.TestCase.assertEquals(TestCase.java:288)", 
+                "\tat org.apache.commons.math.analysis.solvers.BrentSolverTest.testRootEndpoints(BrentSolverTest.java:317)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}

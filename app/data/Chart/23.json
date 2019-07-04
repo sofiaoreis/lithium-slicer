@@ -1,0 +1,1842 @@
+{
+    "rankings": [
+        {
+            "loc": "63", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/event/RendererChangeEvent.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/event/RendererChangeEvent.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/event/RendererChangeEvent.java"
+        }, 
+        {
+            "loc": "2339", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2340", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2345", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "174", 
+            "score": 1.0, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEvent.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEvent.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEvent.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEvent.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEvent.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEvent.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "57", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "58", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.7071067811865475, 
+            "class": "org/jfree/chart/event/ChartChangeEventType.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "193", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "176", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "179", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "183", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "189", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "195", 
+            "score": 0.5773502691896258, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "105", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/StrokeList.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/StrokeList.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/StrokeList.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/StrokeList.java"
+        }, 
+        {
+            "loc": "178", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "182", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "186", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "190", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "191", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "192", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "197", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "101", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "109", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintUtilities.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintUtilities.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintUtilities.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintUtilities.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintUtilities.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/PaintUtilities.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/BooleanList.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/BooleanList.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "148", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "152", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "2355", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2358", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2361", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2362", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2365", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2368", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2369", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2372", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2375", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2378", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2381", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2384", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2387", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2388", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2391", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2392", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2395", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2398", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2401", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2402", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2405", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2406", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2410", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2413", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2416", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2417", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2420", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2423", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2424", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2427", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2428", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2431", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2432", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2435", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2436", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2439", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2440", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2443", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2444", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2447", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2448", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2451", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2452", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2455", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2458", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2459", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2462", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2465", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "1291", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1294", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1297", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1299", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1300", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1303", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1304", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1307", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1308", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1311", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1312", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1315", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1316", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1319", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1320", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1323", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1324", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1327", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1328", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1331", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1332", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1335", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1336", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1339", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1340", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "1343", 
+            "score": 0.5, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/StrokeList.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/StrokeList.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "97", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "149", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/AbstractObjectList.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/PaintList.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/ShapeList.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/BooleanList.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/BooleanList.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/ObjectUtilities.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/ObjectList.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/util/ObjectList.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "60", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "61", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "64", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "65", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "68", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "69", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "72", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "73", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "77", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "80", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "81", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "85", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "96", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "100", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "104", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "108", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "116", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/text/TextAnchor.java"
+        }, 
+        {
+            "loc": "169", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "170", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "171", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "62", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "63", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "66", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "67", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "70", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "71", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "74", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "78", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "79", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "82", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "86", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "90", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "91", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "94", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "95", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "98", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "99", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "102", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "103", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "106", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "110", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "114", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "115", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "118", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "119", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "122", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "123", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "131", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "134", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "139", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "142", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "143", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "146", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "159", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelAnchor.java"
+        }, 
+        {
+            "loc": "92", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "93", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "111", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "113", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "126", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "127", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "130", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/ItemLabelPosition.java"
+        }, 
+        {
+            "loc": "75", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "76", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "83", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "84", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "87", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "88", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/labels/StandardCategorySeriesLabelGenerator.java"
+        }, 
+        {
+            "loc": "313", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "290", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "315", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "316", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "318", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "319", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "321", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "322", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "323", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "325", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "326", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "327", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "329", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "330", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "331", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "333", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "334", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "335", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "337", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "338", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "339", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "341", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "342", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "343", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "345", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "346", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "348", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "349", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "351", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "352", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "354", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "355", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "356", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "358", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "359", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "360", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "362", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "363", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "365", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "367", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "135", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "138", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "141", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "147", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "150", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "151", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "154", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "155", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "158", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2151", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "2154", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/AbstractRenderer.java"
+        }, 
+        {
+            "loc": "144", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "107", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "112", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "117", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "120", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "121", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "124", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "125", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "128", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "129", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "132", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "145", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "448", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "449", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "450", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "451", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "488", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "489", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "490", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "491", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "230", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "231", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "232", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "233", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "234", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "235", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "236", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "237", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "238", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+        }, 
+        {
+            "loc": "451", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }, 
+        {
+            "loc": "491", 
+            "score": 0.4472135954999579, 
+            "class": "org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java"
+        }
+    ], 
+    "failing": [
+        {
+            "test": "org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests::testEquals", 
+            "error": [
+                "junit.framework.AssertionFailedError", 
+                "\tat junit.framework.Assert.fail(Assert.java:55)", 
+                "\tat junit.framework.Assert.assertTrue(Assert.java:22)", 
+                "\tat junit.framework.Assert.assertFalse(Assert.java:39)", 
+                "\tat junit.framework.Assert.assertFalse(Assert.java:47)", 
+                "\tat junit.framework.TestCase.assertFalse(TestCase.java:219)", 
+                "\tat org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests.testEquals(MinMaxCategoryRendererTests.java:99)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat junit.framework.TestCase.runTest(TestCase.java:176)", 
+                "\tat junit.framework.TestCase.runBare(TestCase.java:141)", 
+                "\tat junit.framework.TestResult$1.protect(TestResult.java:122)", 
+                "\tat junit.framework.TestResult.runProtected(TestResult.java:142)", 
+                "\tat junit.framework.TestResult.run(TestResult.java:125)", 
+                "\tat junit.framework.TestCase.run(TestCase.java:129)", 
+                "\tat junit.framework.TestSuite.runTest(TestSuite.java:255)", 
+                "\tat junit.framework.TestSuite.run(TestSuite.java:250)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1478)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:860)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1967)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:812)", 
+                "\tat org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2270)", 
+                "\tat org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)", 
+                "\tat sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)", 
+                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                "\tat java.lang.reflect.Method.invoke(Method.java:606)", 
+                "\tat org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)", 
+                "\tat org.apache.tools.ant.Task.perform(Task.java:348)", 
+                "\tat org.apache.tools.ant.Target.execute(Target.java:392)", 
+                "\tat org.apache.tools.ant.Target.performTasks(Target.java:413)", 
+                "\tat org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)", 
+                "\tat org.apache.tools.ant.Project.executeTarget(Project.java:1368)", 
+                "\tat org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)", 
+                "\tat org.apache.tools.ant.Project.executeTargets(Project.java:1251)", 
+                "\tat org.apache.tools.ant.Main.runBuild(Main.java:811)", 
+                "\tat org.apache.tools.ant.Main.startAnt(Main.java:217)", 
+                "\tat org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)", 
+                "\tat org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)"
+            ]
+        }
+    ]
+}
