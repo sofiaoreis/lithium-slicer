@@ -2,5 +2,7 @@ __pycache__
 *.class
 *~
 */target
+app/inputs-*
+app/oracle/*
 app/logs*
 *.pyc
