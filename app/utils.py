@@ -48,6 +48,7 @@ def get_relative_path(project, class_name, bug_number):
     class_name = class_name[index:]
 
     return class_name
+    
 
 def remove_comments(string):
     """ remove the comments in java file """
@@ -219,6 +220,7 @@ def get_to_compare(stacktrace, test):
             if re.search(r'.*Test(.*).java',stacktrace[i]):
                 break 
     return lines, buggy_line
+
 
 @timeout(timeout_seconds) # 60s at most (compile and run test)
 def call_cmd(cmd_line):

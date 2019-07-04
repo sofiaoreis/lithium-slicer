@@ -74,7 +74,7 @@ def generate_seed(project, bugnumber):
             bug_number = bug.replace(".json", "")
 
             # getting the expected message
-            expected_dir = 'expected/'+project_name+'/'
+            expected_dir = 'oracle/'+project_name+'/'
             if not os.path.exists(expected_dir):
                 os.makedirs(expected_dir)
             
