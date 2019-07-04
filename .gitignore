@@ -2,8 +2,5 @@ __pycache__
 *.class
 *~
 */target
-cp.txt
-expected.txt
-app/data/*/*
 app/logs*
 *.pyc
