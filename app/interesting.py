@@ -16,7 +16,7 @@ test.
 runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} {EXPECTED} {SOURCE}"
 timeout_seconds = 120
 buggy_line = None
-debug = True # True to check output in console
+debug = False # True to check output in console
 
 def interesting(conditionArgs, prefix):
     """ This function check if the file is interesting to reduce """
@@ -28,7 +28,6 @@ def interesting(conditionArgs, prefix):
     expected = conditionArgs[2]
     source_file = conditionArgs[3]
     
-    print('Running test...')
     file_basename = os.path.basename(source_file).replace('.java', '')
     cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected, SOURCE=file_basename)
     output = call_cmd(cmd_str) # call shell script
