@@ -39,8 +39,6 @@ if [[ $gen_inputs == *"FAILED"* ]]; then
     exit 1;
 fi
 
-exit 1
-
 while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
     TESTCASE=$(echo $line | cut -f3 -d " ")
