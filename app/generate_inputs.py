@@ -6,13 +6,13 @@ main = argparse.ArgumentParser()
 main.add_argument("--output", type=str, nargs=1, help="The output path to save the seed file")
 main.add_argument("--project", type=str, nargs=1, help="Project name")
 main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 means all bugs
-main.add_argument("--files_per_bug", type=str, nargs=1, default="10", help="Max quantity of files per bug")
+main.add_argument("--statements", type=str, nargs=1, default="10", help="Max quantity of statements per bug")
 
 args = main.parse_args()
 project_name = args.project[0]
 bugs = args.bugnumber[0]
 output = args.output[0]
-max_files_per_bug = int(args.files_per_bug[0])
+statements = int(args.statements[0])
 
 def is_input_number_valid(bug_numbers, project_data_path):
     """ check if a bug number exists in Project data directory """
@@ -40,7 +40,7 @@ def get_source_path(project_name):
 
 def generate_seed(project, bugnumber, output):
     """ generates a file that contains json info to run d4j and lithium """
-    global max_files_per_bug
+    global statements
     initial_projects = ["Chart", "Lang", "Closure", "Math", "Mockito", "Time"]
     if project not in initial_projects:
         raise Exception("Project {} invalid. Please select one of {}".format(project, initial_projects))
@@ -80,22 +80,20 @@ def generate_seed(project, bugnumber, output):
             bug_number = bug.replace(".json", "")
             classes = []
             # get rankings from morpho's report
-            for item in data["rankings"]:
+            for item in data["rankings"][0:statements]:
                 java_file = os.path.join(source_path, item["class"])
                 if java_file not in classes:
                     classes.append(java_file)
-                    if len(classes) == max_files_per_bug:
-                        break
-
+                    
             # get the top-k classes
             if len(classes) > 1:
                 classes = ",".join(classes) # converts [classA, classB] to classA,classB
             else:
                 classes = classes[0] # get only line
-            
+
             expected_dir = 'oracle/'+project_name+'/'
             expected_msg_path = expected_dir+bug_number
-            
+
             i = 0; f = 0; c = 0;
             with open(expected_msg_path) as f:
                 failing = f.readlines()

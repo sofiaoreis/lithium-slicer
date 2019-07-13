@@ -33,11 +33,13 @@ else
 fi
 
 # generates a document that contains the inputs to run the minimizer
-gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP")
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --statements "$TOP")
 if [[ $gen_inputs == *"FAILED"* ]]; then
     echo 'failed'
     exit 1;
 fi
+
+exit 1
 
 while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
