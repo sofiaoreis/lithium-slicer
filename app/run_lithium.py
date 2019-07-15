@@ -81,7 +81,7 @@ def minimize_file(filepath):
     project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
     lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
 
-    # checkout the project - @TODO: not necessary anymore
+    # checkout the project
     checkout_project(project, bug_number, project_dir)
 
     # update filepath path
