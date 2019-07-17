@@ -1,6 +1,8 @@
 #! /usr/bin/python3
 import argparse, os, tempfile
 from utils import json_to_dict, get_testname_expected_msg, call_cmd
+from distutils.dir_util import copy_tree
+
 
 main = argparse.ArgumentParser()
 main.add_argument("--project", type=str, nargs=1, help="Project name")
@@ -85,6 +87,7 @@ def generate_seed(project, bugnumber):
             expected_msg = []
             failing = ''
             
+            copy_tree('/Users/fifaz/Documents/submissions/icse_20/buggy', project_dir)
             runtest_script = "bash run_input_test.sh {PROJECTDIR} {PROJECT} {BUG}"
             cmd_str = runtest_script.format(PROJECTDIR=project_dir, PROJECT=project_name, BUG=bug_number+'b')
             output = call_cmd(cmd_str) # call shell script

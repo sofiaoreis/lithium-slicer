@@ -14,36 +14,43 @@ elif [ -z "$3" ];then
     exit 1;
 fi
 
+# bash runner.sh Chart 5 1
+
 PROJECT=$1 # project name
 BUG=$2 # bugs
 TOP=$3 # k from top-k
+STATEMENT=$4
+OBJECTS=$5
 BASEPATH=$(pwd)
 
 INPUTS="inputs-${PROJECT}_${BUG}_${TOP}" # data filename
 
-ORACLE_PATH="oracle/${PROJECT}/${BUG}"
-if [ ! -f "$ORACLE_PATH" ]; then
-	gen_expected_msg=$(python3 generate_expected_msg.py --project "$PROJECT" --bugnumber "$BUG")
-	if [[ $gen_expected_msg == *"FAILED"* ]]; then
-	    exit 1;
-	fi
-	echo "Test ${PROJECT}_${BUG} oracle extracted."
-else
-	echo "Test ${PROJECT}_${BUG} oracle was already extracted."
-fi
+# ORACLE_PATH="oracle/${PROJECT}/${BUG}"
+# if [ ! -f "$ORACLE_PATH" ]; then
+# 	gen_expected_msg=$(python3 generate_expected_msg.py --project "$PROJECT" --bugnumber "$BUG")
+# 	if [[ $gen_expected_msg == *"FAILED"* ]]; then
+# 	    exit 1;
+# 	fi
+# 	echo "Test ${PROJECT}_${BUG} oracle extracted."
+# else
+# 	echo "Test ${PROJECT}_${BUG} oracle was already extracted."
+# fi
 
 # generates a document that contains the inputs to run the minimizer
-gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP")
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP" --statement "$STATEMENT" --objects "$OBJECTS")
 if [[ $gen_inputs == *"FAILED"* ]]; then
     echo 'failed'
     exit 1;
 fi
+
+
 
 while read line; do
     BUGNUMBER=$(echo $line | cut -f2 -d " ")
     TESTCASE=$(echo $line | cut -f3 -d " ")
     CLASSES=$(echo $line | cut -f4 -d " ")
     EXPECTED_MSG_PATH=$(echo $line | cut -f5 -d " ")
+	OBJECT_NAME=$(echo $line | cut -f6 -d " ")
 
     #run defects4j and lithium
     python3 run_lithium.py --project $PROJECT \
@@ -51,7 +58,12 @@ while read line; do
     --test_case $TESTCASE \
     --classes $CLASSES \
     --expected_msg_path $EXPECTED_MSG_PATH \
-    --top $TOP
+    --top $TOP \
+	--objectname $OBJECT_NAME \
+	--statement $STATEMENT \
+	--objects $OBJECTS
+	
+	exit 1
 
 done < "$BASEPATH/$INPUTS"
 

@@ -1,11 +1,12 @@
 #! /usr/bin/python3
-import os, logging, time, argparse, tempfile
+import os, logging, time, argparse, tempfile, sys
 from shutil import copy, rmtree
 import subprocess
 from subprocess import STDOUT, CalledProcessError, check_output, call
 from shlex import split
 from utils import parse_comments, get_locs, get_relative_path, checkout_project, create_json
 import platform
+from distutils.dir_util import copy_tree
 
 # args
 main = argparse.ArgumentParser()
@@ -15,6 +16,9 @@ main.add_argument("--test_case", nargs=1, type=str)
 main.add_argument("--classes", nargs=1, type=str)
 main.add_argument("--expected_msg_path", nargs=1, type=str)
 main.add_argument("--top", nargs=1, type=str)
+main.add_argument("--objectname", nargs=1, type=str)
+main.add_argument("--statement", nargs=1, type=str)
+main.add_argument("--objects", nargs=1, type=str)
 
 args = main.parse_args()
 
@@ -24,18 +28,20 @@ test_case = args.test_case[0]
 classes = args.classes[0]
 expected_msg_path = args.expected_msg_path[0]
 top = args.top[0]
-
+objectname = args.objectname[0]
+statement = args.statement[0]
+objects = args.objects[0]
 
 # temporary directories
 base_path = os.getcwd()
-log_dir = os.path.join(base_path, 'logs_{}'.format(top), '{}_{}'.format(project, bug_number), '{}'.format(bug_number))
+log_dir = os.path.join(base_path, 'logs_{}'.format(top),'{}_{}'.format(project, bug_number), '{}_{}'.format(statement, objects))
+
 # this 'b' char corresponds to buggy version
 bug_number += "b" 
 # converts "classes" argument to a list of classes
 classes = classes.split(",")
 # renaming test case
 testcase_name = test_case.split(".")[-1].replace("::", ".")
-
 
 # if remove_comments == True, the comments/javadoc in original file are removed (otimization)
 # BUG @TODO: if true, the function (utils.get_loc) does not works as expected (empty array)
@@ -57,6 +63,8 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+
+
 # starting lithium-slicer
 logger.info("Started Lithium-Slicer")
 logger.info("Running testcase {test_case} from {project}-{bug}".format(test_case=testcase_name, project=project, bug=bug_number))
@@ -74,7 +82,7 @@ def minimize_file(filepath):
             "loc": [1,50,52,54,...]
         }
     """    
-    global project, bug_number, test_case, expected_msg_path
+    global project, bug_number, test_case, expected_msg_path, statement, objectname
     output_lithium = {} # structute to store the output of lithium
     
     # /tmp directories
@@ -82,7 +90,8 @@ def minimize_file(filepath):
     lithium_tmp = tempfile.mkdtemp(prefix="lithium-interesting_")
 
     # checkout the project - @TODO: not necessary anymore
-    checkout_project(project, bug_number, project_dir)
+    # checkout_project(project, bug_number, project_dir)
+    copy_tree('/Users/fifaz/Documents/submissions/icse_20/source/{}_{}_{}_{}/'.format(project, bug_number.replace('b',''), statement, objects), project_dir)
 
     # update filepath path
     java_file = os.path.join(project_dir, filepath)
@@ -94,6 +103,10 @@ def minimize_file(filepath):
     origin_filename = os.path.basename(java_file)
     origin_path = os.path.join(log_testcase_dir, origin_filename)
     copy(java_file, origin_path)
+    
+    object_path = os.path.join(project_dir,'oracles','{}.xml'.format(objectname))
+    print(object_path)
+    
 
     # remove comments in original file
     if remove_comments:
@@ -107,13 +120,14 @@ def minimize_file(filepath):
         output, error = process.communicate()
         copy(uncomment_path, java_file)
         logger.info("Removing comments was finished for {filename}".format(filename=filename))
+    
 
     # run lithium
     try:
         start_lithium = time.time()
-        cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} {EXPECTED_MSG_PATH} {FILE}"
-        cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED_MSG_PATH=expected_msg_path)
-
+        cmd_line = "python3 -m lithium --tempdir={TEMPDIR} interesting {PROJECTDIR} {TESTCASE} {EXPECTED_MSG_PATH} {OBJECTPATH} {FILE}"
+        
+        cmd_line = cmd_line.format(TEMPDIR=lithium_tmp, PROJECTDIR=project_dir, TESTCASE=test_case, FILE=java_file, EXPECTED_MSG_PATH=expected_msg_path, OBJECTPATH=object_path)
         logger.info("Running lithium for {filename}".format(filename=filename))
         call(split(cmd_line), stderr=STDOUT)
         logger.info("Lithium was finished for {filename}".format(filename=filename))

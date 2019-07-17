@@ -1,5 +1,5 @@
 #! /usr/bin/python3
-import os, signal, time, logging
+import os, signal, time, logging, sys
 from shutil import copy
 
 from subprocess import STDOUT, CalledProcessError, check_output
@@ -13,10 +13,10 @@ interesting. The script that does that for us is compile-and-run
 (note the .sh extension), which just compiles the code and re-runs the
 test.
 '''
-runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} {EXPECTED} {SOURCE}"
+runtest_script = "./runtest.sh {PROJECTDIR} {TESTCASE} {EXPECTED} {SOURCE} {OBJECTPATH}"
 timeout_seconds = 120
 buggy_line = None
-debug = False # True to check output in console
+debug = True # True to check output in console
 
 def interesting(conditionArgs, prefix):
     """ This function check if the file is interesting to reduce """
@@ -26,12 +26,13 @@ def interesting(conditionArgs, prefix):
     project_dir = conditionArgs[0]
     testcase = conditionArgs[1]
     expected = conditionArgs[2]
-    source_file = conditionArgs[3]
-    
+    object_path = conditionArgs[3]
+    source_file = conditionArgs[4]
+        
     file_basename = os.path.basename(source_file).replace('.java', '')
-    cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected, SOURCE=file_basename)
+    cmd_str = runtest_script.format(PROJECTDIR=project_dir, TESTCASE=testcase, EXPECTED=expected, SOURCE=file_basename, OBJECTPATH=object_path)
     output = call_cmd(cmd_str) # call shell script
-    
+
     if debug:
         print('Output of calling runtest.sh', output)
 
@@ -40,13 +41,7 @@ def interesting(conditionArgs, prefix):
     if debug:
         print('is_interesting=', is_interesting)
     
-    if (buggy_line is None) and is_interesting:
-        buggy_line = get_buggy_line(output)
-    
-    # double check comparison with buggy_line and expected/output message
-    if debug:
-        print('double_check outcome ', is_interesting and (buggy_line in output))
-    return is_interesting and (buggy_line in output)
+    return is_interesting
 
 def get_buggy_line(output):
     """ get buggy line in test file """

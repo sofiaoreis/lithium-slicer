@@ -7,12 +7,17 @@ main.add_argument("--output", type=str, nargs=1, help="The output path to save t
 main.add_argument("--project", type=str, nargs=1, help="Project name")
 main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 means all bugs
 main.add_argument("--files_per_bug", type=str, nargs=1, default="10", help="Max quantity of files per bug")
+main.add_argument("--statement", type=str, nargs=1, default="null", help="statement localization")
+main.add_argument("--objects", type=str, nargs=1, default="null", help="object name")
 
 args = main.parse_args()
 project_name = args.project[0]
 bugs = args.bugnumber[0]
 output = args.output[0]
 max_files_per_bug = int(args.files_per_bug[0])
+statement = int(args.statement[0])
+objects = args.objects[0]
+
 
 def is_input_number_valid(bug_numbers, project_data_path):
     """ check if a bug number exists in Project data directory """
@@ -74,36 +79,35 @@ def generate_seed(project, bugnumber, output):
         bugnumbers = [doc for doc in os.listdir(project_path) if doc in bugnumbers]
     
     with open(output, "w") as seed_file:
-        # for each bug
+        # for each bugcd ..
         for bug in bugnumbers:
             data = json_to_dict(os.path.join(project_path, bug))
             bug_number = bug.replace(".json", "")
             classes = []
             # get rankings from morpho's report
             for item in data["rankings"]:
-                java_file = os.path.join(source_path, item["class"])
+                java_file = os.path.join(source_path, item["class"])                
                 if java_file not in classes:
                     classes.append(java_file)
                     if len(classes) == max_files_per_bug:
                         break
-
+            
+            objfilename = "loc_{}#{}_{}".format(data["rankings"][statement-1]['loc'], data["rankings"][statement-1]['class'].split('/')[-1].split('.')[0],objects)
+            
             # get the top-k classes
             if len(classes) > 1:
                 classes = ",".join(classes) # converts [classA, classB] to classA,classB
             else:
                 classes = classes[0] # get only line
             
-            expected_dir = 'oracle/'+project_name+'/'
+            expected_dir = 'passing_tests/'+project_name+'/'
             expected_msg_path = expected_dir+bug_number
             
-            i = 0; f = 0; c = 0;
             with open(expected_msg_path) as f:
-                failing = f.readlines()
-                for l in failing:
-                    if '---' in l:
-                        testcase = l.strip().split(' ')[1]
-                        seed_file.write(
-                                "{} {} {} {} {}\n".format(project, bug_number, testcase, classes, expected_msg_path)
+                testcase = f.readlines()[0].strip()
+                
+            seed_file.write(
+                                "{} {} {} {} {} {}\n".format(project, bug_number, testcase, classes, expected_msg_path, objfilename)
                             )
                     
 generate_seed(project_name, bugs, output)
