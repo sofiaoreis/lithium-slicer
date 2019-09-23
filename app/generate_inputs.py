@@ -7,11 +7,14 @@ main.add_argument("--output", type=str, nargs=1, help="The output path to save t
 main.add_argument("--project", type=str, nargs=1, help="Project name")
 main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 means all bugs
 main.add_argument("--files_per_bug", type=str, nargs=1, default="10", help="Max quantity of files per bug")
+main.add_argument("--tests", type=str, nargs=1, default="10", help="Tests")
+
 
 args = main.parse_args()
 project_name = args.project[0]
 bugs = args.bugnumber[0]
 output = args.output[0]
+tests = args.tests[0]
 max_files_per_bug = int(args.files_per_bug[0])
 
 def is_input_number_valid(bug_numbers, project_data_path):
@@ -79,7 +82,8 @@ def generate_seed(project, bugnumber, output):
             data = json_to_dict(os.path.join(project_path, bug))
             bug_number = bug.replace(".json", "")
             classes = []
-            # get rankings from morpho's report
+            
+            # get classes from rankings 
             for item in data["rankings"]:
                 java_file = os.path.join(source_path, item["class"])
                 if java_file not in classes:
@@ -93,18 +97,16 @@ def generate_seed(project, bugnumber, output):
             else:
                 classes = classes[0] # get only line
             
-            expected_dir = 'oracle/'+project_name+'/'
-            expected_msg_path = expected_dir+bug_number
+            state_path = 'states/{}/{}'.format(project_name, bug_number)
             
-            i = 0; f = 0; c = 0;
-            with open(expected_msg_path) as f:
-                failing = f.readlines()
-                for l in failing:
-                    if '---' in l:
-                        testcase = l.strip().split(' ')[1]
-                        seed_file.write(
-                                "{} {} {} {} {}\n".format(project, bug_number, testcase, classes, expected_msg_path)
-                            )
+            # if tests == 'all':
+            #     with open(os.getcwd()+'/source/'+project_name+'_'+bug_number+'/all_tests') as f:
+            #         data = f.readlines()
+            #         print(data)
+            # else:
+            seed_file.write(
+                    "{} {} {} {}\n".format(project, bug_number, classes, state_path)
+                )
                     
 generate_seed(project_name, bugs, output)
 
