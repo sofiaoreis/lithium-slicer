@@ -1,5 +1,5 @@
 # The LithiumSlicer
-LithiumSlicer is a program slicer based on the [Mozilla lithium tool]((https://github.com/MozillaSecurity/lithium)), a test minimization tool to help developers create small test inputs (i.e., code snippets) in their bug reports. 
+LithiumSlicer (also dubbed as Tandem-FL) is a program slicer based on the [Mozilla lithium tool]((https://github.com/MozillaSecurity/lithium)), a test minimization tool to help developers create small test inputs (i.e., code snippets) in their bug reports. 
 
 The goal of LithiumSlicer is to minimize the program with respect to a certain criteria defined by the user. The user needs to provide an oracle that indicates what constitutes a good/bad minimization step. Although, the user can implement whatever oracle function she likes, in most cases the oracle checks if the output of the program is as expected. For the typical scenario, the oracle would check if the execution output of the minimized program matches with test message produced by the original test, e.g., "Expect 10 but seen 5". LithiumSlicer would remove as much code as possible such that test execution would still produce that same message.
 
@@ -28,3 +28,7 @@ $> python3 run_lithium.py --project Chart --bug_number 24 \
  --classes source/org/jfree/chart/renderer/GrayPaintScale.java \ 
  --expected_message "java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue"
 ```
+
+## References
+
+[[1]](https://www.ijcai.org/Proceedings/2019/0661.pdf) Sofia Reis, Rui Abreu and Marcelo D’Amorim. **2019**. _Demystifying the Combination of Dynamic Slicing and Spectrum-based Fault Localization_. International Joint Conference on Artificial Intelligence (IJCAI) · Conference Paper 
