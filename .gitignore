@@ -1,8 +1,10 @@
 __pycache__
 *.class
 *~
+*.DS_Store
 */target
 app/inputs-*
 app/oracle/*
 app/logs*
+ijcai.zip
 *.pyc
