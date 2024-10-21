@@ -37,7 +37,9 @@ java.lang.IllegalArgumentException: Color parameter outside of expected range: R
 For both heuristics, in addition to message comparison, we ensure that the new test cases fail in the line and test class as in the original test. 
 
 Result for heuristic 1: [GrayPaintScale.java](./example/lithium_h1_GrayPaintScale.java)
+
 Result for heuristic 2: [GrayPaintScale.java](./example/lithium_h2_GrayPaintScale.java)
+
 Original class for reference: [GrayPaintScale.java](./example/GrayPaintScale.java)
 
 
