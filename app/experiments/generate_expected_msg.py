@@ -1,10 +1,13 @@
 #! /usr/bin/python3
 import argparse, os, tempfile
 from utils import json_to_dict, get_testname_expected_msg, call_cmd
+from shutil import rmtree
+
 
 main = argparse.ArgumentParser()
-main.add_argument("--project", type=str, nargs=1, help="Project name")
+main.add_argument("--project", type=str, nargs=1, help="Project name", required=True)
 main.add_argument("--bugnumber", type=str, nargs=1, default="0", help="Number that represent a Bug in Project") # 0 corresponde to all
+main.add_argument("--debug", action='store_true', help='print debug messages')
 
 args = main.parse_args()
 project_name = args.project[0]
@@ -34,7 +37,7 @@ def get_source_path(project_name):
 
     return paths[project_name]
 
-def generate_seed(project, bugnumber):
+def generate_seed(project, bugnumber, debug):
     """ generates a file that contains json info to run d4j and lithium """
     initial_projects = ["Chart", "Lang", "Closure", "Math", "Mockito", "Time"]
     if project not in initial_projects:
@@ -67,8 +70,8 @@ def generate_seed(project, bugnumber):
         bugnumbers = os.listdir(project_path)
     else:
         bugnumbers = [doc for doc in os.listdir(project_path) if doc in bugnumbers]
-    
-        # for each bug
+    print(bugnumbers)
+    # for each bug
     for bug in bugnumbers:
             data = json_to_dict(os.path.join(project_path, bug))
             bug_number = bug.replace(".json", "")
@@ -81,21 +84,27 @@ def generate_seed(project, bugnumber):
             expected_msg_path = expected_dir+bug_number
             project_dir = tempfile.mkdtemp(prefix="lithium-slicer_")
             output_filepath = project_dir+'/failing_tests'
-            print('output_filepath=', output_filepath)
-            expected_msg = []
-            failing = ''
             
             runtest_script = "bash run_input_test.sh {PROJECTDIR} {PROJECT} {BUG}"
             cmd_str = runtest_script.format(PROJECTDIR=project_dir, PROJECT=project_name, BUG=bug_number+'b')
+            if debug: print(f"running {cmd_str}...")
             output = call_cmd(cmd_str) # call shell script
+            if debug: print(output)
+            
             if os.path.isfile(output_filepath):
                     with open(output_filepath) as out_fail:
                         failing = out_fail.readlines()
-                
+            if debug: print(f"test case message:\n{''.join(failing)}")
+
             with open(expected_msg_path,"w+") as expected:
                 expected.write(
-                    "{}".format(''.join(failing))
+                    f"{''.join(failing)}"
                 )
+                
+            # removing temporary folder
+            if debug: print(f"removing {project_dir}...")
+            rmtree(project_dir, ignore_errors=True)
+            print(f"Test case expected message stored at {expected_msg_path}")
 
-generate_seed(project_name, bugs)
+generate_seed(project_name, bugs, args.debug)
 

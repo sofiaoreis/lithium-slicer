@@ -1,0 +1,30 @@
+Checking out 190 to /var/folders/29/09gzs8k97dv6n6cn84ww_b8w0000gn/T/lithiu OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Apply patch................................................................ OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 190:188............................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Chart-24b....................................... OK
+[92mAnalyzing Chart 24
+test_case=org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint
+classes=source/org/jfree/chart/renderer/GrayPaintScale.java
+top: 1
+expected test message stored in chart_24_message
+[00m
+[94mlog_path=/Users/sofiaoreis/sfl-slicing/lithium-slicer/app/logs_1/Chart_24/24/log_Chart_24b_Mon_Oct_21_16:33:13_2024.log
+[00m
+[94mAttempting to minimize source/org/jfree/chart/renderer/GrayPaintScale.java[00m
+[93m[⬇️ ] Checking out program Chart 24b...[00m
+[93m[⬇️ ] Finished checking out program Chart 24b![00m
+[93m
+[🧹] Cleaning comments from GrayPaintScale.java...[00m
+[93m[🧹] Cleaning comments from GrayPaintScale.java has finished![00m
+[93m
+[🔪] Starting Lithium...[00m

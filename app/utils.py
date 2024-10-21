@@ -198,13 +198,14 @@ def get_testname_expected_msg(testname, expected):
             res.append(i)
     return res
 
-def get_to_compare(stacktrace, test):
-    lines = []; ov_acm = 0
+def truncate_message(stacktrace, test, heuristic="className"):
+    lines, ov_acm = [], 0
+    # StackOverflow Special Case
     is_overflow = re.search(r'StackOverflowError', stacktrace[0])
     test = test.replace('::','.')
     for i in range(len(stacktrace)):
-        lines.append(stacktrace[i].strip())
         buggy_line = stacktrace[i].strip()
+        lines.append(buggy_line)
         if is_overflow:
             if stacktrace[i] == stacktrace[i+1]:
                 ov_acm +=1
@@ -215,11 +216,13 @@ def get_to_compare(stacktrace, test):
     if len(lines) == len(stacktrace):
         lines=[];
         for i in range(len(stacktrace)):
-            lines.append(stacktrace[i].strip())
             buggy_line = stacktrace[i].strip()
+            lines.append(buggy_line)
             if re.search(r'.*Test(.*).java',stacktrace[i]):
                 break 
-    return lines, buggy_line
+    if heuristic =="className":
+        return lines, buggy_line
+    return lines[0:-2], buggy_line
 
 
 @timeout(timeout_seconds) # 60s at most (compile and run test)

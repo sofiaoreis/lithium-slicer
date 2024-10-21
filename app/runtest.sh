@@ -7,20 +7,21 @@
 #####################################################################
 
 # PARAMS
-PROJECTDIR=$1 #e.g. /tmp/Lang_1b/
-TESTCASE=$2 #e.g. org.jfree......Tests::test9999
-EXPECTED=$3 #e.g. junit.... expected <0> but was <1>
-SOURCE=$4 # e.g. Source name ClassA (without file extension) 
+PROJECT_DIR=$1 #e.g. /var/folders/.../T/lithium-slicer_...
+TESTCASE=$2 #e.g. org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint
+EXPECTED_MSG_PATH=$3 #e.g. chart_24_message
+SOURCE=$4 # e.g. GrayPaintScale (without the java extensin)
+HORACLE=$5 # e.g. 1 or 2
 
 ####################
 # run the test case
 ####################
-defects4j compile -w ${PROJECTDIR} 2>/dev/null
-defects4j test -t $TESTCASE -w ${PROJECTDIR} 2>/dev/null
+defects4j compile -w ${PROJECT_DIR} 2>/dev/null
+defects4j test -t $TESTCASE -w ${PROJECT_DIR} 2>/dev/null
 
 # compare output message with expected message
-python3 compare_messages.py "$EXPECTED" "${PROJECTDIR}/failing_tests" $TESTCASE
+python3 compare_messages.py "$EXPECTED_MSG_PATH" "${PROJECT_DIR}/failing_tests" $TESTCASE $HORACLE
 
 # !! @OPTIMIZATION: remove only the SOURCE class (cost less on re-build)
-BUG_CLASS="$(find ${PROJECTDIR} -name $SOURCE.class)"
+BUG_CLASS="$(find ${PROJECT_DIR} -name $SOURCE.class)"
 rm $BUG_CLASS 2>/dev/null

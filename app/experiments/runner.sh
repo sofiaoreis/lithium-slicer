@@ -17,14 +17,19 @@ fi
 PROJECT=$1 # project name
 BUG=$2 # bugs
 TOP=$3 # k from top-k
+DEBUG=$4
 BASEPATH=$(pwd)
 
 INPUTS="inputs-${PROJECT}_${BUG}_${TOP}" # data filename
 
 ORACLE_PATH="oracle/${PROJECT}/${BUG}"
 if [ ! -f "$ORACLE_PATH" ]; then
-	gen_expected_msg=$(python3 generate_expected_msg.py --project "$PROJECT" --bugnumber "$BUG")
-	if [[ $gen_expected_msg == *"FAILED"* ]]; then
+    if [ "$DEBUG" == 1 ]; then
+	    gen_expected_msg=$(python3 generate_expected_msg.py --project "$PROJECT" --bugnumber "$BUG" --debug | tee /dev/tty) 
+	else
+    	gen_expected_msg=$(python3 generate_expected_msg.py --project "$PROJECT" --bugnumber "$BUG" | tee /dev/tty) 
+    fi
+    if [[ $gen_expected_msg == *"FAILED"* ]]; then
 	    exit 1;
 	fi
 	echo "Test ${PROJECT}_${BUG} oracle extracted."
@@ -32,8 +37,8 @@ else
 	echo "Test ${PROJECT}_${BUG} oracle was already extracted."
 fi
 
-# generates a document that contains the inputs to run the minimizer
-gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP")
+#generates a document that contains the inputs to run the minimizer
+gen_inputs=$(python3 generate_inputs.py --project "$PROJECT" --output "$INPUTS" --bugnumber "$BUG" --files_per_bug "$TOP" | tee /dev/tty)
 if [[ $gen_inputs == *"FAILED"* ]]; then
     echo 'failed'
     exit 1;
